@@ -168,7 +168,47 @@
 - LaLiga — latest Deportivo Alavés signings
   https://www.laliga.com/en-GB/clubs/d-alaves/transfers
 
-**Gaps logged for f6:** no referee named; no per-team card lines. Villarreal's
+### f6 gap patch (post-Phase-3, under the raised research ceiling)
+- Villarreal CF official — Péter Gulácsi, nuevo portero del Villarreal CF
+  https://villarrealcf.es/es/peter-gulacsi-nuevo-portero-del-villarreal-cf/
+- Castellón Información — El Villarreal incorpora a Gulácsi por las dos próximas
+  temporadas (registered 2 Aug 2026; €1m fixed plus variables, reported €1.5m; 36;
+  58 Hungary caps; 41 CL apps; ends eleven seasons at Leipzig)
+  https://www.castelloninformacion.com/villarreal-cf-ficha-portero-peter-gulacsi-dos-temporadas/
+- Analítica Fantasy — El Villarreal hace oficial el fichaje de Gulácsi, competencia
+  para Luiz Júnior (Conde to Betis, Tenas to Mallorca)
+  https://www.analiticafantasy.com/noticias/el-villarreal-hace-oficial-el-fichaje-de-gulacsi-competencia-para-luiz-junior
+- Sofascore ES — Villarreal asegura al portero veterano Péter Gulácsi
+  https://www.sofascore.com/es/news/villarreal-asegura-al-portero-veterano-peter-gulacsi-desde-el-rb-leipzig
+- FútbolFantasy — Villarreal mercado de fichajes verano 2026
+  https://www.futbolfantasy.com/mercado-de-fichajes-del-villarreal-altas-bajas/verano-2026
+- Fichajes.com — Altas y bajas Villarreal 2026/2027 (Terrats €2.5m, largest sale)
+  https://www.fichajes.com/equipo/villarreal-cf/altas-bajas/
+- Betfair ES — Villarreal: fichajes, plantilla y alineación 2026/27
+  (Kaares the only other signing; Parejo and Partey departures unreplaced; unnamed CB
+  loan to Osasuna stalled by an Italian club)
+  https://www.betfair.es/blog/futbol/futbol-espanol/laliga/villarreal-fichajes-plantilla-y-alineacion-ideal-para-la-temporada-202627-020826-1210.html
+
+**f6 gap NARROWED.** Villarreal IN: Gulácsi (GK, €1.5m / €1m + variables, RB Leipzig,
+2 Aug 2026, two years) and Andero Kaares (apparently for the lower categories). OUT:
+Terrats (€2.5m), Pedraza; goalkeepers Diego Conde (Betis) and Arnau Tenas (Mallorca).
+Midfield departures of Dani Parejo and Thomas Partey reported as unreplaced.
+**Contradiction RESOLVED in favour of the official source.** One aggregator states
+Villarreal's only signing all summer was Andero Kaares; an earlier source and the club's
+own website both have Gulácsi. The official Villarreal CF announcement takes precedence
+under the spec's source-preference order, so both are recorded as arrivals and the
+"Kaares only" framing is treated as incomplete rather than as a competing fact. This is
+the second instance on this card of a signing being invisible to a fee-ranked list —
+compare Canales at Racing, who was invisible because he was free.
+**Date not claimed:** the Parejo and Partey departures are reported inside a 2026 window
+review but no source consulted dates them to this window specifically, so the card states
+that they are unreplaced without asserting when they left.
+
+**Gaps remaining for f6:** no referee named; no per-team card lines; no CB or DM arrival
+confirmed in either direction; the centre-back in the stalled Osasuna loan is unnamed;
+the reported Ligue 1 striker is unconfirmed; Spanish window open to 1 September 2026.
+
+**Gaps logged for f6 (original run, superseded above):** no referee named; no per-team card lines. Villarreal's
 remaining incoming business and any CB/DM movement unestablished; Spanish window
 open until 1 September 2026 and a Ligue 1 striker still being pursued. No Alavés
 absences reported — absence of report, not report of availability.
