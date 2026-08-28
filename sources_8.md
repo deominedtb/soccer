@@ -234,7 +234,53 @@ the same passage says 2022-23 — inconsistent, neither used.
 **Cross-card note:** Ayyoub Bouaddi appears as a Lille departure in f3 and as City's
 £81.4m arrival here — the same transfer, seen from both ends of this slate.
 
-**Gaps logged for f4:** no referee named. Milan's 2026 incoming business
+### f4 gap patch (post-Phase-3, under the raised research ceiling)
+- MilanNews24 — Tabellone calciomercato estivo Milan 2026 LIVE, entrate e uscite
+  https://www.milannews24.com/tabellone-calciomercato-estivo-milan-2026-acquisti-cessioni/
+- MilanNews — Calciomercato Milan: acquisti, cessioni, obiettivi, borsino 25 agosto
+  https://www.milannews.it/calciomercato-milan/calciomercato-milan-acquisti-cessioni-obiettivi-borsino-25-agosto-627740
+- AC Milan official — calciomercato
+  https://www.acmilan.com/it/news/calciomercato
+- SportMediaset — Acquisti Milan e cessioni
+  https://www.sportmediaset.mediaset.it/squadre/calciomercato/milan/
+- TuttoVeneziaSport — Calciomercato Venezia, tabellone acquisti/cessioni, ufficialità
+  https://www.tuttoveneziasport.it/calciomercato/calciomercato-venezia-tabellone-acquisti-cessioni-ufficialita-26315
+- TuttoVeneziaSport — Venezia, Adorante out per problemi alla schiena
+  https://www.tuttoveneziasport.it/primo-piano/venezia-adorante-out-problemi-schiena-situazione-26277
+- Triveneto Goal — Smentita la partenza di Adorante (6 July 2026)
+  https://www.trivenetogoal.it/2026/08/07/venezia-smentita-la-partenza-di-adorante-lattaccante-rimarra-arancioneroverde/262407
+- Il Fatto Quotidiano — Serie A 2026/27: formazioni tipo, acquisti e cessioni, 20 squadre
+  https://www.ilfattoquotidiano.it/2026/08/20/serie-a-2026-27-acquisti-cessioni-formazioni-tipo-squadre/8483691/20/
+- Lottomatica Sport — Guida completa Venezia 2026-27 (probabile formazione, infortunati)
+  https://www.lottomatica.sport/news/guida-alla-serie-a/guida-completa-venezia-2026-27-probabile-formazione-nuovi-acquisti-rigoristi-infortunati-consigli-fantacalcio/
+- Eurosport — Tabellone mercato estivo Serie A 2026-27
+  https://www.eurosport.it/calcio/calciomercato/2026-2027/il-tabellone-del-mercato-estivo-della-serie-a-2026-27-acquisti-cessioni-ufficialita-e-tutte-le-operazioni_sto23311886/story.shtml
+
+**f4 gaps now CLOSED — and the Milan finding REVERSES the original card's premise.**
+Milan IN: Gonçalo Ramos (~€70m, PSG), Mario Gila (€30m inc. bonuses, Lazio), Diawara
+(Troyes), Kostic (Partizan), Moreira (Strasbourg), Guernier (Birmingham, free);
+Modrić extended. OUT: Füllkrug (loan end, West Ham), Bennacer (termination), Odogu
+(loan, Toulouse), Athekame (loan, Lyon), plus the earlier ~€30m from Pobega/Jiménez/
+Morata. Reported first-wave outlay >€100m. No GK movement reported.
+Venezia IN: Adams (Sevilla), Rrahmani, Bella-Kotchap, Moreno (Fiorentina), Halhal
+(€5m, Mechelen, to 30 Jun 2030), Sohm (Fiorentina). OUT: Doumbia (€20m, Sporting
+Lisbon), Svoboda (€5m, Brighton), Nicolussi Caviglia, Oristanio, Bjarkason, Sidibé,
+Venturi. Projected 3-5-2: Stankovic; Bella-Kotchap, Schingtienne, Moreno; Correia,
+Basic, Busio, Sohm, Haps; Adams, Yeboah.
+**Major team news the original card missed:** Andrea Adorante — Serie B top scorer,
+17 goals — is out until ~October after back surgery; the club denied on 6 July 2026
+that he would be sold. The original card stated "no Venezia absences were reported."
+Corrected in section A and section D.
+**KNOWN INCONSISTENCY LEFT IN PLACE BY INSTRUCTION:** section C's 1X2 row still reads
+"Milan's only confirmed summer business is €30m of players leaving, with the centre-back
+and twenty-goal striker they wanted unverified." That is now false — both arrived, for a
+combined ~€100m. Section C was frozen by explicit instruction on this patch pass and has
+NOT been edited. Flagged for the operator.
+
+**Gaps remaining for f4:** no referee named; no goalkeeper movement reported for Milan
+in either direction; Italian window open to 1 September 2026.
+
+**Gaps logged for f4 (original run, superseded above):** no referee named. Milan's 2026 incoming business
 unverified — only the stated plan (CB + 20-goal striker) and the outgoing
 €30m are documented; Italian window open until 1 September 2026. Venezia's
 2026 summer ins and outs not established at all — the widest single hole in
