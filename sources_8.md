@@ -287,7 +287,56 @@ unverified — only the stated plan (CB + 20-goal striker) and the outgoing
 this fixture. No Venezia absences reported (absence of report, not report of
 absence).
 
-**Gaps logged for f3:** no referee named; no per-team card lines; no Win-or-+2
+### f3 gap patch (post-Phase-3, under the raised research ceiling)
+- Sky Sports — Bouaddi transfer: Man City complete record-breaking £86m deal
+  (£81.3m fixed + £4.3m add-ons, five-year deal, most expensive teenage signing in
+  Premier League history, ahead of Yoro's £58.9m from Lille in 2024)
+  https://www.skysports.com/football/news/11679/13576515/ayyoub-bouaddi-transfer-manchester-city-complete-record-breaking-lb86m-deal-to-sign-18-year-old-morocco-midfielder
+- Sky Sports — Man City reach agreement with Lille for Bouaddi
+  https://www.skysports.com/football/news/11095/13576242/ayyoub-bouaddi-transfer-manchester-city-reach-agreement-with-lille-to-sign-18-year-old-morocco-midfielder
+- Wikipedia — Saison 2026-2027 du LOSC Lille
+  https://fr.wikipedia.org/wiki/Saison_2026-2027_du_LOSC_Lille
+- Le Petit Lillois — Point mercato: quel effectif pour le LOSC 2026-2027 (5 July 2026)
+  https://lepetitlillois.com/2026/07/05/mercato-effectif-losc-2026-2027/
+- MercatoLOSC — effectif LOSC Lille 2026/2027 (Srdanovic, Servette RB, to 2030)
+  https://mercatolosc.fr/equipe-losc-lille
+- Soccerway FR — Lille ouvre la porte à un départ d'Edon Zhegrova
+  (Zhegrova and Gudmundsson, a year from contract end)
+  https://fr.soccerway.com/actualites/football-ligue-1-lille-ouvre-la-porte-a-un-depart-d-edon-zhegrova-durant-le-mercato-estival/plKTDr7c
+- CulturePSG — Le tableau mercato du PSG, été 2026
+  https://www.culturepsg.com/news/mercato/le-tableau-mercato-du-psg-ete-2026/59647
+- Wikipedia — Saison 2026-2027 du Paris Saint-Germain
+  (Godts to 2031 on 15 Aug 2026; Akliouche €50m on 6 Aug 2026; Longoni, 18)
+  https://fr.wikipedia.org/wiki/Saison_2026-2027_du_Paris_Saint-Germain
+- Dico du Sport — Mercato PSG 2026-2027, tableau complet
+  https://dicodusport.fr/blog/mercato-psg-2026-2027-le-tableau-complet-des-transferts-arrivees-et-departs/
+- PSG Community — Le PSG tient ses premières recrues et acte ses premiers départs
+  https://psgcommunity.com/mercato-le-psg-tient-ses-premieres-recrues-et-acte-ses-premiers-departs/
+
+**f3 gaps NARROWED, not fully closed.** PSG 2026 IN established: Akliouche (€50m,
+6 Aug), Godts (Ajax, ~€45m + €10m bonuses, 15 Aug, to 2031), Digne (LB), Longoni
+(GK, 18), Ferran Torres. OUT: Barcola — agreement in principle with Liverpool at a
+reported £120m; Kolo Muani linked to Juventus, not done. Lille: Bouaddi to Man City
+for £86m total; Srdanovic identified as a Swiss RB from Servette to 2030; Létang has
+opened the door for Zhegrova and Gudmundsson.
+**Still open on f3:** three Lille arrivals and nine departures remain unnamed in the
+public tabulations — three differently-framed searches returned the same three names
+each way, so this is treated as a limit of what is published rather than of effort.
+No Lille GK or CB movement confirmable in either direction. No PSG CB or DM arrival
+confirmed for 2026.
+**Date not claimed:** Illia Zabarnyi is reported as a €63m CB from Bournemouth
+rebuilding the defence after Kimpembe and Škriniar — but those exits are 2025 and no
+source dates the Zabarnyi deal to the 2026 window. Recorded, not claimed, per the rule
+against estimating a date.
+**Contradiction:** one source has Mbaye favouring Liverpool over Leverkusen; the French
+tabulations put Liverpool's agreement on Barcola. Both cannot be the primary Liverpool
+file; neither treated as settled. Recorded in section D.
+**Fee refinement affecting f5:** Bouaddi's fee is more precisely £81.3m + £4.3m add-ons
+(£86m total). The f5 card, committed earlier in this sequence, carries £81.4m + £4.2m
+from a different source. Same £86m total; the £0.1m split difference is immaterial and
+f5 was not reopened, to keep the one-fixture-per-commit sequence intact.
+
+**Gaps logged for f3 (original run, superseded above):** no referee named; no per-team card lines; no Win-or-+2
 prices in the source file (market omitted from the card). Lille's remaining 4
 arrivals and 9 departures not named; PSG's full incoming list and any CB/GK/DM
 business unestablished; French window open until 1 September 2026.
