@@ -1,4 +1,4 @@
-f1 | 19:00 | Racing Santander – Elche | TODO
+f1 | 19:00 | Racing Santander – Elche | DONE
 f2 | 20:30 | Bayern Monaco – Stoccarda | TODO
 f3 | 20:45 | Lille – PSG | TODO
 f4 | 20:45 | Milan – Venezia | TODO
