@@ -79,6 +79,40 @@
 - Fox Sports — Lille finish third in Ligue 1 to secure Champions League berth
   https://www.foxsports.com/articles/soccer/lille-finishes-third-in-ligue-1-to-secure-a-champions-league-berth-despite-losing-to-auxerre
 
+## f4 · AC Milan – Venezia
+- SempreMilan — Serie A preview: AC Milan vs Venezia, team news, opposition insight
+  (venue, MD1 results, Pulisic/Cissé, H2H at San Siro)
+  https://sempremilan.com/preview-ac-milan-venezia-team-news-stats-2026-27
+- WhoScored — AC Milan vs Venezia, Serie A 2026/2027 statistical preview
+  https://www.whoscored.com/matches/1980881/preview/italy-serie-a-2026-2027-ac-milan-venezia
+- The Football Faithful — AC Milan vs Venezia match preview and team news
+  https://thefootballfaithful.com/ac-milan-vs-venezia-match-preview/
+- World Soccer Talk — Milan miss Champions League qualification: 2025-26 Serie A final
+  standings (Milan 5th, Inter champions, Napoli 2nd, Roma 73, Como 71)
+  https://worldsoccertalk.com/amp/news/christian-pulisics-ac-milan-miss-champions-league-qualification-updated-2025-26-serie-a-standings-after-final-round/
+- Wikipedia — 2025–26 Serie A
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_Serie_A
+- Milan Reports / Ceccarini — AC Milan's summer transfer market plans (CB + 20-goal
+  striker; ~€30m guaranteed from Pobega, Jiménez, Morata permanents)
+  https://milanreports.com/2026/03/28/ac-milan-summer-transfer-plans/
+- AC Milan official — transfer window
+  https://www.acmilan.com/en/transfer-window
+- Football Italia — Official: Venezia promoted to Serie A for 2026-27
+  https://football-italia.net/official-venezia-promoted-to-serie-a-frosinone/
+- Venezia FC official — club history (Stroppa, 82 points, third Serie B title)
+  https://en.veneziafc.it/club/history
+- Wikipedia — 2025–26 Serie B (Adorante 17 goals, Venezia champions)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_Serie_B
+- Wikipedia — 2025–26 Venezia FC season
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_Venezia_FC_season
+
+**Gaps logged for f4:** no referee named. Milan's 2026 incoming business
+unverified — only the stated plan (CB + 20-goal striker) and the outgoing
+€30m are documented; Italian window open until 1 September 2026. Venezia's
+2026 summer ins and outs not established at all — the widest single hole in
+this fixture. No Venezia absences reported (absence of report, not report of
+absence).
+
 **Gaps logged for f3:** no referee named; no per-team card lines; no Win-or-+2
 prices in the source file (market omitted from the card). Lille's remaining 4
 arrivals and 9 departures not named; PSG's full incoming list and any CB/GK/DM
