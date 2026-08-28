@@ -141,6 +141,48 @@
 - Yahoo Sports — Maresca wants "one or two more captains" in final push of the window
   https://sports.yahoo.com/articles/maresca-wants-one-two-more-121234280.html
 
+## f6 · Alavés – Villarreal
+- Yahoo Sports — PREVIEW Alavés vs Villarreal CF, LaLiga 28/08 (venue, standings,
+  form, Mariano Díaz, Gerard Moreno/Sergi fitness, venue H2H, 16-match run)
+  https://sports.yahoo.com/articles/preview-alav-vs-villarreal-cf-193500209.html
+- Sofascore — Deportivo Alavés vs Villarreal: LaLiga preview with form, xG, key players
+  https://www.sofascore.com/news/deportivo-alaves-vs-villarreal-laliga-preview-with-form-xg-and-key-players
+- Sports Mole — Alaves vs Villarreal preview, team news, lineups
+  https://www.sportsmole.co.uk/football/villarreal/preview/alaves-vs-villarreal-prediction-team-news-lineups_603760.html
+- beIN Sports — Marcelino to leave Villarreal at the end of the season (4 May 2026)
+  https://www.beinsports.com/en-us/soccer/la-liga/articles/marcelino-to-leave-villarreal-at-the-end-of-the-season-2026-05-04
+- Wikipedia — 2025–26 Villarreal CF season (3rd place under Marcelino)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_Villarreal_CF_season
+- LaLiga — official Villarreal CF staff 2026/27 (Íñigo Pérez)
+  https://www.laliga.com/en-GB/clubs/villarreal-cf/squad
+- Yahoo Sports — Villarreal close in on Ligue 1 striker as final summer signing
+  (Gulácsi in; Terrats and Pedraza out)
+  https://sports.yahoo.com/article/villarreal-close-ligue-1-striker-175000227.html
+- Infobae — "El Alavés más continuista al estilo Sánchez Flores", 9 Aug 2026
+  (continuity, Guridi to Sevilla, Mikel Rodríguez, Miguel Rodríguez, Valentini)
+  https://www.infobae.com/espana/agencias/2026/08/09/el-alaves-mas-continuista-al-estilo-sanchez-flores/
+- Betfair ES — Deportivo Alavés: fichajes, plantilla y alineación 2026/27
+  https://www.betfair.es/blog/futbol/futbol-espanol/laliga/deportivo-alaves-fichajes-plantilla-y-alineacion-ideal-para-la-temporada-202627-120826-1245.html
+- Wikipedia — 2025–26 Deportivo Alavés season (Coudet to 3 March, Sánchez Flores after)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_Deportivo_Alav%C3%A9s_season
+- LaLiga — latest Deportivo Alavés signings
+  https://www.laliga.com/en-GB/clubs/d-alaves/transfers
+
+**Gaps logged for f6:** no referee named; no per-team card lines. Villarreal's
+remaining incoming business and any CB/DM movement unestablished; Spanish window
+open until 1 September 2026 and a Ligue 1 striker still being pursued. No Alavés
+absences reported — absence of report, not report of availability.
+**Contradiction:** one source gives Alavés's 2025-26 finish as 14th while citing
+table data showing 19th on 36 points; 19th would mean relegation and is
+incompatible with their playing in LaLiga this season, so 14th is the reading
+consistent with the rest of the evidence — logged, not silently resolved.
+**Resolved ambiguity:** the preview attributes fitness concerns over Gerard Moreno
+and Sergi to "manager Íñigo Pérez" without naming a club; LaLiga's official staff
+listing confirms Pérez is Villarreal's 2026/27 manager, so both are Villarreal
+players (Moreno is the club's vice-captain and No. 7).
+**Cross-card note:** Villarreal's 2-2 at Racing Santander is f1's opening-weekend
+result, seen from the other side.
+
 **Gaps logged for f5:** no referee named. Palace's confirmed 2026 ins and outs not
 fully established (Tomori and Tzolis are reported targets, not deals; McNeil's
 arrival inferred from the projected XI rather than a transfer report); English
