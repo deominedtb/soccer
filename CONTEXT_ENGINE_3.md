@@ -10,10 +10,17 @@ STANDING RULES
   fixtures_N.md.
 - Never rewrite BOARD_SHELL.html. It is the permanent template.
 - Never regenerate a fixture that is already DONE in progress_N.md.
-- Research every team. Max 2 searches per team plus 1 shared preview
-  search per fixture. Use one combined query per team covering
-  transfers, manager and system change together — not one query each.
-  Stop once you have that, and note any gap rather than chasing it.
+- Research every team until the RESEARCH SPEC is satisfied, with a
+  ceiling of 4 searches per team — 8 if the team is newly promoted or
+  has changed manager — plus 1 shared preview search per fixture.
+  Stop as soon as the spec is covered; do not spend the budget for
+  its own sake. Start with one combined query per team covering
+  transfers, manager and system change together, then spend what is
+  left on whatever the spec still lacks — defensive signings, fees
+  and the GK/CB/DM ledger before anything else.
+- If a field is still missing at the ceiling, state the gap and move
+  on. Never estimate a fee, a date or a statistic. A fee nobody has
+  published is reported as unreported, not guessed.
 - Do not narrate your reasoning or your research process. Produce the
   artifact.
 - Phase 1 and Phase 3 are mechanical — OCR and assembly. Run them on

@@ -183,10 +183,50 @@ players (Moreno is the club's vice-captain and No. 7).
 **Cross-card note:** Villarreal's 2-2 at Racing Santander is f1's opening-weekend
 result, seen from the other side.
 
-**Gaps logged for f5:** no referee named. Palace's confirmed 2026 ins and outs not
-fully established (Tomori and Tzolis are reported targets, not deals; McNeil's
-arrival inferred from the projected XI rather than a transfer report); English
-window open until 1 September 2026. **Flags:** Palace described as tasked with
+### f5 gap patch (post-Phase-3, under the raised research ceiling)
+- Sky Sports — Everton sign Brennan Johnson from Crystal Palace as Dwight McNeil moves
+  to Selhurst Park in swap deal (both on four-year deals, no cash fee disclosed)
+  https://www.skysports.com/football/news/11671/13571877/everton-sign-brennan-johnson-from-crystal-palace-as-dwight-mcneil-moves-to-selhurst-park-in-transfer-swap-deal
+- Crystal Palace FC official — Dwight McNeil joins Crystal Palace
+  https://www.cpfc.co.uk/news/announcement/dwight-mcneil-joins-crystal-palace/
+- Sky Sports — Crystal Palace transfer latest: Pierre Sage expects more signings
+  https://www.skysports.com/football/video/30998/13575028/crystal-palace-transfer-latest-pierre-sage-expects-more-signings
+- VAVEL — Pierre Sage provides updates on transfers at Crystal Palace, 20 Aug 2026
+  (six summer signings: Gozo, Mingueza, Tomiyasu, McNeil, Guessand, Khalaili)
+  https://www.vavel.com/en/football/2026/08/20/crystal-palace/1268468-pierre-sage-provides-updates-on-transfers-at-crystal-palace.html
+- Yahoo Sports — Sage pleased with Disasi deal amidst Mateta and Sarr exit rumours
+  https://uk.sports.yahoo.com/news/sage-pleased-disasi-deal-amidst-131939571.html
+- Yahoo Sports — Chelsea and Crystal Palace strike Axel Disasi agreement
+  https://ca.sports.yahoo.com/news/chelsea-crystal-palace-strike-axel-081500196.html
+- Heavy — Chelsea announce exit of Disasi before deadline (season-long loan, loan fee
+  plus full salary, no option or obligation; priority replacement for Lacroix)
+  https://heavy.com/sports/soccer/premier-league/chelsea-fc/axel-disasi-crystal-palace-loan-chelsea/
+- Football365 — Every Premier League transfer confirmed in the summer of 2026
+  https://www.football365.com/news/every-premier-league-transfer-confirmed-in-the-summer-of-2026
+- Sky Sports — Summer transfer window 2026: Premier League deals, ins and outs
+  https://www.skysports.com/football/news/11095/13546618/transfer-news-summer-transfer-window-2026-premier-league-deals-ins-and-outs
+- FotMob — Crystal Palace transfer history, players in and out (fees)
+  https://www.fotmob.com/teams/9826/transfers/crystal-palace
+
+**f5 gap now CLOSED on the squad ledger.** Confirmed Palace 2026 business —
+IN: Tomiyasu (free, origin club unnamed in sources), Mingueza (free, Celta Vigo),
+Khalaili (£21m, Royale Union Saint-Gilloise), Gozo (£11.12m, Real Salt Lake),
+Guessand (loan, Aston Villa), McNeil (swap for Brennan Johnson, no cash fee),
+Disasi (season-long loan from Chelsea, loan fee + full salary, no option/obligation).
+OUT: Lacroix (£52m, Chelsea), Brennan Johnson (Everton, swap), Guéhi (Jan 2026, Man City).
+**Corrections made:** Tomori and Tzolis did NOT sign — they were reported targets only
+and appear nowhere in confirmed business; McNeil's arrival, previously inferred from a
+projected XI, is confirmed but via swap, not purchase. Both recorded in section D.
+**Discarded as unreliable:** one aggregate summary reported Palace's total spend as £0m
+and total income as £0m while also giving net spend as £52m — internally incoherent,
+so no aggregate spend figure is used; only individually named fees.
+**Discarded as stale:** a search return listing Dean Henderson, Jefferson Lerma and
+Matheus França as "2026 summer arrivals" — all are 2023–24 signings; not used.
+
+**Gaps remaining for f5:** no referee named; no goalkeeper or defensive-midfield
+business reported in either direction; Mateta and Sarr exit rumours unresolved with
+the window open to 1 September 2026; Tomiyasu's previous club not named in sources.
+**Flags:** Palace described as tasked with
 competing in the Europa League despite finishing 15th — qualification route not
 established; a "Mateta exit bombshell" headline runs against a preview that has him
 starting; one source dates Maresca's assistant spell to the 2018-19 treble while
