@@ -106,6 +106,52 @@
 - Wikipedia — 2025–26 Venezia FC season
   https://en.wikipedia.org/wiki/2025%E2%80%9326_Venezia_FC_season
 
+## f5 · Crystal Palace – Manchester City
+- Yahoo Sports — PREVIEW Crystal Palace vs Manchester City, PL 28/08 (venue, standings,
+  both injury lists, projected XIs, Selhurst Park record, Maresca succession)
+  https://sports.yahoo.com/articles/preview-crystal-palace-vs-manchester-190500387.html
+- Sports Mole — Crystal Palace vs Man City preview, team news, lineups
+  https://www.sportsmole.co.uk/football/crystal-palace/preview/crystal-palace-vs-man-city-prediction-team-news-lineups_603768.html
+- Al Jazeera — Crystal Palace vs Man City: prediction, teams, lineups (27 Aug 2026)
+  https://www.aljazeera.com/sports/2026/8/27/crystal-palace-vs-man-city-premier-league-prediction-teams-lineups
+- Crystal Palace FC official — Pierre Sage appointed Crystal Palace manager
+  (15 June 2026, three-year contract)
+  https://www.cpfc.co.uk/news/announcement/pierre-sage-appointed-crystal-palace-manager/
+- Flashscore — Oliver Glasner announces he will leave Crystal Palace at end of 2025/26
+  https://www.flashscore.com/news/soccer-premier-league-oliver-glasner-announces-he-will-leave-crystal-palace-at-end-of-the-2025-26-campaign/tWe8GUrm
+- Sports Mole — Crystal Palace summer transfers and net spend, 2026 window
+  https://www.sportsmole.co.uk/football/crystal-palace/transfer-talk/feature/crystal-palace-summer-transfers-all-confirmed-ins-and-outs-for-2026_599216.html
+- Al Jazeera — Man Utd target Glasner to leave Palace, Guehi set to sign for City
+  (16 Jan 2026 — Guéhi's January move)
+  https://www.aljazeera.com/sports/2026/1/16/man-utd-target-glasner-to-leave-palace-while-guehi-set-to-sign-for-city
+- Al Jazeera — Enzo Maresca appointed Man City manager to succeed Pep Guardiola
+  (29 June 2026)
+  https://www.aljazeera.com/sports/2026/6/29/enzo-maresca-appointed-man-city-manager-to-succeed-pep-guardiola
+- Sky Sports — Man City appoint former Chelsea head coach as Guardiola's successor
+  https://www.skysports.com/football/news/11679/13548773/enzo-maresca-man-city-appoint-former-chelsea-head-coach-as-pep-guardiolas-successor-at-etihad-stadium
+- Fox Sports — Maresca on three-year deal to replace Guardiola (~£17m compensation)
+  https://www.foxsports.com/stories/soccer/enzo-maresca-reportedly-signs-three-year-deal-to-replace-pep-guardiola-as-man-city-set-to-make-official-announcement
+- Sports Mole — Man City summer transfers and net spend, 2026 window (ins and outs)
+  https://www.sportsmole.co.uk/football/man-city/transfer-talk/feature/man-city-summer-transfers-all-confirmed-ins-and-outs-for-2026_599218.html
+- TeamTalk — Every Man City done deal in the summer 2026 transfer window
+  (Anderson £116m, Bouaddi £81.4m + £4.2m, Detourbet £21.5m, Monga £12m, Rulli, Charles)
+  https://www.teamtalk.com/manchester-city/every-completed-man-city-transfer-summer-2026-signings-exits-loans
+- Man City official — Maresca press conference: expects City to sign one or two more
+  https://www.mancity.com/citytv/mens/enzo-maresca-community-shield-press-conference-63922294
+- Yahoo Sports — Maresca wants "one or two more captains" in final push of the window
+  https://sports.yahoo.com/articles/maresca-wants-one-two-more-121234280.html
+
+**Gaps logged for f5:** no referee named. Palace's confirmed 2026 ins and outs not
+fully established (Tomori and Tzolis are reported targets, not deals; McNeil's
+arrival inferred from the projected XI rather than a transfer report); English
+window open until 1 September 2026. **Flags:** Palace described as tasked with
+competing in the Europa League despite finishing 15th — qualification route not
+established; a "Mateta exit bombshell" headline runs against a preview that has him
+starting; one source dates Maresca's assistant spell to the 2018-19 treble while
+the same passage says 2022-23 — inconsistent, neither used.
+**Cross-card note:** Ayyoub Bouaddi appears as a Lille departure in f3 and as City's
+£81.4m arrival here — the same transfer, seen from both ends of this slate.
+
 **Gaps logged for f4:** no referee named. Milan's 2026 incoming business
 unverified — only the stated plan (CB + 20-goal striker) and the outgoing
 €30m are documented; Italian window open until 1 September 2026. Venezia's
