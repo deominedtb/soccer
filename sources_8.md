@@ -260,7 +260,54 @@ Hoeneß's criticism of the Nick Woltemade sale as current-window business, but
 that transfer belongs to the 2025 window — treated as a resurfaced older report
 and not used as 2026 evidence.
 
-**Gaps logged for f1:** Racing's CB/GK/DM ins-and-outs and transfer fees not
+### f1 gap patch (post-Phase-3, under the raised research ceiling)
+- FútbolFantasy — Racing de Santander mercado de fichajes verano 2026
+  https://www.futbolfantasy.com/laliga/equipos/racing/mercado-fichajes/verano-2026
+- Fichajes.com — Altas y bajas Racing de Santander 2026/2027
+  (Agirrezabala €4.5m, Pedro Felipe ~€500k, Facundo González, Pablo Ramón,
+  Villalibre permanent; outs Mario García, Javi Castro, Michelin, Cabanzón,
+  Camara Sanneh, Calera; Ezkieta loaned to Cádiz; balance −€6.9m)
+  https://www.fichajes.com/equipo/real-racing-club-de-santander/altas-bajas/
+- Betfair ES — Racing de Santander: fichajes, plantilla y alineación 2026/27
+  https://www.betfair.es/blog/futbol/futbol-espanol/laliga/racing-de-santander-fichajes-plantilla-y-alineacion-ideal-para-la-temporada-202627-140826-1245.html
+- Jornada Perfecta — Oficial: Sergio Canales, nuevo jugador del Racing de Santander
+  (free agent, contract to 30 June 2028, first signing of the window)
+  https://www.jornadaperfecta.com/blog/oficial-sergio-canales-fichaje-racing/
+- Flashscore ES — Oficial: Canales vuelve a Santander
+  https://www.flashscore.es/noticias/futbol-laliga-ea-sports-oficial-el-racing-hace-realidad-el-regreso-del-hijo-prodigo-canales-vuelve-a-santander/YaoAhDen/
+- Excélsior — Canales regresa al Racing tras su etapa con Rayados (Monterrey contract
+  expired 30 June 2026)
+  https://www.excelsior.com.mx/deportes/sergio-canales-regresa-racing-santander-tras-etapa-con-rayados
+- FútbolFantasy — Elche mercado de fichajes verano 2026
+  https://www.futbolfantasy.com/mercado-de-fichajes-del-elche-altas-bajas/verano-2026
+- Fichajes.com — Altas y bajas Elche 2026/2027
+  https://www.fichajes.com/equipo/elche-cf/altas-bajas/
+- Betfair ES — Elche CF: fichajes, plantilla y alineación 2026/27
+  (Sangaré Traoré €4.5m RB from Roma, Chust free from Cádiz 30 June 2026,
+  Dituro continuing in goal, ~+€13m invested)
+  https://www.betfair.es/blog/futbol/futbol-espanol/laliga/elche-cf-fichajes-plantilla-y-alineacion-ideal-para-la-temporada-202627-110826-1245.html
+- Wikipedia — Víctor Chust
+  https://en.wikipedia.org/wiki/V%C3%ADctor_Chust
+
+**f1 gaps now CLOSED — both ledgers established.** Racing IN: Canales (free, to
+30 Jun 2028), Agirrezabala (GK, €4.5m — largest fee), Pedro Felipe (CB, ~€500k),
+Facundo González Molino (CB), Pablo Ramón, Villalibre (permanent); a further CB from
+Espanyol on a four-year deal is reported but unnamed. OUT: Mario García (Widzew),
+Javi Castro (Cádiz), Michelin + Cabanzón (Valladolid, free), Camara Sanneh, Calera;
+Ezkieta loaned to Cádiz. Balance −€6.9m. Elche IN: Sangaré Traoré (€4.5m, RB, 18,
+Roma), Ponce, Fer Niño, Villar, Chust (CB, free, Cádiz), Konare Tounkara, Barzic back
+from loan. OUT: Álvaro Rodríguez, Bema Sina. ~+€13m invested; GK untouched (Dituro).
+**Resolved:** the Pedro Felipe / Guliashvili attribution — Pedro Felipe is a Racing
+2026 CB signing, so that absence is Racing's. Guliashvili appears in neither club's
+2026 business and stays unattributed.
+**Resolved:** Canales's absence from fee-ranked altas lists is explained by his free
+transfer, not by the signing being wrong — the two sources are consistent.
+
+**Gaps remaining for f1:** no referee named; no per-team card lines; the Espanyol
+centre-back reported as completing a four-year deal is unnamed in these sources;
+Guliashvili unattributed; Spanish window open to 1 September 2026.
+
+**Gaps logged for f1 (original run, superseded above):** Racing's CB/GK/DM ins-and-outs and transfer fees not
 established; Elche's 2026 summer window not established (window open until
 1 September 2026); Pedro Felipe and Giorgi Guliashvili absences not cleanly
 attributed to a side by the preview source; no referee named.
