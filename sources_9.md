@@ -56,3 +56,50 @@
   → 2025-26: 32 matches, 3.41 cards/game (3.38 Y, 0.03 R); alt. 3.75 Y across 24; career 867 Y / 10 R in 279. 8 penalties in 2025-26 (0.25/match), reported second-most in the division. 2024-25: 506 fouls in 24 games (21.1/match), 112 yellows (4.7/match) → ≈4.5 fouls per card. Five previous Liverpool matches, four Liverpool wins (source dates this only relatively).
 
 *Gap:* Squawka's fouls-per-card leniency ranking returned HTTP 403 and could not be read; the fouls-per-card figure above is derived from the raw 2024-25 foul and card counts, not from that ranking.
+
+---
+
+## Shared — all six German fixtures (f2, f3, f4, f5, f6, f15)
+
+- Wikipedia — 2026–27 Bundesliga
+  https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga
+  → 18 clubs; promoted Schalke 04, SV Elversberg (Bundesliga debut, 59th club in history), SC Paderborn; season began 28 Aug 2026 (Bayern v Stuttgart). All 29 Aug fixtures are matchday 1.
+- Wikipedia — 2025–26 Bundesliga (final table)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_Bundesliga
+  → full 18-club table used as the last-season baseline for every German fixture below.
+- buli-schiri (Bundesliga referee appointments blog), 2026 archive — matchday 1 appointments
+  http://buli-schiri.blogspot.com/2026/
+  → Köln–Hoffenheim: Florian Badstübner (Schüller, Stein). Leipzig–Mönchengladbach: Sven Jablonski (Beitinger, Müller). Mainz–Paderborn: Tobias Stieler (Koslowski, Unger). Elversberg–Leverkusen: Robert Hartmann (Hüwe, Osmanagic). Union Berlin–Frankfurt: Bastian Dankert (Rohde, Stegemann). Dortmund–Hamburg: Felix Zwayer (Kempter, Kimmeyer).
+
+*Gap:* kicker.de matchday page returned HTTP 403; appointments above come from the referee-appointments blog rather than from kicker or the DFB Datencenter directly.
+
+---
+
+## f2 · 1. FC Köln – Hoffenheim
+
+- FOX Sports — 1. FC Köln vs. 1899 Hoffenheim, August 29, 2026
+  https://www.foxsports.com/soccer/bundesliga-fc-koln-vs-hoffenheim-aug-29-2026-game-boxscore-912553
+- wettfreunde.net — Köln – Hoffenheim, 29.08.2026 preview
+  https://www.wettfreunde.net/bundesliga-tipps/koeln-hoffenheim-tipp-ki-prognose-quoten-29-08-2026/
+  → RheinEnergieSTADION, 15:30; Köln DFB-Pokal 2-1 at Würzburg and conceded again; Köln signings Simpson-Pusey, Lochoshvili, Krauß, Heskey, Okon-Engstler; Hoffenheim 18 wins of 34 last season a club record; Kramarić approaching 200th Bundesliga goal involvement.
+- 1. FC Köln official — René Wagner bleibt FC-Cheftrainer
+  https://fc.de/aktuelles/news/rene-wagner-bleibt-fc-cheftrainer
+  → Wagner took over March 2026 after Kwasniok was relieved; contract through 2028.
+- GEISSBLOG — Wagner spricht über Transfers / Transfermarkt: noch acht Neuzugänge?
+  https://geissblog.koeln/2026/07/wagner-spricht-ueber-transfers-haben-einen-zielspieler-bekommen/
+  https://geissblog.koeln/2026/07/zwei-schlagwoerter-fuer-den-transfermarkt-holt-der-fc-noch-acht-neue/
+  → Lochoshvili (CB) and Gideon Mensah (LB) as defensive stabilisers; Okon-Engstler medical; ten departures incl. Kilian (long-term injured) and Carstensen (loaned, unused).
+- sportschau.de — Die Zu- und Abgänge der TSG Hoffenheim zur Saison 2026/27
+  https://www.sportschau.de/fussball/bundesliga/die-transfers-tsg-hoffenheim-zur-saison-2026-27,wechselboerse-tsg-hoffenheim-saison-26-27-100.html
+- heidelbergexpress.de — TSG Hoffenheim 2026/27: Transferoffensive mit 41 Mio. Euro
+  https://heidelbergexpress.de/tsg-hoffenheim-transfersommer-kader-2026-27/
+  → €41.3m invested by early June 2026; de Cat €18m, Daghim €13m, Rots €12m, Wimmer €10m, Lenz €10m, Vogt €2.7m; out Touré to Newcastle (club record, fee unpublished), Damar to Wolfsburg €5.5m, Erlein to Leverkusen €2m, Duric to Paderborn €0.25m.
+- kicker — Liveticker Erzgebirge Aue 0:4 TSG Hoffenheim, DFB-Pokal 1. Runde, 22 Aug 2026
+  https://www.kicker.de/aue-gegen-hoffenheim-2026-dfb-pokal-5204694/ticker
+  → 3-0 at half-time; Wimmer two goals and the assist for Burger; Moerstedt 63'.
+- adamchoi.co.uk / worldsoccerdata — Florian Badstübner referee stats
+  https://www.adamchoi.co.uk/referee/11719/florian-badstubner-stats
+  https://www.worldsoccerdata.com/stats/germany/bundesliga/referees/florian-badstubner-germany
+  → 2025-26 Bundesliga: 13 matches, 30 yellow, 1 red, 2.4 cards per match, 1 penalty.
+
+*Gaps:* no fees published for any Köln arrival; no fee published for Touré's club-record sale; no fouls-per-card figure published for Badstübner; no matchday-one team news (injuries/suspensions) available for either side at time of research.
