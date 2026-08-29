@@ -534,3 +534,32 @@
   → 2025-26 Bundesliga: 16 matches, 4.8 cards per match, 4.94 yellows and 0.13 reds per game (2 reds), 5 penalties in 16 league matches; 13 penalties across all competitions (0.35 per match). Career average 4.63 yellows per game.
 
 *Gaps:* no fees published for any Dortmund arrival; no result retrievable for Dortmund's DFB-Pokal first-round tie at HEBC Hamburg; no fouls-per-card ratio published for Zwayer.
+
+---
+
+## f16 · Real Sociedad – Espanyol
+
+- Yahoo Sports / betfair.es / lagrada.org — PREVIEW: Real Sociedad vs Espanyol (La Liga 29/08)
+  https://sports.yahoo.com/articles/preview-real-sociedad-vs-espanyol-170500751.html
+  https://lagrada.org/posibles-alineaciones-real-sociedad-espanyol-onces-anoeta/
+  → Estadio de Anoeta / Reale Arena, 29 August 2026, 19:00, jornada 3; referee Manuel Jesús Orellana Cid; Real Sociedad 20th on 0 points, Espanyol 7th on 3; probable XIs for both; coaches Matarazzo and Manolo González; Espanyol's first away fixture of the season.
+- futbolfantasy / fichajes.com / betfair.es — Real Sociedad altas y bajas 2026/27
+  https://www.futbolfantasy.com/mercado-de-fichajes-del-real-sociedad-altas-bajas/verano-2026
+  https://www.fichajes.com/equipo/real-sociedad-de-futbol/altas-bajas/
+  → Matarazzo retained; in Mikel Rodríguez (B team) and Miguel Rodríguez (Utrecht), plus returning loanees Owono, Diarra, Maras, Novoa, Picas, Ropero, Diallo, Mendes, Albarracín, Adrián Rodríguez, Valentini (Fiorentina). Out: Guridi to Sevilla, Raúl Fernández to Leganés, Pacheco (end of loan), Calebe to Fortaleza, Diabaté to GAIS; Zakharyan reported leaving.
+- futbolfantasy / betfair.es — RCD Espanyol fichajes y plantilla 2026/27
+  https://www.futbolfantasy.com/mercado-de-fichajes-del-espanyol-altas-bajas/verano-2026
+  https://www.betfair.es/blog/futbol/futbol-espanol/laliga/rcd-espanyol-fichajes-plantilla-y-alineacion-ideal-para-la-temporada-202627-140826-1377.html
+  → In: Hartman (for Carlos Romero), Moscardo (for Pickel), Álex Calatrava (for Terrats), Unai Núñez (for Calero), Tyrhys Dolan, Jofre Carreras, Pere Milla. Out: Joan García to Barcelona (forcing a goalkeeper search), Pablo Ramón, Català Vázquez, Castell Solé, Justin Smith, Hugo Pérez.
+- soccerway — El Espanyol renueva a Manolo González hasta 2027
+  https://es.soccerway.com/noticias/futbol-laliga-ea-sports-el-espanyol-renueva-a-manolo-gonzalez-hasta-2027/2q7Kv0YQ
+- statshub / BDFutbol / eldesmarque / pericos.es — Manuel Jesús Orellana Cid referee profile
+  https://www.statshub.com/referee/orellana-cid-manuel-jesus/789045
+  https://www.bdfutbol.com/en/r/r601403.html?p=stats
+  https://pericos.es/2026/08/28/orellana-cid-pita-en-el-reale-arena-el-arbitro-con-el-que-el-espanyol-no-sabe-perder/
+  → born Seville, 21 February 1992, aged 34; promoted to LaLiga for this season after debuting in Segunda in 2023-24; 36 career matches, 5.33 yellows and 0.14 reds per game, 192 yellows, 5 straight reds, 19 penalties across all competitions; profile described as strict with close control. Almost all of the record is from the second tier. pericos.es frames Espanyol as not having lost under him — media framing, not a statistic.
+
+*Gaps and contradictions:*
+- No injury or suspension list for either club; no fees published for any move at either club.
+- The sources describe both clubs' most recent outing as a defeat to Real Madrid, which cannot be true of the same jornada. Recorded, not resolved; the consistent facts are Sociedad on 0 points from 2 and Espanyol on 3.
+- No fouls-per-card ratio published for Orellana Cid, and his card record was compiled almost entirely in Segunda División rather than LaLiga.
