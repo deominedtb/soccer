@@ -8,7 +8,7 @@ f7 | 16:00 | Bournemouth – Everton | DONE
 f8 | 16:00 | Coventry City – Hull City | DONE
 f9 | 17:00 | Levante – Real Betis | DONE
 f10 | 17:15 | Strasburgo – Lens | DONE
-f11 | 18:30 | Fiorentina – Frosinone | TODO
+f11 | 18:30 | Fiorentina – Frosinone | DONE
 f12 | 18:30 | Monza – Udinese | TODO
 f13 | 18:30 | Sassuolo – Torino | TODO
 f14 | 18:30 | Tottenham – Newcastle United | TODO

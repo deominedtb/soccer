@@ -383,3 +383,39 @@
   → Lens: Antonio suspended (2nd and final match), Gradit and Baidoo not yet available, Chavez (thigh), Celik (knee). Strasbourg: El Mourabet suspended (sent off at Marseille), Panichelli injured; doubts Doukouré, Chilwell, Malonga, Oyedele, Godo, Luković.
 
 *Gaps:* no fees published for Strasbourg's departures, so that window cannot be balanced in money terms; Dechepy's 3.78 overall and 4.35 (2025-26) yellow averages are recorded rather than reconciled, and no fouls-per-card ratio is published for him.
+
+---
+
+## Shared — all four Italian fixtures (f11, f12, f13, f17)
+
+- Wikipedia — 2025–26 Serie A (final table)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_Serie_A
+  → 20-club table used as the last-season baseline. Relegated: Cremonese, Hellas Verona, Pisa.
+- Wikipedia — 2026–27 Serie A
+  https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A
+  → promoted: Venezia, Frosinone, Monza; season began 22 August 2026. MW1 (22-24 Aug): Fiorentina 0-4 Roma, Monza 1-4 Inter, Frosinone 0-1, Udinese 1-1, Sassuolo 1-2, Torino 1-2, Juventus 1-0, Parma 0-1. Milan on 6 points from 2 after the 28 Aug fixture, so the 29 August games are matchday 2.
+- Wikipedia — 2025–26 Serie B (final table)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_Serie_B
+  → Venezia champions 82 pts (24/10/4, 77 GF, 31 GA); Frosinone 2nd 81 pts (23/12/3, 76 GF, 34 GA), automatic; Monza 3rd 76 pts (22/10/6, 61 GF, 32 GA), promoted via the play-off final against Catanzaro.
+
+---
+
+## f11 · Fiorentina – Frosinone
+
+- Eurosport.it / fantamaster / calcionews.eu — Fiorentina-Frosinone probabili formazioni
+  https://www.eurosport.it/calcio/serie-a/2026-2027/fiorentina-frosinone-probabili-formazioni-statistiche-quando-e-dove-vederla_sto23331603/story.shtml
+  https://www.fantamaster.it/probabili-formazioni-fiorentina-frosinone-seriea-2026-2027-notizie-fantacalcio/
+  → Stadio Franchi, Saturday 29 August 18:30, matchday 2; referee Collu (Cagliari section), assistants Tegoni and Yoshikawa, fourth official Ayroldi; probable XIs for both sides; coaches Grosso and Alvini.
+- violanews.com — Calciomercato Fiorentina: acquisti, cessioni e obiettivi
+  https://www.violanews.com/calciomercato/calciomercato-fiorentina-acquisti-cessioni-e-obiettivi-il-riepilogo/
+  → In: Oulai €26m (Trabzonspor), Atta €25m (Udinese), Pellegrino €22.5m (Parma), Viery €15m (Grêmio), Drăgușin (Tottenham, €1.5m loan + €17.5m obligation), Valdepeñas €8m (Real Madrid, buyback), João Mário (Juventus, €1.8m loan + €9.5m option), Mastantuono (Real Madrid, free loan). Out: Beltrán (River Plate, loan with obligation), Comuzzo to Torino (loan, €19m option), Piccoli to Bologna (loan, €18m obligation), Richardson to Le Havre (loan, €8m option). Targets: Thorstvedt, Torreira, Zirkzee, Icardi. Window closes 1 September 2026.
+- lottomatica.sport / alefrosinone.it / SportMediaset — Frosinone 2026-27 guide and transfer board
+  https://www.lottomatica.sport/news/calcio/fantacalcio/guida-completa-frosinone-2026-27-probabile-formazione-nuovi-acquisti-rigoristi-infortunati-consigli-fantacalcio/
+  https://www.alefrosinone.it/calciomercato-frosinone-tabellone-acquisti-cessioni/
+  → Alvini stayed after promotion; roughly fifteen arrivals — Raimondo (Bologna), Calvani (Genoa), El Azzouzi (Bologna), Fini (Genoa), Desplanches (GK, loan from Palermo), Zerbin (Napoli), Hasa (Carrarese), Konè (bought from Como), Amey (Bologna), Cittadini (Atalanta), Akpoguma (free), Masini (Genoa), Fayed (Fenerbahçe), Grillitsch (Sporting Braga), Schmid (Werder Bremen); 4-3-3 shifting to 4-2-3-1; club plan to deliver ~80% of the squad to Alvini.
+- betfair.it / pianetafanta / sbostats — Giuseppe Collu referee stats
+  https://www.betfair.it/blog/calcio/arbitri-che-assegnano-piu-rigori-090226-1278.html
+  https://www.pianetafanta.it/statistiche-arbitri.asp?NomeArbitro=COLLU+G.&tipolink=100
+  → 2025-26: 5 penalties in 11 matches, 0.42 per match, fourth-highest in Serie A behind Zufferli 0.50, Sozza 0.47, Guida 0.44; 22.25 fouls per match, the lowest of any Serie A referee that season.
+
+*Gaps:* no injury or suspension list found for either club; no fees published for any Frosinone arrival; no cards-per-game figure or fouls-per-card ratio retrievable for Collu, whose 2025-26 sample is only 11 matches.
