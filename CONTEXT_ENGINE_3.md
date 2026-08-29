@@ -51,8 +51,31 @@ Per team, establish:
   competitive matches, say so and say why — postponement, calendar,
   matchday one.
 
-Per fixture, establish: venue, kickoff, referee if named, and any
-suspension or major injury carried into the game.
+Per fixture, establish: venue, kickoff, and any suspension or major
+injury carried into the game.
+
+Referee — always look this up yourself; I never supply it. Spend one
+dedicated search on the appointment, and if it is published, a second
+on that official's record. Establish:
+- The appointed referee's name and whether the appointment is
+  confirmed or still provisional.
+- Their cards per game this season and last, and fouls per card —
+  a low fouls-per-card official books early, a high one lets play run.
+- Penalties awarded per game, and whether they are known for a
+  strict or lenient reading of contact in the box.
+- Any history with either club worth noting.
+
+Appointments in most leagues appear one to three days before
+kickoff. If the fixture is further out than that, say the
+appointment is not yet published rather than guessing, and mark
+Discipline as evidence-thin in section C for that reason alone.
+If the appointment is known but the official is newly promoted to
+this division with little record, say so — an unknown referee is
+itself a reason discipline markets carry more variance.
+
+Referee findings belong in section A as their own bullet, and must
+be carried into the Discipline row of section C. A cards or fouls
+rating that does not reference the official is incomplete.
 
 Sources, in preference order: official league site, FBref, Sofascore,
 Transfermarkt, Wikipedia season pages, then local press for mercato
@@ -153,6 +176,9 @@ Fragment structure:
       <li><strong>Suspensions / absences.</strong> …</li>
       <li><strong>Sample.</strong> What each side has actually played
           this season, and why if zero.</li>
+      <li><strong>Referee.</strong> Name, confirmed or provisional,
+          cards per game, fouls per card, penalty rate. Say plainly
+          if the appointment is not yet published.</li>
     </ul>
 
     <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
