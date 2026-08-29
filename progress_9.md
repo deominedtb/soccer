@@ -10,7 +10,7 @@ f9 | 17:00 | Levante – Real Betis | DONE
 f10 | 17:15 | Strasburgo – Lens | DONE
 f11 | 18:30 | Fiorentina – Frosinone | DONE
 f12 | 18:30 | Monza – Udinese | DONE
-f13 | 18:30 | Sassuolo – Torino | TODO
+f13 | 18:30 | Sassuolo – Torino | DONE
 f14 | 18:30 | Tottenham – Newcastle United | TODO
 f15 | 18:30 | Borussia Dortmund – Amburgo | TODO
 f16 | 19:00 | Real Sociedad – Espanyol | TODO

@@ -453,3 +453,28 @@
   → Allegretta reported with 0 Serie A appearances and 0 completed Serie A seasons.
 
 *Gaps:* no fees published for any Monza arrival; no Monza injury or suspension list; no cards, fouls-per-card or penalty data of any kind for Allegretta, who has no Serie A record.
+
+---
+
+## f13 · Sassuolo – Torino
+
+- Corriere dello Sport / Toro.it / torinotoday — Sassuolo-Torino probabili formazioni
+  https://www.corrieredellosport.it/formazione/calcio/serie-a/2026/08/30-2638141/sassuolo-torino
+  https://www.toro.it/toro/partite/probabile-formazione-sassuolo-torino-aquilani-26-27/1436568/
+  → Mapei Stadium – Città del Tricolore, Reggio Emilia, Saturday 29 August 18:30; Sassuolo (4-3-3) Muric; Cinquegrano, Odenthal, Macchioni, Doig; Bakola, Matic, Adzic; Volpato, Bowie, Laurienté, Berardi on the bench, defensive selection unresolved. Torino (3-4-2-1) Mascardi; Comuzzo, Coco, Cömert; Pedersen, Gineitis, Fitz-Jim, Cacciamani; Casadei, Vlašić; Simeone. Coaches Aquilani (after Grosso left for Fiorentina) and Abate (after D'Aversa was not confirmed). MW1: Sassuolo 1-2 Atalanta, Torino 1-2 Milan.
+- canalesassuolo.it / SportMediaset — Sassuolo tabellone calciomercato 2026-2027
+  https://www.canalesassuolo.it/sassuolo-il-tabellone-live-del-calciomercato-2026-2027/
+  → In: Adzic (Juventus, loan with option and counter-option), Bowie (Verona, loan with right/obligation), Dominguez (Bologna, loan with option), Leysen (Union Saint-Gilloise, loan with option/obligation), Muric (GK, Ipswich Town, bought outright), Obrador (Benfica, loan with option), Satalino (GK, free), Walukiewicz (Torino, bought outright). Out: Caligara, Ciervo, Cinquegrano, Di Bitonto, Ghion, Missori, Nuamah, Odenthal, Paz, Pierini, Skjellerup (end of loan), Álvarez, Amendola, Antiste.
+- Eurosport.it / Goal.com Italia — Tabellone mercato Serie A 2026-27
+  https://www.eurosport.it/calcio/calciomercato/2026-2027/il-tabellone-del-mercato-estivo-della-serie-a-2026-27-acquisti-cessioni-ufficialita-e-tutte-le-operazioni_sto23311886/story.shtml
+  → Torino: Milinković-Savić bought outright; Comuzzo from Fiorentina on loan with a €19m option; Oristanio in; Walukiewicz sold to Sassuolo. Window closes 20:00 on 1 September 2026.
+- sport.virgilio.it / pianetafanta — Davide Di Marco referee profile
+  https://sport.virgilio.it/calcio/arbitri/davide-di-marco/
+  https://www.pianetafanta.it/statistiche-arbitri.asp?NomeArbitro=DI+MARCO+D.&tipolink=100
+  → Ciampino section; promoted to CAN in 2022; the available record indicates only around four Serie A appearances; no aggregated cards, fouls-per-card or penalty figures published.
+
+*Gaps and contradictions:*
+- Sassuolo's published departures list includes Cinquegrano and Odenthal, both of whom appear in the probable starting eleven; the source appears to conflate end-of-loan returns with genuine exits. Recorded, not resolved.
+- Torino's probable eleven names Mascardi in goal rather than Milinković-Savić, whom the club bought outright.
+- No fees published for any Sassuolo arrival; sources on Torino's window were noticeably thinner than for other clubs on this card.
+- No injury or suspension list found for either club.
