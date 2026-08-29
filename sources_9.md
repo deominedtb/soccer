@@ -237,3 +237,35 @@
 - Stanley Nsoki: one summary records him moving *to* Hoffenheim for €1.5m, the bundesliga.com preview records him arriving *at* Union permanently from Hoffenheim. Reported in the card as the preview states, with the contradiction flagged; the €1.5m figure is not confidently attached to either direction.
 - Frankfurt arrivals Otávio Manoel Galdino Fernandes and Krisztián Lisztes are both reported at €4.5m from Estrela in the same source; recorded as unresolved rather than confirmed.
 - No matchday-one team news for either side.
+
+---
+
+## f7 · Bournemouth – Everton
+
+- Sports Mole — Preview: Bournemouth vs Everton, prediction, team news, lineups
+  https://www.sportsmole.co.uk/football/bournemouth/preview/bournemouth-vs-everton-prediction-team-news-lineups_603790.html
+  → Vitality Stadium; Bournemouth lost 2-1 at Man City in Rose's first match, Tavernier scoring, City twice in the last six minutes, ending a club-record 18-game unbeaten league run. Everton 2-0 v Crystal Palace, 4-0 v Preston North End (Carabao Cup, 26 Aug), Barry hat-trick, four goals in two. Bournemouth out: Araújo, Kroupi, Adli, Milošavljević; suspended: Christie; doubts: Soler, Brooks, Rodríguez, Sánchez. Semenyo 10 goals, 27 shots on target. Everton out: Iroegbunam; doubt: Nørgaard.
+- AFC Bournemouth official — Marco Rose to become Head Coach ahead of 26/27 season
+  https://www.afcb.co.uk/news/2026/april/20/marco-rose-to-become-head-coach-ahead-of-26-27-season
+- ESPN / NBC Sports / Sky Sports — Bournemouth hire Marco Rose to replace Andoni Iraola
+  https://www.espn.com/soccer/story/_/id/48519539/marco-rose-replace-andoni-iraola-bournemouth-head-coach
+  https://www.nbcsports.com/soccer/news/bournemouth-hire-marco-rose-to-replace-andoni-iraola-for-2026-27-premier-league-season
+  → Rose, 49, Leipzig-born, three-year deal; previously RB Salzburg (three Austrian trophies), Borussia Mönchengladbach, Borussia Dortmund, RB Leipzig.
+- Sports Mole — Bournemouth summer transfers and net spend, 2026 window
+  https://www.sportsmole.co.uk/football/bournemouth/transfer-talk/feature/bournemouth-summer-transfers-all-confirmed-ins-and-outs-for-2026_599225.html
+  → In: Álvaro Rodríguez CF £21.5m (Elche), António Silva CB £21.4m (Benfica), Juanlu Sánchez RB £11.1m (Sevilla), Di Gregorio GK (loan, Juventus). Out: Senesi CB free to Tottenham, Ünal CF free to Getafe, Paulsen (loan, Motherwell), Jiménez (loan, Fiorentina), Harris (Wigan), Merritt (loan, Newport), Dennis (MK Dons). Spend £54m, income £0m, net −£54m.
+- Sports Mole — Everton summer transfers and net spend, 2026 window
+  https://www.sportsmole.co.uk/football/everton/transfer-talk/feature/everton-summer-transfers-all-confirmed-ins-and-outs-for-2026_599217.html
+  → Moyes retained; in: Johnson £22m (Crystal Palace), Röhl ~£21m (Freiburg, on loan at Everton last season), George £18m (Chelsea), Hackney £16m (Middlesbrough), Nørgaard £6.8m (Arsenal). Out: McNeil £22m (Crystal Palace, Johnson swap), Gueye (Al Diriyah), releases Coleman, Onyango, Welch. Second season at the Hill Dickinson Stadium.
+- everton.news — Premier League announce referee for Everton vs Bournemouth
+  https://www.everton.news/premier-league-announce-referee-for-everton-vs-bournemouth-this-weekend/
+  → Chris Kavanagh; assistants Dan Cook and Craig Taylor; John Brooks VAR at Stockley Park; 29 August 2026, 16:00 (CEST).
+- statshub / statz.ai / valuestats — Chris Kavanagh referee stats
+  https://www.statshub.com/referee/chris-kavanagh/107059
+  https://statz.ai/referee/chris-kavanagh
+  https://valuestats.com/en/referee/14808-chris-kavanagh
+  → 2025-26: 29 matches, 4.31 yellows per game, 22.41 fouls per game (≈5.2 fouls per card). Career: 3.65 yellows and 0.09 reds per game, 1,176 yellows, 28 straight reds, 81 penalties in all competitions.
+
+*Gaps and contradictions:*
+- The Premier League's own Matchweek 2 officials page lists ten officiating teams without pairing them to fixtures; the Kavanagh appointment above comes from a club-news source whose headline frames the fixture as Everton v Bournemouth, while the previews and the odds file both place Bournemouth at home at the Vitality Stadium. Referee and date match; the home-and-away framing in that source does not.
+- Merlin Röhl's fee is given as £21m in one summary and around £22m in another.
