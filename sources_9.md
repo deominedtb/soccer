@@ -615,3 +615,33 @@
   → 2025-26 Ligue 1: 8 matches, 25 yellows, 1 direct red, 1 second yellow, 4 penalties; 3.13 yellows per match against a divisional average of 3.53; 0.50 penalties per match against an average of 0.34, reported as a 45% chance of a penalty in his matches; 25% of his matches ended with a second caution or red. All competitions: 11 matches, 38 yellows, 2 direct reds, 2 second-yellow dismissals, 5 penalties.
 
 *Gaps:* no fees published for departures at either club; the Angers incoming list found was noticeably thinner than for other clubs on this card and shows no centre-forward signing; eight Ligue 1 matches is a thin base for Ben El Hadj and no fouls-per-card ratio is published.
+
+---
+
+## f19 · Brest – Toulouse
+
+- Yahoo Sports / whoscored / Forebet — PREVIEW: Brest vs Toulouse (Ligue 1 29/08)
+  https://sports.yahoo.com/articles/preview-brest-vs-toulouse-team-185800820.html
+  https://www.whoscored.com/matches/1984083/preview/france-ligue-1-2026-2027-brest-toulouse
+  → Stade Francis-Le Blé, 29 August 2026, 20:45, matchday 2; Brest sixth on 1 point after a 2-2 at Le Mans, Toulouse sixteenth with no points and no goals after losing 0-2 at home to Lyon. Brest without Chardonnet (calf), Magnetti a doubt; Toulouse reported with no injury concerns. Toulouse beat Brest twice last season, both 2-0.
+- franceinfo / Eurosport — Le Stade Brestois choisit Julien Lachuer pour succéder à Eric Roy
+  https://www.franceinfo.fr/sports/foot/ligue-1/le-stade-brestois-choisit-julien-lachuer-pour-succeder-a-eric-roy-au-poste-d-entraineur_8077823.html
+  https://www.eurosport.fr/football/ligue-1/2026-2027/ligue-1-orphelins-deric-roy-les-brestois-entament-au-mans-une-saison-compliquee-avec-un-lourd-heritage-a-assumer_sto23329923/story.shtml
+  → Éric Roy died 17 June 2026; Julien Lachuer appointed 27 June for two seasons — a Brest goalkeeper 2005-2010, later goalkeeping coach, Roy's assistant since 2023, with no prior head-coach experience.
+- Wikipedia — Grégory Lorenzi
+  https://en.wikipedia.org/wiki/Gr%C3%A9gory_Lorenzi
+  → appointed sporting director of Olympique de Marseille on 28 May 2026, leaving Stade Brestois.
+- dicodusport — Mercato Brest 2026-2027
+  https://dicodusport.fr/blog/mercato-brest-2026-2027-le-tableau-complet-des-transferts-arrivees-et-departs/
+  → five arrivals recorded with twelve days of the window remaining; club's established pattern of using loans from wealthier clubs. Individual names and fees not retrievable.
+- dicodusport / footmercato — Mercato Toulouse 2026-2027
+  https://dicodusport.fr/blog/mercato-toulouse-2026-2027-le-tableau-complet-des-transferts-arrivees-et-departs/
+  https://www.footmercato.net/club/tfc/tableau/
+  → Carles Martínez Novell left for Bayer Leverkusen; Jens Berthel Askou appointed. In: Thomas Jørgensen €7.5m (largest), Sion Oppong, Christ Tapé. Out: Emersonn €28m (largest sale), Ibrahim Cissoko, Edhy Zuliani; Mario Sauer loaned out.
+- statshub / whoscored / Wikipedia — Jérôme Brisard referee stats
+  https://www.statshub.com/referee/jerome-brisard/157707
+  https://fr.whoscored.com/referees/867/show/jerome-brisard
+  https://en.wikipedia.org/wiki/J%C3%A9r%C3%B4me_Brisard
+  → 240 career matches, 179 in Ligue 1; 3.75 yellows and 0.22 reds per match; 90 penalties (about 0.38 per match); refereed the 2026 Coupe de France final. Ligue 1 averages for comparison: 3.53 yellows, 0.17 reds, 0.34 penalties.
+
+*Gaps:* Brest's five summer arrivals could not be identified by name or fee in any source consulted; Brisard's figures are career averages rather than an isolated 2025-26 season, and no fouls-per-card ratio is published.
