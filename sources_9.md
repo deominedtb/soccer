@@ -501,3 +501,36 @@
   → 2025-26: 3.77 yellows per match, 72 yellows (third-highest in the division), three red cards (most of any official), 6 penalties, 20 fouls per 90 (≈5.3 fouls per card). Career average 3.94 yellows per game.
 
 *Gaps and contradictions:* the Tonali fee is reported as £92.5m by the Newcastle-side source and around £100m by the Tottenham-side source; no definitive Tottenham net-spend figure is published because several deals carry undisclosed costs and add-ons.
+
+---
+
+## f15 · Borussia Dortmund – Hamburger SV
+
+- eurosport.de / whoscored / thehardtackle — Dortmund vs Hamburger SV preview, 29 August 2026
+  https://www.eurosport.de/wetten/prognosen/borussia-dortmund-vs-hamburger-sv-prognose-tipps-und-quoten-bundesliga/
+  https://www.whoscored.com/articles/m83SAPzkN0WeBpQS1GbHhg/show/20260829-borussia-dortmund-vs-hamburg-prediction-1787992510
+  → Signal Iduna Park, capacity 81,365, matchday 1; Dortmund second last season on 73 points with five defeats; HSV promoted 2025 after seven years in the 2. Bundesliga and survived, now regrouping after losing important players. Dortmund without Emre Can and Nico Schlotterbeck, Gadou expected in a back three with Anton and Bensebaini. HSV: Omari (shoulder, conservative treatment), Muheim (muscular); Grønbæk fully fit after his cup double. Nmecha starred for Germany at the 2026 World Cup, partnering Bellingham.
+- bulinews / Yahoo Sports — Borussia Dortmund 2026/27 season preview
+  https://bulinews.com/borussia-dortmund-2026/27-season-preview-transfers-pre-season-predicted-lineup-predictions
+  https://sports.yahoo.com/articles/borussia-dortmund-2026-27-season-105100145.html
+  → Niko Kovač head coach; in Joey Veerman (PSV), Justin Lerma (18, Independiente del Valle), Kaua Prates (Cruzeiro), Joane Gadou (RB Salzburg); Niklas Süle retired from professional football at 30 after health issues, joining SV Tiefenbach.
+- SPORT1 / fussballtransfers / hamburg1887 — Hamburger SV Transfers 2026/2027
+  https://www.sport1.de/team/hamburger-sv/opta_161/transfers
+  https://hamburg1887.de/transfers/
+  → In: Patson Daka (27, free, Leicester City, 22/07/2026), Albert Grønbæk (25, Stade Rennes, €4.7m, 01/07/2026), Martin Adeline (22, Troyes, €4m), Kofi Amoako (Dynamo Dresden, €1.8m, 01/07/2026), Bilal Nadir (22, free, Marseille, 24/07/2026). Out: Łukasz Poręba to SV Elversberg €1.6m, Gocholeishvili to Shakhtar Donetsk, Fábio Baldé to Strasbourg, Downs back to Southampton (end of loan).
+- HSV.de / Sky Sport — Merlin Polzin bleibt Cheftrainer des HSV
+  https://www.hsv.de/news/merlin-polzin-bleibt-cheftrainer-des-hsv
+  https://sport.sky.de/fussball/artikel/merlin-polzin-bleibt-trainer-beim-hsv-auch-ueber-den-sommer-hinaus/13538450/34943
+  → Polzin retained; contract extension reported as still under negotiation.
+- kicker / ZDF / SPORT1 — DFB-Pokal 1. Runde: SC Verl 0:3 Hamburger SV
+  https://www.kicker.de/verl-gegen-hsv-2026-dfb-pokal-5204715/ticker
+  → 1-0 at half-time after a difficult first half; Grønbæk 41' and 46', Louis Lemke 50'.
+- de.wikipedia / DFB Datencenter — DFB-Pokal 2026/27 first round draw
+  https://de.wikipedia.org/wiki/DFB-Pokal_2026/27
+  → Dortmund drawn away at HEBC Hamburg; result not retrievable in the sources consulted.
+- statshub / statz.ai / whoscored — Felix Zwayer referee stats
+  https://www.statshub.com/referee/zwayer-felix/52417
+  https://statz.ai/referee/felix-zwayer
+  → 2025-26 Bundesliga: 16 matches, 4.8 cards per match, 4.94 yellows and 0.13 reds per game (2 reds), 5 penalties in 16 league matches; 13 penalties across all competitions (0.35 per match). Career average 4.63 yellows per game.
+
+*Gaps:* no fees published for any Dortmund arrival; no result retrievable for Dortmund's DFB-Pokal first-round tie at HEBC Hamburg; no fouls-per-card ratio published for Zwayer.
