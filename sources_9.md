@@ -103,3 +103,34 @@
   → 2025-26 Bundesliga: 13 matches, 30 yellow, 1 red, 2.4 cards per match, 1 penalty.
 
 *Gaps:* no fees published for any Köln arrival; no fee published for Touré's club-record sale; no fouls-per-card figure published for Badstübner; no matchday-one team news (injuries/suspensions) available for either side at time of research.
+
+---
+
+## f3 · RB Leipzig – Borussia Mönchengladbach
+
+- OneFootball — RB Leipzig 2026/27 preview: Demichelis era, Diomande sale, Nkunku return
+  https://onefootball.com/en/news/rb-leipzig-202627-preview-demichelis-era-diomande-sale-nkunku-return-43347179
+  → Demichelis replaces Ole Werner (who had delivered CL qualification), appointed via Schäfer and Klopp, from Mallorca; Diomande sold for €125m (club record); Nkunku returns; Maxime Estève €25m CB from Burnley; Asllani deal collapsed; Gulácsi future unresolved; pre-season defeats at Leeds and Bayern; 6-0 cup win at Eintracht Trier.
+- bundesliga.com — Teamcheck RB Leipzig 2026/27
+  https://www.bundesliga.com/de/bundesliga/news/teamcheck-saisonvorschau-2026-27-rb-leipzig-demichelis-nkunku-gruda-champions-league-38786
+- sportschau.de — Die Zu- und Abgänge von RB Leipzig zur Saison 2026/27
+  https://www.sportschau.de/fussball/bundesliga/die-transfers-rb-leipzig-zur-saison-2026-27,wechselboerse-rb-leipzig-saison-26-27-100.html
+- Borussia Mönchengladbach official — Borussia stellt Team um Cheftrainer Eugen Polanski neu auf
+  https://www.borussia.de/news/borussia-stellt-team-um-cheftrainer-eugen-polanski-neu-auf
+  → Polanski retained; Markus Gellhaus (Hansa Rostock) and Jan-Moritz Lichte (Manchester City) join the staff; Schröder quote on building a new coaching team.
+- sportschau.de — "Kontrovers diskutiert": Polanski bleibt Gladbach-Trainer
+  https://www.sportschau.de/regional/wdr/wdr-polanski-bleibt-gladbach-trainer-100.html
+  → 12th place; survival secured only on the third-last matchday.
+- bmg-news.de — 6 Neuzugänge, 9 Abgänge: Gladbachs großer Umbau
+  https://bmg-news.de/6-neuzugaenge-9-abgaenge-gladbachs-grosser-umbau/
+  → Herold €3.5m from Karlsruher SC; Leopold, Konoplya, Batz free; Bolin €2m loan from Malmö with obligation to buy; Reitz to RB Leipzig (reported €28m exit clause), Elvedi to Leeds; Engelhardt to Como; internal sales list.
+- kicker — DFB-Pokal: Gladbach erreicht gegen Schott Mainz routiniert 2. Runde (5:0, 23 Aug 2026)
+  https://www.kicker.de/schott-mainz-gegen-mgladbach-2026-dfb-pokal-5204698/spielbericht
+  → Bolin 22', 48'; Hashioka 25'; Ullrich 61'; Mohya 67'.
+- Wikipedia — Sven Jablonski; WhoScored / worldsoccerdata referee pages
+  https://en.wikipedia.org/wiki/Sven_Jablonski
+  https://www.whoscored.com/referees/1398/show/sven-jablonski
+  https://www.worldsoccerdata.com/stats/germany/bundesliga/referees/sven-jablonski-germany
+  → Bremen-based, Bundesliga list since 2017-18; appointed to the 2026 DFB-Pokal final (kicker: first time); 61 yellow, 2 red in 16 recorded fixtures, 3.81 yellows per game.
+
+*Gaps:* the 3.81 yellows-per-game figure appears to aggregate competitions rather than isolate the 2025-26 Bundesliga; no fouls-per-card ratio, no penalty rate and no club history published for Jablonski; no matchday-one team news for either side; no fee published for Nkunku's return.
