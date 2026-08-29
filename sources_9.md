@@ -589,3 +589,29 @@
 - Pellegrino's fee is given as ~€20m by the Parma sources and €22.5m by the Fiorentina sources.
 - Parma's projected goalkeeper is Corvi rather than the newly signed Daffara.
 - No injury or suspension list for either club; no penalty rate or fouls-per-card ratio retrievable for Fourneau.
+
+---
+
+## f18 · Auxerre – Angers
+
+- Yahoo Sports / Forebet / footmercato — PREVIEW: Auxerre vs Angers (Ligue 1 29/08)
+  https://ca.sports.yahoo.com/news/preview-auxerre-vs-angers-team-190500906.html
+  https://www.forebet.com/fr/football-match-previews/29922-auxerre-eye-turnaround-against-angers-amid-early-season-wobbles
+  → Stade de l'Abbé-Deschamps, 29 August 2026, 20:45; Auxerre 17th on 0 points after losing 5-2 at Lens, Angers 14th on 0 points after losing 0-2 to Lille. Auxerre out: Diousse, Fofana, Okoh, Senaya; doubts Siwe, Sierralta; Makosso suspended. Angers: Belkebla out after July thigh surgery, possibly until September. Auxerre projected 4-3-3 with high pressing per Will Still's principles — Ahamada, Danois, Piedfort; front three Faivre, Namaso, Zossou.
+- aja.fr / ICI / lerepublicainsportif — Will Still named AJ Auxerre head coach
+  https://www.aja.fr/le-staff-pour-la-saison-2026-2027/
+  https://www.ici.fr/bourgogne-franche-comte/yonne-89/auxerre/will-still-succede-a-christophe-pelissier-et-devient-le-nouvel-entraineur-de-l-aja-7304161
+  → Still announced 12 June 2026, contract to June 2028, succeeding Christophe Pélissier whose departure was confirmed 4 June 2026; staff includes Nicolas Still (assistant) and Jean-Alain Boumsong (defensive coach); high-intensity style.
+- dicodusport / footmercato — Mercato Auxerre 2026-2027
+  https://dicodusport.fr/blog/mercato-auxerre-2026-2027-le-tableau-complet-des-transferts-arrivees-et-departs/
+  → In: Arthur Piedfort (21, KVC Westerlo, four years), Danny Namaso (FC Porto, €5m option, three years), Romain Faivre (loan from Bournemouth); Lamine Sy extended to 2030, announced 27 August 2026. Out: Owusu, Léon, Sinayoko, Joly.
+- dicodusport / footmercato / mercatolive — Mercato Angers 2026-2027
+  https://dicodusport.fr/blog/mercato-angers-2026-2027-le-tableau-complet-des-transferts-arrivees-et-departs/
+  https://www.footmercato.net/club/angers-sco/tableau/
+  → Alexandre Dujeux left after five years for FC Lorient; Stéphane Gilli coach for 2026-27. In: Anthony Lopes, Usman Simbakoli (to 2029), Anthony Bermont (loan from RC Lens, no purchase option). Out: Marius Courcoul (19, loan to RAAL La Louvière with option).
+- foot-actu.com / valuestats / besoccer — Hakim Ben El Hadj referee stats
+  https://www.foot-actu.com/ligue-1/arbitrage-ligue-1-statistiques-par-arbitre/
+  https://valuestats.com/en/referee/15485-hakim-ben-el-hadj
+  → 2025-26 Ligue 1: 8 matches, 25 yellows, 1 direct red, 1 second yellow, 4 penalties; 3.13 yellows per match against a divisional average of 3.53; 0.50 penalties per match against an average of 0.34, reported as a 45% chance of a penalty in his matches; 25% of his matches ended with a second caution or red. All competitions: 11 matches, 38 yellows, 2 direct reds, 2 second-yellow dismissals, 5 penalties.
+
+*Gaps:* no fees published for departures at either club; the Angers incoming list found was noticeably thinner than for other clubs on this card and shows no centre-forward signing; eight Ligue 1 matches is a thin base for Ben El Hadj and no fouls-per-card ratio is published.
