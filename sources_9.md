@@ -563,3 +563,29 @@
 - No injury or suspension list for either club; no fees published for any move at either club.
 - The sources describe both clubs' most recent outing as a defeat to Real Madrid, which cannot be true of the same jornada. Recorded, not resolved; the consistent facts are Sociedad on 0 points from 2 and Espanyol on 3.
 - No fouls-per-card ratio published for Orellana Cid, and his card record was compiled almost entirely in Segunda División rather than LaLiga.
+
+---
+
+## f17 · Juventus – Parma
+
+- LaPresse / Tuttosport / derbyderbyderby — Juventus-Parma probabili formazioni, orario
+  https://www.lapresse.it/calcio/2026/08/29/serie-a-stasera-juventus-parma-orario-probabili-formazioni-e-dove-vederla/
+  https://www.tuttosport.com/news/calcio/serie-a/juventus/2026/08/28-150848306/juventus-parma_probabili_formazioni_orario_e_dove_vederla_in_tv_e_streaming
+  → Allianz Stadium, Saturday 29 August 20:45, matchday 2; referee Francesco Fourneau; Spalletti v Cuesta; Juventus (4-2-3-1) Vicario; Kalulu, Bremer, Kelly, Cambiaso; Locatelli, Douglas Luiz; Conceição, McKennie, Boga; Kolo Muani. Parma (4-3-2-1) Corvi; Delprato, Troilo, Ndiaye, Valeri; Bernabé, Ordonez, Keita; Britschgi, Touré, Lontani. MW1: Juventus won 0-1 at Frosinone (Bremer); Parma lost at home to Cagliari.
+- quigioco.it / Eurosport.it — Calciomercato Juventus estate 2026
+  https://www.quigioco.it/blog/calciomercato/calciomercato-juventus-estate-2026-acquisti-cessioni-e-trattative-aggiornate/
+  → Spalletti confirmed, contract extended to 2028; Alajbegović signed to 2031 (the German sources put the Leverkusen fee at €32m); Kolo Muani from PSG; Lucumí from Bologna; Ekhator. Out: João Mário and Adžić on loan, Daffara to Parma.
+- SportParma / SportMediaset / lottomatica.sport — Parma acquisti e cessioni 2026-27
+  https://sportparma.com/parma-calcio/calcio_serie_a/acquisti-e-cessioni-il-tabellone-del-calciomercato-di-serie-a-estate-2026.html
+  https://www.lottomatica.sport/news/guida-alla-serie-a/guida-completa-parma-2026-27-probabile-formazione-nuovi-acquisti-rigoristi-infortunati-consigli-fantacalcio/
+  → In: Nicolussi Caviglia (Fiorentina, bought outright), Cremaschi (Inter Miami, bought outright), Daffara (GK, Juventus, permanent), Carboni (Inter, permanent), Diallo (Borussia Dortmund, permanent), El Bilal Touré (Atalanta, loan), Romero (Tigre, permanent), Lontani (Milan, free). Out: Pellegrino to Fiorentina (~€20m), Circati to Benfica (€18m), Suzuki (GK) to Aston Villa, Benedyczak to Kasımpaşa, Estévez free to Palermo, Begić, Partipilo, Šits and Rinaldi on loan.
+- it.wikipedia / pianetafanta / sport.virgilio — Francesco Fourneau referee profile
+  https://it.wikipedia.org/wiki/Francesco_Fourneau
+  https://www.pianetafanta.it/statistiche-arbitri.asp?NomeArbitro=Fourneau+F.&tipolink=100
+  → Rome, born 11 July 1984; average 2.8 cards per match, described as low; 30 yellows across 2024-25.
+
+*Gaps and contradictions:*
+- The published Juventus probable eleven names Douglas Luiz in midfield, while the Nottingham Forest transfer summary used for f1 records him joining Forest from Juventus for £21m this summer. Recorded, not reconciled.
+- Pellegrino's fee is given as ~€20m by the Parma sources and €22.5m by the Fiorentina sources.
+- Parma's projected goalkeeper is Corvi rather than the newly signed Daffara.
+- No injury or suspension list for either club; no penalty rate or fouls-per-card ratio retrievable for Fourneau.
