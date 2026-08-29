@@ -7,7 +7,7 @@ f6 | 15:30 | Union Berlino – Eintracht Francoforte | DONE
 f7 | 16:00 | Bournemouth – Everton | DONE
 f8 | 16:00 | Coventry City – Hull City | DONE
 f9 | 17:00 | Levante – Real Betis | DONE
-f10 | 17:15 | Strasburgo – Lens | TODO
+f10 | 17:15 | Strasburgo – Lens | DONE
 f11 | 18:30 | Fiorentina – Frosinone | TODO
 f12 | 18:30 | Monza – Udinese | TODO
 f13 | 18:30 | Sassuolo – Torino | TODO

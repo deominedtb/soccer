@@ -342,3 +342,44 @@
 - No Levante injury or suspension list found.
 - No centre-forward signing found for Levante and no fees published for Mandi or Manu Sánchez.
 - Nobel Mendy is listed as a Betis departure by fichajes.com while Hull City's record signing of the same name is reported as arriving from Rayo Vallecano; the two accounts are recorded, not reconciled.
+
+---
+
+## Shared — all five French fixtures (f10, f18, f19, f20, f21)
+
+- Wikipedia — 2025–26 Ligue 1 (final table)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_Ligue_1
+  → 18-club table used as the last-season baseline for every French fixture. Relegated: Nantes, Metz.
+- Wikipedia — 2026–27 Ligue 1
+  https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1
+  → promoted: Troyes (after three years away) and Le Mans (after sixteen); season began 21 August 2026; matchday 1 played 21-22 August, so all five 29 August fixtures are matchday 2. MW1: Lens 5-2 Auxerre, Marseille 4-0 Strasbourg; Brest 1 pt; Toulouse, Angers and Le Havre 0 pts; Lyon 3 pts. Confirms Lorient–Troyes is a Ligue 1 fixture, not Ligue 2.
+- ligue1.com — Les arbitres de la 2e journée de Ligue 1 McDonald's 2026-2027
+  https://ligue1.com/fr/articles/l1_article_5728-les-arbitres-de-la-2e-journee-de-ligue-1-mc-donald-s-2026-2027
+  → Strasbourg–Lens: Bastien Dechepy (Parinet Le Tellier, Pages; 4th Vincent; VAR Gringore, Julien). Auxerre–Angers: Hakim Ben El Hadj (Pasqualotti, Ocak; 4th Petit; VAR Schmitt, Rainville). Brest–Toulouse: Jérôme Brisard (Auger, Berthomieu; 4th Leprodhomme; VAR Rouinsard, Daupeux). Lyon–Le Havre: François Letexier (Rahmouni, Reyes; 4th Roffet; VAR Vernice, Grosbost). Lorient–Troyes: Azzedine Souifi (Torregrossa, Haulbert).
+
+---
+
+## f10 · Strasbourg – Lens
+
+- Alsa'Sports / Lensois.com / allezlens.fr — referee confirmation
+  https://www.lensois.com/l1-j2-larbitre-de-strasbourg-rc-lens-est-connu/
+  https://allezlens.fr/rc-strasbourg-rc-lens-bastien-dechepy-au-sifflet-le-porte-bonheur-inattendu-des-sang-et-or/
+  → Bastien Dechepy, Stade de la Meinau, Saturday 17h15. The allezlens piece frames him as historically favourable to Lens — media framing, not a statistic.
+- foot-actu.com / footmercato / statshub — Bastien Dechepy referee stats
+  https://www.foot-actu.com/ligue-1/arbitrage-ligue-1-statistiques-par-arbitre/
+  https://www.statshub.com/referee/bastien-dechepy/786776
+  → 3.78 yellows per match (Ligue 1 average 3.53), 0.16 direct reds (average 0.17), 0.40 penalties per match (average 0.34); 74 yellows across 17 matches in 2025-26 (4.35 per game). statshub gives 3.76.
+- dicodusport / footmercato — Mercato Strasbourg 2026-2027
+  https://dicodusport.fr/blog/mercato-strasbourg-2026-2027-le-tableau-complet-des-transferts-arrivees-et-departs/
+  https://www.footmercato.net/club/rc-strasbourg-alsace/tableau/
+  → new coach Hugo Oliveira; 12 arrivals since the window opened, incl. Ortega Conde €10m (largest), Jeyland Mitchell, Fabio Amado, Uri Baldé, Giovanni Reyna, Mateo del Blanco, Brantlind, Diogo Sousa. Out: Emegha, Moreira, Enciso, Barco, Mwanga, Ouattara, Nzingoula.
+- dicodusport / eurofootnews / madeinlens — Mercato RC Lens 2026-2027
+  https://dicodusport.fr/blog/mercato-lens-2026-2027-le-tableau-complet-des-transferts-arrivees-et-departs/
+  https://www.eurofootnews.net/mercato-rc-lens-le-point-complet-au-29-juillet-2026/29/07/2026/
+  → Pierre Sage left for Crystal Palace; Dino Toppmöller (45, German) signed to 2028, with Champions League experience at Eintracht Frankfurt. €26m spent on 7 players, ~€70m received across about ten departures (Thomasson, Saïd); Sangaré heavily tracked. Lens won the 2026 Trophée des Champions 1-0 v PSG and beat Auxerre 5-2 on matchday one; direct Champions League qualification.
+- But! Football Club / Lensois.com — team news
+  https://www.butfootballclub.fr/1693820-rc-lens-deux-coups-durs-pour-toppmoller-avant-strasbourg/
+  https://www.lensois.com/strasbourg-rc-lens-les-compos-probables-8/
+  → Lens: Antonio suspended (2nd and final match), Gradit and Baidoo not yet available, Chavez (thigh), Celik (knee). Strasbourg: El Mourabet suspended (sent off at Marseille), Panichelli injured; doubts Doukouré, Chilwell, Malonga, Oyedele, Godo, Luković.
+
+*Gaps:* no fees published for Strasbourg's departures, so that window cannot be balanced in money terms; Dechepy's 3.78 overall and 4.35 (2025-26) yellow averages are recorded rather than reconciled, and no fouls-per-card ratio is published for him.
