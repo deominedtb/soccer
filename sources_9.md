@@ -198,3 +198,42 @@
   → Wangen im Allgäu; 20 matches in 2025-26, 3.70 cards per game (3.50 yellow, 0.10 red).
 
 *Gaps:* no DFB-Pokal first-round result found for either club; no matchday-one team news; no confirmation whether Onyeka's loan from Leverkusen contains a clause barring him from facing his parent club; no fouls-per-card ratio or penalty rate published for Hartmann.
+
+---
+
+## f6 · Union Berlin – Eintracht Frankfurt
+
+- bundesliga.com — Union Berlin 2026/27 season preview: Lustrinelli, Latte Lath, Khedira
+  https://www.bundesliga.com/en/bundesliga/news/union-berlin-2026-27-season-preview-lustrinelli-latte-lath-khedira-38844
+  → Lustrinelli (50, Swiss, previously Thun) appointed; offensive brief, back five to back four, high press with Khedira anchoring. In: Latte Lath (loan, Atlanta United), Nsoki (permanent from Hoffenheim, CB), Friedrich (return from Gladbach, CB), van den Bosch (Royal Antwerp). Out: Doekhi (Lazio), Leite (out of contract). One competitive pre-season win.
+- 1. FC Union Berlin official — Union trennt sich von Steffen Baumgart, Marie-Louise Eta übernimmt
+  https://www.fc-union-berlin.de/de/meldungen/union-trennt-sich-von-steffen-baumgart-marie-louise-eta-uebernimmt-uE2loF
+- sportschau.de — Union Berlin trennt sich von Trainer Baumgart, Eta übernimmt (reported as a first of its kind)
+  https://www.sportschau.de/regional/rbb/rbb-union-berlin-trennt-sich-von-trainer-baumgart-eta-uebernimmt-bis-saisonende-100.html
+- Wikipedia — 2026–27 1. FC Union Berlin season
+  https://en.wikipedia.org/wiki/2026%E2%80%9327_1._FC_Union_Berlin_season
+  → Lustrinelli announced 21 May 2026; first session 1 July 2026; eighth consecutive Bundesliga season.
+- sportschau.de — Die Zu- und Abgänge von Union Berlin zur Saison 2026/27
+  https://www.sportschau.de/fussball/bundesliga/die-transfers-union-berlin-zur-saison-2026-27,wechselboerse-union-berlin-saison-26-27-100.html
+  → Kral free to FC Copenhagen; Doekhi free to Lazio; Doekhi and Leite the four-year centre-back pairing, both free.
+- ZDF / sport.de — DFB-Pokal 1. Runde: Eintracht Braunschweig 2:4 Union Berlin
+  https://www.sport.de/fussball/deutschland-dfb-pokal/ma12109042/eintracht-braunschweig_1-fc-union-berlin/uebersicht/
+  → 1-1 at half-time, two comebacks; van den Bosch 31', Rothe 63', Ljubičić 72' and 90+4'.
+- sportschau.de / SPORT1 / weltfussball — Die Zu- und Abgänge von Eintracht Frankfurt zur Saison 2026/27
+  https://www.sportschau.de/fussball/bundesliga/die-transfers-eintracht-frankfurt-zur-saison-2026-27,wechselboerse-eintracht-frankfurt-saison-26-27-100.html
+  https://www.sport1.de/team/eintracht-frankfurt/opta_159/transfers
+  → Adi Hütter new head coach, contract to 2029; co-trainers Alexander Meier (43, ex-U19), Peintinger, Schmidt; GK coach Zimmermann. Out: Brown to Bayern €50m, plus Skhiri, Batshuayi, Ebimbe, Simoni, Amenda, Fenyö, İnanoğlu, Smolčić, Kristensen. In: Onyedika €9m (Club Brugge), Futkeu €1.3m (Greuther Fürth), Etse free (SSV Ulm), Wahi on loan (OGC Nice).
+- sportschau.de / laola1 — DFB-Pokal 1. Runde 2026/27 results
+  https://www.sportschau.de/live-und-ergebnisse/fussball/deutschland-dfb-pokal/spiele-und-ergebnisse
+  → Eintracht Frankfurt 10-0 SC St. Tönis.
+- Wikipedia — Bastian Dankert; kicker referee pages
+  https://en.wikipedia.org/wiki/Bastian_Dankert
+  https://www.kicker.de/bastian-dankert/schiedsrichter-einsaetze
+  https://www.kicker.ch/bastian-dankert/schiedsrichter-einsaetze/2-bundesliga/2025-26
+  → born 9 June 1980, Rostock, Bundesliga referee since 2012.
+
+*Gaps and contradictions:*
+- Bastian Dankert: no cards-per-game, fouls-per-card or penalty rate could be retrieved. WhoScored returned HTTP 403 and the fussballtransfers referee table served 2026/27 data (1 match each) rather than 2025/26. One kicker listing places him among 2. Bundesliga assignments for 2025-26. Discipline marked evidence-thin for this fixture on that basis alone.
+- Stanley Nsoki: one summary records him moving *to* Hoffenheim for €1.5m, the bundesliga.com preview records him arriving *at* Union permanently from Hoffenheim. Reported in the card as the preview states, with the contradiction flagged; the €1.5m figure is not confidently attached to either direction.
+- Frankfurt arrivals Otávio Manoel Galdino Fernandes and Krisztián Lisztes are both reported at €4.5m from Estrela in the same source; recorded as unresolved rather than confirmed.
+- No matchday-one team news for either side.
