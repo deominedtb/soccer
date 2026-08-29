@@ -164,3 +164,37 @@
   → born 2 July 1981, refereeing since 2004, Bundesliga since 2012; 3.83 yellows per match (career); 0.3 reds per game in 2025-26.
 
 *Gaps:* no DFB-Pokal first-round result found for either Mainz or Paderborn; no matchday-one team news; no fouls-per-card ratio or penalty rate published for Stieler, and his 3.83 yellow average is a career figure rather than an isolated 2025-26 Bundesliga one.
+
+---
+
+## f5 · SV 07 Elversberg – Bayer Leverkusen
+
+- deutschland.de — Promotion of Elversberg to the Bundesliga: questions and answers
+  https://www.deutschland.de/en/topic/life/promotion-elversberg-football-bundesliga-questions-answers
+  → Ursapharm-Arena an der Kaiserlinde, 10,000 seats, smallest ground in the Bundesliga; municipality of ~13,000; Vincent Wagner, 40, appointed before 2025-26 replacing long-serving Horst Steffen, promoted in his first year; 64 goals, 2nd in 2. Bundesliga.
+- bundesliga.com — Die SV Elversberg steigt in die Bundesliga auf!
+  https://www.bundesliga.com/de/bundesliga/news/sv-07-elversberg-bundesliga-aufstieg-marchen-37405
+- sportschau.de — Sieg gegen Preußen Münster: SV Elversberg steigt in die Bundesliga auf
+  https://www.sportschau.de/regional/sr/sr-sv-elversberg-steigt-in-die-bundesliga-auf-102.html
+  → promotion sealed 17 May 2026, final day, home win over bottom-placed Preußen Münster; Petkov, Zimmerschied and goalkeeper Kristof named as standouts.
+- sportschau.de — Die Zu- und Abgänge der SV Elversberg zur Saison 2026/27
+  https://www.sportschau.de/fussball/bundesliga/die-transfers-sv-elversberg-zur-saison-2026-27,wechselboerse-sv-elversberg-saison-26-27-100.html
+  → In: Cole Campbell €6m from Borussia Dortmund (20, US youth international, to 2030), Sirch free from Kaiserslautern, Onyeka (19) on loan from Bayer Leverkusen, Darvich (19) on loan from Stuttgart, Malanga back from Stuttgart II, Poręba, Krattenmacher. Out: Sickinger free to Darmstadt 98, Conté back to Hoffenheim.
+- sportschau.de / SPORT1 — Die Zu- und Abgänge von Bayer Leverkusen zur Saison 2026/27
+  https://www.sportschau.de/fussball/bundesliga/die-transfers-bayer-04-leverkusen-zur-saison-2026-27,wechselboerse-bayer-04-leverkusen-saison-26-27-100.html
+  https://www.sport1.de/team/bayer-04-leverkusen/opta_164/transfers
+  → Out: Hincapié to Arsenal €40m, Alajbegović (18) to Juventus €32m, Grimaldo, Sarco. In: Damjanović €5m from Crvena Zvezda, Erlein €2m from Hoffenheim, Faye and Alfa-Ruprecht returning from loan.
+- neunzigplus.de / wetttippsheute.net — Bundesliga-Trainer 2026/27
+  https://neunzigplus.de/bundesliga/neue-bundesliga-trainer-2026-27/
+  https://www.wetttippsheute.net/bundesliga-trainer-2026-27-die-trainerbank-zum-saisonstart-im-ueberblick/
+  → Carles Martínez Novell (42) from Toulouse, contract to 30 June 2028, replacing Kasper Hjulmand after one season.
+- Wikipedia — 2025–26 Bayer 04 Leverkusen season
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_Bayer_04_Leverkusen_season
+  → 6th; DFB-Pokal semi-final under Hjulmand.
+- kicker / worldsoccerdata / statsbet — Robert Hartmann referee profile
+  https://www.kicker.de/robert-hartmann/schiedsrichter-einsaetze
+  https://en.wikipedia.org/wiki/Robert_Hartmann_(referee)
+  https://statsbet.org/football/referees/r-hartmann-15803
+  → Wangen im Allgäu; 20 matches in 2025-26, 3.70 cards per game (3.50 yellow, 0.10 red).
+
+*Gaps:* no DFB-Pokal first-round result found for either club; no matchday-one team news; no confirmation whether Onyeka's loan from Leverkusen contains a clause barring him from facing his parent club; no fouls-per-card ratio or penalty rate published for Hartmann.
