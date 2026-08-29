@@ -269,3 +269,33 @@
 *Gaps and contradictions:*
 - The Premier League's own Matchweek 2 officials page lists ten officiating teams without pairing them to fixtures; the Kavanagh appointment above comes from a club-news source whose headline frames the fixture as Everton v Bournemouth, while the previews and the odds file both place Bournemouth at home at the Vitality Stadium. Referee and date match; the home-and-away framing in that source does not.
 - Merlin Röhl's fee is given as £21m in one summary and around £22m in another.
+
+---
+
+## f8 · Coventry City – Hull City
+
+- Sports Mole — Preview: Coventry City vs Hull City, prediction, team news, lineups
+  https://www.sportsmole.co.uk/football/coventry-city/preview/coventry-vs-hull-city-prediction-team-news-lineups_603787.html
+- Yahoo Sports / playmakerstats — PREVIEW: Coventry City vs Hull City (Premier League 29/08)
+  https://sports.yahoo.com/articles/preview-coventry-city-vs-hull-141500962.html
+  → CBS Arena, Coventry's first Premier League home match in 25 years; referee Josh Smith; Coventry 18th on 0 points after losing to Arsenal, Hull 5th on 3 after beating Man United; Coventry out: Kesler-Hayden, Woolfenden, Haji Wright, with Pinnock pushing for a debut; Hull: Mendy, Ajayi and Giles fit, Coyle an ongoing issue and possibly as many as seven others out; Lampard unbeaten against Hull as player or manager (W9 D5).
+- Liverpool FC — Promoted teams: an in-depth look at Coventry City, Hull City and Ipswich Town
+  https://www.liverpoolfc.com/news/promoted-teams-depth-look-coventry-city-hull-city-and-ipswich-town
+  → Coventry champions by 11 points, 97 goals, top two from September, title clinched with three games left; Lampard took charge November 2024 replacing Mark Robins with the club two points above the drop; style possession-based with quick transitions and crossing. Hull 6th, promoted via play-offs (Millwall in the semi, Middlesbrough 1-0 in the final, McBurnie 95'); Jakirović in his first season; 4-2-3-1 with a back-five option; Hull needed to raise about £6m before the end of June.
+- Sports Mole — Coventry City summer transfers and net spend, 2026 window
+  https://www.sportsmole.co.uk/football/coventry-city/transfer-talk/feature/coventry-summer-transfers-all-confirmed-ins-and-outs-for-2026_599293.html
+  → £122m spent, £4.4m income (reported as the least of any club in the division); ten signings incl. Yirenkyi £23m (Nordsjælland, club record), Rushworth £22m GK (Brighton), Cherif £21m (Fenerbahçe), Awoniyi £9m (Nottingham Forest, 17 Aug 2026), Pinnock £5m CB (Brentford).
+- Sports Mole / bet365 News / Yorkshire Post — Hull City summer transfers 2026
+  https://www.sportsmole.co.uk/football/hull-city/transfer-talk/feature/hull-summer-transfers-all-confirmed-ins-and-outs-for-2026_599295.html
+  https://www.yorkshirepost.co.uk/sport/football/hull-city-transfer-news-defender-next-after-club-record-deal-8841662
+  → 11 signings, club record broken twice; Nobel Mendy CB from Rayo Vallecano at an initial £17m plus add-ons (one source characterises it as surpassing £20m); Butland GK £3m from Rangers; Morita free from Sporting Lisbon; Zambrano.
+- ESPN / Premier League — Hull City promoted after beating Middlesbrough in the Championship play-off final
+  https://www.espn.com/soccer/story/_/id/48852636/hull-city-promoted-premier-league-beating-middlesbrough-championship-playoff-final
+  https://www.premierleague.com/en/news/4664386/all-you-need-to-know-as-hull-city-are-promoted-to-premier-league
+- statshub / valuestats / playerstats — Josh Smith referee stats
+  https://www.statshub.com/referee/smith-josh/787286
+  https://valuestats.com/en/referee/14824-joshua-smith
+  https://playerstats.football/referee/132
+  → 151 career matches, 588 yellows, 15 straight reds, 7 second yellows, 3.89 yellows and 0.10 reds per match, 43 penalties; only 8 of the 151 are Premier League fixtures.
+
+*Gaps:* Nobel Mendy's fee reported both as an initial £17m plus add-ons and as surpassing £20m; Hull's overall net spend not published in the sources consulted; Hull's absentee list beyond Coyle is unnamed; no fouls-per-card ratio published for Josh Smith.

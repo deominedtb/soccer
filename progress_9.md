@@ -5,7 +5,7 @@ f4 | 15:30 | Mainz – SC Paderborn | DONE
 f5 | 15:30 | SV 07 Elversberg – Bayer Leverkusen | DONE
 f6 | 15:30 | Union Berlino – Eintracht Francoforte | DONE
 f7 | 16:00 | Bournemouth – Everton | DONE
-f8 | 16:00 | Coventry City – Hull City | TODO
+f8 | 16:00 | Coventry City – Hull City | DONE
 f9 | 17:00 | Levante – Real Betis | TODO
 f10 | 17:15 | Strasburgo – Lens | TODO
 f11 | 18:30 | Fiorentina – Frosinone | TODO
