@@ -419,3 +419,37 @@
   → 2025-26: 5 penalties in 11 matches, 0.42 per match, fourth-highest in Serie A behind Zufferli 0.50, Sozza 0.47, Guida 0.44; 22.25 fouls per match, the lowest of any Serie A referee that season.
 
 *Gaps:* no injury or suspension list found for either club; no fees published for any Frosinone arrival; no cards-per-game figure or fouls-per-card ratio retrievable for Collu, whose 2025-26 sample is only 11 matches.
+
+---
+
+## Shared — Serie A matchday 2 referee designations (f12, f13, f17)
+
+- AIA-FIGC / fantacalcio.it / calcionews24 — Serie A Enilive, designazioni 2ª giornata (published 26 Aug 2026)
+  https://www.aia-figc.it/news/serie-a-enilive-designazioni-2a-giornata-27587/
+  https://www.fantacalcio.it/news/calcio-italia/26_08_2026/serie-a-le-designazioni-arbitrali-della-2-giornata-496973
+  → Monza–Udinese 18:30: ALLEGRETTA (Politi, Belsanti; IV Massa; VAR Paterna; AVAR Mazzoleni). Sassuolo–Torino 18:30: DI MARCO (Di Gioia, Barone; IV Zufferli; VAR Pezzuto; AVAR Di Paolo). Juventus–Parma 20:45: FOURNEAU (Rossi C., Lo Cicero; IV Sozza; VAR Meraviglia; AVAR Piccinini).
+
+---
+
+## f12 · Monza – Udinese
+
+- Eurosport.it / derbyderbyderby — Monza-Udinese probabili formazioni
+  https://www.eurosport.it/calcio/serie-a/2026-2027/monza-udinese-probabili-formazioni-statistiche-quando-e-dove-vederla_sto23331604/story.shtml
+  → U-Power Stadium, Saturday 29 August 18:30, matchday 2; Monza (3-4-3) Thiam; Kouadio, Delli Carri, Carboni; Birindelli, Mout, Foe Ondoa, Mangas; Dany Mota, Varela, Cutrone. Udinese (3-4-2-1) Okoye; Abankwah, Solet, Ebosse; Vojvoda, Piotrowski, Karlström, Kamara; Unai Gómez, Ekkelenkamp; Davis. Monza after a 1-4 at Inter, Udinese after a 1-1 home draw with Como.
+- madeinbrianza.it / monzatoday.it / monza-news.it — Tabella calciomercato Monza 2026/27
+  https://www.madeinbrianza.it/notizie/monza-calcio/tabella-calciomercato-monza-2026-2027/
+  https://www.monzatoday.it/attualita/monza-ceduto-petagna-trattative-calciomercato.html
+  → coach Paolo Bianco; promoted third via the play-offs; in Cutrone (bought outright from Como), Foe-Ondoa (Estoril Praia), Kouadio, Idrissa Touré (from Pisa in the Petagna deal); out Petagna to Pisa (two-year deal), Brorsson to Raków; Birindelli renewal official; club still seeking a goalkeeper.
+- tuttoudinese.it / udinese.it — Calciomercato Udinese tabellone; Runjaić confirmed
+  https://www.tuttoudinese.it/focus/calciomercato-udinese-tabellone-acquisti-cessioni-ufficialita-183126
+  https://www.calcioudinese.it/2026/05/13/runjaic-resta-alla-guida-delludinese-il-tecnico-tedesco-pianifica-il-futuro/
+  https://www.udinese.it/news/squadra/runjaic-e-il-coach-of-the-month-di-maggio-della-lega-serie-a
+  → Runjaić in a third consecutive season, Serie A Coach of the Month for May 2026; in Zaniolo (Galatasaray, permanent), Zanoli (Napoli, permanent), Gueye (Metz, permanent), Payero and Pafundi back from loan; out Atta to Fiorentina, Sava to Craiova, Marello to Inter.
+- Sky Sport Italia / Corriere dello Sport — Zaniolo infortunato, Runjaić conferenza 28 agosto 2026
+  https://sport.sky.it/calcio/serie-a/2026/08/28/udinese-zaniolo-infortunio-runjaic-conferenza
+  → right adductor strain sustained against Como; out until after the international break; Unai Gómez replaces him; Davis ready; no other injuries named.
+- tuttomercatoweb / whoscored — Serie A referee statistics 2025/26
+  https://it.whoscored.com/regions/108/tournaments/5/seasons/10732/stages/24500/refereestatistics/italia-serie-a-2025-2026
+  → Allegretta reported with 0 Serie A appearances and 0 completed Serie A seasons.
+
+*Gaps:* no fees published for any Monza arrival; no Monza injury or suspension list; no cards, fouls-per-card or penalty data of any kind for Allegretta, who has no Serie A record.
