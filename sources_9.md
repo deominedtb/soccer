@@ -478,3 +478,26 @@
 - Torino's probable eleven names Mascardi in goal rather than Milinković-Savić, whom the club bought outright.
 - No fees published for any Sassuolo arrival; sources on Torino's window were noticeably thinner than for other clubs on this card.
 - No injury or suspension list found for either club.
+
+---
+
+## f14 · Tottenham Hotspur – Newcastle United
+
+- Goal.com / football365 / Last Word on Sports — Tottenham vs Newcastle preview
+  https://www.goal.com/en/news/tottenham-hotspur-newcastle-united-premier-league-preview/bltc2a59ff4384e0737
+  https://lastwordonsports.com/football/2026/08/28/tottenham-vs-newcastle-2/
+  → Tottenham Hotspur Stadium, 29 August 2026, matchweek 2; referee Peter Bankes; Spurs lost 3-0 at Brentford on 22 August; Newcastle drew 2-2 with Liverpool then beat West Brom 3-2 in the cup. Spurs: Maddison out a couple of weeks with a fractured shoulder from the Brentford defeat, Porro and Van de Ven back after appearing v Charlton. Newcastle: Dan Burn (club captain) out with ankle ligament damage, Joelinton (vice-captain) out until around mid-September with a thigh problem, Livramento not recovered from the calf injury that removed him from the England World Cup squad.
+- Sports Mole / TeamTalk / livescore — Tottenham summer transfers 2026
+  https://www.sportsmole.co.uk/football/spurs/transfer-talk/feature/spurs-summer-transfers-all-confirmed-ins-and-outs-for-2026_599114.html
+  https://www.teamtalk.com/tottenham-hotspur/every-completed-tottenham-transfer-summer-2026-signings-sales-loans
+  → Roberto De Zerbi manager; gross spend above £300m; in Tonali (Newcastle, reported ~£100m), Savio (initial £75m rising to £85m), Van Hecke £52m (Brighton), Mateus Fernandes, plus frees Dúbravka, Andy Robertson, Marcos Senesi. Out: Vušković, Lankshear, Devine (at least €72.7m). No definitive net-spend figure published.
+- Squawka / ESPN / SI — Newcastle United transfers 2026/27
+  https://www.squawka.com/en/transfers/newcastle-united/
+  https://www.si.com/soccer/newcastle-united/onsi/newcastle-united-director-transfer-plans-2026
+  → Out: Tonali to Tottenham £92.5m, Bruno Guimarães to Arsenal £75m, Gordon to Barcelona — about £236m recouped. In: Touré £43m (Hoffenheim), Dedić £30m (Benfica), Bamba £30m (Monaco), Horníček £26m (Sporting Braga), Steur £20m (Ajax), Jaouen £18m (Reims) — about £167m, weighted to under-24s; net roughly +£69m. Eddie Howe head coach.
+- statshub / Tribuna / tips.gg — Peter Bankes referee stats
+  https://www.statshub.com/referee/peter-bankes/84326
+  https://tribuna.com/en/blogs/referee-peter-bankes-concerning-card-booking-record-before-t/
+  → 2025-26: 3.77 yellows per match, 72 yellows (third-highest in the division), three red cards (most of any official), 6 penalties, 20 fouls per 90 (≈5.3 fouls per card). Career average 3.94 yellows per game.
+
+*Gaps and contradictions:* the Tonali fee is reported as £92.5m by the Newcastle-side source and around £100m by the Tottenham-side source; no definitive Tottenham net-spend figure is published because several deals carry undisclosed costs and add-ons.
