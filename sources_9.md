@@ -645,3 +645,31 @@
   → 240 career matches, 179 in Ligue 1; 3.75 yellows and 0.22 reds per match; 90 penalties (about 0.38 per match); refereed the 2026 Coupe de France final. Ligue 1 averages for comparison: 3.53 yellows, 0.17 reds, 0.34 penalties.
 
 *Gaps:* Brest's five summer arrivals could not be identified by name or fee in any source consulted; Brisard's figures are career averages rather than an isolated 2025-26 season, and no fouls-per-card ratio is published.
+
+---
+
+## f20 · Lyon – Le Havre
+
+- footmercato / afrik-foot / estffoot — Lyon vs Le Havre preview, 29 August 2026
+  https://www.footmercato.net/live/8003610015250481410-lyon-vs-le-havre
+  https://www.afrik-foot.com/pronostic-lyon-vs-le-havre-29-08-2026
+  → Groupama Stadium, 20:45, matchday 2; François Letexier referee; Lyon's medical room largely cleared, Khalis Merah the only absentee; Le Havre may be without Felix Mambimbi, Yanis Zouaoui expected to start after a thigh injury; Lyon won 2-0 at Toulouse, Le Havre lost 0-1 at home to Monaco.
+- dicodusport / footmercato — Mercato OL 2026-2027
+  https://dicodusport.fr/blog/mercato-ol-2026-2027-le-tableau-complet-des-transferts-arrivees-et-departs/
+  https://www.footmercato.net/club/ol/tableau/
+  → Paulo Fonseca head coach; in Mads Bidstrup €10.5m (largest), Felix Bacher, Mohamed Ouédraogo, Julien Duranville, Noham Kamara; out Martín Satriano, Afonso Moreira.
+- maxifoot / foot-sur7 / x-tremlimit / foot01 — Lyon's DNCG obligation and Champions League elimination
+  https://news.maxifoot.fr/lyon/fofana-vente-ineluctable-foot-462621.htm
+  https://www.foot-sur7.fr/775377-mercato-ol-lyon-prive-ldc-departs-majeurs
+  https://x-tremlimit.com/football/lyon-absent-de-la-ldc-un-lourd-prejudice-financier-pour-lol/
+  → eliminated by Fenerbahçe in the play-off round (1-1, then 1-2), losing a reported €30m; DNCG recovery plan requires balanced summer transactions, at least €25m in sales even with qualification; club reported as needing to find more than €50m and to sell one or two important players before 1 September; L'Équipe describes Malick Fofana's sale as inevitable.
+- dicodusport / footmercato / morning-foot — Mercato Le Havre 2026-2027
+  https://dicodusport.fr/blog/mercato-le-havre-2026-2027-le-tableau-complet-des-transferts-arrivees-et-departs/
+  https://morning-foot.com/ligue-1/le-havre/havre-digard-mercato-effectif-prolongation-2026-hac/
+  → Didier Digard, 40, retained and extended; in Amir Richardson (from Fiorentina, recorded there as a loan with an €8m option), Timothée Pembélé, Gauthier Gallon, Ahmed Touba (28, Algeria international CB, Panathinaikos); out Mory Diaw (33, Senegal international GK, to Al-Shabab), Sofiane Boufal; three arrivals against nine departures, with Digard signalling more movement.
+- statshub / whoscored / valuestats — François Letexier referee stats
+  https://www.statshub.com/referee/francois-letexier/785114
+  https://www.whoscored.com/referees/880/show/fran%C3%A7ois-letexier
+  → 2025-26 all competitions: 4.44 cards per match (4.19 yellow, 0.26 red), 113 yellows, 7 reds, 10 penalties (0.37 per match). Career yellow average 3.99. Ligue 1 averages for comparison: 3.53 yellows, 0.17 reds, 0.34 penalties.
+
+*Gaps and contradictions:* Letexier's Ligue 1-only counts are reported inconsistently (12 matches with 63 cards in one source, 18 matches in another) and no fouls-per-card ratio is published; no fees published for any Le Havre move beyond the Richardson option.
