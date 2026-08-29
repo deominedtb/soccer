@@ -1,7 +1,7 @@
 f1 | 13:30 | Liverpool – Nottingham Forest | DONE
 f2 | 15:30 | Colonia – Hoffenheim | DONE
 f3 | 15:30 | Lipsia – Borussia Mönchengladbach | DONE
-f4 | 15:30 | Mainz – SC Paderborn | TODO
+f4 | 15:30 | Mainz – SC Paderborn | DONE
 f5 | 15:30 | SV 07 Elversberg – Bayer Leverkusen | TODO
 f6 | 15:30 | Union Berlino – Eintracht Francoforte | TODO
 f7 | 16:00 | Bournemouth – Everton | TODO

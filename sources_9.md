@@ -134,3 +134,33 @@
   → Bremen-based, Bundesliga list since 2017-18; appointed to the 2026 DFB-Pokal final (kicker: first time); 61 yellow, 2 red in 16 recorded fixtures, 3.81 yellows per game.
 
 *Gaps:* the 3.81 yellows-per-game figure appears to aggregate competitions rather than isolate the 2025-26 Bundesliga; no fouls-per-card ratio, no penalty rate and no club history published for Jablonski; no matchday-one team news for either side; no fee published for Nkunku's return.
+
+---
+
+## f4 · Mainz 05 – SC Paderborn
+
+- Wikipedia — 2025–26 2. Bundesliga (final table)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_2._Bundesliga
+  → Schalke 04 1st (21/7/6, 50 GF, 31 GA, 70 pts); SV Elversberg 2nd (18/8/8, 64 GF, 39 GA, 62 pts); SC Paderborn 3rd (18/8/8, 59 GF, 45 GA, 62 pts, promoted via play-off). Serves f4 and f5.
+- bundesliga.com — Welcome back to the Bundesliga, Paderborn! (promotion play-off win)
+  https://www.bundesliga.com/en/bundesliga/news/welcome-back-paderborn-promotion-play-off-win-37266
+  → play-off win over Wolfsburg; first Bundesliga season since 2019-20; Kettemann appointed summer 2025 from Karlsruhe U19s, replacing Cologne-bound Lukas Kwasniok.
+- Get German Football News — Bundesliga 2026/27 tactical preview: SC Paderborn 07
+  https://www.getfootballnewsgermany.com/2026/bundesliga-paderborn-prev-26/
+  → back three, ~53% possession, rotations across 3-5-2 / 3-4-1-2 / 3-4-2-1 / 4-3-3, Castaneda the structural constant; Curda scored the decisive play-off goal. Out: Seimen (GK, returned to Stuttgart), Brackelmann (CB, free to Augsburg), Bilbija (15 goals, free to Derby County), Baur (€5m). In: Vidović €3m from Bayern, Zeitler and Noll (GK) on loan from Hoffenheim (six figures), Ulrich on loan from Stuttgart (six figures), Batista Meier €400,000. Balance −€450,000.
+- Wikipedia — 2026–27 SC Paderborn 07 season
+  https://en.wikipedia.org/wiki/2026%E2%80%9327_SC_Paderborn_07_season
+- sportschau.de — Die Zu- und Abgänge von Mainz 05 zur Saison 2026/27
+  https://www.sportschau.de/fussball/bundesliga/die-transfers-fsv-mainz-05-zur-saison-2026-27,wechselboerse-fsv-mainz-05-saison-26-27-100.html
+  → In: Gruber €3.5m (Nürnberg, CB), Martel free (Köln), Königsdörffer free (HSV), Schwolow free (Hearts, GK), plus Hong, Ruoppi and Richter returning from loan. Out: Veratschnig €3.5m (RB Salzburg), Batz (Gladbach, end of loan), Tauer, Dal, Weiper, Rieß, Bos.
+- Wikipedia — 2025–26 1. FSV Mainz 05 season; mainz05.de coach announcements
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_1._FSV_Mainz_05_season
+  https://www.mainz05.de/en/news-en/bo-henriksen-appointed-new-head-coach-of-mainz-05
+  → Henriksen left 3 Dec 2025, Urs Fischer took over 7 Dec 2025; Mainz 10th and Conference League quarter-finalists in 2025-26.
+- kicker / statshub / valuestats — Tobias Stieler referee profile
+  https://www.kicker.de/tobias-stieler/schiedsrichter/bundesliga/2025-26
+  https://www.statshub.com/referee/stieler-tobias/71289
+  https://valuestats.com/en/referee/17233-tobias-stieler
+  → born 2 July 1981, refereeing since 2004, Bundesliga since 2012; 3.83 yellows per match (career); 0.3 reds per game in 2025-26.
+
+*Gaps:* no DFB-Pokal first-round result found for either Mainz or Paderborn; no matchday-one team news; no fouls-per-card ratio or penalty rate published for Stieler, and his 3.83 yellow average is a career figure rather than an isolated 2025-26 Bundesliga one.
