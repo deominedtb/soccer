@@ -299,3 +299,46 @@
   → 151 career matches, 588 yellows, 15 straight reds, 7 second yellows, 3.89 yellows and 0.10 reds per match, 43 penalties; only 8 of the 151 are Premier League fixtures.
 
 *Gaps:* Nobel Mendy's fee reported both as an initial £17m plus add-ons and as surpassing £20m; Hull's overall net spend not published in the sources consulted; Hull's absentee list beyond Coyle is unnamed; no fouls-per-card ratio published for Josh Smith.
+
+---
+
+## Shared — all three LaLiga fixtures (f9, f16, f22)
+
+- Wikipedia — 2025–26 La Liga (final table)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_La_Liga
+  → full 20-club table used as the last-season baseline for every Spanish fixture. Relegated: Mallorca, Girona, Real Oviedo. Note Levante (16th), Osasuna (17th) and Mallorca (18th) all finished on 42 points.
+- lagrada.org / eldiario.es — Las claves de la Jornada 3 de LaLiga EA Sports 26-27, horarios y previa
+  https://lagrada.org/claves-jornada-3-laliga-ea-sports-2026-27-horarios-partidos-previa-real-sociedad-espanyol/
+  https://www.eldiario.es/spin/deportes/horarios-jornada-3-laliga-ea-sports-ver-partidos-pm_1_13472362.html
+  → confirms all three Spanish fixtures on this card are jornada 3: Levante–Betis 17:00, Real Sociedad–Espanyol 19:00, Sevilla–Atlético 21:30.
+
+*Gap (applies to all three Spanish fixtures):* no referee appointments could be retrieved. rfef.es designations pages returned HTTP 403; FútbolFantasy lists the Levante–Betis official as "árbitro no asignado". No cards-per-game, fouls-per-card, penalty rate or club history is therefore available for any Spanish fixture on this card, and Discipline is marked evidence-thin on that basis.
+
+---
+
+## f9 · Levante – Real Betis
+
+- Yahoo Sports / OneFootball — PREVIEW: Levante vs Real Betis, team news, lineups, predictions (La Liga 29/08)
+  https://sports.yahoo.com/articles/preview-levante-vs-real-betis-150500445.html
+  https://onefootball.com/en/news/preview-levante-vs-real-betis-team-news-lineups-predictions-la-liga-2908-43349731
+  → Estadio Ciutat de València, 29 Aug 2026, 15:00 UTC; Levante 17th on 1 point, last out 0-0 v Osasuna; Betis 3rd on 6 points, last out 1-0 v Valencia; Betis absentees Abde Ezzalzouli, Diego Conde, Lo Celso, Gonzalo Petit, Aitor Ruibal; H2H at this ground Levante 12 wins in 27 to Betis 11, LaLiga overall 30 meetings, Levante 9 / draws 5 / Betis 16.
+- betfair.es — Levante UD: fichajes, plantilla y alineación ideal 2026/27
+  https://www.betfair.es/blog/futbol/futbol-espanol/laliga/levante-ud-fichajes-plantilla-y-alineacion-ideal-para-la-temporada-202627-110826-1210.html
+  → coach Luís Castro; in: Mandi (CB, Lille), Manu Sánchez (Celta, another year); out: Carlos Espí to Real Madrid €25m (11 goals in 25 matches), José Luis Morales, five loanees.
+- Eurosport / flashscore.es / soccerway — Luis Castro named Levante coach, replacing Julián Calero
+  https://www.eurosport.es/futbol/la-liga/2025-2026/nuevo-entrenador-levante-luis-castro-perfil-experiencia_sto23252518/story.shtml
+  https://es.soccerway.com/noticias/futbol-laliga-ea-sports-el-levante-no-aguanta-mas-y-destituye-a-julian-calero/jZA2FCF6
+  → Castro (45, Portuguese, Benfica academy, previously Nantes and Dunkerque) appointed December 2025 to 2027; Calero dismissed 30 Nov 2025 after 14 matches with Levante bottom on 9 points; Castro took 8 points from his first 5 (2W 2D 1L).
+- fichajes.com / betfair.es — Real Betis altas y bajas 2026/27
+  https://www.fichajes.com/equipo/real-betis-balompie/altas-bajas/
+  https://www.betfair.es/blog/futbol/futbol-espanol/laliga/real-betis-fichajes-plantilla-y-alineacion-ideal-para-la-temporada-202627-030826-1377.html
+  → in: Fran García, Facundo Bernal Cruz €10.5m (largest); out: Mateo Flores Lozano, Nobel Mendy, Sergi Altimira; summer's main move reinforcing left-back; Betis returning to the Champions League after 21 years.
+- soccerway — Pellegrini dirigirá al Real Betis hasta los 74 años
+  https://es.soccerway.com/noticias/futbol-laliga-ea-sports-pellegrini-dirigira-al-real-betis-hasta-los-74-anos/4lodUo7E
+  → seventh season, extended to June 2027.
+
+*Gaps and contradictions:*
+- No referee appointment (see the shared LaLiga note above).
+- No Levante injury or suspension list found.
+- No centre-forward signing found for Levante and no fees published for Mandi or Manu Sánchez.
+- Nobel Mendy is listed as a Betis departure by fichajes.com while Hull City's record signing of the same name is reported as arriving from Rayo Vallecano; the two accounts are recorded, not reconciled.
