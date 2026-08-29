@@ -18,5 +18,5 @@ f17 | 20:45 | Juventus – Parma | DONE
 f18 | 20:45 | Auxerre – Angers | DONE
 f19 | 20:45 | Brest – Tolosa FC | DONE
 f20 | 20:45 | Lione – Le Havre AC | DONE
-f21 | 20:45 | Lorient – Troyes | TODO
+f21 | 20:45 | Lorient – Troyes | DONE
 f22 | 21:30 | Siviglia – Atletico Madrid | TODO

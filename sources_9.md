@@ -673,3 +673,37 @@
   → 2025-26 all competitions: 4.44 cards per match (4.19 yellow, 0.26 red), 113 yellows, 7 reds, 10 penalties (0.37 per match). Career yellow average 3.99. Ligue 1 averages for comparison: 3.53 yellows, 0.17 reds, 0.34 penalties.
 
 *Gaps and contradictions:* Letexier's Ligue 1-only counts are reported inconsistently (12 matches with 63 cards in one source, 18 matches in another) and no fouls-per-card ratio is published; no fees published for any Le Havre move beyond the Richardson option.
+
+---
+
+## f21 · Lorient – Troyes
+
+- Yahoo Sports / OneFootball / Sports Mole / MAXIFOOT — PREVIEW: FC Lorient vs Troyes (Ligue 1 29/08)
+  https://ca.sports.yahoo.com/news/preview-fc-lorient-vs-troyes-190000939.html
+  https://www.sportsmole.co.uk/football/lorient/preview/lorient-vs-troyes-prediction-team-news-lineups_603891.html
+  https://www.maxifoot.fr/football-rss227510/lorient-troyes.php
+  → Stade Yves Allainmat – Le Moustoir, 29 August 2026, matchday 2; Lorient 13th on 1 point after 0-0 with Nice, Troyes 10th on 1 point after 0-0 with Paris FC. Lorient (3-4-3) Mvogo; Sylla, Talbi (c), Adjei; Le Bris, Avom, Cadiou, Kouassi; Makengo, Bernardeau, Koné. Lorient without Mohamed Bamba (summer injury) and Formose Mendy; Troyes near full strength except Fadiga; Lorient to field all their signings including Jensen and Obaretin.
+- FC Lorient official / franceinfo / Eurosport / ICI — Alexandre Dujeux named Lorient head coach
+  https://www.fclorient.bzh/alexandre-dujeux-nomme-entraineur-du-fc-lorient/
+  https://www.eurosport.fr/football/ligue-1/2025-2026/transferts-alexandre-dujeux-ex-entraineur-dangers-sco-est-intronise-nouveau-coach-du-fc-lorient-officiel_sto23308048/story.shtml
+  → announced 9 June 2026, two seasons plus one in option, succeeding Olivier Pantaloni who did not wish to continue; Dujeux 50, previously five years at Angers, with Stéphane Gilli appointed at Angers.
+- FC Lorient official — Nosa Obaretin and Isak Jensen signings
+  https://www.fclorient.bzh/nosa-obaretin-sengage-avec-le-fc-lorient/
+  https://www.fclorient.bzh/isak-jensen-jai-eu-un-tres-bon-feeling-avec-lorient/
+  → Obaretin (23, centre-back) season-long loan from SSC Napoli with option; Jensen (22, Danish left winger) season-long loan from AZ Alkmaar with option. Six arrivals against thirteen departures; Mvuka and Pagis among those leaving.
+- Wikipedia — 2025–26 Ligue 2 (final table)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_Ligue_2
+  → Troyes champions: 34 matches, 20W 7D 7L, 60 GF, 33 GA, 67 pts. Le Mans 2nd on 62. Both promoted directly.
+- franceinfo / Eurosport — Troyes seal promotion at Saint-Étienne
+  https://www.franceinfo.fr/sports/foot/ligue-2/ligue-2-troyes-officialise-sa-montee-en-ligue-1-grace-a-sa-victoire-a-saint-etienne_7964093.html
+  https://www.eurosport.fr/football/ligue-2/2025-2026/ligue-2-vainqueur-de-saint-etienne-3-0-troyes-sassure-de-la-promotion-directe-en-ligue-1_sto23293849/story.shtml
+  → win at the Stade Geoffroy-Guichard on Saturday 25 April; scoreline reported as 2-0 in one source and 3-0 in another. Coach Stéphane Dumont; club run within City Football Group; back in Ligue 1 after three seasons.
+- footmercato — Azzedine Souifi referee profile
+  https://www.footmercato.net/arbitre/azzedine-souifi
+  → one Ligue 1 match as main referee (2026-27), no cards and no penalties in it; no previous Ligue 1 appointments as main official; 182 matches since 2016-17 in Ligue 2, National 1, National 2 and Coupe de France; fourth official in Ligue 1 since 2018-19.
+
+*Gaps and contradictions:*
+- No Troyes summer transfer detail could be retrieved beyond one departure (Martin Adeline to Hamburger SV, €4m). The composition of the promoted squad cannot be assessed from the available record.
+- Troyes' promotion-sealing scoreline at Saint-Étienne is given as 2-0 and 3-0 by different sources.
+- No fees published for any Lorient move.
+- Souifi is the least-evidenced referee appointment on the card: one top-flight match, no cards in it.
