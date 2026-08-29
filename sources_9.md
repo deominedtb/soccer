@@ -707,3 +707,28 @@
 - Troyes' promotion-sealing scoreline at Saint-Étienne is given as 2-0 and 3-0 by different sources.
 - No fees published for any Lorient move.
 - Souifi is the least-evidenced referee appointment on the card: one top-flight match, no cards in it.
+
+---
+
+## f22 · Sevilla – Atlético Madrid
+
+- SI.com (es) / Yahoo Sports / VAVEL / betfair.es — Sevilla vs Atlético de Madrid previa
+  https://www.si.com/es-us/futbol/sevilla-vs-atletico-de-madrid-previa-predicciones-y-alineaciones-29-8-2026
+  https://sports.yahoo.com/articles/preview-sevilla-fc-vs-atl-193500391.html
+  https://www.betfair.es/blog/futbol/futbol-espanol/laliga/sevilla---atletico-de-madrid-alineaciones-horario-donde-ver-pronosticos-y-estadisticas-270826-1377.html
+  → Ramón Sánchez-Pizjuán, 29 August 2026, 21:30, jornada 3; referee Javier Alberola Rojas. Sevilla 2nd on 6 points (2-1 v Rayo Vallecano, 3-1 at Athletic Club); Atlético 5th on 4 after a 2-2 with Villarreal at the Metropolitano — Pubill scored, Le Normand sent off, Gerard Moreno and Mikautadze converted penalties, Giuliano Simeone equalised with ten men. Coaches Luis García and Diego Simeone.
+- futbolfantasy / fichajes.com / betfair.es — Sevilla altas y bajas 2026/27
+  https://www.futbolfantasy.com/mercado-de-fichajes-del-sevilla-altas-bajas/verano-2026
+  https://www.fichajes.com/equipo/sevilla-fc/altas-bajas/
+  → out Djibril Sow, Akor Adams, Tanguy Nianzou; net investment about +€18m; Iván Martín named a late priority target; the George Ilenikhena move reported as definitively complicated. Guridi arrived from Real Sociedad (per the f16 sources).
+- DAZN / SI.com (es) / futbolfantasy / livefutbol — Atlético de Madrid altas y bajas 2026/27
+  https://www.dazn.com/es-MX/news/f%C3%BAtbol/fichajes-atletico-madrid-2026-altas-bajas-rumores-plantilla-actualizada/2y21u5jn40c1q34swquskbfr
+  https://www.si.com/es-us/futbol/altas-y-bajas-del-atletico-de-madrid-rumbo-a-la-temporada-2026-27
+  → in Kang-in Lee €40m (largest), Morten Hjulmand (Sporting CP), Alejandro Grimaldo (Bayer Leverkusen, close to €20m fixed plus variables, to June 2030). Out: Griezmann to Orlando City (ending his second spell), Nahuel Molina, Thiago Almada, Julio Díaz Del Romo, Alejandro Monserrate Pueyo. Simeone continues after a Champions League semi-final exit to Arsenal and fourth place.
+- whoscored (es) / estadisticaslaliga / statz.ai — Javier Alberola Rojas referee stats
+  https://es.whoscored.com/referees/2912/show/javier-alberola-rojas
+  https://www.estadisticaslaliga.es/recibe_arbitros.php?pedido=Javier+Alberola+Rojas
+  https://statz.ai/referee/javier-alberola-rojas
+  → 2025-26: 20 LaLiga matches, 84 yellows (4.20 per game), 5 reds (0.25 per game), 26.35 fouls called per match (fouls per yellow ≈ 6.3).
+
+*Gaps:* no confirmation of whether Robin Le Normand is suspended following his dismissal against Villarreal, or of his availability; no penalty rate published for Alberola Rojas; no fees published for individual Sevilla moves and no goalkeeper or centre-back signing identified there.
