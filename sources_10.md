@@ -667,3 +667,43 @@
   https://www.foot-actu.com/ligue-1/arbitrage-ligue-1-statistiques-par-arbitre/
   https://www.footmercato.net/france/ligue-1/statistique-arbitre
   → **Gap:** no penalty rate for Delajod was sourced. No history with either club surfaced.
+
+---
+
+## f15 · Celta Vigo – Athletic Bilbao
+
+**Fixture, venue, kickoff, team news, referee**
+- Yahoo Sports / ceroacero / Sports Mole previews via search — Sunday 30 Aug 2026, 21:30, Estadio Abanca-Balaídos, LaLiga jornada 3, on Movistar. Celta 1 point from two (0-0 away at Valencia, 2-1 home defeat to Osasuna); Celta led against Osasuna before Marcos Alonso was sent off in the 51st minute following a VAR check; Celta have scored once in 180 minutes and are without Borja Iglesias. Athletic have lost both matches and Terzić is still waiting for a first win. Recent XIs given for both sides.
+  https://sports.yahoo.com/articles/preview-celta-vigo-vs-athletic-193500754.html
+  https://www.ceroacero.es/noticias/celta-de-vigo-vs-athletic-bilbao-prediccion-noticias-de-equipos-y-alineaciones-laliga-30-08/1186382
+  https://www.sportsmole.co.uk/football/celta-vigo/preview/celta-vigo-vs-athletic-bilbao-prediction-team-news-lineups_603943.html
+  → **Gap:** no absentee list published for Athletic; and the sources do not state whether Marcos Alonso's dismissal carries a suspension into this fixture.
+- OneFootball / jornadaperfecta — **Referee Alejandro Hernández Hernández** designated for Celta v Athletic, jornada 3. He has refereed Celta 40 times: 15 wins, 10 draws, 15 defeats.
+  https://onefootball.com/en/news/alejandro-hernandez-hernandez-arbitrara-el-celta-athletic-42092430
+  https://www.jornadaperfecta.com/partido/13333/celta-athletic
+  → **Conflict logged:** one aggregator listed the kickoff as 16:15 against 21:30 elsewhere; 21:30 matches the slate file and the LaLiga fixture page.
+
+**League context and last-season baselines**
+- Wikipedia — 2025–26 La Liga (final table)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_La_Liga
+  → Celta Vigo 6th, 38/14/12/12, 53 GF, 48 GA, +5, 54 pts, qualified for the Europa League league phase. Athletic Bilbao 12th, 38/13/6/19, 43 GF, 58 GA, −15, 45 pts, no European qualification. Neither club promoted.
+
+**Transfers and manager**
+- El Gol Digital / FútbolFantasy / betfair.es — Celta summer 2026: Claudio Giráldez stays despite interest elsewhere, entering his third full season in charge. Plan agreed with sporting director Marco Garcés of 10-12 departures against 5-6 signings, with a defender, a winger and a striker named as priorities. OUT: Aidoo, Cervi and Ristic (all out of contract, no renewal offered), Óscar Mingueza to the Premier League, Fer López (loan return to Wolverhampton); Ilaix Moriba identified as the preferred sale for financial sustainability. IN: Aleix Febas and Javi Galán early in the window, plus Altay Bayindir from Manchester United.
+  https://www.elgoldigital.com/futbol/rc-celta-de-vigo/celta-12-salidas-6-fichajes-giraldez-garces-limpia-vestuario/
+  https://www.futbolfantasy.com/laliga/equipos/celta/mercado-fichajes/verano-2026
+  → Cross-check: Bayindir's move is recorded on Manchester United's ledger in f8 as a loan to Celta Vigo.
+  → **Gap:** no fees published for any Celta movement; the completed signing list beyond those three could not be confirmed.
+- Athletic Club official / KIROLAK — Edin Terzić announced 5 May 2026 as head coach for the next two seasons, under contract to 30 June 2028, succeeding Ernesto Valverde who had confirmed his intention to leave. Second German manager in the club's history after Jupp Heynckes; previously Borussia Dortmund across two spells (German Cup 2021, close to the Bundesliga title in 2023, Champions League final 2024).
+  https://www.athletic-club.eus/en/news/2026/05/05/edin-terzic-to-be-new-athletic-club-head-coach/
+  https://kirolakeitb.eus/es/futbol/equipos/athletic-club/2026/05/05/edin-terzic-sera-el-entrenador-del-athletic-durante-las-dos-proximas-temporadas/
+- El Desmarque — Athletic's summer described as not very active, with priorities focused on reducing squad size; Peio Canales retained after a strong pre-season; Mikel Santos promoted as a goalkeeping option behind Unai Simón and Álex Padilla.
+  https://www.eldesmarque.com/futbol/mercado-de-fichajes/20260807/athletic-club-opta-cuatro-fichajes-mas-uno-edin-terzic-tiene-ultima-palabra_18_019903011.html
+  → **Gap:** no incoming or outgoing Athletic transfers with fees were established; the reporting describes the window's character rather than listing it.
+
+**Referee record**
+- estadisticaslaliga / statshub / valuestats / whoscored via search — Alejandro Hernández Hernández, LaLiga 2025-26: 15 matches, 79 yellow cards (5.27 per game), 5 direct red cards (0.33 per game), 343 fouls (22.87 per match, ≈4.3 fouls per card), 9 penalties (0.6 per game). Career figure reported at 5.46 yellow cards per game.
+  https://www.estadisticaslaliga.es/recibe_arbitros.php?pedido=Alejandro+Hern%C3%A1ndez+Hern%C3%A1ndez
+  https://www.statshub.com/es/referee/alejandro-hernandez/86571
+  https://valuestats.com/en/referee/16998-alejandro-jose-hernandez-hernandez
+  → **Conflict logged:** a second source reports a 2025-26 line of 6 matches, 13 yellows, 0 reds, 131 fouls and 2 penalties — roughly 2.2 cards per game. The two readings are irreconcilable. The 15-match version is internally consistent across all four columns and matches the career average, and is the one carried in the card; the conflict is flagged in section C rather than resolved.
