@@ -312,3 +312,49 @@
 - estadisticaslaliga / valuestats / statsbet via search — Juan Martínez Munuera 2025-26 LaLiga: 18 matches, 76 yellow cards (4.22 per game), 2 red cards (0.11 per game), 507 fouls (28.17 per match, ≈6.7 fouls per card), 6 penalties (0.33 per match).
   https://www.estadisticaslaliga.es/recibe_arbitros.php?pedido=Juan+Mart%C3%ADnez+Munuera
   https://valuestats.com/en/referee/15712-juan-martinez-munuera
+
+---
+
+## f7 · Stade Rennes FC – Le Mans FC
+
+**Fixture, venue, kickoff, team news**
+- Yahoo Sports — Preview: Rennes vs Le Mans, team news, lineups (Ligue 1 30/08)
+  https://ca.sports.yahoo.com/news/preview-rennes-vs-le-mans-152000191.html
+  → Sunday 30 Aug 2026, Roazhon Park, Ligue 1 matchday 2. Managers Franck Haise (Rennes) and Patrick Videira (Le Mans). Rennes 1 pt, 9th, drew 2-2 with PSG; Le Mans 1 pt, 6th, drew 2-2 with Brest. H2H: 22 meetings, Rennes lead 9-4 with 9 draws; at home Rennes 6 wins in 11; in Ligue 1 specifically 5 Rennes wins, 6 draws, 1 Le Mans win. XI v PSG: Samba, Ait Boudlal, Nagida, Cresswell, Frankowski, Szymanski, Rongier, Thomasson, Al-Tamari, Lepaul, Soumaré. XI v Brest: Kocik, Boisse, Eyoum, Bamba, Buades, Bourabaa, Larouci, Lauray, Rabillard, Mafouta, Gueye.
+  → **Gap:** the preview shows an "unavailable" heading for both clubs but names no players; no individual absence or suspension is established for this fixture.
+- WhoScored / matchs.tv — kickoff 17:15 CEST, Roazhon Park, journée 2.
+  https://www.whoscored.com/matches/1984069/preview/france-ligue-1-2026-2027-rennes-le-mans
+  https://matchs.tv/match/rennes-le-mans/
+
+**League context and last-season baselines**
+- Wikipédia — Championnat de France de football 2025-2026 (final table)
+  https://fr.wikipedia.org/wiki/Championnat_de_France_de_football_2025-2026
+  → Stade Rennais 6th, 34/17/8/9, 59 GF, 50 GA, +9, 59 pts; qualified for the 2026-27 Europa League league phase (5th and 6th enter the league phase).
+- Wikipédia — Championnat de France de football de deuxième division 2025-2026 (final table)
+  https://fr.wikipedia.org/wiki/Championnat_de_France_de_football_de_deuxi%C3%A8me_division_2025-2026
+  → Le Mans FC 2nd, 34/16/14/4, 50 GF, 31 GA, +19, 62 pts — automatic promotion. ESTAC Troyes 1st, 34/20/7/7, 60 GF, 33 GA, +27, 67 pts. Both promoted to Ligue 1 2026-27 without a play-off.
+- Wikipedia / LFPL — Le Mans FC returning to Ligue 1 sixteen years after relegation; back-to-back promotions from National; Novak Djokovic became a co-owner in August 2025.
+  https://en.wikipedia.org/wiki/Le_Mans_FC
+  https://lfpl.fff.fr/simple/le-mans-fc-fete-son-retour-en-ligue-1/
+
+**Transfers and manager**
+- Wikipédia — Saison 2026-2027 du Mans Football Club
+  https://fr.wikipedia.org/wiki/Saison_2026-2027_du_Mans_Football_Club
+  → IN: Brahimi FW (Santos), Mafouta FW (Guingamp), Larouci DF (Troyes), Bamba DF (loan from Stade Rennais), Daouda Traoré MF (loan with option, Southampton), Sidibé DF (Toulouse), Torrente DF (loan with option, Dinamo Zagreb), Vagner FW (loan, Coritiba). OUT: Cossier (loan return, Lille), Gomes (loan return, Nantes), Ribelin (Amiens), Guillaume (contract ended), Hamdi (QRM), Luvambo (Argeș Pitești). Coach Patrick Videira, no change.
+  → **Gap:** no fees are published for any Le Mans movement in the sources consulted; a spend figure is not established.
+- But! Football Club / PKFoot / ICI / topmercato / foot01 / maxifoot (via search) — Rennes summer 2026 recruitment: Thomasson from Lens, Soumaré from Le Havre, Gonçalo Oliveira from Benfica, Nicolas Lemaitre from Troyes, Bryan Reynolds from Westerlo, Mayenda from Sunderland (reported above €20m excluding bonuses), Cresswell from Toulouse on loan with an obligation to buy and described as the eighth signing of the summer; Mayenda and Cresswell together estimated at €53m. Haise extended to 2028 and stated he cannot play 29 outfield players; Embolo and Joël Coulibaly have left; Djaoui Ciss, Seko Fofana and Ludovic Blas identified as expected departures. Jérémy Jacquet's sale officially confirmed in January and deferred into the summer 2026 budget, leaving a reported €33m surplus.
+  https://www.butfootballclub.fr/1684372-stade-rennais-franck-haise-prend-une-decision-majeure-pour-le-mercato/
+  https://www.pkfoot.com/mercato-rennes-haise-transferts/
+  https://www.ici.fr/bretagne/ille-et-vilaine-35/rennes/stade-rennais-charlie-cresswell-huitieme-recrue-de-l-ete-le-club-en-avance-sur-ses-concurrents-en-ligue-1-9655739
+  https://m.maxifoot.fr/football/article-65249.htm
+  https://www.foot01.com/rennes/rennes-mayenda-et-reynolds-arrive-cresswell-va-suivre
+  → Mayenda's direction is independently confirmed by Sunderland's own ledger in f3 (Mayenda £18.9m to Rennes).
+  → **Correction logged:** dicodusport's Rennes 2026-27 mercato table was retrieved with arrivals and departures inverted — it listed Mayenda, Cresswell, Thomasson, Soumaré and Reynolds as departures, all of which are contradicted by the matchday-one lineup and by independent reporting. That table is not used except for the single-sourced Jacquet detail below, which is flagged in the card.
+  https://dicodusport.fr/blog/mercato-rennes-2026-2027-le-tableau-complet-des-transferts-arrivees-et-departs/
+  → **Single-sourced, flagged in the card:** Jacquet's fee reported at €63.6m with Liverpool as the destination.
+
+**Referee**
+- Ligue1.com official — Les arbitres de la 2e journée de Ligue 1 McDonald's 2026-2027
+  https://ligue1.com/fr/articles/l1_article_5728-les-arbitres-de-la-2e-journee-de-ligue-1-mc-donald-s-2026-2027
+  → **Stade Rennais FC – Le Mans FC: referee Romain Lissorgue**, assistants Mikaël Berchebru and Florent Marmion, VAR Mathieu Vernice and Ludovic Zmyslony. (Same list independently confirms f4: Paris FC – OGC Nice, referee Jérémy Stinat, assistants Christophe Mouysset and Bastien Courbet, VAR Hamid Guenaoui and Mehdi Mokhtari; and gives f14: AS Monaco – Olympique de Marseille, referee Willy Delajod, assistants Erwan Finjean and Valentin Evrard, VAR Nicolas Rainville and Cédric Dos Santos.)
+  → **Gap:** no card-rate, fouls-per-card or penalty statistics for Romain Lissorgue were sourced. Note also that no cards market of any kind was captured for this fixture in fixtures_10.md, so there is no Discipline row in section C.

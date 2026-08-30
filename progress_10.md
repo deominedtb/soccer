@@ -4,7 +4,7 @@ f3 | 15:00 | Sunderland – Fulham FC | DONE
 f4 | 15:00 | Paris FC – Nizza | DONE
 f5 | 15:30 | Friburgo – Werder Brema | DONE
 f6 | 17:00 | Real Madrid – Malaga | DONE
-f7 | 17:15 | Stade Rennes FC – Le Mans FC | TODO
+f7 | 17:15 | Stade Rennes FC – Le Mans FC | DONE
 f8 | 17:30 | Manchester United – Ipswich Town | TODO
 f9 | 17:30 | Augsburg – Schalke 04 | TODO
 f10 | 18:30 | Napoli – Como | TODO
