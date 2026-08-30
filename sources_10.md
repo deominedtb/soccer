@@ -220,3 +220,47 @@
   https://www.ohaime-passion.com/matchs/arbitre-jeremy-stinat.html
   https://www.foot-actu.com/ligue-1/arbitrage-ligue-1-statistiques-par-arbitre/
   → **Gaps:** no fouls-per-card ratio and no penalties-per-game figure could be sourced for Stinat. No history with either club surfaced.
+
+---
+
+## f5 · Friburgo (SC Freiburg) – Werder Brema (Werder Bremen)
+
+**Fixture, venue, kickoff, team news, referee**
+- Bundesliga.com official — Matchday 1, 2026/27, Sport-Club Freiburg vs SV Werder Bremen liveticker
+  https://www.bundesliga.com/de/bundesliga/spieltag/2026-2027/1/sport-club-freiburg-vs-sv-werder-bremen/liveticker
+  → **Referee Daniel Siebert**, assistants Jan Seidel and Rafael Foltyn, fourth official Daniel Schlager, VAR Benjamin Cortus, assistant VAR Markus Häcker. Sunday 30 Aug 2026, Europa-Park-Stadion, Matchday 1. (Page rendered kickoff as 13:30, i.e. UTC; the slate time is 15:30 CEST.)
+- Yahoo Sports — Preview: SC Freiburg vs Werder Bremen, team news, lineups (Bundesliga 30/08)
+  https://sports.yahoo.com/articles/preview-sc-freiburg-vs-werder-133500259.html
+  → Managers Julian Schuster (Freiburg) and Daniel Thioune (Bremen). Freiburg: no unavailable players. Bremen: five out injured — Karl Hein (muscular), Dariusz Stalmach (shoulder), Felix Agu (muscular), Oskar Wójcik (muscular), Niklas Stark (muscular). H2H: 52 meetings, Bremen lead 25-17 (Bundesliga 24-16 with 10 draws); Schuster has faced Bremen four times, winning all four, and Thioune once, winning.
+- LiveSoccerTV / WhoScored previews via search — 15:30 CEST / 14:30 UK, Europa-Park-Stadion, matchday 1; Freiburg's last match a 4-1 win over Motherwell in the Conference League play-off, Bremen's a 3-0 DFB-Pokal win at LSK Hansa; Freiburg have won seven of the last ten meetings, Bremen one win and two draws; last meeting Freiburg 1-0.
+  https://www.livesoccertv.com/match/freiburg-vs-werder-bremen/1a0bm#4362441
+  https://www.whoscored.com/matches/1995396/preview/germany-bundesliga-2026-2027-freiburg-werder-bremen
+
+**League context and last-season baselines**
+- Wikipedia — 2025–26 Bundesliga (final table)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_Bundesliga
+  → SC Freiburg 7th, 34/13/8/13, 51 GF, 57 GA, −6, 47 pts, into the 2026-27 Conference League play-off round. Werder Bremen 15th, 34/8/8/18, 37 GF, 60 GA, −23, 32 pts, no European qualification. Promoted into 2025-26: Hamburg and Köln. Bayern Munich champions. Neither club promoted this season.
+- Search-sourced — Freiburg reached the 2025-26 Europa League final.
+
+**Transfers and manager**
+- Get German Football News — Bundesliga 2026/27 tactical preview: SC Freiburg
+  https://www.getfootballnewsgermany.com/2026/bundesliga-freiburg-preview-26/
+  → IN: Backhaus GK €12m base fee (Werder Bremen, club record), Goto CF €10m (Anderlecht), Engelhardt MF €7m (Borussia Mönchengladbach), Yamamoto MF €7m. OUT: Röhl €25m (Everton), Atubolu GK to Eintracht Frankfurt (€1m loan + €12.5m obligation, potentially €16m), Manzambi (significant fee), Wagner €850k (Dynamo Dresden), Adamu €800k (Schalke), Weißhaupt €500k (Darmstadt), Dinkçi €400k loan (Werder Bremen), Kyereh free (Osnabrück). Net balance ≈ +€51.55m. Head coach Julian Schuster retained; Ginter, Eggestein, Grifo and Kübler retained.
+- sportschau.de — Die Zu- und Abgänge von Werder Bremen zur Saison 2026/27 (current as of 21 Aug 2026)
+  https://www.sportschau.de/fussball/bundesliga/die-transfers-werder-bremen-zur-saison-2026-27,wechselboerse-werder-bremen-saison-26-27-100.html
+  → IN (16): Schlager GK (RB Salzburg), Karl Hein GK (Arsenal, permanent from loan), Wójcik DF (Cracovia), Heitmann and Höcker DF (Werder II), Chuki MF (Real Valladolid), Quetant MF (Le Havre), Soylu MF (Wolfsburg U19), Alvero MF (Amiens, loan ended), Stalmach MF (Magdeburg), Reis MF (Club Brugge), Dinkçi MF (Freiburg), Erevbenagie FW (Werder II), Kownacki FW (Hertha, loan ended), Itten FW (Fortuna Düsseldorf), Füllkrug FW (West Ham, loan). OUT (12): Backhaus GK (Freiburg), Sugawara loan (Southampton), Wöber loan (Leeds), Schmidt loan (Leeds), Coulibaly (Racing Strasbourg), Bittencourt (Energie Cottbus), Adeh loan (Preußen Münster), Puertas loan (Al-Qadsiah), Opitz loan (Osnabrück), Schmid (Frosinone), Boniface loan (Bayer Leverkusen), Milosevic loan (Stuttgart).
+  → **Gap:** this ledger lists destination clubs but not fees for most moves; a Bremen spend/income total is therefore not established.
+- news.de transfer ticker — Coulibaly to Racing Strasbourg for approximately €20m plus up to €5m in bonuses; Füllkrug returned to Bremen on a one-year loan from West Ham.
+  https://www.news.de/sport/859647837/transferticker-fussball-bundesliga-sommer-2026-fuellkrug-werder-bremen-wechsel-zugaenge-abgaenge-saison-26-27-veerman-borussia-dortmund/1/
+- Werder Bremen official / butenunbinnen — Steffen appointed 29 May 2025; relieved 1 Feb 2026 after ten Bundesliga matches without a win; Duarte and Groß interim; Daniel Thioune appointed 4 Feb 2026 on a contract dated to 30 June 2026.
+  https://www.werder.de/news/maenner/2025-2026/freistellung-steffen-01022026
+  https://www.werder.de/news/maenner/2025-2026/pm-thioune-04022026
+  https://www.butenunbinnen.de/sport/werder-steffen-trainer-trennung-100.html
+  → **Gap:** Thioune is in charge for matchday 1 of 2026-27, so his contract has been extended beyond the announced 30 June 2026 end date; the terms of that extension were not established.
+
+**Referee record**
+- statshub / statz.ai / valuestats via search — Daniel Siebert 2025-26 Bundesliga: 16 matches, 58 yellow cards (3.63 per game), 20.88 fouls per game (≈5.75 fouls per card), 2 red cards (0.13 per game), 8 penalties (0.38 per match).
+  https://www.statshub.com/referee/siebert-daniel/67092
+  https://statz.ai/referee/daniel-siebert
+  https://valuestats.com/en/referee/80234-daniel-siebert
+  → **Conflict logged:** a second source reports 4.67 total cards per match (4.38 yellow, 0.29 red) for the same season, against 3.63 yellows and 0.13 reds elsewhere. The two readings straddle the 3.5 cards line offered on this fixture; reported, not resolved. No history with either club surfaced.
