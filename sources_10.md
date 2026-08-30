@@ -458,3 +458,45 @@
   https://valuestats.com/en/referee/17352-sascha-stegemann
   https://www.whoscored.com/referees/1416/show/sascha-stegemann
   → **Conflict logged:** a second source gives 4.53 yellows and 0.09 reds per match — agreeing on yellows, disagreeing on reds by more than a factor of two. **Gap:** no figures isolated to the 2025-26 season were sourced; all rates above are career rates. No history with either club surfaced.
+
+---
+
+## f10 · Napoli – Como
+
+**Fixture, venue, kickoff, team news, referee**
+- Tutto Calcio Como — Napoli-Como, scelto l'arbitro: Pairetto dirigerà la sfida del Maradona
+  https://www.tuttocalciocomo.it/news/napoli-como-scelto-l-arbitro-pairetto-dirigera-sfida-maradona-5602
+  → **Referee Luca Pairetto**, assistants Zingarelli and Bercigli, fourth official Guida, VAR Gariglio and Prontera.
+- Quotidiano Sport — Napoli-Como, probabili formazioni e orari tv: De Bruyne e Vergara verso la panchina
+  https://sport.quotidiano.net/calcio/napoli/napoli-como-probabili-formazioni-e-orari-tv-f378afe9
+  → Sunday 30 Aug 2026, 18:30, Stadio Maradona, Serie A matchday 2. Allegri (Napoli) and Fàbregas (Como). Probable XIs given. De Bruyne and Vergara (scorer in the opening win at Genoa) expected to start on the bench; new signings Favasuli and Badiashile may appear as substitutes.
+  → **Gap:** no injury or suspension list is published for either side in the previews consulted.
+- Calciomercato.com / InLibertà — Napoli 3 pts after a 2-0 win at Genoa; Como 1 pt after a 1-1 draw with Udinese; matchday 2.
+  https://www.calciomercato.com/liste/napoli-como-dove-vederla-in-tv-e-streaming-canale-orario-formazioni/blt0c7f2f084c726a49
+  https://www.inliberta.it/serie-a-oggi-napoli-como-orario-probabili-formazioni-e-dove-vederla/
+
+**League context and last-season baselines**
+- Wikipedia — 2025–26 Serie A (final table)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_Serie_A
+  → Napoli 2nd, 38/23/7/8, 58 GF, 36 GA, +22, 76 pts, into the Champions League league phase. Como 4th, 38/20/11/7, 65 GF, 29 GA, +36, 71 pts, also into the Champions League league phase. Inter champions (21st title, clinched 3 May 2026). Promoted into 2025-26: Sassuolo, Pisa, Cremonese. Relegated out: Cremonese, Hellas Verona, Pisa. Neither club here is promoted.
+
+**Transfers and manager change**
+- il Fatto Quotidiano / Calcio Napoli 24 / Eurosport transfer boards — Napoli summer 2026: purchase options exercised on Højlund (€44m), Alisson Santos (€16.5m) and Vanja Milinković-Savić (€6m); new arrivals Benoît Badiashile (defence) and Costantino Favasuli (ex-Catanzaro); only notable sale Romelu Lukaku to Fenerbahçe; window described as "quasi inesistente" with a centre-forward the stated priority (Marc Guiu of Chelsea and Gabriel Jesus of Arsenal named). Window closes 1 September 2026 at 20:00.
+  https://www.ilfattoquotidiano.it/2026/08/20/serie-a-2026-27-acquisti-cessioni-formazioni-tipo-squadre/8483691/14/
+  https://www.calcionapoli24.it/calcio_mercato/calciomercato-napoli-2026-27-acquisti-cessioni-e-trattative-live-n689568.html
+  → Cross-corroboration: Højlund's move is recorded in Manchester United's ledger (f8) as a £38m sale to Napoli; Badiashile appears on Chelsea's ledger (f1) as a loan to Napoli.
+- ilNapolista / ANSA — Allegri è ufficialmente il nuovo allenatore del Napoli (3 July 2026)
+  https://www.ilnapolista.it/2026/07/allegri-ufficiale-nuovo-allenatore-napoli/
+  https://www.ansa.it/amp/sito/notizie/sport/calcio/2026/07/03/calcio-allegri-ora-e-ufficiale-il-napoli-puo-organizzare-il-suo-futuro_f58fdce1-9c26-431f-8da9-c5f361491cef.html
+  → announced officially 3 July 2026, contract to 30 June 2029, succeeding Antonio Conte, after terminating a Milan contract that ran to 2027; presented at the Dimaro Folgarida camp.
+- Sky Sport / Goal.com / Calcio.com Serie A transfer boards — Como summer 2026 arrivals listed as Morata (Milan), Nico Paz (Real Madrid), Cuenca (Barça Atlètic), Kaiki (Cruzeiro), Luis Milla (Getafe, permanent to June 2029), Thiland-Herard (Montpellier), Liberali (Catanzaro), Couto (Borussia Dortmund), Chalobah (Chelsea). Departures: Vojvoda (Udinese), Diego Carlos (Fenerbahçe), Alberto Moreno and Sergi Roberto (free agents). Coach Cesc Fàbregas, no change.
+  https://sport.sky.it/calciomercato/tabellone
+  https://www.goal.com/it/liste/calciomercato-serie-a-2026-2027-acquisti-e-cessioni-trasferimenti-ufficiali-e-probabili-formazioni-tipo/bltf076d7afa9eb1393
+  → **Gap and flag:** the board publishes neither dates nor fees for most of these entries, and some may belong to earlier windows rather than summer 2026. Only Chalobah (corroborated at £30m by Chelsea's own 2026 ledger in f1) and Milla (explicitly dated to June 2029) are individually confirmed; the rest are reported as listed.
+
+**Referee record**
+- pianetafanta / whoscored / valuestats via search — Luca Pairetto, Serie A 2025-26: 8 matches, 46 yellow cards, 3 red cards (6.1 cards per match), 229 fouls (≈28.6 per match, ≈4.7 fouls per card), 5 penalties (≈0.63 per match). Career: 302 matches, 1,195 yellows and 47 reds, 3.96 yellows per match. Described in the Italian press as one of Serie A's strictest officials.
+  https://www.pianetafanta.it/statistiche-arbitri.asp?NomeArbitro=Pairetto+L.&tipolink=100
+  https://it.whoscored.com/referees/386/show/luca-pairetto
+  https://valuestats.com/en/referee/17312-luca-pairetto
+  → **Flag:** eight matches is a thin base and the 2025-26 rate (6.1 cards/match) sits well above his 302-match career rate (3.96 yellows/match). Both figures are carried in the card; neither is dismissed. No history with either club surfaced.
