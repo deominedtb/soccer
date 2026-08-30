@@ -122,3 +122,51 @@
   https://thevarverdict.com/referees/tony-harrington/
   https://www.sportsmole.co.uk/people/tony-harrington/
   → Note: 12 matches is a thin base; the 0.25 penalties/game rests on three penalties across those twelve. No notable history with either club surfaced.
+
+---
+
+## f3 · Sunderland – Fulham FC
+
+**Fixture, venue, kickoff, team news**
+- VAVEL International — Sunderland vs Fulham: Premier League Preview, Gameweek 2
+  https://www.vavel.com/en/football/2026/08/28/premier-league/1269350-sunderland-vs-fulham-preview-premier-league-matchday-two.html
+  → Matchweek 2, Stadium of Light, Sunday 14:00 BST, Sky Sports. Sunderland: Alderete expected to return; Adingra out (pre-season injury); Ahoka available; **Méthalie suspended, ban carried over from France**. Fulham: Andersen returns from one-match suspension; Cairney out (knee surgery); De Fougerolles ruled out (injury v AFC Wimbledon).
+- Yahoo Sports — Preview: Sunderland vs Fulham, team news, lineups (Premier League 30/08)
+  https://sports.yahoo.com/articles/preview-sunderland-vs-fulham-team-132000796.html
+  → Matchweek 2; both sides on zero points; Sunderland lost 2-1 to Ipswich Town, Fulham won 3-0 at AFC Wimbledon in the Carabao Cup. H2H: Sunderland lead 26-22 across 68 meetings, 13 home wins in 35; Fulham won the most recent meeting 3-1; Le Bris has lost both previous encounters with Fulham.
+- WhoScored / Sportskeeda previews via search — Sunderland 14th and Fulham 12th on zero points; Sunderland's 2025-26 seventh place clinched Europa League qualification, ending a five-decade absence; Fulham unbeaten in last five v Sunderland, winning four; Gonzalo García scored on debut and again in the cup; Fulham five goals in first two competitive matches; Arbeloa's first PL match a 3-2 defeat to Chelsea.
+  https://www.whoscored.com/articles/SFPy9mSLnk-zd3QPgSn5-Q/show/20260830-sunderland-vs-fulham-prediction-1787953562
+  https://www.sportskeeda.com/football/sunderland-vs-fulham-prediction-betting-tips-august-30th-2026
+
+**League context and last-season baselines**
+- Wikipedia — 2025–26 Premier League (final table)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_Premier_League
+  → Sunderland 7th, 38/14/12/12, 42 GF, 48 GA, −6, 54 pts, qualified for Europa League league phase (with Bournemouth). Fulham 11th, 38/15/7/16, 47 GF, 51 GA, −4, 52 pts, no European qualification. Sunderland promoted in 2025 and survived; neither club promoted this season.
+
+**Transfers and manager change**
+- Sports Mole — Sunderland summer transfers and net spend, every confirmed signing and sale for Régis Le Bris's side, 2026 window
+  https://www.sportsmole.co.uk/football/sunderland/transfer-talk/feature/sunderland-summer-transfers-all-confirmed-ins-and-outs-for-2026_599274.html
+  → IN: Méthalie £24m LB (Toulouse), Ahoka £8.6m CM (Royal Antwerp), Meunier free RB (Lille). OUT (18): Mayenda £18.9m CF (Rennes), Patterson £8m GK (Wrexham), Cirkin free LB (QPR), Masuaku free LB (Konyaspor), Hjelde undisclosed CB (Mechelen), Seelt loan CB (Swansea), Pembélé undisclosed RB (Le Havre), Abdullahi undisclosed CF (Eyupspor), Rusyn free ST (Karpaty Lviv), Poveda free RW (Inter Bogota), Harrison Jones undisclosed (Peterborough), Zak Johnson undisclosed CB (York City), Young loan GK (Huddersfield), Aleksic loan AM (Partizan), plus free-agent exits Neil, Traoré, Geertruida, Huggins. Spend £32.6m, income £26.9m, net £5.7m.
+- Sunderland Echo — Every summer transfer window deal completed by Sunderland and their Premier League rivals
+  https://www.sunderlandecho.com/sport/football/sunderland-afc/every-summer-transfer-window-deal-completed-by-sunderland-and-their-premier-league-rivals-8936911
+- Sports Mole — Fulham summer transfers and net spend, every confirmed signing and sale, 2026 window
+  https://www.sportsmole.co.uk/football/fulham/transfer-talk/feature/fulham-summer-transfers-all-confirmed-ins-and-outs-for-2026_599229.html
+  → IN: Gonzalo García £34.3m CF (Real Madrid), Shea Charles £30m CM (Southampton), Kusi-Asare £5.2m CF (Bayern Munich). OUT: Jiménez free CF (Wolves), Benda free GK (Nottingham Forest), Harry Wilson free AM (Leeds), Diop undisclosed CB (Ipswich), Lukić undisclosed DM (Ipswich), Araujo undisclosed CB (Burton Albion), plus loans (McNally, Loupalo-Bi, Luke Harris, Dibley-Dias). Spend £69.5m, income £0m, net −£69.5m.
+- Sky Sports — Alvaro Arbeloa: Fulham appoint ex-Real Madrid boss as new head coach following Marco Silva's departure
+  https://www.skysports.com/football/news/11095/13553985/alvaro-arbeloa-fulham-appoint-ex-real-madrid-boss-as-new-head-coach-following-marco-silvas-departure
+  → appointed 7 July 2026, three-year contract; succeeded Marco Silva, who joined Benfica; Arbeloa was interim at Real Madrid after Xabi Alonso's January 2026 departure, leading the final 28 matches to second in La Liga and a Champions League quarter-final exit to Bayern Munich.
+- CBS Sports — Real Madrid fire Xabi Alonso after Barcelona defeat: Alvaro Arbeloa takes over as head coach
+  https://www.cbssports.com/soccer/news/real-madrid-fire-xabi-alonso-barcelona-defeat-alvaro-arbeloa-head-coach/
+
+**Referee**
+- Search-confirmed match officials (two independent listings) — Michael Salisbury, assistants Blake Antrobus and Alex James, fourth official Anthony Backhouse, VAR Matthew Donohue, assistant VAR Constantine Hatzidakis.
+  https://not606.com/threads/sunderland-afc-v-fulham-fc-%E2%80%93-sunday-30th-august-2026-ko-14-00.424526/
+  https://www.vavel.com/en/football/2026/08/29/sunderland/1269513-pre-match-analysis-sunderland-prepare-to-host-fulham.html
+  → **Conflict logged:** one source (lastwordonsports.com, HTTP 403 on retrieval) named Darren England as referee. Two listings give Salisbury with a full crew; Salisbury carried in the card, England logged as the dissenting report.
+- valuestats / whoscored / footymetrics / squawka referee pages via search — Michael Salisbury 2025-26 Premier League: 14 matches, 4.36 yellow cards per game, 0.07 red cards per game, 21.9 fouls per match, ≈5.1 fouls per card, 8 penalties awarded (≈0.57 per game). Last five appointments: 3.8 cards, 21.2 fouls per game.
+  https://valuestats.com/en/referee/13537-michael-salisbury
+  https://www.footymetrics.com/referees/758-michael-salisbury
+  https://www.squawka.com/en/features/premier-league-referees-ranked-leniency/
+- Darren England record (retained in case the dissenting appointment is correct) — 2025-26: 25 matches, 4.32 cards per game (4.20 yellow, 0.12 red), 526 fouls at 21.04 per match, 3 penalties at 0.12 per match (≈4.9 fouls per card); most second yellow cards of any referee in 2025-26 (3 in 19 matches).
+  https://www.statshub.com/referee/darren-england/74774
+  https://valuestats.com/en/referee/14812-darren-england
