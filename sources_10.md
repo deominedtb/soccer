@@ -358,3 +358,57 @@
   https://ligue1.com/fr/articles/l1_article_5728-les-arbitres-de-la-2e-journee-de-ligue-1-mc-donald-s-2026-2027
   → **Stade Rennais FC – Le Mans FC: referee Romain Lissorgue**, assistants Mikaël Berchebru and Florent Marmion, VAR Mathieu Vernice and Ludovic Zmyslony. (Same list independently confirms f4: Paris FC – OGC Nice, referee Jérémy Stinat, assistants Christophe Mouysset and Bastien Courbet, VAR Hamid Guenaoui and Mehdi Mokhtari; and gives f14: AS Monaco – Olympique de Marseille, referee Willy Delajod, assistants Erwan Finjean and Valentin Evrard, VAR Nicolas Rainville and Cédric Dos Santos.)
   → **Gap:** no card-rate, fouls-per-card or penalty statistics for Romain Lissorgue were sourced. Note also that no cards market of any kind was captured for this fixture in fixtures_10.md, so there is no Discipline row in section C.
+
+---
+
+## f8 · Manchester United – Ipswich Town
+
+**Fixture, venue, kickoff, team news, referee**
+- Al Jazeera — Man United vs Ipswich Town: Premier League preview, team news, prediction
+  https://www.aljazeera.com/sports/2026/8/29/man-united-vs-ipswich-town-premier-league-preview-team-news-prediction
+  → Sunday 30 Aug 2026, 16:30 BST, Old Trafford, matchweek 2. Managers Michael Carrick and Gary O'Neil. United out: Carlos Baleba (ankle, 2-3 weeks), Manuel Ugarte (torn knee ligament, potentially out until next season), Matthijs de Ligt, Mason Mount, Amad Diallo, Tom Heaton. Ipswich out: Azor Matusiwa, Florentino Luís. Predicted XIs given. **Confirms Ipswich's 2-1 opening win over Sunderland was at Portman Road (Ipswich's home ground)** — used to correct the venue error in f3.
+- Goal.com — Manchester United vs Ipswich Town Premier League preview
+  https://www.goal.com/en/news/manchester-united-ipswich-town-premier-league-preview/blt3f7ce0333d69c621
+  → **Referee: C. Pawson.** United lost 2-0 away at Hull City on 22 Aug (Semi Ajayi and Nobel Mendy scored in the first half; Rashford, Mainoo and Šeško introduced without breaking down Hull's compact block). Ipswich beat Sunderland 2-1 at Portman Road on 22 Aug, Jack Clarke scoring a 90th-minute winner as a substitute. Opta gives United a 66.4% win probability, Ipswich 15.3%.
+
+**League context and last-season baselines**
+- Wikipedia — 2025–26 Premier League (final table)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_Premier_League
+  → Manchester United 3rd, 38/20/11/7, 69 GF, 50 GA, +19, 71 pts. Also: Sunderland and Leeds were the first promoted clubs to avoid relegation since 2022-23, Sunderland finishing 7th — directly relevant to how the division has recently treated promoted sides.
+- Wikipedia — 2025–26 Ipswich Town F.C. season
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_Ipswich_Town_F.C._season
+  → Ipswich 2nd in the Championship, automatic promotion, sealed 2 May 2026 with a 3-0 win over QPR at Portman Road after one season away. Manager Kieran McKenna. Leading scorer Jack Clarke, 16 league goals.
+  → **Gap:** the full Championship record (P/W/D/L/GF/GA/points) was not established from this source.
+- Sky Sports — Ipswich Town: How Kieran McKenna guided Tractor Boys to immediate Premier League return
+  https://www.skysports.com/football/news/11707/13537379/ipswich-town-how-kieran-mckenna-guided-tractor-boys-to-immediate-premier-league-return
+  → Ipswich spent over £130m after their previous (2024) promotion and were relegated in 2024-25.
+
+**Transfers and manager change**
+- Sports Mole — Man United summer transfers and net spend, every confirmed signing and sale for Michael Carrick's side, 2026 summer window
+  https://www.sportsmole.co.uk/football/man-utd/transfer-talk/feature/man-united-summer-transfers-all-confirmed-ins-and-outs-for-2026_599075.html
+  → IN: Baleba £70m DM (Brighton), Andrey Santos £50m CM (Chelsea), Tielemans £35m CM (Aston Villa), Tynan Thompson £8m LW (Tottenham), Darlow free GK (Leeds). OUT: Højlund £38m CF (Napoli), Sancho free, Casemiro free, Malacia free, Fredericson undisclosed CB (Lausanne-Sport), Bayindir loan GK (Celta Vigo), plus youth exits. Spend £163m, income £38m, net −£125m. Manager Michael Carrick.
+  → **Conflict logged:** a secondary summary gives Baleba at £65m plus £5m add-ons and total spend at "approximately £93m across six official incomings", which does not reconcile with the itemised fees. The Sports Mole ledger is the one carried.
+  → **Gap:** the date Carrick's permanent appointment was confirmed was not established.
+- Ipswich Town official — Kieran McKenna to step down as Town boss (10 June 2026)
+  https://www.itfc.co.uk/news/2026/june/10/kieran-mckenna-to-step-down-as-ipswich-town-manager/
+  → resignation after five seasons; wanted time away from football management.
+- Sky Sports / ESPN — Ipswich Town: Gary O'Neil appointed new manager ahead of Premier League return
+  https://www.skysports.com/football/news/11707/13556081/ipswich-town-gary-oneil-appointed-new-tractor-boys-manager-ahead-of-premier-league-return
+  https://www.espn.com/soccer/story/_/id/49119895/ipswich-town-announce-gary-o-neil-new-manager-ahead-premier-league-return
+  → three-year contract; former Wolves and Bournemouth manager; joined from Strasbourg, whom he had joined only in January 2026.
+- Sports Mole — Ipswich Town summer transfers and net spend, 2026 window
+  https://www.sportsmole.co.uk/football/ipswich-town/transfer-talk/feature/ipswich-summer-transfers-all-confirmed-ins-and-outs-for-2026_599297.html
+  → IN: Enciso £30m AM (Strasbourg), Fatawu £20m RW (Leicester City), Ouattara £17m CM (Strasbourg), Florentino Luís £16m CM (Burnley), Maeda £10m CF (Celtic), Scherpen £8.5m GK (Union Saint-Gilloise), Akpom £8m ST (Ajax), Kipre £3.9m CB (Reims), Diop undisclosed CB (Fulham), Lukić undisclosed DM (Fulham), Emersonn undisclosed ST (Toulouse), van Oevelen undisclosed GK (Volendam). OUT: Muric £6m GK (Sassuolo), Hirst £6m CF (Stoke City), plus loans. Spend £113.4m, income £12m, net −£101.4m.
+
+**Referee record**
+- valuestats / bettingtips4you / Sports Mole referee pages via search — Craig Pawson 2025-26 Premier League, as of February 2026: 13 matches, 29 yellow cards (2.23 per game), 1 red card (0.08 per match), 1 penalty (0.08 per match). His 2024-25 average was 4.64 cards per game.
+  https://valuestats.com/en/referee/15293-craig-pawson
+  https://bettingtips4you.com/football/referees/craig-pawson/
+  https://www.sportsmole.co.uk/people/craig-pawson/
+  → **Gaps:** the 2.23 figure is a mid-season snapshot rather than a full-season rate, and no fouls-per-card ratio was sourced. The gap between 2.23 (2025-26) and 4.64 (2024-25) is unexplained in the sources and is reported as a flag. No history with either club surfaced.
+
+---
+
+## Correction applied to f3
+
+- f3 originally stated that Sunderland lost 2-1 **at home** to Ipswich Town on the opening day. The Al Jazeera and Goal.com previews for f8 both place that match **at Portman Road**, Ipswich's ground. f3 was corrected: Sunderland lost away, and this is their first home fixture of the season. Neither the Yahoo nor the VAVEL Sunderland preview stated the venue, which is how the error entered.
