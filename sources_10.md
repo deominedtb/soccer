@@ -546,3 +546,44 @@
   https://statz.ai/referee/miguel-angel-ortiz-arias
   https://valuestats.com/en/referee/20636-miguel-angel-ortiz-arias
   → No history with either club surfaced.
+
+---
+
+## f12 · Cagliari – Inter
+
+**Fixture, venue, kickoff, team news, referee**
+- Inter official — Cagliari-Inter, la guida completa al match
+  https://www.inter.it/it/notizie/cagliari-inter-la-guida-completa-al-match
+  → Sunday 30 Aug 2026, 20:45, Unipol Domus, Serie A matchday 2. **Referee Michael Fabbri (Ravenna)**, assistants Ceccon and Vecchi, fourth official La Penna, VAR Aureliano, AVAR Paterna. H2H: 90 Serie A meetings, Inter 47 wins, 29 draws, Cagliari 14; in Sardinia 45 matches, Inter 20 wins, Cagliari 7, 18 draws. Inter have won nine of the last ten Serie A meetings scoring 26 goals (2.6 per game), and all six recent away league fixtures at this ground, keeping clean sheets in the last three; 160 Inter goals against Cagliari historically.
+- ANSA — Calcio: Fabbri arbitra Cagliari-Inter, Napoli-Como a Pairetto (26 Aug 2026)
+  https://www.ansa.it/sito/notizie/sport/calcio/2026/08/26/calcio-fabbri-arbitra-cagliari-inter-napoli-como-a-pairetto_791389df-26c6-47e5-b105-cd3825d230d2.html
+  → independently confirms both this fixture's referee and f10's.
+- FcInterNews — Preview Cagliari-Inter
+  https://www.fcinternews.it/in-primo-piano/i-preview-i-cagliari-inter-1017170
+  → Managers Pisacane (Cagliari) and Chivu (Inter). Cagliari out: Trepy, Idrissi; Mina a doubt, not at full fitness. Inter out: Spence (also doubtful for the next fixture); Mkhitaryan returns from suspension; Jones ready for a possible debut. Matchday 1: Cagliari 1-0 v Parma (Romano); Inter 4-1 v Monza. Probable XIs given.
+
+**League context and last-season baselines**
+- Wikipedia — 2025–26 Serie A (final table)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_Serie_A
+  → Inter 1st (champions, 21st title, clinched 3 May 2026), 38/27/6/5, 89 GF, 35 GA, +54, 87 pts. Cagliari 14th, 38/11/10/17, 40 GF, 53 GA, −13, 43 pts. Neither club promoted.
+
+**Transfers and manager**
+- Sky Sport / Goal.com / cagliarinews24 Serie A transfer boards via search — Cagliari summer 2026: IN Basic (Lazio), Helgason (Lecce), Correia (Valencia), Bella-Kotchap (Verona), Berardi (Pescara), A. Rrahmani (Sparta Prague), Gomez (Zaragoza). OUT: loan returns Dossena, Palestra, Folorunsho, Sulemana, Mazzitelli; Belotti free; Gaetano permanent. Window 29 June – 1 September 2026 (20:00).
+  https://www.cagliarinews24.com/tabellone-calciomercato-estivo-cagliari-2026/
+  https://sport.virgilio.it/tabellone-calciomercato-serie-a-648719
+  → **Gap:** no fees published for any Cagliari movement; the board lists surnames only for several arrivals, and the card reports them as such rather than expanding them.
+- Cagliari Calcio official / Sky Sport panchine — Fabio Pisacane renewed to 30 June 2028 with a club option for a further season, having secured survival.
+  https://cagliaricalcio.com/news/fabio-pisacane-e-il-nuovo-allenatore-del-cagliari/
+  https://sport.sky.it/calciomercato/allenatori-serie-a-2026-2027-situazione-panchine-squadre
+  → **Conflict logged and resolved:** one Serie A transfer summary named Giovanni Stroppa as Cagliari's new head coach for 2026-27. This is contradicted by the club's own reporting and by Stroppa having renewed at Venezia through 2029. Pisacane is the version carried.
+- Eurosport / calcioweb Serie A transfer boards — Inter: Dumfries left for Real Madrid (€20m release clause, corroborated on Real Madrid's ledger in f6) and Djed Spence was signed as the replacement; Inter working to complete a deal for Tottenham's Cristian Romero. Head coach Cristian Chivu. Window described as targeted acquisitions rather than a revolution.
+  https://www.eurosport.it/calcio/calciomercato/2026-2027/il-tabellone-del-mercato-estivo-della-serie-a-2026-27-acquisti-cessioni-ufficialita-e-tutte-le-operazioni_sto23311886/story.shtml
+  https://www.calcioweb.eu/calciomercato/calciomercato-serie-a-2026-acquisti-cessioni-trattative-e-panchine-aggiornate/10729310/
+  → **Gap:** no fee published for Spence; no full list of Inter departures established.
+
+**Referee record**
+- whoscored / pianetafanta / sbonews via search — Michael Fabbri, Serie A 2024-25: 11 matches, 4.5 yellow cards per game, two dismissals. Divisional benchmark for Serie A 2025-26 across 381 refereeing appearances: 25.34 fouls, 3.59 cautions, 0.28 penalties and 0.18 dismissals per game.
+  https://it.whoscored.com/referees/356/show/michael-fabbri
+  https://www.pianetafanta.it/Statistiche-Arbitri.asp?tipolink=100&NomeArbitro=Fabbri+M.
+  https://sbonews.sbostats.com/falli-rigori-e-cartellini-le-statistiche-degli-arbitri-in-serie-a/
+  → **Gap:** no 2025-26 season figures, no fouls-per-card ratio and no penalty rate could be sourced for Fabbri specifically. The 4.5 cautions figure is from 2024-25 on an 11-match base and is reported against the divisional average rather than as a current-season rate. No history with either club surfaced.
