@@ -264,3 +264,51 @@
   https://statz.ai/referee/daniel-siebert
   https://valuestats.com/en/referee/80234-daniel-siebert
   → **Conflict logged:** a second source reports 4.67 total cards per match (4.38 yellow, 0.29 red) for the same season, against 3.63 yellows and 0.13 reds elsewhere. The two readings straddle the 3.5 cards line offered on this fixture; reported, not resolved. No history with either club surfaced.
+
+---
+
+## f6 · Real Madrid – Malaga
+
+**Fixture, venue, kickoff, team news**
+- Yahoo Sports — Preview: Real Madrid vs Málaga CF, team news, lineups (La Liga 30/08)
+  https://sports.yahoo.com/articles/preview-real-madrid-vs-m-150500795.html
+  → Sunday 30 Aug 2026, Santiago Bernabéu, LaLiga round 3. Managers José Mourinho and Juan Funes. Real Madrid out: Tchouaméni (muscle), Raúl Asencio (muscle), Endrick (muscle), Thiago Pitarch (cruciate). Málaga: no injuries listed. Real Madrid 6 pts, 2nd, beat Real Sociedad 4-1; Málaga 1 pt, 16th, drew 1-1 with Deportivo. H2H: 80 meetings, Madrid 52-10 with 18 draws; 41 at the Bernabéu, 33 Madrid wins, 8 draws, no Málaga win; Mourinho v Málaga six wins, one draw, one defeat in eight.
+- Goal.com — Real Madrid vs Malaga LaLiga preview: team news, tactics, latest transfers
+  https://www.goal.com/en/news/real-madrid-malaga-laliga-preview/blt035ee5e944fe8ae6
+  → **Conflict logged:** this preview reports Rodrygo and Ferland Mendy sidelined, which does not appear in the Yahoo injury list. Both reported, neither resolved. Málaga predicted XI: Herrero; Puga, Recio, Galilea, Garrido; Merino, Dotor, Lorenzo; Cruz, Muñoz; Chupete.
+- Movistar Plus / Comuniate — kickoff 17:00 CEST, Santiago Bernabéu, jornada 3.
+  https://www.movistarplus.es/comunicacion/blog/real-madrid-malaga-cf-horario-previa-y-a-que-hora-ver-el-partido-de-laliga-ea-sports/
+  https://www.comuniate.com/partido/7/3/real-madrid-malaga
+
+**League context and last-season baselines**
+- Wikipedia — 2025–26 La Liga (final table)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_La_Liga
+  → Real Madrid 2nd, 38/27/5/6, 77 GF, 35 GA, +42, 86 pts. Barcelona champions (29th title, second consecutive, clinched 10 May 2026). Promoted into 2025-26: Levante, Elche, Oviedo. Relegated out of 2025-26: Mallorca, Girona, Real Oviedo — i.e. of the three promoted clubs, Oviedo went straight back down while Levante and Elche survived.
+- Málaga CF official — Temporada 2025-2026 / promotion coverage; and Segunda División 2025-26 (Wikipedia ES)
+  https://www.malagacf.com/en/season-2025-2026
+  https://es.wikipedia.org/wiki/Segunda_Divisi%C3%B3n_de_Espa%C3%B1a_2025-26
+  https://en.wikipedia.org/wiki/2026_Segunda_Divisi%C3%B3n_play-offs
+  → Málaga 4th in the regular season: 42 played, 21 W, 10 D, 11 L, 75 GF, 52 GA, 73 pts. Promoted via the play-offs, beating UD Las Palmas and UD Almería. Return to the top flight after an eight-year absence; two promotions in three years. Top scorer Chupete 25 goals (second in the division behind Almería's Arribas on 26); Larrubia and Adrián Niño 12 each.
+
+**Transfers and manager change**
+- Wikipedia ES — Anexo: Temporada 2026-27 del Real Madrid Club de Fútbol
+  https://es.wikipedia.org/wiki/Anexo:Temporada_2026-27_del_Real_Madrid_Club_de_F%C3%BAtbol
+  → Coach: José Mourinho announced 11 June 2026, signed to 2029; Arbeloa's dismissal announced 9 June 2026. IN: Cucurella €55m + €5m variables (15 Jun, from Chelsea), Bernardo Silva free (17 Jun), Konaté free (18 Jun, from Liverpool), Dumfries €20m release clause (5 Jul), Carlos Espí €25m release clause (30 Jul, from Levante, to 2031), Yan Diomande €125m + €15m variables (6 Aug). OUT: Carvajal (18 May, after 13 seasons), Alaba (22 May, after 5 seasons), Ceballos contract termination (26 Jun), Fran García €4m (Real Betis, 8 Jul), Gonzalo García €40m (Fulham, 3 Aug).
+  → **Gap:** the source table's position column labels Espí and Diomande inconsistently with other reporting (Espí described elsewhere as a forward from Levante). Fees and dates are firm; position labels are logged as uncertain.
+- SI.com español / DAZN — Mourinho appointment and Real Madrid 2026 ins and outs
+  https://www.si.com/es-us/futbol/altas-y-bajas-del-real-madrid-rumbo-a-la-temporada-2026-27-calificacion-de-sus-mejores-movimientos
+  https://www.dazn.com/es-MX/news/f%C3%BAtbol/fichajes-real-madrid-2026-altas-bajas-rumores-plantilla-actualizada/sngj3n46cxwf1uu0v9ggnix93
+- Betfair.es / eldesmarque / ascensodirecto (via search; betfair.es returned HTTP 403 on retrieval) — Málaga summer 2026: only three signings, two on loan and one free, and no sales; Juan Funes renewed as head coach; sporting director Loren Juarros stating the plan (keep the core, targeted additions, exits for those finished); renewals to 2027 for striker Eneko Jauregi and centre-back Einar Galilea; stated needs of defensive reinforcement, a pivot and a creative midfielder.
+  https://www.ascensodirecto.es/articulo/malaga-cf/malaga-cf-perfila-plantilla-asi-mercado-fichajes/20260731114118001623.html
+  https://www.eldesmarque.com/futbol/mercado-de-fichajes/20260624/malaga-perfila-fichajes-lineas-rojas-loren-juarros-mercado_18_019538692.html
+  https://en.wikipedia.org/wiki/Juan_Francisco_Funes
+  → **Gap:** the names of Málaga's three signings and their fee/loan terms were not established.
+
+**Referee**
+- El Español (Málaga) — El Málaga CF ya vivió una 'hazaña' con Martínez Munuera, el árbitro de este domingo en el Bernabéu
+  https://www.elespanol.com/malaga/deporte/malaga-c-f/20260829/malaga-cf-vivio-hazana-martinez-munuera-arbitro-domingo-bernabeu/1003744366835_0.html
+  → **Referee Juan Martínez Munuera**, designated by the Comité Técnico de Árbitros of the RFEF for jornada 3. History with Málaga: refereed their 0-1 win at the Camp Nou in 2015; twelve Málaga LaLiga matches between 2013-14 and 2017-18, five wins, two draws, five defeats.
+  → **Conflict logged:** one earlier preview listed the referee as "a confirmar"; the El Español report naming the CTA designation is the version carried.
+- estadisticaslaliga / valuestats / statsbet via search — Juan Martínez Munuera 2025-26 LaLiga: 18 matches, 76 yellow cards (4.22 per game), 2 red cards (0.11 per game), 507 fouls (28.17 per match, ≈6.7 fouls per card), 6 penalties (0.33 per match).
+  https://www.estadisticaslaliga.es/recibe_arbitros.php?pedido=Juan+Mart%C3%ADnez+Munuera
+  https://valuestats.com/en/referee/15712-juan-martinez-munuera
