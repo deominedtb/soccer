@@ -10,6 +10,6 @@ f9 | 17:30 | Augsburg – Schalke 04 | DONE
 f10 | 18:30 | Napoli – Como | DONE
 f11 | 19:30 | Deportivo La Coruña – Valencia | DONE
 f12 | 20:45 | Cagliari – Inter | DONE
-f13 | 20:45 | Lazio – Genoa | TODO
+f13 | 20:45 | Lazio – Genoa | DONE
 f14 | 20:45 | Monaco – Marsiglia | TODO
 f15 | 21:30 | Celta Vigo – Athletic Bilbao | TODO

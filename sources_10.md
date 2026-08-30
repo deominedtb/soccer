@@ -587,3 +587,41 @@
   https://www.pianetafanta.it/Statistiche-Arbitri.asp?tipolink=100&NomeArbitro=Fabbri+M.
   https://sbonews.sbostats.com/falli-rigori-e-cartellini-le-statistiche-degli-arbitri-in-serie-a/
   → **Gap:** no 2025-26 season figures, no fouls-per-card ratio and no penalty rate could be sourced for Fabbri specifically. The 4.5 cautions figure is from 2024-25 on an 11-match base and is reported against the divisional average rather than as a current-season rate. No history with either club surfaced.
+
+---
+
+## f13 · Lazio – Genoa
+
+**Fixture, venue, kickoff, team news, referee**
+- Virgilio Sport — Lazio-Genoa: probabili formazioni, indisponibili, arbitro, statistiche
+  https://sport.virgilio.it/lazio-genoa-probabili-formazioni-indisponibili-arbitro-statistiche-969380
+  → Sunday 30 Aug 2026, 20:45, Stadio Olimpico, Serie A matchday 2. **Referee Feliciani**, assistants Mastrodonato and Fontani, fourth official Mariani, VAR Abisso, AVAR Cosso. Lazio out: Gabarrón Gil (ankle), Marušić (thigh), Gigot (back), Cataldi (groin), Dele-Bashiru (thigh), Furlanetto (ACL), Bordon (foot fracture). Genoa out: Traoré (groin), Havel (groin), Nuredini (ACL), Venturino (knee). Matchday 1: Bologna 0-1 Lazio; Genoa 0-2 Napoli. H2H: Lazio won 8 of the last 9; no draw in the last 16 meetings at the Olimpico, 10 Lazio wins.
+- Radio Roma / GenovaToday / Lazionews — same kickoff, venue and officiating crew; managers Gattuso (Lazio) and De Rossi (Genoa); Lazio additionally reported without Patric, with Josip Šutalo and Luca Pellegrini in doubt.
+  https://www.radioroma.it/2026/08/29/lazio-genoa-allolimpico-orario-formazioni-e-arbitro/
+  https://www.genovatoday.it/sport/calcio/lazio-genoa-probabili-formazioni-2026.html
+  https://www.lazionews.eu/notizie/probabili-formazioni-lazio-genoa/
+
+**League context and last-season baselines**
+- Wikipedia — 2025–26 Serie A (final table)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_Serie_A
+  → Lazio 9th, 38/14/12/12, 41 GF, 40 GA, +1, 54 pts. Genoa 16th, 38/10/11/17, 41 GF, 51 GA, −10, 41 pts. Neither club promoted.
+
+**Transfers and manager change**
+- Lazionews / Solo la Lazio / RomaToday — Lazio summer 2026: Gennaro Gattuso replaces Maurizio Sarri on a two-year deal with an option for a third, reported at €1.5m a season plus Champions League bonuses; stated plan of four or five signings for a more offensive side with a high line and fast transitions. Club reported at roughly 81% on the wage-to-revenue measure, outside the parameter, so sales must precede purchases. OUT: Mario Gila €30m (Milan), Ivan Provedel €3m (Inter), Toma Basic, Elseid Hysaj and Pedro Rodríguez free, Daniel Maldini (loan return to Atalanta). IN: Dia bought outright from Salernitana (~€11m), Galassi from Real Madrid's youth setup (~€4m), Pedraza and Doekhi as free agents.
+  https://www.lazionews.eu/notizie/calciomercato-lazio-estate-2026/
+  https://www.sololalazio.it/2026/06/03/lazio-mercato-cessioni-acquisti-romagnoli-tavares-noslin-cancellieri/
+  https://www.romatoday.it/sport/calciomercato/lazio-trattative-acquisti-cessioni-2026-2027.html
+  → Cross-check: Basic's free exit from Lazio is consistent with Cagliari's ledger in f12, which lists "Basic (from Lazio)" without a fee.
+- il Fatto Quotidiano / Buon Calcio a Tutti / genova24 — Genoa summer 2026: coach Daniele De Rossi (no change); identity described as proactive football, building from the back, organised pressing, 3-5-2 shifting to 3-4-2-1. IN: Colombo (forward, Milan, reported as the club's most expensive signing), Vaz (defender, Varesina), Meichtry (midfielder, Thun), Puczka (defender, Juventus). OUT: Malinovskyi (Trabzonspor), Ekhator (Juventus), Leali (Verona), Vogliacco (Cremonese), Ankeye (Železničar Pančevo), Ekuban (unattached).
+  https://www.ilfattoquotidiano.it/2026/08/20/serie-a-2026-27-acquisti-cessioni-formazioni-tipo-squadre/8483691/7/
+  https://www.buoncalcioatutti.it/2026/08/20/calciomercato-genoa-riepilogo-acquisti-cessioni-e-rinnovi-in-aggiornamento/
+  https://www.genova24.it/2026/06/calciomercato-genoa-il-punto-467736/
+  → **Gap:** no fees are published for any Genoa movement in the sources consulted.
+
+**Referee record**
+- whoscored / statshub / valuestats / pianetafanta via search — Ermanno Feliciani, Serie A 2025-26: 4.01 yellow cards and 23.67 fouls per match (≈5.9 fouls per card); career Serie A: 37 matches, 11 penalties (close to one every three games), 2 direct red cards, career yellow average ≈3.98 per game. Sources note the 2025-26 rate represents an increase on his career average. Divisional benchmark for Serie A 2025-26: 3.59 cautions, 25.34 fouls, 0.28 penalties and 0.18 dismissals per game across 381 appearances.
+  https://it.whoscored.com/referees/5388/show/ermanno-feliciani
+  https://www.statshub.com/pt/referee/feliciani-ermanno/788154
+  https://valuestats.com/en/referee/13984-ermanno-feliciani
+  https://www.pianetafanta.it/statistiche-arbitri.asp?NomeArbitro=FELICIANI+E.&tipolink=100
+  → No history with either club surfaced.
