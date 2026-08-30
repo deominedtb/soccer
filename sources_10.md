@@ -500,3 +500,49 @@
   https://it.whoscored.com/referees/386/show/luca-pairetto
   https://valuestats.com/en/referee/17312-luca-pairetto
   → **Flag:** eight matches is a thin base and the 2025-26 rate (6.1 cards/match) sits well above his 302-match career rate (3.96 yellows/match). Both figures are carried in the card; neither is dismissed. No history with either club surfaced.
+
+---
+
+## f11 · Deportivo La Coruña – Valencia
+
+**Fixture, venue, kickoff, team news, referee**
+- FútbolFantasy / fotmob / forebet previews via search — Estadio Abanca-Riazor, Sunday 30 Aug 2026, 19:30 local. Deportivo 11th on 2 points, Valencia 15th on 1 point. Deportivo out: Noé (injury), Yeremay Hernández (injury). Coaches Antonio Hidalgo (Deportivo) and Carlos Corberán (Valencia). Under 2.5 goals in four of Deportivo's last six outings; Valencia under 2.5 in 67% of recent LaLiga fixtures.
+  https://www.futbolfantasy.com/partidos/22445-deportivo-valencia
+  https://www.fotmob.com/matches/deportivo-la-coruna-vs-valencia/3bokua
+  https://www.forebet.com/en/football/matches/deportivo-la-coru%C3%B1a-valencia-2495192
+  → **Gap:** no injury or suspension list published for Valencia.
+- jornadaperfecta / riazor.org / Plaza Deportiva — jornada 3, Sunday 19:30; **referee Miguel Ángel Ortiz (Arias)**. Both sides seeking a first win of the season. (riazor.org separately records that Alberola Rojas refereed Deportivo's matchday-2 fixture away at Málaga, confirming the 1-1 with Málaga was played in Málaga.)
+  https://www.jornadaperfecta.com/partido/13337/deportivo-valencia
+  https://www.riazor.org/alberola-rojas-deportivo-malaga-segunda-jornada/
+  https://plazadeportiva.valenciaplaza.com/plazadeportiva/valenciacf/el-valencia-cf-busca-en-riazor-una-victoria-que-cambie-el-rumbo
+
+**League context and last-season baselines**
+- Wikipedia — 2025–26 La Liga (final table)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_La_Liga
+  → Valencia 9th, 38/13/10/15, 46 GF, 55 GA, −9, 49 pts.
+- Wikipedia ES — Segunda División de España 2025-26
+  https://es.wikipedia.org/wiki/Segunda_Divisi%C3%B3n_de_Espa%C3%B1a_2025-26
+  → Racing Santander champions and Deportivo de La Coruña 2nd, both automatically promoted; Málaga promoted via the play-off from 4th, with Almería 3rd.
+  → **Gap:** the detailed Segunda table row for Deportivo (played, W/D/L, goals, points) was not retrievable from the page excerpt.
+- Football España / Yahoo — Deportivo La Coruña return to La Liga after an eight-year absence, promotion sealed 25 May 2026 with a 2-0 win over Real Valladolid, under Antonio Hidalgo.
+  https://www.football-espana.net/2026/05/25/deportivo-la-coruna-return-la-liga
+  https://sports.yahoo.com/articles/rc-deportivo-la-coruna-return-000000460.html
+
+**Transfers and manager**
+- FútbolFantasy / riazor.org / bet365 ES / betfair.es transfer trackers via search — Deportivo summer 2026: IN Leo Román GK €9m (Mallorca, the club's largest fee of the window), Pierre-Emerick Aubameyang (Olympique de Marseille, the summer's highest-profile arrival), Teun Gijselhart, Bright Ede, Lorenzo Amatucci, Jonathan Asp Jensen. Transfer balance −€25.5m. First top-flight window in eight years; window open 1 July to 1 September 2026. Head coach Antonio Hidalgo, no change.
+  https://www.futbolfantasy.com/mercado-de-fichajes-del-deportivo-altas-bajas/verano-2026
+  https://www.riazor.org/mercado-fichajes-deportivo-primera-division-directo/
+  https://news.bet365.es/es-es/article/mercado-fichajes-deportivo-coruna-altas-bajas-rumores/2026070710503156303
+  → **Gap:** fees beyond Román's €9m and the aggregate balance were not published.
+- FútbolFantasy / fichajes.com / eldesmarque via search — Valencia summer 2026: IN Justin de Haas CB (Famalicão), Aliou Dieng DM (Al-Ahly), Guido Rodríguez CM (West Ham), Dani Raba (deal reported to 30 June 2027). OUT: largest sale Cenk Özkacar €1.75m, largest transfer Ryunosuke Sato €4.00m. Transfer balance −€2.25m (Transfermarkt). Club priority stated as an attacker owing to an acute shortage of goals, with Ramazani and Sebastiano Esposito named as late targets (27 Aug 2026). Coach Carlos Corberán.
+  https://www.futbolfantasy.com/mercado-de-fichajes-del-valencia-altas-bajas/verano-2026
+  https://www.fichajes.com/equipo/valencia-cf/altas-bajas/
+  https://www.eldesmarque.com/futbol/mercado-de-fichajes/20260827/siguiente-valencia-cf-corberan-ramazani_18_020010852.html
+  → **Gap:** the date of Carlos Corberán's appointment at Valencia was not established; no managerial change this summer was reported.
+
+**Referee record**
+- statshub / statz.ai / valuestats via search — Miguel Ángel Ortiz Arias, LaLiga 2025-26: 11 matches, 4.20 yellow cards and 22.75 fouls per game (≈5.4 fouls per card), 4.5 total cards per match, 3 penalties in 11 (≈0.27 per match). Career: 122 matches, 4.68 yellows and 0.20 reds per match, 40 penalties (≈0.33 per match); characterised as a strict official above the LaLiga average.
+  https://www.statshub.com/es/referee/miguel-angel-ortiz-arias/786436
+  https://statz.ai/referee/miguel-angel-ortiz-arias
+  https://valuestats.com/en/referee/20636-miguel-angel-ortiz-arias
+  → No history with either club surfaced.

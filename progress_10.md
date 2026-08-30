@@ -8,7 +8,7 @@ f7 | 17:15 | Stade Rennes FC – Le Mans FC | DONE
 f8 | 17:30 | Manchester United – Ipswich Town | DONE
 f9 | 17:30 | Augsburg – Schalke 04 | DONE
 f10 | 18:30 | Napoli – Como | DONE
-f11 | 19:30 | Deportivo La Coruña – Valencia | TODO
+f11 | 19:30 | Deportivo La Coruña – Valencia | DONE
 f12 | 20:45 | Cagliari – Inter | TODO
 f13 | 20:45 | Lazio – Genoa | TODO
 f14 | 20:45 | Monaco – Marsiglia | TODO
