@@ -74,3 +74,51 @@
   → **Gap:** fouls-per-card for Michael Oliver not established. **Conflict logged:** his reported 2 penalties in 29 matches (≈0.07/game) sits fivefold below his career 0.36/game and is unexplained in the sources; reported as a flag, not resolved.
 - Premier League — Match officials for Matchweek 3 (checked, 2025/26 season, published 25 Aug 2025 — not applicable to this fixture)
   https://www.premierleague.com/en/news/4386152/match-officials-for-matchweek-3
+
+---
+
+## f2 · Leeds United – Brentford
+
+**Fixture, venue, kickoff, team news, referee**
+- Brentford FC official — Match preview: Leeds United v Brentford, Premier League, 30-08-2026
+  https://www.brentfordfc.com/en/news/article/match-previews-leeds-united-v-brentford-premier-league-30-08-2026
+  → Sunday 14:00 BST, Elland Road. **Referee Tony Harrington**, assistants Scott Ledger and Akil Howson, fourth official Farai Hallam, VAR Neil Davies. Brentford two wins (Tottenham, Birmingham City), nine goals; Leeds two wins (1-0 Forest league, 2-0 Forest Carabao Cup), two clean sheets. Last three PL meetings drawn; last meeting March 2026, 0-0; Brentford winless at Elland Road since 2015 (Alex Pritchard, Championship). Identical calendar-2026 records: 7W 9D 5L each.
+- Football365 / Squawka — Leeds v Brentford preview, team news, lineups
+  https://www.football365.com/match-preview/leeds-v-brentford-prediction-preview
+  https://www.squawka.com/us/news/premier-league/match-preview-leeds-vs-brentford-30-08-26-premier-league/
+  → Trafford home debut behind Rodon/Bijol/Muharemovic; Leeds out: Mateo Joseph, Wilfried Gnonto (injured), Gudmundsson and Gruev doubtful. Brentford out: Antoni Milambo, Sepp van den Berg (injured); Janelt and Kayode scored in the 3-0 v Tottenham. Sky Sports coverage from 13:00.
+
+**League context and last-season baselines**
+- Wikipedia — 2025–26 Premier League (final table)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_Premier_League
+  → Leeds United 14th, 38/11/14/13, 49 GF, 56 GA, −7, 47 pts. Brentford 9th, 38/14/11/13, 55 GF, 52 GA, +3, 53 pts. Leeds promoted in 2025 and survived; neither club promoted this season.
+
+**Transfers and manager**
+- Sports Mole — Leeds United summer transfers and net spend, every confirmed signing and sale for Daniel Farke's side, 2026 window
+  https://www.sportsmole.co.uk/football/leeds-united/transfer-talk/feature/leeds-united-summer-transfers-all-confirmed-ins-and-outs-for-2026_599328.html
+  → IN: Trafford £40m GK (Man City), Muharemovic £34.1m CB (Sassuolo), Elvedi £8.5m CB (Mönchengladbach), Zetterer £4.28m GK (Eintracht Frankfurt), Harry Wilson free (Fulham). OUT: Struijk £18m CB (Brighton), Schmidt £1.1m (Young Boys), Meslier free GK (Arsenal), Darlow free GK (Man Utd), Perri loan GK (Torino), Bornauw loan CB (Hamburg), Gelhardt undisclosed (Hull City), Piroe loan (West Ham), Gray loan (Sheffield Wednesday), Harrison undisclosed (New England Revolution), Byram free (Middlesbrough). Spend £82.6m, income £19.1m.
+  → **Conflict logged:** the page's stated net spend (£67.78m) does not reconcile with its own spend and income columns (£82.6m − £19.1m = £63.5m). Both gross figures reported in the card; the net is not.
+- Leeds United official — Summer 2026: Leeds United transfers ins and outs
+  https://www.leedsunited.com/en/news/summer-2026-leeds-united-transfers-ins-and-outs
+  → Trafford joined 6 Aug 2026; Charlie Crew 5 Aug 2026; Gelhardt left 15 Aug 2026.
+- Sports Mole — Brentford summer transfers and net spend, every confirmed signing and sale for Keith Andrews's side, 2026 window
+  https://www.sportsmole.co.uk/football/brentford/transfer-talk/feature/brentford-summer-transfers-all-confirmed-ins-and-outs-for-2026_599228.html
+  → IN: Sangaré £41m DM (Lens), Diouf £40m LB (West Ham), Schuster £15.6m CB (RB Salzburg), Jaidon Anthony undisclosed LW (Burnley), Callum Wilson free ST (West Ham). OUT: Pinnock £5m CB (Coventry), Henderson free (Chelsea), Onyeka undisclosed (Coventry), Trevitt undisclosed (Wigan), McManus undisclosed (Gillingham), plus seven loans. Spend £96.6m, income £5m, net −£91.6m.
+  → **Conflict logged:** a secondary summary reports Brentford's net spend as £66m and Onyeka's fee as £6m. Reported, not resolved.
+- beIN Sports — Sangare seals club-record switch to Brentford from Lens (1 Aug 2026)
+  https://www.beinsports.com/en-us/soccer/premier-league/articles/sangare-seals-club-record-switch-to-brentford-from-lens-2026-08-01
+- Brentford FC official — 2026/27 Premier League squad numbers confirmed
+  https://www.brentfordfc.com/en/news/article/first-team-2026-27-premier-league-squad-numbers-confirmed
+  → Anthony 19, Sangaré 18, Schuster 44, Callum Wilson 13.
+- Soccerway — Brentford appoint set-piece coach Keith Andrews as manager to replace Thomas Frank
+  https://www.soccerway.com/news/soccer-premier-league-brentford-appoint-set-piece-coach-keith-andrews-as-manager-to-replace-thomas-frank/ATn2Bxwg
+- Flashscore — Brentford announce new long-term contract for manager Keith Andrews
+  https://www.flashscore.com/news/soccer-premier-league-brentford-announce-new-long-term-contract-for-manager-keith-andrews/Gxr4jRXq
+  → **Gap:** the exact date of Andrews's original appointment was not established from these sources. What is established is that there was no managerial change at either club this summer.
+
+**Referee record**
+- valuestats / thevarverdict / Sports Mole referee pages via search — Tony Harrington 2025-26 Premier League: 12 matches, 19.67 fouls per game, 3.17 yellow cards per game, 0.17 red cards per game, 0.25 penalties per game (≈6.2 fouls per card).
+  https://valuestats.com/en/referee/14807-tony-harrington
+  https://thevarverdict.com/referees/tony-harrington/
+  https://www.sportsmole.co.uk/people/tony-harrington/
+  → Note: 12 matches is a thin base; the 0.25 penalties/game rests on three penalties across those twelve. No notable history with either club surfaced.

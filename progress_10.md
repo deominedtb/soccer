@@ -1,5 +1,5 @@
 f1 | 15:00 | Chelsea – Brighton | DONE
-f2 | 15:00 | Leeds United – Brentford | TODO
+f2 | 15:00 | Leeds United – Brentford | DONE
 f3 | 15:00 | Sunderland – Fulham FC | TODO
 f4 | 15:00 | Paris FC – Nizza | TODO
 f5 | 15:30 | Friburgo – Werder Brema | TODO
