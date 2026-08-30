@@ -625,3 +625,45 @@
   https://valuestats.com/en/referee/13984-ermanno-feliciani
   https://www.pianetafanta.it/statistiche-arbitri.asp?NomeArbitro=FELICIANI+E.&tipolink=100
   → No history with either club surfaced.
+
+---
+
+## f14 · Monaco – Marsiglia (Olympique de Marseille)
+
+**Fixture, venue, kickoff, team news**
+- Yahoo Sports / khelnow / forebet previews via search — Sunday 30 Aug 2026, Stade Louis-II, Ligue 1 matchday 2. Monaco 3 pts (5th) after winning 1-0 away at Le Havre; Marseille 3 pts (3rd) after beating Strasbourg 4-0 at home. Monaco out: Folarin Balogun and new signing Matthis Abline. Marseille out: Leonardo Balerdi. H2H: Monaco won the most recent meeting 2-1 at the Stade Louis-II in April 2026 and have won their last three home Ligue 1 meetings with Marseille.
+  https://ca.sports.yahoo.com/news/preview-monaco-vs-marseille-team-184500559.html
+  https://khelnow.com/football/as-monaco-vs-marseille-preview-ligue-1-202608
+  https://www.forebet.com/en/football/matches/monaco-olympique-marseille-2495943
+  → **Gap:** no full injury list published for either club beyond the names above.
+
+**League context and last-season baselines**
+- Wikipédia — Championnat de France de football 2025-2026 (final table)
+  https://fr.wikipedia.org/wiki/Championnat_de_France_de_football_2025-2026
+  → AS Monaco 7th, 34/16/6/12, 60 GF, 54 GA, +6, 54 pts, into the Conference League play-off round. Olympique de Marseille 5th, 34/18/5/11, 63 GF, 45 GA, +18, 59 pts, into the Europa League league phase. Neither club promoted.
+
+**Transfers and manager change**
+- footmercato / dicodusport / Eurosport — Monaco summer 2026: IN Matthis Abline €25m (largest fee of the window), Sadibou Sané, Ansu Fati, Flávio Nazinho. OUT Maghnès Akliouche €50m, Aladji Bamba €35m plus €6m bonuses, Caio Henrique €11m, Kassoum Ouattara €8m.
+  https://www.footmercato.net/club/as-monaco/tableau/
+  https://www.eurosport.fr/football/ligue-1/2026-2027/ligue-1-i-apres-avoir-une-saison-ratee-monaco-a-presque-tout-change-mais-pourra-t-il-retrouver-les-sommets_sto23328370/story.shtml
+- AS Monaco official / Get French Football News / ligue1.com — Filipe Luís named head coach, announced 6 July 2026 on a two-year deal, succeeding Sébastien Pocognoli, who had replaced Adi Hütter in October 2025 and finished seventh. Luís arrived from Flamengo, where he won the Copa Libertadores in 2024-25 before leaving in September 2025 after 100 matches; this is his first European management job.
+  https://www.asmonaco.com/en/news/press-release-filipe-luis-new-head-coach-of-as-monaco
+  https://www.getfootballnewsfrance.com/2026/official-filipe-luis-named-as-monaco-manager/
+  https://ligue1.com/en/articles/l1_article_5258-who-is-new-monaco-manager-filipe-luis
+- maxifoot / dicodusport / footmercato / mercatoprime — Marseille summer 2026: Bruno Genesio appointed to replace Roberto De Zerbi, brought in for stability after an early Champions League exit and a tense internal atmosphere; the club finished 5th and qualified for the Europa League. Transfermarkt records 11 arrivals and 12 departures with a provisional balance of +€28.9m. Named arrivals: Facundo Medina (permanent, valued €18m), Timothy Weah €14.4m, Hamed Junior Traorè. Named departures: Mason Greenwood €39m (Fenerbahçe), Gerónimo Rulli, Pierre-Emerick Aubameyang, Rony Mimb Baheng; Leonardo Balerdi on loan with an option to buy to Roma.
+  https://m.maxifoot.fr/mercato/transfert-marseille.php
+  https://dicodusport.fr/blog/mercato-om-2026-2027-le-tableau-complet-des-transferts-arrivees-et-departs/
+  https://www.footmercato.net/club/om/tableau/
+  → **Conflict logged:** the same summary lists Facundo Medina among both arrivals and departures. A permanent transfer valued at €18m by the buying club is the arrival reading, and that is what the card carries.
+  → **Flag:** Balerdi is reported as having left on loan to Roma and simultaneously as unavailable for this fixture. Both are recorded; neither is reconciled.
+  → Cross-check: Aubameyang's destination is confirmed by Deportivo's ledger in f11 (arrival from Olympique de Marseille).
+
+**Referee**
+- Ligue1.com official — Les arbitres de la 2e journée de Ligue 1 McDonald's 2026-2027
+  https://ligue1.com/fr/articles/l1_article_5728-les-arbitres-de-la-2e-journee-de-ligue-1-mc-donald-s-2026-2027
+  → **AS Monaco – Olympique de Marseille: referee Willy Delajod**, assistants Erwan Finjean and Valentin Evrard, VAR Nicolas Rainville and Cédric Dos Santos. Kickoff Sunday 20:45.
+- statz.ai / foot-actu / footmercato referee statistics via search — Willy Delajod, Ligue 1 2025-26: 17 matches, 3.12 yellow cards per game (against a divisional average of 3.53), 0.12 red cards per game (2 in 17), 24.82 fouls per game (≈8.0 fouls per card).
+  https://statz.ai/referee/willy-delajod
+  https://www.foot-actu.com/ligue-1/arbitrage-ligue-1-statistiques-par-arbitre/
+  https://www.footmercato.net/france/ligue-1/statistique-arbitre
+  → **Gap:** no penalty rate for Delajod was sourced. No history with either club surfaced.
