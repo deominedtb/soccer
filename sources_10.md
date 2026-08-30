@@ -412,3 +412,49 @@
 ## Correction applied to f3
 
 - f3 originally stated that Sunderland lost 2-1 **at home** to Ipswich Town on the opening day. The Al Jazeera and Goal.com previews for f8 both place that match **at Portman Road**, Ipswich's ground. f3 was corrected: Sunderland lost away, and this is their first home fixture of the season. Neither the Yahoo nor the VAVEL Sunderland preview stated the venue, which is how the error entered.
+
+---
+
+## f9 · Augsburg – Schalke 04
+
+**Fixture, venue, kickoff, team news, referee**
+- kicker — Wer überträgt FC Augsburg gegen Schalke 04 heute live im TV & Stream? Schalkes Rückkehr ins Oberhaus
+  https://www.kicker.de/wer-uebertraegt-fc-augsburg-gegen-schalke-04-heute-live-im-tv-stream-1247574/artikel
+  → 17:30 CEST, WWK-Arena, matchday 1. **Referee Sascha Stegemann.** Augsburg's 16th Bundesliga season, Schalke's 55th; Schalke returning after three years as second-division champions. Augsburg won 2-0 at Energie Cottbus in the DFB-Pokal, Schalke won 5-2 at Hallescher FC. Alexis Claude-Maurice calf issue, Tim Breithaupt toe problem; Jeffrey Gouweleeuw missed the cup tie ill and is in contention to start. Last meeting Augsburg 3-0.
+- Yahoo Sports — Preview: FC Augsburg vs Schalke 04, team news, lineups (Bundesliga 30/08)
+  https://ca.sports.yahoo.com/news/preview-fc-augsburg-vs-schalke-154000573.html
+  → Matchday 1, WWK Arena. Augsburg manager Manuel Baum. Augsburg out: Steve Mounié (injury), Jeffrey Gouweleeuw (ill). Schalke out: Kenan Karaman (hip), Adrian Gantenbein (ankle). H2H: 24 meetings, Schalke lead 11-4; at the WWK-Arena Schalke lead 4-2; last league meeting Augsburg 3-0 on 29 October 2024. Baum v Schalke: one draw, three defeats in four.
+
+**League context and last-season baselines**
+- Wikipedia — 2025–26 Bundesliga (final table)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_Bundesliga
+  → FC Augsburg 9th, 34/12/7/15, 45 GF, 61 GA, −16, 43 pts. Relegated from 2025-26: VfL Wolfsburg (via play-off), Heidenheim, St. Pauli.
+- Wikipedia — 2025–26 2. Bundesliga (final table)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_2._Bundesliga
+  → Schalke 04 1st (champions), 34/21/7/6, 50 GF, 31 GA, +19, 70 pts — automatic promotion. SV Elversberg 2nd, 34/18/8/8, 64 GF, 39 GA, +25, 62 pts — automatic. SC Paderborn 3rd, 34/18/8/8, 59 GF, 45 GA, +14, 62 pts — promoted via the play-off (2-1 on aggregate over Wolfsburg).
+- Schalke 04 official / sportschau — promotion sealed 2 May 2026 with a 1-0 win over Düsseldorf on matchday 32, Kenan Karaman scoring; return after 1,071 days.
+  https://schalke04.de/2-bundesliga/zweitligameister-2026/
+  https://www.sportschau.de/regional/wdr/wdr-kapitaen-karaman-schiesst-schalke-04-in-die-bundesliga-100.html
+  → **Conflict logged:** the same coverage credits Schalke with "the best defence in the league with only 28 goals conceded and 13 clean sheets", against the final table's 31 conceded. Reported, not resolved.
+
+**Transfers and manager**
+- sportschau.de — Die Zu- und Abgänge von FC Augsburg zur Saison 2026/27
+  https://www.sportschau.de/fussball/bundesliga/die-transfers-fc-augsburg-zur-saison-2026-27,wechselboerse-fc-augsburg-saison-26-27-100.html
+  → IN (11): Wisbereit GK (Union Berlin U19), Brackelmann DF (SC Paderborn), Behrens DF (Hoffenheim), Breithaupt MF (loan, Fortuna Düsseldorf), Suso MF (Fortuna Düsseldorf), Sakar FW (loan, RB Leipzig U19), Mounié FW (loan, Alanyaspor), Mbuku FW (loan, Montpellier), Saad FW (loan, Hannover 96), Gregoritsch FW (permanent, Brøndby), Rodrigo Ribeiro FW (permanent, Sporting B). OUT (16): Klein GK (free agent), Lubik GK (loan, Wisła Kraków), Bauer DF (Arminia Bielefeld), Koudossou DF (Arminia Bielefeld), Chaves DF (loan, Hoffenheim), Zesiger DF (Young Boys), Colina DF (Zagłębie Lubin), Sorg DF (SV Ried), Meiser DF (Fortuna Düsseldorf), Pedersen DF (Hertha BSC), Rexhbecaj MF (Wolfsburg), Keitel MF (loan, Stuttgart), Gharbi FW (loan, Braga), Dardari FW (loan, Rot-Weiss Essen), Dong FW (loan, Bolton), Kabadayi FW (loan, Rijeka).
+  → **Gap:** clubs listed but no fees; an Augsburg spend figure is not established. **Conflict logged:** a secondary search summary reported Chaves, Saad and Keitel moving in the opposite direction to this dated ledger; the ledger is the version carried.
+- Bundesliga.com teamcheck / Get German Football News — Manuel Baum signed to summer 2028, took over in early December after Sandro Wagner's departure; previously managed Augsburg 2016-2019.
+  https://www.bundesliga.com/de/bundesliga/news/teamcheck-saisonvorschau-2026-27-eintracht-frankfurt-adi-huetter-raphael-onyedika-jonathan-burkardt-38758
+- sportschau.de — Die Zu- und Abgänge von Schalke 04 zur Saison 2026/27 (status 7 Aug 2026)
+  https://www.sportschau.de/fussball/bundesliga/die-transfers-schalke-04-zur-saison-2026-27,wechselboerse-schalke-04-saison-26-27-100.html
+  → IN: Kevin Müller GK (Heidenheim, permanent after loan), Gosens DF (loan, Fiorentina), Wöber DF (Leeds United), Wasinski DF (loan ended, RFC Liège), Noode DF (loan ended, Titus Pétange), Tanaka MF (Fortuna Düsseldorf), Vozar and Wallentowitz MF (Schalke U19), Adamu FW (SC Freiburg), Dina Ebimbe FW (Eintracht Frankfurt). OUT: Podlech GK (loan, Aalesunds), Ndiaye DF (loan ended, Anderlecht), Matriciani DF (unattached), Sánchez DF (loan, Santos Laguna), Zalazar MF (Kustosija Zagreb), Antwi-Adjei FW (unattached), Remmert FW (loan, MSV Duisburg), Hamache FW (Cambuur), Džeko FW (unattached). Head coach Miron Muslić.
+  → **Gap:** no fees published for any Schalke movement. **Conflict logged:** Werder Bremen's own sportschau ledger (f5, status 21 Aug) records Wöber as loaned to Leeds United, while Schalke's (status 7 Aug) records him arriving from Leeds. Reconcilable only if he moved on from Leeds since; neither source says so. Adamu's move is corroborated by Freiburg's ledger in f5 (Adamu €800k to Schalke).
+- schalketotal / sport.de — Schalke's transfer plan: negative equity of €96.6m must not increase by year-end or a three-point deduction threatens; Moussa Sylla the most likely sale, only loose enquiries; Aouchiche, El-Faouzi and Ayhan available only for "immoral" offers.
+  https://schalketotal.de/2026/08/18/weitere-neuzugaenge-star-abgaenge-schalkes-transfer-plan-enthuellt/
+  https://www.sport.de/diashow/sl7067/zugaenge-abgaenge-geruechte-der-mega-umbruch-des-fc-schalke-04/
+
+**Referee record**
+- footymetrics / valuestats / whoscored via search — Sascha Stegemann, career: 168 matches, 4.44 yellow cards and 0.23 red cards per match, 22.8 fouls per match (≈5.1 fouls per card), 37 penalties and 39 red cards across the sample.
+  https://www.footymetrics.com/referees/78-sascha-stegemann
+  https://valuestats.com/en/referee/17352-sascha-stegemann
+  https://www.whoscored.com/referees/1416/show/sascha-stegemann
+  → **Conflict logged:** a second source gives 4.53 yellows and 0.09 reds per match — agreeing on yellows, disagreeing on reds by more than a factor of two. **Gap:** no figures isolated to the 2025-26 season were sourced; all rates above are career rates. No history with either club surfaced.
