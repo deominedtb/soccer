@@ -170,3 +170,53 @@
 - Darren England record (retained in case the dissenting appointment is correct) — 2025-26: 25 matches, 4.32 cards per game (4.20 yellow, 0.12 red), 526 fouls at 21.04 per match, 3 penalties at 0.12 per match (≈4.9 fouls per card); most second yellow cards of any referee in 2025-26 (3 in 19 matches).
   https://www.statshub.com/referee/darren-england/74774
   https://valuestats.com/en/referee/14812-darren-england
+
+---
+
+## f4 · Paris FC – Nizza (Nice)
+
+**Fixture, venue, kickoff, team news**
+- Yahoo Sports — Preview: Paris FC vs Nice, team news, lineups (Ligue 1 30/08)
+  https://ca.sports.yahoo.com/news/preview-paris-fc-vs-nice-130500298.html
+  → Sunday 30 Aug 2026. Managers: Liam Rosenior (Paris FC), Olivier Pantaloni (Nice). Nice out: Laurent Abergel, cruciate ligament tear. No Paris FC absentees listed. H2H: eight meetings, Paris FC lead 4-3; most recent Paris FC 1-0. Rosenior v Pantaloni: met once, drew. Paris FC 11th on 1 pt, Nice 12th on 1 pt.
+- OneFootball / WhoScored previews via search — Stade Jean Bouin; both sides opened with goalless draws and clean sheets (Paris FC 0-0 Troyes, Nice 0-0 Lorient); Rosenior expected in a 4-2-3-1 built on controlled possession and short passing; H2H also records Paris FC 1-0 in March 2026 and 1-1 in September 2025.
+  https://onefootball.com/en/news/paris-fc-v-nice-clean-sheet-starters-chase-first-ligue-1-win-43355315
+  https://www.whoscored.com/matches/1984065/preview/france-ligue-1-2026-2027-paris-fc-nice
+
+**League context and last-season baselines**
+- Wikipédia — Championnat de France de football 2025-2026 (final table)
+  https://fr.wikipedia.org/wiki/Championnat_de_France_de_football_2025-2026
+  → Paris FC 11th, 34/11/11/12, 47 GF, 50 GA, −3, 44 pts. Nice 16th, 34/7/11/16, 37 GF, 60 GA, −23, 32 pts (16th = relegation play-off place). Promoted into 2025-26: Lorient, Paris FC, Metz. Relegated: Reims, Saint-Étienne, Montpellier. PSG champions on 76 pts, Lens 2nd on 70.
+- Sports Infos / sport-histoire via search — Nice survived via the barrage against Saint-Étienne.
+  https://www.ski-nordique.net/classement-ligue-1-2025-2026-journee-31-sports-infos.6724042-72348.html
+
+**Transfers and manager change**
+- footmercato — Tableau transfert Paris FC 2026/2027 (arrivals and departures, explicitly separated)
+  https://www.footmercato.net/club/paris-fc/tableau/
+  → IN: Zabi €25m MF (Reims, 15 Jun), Coppola €17.5m DF (Brighton, 16 Jul), Pagis €15m FW (Lorient, 17 Jul), Koleosho €14m FW (Burnley, 29 Jul), Sinayoko €7.5m FW (Auxerre, 21 Jul); loan returns Munetsi (Wolves), Sissoko, Oualengbe, Koré. OUT: Geubbels €4.6m (Lecce), Gory €2m (Abha Club), Ollila €200k (Guingamp), Tourraine (Pau, undisclosed), Doucet (Vitória Guimarães, undisclosed).
+  → **Correction logged:** dicodusport's Paris FC 2026-27 table was retrieved with arrivals and departures inverted (it listed Zabi, Coppola, Pagis and Koleosho as departures). footmercato's explicit arrivals/departures split is the version used, and it is corroborated by the Brighton ledger in f1, which records Coppola moving *to* Paris FC for £17m.
+  https://dicodusport.fr/blog/mercato-paris-fc-2026-2027-le-tableau-complet-des-transferts-arrivees-et-departs/
+  → also: end-of-contract exits Rémy Riou (GK), Timothée Kolodziejczak (CB), Sofiane Alakouch, Lamine Gueye. No goalkeeper signed.
+- franceinfo — Liam Rosenior revient en Ligue 1 pour succéder à Antoine Kombouaré sur le banc du Paris FC
+  https://www.franceinfo.fr/sports/foot/ligue-1/l-entraineur-britannique-liam-rosenior-revient-en-ligue-1-pour-succeder-a-antoine-kombouare-sur-le-banc-du-paris-fc_8097470.html
+  → appointed Tuesday 7 July 2026, two-year contract, took over 9 July; Kombouaré terminated his contract after keeping the promoted club up; Rosenior left Strasbourg in January for Chelsea and was there 104 days.
+- Paris FC official — Le Paris FC ouvre un nouveau chapitre de son projet avec la nomination de Liam Rosenior
+  https://parisfc.fr/equipe-pro/le-paris-fc-ouvre-un-nouveau-chapitre-de-son-projet-avec-la-nomination-de-liam-rosenior/
+- footmercato — Tableau transfert OGC Nice 2026/2027 (arrivals and departures, explicitly separated)
+  https://www.footmercato.net/club/ogc-nice/tableau/
+  → IN: Hein €1.7m (Metz), Ngoumou (Borussia Mönchengladbach, fee not stated), Abergel free (Lorient); loan returns Wahi (Eintracht Frankfurt), Juma Bah (Manchester City), Koutoune, Boulhendi, Camara, Nguene, Orakpo. OUT: Cho €15.15m (Hull City), Vanhoutte €5.5m DM (Feyenoord), Boga €4.8m (Juventus), Moffi €2m (Hamburg), Louchet €2m (PAOK), Bernardeau €1m (Lorient), Viti €300k (Sampdoria), Ilie (Mantua), Baldé (St. Gallen), Boudache free (Lyon), Kevin Carlos loan (Cagliari).
+  → **Conflict logged:** Cho's fee reported at both €15.15m (footmercato) and €13m (dicodusport summary). Wahi's return described as a loan return by footmercato and as a paid loan of €1.5m with a €15m option by another report. Both logged, neither resolved.
+  https://dicodusport.fr/blog/mercato-nice-2026-2027-le-tableau-complet-des-transferts-arrivees-et-departs/
+- OGC Nice official — Olivier Pantaloni nommé entraîneur de l'OGC Nice
+  https://www.ogcnice.com/fr/article/130503/olivier-pantaloni-nomme-entraineur-de-logc-nice.html
+  → two-year deal; announced 17 June 2026, with one source dating the formal appointment 27 June; replaced Claude Puel, not retained after survival via the Saint-Étienne play-off.
+  https://www.foot01.com/nice/pantaloni-remplace-puel-a-logc-nice-officiel
+
+**Referee**
+- Search-identified designation — Jérémy Stinat appointed for Paris FC v Nice, 30 Aug 2026.
+  https://www.footmercato.net/france/ligue-1/arbitre
+  https://mediapronos.com/pronostic-paris-fc-nice-30-08/
+- ohaime-passion / foot-actu referee statistics via search — Jérémy Stinat: career Ligue 1 average 3.72 yellow cards per match against a national average of 3.53; 2025-26: 7 red cards in 16 matches (0.43 per match); second yellows to the same player 0.08 per match, below the national 0.09 — i.e. predominantly straight reds.
+  https://www.ohaime-passion.com/matchs/arbitre-jeremy-stinat.html
+  https://www.foot-actu.com/ligue-1/arbitrage-ligue-1-statistiques-par-arbitre/
+  → **Gaps:** no fouls-per-card ratio and no penalties-per-game figure could be sourced for Stinat. No history with either club surfaced.
