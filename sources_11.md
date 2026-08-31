@@ -219,3 +219,55 @@
 - Squawka — Premier League referee stats: officials ranked by fouls per card
   https://www.squawka.com/en/features/premier-league-referees-ranked-leniency/
   → HTTP 403, body not served. This is why no fouls-per-match or fouls-per-card figure appears for Gillett, and why the discipline row cannot say whether he books early or lets play run. No record specific to Aston Villa or Arsenal was found either.
+
+---
+
+## f5 · Barcelona – Rayo Vallecano
+
+**Fixture, venue, kickoff, team news**
+- Infobae / EFE — El Barcelona calibra su exuberante inicio frente al Rayo (30-08-2026)
+  https://www.infobae.com/espana/agencias/2026/08/30/el-barcelona-calibra-su-exuberante-inicio-frente-al-rayo/
+  → Spotify Camp Nou, 21:30 CET. Barcelona: 5-0 v Elche, 2-0 v Athletic Club — seven goals in two matches, none conceded. Rayo: one point from two, most recently a draw with Alavés. Barcelona out: Gavi, Frenkie de Jong, Roony Bardghji. Rayo out: Augusto Batalla (GK, replaced by Dani Cárdenas) and Isi Palazón (replaced by Álvaro García). Head-to-head: Barcelona have 18 wins in 23 Primera División meetings at Camp Nou; Rayo have won twice, most recently 24 April 2022. Referee given as "Francisco Hernández".
+- FC Barcelona official / Yahoo Sports / Fubo via search — Matchday 3, Monday 31 August 2026, 21:30 CET, Spotify Camp Nou. Rayo lost 2-1 to Sevilla and drew 1-1 with Alavés. One preview characterises Rayo as Barcelona's bogey side in LaLiga.
+  https://www.fcbarcelona.com/en/matches/138302/fc-barcelona-rayo-vallecano-la-liga-2026-2027
+  https://sports.yahoo.com/articles/barcelona-vs-rayo-vallecano-la-030000567.html
+  → **Conflict logged:** the "bogey side" characterisation sits against a Camp Nou record of 18 wins in 23 and two Rayo victories, the last in April 2022. Both are reported in the card; neither is treated as settling the other.
+  → **Cross-reference:** Rayo's matchday-2 draw with Alavés was staged at Butarque because Vallecas had been disabled by the Comunidad de Madrid over its infrastructure — logged under f2 from the Spanish Wikipedia season page.
+- Barça Blaugranes — Barcelona vs Rayo Vallecano, team news, preview, lineups
+  https://www.barcablaugranes.com/barcelona-la-liga/130997/barcelona-rayo-vallecano-la-liga-team-news-match-preview-lineups-prediction
+  → HTTP 403 on direct fetch; the same content reached through the search-result summary supplied the injury lists and head-to-head above.
+
+**League context and last-season baselines**
+- Wikipedia — 2025–26 La Liga (final table), fetched under f2
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_La_Liga
+  → Barcelona champions, 38/31/1/6, 95 GF, 36 GA, +59, 94 pts — one draw in the entire season. Rayo Vallecano 8th, 38/12/14/12, 41 GF, 44 GA, −3, 50 pts — fourteen draws. Neither club promoted.
+  → **Gap:** no xG, shot-volume, home/away split, foul or card rates; none obtained elsewhere within budget.
+
+**Transfers and managers**
+- FútbolFantasy — Barcelona, mercado de fichajes verano 2026
+  https://www.futbolfantasy.com/mercado-de-fichajes-del-barcelona-altas-bajas/verano-2026
+  → Manager Hansi Flick, renewed through 2028 on 18 May 2026. IN: Anthony Gordon (Newcastle, €80m, 29 May); Karim Adeyemi (Borussia Dortmund, €22m, 23 July); Jesse Bisiwu (Club Brugge, €8.5m, 31 July, B team); Rodri Hernández (Manchester City, €60m, 18 August); Dominik Livakovic (Fenerbahçe, €2m, 27 August). OUT: Ferran Torres (PSG, €50m, 15 August); Ansu Fati (Monaco, €11m option, 1 June); Iñaki Peña (Panathinaikos, €3m, 23 June); Jofre Torrents (Ajax, €6m, 17 August); Tomás Marqués (Braga, €11m, 21 August); Héctor Fort (Real Sociedad, €8.5m, 27 August); Andrés Cuenca (Como, €0.7m, 17 July); loan returns Marcus Rashford (Manchester United, 10 June) and João Cancelo (Al Hilal, 25 May). Net balance −€188.3m. No centre-back signed.
+- Sports Illustrated (es) / Fichajes.com / Jornada Perfecta via search — second reading of the Barcelona window.
+  https://www.si.com/es-us/futbol/altas-y-bajas-del-fc-barcelona-rumbo-a-la-temporada-2026-27-calificacion-de-sus-mejores-movimientos
+  https://www.fichajes.com/equipo/fc-barcelona/altas-bajas/
+  → **Conflicts logged:** Gordon given as €70m plus €10m in variables rather than a flat €80m; Ferran Torres at €48.50m rather than €50m. A reported Marc-André ter Stegen move to Ajax appears in commentary but on no confirmed ledger and is not carried.
+- FútbolFantasy — Rayo Vallecano, mercado de fichajes verano 2026
+  https://www.futbolfantasy.com/mercado-de-fichajes-del-rayo-vallecano-altas-bajas/verano-2026
+  → Manager: Beñat San José appointed, replacing Íñigo Pérez, who left for Villarreal. IN: Marash Kumbulla (CB, Roma, loan to end of season); Nobel Mendy (Betis, €3.5m purchase option, tied to 2030); Jozhua Vertrouwd (Castellón, €1.5m, loan with obligation made permanent); Gnangoro Bouaré (Betis, €0.6m); Giorgi Tsitaishvili (Dinamo Kyiv, free). OUT: Pep Chavarría to Chelsea, €19m; Abdul Mumin, Alfonso Espino and Miguel Ángel Morro at contract expiry; Óscar Trejo retired; loans ended for Ilias Akhomach (Villarreal), Carlos Martín (Atlético) and Gerard Gumbau (Granada). Loan returns: Pelayo Fernández (Cádiz), Raúl de Tomás (Al Wakrah), Morro (Leixões). Net balance +€23.4m.
+  → **Gap:** the date of the managerial change is not published in any source consulted, so the length of San José's tenure cannot be stated. No goalkeeper and no forward were signed.
+
+**Referee — identification and record**
+- YSScores / SI.com (es) / COPE via search — the appointment for this fixture.
+  https://www.ysscores.com/en/news/13931335/Referee-for-the-Barcelona-vs-Rayo-Vallecano-Match-in-La-Liga
+  https://www.si.com/es-us/futbol/como-ver-el-partido-barcelona-vs-rayo-vallecano-en-tv-y-streaming-31-8-2026
+  → **Naming conflict logged and resolved by elimination.** One search summary renders the appointed official as "Francisco Jose Hernandez Hernandez"; the Infobae/Barça Blaugranes preview gives simply "Francisco Hernández". The YSScores article names Adrián Cordero Vega with VAR Raúl Martín González, but its internal detail — "his fifteenth this season", a Barcelona win over Osasuna on 13 December, a Las Palmas match "February 22 of the previous year" — shows it covers an earlier meeting between these clubs; it is discarded.
+- EstadísticasLaLiga — LaLiga referee statistics table, 2026-27
+  https://www.estadisticaslaliga.es/arbitros.php
+  → The table contains no official named Francisco José Hernández Hernández. The only two "Hernández" officials are Alejandro Hernández Hernández (1 match, 25 fouls, 5 yellows, 1 red, 2 penalties) and Francisco José Hernández Maeso (1 match, 29 fouls, 4 yellows, 0 reds, 0 penalties — 7.25 fouls per card on a one-match sample). "Francisco Hernández" can therefore only be Hernández Maeso, and that is the identification carried in the card.
+  → **Cross-check:** Alejandro Hernández Hernández is the official logged in sources_10 for fx_10_f15 (Celta–Athletic); the two are distinct people and were at risk of being conflated here.
+- WhoScored / ValueStats / LaPreferente / Scores24 via search — Francisco José Hernández Maeso historical averages: 4.55 yellow cards and 0.11 red cards per match; described as markedly reluctant to send players off, with 15 red cards in 84 professional matches.
+  https://es.whoscored.com/referees/246/show/francisco-jos%C3%A9-hern%C3%A1ndez-maeso
+  https://valuestats.com/en/referee/13604-francisco-jose-hernandez-maeso
+  https://www.estadisticaslaliga.es/recibe_arbitros.php?pedido=Francisco+Jos%C3%A9+Hern%C3%A1ndez+Maeso
+  → **Conflict logged:** 15 reds in 84 matches is 0.18 per game, not the 0.11 quoted alongside it.
+  → **Gap:** no 2025-26 season line, no established penalty rate beyond the single 2026-27 appearance, and no record with either club.
