@@ -170,3 +170,52 @@
   https://sbonews.sbostats.com/falli-rigori-e-cartellini-le-statistiche-degli-arbitri-in-serie-a/
   → **Conflict logged:** two irreconcilable 2025-26 lines. (a) 15 matches, 53 yellows, 1 red, 2 penalties, 3.6 cards per game, 6.7 fouls per card. (b) 6 matches, 26 yellows, 0 reds, 0 penalties, 4.3 cards per game, 5.6 fouls per card. The difference between 6.7 and 5.6 fouls per card is decisive for a 2.5-card line and is left unresolved; both are reported in the card.
   → **Gap:** no Doveri record specific to Atalanta or Bologna was found.
+
+---
+
+## f4 · Aston Villa – Arsenal
+
+**Fixture, venue, kickoff, team news**
+- ESPN — Aston Villa vs Arsenal: TV channel, kick-off time, team news, referee, predicted line-ups
+  https://www.espn.com/soccer/story/_/id/49752879/aston-villa-vs-arsenal-2026-27-premier-league-tv-channel-how-watch-kick-live-stream-referee-injury-predicted-lineups
+  → Monday 31 August 2026, 20:00 BST, Villa Park, Birmingham; matchday 2. Referee Jarred Gillett, VAR James Bell. Villa: João Gomes suspended; Onana (ACL), Manzambi (knee), Madjo out; Emiliano Martínez (knock), Tammy Abraham (knock), Leon Bailey (muscle) doubtful. Arsenal: Timber (ankle) and Saliba (back) out, Bruno Guimarães (knock) doubtful. Predicted XIs — Villa (4-2-3-1): Suzuki; Cash, Lindelöf, Torres, Ruggeri; Kamara, Goretzka; McGinn, Buendía, Garnacho; Jackson. Arsenal (4-3-3): Raya; White, Mosquera, Gabriel, Calafiori; Rice, Ødegaard, Lewis-Skelly; Saka, Havertz, Tzolis. Arsenal have 15 Premier League wins at Villa Park, their most at any away venue; Villa have won four of their last seven home matches against Arsenal; Emery has lost 50% of his Premier League games in August (8 of 16).
+  → **Conflict logged:** Emiliano Martínez appears here as a doubtful Villa goalkeeper while Villa's own transfer ledger records him sold to Chelsea for £7.5m. The predicted eleven names Suzuki in goal, which supports the sale; the contradiction is recorded, not resolved.
+- Yahoo Sports / The Football Faithful / Arsenal.com via search — Villa lost 0-4 to Brighton in their opener; Arsenal won 3-0 against Coventry City. Timber's issue given as a groin rather than an ankle. Nicolas Jackson and Leon Goretzka registered in time to feature after completing moves earlier in the week.
+  https://sports.yahoo.com/articles/aston-villa-vs-arsenal-match-053000837.html
+  https://www.arsenal.com/news/preview-aston-villa-v-arsenal-a0NBR9w4CJwD
+  → **Cross-check:** Villa 0-4 Brighton matches the Brighton-side record already logged in sources_10 for fx_10_f1 (all four goals before the 31st minute).
+  → **Conflict logged:** Timber ankle (ESPN) vs groin (preview sources).
+
+**League context and last-season baselines**
+- Wikipedia — 2025–26 Premier League (final table)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_Premier_League
+  → Arsenal champions, 38/26/7/5, 71 GF, 27 GA, +44, 85 pts — a fourth Premier League title after a 22-year drought. Aston Villa 4th, 38/19/8/11, 56 GF, 49 GA, +7, 65 pts. Promoted into 2025-26: Leeds, Burnley, Sunderland. Relegated: West Ham, Burnley, Wolves. Neither club promoted.
+  → **Gap:** no xG, shot-volume, home/away split, foul or card rates on the page; none obtained elsewhere within budget.
+
+**Transfers and manager**
+- Sports Mole — Aston Villa summer transfers and net spend, 2026 window
+  https://www.sportsmole.co.uk/football/aston-villa/transfer-talk/feature/aston-villa-summer-transfers-all-confirmed-ins-and-outs-for-2026_598979.html
+  → Manager Unai Emery, unchanged. IN: Nicolas Jackson (ST, Chelsea, £65m), Johan Manzambi (CM, Freiburg, £59.5m), João Gomes (CM, Wolves, £38m), Zion Suzuki (GK, Parma, £30m), Matteo Ruggeri (LB, Atlético Madrid, £17m), Modou Keba Cisse (CB, LASK Linz, £4m), Leon Goretzka (CM, free), Alejandro Garnacho (LW, Chelsea, loan). OUT: Morgan Rogers (Chelsea, £117m), Ezri Konsa (Arsenal, £55m), Ollie Watkins (Al-Hilal, £51m), Youri Tielemans (Manchester United, £35m), Donyell Malen (Roma, £29.6m), Enzo Barrenechea (Benfica, £10.3m), Lewis Dobbin (Southampton, £9m), Lucas Digne (PSG, £8.5m), Emiliano Martínez (Chelsea, £7.5m), Louie Barry (Sheffield Wednesday, undisclosed), plus six loan departures. Total spend £213.5m, total income £324.4m, net sale surplus £110.9m.
+- Sports Mole — Arsenal summer transfers and net spend, 2026 window
+  https://www.sportsmole.co.uk/football/arsenal/transfer-talk/feature/arsenal-summer-transfers-all-confirmed-ins-and-outs-for-2026_599109.html
+  → Manager Mikel Arteta, unchanged. IN: Bruno Guimarães (DM, Newcastle, £75m), Ezri Konsa (CB, Aston Villa, £55m), Piero Hincapié (CB, Bayer Leverkusen, £34.5m, loan made permanent), Christos Tzolis (LW, Club Brugge, £34m), Illan Meslier (GK, Leeds, free). OUT: Jakub Kiwior (CB, Porto, £14.7m), Christian Nørgaard (DM, Everton, £7m), Karl Hein (GK, Werder Bremen, £2.6m), Leandro Trossard (LW, Beşiktaş, undisclosed), Reiss Nelson (released), Josh Nichols (RB, NK Kustosija, free). Total expenditure £198.5m, revenue £24.3m, net spend £174.2m.
+  → Konsa reported on arrival as cover behind William Saliba; Tzolis scored 22 goals for Club Brugge last season.
+- ESPN / Squawka / GiveMeSport / Read Aston Villa via search — second reading of both windows.
+  https://www.espn.com/soccer/team/transfers/_/id/362/aston-villa
+  https://www.squawka.com/en/transfers/arsenal/
+  https://www.givemesport.com/arsenal-transfers-2026-27/
+  → **Conflicts logged.** Villa: Rogers at £120m (vs £117m), Konsa at £51m (vs £55m), Manzambi at £51m (vs £59.5m), Malen at £21.6m (vs £29.6m), Digne at £13m to Lyon (vs £8.5m to PSG), plus a £39m Jhon Durán sale to Al Nassr absent from the itemised ledger, and total sales of £197m against £324.4m. Arsenal: window given as £143m spent and £41m recouped across six departures (vs £198.5m and £24.3m), and Trossard at around £15.3m where the ledger says undisclosed. The itemised Sports Mole ledgers are carried in the card; the discrepancies are flagged, not reconciled.
+  → **Cross-fixture conflict:** Malen's fee is £29.6m on Villa's ledger and £21.6m on Roma's (see f1). Both are recorded.
+
+**Referee record**
+- StatsHub — Jarred Gillett referee statistics
+  https://www.statshub.com/referee/gillett-jarred/138289
+  → Career, all competitions: 292 matches, 1,187 yellows (4.07 per game), 26 straight reds plus 23 second yellows (0.09 reds per game), 104 penalties (0.36 per game). Premier League specifically: 87 matches, 335 yellows (3.85 per game), 6 reds, 23 penalties (0.26 per game). Also A-League Men 123 matches at 4.76 yellows, Championship 77 at 3.22, FA Cup 10 at 3.30.
+- PlayerStats / WhoScored / Wikipedia via search — five Premier League penalties awarded in 2025-26.
+  https://playerstats.football/referee/256
+  https://www.whoscored.com/referees/3151/show/jarred-gillett
+  https://en.wikipedia.org/wiki/Jarred_Gillett
+  → **Conflict logged:** a separate summary gives his career as 396 fixtures with 1,370 yellows at 3.46 per game, against StatsHub's itemised 292 matches at 4.07. The itemised version, which reconciles across the four listed competitions, is carried.
+- Squawka — Premier League referee stats: officials ranked by fouls per card
+  https://www.squawka.com/en/features/premier-league-referees-ranked-leniency/
+  → HTTP 403, body not served. This is why no fouls-per-match or fouls-per-card figure appears for Gillett, and why the discipline row cannot say whether he books early or lets play run. No record specific to Aston Villa or Arsenal was found either.
