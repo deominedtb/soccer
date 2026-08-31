@@ -121,3 +121,52 @@
   https://playerstats.football/referee/284
   https://www.estadisticaslaliga.es/arbitros.php
   → **Conflict logged:** his LaLiga-only record is reported as 65 yellow cards at just over 4 a match with 8 penalties and 5 reds — nearly identical to the single-season 2025-26 total. Either his top-flight record is essentially one season deep against a 126-match career built elsewhere, or one of the two labels is mislabelled. Both readings are noted in the card; neither is resolved.
+
+---
+
+## f3 · Atalanta – Bologna
+
+**Fixture, venue, kickoff, team news**
+- Eurosport.it — Atalanta-Bologna: probabili formazioni, statistiche, quando e dove vederla
+  https://www.eurosport.it/calcio/serie-a/2026-2027/atalanta-bologna-probabili-formazioni-statistiche-quando-e-dove-vederla_sto23331614/story.shtml
+  → Monday 31 August 2026, 20:45, Gewiss Stadium, Bergamo. Atalanta (4-3-3): Carnesecchi; Zappacosta, Kossounou, Scalvini, Bernasconi; Pasalic, Gaetano, Ederson; De Ketelaere, Krstović, Raspadori — Sarri. Bologna (4-3-3): Skorupski; Zortea, Heggem, Helland, Miranda; Odgaard, Moro, Ferguson; Orsolini, Piccoli, Cambiaghi — Tedesco. Unavailable: Atalanta — Ahanor, Hien, Sulemana, Kristensen; Bologna — Casale. No suspensions either side. MD1: Atalanta 2-1 Sassuolo, Bologna 0-1 Lazio. Bologna have won four of their last seven Serie A meetings with Atalanta; Atalanta have lost three of their last four home fixtures against Bologna.
+- SportNews Betflag — Serie A Atalanta-Bologna, probabili formazioni
+  https://sportnews.betflag.it/2026/08/31/serie-a-atalanta-bologna-probabili-formazioni-e-pronostico
+  → Atalanta's MD1 2-1 over Sassuolo, goals from Raspadori and Krstović. Bologna have won 4 of the last 5 matches played at Bergamo across league and cup. Gives different probable shapes (Atalanta 4-2-3-1, Bologna 3-4-3) — noted but not carried, the Eurosport version being the matchday-current one.
+  → **Cross-check:** Bologna 0-1 Lazio at MD1 matches the Lazio-side record already logged in sources_10 for fx_10_f13 (Gattuso's debut win away at Bologna).
+
+**League context and last-season baselines**
+- Wikipedia — 2025–26 Serie A (final table)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_Serie_A
+  → Atalanta 7th, 38/15/14/9, 51 GF, 36 GA, +15, 59 pts. Bologna 8th, 38/16/8/14, 49 GF, 46 GA, +3, 56 pts. Neither club promoted.
+  → **Gap:** no xG, shot volume, home/away split, foul or card rates on the page; none obtained elsewhere within budget for either club.
+
+**Transfers and managers**
+- Calcio.com — Calciomercato Serie A 2026-27, acquisti, cessioni e probabili formazioni squadra per squadra
+  https://www.calcio.com/news/calciomercato-serie-a-2026-27-acquisti-cessioni-e-probabili-formazioni-squadra-per-squadra
+  → Atalanta, manager Maurizio Sarri (new). IN: Gaetano (Cagliari), Kristensen (Udinese), Elmas (Leipzig), Kessié (Al-Ahli, free). OUT: Godfrey (Rangers), Palestra (Chelsea), El Bilal Touré (Parma), Maldini (Cagliari), Djimsiti (Al-Diriyah), Vlahovic (Mantova), De Roon (Roma).
+  → Bologna, manager Domenico Tedesco (new). IN: Pobega (Milan), Caccavo (Lumezzane), Alhassane (Real Oviedo), Dovbyk (Roma), Amondarain (Estudiantes), Piccoli (Fiorentina), Theate (Eintracht Frankfurt). OUT: Aebischer (Pisa), Fabbian (Fiorentina), Sosa (Colo-Colo), Bonifazi (free), Lykogiannis (free), Okwonkwo (free), Raimondo (Frosinone), Castro (Roma), Ravaglia (Watford), Dominguez (Sassuolo), Ilić (Cesena), Freuler (Olympiacos), Lucumí (Juventus), Dallinga (Cologne).
+- Il Fatto Quotidiano — Serie A 2026-27 guide, Atalanta (page 2) and Bologna (page 3)
+  https://www.ilfattoquotidiano.it/2026/08/20/serie-a-2026-27-acquisti-cessioni-formazioni-tipo-squadre/8483691/2/
+  https://www.ilfattoquotidiano.it/2026/08/20/serie-a-2026-27-acquisti-cessioni-formazioni-tipo-squadre/8483691/3/
+  → Atalanta IN: Gaetano (Cagliari), Kristensen (Udinese), Sulemana and Vlahovic returning from loans. OUT adds Musah (Milan, loan end), Vavassori (Palermo, loan), Brescianini (Fiorentina, permanent), Cittadini (Frosinone, loan), Bonfanti (Las Palmas, loan). Bologna: Dovbyk from Roma on loan, Piccoli from Fiorentina on loan.
+  → **Conflicts logged.** (1) Elmas, Kessié and the De Roon departure appear on the Calcio.com board only; Il Fatto lists none of the three and Roma's own ledger (see f1) does not record De Roon. (2) Piccoli is permanent on one board, a loan on the other. (3) Freuler is "released" on one and a permanent move to Olympiacos on the other. (4) Theate, Pobega and Caccavo appear on the Calcio.com list only. None of the disputed items is carried as established in the card.
+  → **Gap:** not one fee is published for any Atalanta or Bologna movement in either source, in either direction. The only fee in this fixture — Castro at €35m including bonuses — is sourced from the buying club, Roma (see f1).
+- Eurosport.it / TuttoMercatoWeb / Calciomercato.com via search — Maurizio Sarri announced as Atalanta head coach, official announcement 15 June 2026, three-year contract to June 2029, arriving from Lazio. Domenico Tedesco, formerly of Fenerbahçe and the Belgium national team, succeeds Vincenzo Italiano at Bologna on a contract to 30 June 2028 with an option for a further season.
+  https://www.eurosport.it/calcio/calciomercato/2025-2026/ufficiale-maurizio-sarri-e-il-nuovo-allenatore-dellatalanta_sto23309850/story.shtml
+  https://www.tuttomercatoweb.com/serie-a/atalanta-maurizio-sarri-tecnico-dea-comunicato-club-2244424
+  https://sport.sky.it/calciomercato/allenatori-serie-a-2026-2027-situazione-panchine-squadre
+  → **Cross-check:** Sarri's departure from Lazio matches the Lazio ledger already logged in sources_10 for fx_10_f13 (Gattuso replacing Sarri).
+  → **Resolves an f1 flag:** Krstović appears in Atalanta's 2026-27 starting eleven and scored on matchday one, while appearing on neither club's summer-2026 ledger — confirming the reported €25m Lecce-to-Atalanta move belongs to the 2025 window, as flagged in the f1 card.
+
+**Referee**
+- Corriere dello Sport — Le designazioni della seconda giornata di Serie A (26 August 2026)
+  https://www.corrieredellosport.it/news/calcio/serie-a/2026/08/26-150804402/chiffi_per_lecce-roma_a_pairetto_napoli-como_le_designazioni_della_seconda_giornata_di_serie_a
+  → Atalanta-Bologna assigned to Daniele Doveri. Confirmed.
+  → **Gap:** the article does not publish assistants, fourth official, VAR or AVAR for this fixture.
+- Virgilio Sport / ValueStats / Sbostats via search — Daniele Doveri 2025-26 record, and style description: highly experienced, with very even yellow-card management, 2.0 per game to the home side and 2.1 to the away side.
+  https://sport.virgilio.it/calcio/arbitri/daniele-doveri/
+  https://valuestats.com/en/referee/14345-daniele-doveri
+  https://sbonews.sbostats.com/falli-rigori-e-cartellini-le-statistiche-degli-arbitri-in-serie-a/
+  → **Conflict logged:** two irreconcilable 2025-26 lines. (a) 15 matches, 53 yellows, 1 red, 2 penalties, 3.6 cards per game, 6.7 fouls per card. (b) 6 matches, 26 yellows, 0 reds, 0 penalties, 4.3 cards per game, 5.6 fouls per card. The difference between 6.7 and 5.6 fouls per card is decisive for a 2.5-card line and is left unresolved; both are reported in the card.
+  → **Gap:** no Doveri record specific to Atalanta or Bologna was found.
