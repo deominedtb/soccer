@@ -1,0 +1,641 @@
+<title>Market Board Monday 31 August 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<style>
+:root{
+  --bg:#EFF2F1; --surface:#FFFFFF; --surface-2:#F6F8F7; --band:#1D3F52;
+  --ink:#13201E; --ink-2:#485856; --muted:#6C7B78; --line:#D4DCDA;
+  --accent:#1D4E73; --accent-soft:#E3EDF3;
+  --good:#2C6E4B; --good-soft:#E2EFE8;
+  --warn:#8C6817; --warn-soft:#F4ECD9;
+  --bad:#A03528;  --bad-soft:#F6E2DF;
+  --brass:#856526;
+  --band-ink:#EAF1F4;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D1315; --surface:#141C1F; --surface-2:#1A2326; --band:#16303D;
+    --ink:#E3EAE8; --ink-2:#A6B4B1; --muted:#82938F; --line:#263236;
+    --accent:#79ACD0; --accent-soft:#152F3C;
+    --good:#66C093; --good-soft:#152C20;
+    --warn:#D2A950; --warn-soft:#2C2617;
+    --bad:#E27A6E;  --bad-soft:#321C19;
+    --brass:#C4A05A;
+    --band-ink:#DCE8EC;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D1315; --surface:#141C1F; --surface-2:#1A2326; --band:#16303D;
+  --ink:#E3EAE8; --ink-2:#A6B4B1; --muted:#82938F; --line:#263236;
+  --accent:#79ACD0; --accent-soft:#152F3C;
+  --good:#66C093; --good-soft:#152C20;
+  --warn:#D2A950; --warn-soft:#2C2617;
+  --bad:#E27A6E;  --bad-soft:#321C19;
+  --brass:#C4A05A;
+  --band-ink:#DCE8EC;
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:"Source Serif 4",Georgia,"Times New Roman",serif;
+  font-size:17px; line-height:1.6;
+  margin:0; padding:0 18px 96px;
+  -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:940px; margin:0 auto;}
+h1,h2,h3,h4,.ui{font-family:Archivo,"Helvetica Neue",Arial,sans-serif}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace; font-variant-numeric:tabular-nums}
+
+/* ---------- masthead ---------- */
+header.top{padding:52px 0 26px; border-bottom:2px solid var(--ink);}
+.eyebrow{
+  font-family:Archivo,sans-serif; font-size:12px; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase; color:var(--accent); margin:0 0 14px;
+}
+h1{
+  font-size:clamp(34px,7vw,54px); line-height:1.02; font-weight:800;
+  letter-spacing:-.02em; margin:0 0 14px; text-wrap:balance;
+}
+.standfirst{font-size:19px; color:var(--ink-2); margin:0; max-width:62ch;}
+.metaline{
+  display:flex; flex-wrap:wrap; gap:8px 20px; margin-top:22px;
+  font-family:Archivo,sans-serif; font-size:12.5px; font-weight:600;
+  letter-spacing:.06em; text-transform:uppercase; color:var(--muted);
+}
+
+/* ---------- generic blocks ---------- */
+section{margin-top:44px}
+h2.sec{
+  font-size:13px; font-weight:700; letter-spacing:.15em; text-transform:uppercase;
+  color:var(--muted); margin:0 0 16px; padding-bottom:8px; border-bottom:1px solid var(--line);
+}
+p{margin:0 0 14px; max-width:70ch}
+.note{
+  background:var(--accent-soft); border-left:3px solid var(--accent);
+  padding:14px 16px; font-size:15.5px; color:var(--ink-2); max-width:none;
+}
+.note strong{color:var(--ink)}
+
+/* ---------- odds table ---------- */
+.scroller{overflow-x:auto; border:1px solid var(--line); background:var(--surface)}
+table{border-collapse:collapse; width:100%; min-width:760px; font-size:14px}
+thead th{
+  background:var(--band); color:var(--band-ink);
+  font-family:Archivo,sans-serif; font-weight:700; font-size:11px;
+  letter-spacing:.09em; text-transform:uppercase;
+  padding:10px 11px; text-align:right; white-space:nowrap;
+}
+thead th:first-child{text-align:left}
+tbody td{
+  padding:10px 11px; border-top:1px solid var(--line); text-align:right;
+  font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums; white-space:nowrap;
+}
+tbody td:first-child{
+  text-align:left; font-family:Archivo,sans-serif; font-weight:600; font-size:14px;
+  white-space:normal; min-width:190px;
+}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td .ko{display:block; font-family:"IBM Plex Mono",monospace; font-weight:400; font-size:11.5px; color:var(--muted); letter-spacing:.02em}
+.unk{color:var(--brass); font-style:italic}
+
+/* ---------- fixture cards ---------- */
+.fixture{
+  background:var(--surface); border:1px solid var(--line);
+  margin-top:30px; scroll-margin-top:12px;
+}
+.fx-head{background:var(--band); color:var(--band-ink); padding:16px 20px 18px}
+.fx-league{
+  font-family:Archivo,sans-serif; font-size:11px; font-weight:700;
+  letter-spacing:.14em; text-transform:uppercase; opacity:.78; margin:0 0 6px;
+}
+.fx-title{font-family:Archivo,sans-serif; font-size:23px; font-weight:700; letter-spacing:-.01em; margin:0; line-height:1.15}
+.fx-sub{font-family:"IBM Plex Mono",monospace; font-size:12.5px; opacity:.8; margin:7px 0 0; letter-spacing:.02em}
+.fx-body{padding:20px}
+
+.fx-odds{
+  display:flex; flex-wrap:wrap; gap:0;
+  border:1px solid var(--line); background:var(--surface-2); margin:0 0 22px;
+}
+.od{flex:1 1 96px; padding:9px 12px; border-right:1px solid var(--line); border-bottom:1px solid var(--line)}
+.od:last-child{border-right:0}
+.od dt{
+  font-family:Archivo,sans-serif; font-size:10px; font-weight:700; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--muted); margin:0 0 3px;
+}
+.od dd{margin:0; font-family:"IBM Plex Mono",monospace; font-size:15px; font-weight:500; font-variant-numeric:tabular-nums}
+
+h3.blk{
+  font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--accent); margin:26px 0 10px;
+}
+h3.blk:first-of-type{margin-top:0}
+.fx-body ul{margin:0 0 14px; padding-left:20px; max-width:70ch}
+.fx-body li{margin-bottom:7px}
+.tag{
+  font-family:Archivo,sans-serif; font-size:11px; font-weight:700;
+  letter-spacing:.07em; text-transform:uppercase; padding:2px 7px; white-space:nowrap;
+}
+.t-low{background:var(--good-soft); color:var(--good)}
+.t-mid{background:var(--warn-soft); color:var(--warn)}
+.t-high{background:var(--bad-soft); color:var(--bad)}
+
+/* market suitability rows */
+.mkt{border-top:1px solid var(--line)}
+.mkt-row{
+  display:grid; grid-template-columns:150px 1fr; gap:0;
+  border-bottom:1px solid var(--line);
+}
+.mkt-name{
+  padding:13px 14px 13px 0; font-family:Archivo,sans-serif;
+  font-weight:700; font-size:14px; line-height:1.3;
+}
+.mkt-name .verdict{display:block; margin-top:6px}
+.mkt-why{padding:13px 0 13px 16px; border-left:3px solid var(--line); font-size:15.5px; color:var(--ink-2)}
+.mkt-row.good .mkt-why{border-left-color:var(--good)}
+.mkt-row.ok .mkt-why{border-left-color:var(--warn)}
+.mkt-row.bad .mkt-why{border-left-color:var(--bad)}
+@media (max-width:620px){
+  .mkt-row{grid-template-columns:1fr; gap:0}
+  .mkt-name{padding-bottom:6px}
+  .mkt-why{padding:0 0 14px 14px}
+}
+
+/* index list */
+.index{display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line)}
+.index a{
+  display:block; background:var(--surface); padding:12px 14px; text-decoration:none;
+  color:var(--ink); font-family:Archivo,sans-serif; font-weight:600; font-size:14.5px;
+}
+.index a:hover,.index a:focus-visible{background:var(--accent-soft); color:var(--accent)}
+.index a span{display:block; font-family:"IBM Plex Mono",monospace; font-weight:400; font-size:11.5px; color:var(--muted); margin-top:3px; letter-spacing:.03em}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+
+footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); font-size:14px; color:var(--muted); max-width:74ch}
+footer a{color:var(--accent)}
+
+/* ---------- not-yet-built fixture ---------- */
+.fixture.pending{opacity:.72}
+.pending-note{
+  font-family:Archivo,sans-serif; font-size:13px; font-weight:600;
+  letter-spacing:.04em; color:var(--muted);
+  background:var(--surface-2); border:1px dashed var(--line);
+  border-radius:8px; padding:14px 16px; margin-top:18px;
+}
+</style>
+
+<div class="wrap">
+
+<header class="top">
+  <p class="eyebrow">Context engine &middot; no picks, no sides, no lines</p>
+  <h1>Roma sold Bologna a striker and bought one back, four clubs have brand-new managers, and discipline breaks down on every single card</h1>
+  <p class="standfirst">Five fixtures across three countries, parsed in typed-file mode from <span class="mono">odds_11.xlsx</span> and built from nothing &mdash; every card on this page was researched and written in this pass, none carried over from the previous board.</p>
+  <div class="metaline">
+    <span>Monday 31 August 2026</span>
+    <span>Serie A matchday 2 &middot; LaLiga jornada 3 &middot; Premier League matchweek 2</span>
+    <span>Decimal odds, bet365 IT</span>
+  </div>
+</header>
+
+<section>
+  <h2 class="sec">The one thing shaping every game on this card</h2>
+  <p>Five fixtures, and every one of them pairs a club that spent heavily this summer against a club that sold, cut costs, or simply couldn&rsquo;t compete. Roma paid a reported &euro;35m for Santiago Castro alone, on top of Malen&rsquo;s permanent deal, Molina, Mora and Koulierakis; Lecce&rsquo;s entire outlay was &euro;5m for one forward, against four departing. Osasuna banked &euro;40m from Liverpool for V&iacute;ctor Mu&ntilde;oz and reinvested barely a sixth of it; Getafe&rsquo;s seven summer signings were almost all free transfers or loans. Arsenal ran a &pound;174.2m net spend to Aston Villa&rsquo;s &pound;110.9m sale surplus &mdash; the champions bought, the club that finished fourth sold its spine, and one of the players involved, Ezri Konsa, now lines up against the club that sold him. Barcelona spent to a net balance of &minus;&euro;188.3m; Rayo Vallecano, without a home ground this season after the Comunidad de Madrid closed Vallecas over its condition, ran a &euro;23.4m surplus built on selling its one saleable asset and buying nothing but centre-backs.</p>
+
+  <p>The clearest thread running under all of it is a single trade that never appears in its own fixture. Bologna sold Santiago Castro to Roma for that reported &euro;35m and took Artem Dovbyk back the other way on a loan with an option &mdash; the same two forwards, swapped, in the same window &mdash; and the two clubs that made the trade never play each other on this card: Roma open at Lecce, Bologna are away at Atalanta. Layered on top of it, four clubs on this slate have a manager who was not in the job last season &mdash; Maurizio Sarri at Atalanta, Domenico Tedesco at Bologna, Luis Miguel Ramis at Osasuna and Be&ntilde;at San Jos&eacute; at Rayo Vallecano &mdash; landing on three of the five fixtures and, in Atalanta&ndash;Bologna, on both sides of the same match at once. Every one of those four has two matches of record or fewer.</p>
+
+  <div class="note"><strong>Structural consequence.</strong> Discipline is usually this board&rsquo;s stable family &mdash; a referee&rsquo;s card rate doesn&rsquo;t change because a club had a busy transfer window. Not this week: every single one of the five appointed officials carries a documented gap or an outright contradiction. Daniele Chiffi&rsquo;s fouls-per-match and penalty rate are unpublished anywhere reached. Jon Ander Gonz&aacute;lez Esteban&rsquo;s LaLiga-only record is nearly identical to his single-season 2025&ndash;26 total, which means either his top-flight career is one season deep or one of the two labels is wrong. Daniele Doveri&rsquo;s 2025&ndash;26 season is reported two irreconcilable ways &mdash; 3.6 cards a game at 6.7 fouls per card against 4.3 at 5.6 &mdash; a gap wide enough to flip the posted 2.5 match line on its own. Jarred Gillett has a documented card rate but no fouls figure at all, so there is no way to know whether he books early or lets play run. And Francisco Jos&eacute; Hern&aacute;ndez Maeso&rsquo;s very identity had to be established by elimination against the LaLiga officials table, after one source named a referee who does not exist and another named one from a different season&rsquo;s fixture entirely. Five fixtures, five holes. Cards is rated Dangerous or thinly OK on every card below, and nowhere on this board is that a coincidence.</div>
+</section>
+
+<section>
+  <h2 class="sec">Today&rsquo;s slate &mdash; odds as read from the spreadsheet</h2>
+  <div class="scroller">
+  <table>
+    <thead>
+      <tr>
+        <th>Fixture</th><th>1</th><th>X</th><th>2</th><th>O2.5</th><th>U2.5</th><th>BTTS&nbsp;Y</th><th>BTTS&nbsp;N</th><th>Cards</th><th>Corners</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Lecce &ndash; Roma<span class="ko">18:30 &middot; Serie A</span></td><td>7.25</td><td>4.25</td><td>1.47</td><td>1.97</td><td>1.77</td><td>2.20</td><td>1.60</td><td>3.5</td><td>9.5</td></tr>
+      <tr><td>Osasuna &ndash; Getafe<span class="ko">19:30 &middot; LaLiga</span></td><td>2.20</td><td>2.80</td><td>4.10</td><td>3.00</td><td>1.35</td><td>2.35</td><td>1.53</td><td>4.5</td><td>8.5</td></tr>
+      <tr><td>Atalanta &ndash; Bologna<span class="ko">20:45 &middot; Serie A</span></td><td>1.95</td><td>3.60</td><td>3.85</td><td>1.87</td><td>1.85</td><td>1.75</td><td>2.00</td><td>2.5</td><td>9.5</td></tr>
+      <tr><td>Aston Villa &ndash; Arsenal<span class="ko">21:00 &middot; Premier League</span></td><td>6.00</td><td>4.30</td><td>1.53</td><td>1.72</td><td>2.05</td><td>1.80</td><td>1.93</td><td>3.5</td><td>9.5</td></tr>
+      <tr><td>Barcelona &ndash; Rayo Vallecano<span class="ko">21:30 &middot; LaLiga</span></td><td>1.10</td><td>10.00</td><td>20.00</td><td>1.23</td><td>3.75</td><td>2.05</td><td>1.68</td><td>3.5</td><td>10.5</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="note"><strong>Provenance.</strong> This slate was parsed in typed-file mode from
+<span class="mono">odds_11.xlsx</span>. The workbook holds five tabs: an unused
+<span class="mono">odds_EXAMPLE</span> template, <span class="mono">odds_7</span>,
+<span class="mono">odds_8</span> and <span class="mono">odds_9</span> (28, 29 and 30 August, all already
+consumed as fixtures_8/9/10), and a fifth tab whose title row reads &ldquo;MATCHES
+31-08-2026&rdquo; &mdash; today&rsquo;s slate, and the one read here &mdash; despite the tab itself still being
+internally named <span class="mono">odds_10</span>, a leftover from copy-paste that was not used for numbering,
+the same lag seen in the previous file. No screenshots were involved, so there are no source image filenames and
+no OCR step; every price was read directly from a spreadsheet cell, none derived, none unreadable. As with the
+previous slate, the workbook is written in strict OOXML, which returns an empty sheet list to the usual reader;
+the worksheet XML was parsed directly and cross-checked against a raw zip dump before use. Kickoff times were
+normalised from Excel&rsquo;s floating-point time serialisation (<span class="mono">18:30:00.0000000000031950</span>
+&rarr; 18:30). This sheet holds only five fixtures &mdash; fewer than the fifteen-fixture slates parsed for
+fixtures_8/9/10. Two fields are structurally absent rather than unread &mdash; no <span class="mono">league</span>
+column and no <span class="mono">venue</span> column, both established by Phase&nbsp;2 research and never
+inferred at parse time &mdash; and <span class="mono">Win/+2 Home/Away</span> is empty for all five rows. One
+per-fixture gap: Barcelona&ndash;Rayo Vallecano is missing its <span class="mono">1X</span> cell, the only such
+gap anywhere in the sheet. Home/away card splits are present only for Lecce&ndash;Roma, Atalanta&ndash;Bologna and
+Aston Villa&ndash;Arsenal; absent for Osasuna&ndash;Getafe and Barcelona&ndash;Rayo Vallecano. Team names are
+recorded exactly as typed in the source; &ldquo;Barcellona&rdquo; in the raw sheet is rendered as
+&ldquo;Barcelona&rdquo; throughout this board, consistent with the correction applied to
+&ldquo;M&aacute;laga&rdquo; on the previous slate.</div>
+  <div class="note"><strong>Unresolved contradictions across the card.</strong> Beyond the discipline gaps
+detailed above, a dozen further conflicts were recorded rather than resolved, each flagged inside the card it
+affects. Whether Lecce&rsquo;s matchday-one win over Venezia finished 2&ndash;0 or 2&ndash;1 is reported both
+ways and bears directly on their both-teams-to-score row. Osasuna&rsquo;s own results this season are reported
+two different ways by two sources, one of which also produced visibly garbled probable lineups for both
+Osasuna and Getafe. Whether Artem Dovbyk&rsquo;s move from Roma to Bologna is a loan or a permanent sale is
+given both ways, as is Roberto Piccoli&rsquo;s move from Fiorentina. Aston Villa&rsquo;s own transfer ledger
+lists Emiliano Mart&iacute;nez as both sold to Chelsea and as a doubtful selection for this match. Anthony
+Gordon&rsquo;s fee at Barcelona is given as both a flat &euro;80m and &euro;70m plus &euro;10m in variables.
+Jarred Gillett&rsquo;s career total is given as both 292 matches at 4.07 yellows a game and 396 matches at 3.46.
+In every case both readings are on the record and neither has been chosen.</div>
+</section>
+
+<section>
+  <h2 class="sec">Jump to a fixture</h2>
+  <nav class="jump">
+    <a href="#f1">Lecce &ndash; Roma<span>18:30 &middot; Stadio Via del Mare</span></a>
+    <a href="#f2">Osasuna &ndash; Getafe<span>19:30 &middot; Estadio El Sadar</span></a>
+    <a href="#f3">Atalanta &ndash; Bologna<span>20:45 &middot; Gewiss Stadium</span></a>
+    <a href="#f4">Aston Villa &ndash; Arsenal<span>21:00 &middot; Villa Park</span></a>
+    <a href="#f5">Barcelona &ndash; Rayo Vallecano<span>21:30 &middot; Spotify Camp Nou</span></a>
+  </nav>
+</section>
+
+<article class="fixture" id="f1">
+  <div class="fx-head">
+    <p class="fx-league">Italy &middot; Serie A &middot; Matchday 2</p>
+    <h2 class="fx-title">Lecce &ndash; Roma</h2>
+    <p class="fx-sub">18:30 CEST &middot; Stadio Via del Mare, Lecce &middot; The division&rsquo;s weakest attack of last season hosts its meanest defence, in a fixture Roma have not lost in the league since April 2012 &mdash; with the away section closed</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>7.25 &middot; 4.25 &middot; 1.47</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>2.65 &middot; 1.20 &middot; 1.08</dd></div>
+      <div class="od"><dt>EH +1 (1/X/2)</dt><dd>2.65 &middot; 3.40 &middot; 2.35</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.97 / 1.77</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>2.20 / 1.60</dd></div>
+      <div class="od"><dt>Cards 3.5 U / O</dt><dd>1.60 / 2.00</dd></div>
+      <div class="od"><dt>Home cards 1.5 U / O</dt><dd>1.90 / 1.65</dd></div>
+      <div class="od"><dt>Away cards 1.5 U / O</dt><dd>1.70 / 1.85</dd></div>
+      <div class="od"><dt>Corners 9.5 U / O</dt><dd>1.70 / 2.00</dd></div>
+      <div class="od"><dt>Corner race 1/X/2</dt><dd>2.75 &middot; 10.00 &middot; 1.50</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>Neither side is promoted, and the gap between them is the widest of any fixture on this card. Lecce finished 17th on 38 points &mdash; 38 matches, 10 wins, 8 draws, 20 defeats, 28 scored, 50 conceded, goal difference &minus;22 &mdash; and stayed up on the final matchday. Roma finished 3rd on 73 points with 23 wins, 4 draws, 11 defeats, 59 scored and 31 conceded for +28, and qualified for the Champions League. The single number that frames everything here is 28: Lecce scored 0.74 goals a match across a full season, and the club that finished four places below them went down. Roma conceded 31 in 38, 0.82 a match. The structural headline is that both clubs kept their manager &mdash; Eusebio Di Francesco at Lecce, Gian Piero Gasperini reconfirmed at Roma after the Champions League place was secured &mdash; and both spent the summer doing exactly what their league position implied. Roma bought a &euro;35m centre-forward, made a forward loan permanent, and added a right-back, a centre-back and an attacking midfielder. Lecce bought a &euro;5m forward and took a midfielder on loan, and lost four attacking players whose loans expired. The head-to-head is emphatic and long: Roma have not lost this fixture in the league since April 2012, have won the last three meetings without conceding, and Di Francesco has taken three points from sixteen Serie A meetings with Roma, losing the last ten consecutively.</p>
+    <ul>
+      <li><strong>Lecce &mdash; turnover medium, and almost all of it subtraction in the forward line.</strong> Eusebio Di Francesco continues, no change of manager, with a stated 4&ndash;3&ndash;3 and an offensive brief that the 28-goal season did not deliver. The window&rsquo;s only real purchase is Willem Geubbels, forward, from Paris FC for &euro;5m, joined by Ivan Ilic in midfield on loan from Torino, Amar Fatah from Troyes and Marco Bleve, goalkeeper, from Carrarese as cover behind Wladimiro Falcone. Youssef Maleh, Christ-Owen Kouassi, Mohamed Kaba and Rares Burnete all return from loans at Cremonese, Nantes and Juve Stabia. Going out: Ylber Ramadani to &Ccedil;orum on 5 July for an undisclosed fee, Issa Doumbia to Sporting on 1 June undisclosed, and &THORN;&oacute;rir J&oacute;hann Helgason to Venezia on 1 July undisclosed &mdash; plus a bloc of expiring loans that removes Francesco Camarda back to Milan, Riccardo Sottil to Fiorentina and Walid Cheddira to Napoli, with Lameck Banda gone having not reported for pre-season. That is four forwards out and one bought. No centre-back was signed; the probable back four is Veiga, Gaspar, Tiago Gabriel and Antonino Gallo, all held over. <strong>Gap:</strong> no fees are published for any of the three permanent Lecce departures. <strong>Conflict logged:</strong> sources report Nikola Krstovi&#263; sold to Atalanta for &euro;25m plus a 10 per cent sell-on and Nikola &Scaron;tuli&#263; bought from Charleroi for &euro;6m as his replacement, but neither move appears on the summer-2026 ledger and &Scaron;tuli&#263; is already the incumbent centre-forward in the 2026&ndash;27 probable eleven; the moves most likely belong to the 2025 window and are not counted here as this summer&rsquo;s business.</li>
+      <li><strong>Roma &mdash; turnover high, and weighted precisely at centre-forward and centre-back.</strong> Gian Piero Gasperini was reconfirmed rather than appointed, and the shape is his 3&ndash;4&ndash;2&ndash;1: Svilar; Hermoso, Mancini, Ndicka; Molina, Cristante, Kon&eacute;, Wesley; Mora, Dybala; Malen. The spending is the most concentrated of any club on this card. Santiago Castro arrives from Bologna as an outright purchase reported at &euro;35m including bonuses on a &euro;2m salary, taking the number 9. Donyell Malen&rsquo;s loan from Aston Villa was converted to a permanent deal on 26 May 2026 on a contract to 30 June 2030, at a fee reported at &pound;21.6m. Nahuel Molina comes in at right wing-back from Atl&eacute;tico Madrid, Rodrigo Mora from Porto in the attacking band, and Konstantinos Koulierakis from Wolfsburg as a centre-back, with Daniele Ghilardi&rsquo;s option from Verona exercised and Salah-Eddine and Cherubini back from loans at PSV and Sampdoria. Out: Artem Dovbyk to Bologna, Zeki &Ccedil;elik released at contract expiry and on to Juventus, another forward released at expiry, and Buba Sangar&eacute;, Saud Abdulhamid and Alessandro Romano loaned to Elche, Lens and Cagliari. Jayden Oosterwolde&rsquo;s move from Fenerbah&ccedil;e collapsed after the medical. <strong>Gap:</strong> fees are unreported for Molina, Mora, Koulierakis and Ghilardi in the sources consulted, and the Dovbyk exit is described as a loan by one source and a sale by another &mdash; the direction is certain, the structure is not.</li>
+      <li><strong>Suspensions / absences.</strong> No suspensions surfaced for either side. Lecce lost left-back Antonino Gallo to a cheekbone injury sustained in the opening match, with Corrie Ndaba named as the likely deputy, and Medon Berisha &mdash; one of the three in the probable midfield &mdash; is a doubt. Roma are without Devyne Rensch with a flexor problem, and Robinio Vaz is described as close to a move to Hull City. The away section is closed to Roma supporters for this match, which removes the travelling element from an atmosphere that would otherwise be the loudest of Lecce&rsquo;s season.</li>
+      <li><strong>Sample.</strong> One league match each; matchday 2. Roma beat Fiorentina 4&ndash;0 at home, with Donyell Malen scoring a hat-trick, each of the three assisted by Paulo Dybala, and Niccol&ograve; Pisilli adding the fourth &mdash; a &euro;21.6m forward and a 32-year-old creator producing the entire scoreline between them on day one. Lecce beat Venezia. <strong>Conflict logged:</strong> the scoreline is reported as 2&ndash;0 by one source and 2&ndash;1 by another, with the second describing both goals as second-half. The result and Lecce&rsquo;s two goals are agreed; whether Venezia scored is not, which matters directly for any read on the both-teams-to-score row and is left unresolved here rather than picked.</li>
+      <li><strong>Referee.</strong> Daniele Chiffi of the Padova section, confirmed in the designations published on 26 August, with Imperiale (Genova) and Cecconi (Empoli) on the lines, Marco Di Bello (Brindisi) as fourth official, Aleandro Di Paolo (Avezzano) on VAR and Giacomo Paganessi (Bergamo) assisting. His published averages are 3.83 yellow cards and 0.17 red cards a match. He has taken charge of Roma fourteen times for a record of nine wins, one draw and four defeats, most recently the 3&ndash;2 away win at Parma last season that helped secure the Champions League place. <strong>Gap:</strong> neither his fouls-per-match figure nor his penalties-per-game rate is published in any source reached, so the fouls-per-card ratio &mdash; the measure that separates an early booker from an official who lets play run &mdash; cannot be established, and no Lecce-specific record was found. The card average is real; the tolerance behind it is not documented.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Lecce are a 4&ndash;3&ndash;3 with an attacking brief and a season of evidence against it. Twenty-eight goals in thirty-eight matches is 0.74 a game, and it was paired with fifty conceded; the eight draws and the final-day survival are what a team looks like when it cannot score and cannot reliably keep the ball out either. Di Francesco has been kept, so the method is not changing, but the personnel available to execute it has been thinned in exactly the department that was already the problem. Camarda, Sottil and Cheddira all went back to their parent clubs, Banda did not report, and the replacement is one &euro;5m forward, Geubbels, who has not yet scored. The one genuine addition to the spine is Ivan Ilic on loan from Torino, a midfielder rather than a defender, in a squad that signed no centre-back and whose first-choice left-back has a facial injury a week into the season. The opening win over Venezia is a real result and the right kind of start; it is also a result against a side that was not in this division last season, and it does not tell us that 0.74 goals a game has become something else.</p>
+    <p>Roma are the opposite proposition and the more legible one. Thirty-one conceded in thirty-eight is the foundation Gasperini inherited and kept, and the summer was spent addressing the other end: a &euro;35m centre-forward in Castro, a permanent deal for Malen, and Mora from Porto behind them, with Molina at right wing-back to feed the 3&ndash;4&ndash;2&ndash;1&rsquo;s wide overloads and Koulierakis added to a back three that already had Mancini, Ndicka and Hermoso. Matchday one was the loudest possible statement of what that money bought &mdash; four goals, a Malen hat-trick, three Dybala assists &mdash; and it is also the single caution attached to reading it. One home match against Fiorentina, with the new centre-forward not among the scorers, is a small sample carrying a very large scoreline. The structural case for Roma here does not rest on that afternoon; it rests on 59 goals scored and 31 conceded across a full season, a manager retained, and a fixture record in which they have not lost a league meeting with Lecce in fourteen years and have won the last three without conceding. What the summer changed is that the attack is now expensive as well as effective; what it did not change is the defence, which was the reason for third place.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous &mdash; the price has already absorbed every structural fact</span></div><div class="mkt-why">7.25 against 1.47 is the widest 1X2 spread on this card outside the two three-goal handicaps, and it is not mispriced so much as fully priced: the 28-goal attack, the 31-goal defence, fourteen years without a home league win in the fixture, three straight meetings without Lecce scoring, and Di Francesco&rsquo;s three points from sixteen attempts are all already in it. There is nothing structural left to discover on this row. The draw at 4.25 is the row&rsquo;s one genuinely odd number given eight draws in Lecce&rsquo;s thirty-eight last season, but it is priced longer than the away win by a factor of nearly three, which is the book saying the same thing the history says.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Asian handicap &amp; double chance<span class="verdict tag t-mid">OK &mdash; and the honest question here is the margin, not the winner</span></div><div class="mkt-why">The +1 line splits almost evenly &mdash; Lecce +1 at 2.65 against Roma by two or more at 2.35, with Roma by exactly one at 3.40 &mdash; which is the book declining to expect the visitors to be comfortable. That is a defensible read: Roma&rsquo;s season profile is 59 scored and 31 conceded, a fine record but not a demolition record, and the last three meetings were won without conceding rather than won by margins. The double chance at 1.08 for X2 is close to unpriceable, and 12 at 1.20 says almost nothing. This family at least asks a question the evidence bears on, whereas the outright does not.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-mid">OK &mdash; two clean structural cases pulling in opposite directions</span></div><div class="mkt-why">The nearest thing to a genuinely two-sided row here, and both sides are structural rather than narrative. Under at 1.77 rests on Lecce&rsquo;s 0.74 goals a game across a full season, an attack further thinned by four departing forwards against one &euro;5m arrival, and a Roma defence that conceded 0.82 a game &mdash; the two lowest-scoring halves of any fixture on the card meeting each other. Over at 1.97 rests on the fact that Roma scored 59 last season and four on the opening day, and that Lecce conceded 50. The unresolved matchday-one scoreline weakens neither side decisively, but it does mean the freshest evidence on Lecce&rsquo;s defence is disputed.</div></div>
+      <div class="mkt-row good"><div class="mkt-name">BTTS<span class="verdict tag t-low">Well-suited &mdash; the fixture history and the season numbers agree on the same leg</span></div><div class="mkt-why">The best-evidenced row on this fixture, because the two independent sources of evidence point the same way. Roma have won the last three meetings without conceding, and Lecce scored 28 goals in 38 matches then lost Camarda, Sottil, Cheddira and Banda from the forward line, replacing them with a &euro;5m signing still without a goal. Roma&rsquo;s 31 conceded in 38 is the other half. No at 1.60 is priced accordingly and the structure supports the price rather than fighting it; the Yes side needs a Lecce goal against a back three of Mancini, Ndicka and Hermoso that has just added Koulierakis. The one caveat is the disputed Venezia scoreline, which is exactly the evidence that would tell us whether Lecce&rsquo;s defence is any different.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-high">Dangerous &mdash; evidence-thin on the official, and the market disagrees with itself</span></div><div class="mkt-why">Chiffi is confirmed, so the appointment is not the problem &mdash; the record is. His 3.83 yellows a match is published, but no fouls-per-match figure and no penalty rate could be sourced, which means the fouls-per-card ratio that distinguishes an early booker from a permissive one is simply unavailable, and the 3.5 match line at 1.60 under sits below his own average without any way to test whether that is tolerance or match profile. The per-team lines add confusion rather than clarity: both are set at 1.5, but the home side leans over at 1.65 while the away side leans under at 1.70, which prices Lecce as the more likely to be booked &mdash; plausible for a chasing side, but it is an inference, not a documented tendency. Two of the three inputs are unverifiable.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Corners<span class="verdict tag t-mid">OK &mdash; asymmetric, and the race is the more coherent half</span></div><div class="mkt-why">The 9.5 line leans under at 1.70 while the race leans hard to Roma at 1.50 against 2.75, and that combination is internally consistent: a visiting side expected to hold the ball and the territory without the game becoming stretched, against a home side that took 28 goals&rsquo; worth of chances from a full season and has lost most of the players who created them. The structural support is territorial rather than statistical &mdash; Gasperini&rsquo;s 3&ndash;4&ndash;2&ndash;1 with Molina and Wesley as wing-backs generates wide entries by design &mdash; and no corner-count data for either club was established, so the line itself is being taken on trust while only the shape of the race is evidenced.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li>Roma&rsquo;s 4&ndash;0 is one home match and the least transferable number on this page. Malen scored three of the four with all three assisted by Dybala; the &euro;35m centre-forward signed to lead the line did not score. A single afternoon in which two players produced the entire attacking output is not evidence about a rebuilt attack, and it is the number most likely to be doing the work in any price that moved this week.</li>
+      <li>Lecce&rsquo;s survival was decided on the final matchday and their attacking numbers have got worse since. Twenty-eight goals in thirty-eight was already the profile of a relegation candidate; Camarda, Sottil, Cheddira and Banda have all left, and the replacement is one &euro;5m forward who has yet to score. Any read that treats last season&rsquo;s 28 as a floor is treating a thinner squad as if it were the same one.</li>
+      <li>The head-to-head is unusually long and unusually one-directional, which cuts both ways. No league defeat for Roma in this fixture since April 2012, three straight wins without conceding, and three points for Di Francesco from sixteen meetings is a genuinely large sample &mdash; but it spans multiple Roma managers and squads, and the version of Roma playing today has a new centre-forward, a new right wing-back and a new centre-back.</li>
+      <li>The disputed opening scoreline is a live gap, not a footnote. Whether Lecce&rsquo;s win over Venezia was 2&ndash;0 or 2&ndash;1 is the only current evidence about whether their defence has changed, and it bears directly on the both-teams-to-score and totals rows. Two reputable sources disagree and neither is obviously better; it is reported here rather than resolved.</li>
+      <li><strong>Most sensitive:</strong> the discipline family, where the appointed official&rsquo;s fouls-per-card and penalty rate are unpublished, the match line sits under his own card average, and the two per-team lines lean in opposite directions. <strong>Least sensitive:</strong> the both-teams-to-score row, where a full season of 28 goals scored, a forward line reduced by four departures, 31 conceded by the opposition and three consecutive clean sheets in the fixture all describe the same match.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>Both-teams-to-score is more robust than the outright here because the outright has nothing left to price &mdash; every structural fact is already inside 7.25 against 1.47 &mdash; whereas the BTTS row rests on two independent bodies of evidence, Lecce&rsquo;s 0.74 goals a game and Roma&rsquo;s three straight clean sheets in the fixture, that were not derived from each other.</li>
+      <li>The handicap is more robust than the moneyline because it asks about margin rather than winner, and margin is where the evidence is genuinely uncertain: Roma&rsquo;s 59 goals in 38 is a good attacking season, not an overwhelming one, and their last three wins here came without conceding rather than by wide scorelines.</li>
+      <li>Totals are more robust than corners because both sides of the totals row are built from full-season figures &mdash; 28 scored and 50 conceded for Lecce, 59 and 31 for Roma &mdash; while no corner-count data for either club could be sourced at all, leaving the 9.5 line supported only by the shape of Gasperini&rsquo;s wing-back system.</li>
+      <li>Every goals-family read is more robust than every cards read on this fixture, for one specific reason: Chiffi&rsquo;s appointment is confirmed but his fouls-per-match and penalty figures are not published anywhere reached, so a 3.5 line priced under at 1.60 against a 3.83 card average cannot be tested against how freely he lets play run.</li>
+      <li>Where the book has priced near indifference, it is worth saying what it signals. The +1 handicap at 2.65 against 2.35 and the 9.5 corner line at 1.70 against 2.00 are the two closest markets on this fixture, and in both cases the book is declining to commit to Roma being comfortable &mdash; which is a notably different statement from the 1.47 it has attached to them simply winning.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f2">
+  <div class="fx-head">
+    <p class="fx-league">Spain &middot; LaLiga EA Sports &middot; Jornada 3</p>
+    <h2 class="fx-title">Osasuna &ndash; Getafe</h2>
+    <p class="fx-sub">19:30 CEST &middot; Estadio El Sadar, Pamplona &middot; A new manager working with &euro;40m of Liverpool money against a Bordal&aacute;s side already three fixtures into a European season &mdash; and the shortest under on the whole card</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.20 &middot; 2.80 &middot; 4.10</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>1.23 &middot; 1.42 &middot; 1.65</dd></div>
+      <div class="od"><dt>EH &minus;1 (1/X/2)</dt><dd>4.75 &middot; 3.60 &middot; 1.65</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>3.00 / 1.35</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>2.35 / 1.53</dd></div>
+      <div class="od"><dt>Cards 4.5 U / O</dt><dd>1.90 / 1.70</dd></div>
+      <div class="od"><dt>Corners 8.5 U / O</dt><dd>1.90 / 1.75</dd></div>
+      <div class="od"><dt>Corner race 1/X/2</dt><dd>1.60 &middot; 8.50 &middot; 2.60</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>Neither side is promoted, and their two seasons finished ten places apart while producing almost the same goal difference. Getafe were 7th on 51 points &mdash; 38 matches, 15 wins, 6 draws, 17 defeats, 32 scored, 38 conceded, &minus;6 &mdash; and qualified for the Conference League. Osasuna were 17th on 42 points with 11 wins, 9 draws, 18 defeats, 44 scored and 50 conceded, also &minus;6, and stayed up. The identical goal difference is the point: Getafe got to Europe by winning fifteen matches and losing seventeen with only six draws, which is a remarkably decisive record for a side that scored 32 goals all season, while Osasuna scored twelve more goals than Getafe and finished ten places lower. The structural headline is that only one of these clubs changed anything this summer, and it changed almost everything. Osasuna replaced Alessio Lisci with Luis Miguel Ramis on 10 June 2026 on a contract to 2028, then sold V&iacute;ctor Mu&ntilde;oz to Liverpool for &euro;40m when the release clause was activated on 18 June. Getafe kept Jos&eacute; Bordal&aacute;s, kept the method, and spent the window adding depth for a European campaign that has already started &mdash; they have played three competitive matches in the ten days before this one.</p>
+    <ul>
+      <li><strong>Osasuna &mdash; turnover high, new manager, and the summer&rsquo;s largest single sale on this card.</strong> Luis Miguel Ramis was appointed on 10 June 2026 through to 2028, replacing Alessio Lisci. Eight days later V&iacute;ctor Mu&ntilde;oz left for Liverpool for &euro;40m on an activated release clause &mdash; the biggest fee involving any club on this slate. The reinvestment is a fraction of it: Jonathan Dubasin for &euro;4m fixed plus &euro;1m in variables on a four-year deal with a &euro;40m clause, official on 27 July; Rockson Yeboah from IFK G&ouml;teborg for &euro;3m to 2031, official 12 August; and Diego Rico, left-back, on a free from Getafe on the same day, one year with a &euro;10m clause. &Aacute;lex Lizancos from Burgos passed a medical on 29 August with the deal still pending. Also out: Javi Gal&aacute;n to Celta on a free on 30 June, Juan Cruz to Real Oviedo on 24 July, Iker Benito to Quer&eacute;taro on 14 August with Osasuna retaining 50 per cent of his rights, and Sheraldo Becker made permanent at Mainz for a reported &euro;500,000. <strong>Gap:</strong> no goalkeeper and no centre-back were signed, and Yeboah&rsquo;s position is not stated in any source consulted &mdash; so roughly &euro;7m of the &euro;40m has been reinvested and none of it verifiably in the defensive spine. That is a new manager with a rebuilt budget and an unchanged back line.</li>
+      <li><strong>Getafe &mdash; turnover high in volume, low in disruption, and unusually cheap.</strong> Jos&eacute; Bordal&aacute;s continues after Conference League qualification; no change of manager or method. Seven additions, almost all free or nominal: Enes &Uuml;nal returns from Bournemouth on roughly &euro;1.5m in variables plus a 20 per cent sell-on, three years; Johan Mojica at left-back from Mallorca for about &euro;500,000; Saba Sazonov, centre-back, from Torino on a free to 2027 with an option; Nemanja Gudelj from Sevilla on a free for one year; Francho Serrano from Real Zaragoza on a free to 2029; Giorgi Kochorashvili on loan from Sporting CP with a &euro;5m option; and Obed Vargas on loan from Atl&eacute;tico. Four winter signings &mdash; Mart&iacute;n Satriano, Zaid Romero, Sebasti&aacute;n Boselli and Mario Mart&iacute;n &mdash; carry over as effectively new, and Christantus Uche is back from a Premier League loan. Out: Diego Rico to Osasuna on a free, Javi Mu&ntilde;oz permanently to Almer&iacute;a, &Aacute;lex Sancris to Legan&eacute;s on loan with an option, Juan Berrocal authorised to negotiate with C&aacute;diz, and Borja Mayoral declared transferable on salary grounds. A centre-back and a left-back were both addressed &mdash; Sazonov and Mojica &mdash; which is more than the home side can say. <strong>Gap:</strong> no fee is published for Kochorashvili&rsquo;s loan, Vargas&rsquo;s loan or the Mu&ntilde;oz sale, and no goalkeeper movement was recorded either way.</li>
+      <li><strong>Suspensions / absences.</strong> <strong>Conflict logged.</strong> The local matchday report states Osasuna have everybody available except the injured Valentino Rosier; a separate lineup service lists Diego Rico as unavailable and Ra&uacute;l Moro as serving a one-match suspension. The two accounts cannot both be complete and neither is obviously superior, so both are recorded. Rico&rsquo;s status matters more than most: he signed from Getafe nineteen days ago and would be facing his former club. No injuries were listed for Getafe in any source reached &mdash; which for a side that has played three competitive matches in ten days is more likely a reporting gap than a clean bill of health. Ramis has publicly said he will make changes, citing both accumulated effort in a short period and the specific demands of facing Getafe.</li>
+      <li><strong>Sample.</strong> Two league matches each, and the calendar is unusually messy. Osasuna&rsquo;s scheduled opening fixture away at Celta was postponed because of a fungus in the Bala&iacute;dos pitch, so their actual debut was a goalless home draw with Levante, and the rearranged Celta match was played afterwards. Getafe lost 3&ndash;0 at Alav&eacute;s at Mendizorrotza, then beat Racing Santander at home, and in between played both legs of a Conference League play-off &mdash; winning 3&ndash;1 at home and losing 2&ndash;1 at Partizan in Belgrade to go through on aggregate. That is three competitive matches for the visitors in the ten days before kickoff against two for the hosts. <strong>Conflict logged:</strong> the local report has Osasuna winning at Celta for their first victory of the season and Getafe beating Racing 1&ndash;0 through Enes &Uuml;nal; a lineup service instead records Celta 1&ndash;1 Osasuna and Getafe 0&ndash;0 Racing. The same service produced visibly garbled probable elevens for both clubs, so the local account is carried here, but the scorelines are not treated as settled.</li>
+      <li><strong>Referee.</strong> Jon Ander Gonz&aacute;lez Esteban, confirmed. His 2025&ndash;26 line reads 64 yellow cards and 2 reds across 368 fouls at 26.29 fouls a match, with 6 penalties at 0.43 a game &mdash; which works out at roughly 4.6 cautions a match and about 5.75 fouls per card, a fairly quick trigger. Across his whole career in all competitions he has 126 matches, 553 yellows at 4.39 a game, 32 direct reds and 5 second yellows at 0.25 reds a game, and 50 penalties. <strong>Gap and internal tension:</strong> his LaLiga-only record is reported separately as 65 yellow cards at just over 4 a match with 8 penalties and 5 reds &mdash; a figure almost identical to the single-season 2025&ndash;26 total, which means either his top-flight record is essentially one season deep against a 126-match career built elsewhere, or one of the two labels is wrong. Both readings point the same way for this fixture: an official with a demonstrably high card rate and a thin body of top-flight evidence behind it, which is itself a reason discipline markets carry more variance here.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Getafe are the most legible team on this card and the least likely to have changed. Bordal&aacute;s has been in charge throughout, and 32 goals scored in 38 matches with 38 conceded is the arithmetic of his method: a low-scoring, physically contested, interruption-heavy game in which the margin is thin and deliberately kept thin. What is unusual is that this version got to Europe by being decisive rather than dour &mdash; fifteen wins and seventeen defeats with only six draws is a very high-variance record for a side that scored fewer than a goal a game. Last season they were the third most-booked team in LaLiga at 2.4 yellows a match and sixth for reds at 0.2, and the summer did nothing to soften that: the additions are Gudelj, Sazonov, Mojica, Serrano, Kochorashvili and Vargas, a list weighted to holding midfielders and defenders, with &Uuml;nal the only forward. Two league matches in and they already carry four yellows and a red. The one genuinely new variable is the fixture load. Three competitive matches in ten days including a trip to Belgrade is a schedule this squad has not carried in recent seasons, and it arrives with a manager who has never had European football to rotate around here.</p>
+    <p>Osasuna are the harder read, and the honest reason is that the evidence for what they now are is a CV rather than a body of matches. Luis Miguel Ramis has been in the job since 10 June and has taken charge of two league fixtures, one of them a goalless home draw. His squad has been reshaped by a single transaction &mdash; &euro;40m from Liverpool for V&iacute;ctor Mu&ntilde;oz &mdash; of which roughly &euro;7m has gone back out on Dubasin and Yeboah, with Diego Rico added on a free and no centre-back or goalkeeper signed at all. Last season&rsquo;s Osasuna scored 44 and conceded 50, which is a more open profile than Getafe&rsquo;s and the reason the two clubs finished ten places apart on the same goal difference; whether that profile survives a change of manager is exactly what nobody yet knows. What can be said is that Ramis has announced changes to his eleven for this match, on grounds of both fatigue and opponent, and that his side&rsquo;s three yellow cards in two matches is currently the second-lowest count in the division. El Sadar is a genuine venue advantage historically, and the market is treating it as one at 2.20 against 4.10.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous &mdash; a new manager two matches old on one side, a three-game week on the other</span></div><div class="mkt-why">The home price of 2.20 is being asked to carry a manager appointed on 10 June with two league matches behind him, a squad that has lost its most valuable player for &euro;40m and reinvested about a sixth of it, and no signing at all in the defensive spine. The away price of 4.10 is being asked to carry a side that has played three competitive matches in ten days including a trip to Belgrade. Neither number rests on anything you could call an established 2026&ndash;27 baseline. The draw at 2.80 &mdash; shorter than the away win, and one of the shortest draws on the card &mdash; is the row&rsquo;s most informative element.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Asian handicap &amp; double chance<span class="verdict tag t-mid">OK &mdash; and the &minus;1 line is where the book says what it actually thinks</span></div><div class="mkt-why">Osasuna by two or more at 4.75 against Getafe +1 at 1.65 is a strong statement that the home win, if it comes, will be narrow &mdash; entirely consistent with a Bordal&aacute;s side that conceded 38 in 38 and lost seventeen matches by keeping most of them tight. 1X at 1.23 is doing the same work from the other direction, leaning on El Sadar rather than on anything about this Osasuna squad. The handicap is the more honest of the two because it prices margin, and margin is the thing Getafe&rsquo;s method most reliably controls regardless of who is managing the opposition.</div></div>
+      <div class="mkt-row good"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-low">Well-suited &mdash; the structural case and the price agree, and the price is emphatic</span></div><div class="mkt-why">Under at 1.35 against 3.00 is the shortest total on this card and the structure behind it is genuinely strong on one side. Getafe scored 32 goals in 38 matches last season and conceded 38, the lowest attacking output of any club on the slate, and their summer added six defenders and midfielders against one forward. Osasuna&rsquo;s opening home match under a new manager finished goalless. The caveat is real but one-sided: Osasuna themselves scored 44 last season, twelve more than Getafe, so the under is leaning heavily on the visitors&rsquo; method holding while the hosts&rsquo; profile changes under Ramis &mdash; and only two matches of evidence exist for that.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; No inherits the totals case but not all of its strength</span></div><div class="mkt-why">No at 1.53 rests on the same foundation as the under: 32 goals in 38 for Getafe, a goalless El Sadar opener, and a visiting squad reinforced almost entirely in defence and midfield. What weakens it relative to the totals row is that Osasuna conceded 50 last season, more than any other side in this fixture pair, and did not sign a centre-back or a goalkeeper to change that. A Getafe side that scores under a goal a game still scored against Racing and at Belgrade. The Yes leg needs one goal from a team that manages roughly that per match, not an open game.</div></div>
+      <div class="mkt-row good"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-low">Well-suited &mdash; the referee and one team&rsquo;s documented method point the same way</span></div><div class="mkt-why">The clearest discipline read on this fixture and one of the better-evidenced on the card. Gonz&aacute;lez Esteban averaged 4.6 yellows a match in 2025&ndash;26 across 26.29 fouls a game &mdash; about 5.75 fouls per card, which is a quick trigger &mdash; with 0.43 penalties a game and 0.25 reds a match career-wide. He meets a Getafe side that was third in LaLiga for yellows last season at 2.4 a match, whose manager&rsquo;s method is built on interruption, and which has already collected four yellows and a red in two matches. The 4.5 line leaning over at 1.70 is coherent with all of it. The one caution is the official&rsquo;s thin top-flight sample and the unresolved question of whether his LaLiga record is one season or several &mdash; and Osasuna&rsquo;s own three cards in two matches is the division&rsquo;s second-lowest, so one half of the fixture is not contributing.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Corners<span class="verdict tag t-mid">OK &mdash; the low line fits, the race is the weaker half</span></div><div class="mkt-why">8.5 is among the lowest corner lines on the card and it leans over only mildly at 1.75, which is coherent with a Bordal&aacute;s away side that concedes territory deliberately and a match the same book expects to finish under 2.5 goals at 1.35. The race at 1.60 against 2.60 assumes Osasuna will hold the ball, which follows from the venue and the 2.20 outright rather than from any corner data &mdash; none was established for either club. The structural support here is the shape of the fixture, not a measured tendency, and Ramis&rsquo;s stated intention to change his eleven makes the territorial pattern less predictable than the goals read.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li>Osasuna&rsquo;s 44 goals scored last season belong to a different manager. Ramis arrived on 10 June, has two league matches on the board, and has already announced changes to his eleven for this fixture on grounds of fatigue and opponent. Any read that carries last season&rsquo;s attacking profile forward is carrying Alessio Lisci&rsquo;s work under someone else&rsquo;s name.</li>
+      <li>The &euro;40m is the fact of the summer and most of it is still unspent. V&iacute;ctor Mu&ntilde;oz&rsquo;s release clause was activated by Liverpool on 18 June; Dubasin at &euro;4m plus variables and Yeboah at &euro;3m are the reinvestment, with Diego Rico added free. No centre-back and no goalkeeper were signed by a side that conceded 50 goals in 38 matches.</li>
+      <li>Getafe arrive on their third competitive match in ten days, including a defeat in Belgrade. Their squad was built for a 38-match season and has just been handed a European league phase; the seven summer additions are mostly free transfers and loans, which is depth acquired cheaply rather than quality acquired. The 3&ndash;0 at Alav&eacute;s on the opening day is the one result on their record that looks like a side stretched.</li>
+      <li>The calendar itself is unreliable evidence here. Osasuna&rsquo;s opening fixture at Celta was postponed for a fungus in the pitch and played out of sequence, and two sources disagree on the scorelines of three of the four league matches these clubs have played. Both teams&rsquo; season-to-date records are therefore softer than a two-match sample would normally be.</li>
+      <li><strong>Most sensitive:</strong> anything that assumes continuity in Osasuna&rsquo;s attacking output, because the manager, the most valuable player and the starting eleven have all changed inside three months and the replacement spending is concentrated nowhere in particular. <strong>Least sensitive:</strong> the discipline family, where a referee averaging 4.6 cautions a match at 5.75 fouls per card meets the division&rsquo;s third most-booked side of last season, already carrying a red card this one.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>The under on totals is more robust than the home win because it rests on Getafe&rsquo;s 32 goals in 38 matches &mdash; a full season under the same manager who is still here &mdash; while the 2.20 rests on a manager with two matches of record and a squad missing the player who was sold for &euro;40m.</li>
+      <li>Cards are more robust than corners because both inputs are measured: Gonz&aacute;lez Esteban&rsquo;s 4.6 yellows a match at 5.75 fouls per card, and Getafe&rsquo;s 2.4 yellows a match and third place in LaLiga&rsquo;s booking table last season. No corner data for either club could be established at all, so the 8.5 line is supported only by the inferred shape of the fixture.</li>
+      <li>The handicap is more informative than the outright because it asks about margin rather than winner, and margin is the one thing a Bordal&aacute;s side controls by design &mdash; 38 conceded in 38 matches, seventeen defeats mostly kept narrow &mdash; regardless of what Ramis has changed at the other end.</li>
+      <li>Getafe&rsquo;s European fixture load is a better reason for caution on the away side than any squad fact, because the squad facts point the other way: Sazonov, Mojica, Gudelj, Kochorashvili, Vargas and Serrano make this a deeper Getafe than last season&rsquo;s, just not a more expensive one.</li>
+      <li>Where the book has priced close to indifference, it is worth reading. The 4.5 card line at 1.90 against 1.70 and the 8.5 corner line at 1.90 against 1.75 are both near coin-flips, but the draw at 2.80 &mdash; shorter than the away win at 4.10, in a fixture the same book expects to finish under 2.5 goals at 1.35 &mdash; is the clearest signal on the page: it is pricing a tight, low-scoring, interrupted match in which neither side pulls away.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f3">
+  <div class="fx-head">
+    <p class="fx-league">Italy &middot; Serie A &middot; Matchday 2</p>
+    <h2 class="fx-title">Atalanta &ndash; Bologna</h2>
+    <p class="fx-sub">20:45 CEST &middot; Gewiss Stadium, Bergamo &middot; Both clubs changed manager this summer, Bologna sold their centre-forward and their centre-back, and the visitors have won four of their last five matches at this ground</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.95 &middot; 3.60 &middot; 3.85</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>1.25 &middot; 1.28 &middot; 1.85</dd></div>
+      <div class="od"><dt>EH &minus;1 (1/X/2)</dt><dd>3.50 &middot; 3.75 &middot; 1.85</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.87 / 1.85</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.75 / 2.00</dd></div>
+      <div class="od"><dt>Cards 2.5 U / O</dt><dd>2.00 / 1.65</dd></div>
+      <div class="od"><dt>Home cards 1.5 U / O</dt><dd>1.47 / 2.25</dd></div>
+      <div class="od"><dt>Away cards 1.5 U / O</dt><dd>1.63 / 1.95</dd></div>
+      <div class="od"><dt>Corners 9.5 U / O</dt><dd>1.73 / 1.95</dd></div>
+      <div class="od"><dt>Corner race 1/X/2</dt><dd>1.57 &middot; 9.00 &middot; 2.60</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>Neither side is promoted, and they finished one place apart. Atalanta were 7th on 59 points &mdash; 38 matches, 15 wins, 14 draws, 9 defeats, 51 scored, 36 conceded, +15 &mdash; and Bologna 8th on 56 with 16 wins, 8 draws, 14 defeats, 49 scored, 46 conceded, +3. The fourteen draws are the number that stands out: Atalanta lost only nine matches all season and still finished seventh, because they drew more than a third of them. The structural headline is that both clubs replaced their manager, and only one of them also dismantled its spine. Maurizio Sarri left Lazio for Atalanta, announced on 15 June 2026 on a three-year contract to June 2029 &mdash; the same move that put Gennaro Gattuso in the Lazio dugout. Domenico Tedesco, previously at Fenerbah&ccedil;e and with the Belgium national team, replaced Vincenzo Italiano at Bologna on a contract to 30 June 2028 with an option for a further season. Bologna then sold Santiago Castro to Roma, in the deal Roma report at &euro;35m including bonuses, and Jhon Lucum&iacute; to Juventus &mdash; centre-forward and centre-back gone in the same window a new manager arrived. The head-to-head is emphatically against the hosts: Bologna have won four of the last seven Serie A meetings, Atalanta have lost three of their last four home fixtures against them, and Bologna have won four of their last five matches played at Bergamo across all competitions.</p>
+    <ul>
+      <li><strong>Atalanta &mdash; new manager, heavy defensive outflow, and no published fee anywhere.</strong> Sarri arrives from Lazio, announced 15 June 2026, three years to June 2029, and the shape reported for this match is a 4&ndash;3&ndash;3: Carnesecchi; Zappacosta, Kossounou, Scalvini, Bernasconi; Pasalic, Gaetano, Ederson; De Ketelaere, Krstovi&#263;, Raspadori. The window is dominated by departures and almost all of them are defenders. Out: Berat Djimsiti to Al-Diriyah, Marco Palestra to Chelsea, Ben Godfrey to Rangers, Alessandro Cittadini to Frosinone and Bonfanti to Las Palmas, plus El Bilal Tour&eacute; to Parma, Daniel Maldini to Cagliari, Marco Brescianini permanently to Fiorentina, Vavassori to Palermo and Yunus Musah back to Milan at the end of his loan. In: Gianluca Gaetano from Cagliari and Thomas Kristensen from Udinese, with Ilaix Sulemana and Vlahovic returning from loans. Five defenders out against one defender in &mdash; and Kristensen is unavailable for this match. <strong>Gap:</strong> not one fee is published for any Atalanta movement in any source consulted, incoming or outgoing, including the Palestra sale to Chelsea. <strong>Conflict logged:</strong> one transfer board additionally lists Elmas from Leipzig and Franck Kessi&eacute; from Al-Ahli on a free as arrivals and Marten de Roon to Roma as a departure; a second board covering the same window lists none of the three, and Roma&rsquo;s own ledger does not record De Roon. None of the three is carried as established.</li>
+      <li><strong>Bologna &mdash; new manager, and the two most important players in the side sold in the same summer.</strong> Domenico Tedesco replaced Vincenzo Italiano on a deal to 30 June 2028 with an option. The two defining exits are Santiago Castro to Roma &mdash; reported from the Roma side at &euro;35m including bonuses, which makes it the largest fee involving any Serie A club on this card &mdash; and Jhon Lucum&iacute; to Juventus. Also gone: Remo Freuler to Olympiacos, Charalampos Lykogiannis and Bonifazi released, Federico Ravaglia to Watford, Thijs Dallinga to Cologne, Dominguez to Sassuolo, Fabbian to Fiorentina, Aebischer to Pisa, Sosa to Colo-Colo, Raimondo to Frosinone and Ili&#263; to Cesena. The replacements for Castro are two forwards, neither bought outright with certainty: Artem Dovbyk from Roma on a loan with a right to buy, on a contract to 30 June 2027, and Roberto Piccoli from Fiorentina. Also in: Arthur Theate from Eintracht Frankfurt, Alhassane from Real Oviedo, Amondarain from Estudiantes, Tommaso Pobega from Milan and Caccavo from Lumezzane. <strong>Gap:</strong> no fee is published for any Bologna movement other than Castro&rsquo;s, which is sourced from the buying club. <strong>Conflict logged:</strong> Piccoli is recorded as a permanent signing by one board and a loan by another; Freuler is recorded as released by one and as a permanent transfer to Olympiacos by the other; and Theate, Pobega and Caccavo appear on only one of the two lists.</li>
+      <li><strong>Suspensions / absences.</strong> No suspensions for either side. Atalanta are without Ahanor, Hien, Sulemana and Kristensen &mdash; two of them centre-backs, in a squad that has just sold or loaned out five defenders and signed one, who is himself among the four unavailable. Bologna are without Casale. That is a home side missing three-quarters of the defensive reinforcement it might have had, against a visiting side missing one player.</li>
+      <li><strong>Sample.</strong> One league match each; matchday 2. Atalanta beat Sassuolo 2&ndash;1, with Raspadori and Krstovi&#263; scoring &mdash; Sarri&rsquo;s first competitive result. Bologna lost 1&ndash;0 at home to Lazio, the same match recorded from the other side as Gattuso&rsquo;s debut win. Both scorelines are corroborated across sources. Two matches of evidence for two new managers is as thin as a sample gets, and in Bologna&rsquo;s case the one data point is a home defeat by a single goal to a side that has itself just changed manager.</li>
+      <li><strong>Referee.</strong> Daniele Doveri, confirmed in the matchday-2 designations. He is described as a highly experienced official with unusually even card management &mdash; 2.0 yellows a game to the home side and 2.1 to the away side, a symmetry worth noting in a fixture where the market has set the two per-team lines at different prices. <strong>Conflict logged:</strong> two readings of his 2025&ndash;26 season are irreconcilable. One reports 15 matches, 53 yellows, 1 red and 2 penalties, at 3.6 cards a game and 6.7 fouls per card &mdash; a permissive ratio, an official who lets play run. The other reports 6 matches, 26 yellows, no reds and no penalties, at 4.3 cards a game and 5.6 fouls per card &mdash; a notably quicker trigger. The gap between 6.7 and 5.6 fouls per card is the whole question for a 2.5 card line, and it is not resolved here. <strong>Gap:</strong> the assistants, fourth official and VAR appointments were not published in the source reached, and no Doveri record specific to either club was found.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Atalanta&rsquo;s 2025&ndash;26 was a season of control without conversion: 51 scored, 36 conceded, only nine defeats, and fourteen draws. That is the profile of a side that rarely got beaten and rarely put a game away, and it belongs to a coaching regime that has now gone. Sarri&rsquo;s arrival is the most consequential stylistic variable on this card, because the two methods are not adjacent. Whatever Atalanta become under him, the evidence for it is one match &mdash; a 2&ndash;1 home win over Sassuolo &mdash; and a CV. Meanwhile the squad he inherited has been thinned precisely where a new defensive structure has to be built: Djimsiti, Palestra, Godfrey, Cittadini and Bonfanti all left, Kristensen was the one defensive arrival and he is unavailable, and Hien and Ahanor are also out. The reported back four of Zappacosta, Kossounou, Scalvini and Bernasconi is what is left rather than what was planned. Krstovi&#263;, who scored on matchday one, is the centre-forward Atalanta bought from Lecce for a reported &euro;25m plus a sell-on in an earlier window &mdash; and on the evidence of one game, the attack is the part of this side that has carried over intact.</p>
+    <p>Bologna are the harder case and the more radically changed. Tedesco replaces Italiano, and the squad handed to him is missing the centre-forward who was sold to Roma for &euro;35m and the centre-back who was sold to Juventus, along with Freuler in midfield and Lykogiannis, Ravaglia, Dallinga, Fabbian and Aebischer besides. Forty-nine goals scored and forty-six conceded last season is a balanced, mid-table profile; the summer removed the principal source of the first number and one of the pillars of the second. The replacements are a loan with an option in Dovbyk, Piccoli from Fiorentina on terms the sources disagree about, and Theate at the back. That is a squad rebuilt on borrowed and unpriced players, under a manager who has been in the job weeks and lost his opening match at home. Against all of that sits the one genuinely striking historical fact on this page: Bologna have won four of their last five matches at Bergamo and Atalanta have lost three of their last four home meetings with them &mdash; a record built by different squads and different managers on both sides, but a long and one-directional one.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous &mdash; two managers with one match each, and a venue record that contradicts the price</span></div><div class="mkt-why">1.95 against 3.85 prices Atalanta as clear favourites in a fixture they have lost three of the last four times at this ground, against opponents who have won four of their last five visits to Bergamo. It also asks a home price to carry a manager appointed on 15 June with one competitive match behind him and a back four assembled from whoever is fit. The away price is being asked to carry an equally new manager who has lost his only match and has neither his centre-forward nor his centre-back. There is no established 2026&ndash;27 baseline on either side, and the only long-run evidence available points against the favourite.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Asian handicap &amp; double chance<span class="verdict tag t-mid">OK &mdash; the &minus;1 line is the more honest statement of the same view</span></div><div class="mkt-why">Atalanta by two or more at 3.50 against Bologna +1 at 1.85 says the book does not expect the home win to be comfortable, which fits a side that drew fourteen of thirty-eight last season and is currently missing four players including two centre-backs. 1X at 1.25 and 12 at 1.28 are priced almost identically, which is the market saying the draw and the two wins are hard to separate &mdash; a fair reading given fourteen draws and two new managers. The handicap prices margin, and margin is where Atalanta&rsquo;s own season profile is most informative.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-high">Dangerous &mdash; priced at indifference, and the evidence is genuinely indifferent</span></div><div class="mkt-why">1.87 against 1.85 is the closest total on the whole card, and for once the price and the evidence agree about how little is known. Last season&rsquo;s figures &mdash; 51 and 36 for Atalanta, 49 and 46 for Bologna &mdash; belong to two managers who are no longer here. This season&rsquo;s figures are a 2&ndash;1 and a 1&ndash;0, three goals across two matches. Bologna have sold the forward who produced their attacking output and replaced him with a loan; Atalanta have changed coach entirely. There is no structural fact on either side strong enough to move this row, which is exactly what a book prices at even money.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; asymmetric, and the Atalanta defence is the load-bearing question</span></div><div class="mkt-why">Yes at 1.75 leans on the state of the home defence rather than on Bologna&rsquo;s attack, and that is the right place to look: five defenders left this summer, one arrived, and he plus two others are unavailable, leaving a back four picked from what is fit under a manager who has had them for one competitive match. The No side at 2.00 has to argue that a Bologna attack stripped of Castro and rebuilt around a loaned Dovbyk and Piccoli fails to score, which their goalless opening match supports and their 49 goals last season does not. Both legs rest on squads that have changed too much for last season&rsquo;s numbers to settle it.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-high">Dangerous &mdash; the referee evidence contradicts itself and so does the market</span></div><div class="mkt-why">The 2.5 match line is the lowest on this entire card, and it leans over at 1.65 &mdash; while both per-team lines at 1.5 lean under, the home side at 1.47 and the away side at 1.63. Those two statements cannot both hold: at most one card each is at most two cards in total, which is under 2.5, not over it. The book is pricing an internal contradiction, and the referee evidence cannot arbitrate it, because Doveri&rsquo;s 2025&ndash;26 season is reported two irreconcilable ways &mdash; 3.6 cards a game at 6.7 fouls per card in one reading, 4.3 at 5.6 in the other. His documented even-handedness, 2.0 yellows to the home side and 2.1 to the away side, also sits awkwardly with per-team lines priced 16 points apart. Every input on this row is either disputed or self-contradicting.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Corners<span class="verdict tag t-mid">OK &mdash; the race is coherent, the line is unevidenced</span></div><div class="mkt-why">The race at 1.57 against 2.60 follows from the outright and from the expectation that Atalanta hold territory at home, which is a reasonable inference from a 1.95 price and a Bologna side that has just lost its centre-forward. The 9.5 line leaning under at 1.73 is the harder claim: no corner-count data for either club was established, and the two managers who generated last season&rsquo;s territorial patterns have both left. Sarri&rsquo;s arrival in particular is a stylistic change of the kind that moves corner volume, and there is exactly one match of evidence for what it has done.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li>Both managers are new and both have one match of record. Sarri was announced on 15 June and Tedesco replaced Italiano in the same window; between them they have overseen a 2&ndash;1 home win and a 1&ndash;0 home defeat. Every season-long figure quoted for either club &mdash; Atalanta&rsquo;s fourteen draws, Bologna&rsquo;s 49 goals &mdash; was produced by someone else.</li>
+      <li>Bologna sold their centre-forward and their centre-back in the same summer they changed coach. Castro went to Roma in a deal the buying club reports at &euro;35m including bonuses and Lucum&iacute; went to Juventus; the replacements at the sharp end are Dovbyk on a loan with a right to buy and Piccoli on terms two sources describe differently. This is not a squad that can be read off last season&rsquo;s table position.</li>
+      <li>Atalanta&rsquo;s defence has been emptied and not refilled. Djimsiti, Palestra, Godfrey, Cittadini and Bonfanti all left; Kristensen was the only defensive signing and he is unavailable, as are Hien and Ahanor. A new manager building a new defensive structure is doing it with the players who happen to be fit.</li>
+      <li>The venue record is the one long-run fact on this page and it cuts against the favourite. Bologna have won four of their last five matches at Bergamo and four of the last seven Serie A meetings overall, and Atalanta have lost three of their last four home fixtures against them &mdash; while the market prices Atalanta at 1.95 and Bologna at 3.85. Both cannot be right, and the record is the larger sample even though the squads that produced it have largely gone.</li>
+      <li><strong>Most sensitive:</strong> the discipline family, where the appointed official&rsquo;s card rate and fouls-per-card ratio are reported two incompatible ways and the market itself prices an arithmetical contradiction between the 2.5 match line and the two 1.5 team lines. <strong>Least sensitive:</strong> nothing on this fixture is genuinely robust &mdash; the closest is the asymmetry in the both-teams-to-score row, where the depleted state of the Atalanta back line is documented rather than inferred.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>The handicap is more robust than the outright here because it prices margin rather than winner, and the one thing both season-long records agree on is that these are narrow teams &mdash; fourteen draws for Atalanta, a +3 goal difference for Bologna &mdash; even though the managers who produced those records have both left.</li>
+      <li>Both-teams-to-score is more robust than totals because it turns on a documented squad fact rather than a projection: five Atalanta defenders departed, one arrived, and three defenders including that arrival are unavailable. Totals depends on two attacks that have each been rebuilt around players who arrived on loan or under a new coach.</li>
+      <li>The corner race is more robust than the corner line because the race only requires the territorial favourite to be the territorial favourite, which the 1.95 outright already asserts, whereas the 9.5 line requires a volume estimate for two teams whose playing style changed managers eleven weeks ago.</li>
+      <li>Every other market on this fixture is more robust than the cards market, for a specific and checkable reason: Doveri&rsquo;s 2025&ndash;26 record appears as both 3.6 cards a game at 6.7 fouls per card and 4.3 a game at 5.6, and a 2.5-card line is precisely the level at which that difference decides the outcome.</li>
+      <li>Where the book has priced indifference, it is saying something true. Over and under 2.5 goals at 1.87 and 1.85 is the flattest total on the card, and in this case that is not a missing edge but an accurate description of the evidence: two new managers, one match each, three goals between them, and two squads that lost their most valuable players this summer.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f4">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; Premier League &middot; Matchday 2</p>
+    <h2 class="fx-title">Aston Villa &ndash; Arsenal</h2>
+    <p class="fx-sub">20:00 BST &middot; Villa Park, Birmingham &middot; A &pound;110m sale surplus against a &pound;174m net spend, and the centre-back Villa sold to Arsenal for &pound;55m now covering for a Saliba who is out anyway</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>6.00 &middot; 4.30 &middot; 1.53</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>2.50 &middot; 1.20 &middot; 1.12</dd></div>
+      <div class="od"><dt>EH +1 (1/X/2)</dt><dd>2.50 &middot; 3.65 &middot; 2.40</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.72 / 2.05</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.80 / 1.93</dd></div>
+      <div class="od"><dt>Cards 3.5 U / O</dt><dd>1.90 / 1.70</dd></div>
+      <div class="od"><dt>Home cards 1.5 U / O</dt><dd>2.00 / 1.60</dd></div>
+      <div class="od"><dt>Away cards 1.5 U / O</dt><dd>2.05 / 1.55</dd></div>
+      <div class="od"><dt>Corners 9.5 U / O</dt><dd>1.80 / 1.87</dd></div>
+      <div class="od"><dt>Corner race 1/X/2</dt><dd>2.60 &middot; 9.50 &middot; 1.57</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>Neither side is promoted and both finished in the Champions League places. Arsenal were champions on 85 points &mdash; 38 matches, 26 wins, 7 draws, 5 defeats, 71 scored, 27 conceded, +44 &mdash; a fourth Premier League title ending a 22-year drought. Aston Villa were 4th on 65 points with 19 wins, 8 draws, 11 defeats, 56 scored, 49 conceded and +7, and are also reported to have won the Europa League. The structural headline is the most extreme financial asymmetry on this card, and it runs in the direction the table would not predict. Villa spent &pound;213.5m and took in &pound;324.4m, a net sale surplus of &pound;110.9m; Arsenal spent &pound;198.5m against &pound;24.3m of income for a net outlay of &pound;174.2m. The champions bought and the fourth-placed club sold &mdash; and it sold the spine. Ollie Watkins, Morgan Rogers, Ezri Konsa, Youri Tielemans, Lucas Digne and Emiliano Mart&iacute;nez all left; centre-forward, creator, centre-back, midfielder, left-back and goalkeeper, in one window, under a manager who stayed. One of them, Konsa, went to Arsenal for &pound;55m and will line up against the club that sold him. The head-to-head is split in an interesting way: Arsenal have fifteen Premier League wins at Villa Park, their most at any away ground, while Villa have won four of their last seven home meetings with them.</p>
+    <ul>
+      <li><strong>Aston Villa &mdash; turnover extreme, the spine sold and rebuilt, and both marquee midfielders unavailable.</strong> Unai Emery continues; no managerial change. Out: Morgan Rogers to Chelsea for &pound;117m, Ezri Konsa to Arsenal for &pound;55m, Ollie Watkins to Al-Hilal for &pound;51m, Youri Tielemans to Manchester United for &pound;35m on a release clause, Donyell Malen to Roma for &pound;29.6m, Enzo Barrenechea to Benfica for &pound;10.3m, Lewis Dobbin to Southampton for &pound;9m, Lucas Digne to PSG for &pound;8.5m, Emiliano Mart&iacute;nez to Chelsea for &pound;7.5m and Louie Barry to Sheffield Wednesday undisclosed, plus six loan departures. In: Nicolas Jackson from Chelsea for &pound;65m, Johan Manzambi from Freiburg for &pound;59.5m, Jo&atilde;o Gomes from Wolves for &pound;38m, Zion Suzuki from Parma for &pound;30m, Matteo Ruggeri from Atl&eacute;tico Madrid for &pound;17m, Modou Keba Cisse from LASK Linz for &pound;4m, Leon Goretzka on a free and Alejandro Garnacho on loan from Chelsea. Every position of the sold spine has been refilled &mdash; striker, goalkeeper, left-back, two midfielders, a centre-back &mdash; which is a more coherent rebuild than the headline suggests. What is not coherent is who is available: Manzambi, the &pound;59.5m record signing, is out with a knee injury, and Jo&atilde;o Gomes, the &pound;38m midfielder, is suspended. <strong>Conflict logged:</strong> a second ledger reports Rogers at &pound;120m, Konsa at &pound;51m, Manzambi at &pound;51m, Malen at &pound;21.6m and Digne at &pound;13m to Lyon rather than &pound;8.5m to PSG, adds a &pound;39m sale of Jhon Dur&aacute;n to Al Nassr that the first ledger does not carry, and totals sales at &pound;197m against &pound;324.4m. The itemised ledger is carried here; the discrepancies are not reconciled. Note also that Malen&rsquo;s fee is recorded as &pound;29.6m on Villa&rsquo;s side and &pound;21.6m on Roma&rsquo;s.</li>
+      <li><strong>Arsenal &mdash; turnover high, spending concentrated, and the centre-back purchase now compulsory rather than optional.</strong> Mikel Arteta continues. In: Bruno Guimar&atilde;es from Newcastle for &pound;75m, Ezri Konsa from Aston Villa for &pound;55m, Piero Hincapi&eacute; made permanent from Bayer Leverkusen for &pound;34.5m, Christos Tzolis from Club Brugge for &pound;34m &mdash; 22 goals for Brugge last season &mdash; and Illan Meslier from Leeds on a free. Out: Jakub Kiwior to Porto for &pound;14.7m, Christian N&oslash;rgaard to Everton for &pound;7m, Karl Hein to Werder Bremen for &pound;2.6m, Leandro Trossard to Be&#351;ikta&#351; for an undisclosed fee, Reiss Nelson released and Josh Nichols on a free. The Konsa signing was framed on arrival as cover behind William Saliba; Saliba is now a long-term absentee with a back problem, which converts a depth purchase into a starting requirement three days after it completed. <strong>Conflict logged:</strong> a second source reports Arsenal&rsquo;s window as &pound;143m spent and &pound;41m recouped across six departures, against the itemised &pound;198.5m and &pound;24.3m carried here, and puts the Trossard fee at around &pound;15.3m where the ledger says undisclosed. <strong>Gap:</strong> no fee is published for Trossard in the itemised source.</li>
+      <li><strong>Suspensions / absences.</strong> The heaviest combined list on this card. Villa: Jo&atilde;o Gomes suspended; Amadou Onana out with an ACL injury, Johan Manzambi out with a knee, Brian Madjo out; Tammy Abraham and Leon Bailey doubtful. Arsenal: William Saliba out long-term with a back problem and Jurri&euml;n Timber out, with Bruno Guimar&atilde;es &mdash; the &pound;75m signing &mdash; doubtful with a knock. Nicolas Jackson and Leon Goretzka were both registered in time to feature for Villa after completing their moves earlier in the week. <strong>Conflicts logged:</strong> Timber&rsquo;s injury is given as an ankle by one source and a groin by another; and Emiliano Mart&iacute;nez appears on Villa&rsquo;s injury list as a doubtful goalkeeper while also appearing on Villa&rsquo;s outgoing ledger as sold to Chelsea for &pound;7.5m &mdash; the predicted eleven names Suzuki in goal, which supports the sale, but the contradiction is recorded rather than resolved.</li>
+      <li><strong>Sample.</strong> One league match each; matchday 2. Villa lost 0&ndash;4 away at Brighton with all four goals scored before the 31st minute &mdash; the same match recorded from Brighton&rsquo;s side on the previous slate. Arsenal beat Coventry City 3&ndash;0. One match apiece is a thin sample everywhere on this card, but it is thinner than usual here because Villa fielded that match before Jackson and Goretzka were registered, and Arsenal have not yet played a fixture without Saliba that would tell us what his absence costs.</li>
+      <li><strong>Referee.</strong> Jarred Gillett, with James Bell on VAR. His Premier League record specifically is 87 matches, 335 yellow cards at 3.85 a game, 6 reds and 23 penalties &mdash; 0.26 a game, a notably low penalty rate for the division. Across his whole career in all competitions he has 292 matches, 1,187 yellows at 4.07 a game, 26 straight reds plus 23 second yellows at 0.09 reds a match, and 104 penalties at 0.36 a game; he awarded five Premier League penalties in 2025&ndash;26. <strong>Gap:</strong> no fouls-per-match figure and therefore no fouls-per-card ratio could be sourced &mdash; the referee-leniency ranking that would supply it returned 403 &mdash; so the measure separating an early booker from a permissive official is unavailable, as is any record specific to Villa or Arsenal. <strong>Conflict logged:</strong> a separate summary gives his career as 396 fixtures with 1,370 yellows at 3.46 a game, against the itemised 292 matches at 4.07; the itemised version, which reconciles across competitions, is carried.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Villa&rsquo;s 56 goals and 49 conceded last season came from a team that no longer exists in its important parts. Watkins led the line, Rogers created, Konsa and Digne defended, Tielemans held, Mart&iacute;nez kept goal &mdash; all six have gone, for a combined figure that took Villa&rsquo;s income past &pound;324m. Emery stayed, so the method has an author, and the replacements are position-for-position rather than scattergun: Jackson for Watkins, Garnacho for Rogers on loan, Cisse for Konsa, Ruggeri for Digne, Gomes and Manzambi for Tielemans, Suzuki for Mart&iacute;nez. On paper this is a rebuild with a plan. In practice the two midfielders bought to hold it together &mdash; Manzambi at &pound;59.5m and Gomes at &pound;38m &mdash; are injured and suspended respectively, Onana is out with an ACL, and the side that takes the field will pair Kamara with Goretzka, a free transfer registered days ago. The 0&ndash;4 at Brighton, four goals conceded inside 31 minutes, is one match and a bad one, and it was played by a team that did not yet have Jackson or Goretzka available. Emery&rsquo;s own August record &mdash; eight defeats in sixteen Premier League matches in the month &mdash; is a long-run pattern that fits an approach dependent on drilled structure taking time to settle.</p>
+    <p>Arsenal are the opposite: continuity of manager, continuity of method, and &pound;198.5m spent to deepen rather than to replace. Twenty-seven goals conceded in thirty-eight is the foundation of the title, and it is the part of the side the summer targeted &mdash; Hincapi&eacute; made permanent, Konsa bought, Meslier added in goal &mdash; alongside Guimar&atilde;es at &pound;75m for the midfield and Tzolis at &pound;34m for the wide areas. The complication is that the defence which conceded 27 is not the one available: Saliba is out long-term and Timber is out, so the back four in front of Raya is projected as White, Mosquera, Gabriel and Calafiori, with the &pound;55m Konsa signed as Saliba&rsquo;s cover arriving into a situation where cover has become necessity. The 3&ndash;0 over Coventry says little about how that holds against a Premier League attack. What the summer did not disturb is the front line: Saka, Havertz and &Oslash;degaard are all present, with Tzolis added, and Rice anchoring behind them. This is a champion side missing two first-choice defenders, not a champion side in transition.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous &mdash; a squad rebuilt six positions deep against a defence missing two starters</span></div><div class="mkt-why">6.00 against 1.53 prices the champions clearly, and the champions are missing Saliba long-term and Timber entirely, with their &pound;75m midfield signing doubtful. It prices Villa as rank outsiders at home in a fixture they have won four of the last seven times, with a squad that has just been rebuilt in six positions and whose two most expensive midfield additions are injured and suspended. Neither side&rsquo;s current form is knowable from one match &mdash; a 0&ndash;4 and a 3&ndash;0 &mdash; and Villa played theirs before Jackson and Goretzka were registered. Too many of the inputs changed in the last ten days.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Asian handicap &amp; double chance<span class="verdict tag t-mid">OK &mdash; asymmetric, and the +1 line is the row that respects the venue</span></div><div class="mkt-why">Villa +1 at 2.50 against Arsenal by two or more at 2.40 is close to a coin flip, which is the book declining to expect a comfortable away win despite the 1.53 &mdash; and that reticence is well founded on both the venue record and the state of the Arsenal defence. X2 at 1.12 is close to unpriceable; 1X at 2.50 is the more informative half of the double chance, and it inherits the four wins in seven home meetings. The handicap prices margin, and margin is where the absence of Saliba and Timber is most likely to show.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-mid">OK &mdash; the over is better supported than the price gap suggests</span></div><div class="mkt-why">Over at 1.72 has two structural supports rather than one. Arsenal&rsquo;s 27 goals conceded last season was built on a back four missing its two most reliable members, and Villa conceded 49 in 38 with a defence that has since sold its centre-back, its left-back and its goalkeeper and replaced all three. Both sides also have new forwards to integrate &mdash; Jackson and Garnacho for Villa, Tzolis for Arsenal &mdash; which is the kind of change that adds variance to goal totals rather than removing it. Under at 2.05 is leaning on Arsenal&rsquo;s season-long defensive record, which is precisely the record the injury list undermines.</div></div>
+      <div class="mkt-row good"><div class="mkt-name">BTTS<span class="verdict tag t-low">Well-suited &mdash; both defences are demonstrably not the ones that produced last season&rsquo;s numbers</span></div><div class="mkt-why">The cleanest structural read on this fixture, because the same fact supports both legs. Arsenal will field a back four without Saliba and without Timber, in front of which Konsa was bought as cover and is now required; Villa will field a back line missing the centre-back, left-back and goalkeeper who played last season, all three sold and all three replaced by players with a handful of appearances between them. Yes at 1.80 needs one goal from each of two attacks that between them cost &pound;65m, &pound;75m and &pound;34m this summer. The counterweight is real &mdash; Villa were beaten 0&ndash;4 and did not score at Brighton &mdash; but that was a Villa without Jackson.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-mid">OK &mdash; the market is internally consistent, the official is only half documented</span></div><div class="mkt-why">Unlike several fixtures on this card, the card market here agrees with itself: both per-team lines are set at 1.5 and both lean over, home at 1.60 and away at 1.55, and the 3.5 match total also leans over at 1.70. That is a coherent expectation of roughly two bookings a side. Gillett supports the level without settling it: 3.85 yellows a game across 87 Premier League matches, 4.07 across his whole career. What is missing is the ratio &mdash; no fouls-per-match figure could be sourced, so whether he books early or lets play run is unknown. His penalty rate is the one clearly documented tendency, and it is low: 0.26 a game in the Premier League against 0.36 career-wide.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Corners<span class="verdict tag t-mid">OK &mdash; the race is well grounded, the line is priced at indifference</span></div><div class="mkt-why">The race at 1.57 to Arsenal against 2.60 follows directly from the outright and from a champion side that took 71 goals&rsquo; worth of territory last season against a home side rebuilt in six positions. The 9.5 line at 1.80 against 1.87 is one of the flattest corner markets on the card, and that flatness is honest: no corner-count data for either club was established, and both attacks contain players signed within the last fortnight. The territorial direction is evidenced; the volume is not.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li>Villa sold their entire spine and the replacements are barely available. Watkins, Rogers, Konsa, Tielemans, Digne and Mart&iacute;nez all left for a combined income of &pound;324.4m; of the &pound;213.5m spent, Manzambi at &pound;59.5m is injured and Gomes at &pound;38m is suspended, with Onana out on an ACL alongside them. The midfield that starts will pair Kamara with a free transfer registered days ago.</li>
+      <li>Arsenal&rsquo;s 27 goals conceded belong to a back four that is missing two of its members. Saliba is out long-term with a back problem and Timber is out; Konsa was explicitly bought as Saliba&rsquo;s backup and completed just before the season began. Any read that carries the title-winning defensive record into this match is carrying two players who will not be on the pitch.</li>
+      <li>One match each, and Villa&rsquo;s was played by a different squad. The 0&ndash;4 at Brighton &mdash; four goals inside 31 minutes &mdash; happened before Jackson and Goretzka were registered. Arsenal&rsquo;s 3&ndash;0 was against Coventry City. Neither result establishes anything about what happens at Villa Park on Monday.</li>
+      <li>The two long-run records on this fixture point in opposite directions and both are real. Arsenal have fifteen Premier League wins at Villa Park, more than at any other away ground; Villa have won four of their last seven home meetings with Arsenal; and Emery has lost half of his sixteen Premier League matches in August. Three genuine patterns, no agreement between them.</li>
+      <li><strong>Most sensitive:</strong> anything resting on either club&rsquo;s 2025&ndash;26 defensive record, since Villa sold three of the back five and Arsenal are missing two of theirs. <strong>Least sensitive:</strong> the both-teams-to-score row, where that same fact is the evidence rather than the risk, and the discipline family, where the market prices two bookings a side consistently across three separate lines.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>Both-teams-to-score is more robust than the outright because it turns on a documented absence list &mdash; Saliba, Timber, and three sold members of Villa&rsquo;s back five &mdash; rather than on which of two disrupted squads is better, which is what 6.00 against 1.53 is asking.</li>
+      <li>The handicap is more robust than the moneyline because it prices margin, and the two most reliable facts here both concern margin: Arsenal&rsquo;s fifteen wins at this ground, and the fact that the defence which conceded 27 goals is missing two starters.</li>
+      <li>The card market is more robust than the corner line because it is internally consistent across three prices &mdash; both 1.5 team lines and the 3.5 match line all lean over &mdash; and is backed by a referee card average of 3.85 in the Premier League, whereas no corner data for either club could be established at all.</li>
+      <li>Gillett&rsquo;s penalty rate is the most usable single referee fact on this fixture, and it cuts against the spot-kick assumption people attach to a big favourite: 0.26 penalties a game across 87 Premier League matches, below his own 0.36 career rate. What cannot be used is his fouls-per-card ratio, which no reachable source publishes.</li>
+      <li>Where the book has priced near indifference, read it as a statement about the squads rather than the fixture. Corners at 1.80 against 1.87 and the +1 handicap at 2.50 against 2.40 are both effectively even &mdash; in a match between the reigning champions and the side that finished fourth, which is the market saying that a &pound;110m sale surplus on one side and two missing defenders on the other have made this much harder to price than the 1.53 outright implies.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f5">
+  <div class="fx-head">
+    <p class="fx-league">Spain &middot; LaLiga EA Sports &middot; Jornada 3</p>
+    <h2 class="fx-title">Barcelona &ndash; Rayo Vallecano</h2>
+    <p class="fx-sub">21:30 CEST &middot; Spotify Camp Nou, Barcelona &middot; Champions who drew once in thirty-eight matches, against a side that drew fourteen times &mdash; and whose own stadium has been closed by the regional government</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.10 &middot; 10.00 &middot; 20.00</dd></div>
+      <div class="od"><dt>12 / X2</dt><dd>1.04 &middot; 6.75 <span class="unk">(1X not priced)</span></dd></div>
+      <div class="od"><dt>EH &minus;3 (1/X/2)</dt><dd>2.75 &middot; 4.55 &middot; 1.92</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.23 / 3.75</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>2.05 / 1.68</dd></div>
+      <div class="od"><dt>Cards 3.5 U / O</dt><dd>1.70 / 1.90</dd></div>
+      <div class="od"><dt>Corners 10.5 U / O</dt><dd>2.00 / 1.70</dd></div>
+      <div class="od"><dt>Corner race 1/X/2</dt><dd>1.16 &middot; 10.00 &middot; 5.75</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>Neither side is promoted, and the distance between them is the largest on this card. Barcelona were champions on 94 points &mdash; 38 matches, 31 wins, one draw, 6 defeats, 95 scored, 36 conceded, +59. One draw in a whole season is the number to hold on to. Rayo Vallecano finished 8th on 50 points with 12 wins, 14 draws and 12 defeats, 41 scored and 44 conceded for &minus;3 &mdash; fourteen draws against Barcelona&rsquo;s one. Two teams could hardly have more opposite relationships with the stalemate. The structural headline is that both clubs got what their finances allow and both got it in the same shape: Barcelona spent to a net balance of &minus;&euro;188.3m, Rayo to a net surplus of &euro;23.4m, and both reinforced the positions their season demanded. Hansi Flick was renewed through 2028 on 18 May, before the window opened. Rayo changed manager &mdash; &Iacute;&ntilde;igo P&eacute;rez left for Villarreal and Be&ntilde;at San Jos&eacute; took over &mdash; and then sold their most valuable asset, Pep Chavarr&iacute;a, to Chelsea for &euro;19m. There is one further complication on the visiting side that has nothing to do with football: Rayo have not played a home match at Vallecas this season, the ground having been disabled by the Comunidad de Madrid over its infrastructure, so their matchday-two fixture was staged at Butarque.</p>
+    <ul>
+      <li><strong>Barcelona &mdash; turnover high in value, and concentrated on the two positions the title side lacked.</strong> Hansi Flick continues, contract renewed to 2028 on 18 May 2026. In: Anthony Gordon from Newcastle for &euro;80m on 29 May; Rodri Hern&aacute;ndez from Manchester City for &euro;60m on 18 August; Karim Adeyemi from Borussia Dortmund for &euro;22m on 23 July; Jesse Bisiwu from Club Brugge for &euro;8.5m on 31 July for the B side; and Dominik Livakovic from Fenerbah&ccedil;e for &euro;2m on 27 August. Out: Ferran Torres to PSG for &euro;50m on 15 August; Tom&aacute;s Marqu&eacute;s to Braga for &euro;11m; Ansu Fati to Monaco for &euro;11m on an exercised option; H&eacute;ctor Fort to Real Sociedad for &euro;8.5m; Jofre Torrents to Ajax for &euro;6m; I&ntilde;aki Pe&ntilde;a to Panathinaikos for &euro;3m; Andr&eacute;s Cuenca to Como for &euro;0.7m; and Marcus Rashford and Jo&atilde;o Cancelo returning at the end of their loans. The pattern is legible: a &euro;60m holding midfielder, two wide forwards for &euro;102m between them, and a goalkeeper in and a goalkeeper out. No centre-back was signed. <strong>Conflict logged:</strong> a second source gives Gordon at &euro;70m plus &euro;10m in variables rather than a flat &euro;80m, and Ferran Torres at &euro;48.50m rather than &euro;50m. A reported move for Marc-Andr&eacute; ter Stegen to Ajax appears in commentary but on no confirmed ledger and is not carried here.</li>
+      <li><strong>Rayo Vallecano &mdash; new manager, the one saleable asset sold, and reinforcement concentrated at centre-back.</strong> Be&ntilde;at San Jos&eacute; replaces &Iacute;&ntilde;igo P&eacute;rez, who left for Villarreal. In, and almost entirely defensive: Marash Kumbulla, centre-back, on loan from Roma to the end of the season; Nobel Mendy, purchase option exercised at &euro;3.5m, tied to 2030; Jozhua Vertrouwd made permanent from Castell&oacute;n at &euro;1.5m after a loan with an obligation to buy; Gnangoro Bouar&eacute; from Betis for &euro;0.6m; and Giorgi Tsitaishvili from Dinamo Kyiv on a free. Out: Pep Chavarr&iacute;a to Chelsea for &euro;19m &mdash; the whole of the club&rsquo;s income and then some, against &euro;5.6m spent; Abdul Mumin, Alfonso Espino and Miguel &Aacute;ngel Morro at contract expiry; &Oacute;scar Trejo retired; and the loans of Ilias Akhomach, Carlos Mart&iacute;n and Gerard Gumbau ended. Pelayo Fern&aacute;ndez, Ra&uacute;l de Tom&aacute;s and Morro return from loans. Net balance +&euro;23.4m. <strong>Gap:</strong> the date of the managerial change is not published in any source consulted, so how long San Jos&eacute; has had the squad cannot be stated. No goalkeeper and no centre-forward were signed by a side that scored 41 goals in 38 matches.</li>
+      <li><strong>Suspensions / absences.</strong> No suspensions on either side. Barcelona are without Gavi, Frenkie de Jong and Roony Bardghji, all injured &mdash; two of the three from a midfield into which Rodri has just been bought for &euro;60m. Rayo are without their first-choice goalkeeper Augusto Batalla, with Dani C&aacute;rdenas deputising, and without Isi Palaz&oacute;n, with &Aacute;lvaro Garc&iacute;a the likely replacement. A visiting side coming to the Camp Nou without its regular goalkeeper is the single most consequential absence on this fixture.</li>
+      <li><strong>Sample.</strong> Two league matches each; jornada 3. Barcelona have beaten Elche 5&ndash;0 and Athletic Club 2&ndash;0 &mdash; seven goals scored, none conceded, two wins from two. Rayo have taken one point from two: beaten 2&ndash;1 by Sevilla and held 1&ndash;1 by Alav&eacute;s, the latter played at Butarque rather than Vallecas because their own stadium has been closed by the regional government over its condition. That is a side without its home ground, without its goalkeeper and without its most valuable player, two matches into a new manager&rsquo;s tenure.</li>
+      <li><strong>Referee.</strong> Francisco Jos&eacute; Hern&aacute;ndez Maeso. <strong>Naming conflict logged and resolved:</strong> one report of the appointment renders the name as &ldquo;Francisco Jos&eacute; Hern&aacute;ndez Hern&aacute;ndez&rdquo;, but the LaLiga officials table for 2026&ndash;27 contains no such name &mdash; only Alejandro Hern&aacute;ndez Hern&aacute;ndez and Francisco Jos&eacute; Hern&aacute;ndez Maeso &mdash; and the matchday preview names simply &ldquo;Francisco Hern&aacute;ndez&rdquo;, which can only be Maeso. A third source returned a stale article naming Adri&aacute;n Cordero Vega for an earlier meeting between these clubs; it is discarded. Maeso&rsquo;s historical averages are 4.55 yellow cards and 0.11 red cards a match, and he is characterised as markedly reluctant to send players off, with 15 red cards in 84 professional matches. His single 2026&ndash;27 appearance so far reads 29 fouls, 4 yellows, no reds and no penalties &mdash; 7.25 fouls per card, a permissive ratio, on a one-match sample. <strong>Conflict logged:</strong> 15 reds in 84 matches is 0.18 a game, not the 0.11 quoted alongside it. <strong>Gap:</strong> no 2025&ndash;26 season line, no established penalty rate, and no record with either club.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Barcelona&rsquo;s 95 goals in 38 matches and single drawn game describe a side built to win rather than to manage, and the summer sharpened rather than altered it. Gordon at &euro;80m and Adeyemi at &euro;22m are both wide forwards, Rodri at &euro;60m is a holding midfielder, and the only meaningful subtraction from the attack is Ferran Torres at &euro;50m. Seven goals and two clean sheets from the first two matches is exactly what those numbers predict. Two qualifications belong on the record. The first is that no centre-back was signed, so the back line in front of Joan Garc&iacute;a is the one that conceded 36 goals last season, drawn from Cubars&iacute;, Christensen and Eric Garc&iacute;a. The second is that Gavi and Frenkie de Jong are both injured, which thins a midfield into which &euro;60m has just been invested; Rodri&rsquo;s partner in the projected eleven is Marc Bernal or Pedri rather than either of the absentees. Neither qualification is likely to matter against this opponent, but both are real, and the same club has conceded twice in this fixture in recent years.</p>
+    <p>Rayo are the fourteen-draw team, and that is the most useful single fact about them. Forty-one scored and forty-four conceded across a full season is the arithmetic of a side that keeps matches close in both directions and settles very few of them, and it is why eighth place came with a negative goal difference. What the summer did was strip the parts of that machine that were saleable and reinforce the part that was cheapest to reinforce: Chavarr&iacute;a went to Chelsea for &euro;19m, Trejo retired, Mumin and Espino left at contract expiry, and the replacements are Kumbulla on loan from Roma, two purchase options exercised at &euro;3.5m and &euro;1.5m, and a free transfer. Five defensive additions, no forward, from a team that scored 1.08 goals a game. Be&ntilde;at San Jos&eacute; has replaced &Iacute;&ntilde;igo P&eacute;rez and no source publishes when, so the length of his tenure is unknown; what is known is that he has one point from two matches, no first-choice goalkeeper, and no home ground &mdash; Vallecas having been closed by the Comunidad de Madrid, his side played Alav&eacute;s at Butarque. The one thing pointing the other way is genuine: Rayo have a reputation as an awkward opponent for Barcelona, and the Camp Nou record, while heavily one-sided, includes two Rayo wins.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous &mdash; nothing left to price, and the double chance is not even fully quoted</span></div><div class="mkt-why">1.10 against 20.00 is the widest outright on the card and the market has already absorbed every structural fact: 94 points against 50, 95 goals against 41, seven goals in two matches against one point in two, a visiting side without its goalkeeper and without its own stadium. The book has not even priced 1X, and 12 at 1.04 is meaningless. The draw at 10.00 is the one number worth looking at, and it is worth looking at only because Rayo drew fourteen matches last season and Barcelona drew one &mdash; a collision of two extreme habits that the price reads entirely from Barcelona&rsquo;s side.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Asian handicap &amp; double chance<span class="verdict tag t-mid">OK &mdash; the &minus;3 line is the only row on this fixture that asks a real question</span></div><div class="mkt-why">Barcelona by four or more at 2.75, by exactly three at 4.55, Rayo +3 at 1.92. This is where the actual uncertainty lives, and the evidence genuinely splits. In favour of the wide margin: 95 goals in 38 matches, 5&ndash;0 and 2&ndash;0 to open the season, and an opponent missing its first-choice goalkeeper. Against it: Rayo&rsquo;s entire summer was spent reinforcing the centre of defence &mdash; Kumbulla, Mendy, Vertrouwd, Bouar&eacute; &mdash; and their season profile is one of keeping games close, fourteen draws and a &minus;3 goal difference. The line is set at exactly the point where those two structures disagree.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-mid">OK &mdash; asymmetric, and the case is almost entirely one-sided</span></div><div class="mkt-why">Over at 1.23 is the shortest total on the card and it needs only Barcelona: 95 goals in 38 matches, 2.5 a game, and seven in two this season. The under at 3.75 is not absurd, but it has to argue that a side reinforced at centre-back and habituated to tight games holds a champion attack to two &mdash; and that argument was already available last season, when Barcelona scored 95 anyway. The structural weakness of the over is not the price but the ceiling: it depends on one team&rsquo;s output, so a single well-organised defensive performance settles it, and organising defensively is precisely what Rayo spent their window on.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; No is better supported, but the Barcelona defence is unreinforced</span></div><div class="mkt-why">No at 1.68 rests on two clean sheets from two this season and on a Rayo attack that scored 41 goals in 38 matches, lost Trejo to retirement and Chavarr&iacute;a to Chelsea, signed no forward, and is missing Isi Palaz&oacute;n. Yes at 2.05 rests on the one genuine soft spot in the champions&rsquo; summer: no centre-back was signed, so the back line is the one that conceded 36 last season, and Rayo have historically been an awkward visitor here with two wins at this ground. That is a thinner case than the No side, but it is a real one rather than a narrative one.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-high">Dangerous &mdash; the official&rsquo;s record is one match deep and internally inconsistent</span></div><div class="mkt-why">The 3.5 line leans under at 1.70 and there are no per-team splits to cross-check it against. The referee evidence is the problem. Hern&aacute;ndez Maeso&rsquo;s appointment had to be established by elimination against the LaLiga officials table after one source rendered his name as a person who does not exist and another named a referee from a previous season&rsquo;s fixture. His historical 4.55 yellows a match sits above the under lean; his 2026&ndash;27 record is a single game &mdash; 29 fouls, 4 yellows, 7.25 fouls per card, no penalties &mdash; which is a permissive ratio on a sample of one; and the red-card figures quoted for him, 0.11 a match against 15 reds in 84 matches, contradict each other. Barcelona meanwhile have the fewest cards in the division this season. Nothing on this row is settled.</div></div>
+      <div class="mkt-row good"><div class="mkt-name">Corners<span class="verdict tag t-low">Well-suited &mdash; the most structurally coherent market on the fixture</span></div><div class="mkt-why">The 10.5 line is the highest corner total on the card and the race at 1.16 against 5.75 is the shortest, and both follow directly from the same structure rather than from a projection. A side that scored 95 goals in 38 matches, has added two wide forwards for &euro;102m in Gordon and Adeyemi, and is at home to a visitor who spent the entire window buying centre-backs will hold territory almost without interruption. Rayo&rsquo;s five defensive additions and absent goalkeeper reinforce the same expectation: sustained pressure met by a deep block is the specific pattern that generates corners. The line is high because the shape of the match is unusually predictable, which is exactly when a corner market is worth trusting.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li>Two opposite relationships with the draw are meeting, and the price only reflects one of them. Barcelona drew once in thirty-eight matches last season; Rayo drew fourteen. The draw is priced at 10.00, which reads the fixture entirely from the champions&rsquo; habit and not at all from the visitors&rsquo;.</li>
+      <li>Rayo have no home ground and no first-choice goalkeeper. Vallecas has been disabled by the Comunidad de Madrid over its infrastructure, so their only home fixture so far was played at Butarque, and Augusto Batalla is injured with Dani C&aacute;rdenas deputising. Neither fact appears in last season&rsquo;s numbers.</li>
+      <li>Rayo&rsquo;s summer was five defensive additions and no forward. Kumbulla on loan, Mendy and Vertrouwd on exercised options, Bouar&eacute; for &euro;0.6m and Tsitaishvili on a free, against the sale of Chavarr&iacute;a to Chelsea for &euro;19m and the retirement of Trejo &mdash; from a side that scored 1.08 goals a game. Any read that expects them to score is expecting it from an attack nobody invested in.</li>
+      <li>Barcelona bought no centre-back. The defence that conceded 36 goals last season is the defence available now, and Gavi and Frenkie de Jong are both injured in a midfield that has just absorbed a &euro;60m signing. This is unlikely to be the fixture where it costs them, but it is the only structural soft spot the champions have, and the both-teams-to-score row is where it would appear.</li>
+      <li><strong>Most sensitive:</strong> the discipline family, where the referee&rsquo;s identity had to be established by elimination, his current-season record is one match long, and the red-card figures published for him contradict each other. <strong>Least sensitive:</strong> corners, where a &euro;102m investment in two wide forwards, five defensive signings on the other side and a missing goalkeeper all point at the same territorial pattern.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>Corners are more robust than goals here because they depend on the shape of the match rather than its finishing: a champion side that scored 95 in 38 and bought Gordon and Adeyemi, against a visitor who bought four defenders and lost its goalkeeper, produces sustained territory whether or not the ball goes in.</li>
+      <li>The &minus;3 handicap is more informative than the outright because the outright at 1.10 has nothing left to discover, whereas the handicap sits exactly where the two structures disagree &mdash; Barcelona&rsquo;s 2.5 goals a game against Rayo&rsquo;s fourteen draws and a summer spent entirely on centre-backs.</li>
+      <li>Both-teams-to-score is more robust than the under on totals because it turns on a documented gap &mdash; Barcelona signed no centre-back and kept the defence that conceded 36 &mdash; while the under has to argue that a side which scored 95 last season and seven in two this one is held to two.</li>
+      <li>Every market on this fixture is more robust than the cards market, and for an unusually basic reason: the appointed official could only be identified by cross-checking the LaLiga officials table after one source named a referee who does not exist and another named one from a previous season, and his current-season record is a single match.</li>
+      <li>Where the book has declined to price at all, that is its own signal. There is no 1X quote on this fixture and 12 is at 1.04 &mdash; the market is not willing to make a market on Barcelona avoiding defeat. Read alongside a 10.00 draw against a side that drew fourteen times last season, it is a book that is confident about the result and has stopped pretending the alternatives are worth quoting.</li>
+    </ul>
+  </div>
+</article>
+
+<section>
+  <h2 class="sec">Across the card</h2>
+  <ul>
+  <li><strong>Best structurally supported: corners and totals where a new-manager rebuild lands cleanly against a full-season baseline.</strong> Osasuna&ndash;Getafe carries the card&rsquo;s cleanest read anywhere &mdash; under 2.5 goals at 1.35, well-suited, resting on Getafe&rsquo;s 32 goals in 38 matches under an unchanged manager, and discipline is well-suited too, a referee averaging 4.6 cautions a match meeting the division&rsquo;s third most-booked side. Barcelona&ndash;Rayo Vallecano&rsquo;s corners are the single strongest row on the whole board: a &euro;102m investment in two wide forwards against a visitor whose five summer signings are all defenders and whose goalkeeper is missing, at the highest line and shortest race on the card. Lecce&ndash;Roma&rsquo;s both-teams-to-score is nearly as clean, built on Lecce&rsquo;s 28 goals scored against four departing forwards, and Roma&rsquo;s three consecutive clean sheets in the fixture.</li>
+
+  <li><strong>Least supported: the outright almost everywhere, and discipline on every single card.</strong> Four of five moneylines are rated Dangerous &mdash; Lecce&ndash;Roma, Atalanta&ndash;Bologna, Aston Villa&ndash;Arsenal and Barcelona&ndash;Rayo Vallecano &mdash; either because the price has already absorbed every structural fact or because too much has changed in the last ten days to trust it. Discipline is worse: every appointed referee on this card carries a documented gap or a contradiction, and three of the five discipline rows are rated Dangerous outright, most strikingly Atalanta&ndash;Bologna, where the 2.5 match line and the two 1.5 per-team lines price an arithmetical impossibility against each other.</li>
+
+  <li><strong>The one normal fixture: there isn&rsquo;t one this week.</strong> Every fixture on this card carries either a new manager on at least one side or a squad rebuild large enough to make last season&rsquo;s numbers a different object &mdash; Lecce&ndash;Roma and Aston Villa&ndash;Arsenal kept their managers but each involved nine-figure transfer activity on at least one side. If there is a closest approximation, it is Osasuna&ndash;Getafe, where one club (Getafe) is genuinely unchanged in method and personnel, even though its opponent is not.</li>
+
+  <li><strong>Where the book has priced indifference.</strong> Atalanta&ndash;Bologna prices over and under 2.5 goals at 1.87 against 1.85, the flattest total on the board, in a fixture with three goals across two matches and two brand-new managers &mdash; here the flat price is an honest description of what is known rather than a missing edge. Aston Villa&ndash;Arsenal prices corners at 1.80 against 1.87 and the +1 handicap at 2.50 against 2.40, both close to even in a match between the reigning champions and the side that finished fourth. Lecce&ndash;Roma&rsquo;s +1 handicap at 2.65 against 2.35 says much the same thing about a fourteen-year unbeaten run the book still won&rsquo;t price as a rout.</li>
+  </ul>
+</section>
+
+<footer>
+  <p><strong>Scope.</strong> This page rates market <em>families</em> only. It contains no selections, no sides, no recommended lines and no confidence labels &mdash; by design. Where evidence is thin it says so rather than filling the gap.</p>
+  <p><strong>Sources.</strong> Official and primary first, then reference, then press. Full per-fixture logs,
+including every gap and contradiction, are in <span class="mono">sources_11.md</span>.
+Clubs and governing bodies:
+<a href="https://uslecce.it/lecce-roma-la-designazione-arbitrale/">US Lecce</a>,
+<a href="https://www.corrieredellosport.it/news/calcio/serie-a/2026/08/26-150804402/chiffi_per_lecce-roma_a_pairetto_napoli-como_le_designazioni_della_seconda_giornata_di_serie_a">Corriere dello Sport</a>,
+<a href="https://www.fcbarcelona.com/en/matches/138302/fc-barcelona-rayo-vallecano-la-liga-2026-2027">FC Barcelona</a>,
+<a href="https://www.arsenal.com/news/preview-aston-villa-v-arsenal-a0NBR9w4CJwD">Arsenal FC</a>.
+Reference and season pages:
+<a href="https://en.wikipedia.org/wiki/2025%E2%80%9326_Serie_A">Serie A 2025&ndash;26</a>,
+<a href="https://en.wikipedia.org/wiki/2025%E2%80%9326_La_Liga">LaLiga</a>,
+<a href="https://en.wikipedia.org/wiki/2025%E2%80%9326_Premier_League">Premier League</a>,
+<a href="https://en.wikipedia.org/wiki/List_of_Italian_football_transfers_summer_2026">List of Italian football transfers, summer 2026</a>,
+<a href="https://es.wikipedia.org/wiki/Primera_Divisi%C3%B3n_de_Espa%C3%B1a_2026-27">Primera Divisi&oacute;n de Espa&ntilde;a 2026&ndash;27</a>.
+Referee records:
+<a href="https://es.whoscored.com/referees/246/show/francisco-jos%C3%A9-hern%C3%A1ndez-maeso">WhoScored</a>,
+<a href="https://www.estadisticaslaliga.es/arbitros.php">Estad&iacute;sticas LaLiga</a>,
+<a href="https://www.statshub.com/referee/gillett-jarred/138289">StatsHub</a>,
+<a href="https://www.statshub.com/es/referee/jon-ander-gonzalez-esteban/786376">StatsHub (es)</a>,
+<a href="https://sport.virgilio.it/calcio/arbitri/daniele-doveri/">Virgilio Sport</a>.
+Previews and mercato:
+<a href="https://www.sportsmole.co.uk/football/lecce/preview/lecce-vs-roma-prediction-team-news-lineups_604024.html">Sports Mole</a>,
+<a href="https://www.sportsmole.co.uk/football/aston-villa/transfer-talk/feature/aston-villa-summer-transfers-all-confirmed-ins-and-outs-for-2026_598979.html">Sports Mole (Aston Villa transfers)</a>,
+<a href="https://www.sportsmole.co.uk/football/arsenal/transfer-talk/feature/arsenal-summer-transfers-all-confirmed-ins-and-outs-for-2026_599109.html">Sports Mole (Arsenal transfers)</a>,
+<a href="https://www.ilfattoquotidiano.it/2026/08/20/serie-a-2026-27-acquisti-cessioni-formazioni-tipo-squadre/8483691/">Il Fatto Quotidiano</a>,
+<a href="https://www.futbolfantasy.com/laliga/equipos/osasuna/mercado-fichajes/verano-2026">F&uacute;tbolFantasy (Osasuna)</a>,
+<a href="https://www.futbolfantasy.com/laliga/equipos/getafe/mercado-fichajes/verano-2026">F&uacute;tbolFantasy (Getafe)</a>,
+<a href="https://www.futbolfantasy.com/mercado-de-fichajes-del-barcelona-altas-bajas/verano-2026">F&uacute;tbolFantasy (Barcelona)</a>,
+<a href="https://www.futbolfantasy.com/mercado-de-fichajes-del-rayo-vallecano-altas-bajas/verano-2026">F&uacute;tbolFantasy (Rayo Vallecano)</a>,
+<a href="https://www.calcio.com/news/calciomercato-serie-a-2026-27-acquisti-cessioni-e-probabili-formazioni-squadra-per-squadra">Calcio.com</a>,
+<a href="https://www.espn.com/soccer/story/_/id/49752879/aston-villa-vs-arsenal-2026-27-premier-league-tv-channel-how-watch-kick-live-stream-referee-injury-predicted-lineups">ESPN</a>,
+<a href="https://www.noticiasdenavarra.com/osasuna/2026/08/31/osasuna-getafe-horario-ver-hoy-11485174.html">Noticias de Navarra</a> and
+<a href="https://www.infobae.com/espana/agencias/2026/08/30/el-barcelona-calibra-su-exuberante-inicio-frente-al-rayo/">Infobae</a>.</p>
+</footer>
+
+</div>
