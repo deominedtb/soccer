@@ -1,0 +1,506 @@
+<title>Market Board 4 September 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<style>
+:root{
+  --bg:#EFF2F1; --surface:#FFFFFF; --surface-2:#F6F8F7; --band:#1D3F52;
+  --ink:#13201E; --ink-2:#485856; --muted:#6C7B78; --line:#D4DCDA;
+  --accent:#1D4E73; --accent-soft:#E3EDF3;
+  --good:#2C6E4B; --good-soft:#E2EFE8;
+  --warn:#8C6817; --warn-soft:#F4ECD9;
+  --bad:#A03528;  --bad-soft:#F6E2DF;
+  --brass:#856526;
+  --band-ink:#EAF1F4;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D1315; --surface:#141C1F; --surface-2:#1A2326; --band:#16303D;
+    --ink:#E3EAE8; --ink-2:#A6B4B1; --muted:#82938F; --line:#263236;
+    --accent:#79ACD0; --accent-soft:#152F3C;
+    --good:#66C093; --good-soft:#152C20;
+    --warn:#D2A950; --warn-soft:#2C2617;
+    --bad:#E27A6E;  --bad-soft:#321C19;
+    --brass:#C4A05A;
+    --band-ink:#DCE8EC;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D1315; --surface:#141C1F; --surface-2:#1A2326; --band:#16303D;
+  --ink:#E3EAE8; --ink-2:#A6B4B1; --muted:#82938F; --line:#263236;
+  --accent:#79ACD0; --accent-soft:#152F3C;
+  --good:#66C093; --good-soft:#152C20;
+  --warn:#D2A950; --warn-soft:#2C2617;
+  --bad:#E27A6E;  --bad-soft:#321C19;
+  --brass:#C4A05A;
+  --band-ink:#DCE8EC;
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:"Source Serif 4",Georgia,"Times New Roman",serif;
+  font-size:17px; line-height:1.6;
+  margin:0; padding:0 18px 96px;
+  -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:940px; margin:0 auto;}
+h1,h2,h3,h4,.ui{font-family:Archivo,"Helvetica Neue",Arial,sans-serif}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace; font-variant-numeric:tabular-nums}
+
+/* ---------- masthead ---------- */
+header.top{padding:52px 0 26px; border-bottom:2px solid var(--ink);}
+.eyebrow{
+  font-family:Archivo,sans-serif; font-size:12px; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase; color:var(--accent); margin:0 0 14px;
+}
+h1{
+  font-size:clamp(34px,7vw,54px); line-height:1.02; font-weight:800;
+  letter-spacing:-.02em; margin:0 0 14px; text-wrap:balance;
+}
+.standfirst{font-size:19px; color:var(--ink-2); margin:0; max-width:62ch;}
+.metaline{
+  display:flex; flex-wrap:wrap; gap:8px 20px; margin-top:22px;
+  font-family:Archivo,sans-serif; font-size:12.5px; font-weight:600;
+  letter-spacing:.06em; text-transform:uppercase; color:var(--muted);
+}
+
+/* ---------- generic blocks ---------- */
+section{margin-top:44px}
+h2.sec{
+  font-size:13px; font-weight:700; letter-spacing:.15em; text-transform:uppercase;
+  color:var(--muted); margin:0 0 16px; padding-bottom:8px; border-bottom:1px solid var(--line);
+}
+p{margin:0 0 14px; max-width:70ch}
+.note{
+  background:var(--accent-soft); border-left:3px solid var(--accent);
+  padding:14px 16px; font-size:15.5px; color:var(--ink-2); max-width:none;
+}
+.note strong{color:var(--ink)}
+
+/* ---------- odds table ---------- */
+.scroller{overflow-x:auto; border:1px solid var(--line); background:var(--surface)}
+table{border-collapse:collapse; width:100%; min-width:760px; font-size:14px}
+thead th{
+  background:var(--band); color:var(--band-ink);
+  font-family:Archivo,sans-serif; font-weight:700; font-size:11px;
+  letter-spacing:.09em; text-transform:uppercase;
+  padding:10px 11px; text-align:right; white-space:nowrap;
+}
+thead th:first-child{text-align:left}
+tbody td{
+  padding:10px 11px; border-top:1px solid var(--line); text-align:right;
+  font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums; white-space:nowrap;
+}
+tbody td:first-child{
+  text-align:left; font-family:Archivo,sans-serif; font-weight:600; font-size:14px;
+  white-space:normal; min-width:190px;
+}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td .ko{display:block; font-family:"IBM Plex Mono",monospace; font-weight:400; font-size:11.5px; color:var(--muted); letter-spacing:.02em}
+.unk{color:var(--brass); font-style:italic}
+
+/* ---------- fixture cards ---------- */
+.fixture{
+  background:var(--surface); border:1px solid var(--line);
+  margin-top:30px; scroll-margin-top:12px;
+}
+.fx-head{background:var(--band); color:var(--band-ink); padding:16px 20px 18px}
+.fx-league{
+  font-family:Archivo,sans-serif; font-size:11px; font-weight:700;
+  letter-spacing:.14em; text-transform:uppercase; opacity:.78; margin:0 0 6px;
+}
+.fx-title{font-family:Archivo,sans-serif; font-size:23px; font-weight:700; letter-spacing:-.01em; margin:0; line-height:1.15}
+.fx-sub{font-family:"IBM Plex Mono",monospace; font-size:12.5px; opacity:.8; margin:7px 0 0; letter-spacing:.02em}
+.fx-body{padding:20px}
+
+.fx-odds{
+  display:flex; flex-wrap:wrap; gap:0;
+  border:1px solid var(--line); background:var(--surface-2); margin:0 0 22px;
+}
+.od{flex:1 1 96px; padding:9px 12px; border-right:1px solid var(--line); border-bottom:1px solid var(--line)}
+.od:last-child{border-right:0}
+.od dt{
+  font-family:Archivo,sans-serif; font-size:10px; font-weight:700; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--muted); margin:0 0 3px;
+}
+.od dd{margin:0; font-family:"IBM Plex Mono",monospace; font-size:15px; font-weight:500; font-variant-numeric:tabular-nums}
+
+h3.blk{
+  font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--accent); margin:26px 0 10px;
+}
+h3.blk:first-of-type{margin-top:0}
+.fx-body ul{margin:0 0 14px; padding-left:20px; max-width:70ch}
+.fx-body li{margin-bottom:7px}
+.tag{
+  font-family:Archivo,sans-serif; font-size:11px; font-weight:700;
+  letter-spacing:.07em; text-transform:uppercase; padding:2px 7px; white-space:nowrap;
+}
+.t-low{background:var(--good-soft); color:var(--good)}
+.t-mid{background:var(--warn-soft); color:var(--warn)}
+.t-high{background:var(--bad-soft); color:var(--bad)}
+
+/* market suitability rows */
+.mkt{border-top:1px solid var(--line)}
+.mkt-row{
+  display:grid; grid-template-columns:150px 1fr; gap:0;
+  border-bottom:1px solid var(--line);
+}
+.mkt-name{
+  padding:13px 14px 13px 0; font-family:Archivo,sans-serif;
+  font-weight:700; font-size:14px; line-height:1.3;
+}
+.mkt-name .verdict{display:block; margin-top:6px}
+.mkt-why{padding:13px 0 13px 16px; border-left:3px solid var(--line); font-size:15.5px; color:var(--ink-2)}
+.mkt-row.good .mkt-why{border-left-color:var(--good)}
+.mkt-row.ok .mkt-why{border-left-color:var(--warn)}
+.mkt-row.bad .mkt-why{border-left-color:var(--bad)}
+@media (max-width:620px){
+  .mkt-row{grid-template-columns:1fr; gap:0}
+  .mkt-name{padding-bottom:6px}
+  .mkt-why{padding:0 0 14px 14px}
+}
+
+/* index list */
+.index{display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line)}
+.index a{
+  display:block; background:var(--surface); padding:12px 14px; text-decoration:none;
+  color:var(--ink); font-family:Archivo,sans-serif; font-weight:600; font-size:14.5px;
+}
+.index a:hover,.index a:focus-visible{background:var(--accent-soft); color:var(--accent)}
+.index a span{display:block; font-family:"IBM Plex Mono",monospace; font-weight:400; font-size:11.5px; color:var(--muted); margin-top:3px; letter-spacing:.03em}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+
+footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); font-size:14px; color:var(--muted); max-width:74ch}
+footer a{color:var(--accent)}
+
+/* ---------- not-yet-built fixture ---------- */
+.fixture.pending{opacity:.72}
+.pending-note{
+  font-family:Archivo,sans-serif; font-size:13px; font-weight:600;
+  letter-spacing:.04em; color:var(--muted);
+  background:var(--surface-2); border:1px dashed var(--line);
+  border-radius:8px; padding:14px 16px; margin-top:18px;
+}
+</style>
+
+<div class="wrap">
+
+<header class="top">
+  <p class="eyebrow">Context engine &middot; no picks, no sides, no lines</p>
+  <h1>Four clubs on this card rented a centre-forward for the season, and not one of tonight&rsquo;s referees has a published fouls-per-card figure</h1>
+  <p class="standfirst">Six fixtures across five countries, parsed in typed-file mode from <span class="mono">odds_12.xlsx</span> and built from nothing in this pass &mdash; three of the six cards are complete at full T1 depth, the other three carry the odds strip only until their research run.</p>
+  <div class="metaline">
+    <span>Friday 4 September 2026</span>
+    <span>Ligue 1 matchday 3 &middot; Bundesliga matchday 2 &middot; Serie A matchday 3 &middot; LaLiga &middot; Premier League</span>
+    <span>Decimal odds, bet365 IT</span>
+  </div>
+</header>
+
+<section>
+  <h2 class="sec">The one thing shaping every game on this card</h2>
+  <p>The structural fact running under this slate is that the centre-forward position was not bought this summer, it was borrowed. Lyon sold Afonso Moreira for a reported &euro;33.6m including bonuses and lost Malick Fofana on deadline day, then filled the gap with Lo&iuml;s Openda on loan from Juventus and Youssouf Fofana on loan behind him. K&ouml;ln sold Jakub Kami&#324;ski to Benfica for a reported &euro;17m and took Thijs Dallinga on loan from Bologna with an option reported at about &euro;10m &mdash; he scored twice on debut. Como committed the largest sum on the card, a loan for Moise Kean carrying an obligation to buy at a reported &euro;35m plus &euro;5m in bonuses, and he is expected to start tonight on the bench. Auxerre sold Lassine Sinayoko to Paris FC for &euro;8m and replaced him with Romain Faivre on loan, Danny Namaso on a &euro;5m option and Cameron Archer, signed on 1 September. Four clubs, four rented forwards, and in three of the four cases the player who left carried a published fee while the player who replaced him did not.</p><p>The second thread is how little of last season is still standing. Auxerre changed manager in June, replaced their goalkeeper and lost two centre-backs to cruciate injuries reported to keep them out beyond the New Year. Stuttgart finished fourth with a goalkeeper who has since gone back to Bayern Munich, and spent a reported &euro;56m on three attacking or creative signings against no outfield defensive purchase. K&ouml;ln are into their second season back from promotion under a coach appointed in March and confirmed permanently to 2028. Against all of that, Genoa&ndash;Como stands out as the only fixture on the board where neither club changed manager and both squads carry over &mdash; and it is also the only one where a season-long record can be read at close to face value.</p><div class="note"><strong>Structural consequence.</strong> Discipline should be the stable family on a board like this, because a referee&rsquo;s card rate does not move when a club has a busy window. On the three cards built so far, all three appointments are confirmed with full published officiating teams &mdash; Ruddy Buquet at Lyon, Christian Dingert at Stuttgart, Marco Guida at Genoa &mdash; and yet not one of the three has a published fouls-per-card figure. Buquet&rsquo;s foul rate is not published at all, so his 3.1 cards a game cannot be interpreted in either direction; Dingert&rsquo;s and Guida&rsquo;s ratios exist only as arithmetic on two separately published rates, roughly 5.6 and 6.0 fouls per card respectively, and both are flagged as derived rather than quoted. Penalty rates are worse: published for Buquet at 0.18 a game, missing entirely for Dingert and Guida. The consequence shows up directly in the card lines &mdash; Dingert averaged 4.09 yellows a game last season into a 3.5 line the market leans under, while Guida averaged 4.13 into a 3.5 line the market leans over, and only one of those two markets is agreeing with its own official.</div>
+</section>
+
+<section>
+  <h2 class="sec">Today&rsquo;s slate &mdash; odds as read from the screenshots</h2>
+  <div class="scroller">
+  <table>
+    <thead>
+      <tr>
+        <th>Fixture</th><th>1</th><th>X</th><th>2</th><th>O2.5</th><th>U2.5</th><th>BTTS&nbsp;Y</th><th>BTTS&nbsp;N</th><th>Cards</th><th>Corners</th>
+      </tr>
+    </thead>
+    <tbody>
+            <tr><td>Lyon &ndash; Auxerre<span class="ko">19:00 &middot; Ligue 1</span></td><td>1.45</td><td>4.50</td><td>7.00</td><td>1.60</td><td>2.25</td><td>1.77</td><td>1.97</td><td>3.5</td><td>9.5</td></tr>
+      <tr><td>Stuttgart &ndash; K&ouml;ln<span class="ko">20:30 &middot; Bundesliga</span></td><td>1.48</td><td>4.85</td><td>5.75</td><td>1.33</td><td>3.10</td><td>1.45</td><td>2.60</td><td>3.5</td><td>10.5</td></tr>
+      <tr><td>Genoa &ndash; Como<span class="ko">20:45 &middot; Serie A</span></td><td>5.25</td><td>3.35</td><td>1.77</td><td>2.00</td><td>1.75</td><td>1.87</td><td>1.87</td><td>3.5</td><td>8.5</td></tr>
+      <tr><td>Real Betis &ndash; Real Madrid<span class="ko">21:00 &middot; <span class="unk">league confirmed at research</span></span></td><td>6.25</td><td>5.00</td><td>1.43</td><td>1.35</td><td>3.00</td><td>1.52</td><td>2.40</td><td>4.5</td><td>10.5</td></tr>
+      <tr><td>Ipswich Town &ndash; Liverpool<span class="ko">21:00 &middot; <span class="unk">league confirmed at research</span></span></td><td>5.75</td><td>4.70</td><td>1.50</td><td>1.37</td><td>2.90</td><td>1.48</td><td>2.50</td><td>4.5</td><td>9.5</td></tr>
+      <tr><td>PSG &ndash; Monaco<span class="ko">21:05 &middot; <span class="unk">league confirmed at research</span></span></td><td>1.35</td><td>5.50</td><td>7.50</td><td>1.32</td><td>3.15</td><td>1.57</td><td>2.30</td><td>3.5</td><td>9.5</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="note"><strong>Provenance.</strong> This slate was parsed in typed-file mode from <span class="mono">odds_12.xlsx</span>. No screenshots were involved, so there are no source image filenames and no OCR step: every price was read directly from a spreadsheet cell, none derived, none unreadable, and nothing on this board carries the <span class="unk">~</span> uncertainty marker for a price. The workbook holds six tabs &mdash; an unused <span class="mono">odds_EXAMPLE</span> template, then <span class="mono">odds_7</span>, <span class="mono">odds_8</span>, <span class="mono">odds_9</span> and <span class="mono">odds_10</span> (28, 29, 30 and 31 August, all already consumed as fixtures_8/9/10/11), and a sixth tab whose title row reads &ldquo;MATCHES 04-09-2026&rdquo;, which is today&rsquo;s slate and the one read here, despite the tab itself still being internally named <span class="mono">odds_11</span>. That is a copy-paste leftover, the same one-file lag seen in the two previous workbooks, and it was not used for numbering. As before, the file is written in strict OOXML, which returns an empty sheet list to the usual reader; the worksheet XML was parsed directly and cross-checked against a raw zip dump. Kickoff times were normalised from Excel&rsquo;s floating-point time serialisation (<span class="mono">18:59:59.9999999999968050</span> &rarr; 19:00). Two fields are structurally absent rather than unread &mdash; there is no <span class="mono">league</span> column and no <span class="mono">venue</span> column anywhere in the sheet, so both are established by Phase&nbsp;2 research and never inferred at parse time, which is why the three fixtures not yet researched show their competition and venue as unconfirmed. <span class="mono">Win/+2 Home/Away</span> is empty for all six rows. Home and away card splits are present only for Genoa&ndash;Como and Ipswich Town&ndash;Liverpool. No fixture is missing a double-chance cell this week. Team names are recorded exactly as typed in the source; &ldquo;Lione&rdquo;, &ldquo;Stoccarda&rdquo; and &ldquo;Colonia&rdquo; are rendered here as Lyon, Stuttgart and K&ouml;ln, consistent with the corrections applied on previous slates.</div>
+  <div class="note"><strong>Completion.</strong> Three of six cards are built, all three at full T1 depth with sections A to E: Lyon&ndash;Auxerre, Stuttgart&ndash;K&ouml;ln and Genoa&ndash;Como. Real Betis&ndash;Real Madrid, Ipswich Town&ndash;Liverpool and PSG&ndash;Monaco are still pending and appear with their odds strip and nothing else. Nothing on this slate was demoted or listed without research: triage was run on a six-fixture slate against a capacity of ten, every fixture scored between 4 and 5 against an auto-exclusion floor of zero, and all six were tiered T1 &mdash; so the three blanks below are a run that has not reached them yet, not a judgement that their evidence is thin. Where a competition line above carries no matchday, that is the same fact: Ligue 1, Bundesliga and Serie A rounds are confirmed from the cards already researched, while the LaLiga and Premier League rounds will be confirmed when those fixtures are built rather than inferred now.</div>
+</section>
+
+<section>
+  <h2 class="sec">Jump to a fixture</h2>
+  <nav class="jump">
+        <a href="#f1">Lyon &ndash; Auxerre<span>19:00 &middot; Groupama Stadium</span></a>
+    <a href="#f2">Stuttgart &ndash; K&ouml;ln<span>20:30 &middot; MHP Arena</span></a>
+    <a href="#f3">Genoa &ndash; Como<span>20:45 &middot; Stadio Luigi Ferraris</span></a>
+    <a href="#f4">Real Betis &ndash; Real Madrid<span>21:00 &middot; venue unconfirmed</span></a>
+    <a href="#f5">Ipswich Town &ndash; Liverpool<span>21:00 &middot; venue unconfirmed</span></a>
+    <a href="#f6">PSG &ndash; Monaco<span>21:05 &middot; venue unconfirmed</span></a>
+  </nav>
+</section>
+
+<article class="fixture" id="f1">
+  <div class="fx-head">
+    <p class="fx-league">France &middot; Ligue 1 &middot; Matchday 3</p>
+    <h2 class="fx-title">Lyon &ndash; Auxerre</h2>
+    <p class="fx-sub">19:00 CEST &middot; Groupama Stadium, D&eacute;cines-Charpieu &middot; A fourth-placed side that sold its two most valuable attackers meets a new manager whose defence has conceded eight in two matches</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.45 &middot; 4.50 &middot; 7.00</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>1.09 &middot; 1.19 &middot; 2.75</dd></div>
+      <div class="od"><dt>EH &minus;1 (1/X/2)</dt><dd>2.15 &middot; 3.80 &middot; 2.75</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.60 / 2.25</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.77 / 1.97</dd></div>
+      <div class="od"><dt>Cards 3.5 U / O</dt><dd>1.85 / 1.75</dd></div>
+      <div class="od"><dt>Corners 9.5 U / O</dt><dd>1.98 / 1.70</dd></div>
+      <div class="od"><dt>Corner race 1/X/2</dt><dd>1.38 &middot; 9.50 &middot; 3.35</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>Neither club is promoted; both were in this division last season and finished eleven places apart. Lyon were 4th on 60 points from 34 matches &mdash; 18 wins, 6 draws, 10 defeats, 53 scored, 40 conceded, +13 &mdash; which took them into the Champions League third qualifying round. Auxerre were 15th on 34 points with 8 wins, 10 draws, 16 defeats, 34 scored, 44 conceded, &minus;10, surviving by two points over Nice, who then had to play off to stay up. The structural headline is that only one of these clubs changed manager, and it is the one that also rebuilt its squad from the goalkeeper forward: Will Still joined Auxerre in early June 2026, and his first window brought in a new first-choice goalkeeper, two centre-backs and a centre-forward, while the club's leading scorer was sold. Lyon kept Paulo Fonseca and instead conducted a selling window &mdash; 14 arrivals for a reported &euro;26.10m against 9 departures for &euro;36m, a net positive of &euro;9.90m &mdash; losing Afonso Moreira for a reported &euro;33.6m including bonuses and Malick Fofana in the closing hours of the window, and replacing the goals with two loans. The long-run head-to-head is one-directional: Lyon are unbeaten in their last seven home matches against Auxerre, who have never won at this stadium, and the last meeting finished 3&ndash;2 to Lyon.</p>
+    <ul>
+      <li><strong>Lyon &mdash; turnover high in volume, and the two players sold were the two who created most.</strong> Fonseca continues; no manager or system change this summer, which makes Lyon the only side in this fixture whose last-season numbers were produced by the coach who will pick the team. The window was explicitly a degreasing exercise and Fonseca said so publicly, calling himself satisfied and noting the club "knew we had to sell players and that Malick would probably have to leave." Out: Afonso Moreira, at a reported &euro;33.6m including bonuses &mdash; the largest fee involving either club on this card; Malick Fofana, on deadline day, fee unreported in the sources consulted; Ainsley Maitland-Niles to Everton, fee unreported. Nicolas Tagliafico was reported close to Atl&eacute;tico Madrid and the move did not happen, so he stays. In, weighted as the spec asks: <em>centre-back</em> Felix Bacher; <em>midfield</em> Mads Bidstrup, plus Youssouf Fofana on loan; <em>centre-forward</em> Lo&iuml;s Openda on loan from Juventus, described as undisputed in the position; also Mohamed Ou&eacute;draogo, Julien Duranville and Noham Kamara. <strong>Gap:</strong> individual fees are published for Moreira alone; the &euro;26.10m and &euro;36m figures are aggregate window totals, not per-player prices, and no fee at all is published for Malick Fofana, Bacher, Bidstrup or either loan. <strong>Gap:</strong> no goalkeeper movement was established in either direction; Dominik Greif is the keeper named in the probable XI.</li>
+      <li><strong>Auxerre &mdash; new manager in June, and the spine replaced in one window.</strong> Will Still arrived in early June 2026, leaving London to return to Ligue 1; the predecessor he replaced is not named in any source reached, and is left unstated rather than assumed. The rebuild runs through exactly the positions the research spec asks about. <em>Goalkeeper:</em> Donovan L&eacute;on left for Abha on a free and Mamadou Diop arrived from Grenoble, and it is Diop who is named in goal in the probable XI &mdash; a first-choice goalkeeper changed in the same summer as the manager. <em>Defence:</em> Axel Tuanzebe signed on 1 September, with Christ Makosso from Luton Town earlier in the window, against the departure of Paul Joly to Kaiserslautern for &euro;1.25m. <em>Attack:</em> Lassine Sinayoko, the club's principal forward, sold to Paris FC for &euro;8m; in came Danny Namaso from Porto with a &euro;5m purchase option, Romain Faivre on loan from Bournemouth, and Cameron Archer on 1 September. <em>Midfield:</em> Arthur Piedfort from Westerlo for &euro;4m, S&eacute;kou Fofana from Lausanne, Xiangxin Wei from MZ Hakka. Also out: Gideon Mensah to K&ouml;ln on a free, Th&eacute;o Bair on loan to Bolton. Total window revenue is reported at roughly &euro;9&ndash;10m. <strong>Gap:</strong> no fee is published for Tuanzebe, Archer, Makosso, Diop, S&eacute;kou Fofana or Wei.</li>
+      <li><strong>Suspensions / absences.</strong> No suspensions are reported on either side. Auxerre's absence list is the longer and the more structural: Bryan Okoh and Assane Diousse are both out with cruciate ligament injuries and are reported certain not to return before the New Year, Francisco Sierralta is out with an undisclosed problem, Marvin Senaya has a hamstring injury and S&eacute;kou Fofana &mdash; one of the summer's midfield signings &mdash; a groin problem. That is four defensive or defensive-midfield players unavailable to a side that has conceded eight goals in two matches, with two of the deadline-day arrivals, Tuanzebe and Archer, possibly making their debuts here. Lyon are without Julien Duranville, one of the summer arrivals, with a muscle injury; Ruben Kluivert was rested after playing against Fenerbah&ccedil;e; and Maitland-Niles's departure to Everton leaves Zachary Athekame expected to take the right-back slot.</li>
+      <li><strong>Sample.</strong> Two league matches each, and this is matchday 3. Lyon beat Toulouse 2&ndash;0 and drew 1&ndash;1 with Le Havre &mdash; four points, two goals conceded, unbeaten. Auxerre lost 1&ndash;3 at home to Angers and 2&ndash;5 away at Lens &mdash; no points, three scored, eight conceded, bottom third of the table. Lyon additionally have European qualifying football in the calendar, evidenced here by Kluivert being rested after a Fenerbah&ccedil;e match, so their fixture load is not the same as Auxerre's. <strong>Conflict logged:</strong> one aggregator reports Lyon third with three points and a goal difference of +2; the match-by-match record of a 2&ndash;0 win and a 1&ndash;1 draw, corroborated by two sources, gives four points and +2. The results are consistent, the points column in that one summary is not, and the card uses the results.</li>
+      <li><strong>Referee.</strong> Ruddy Buquet, 49, confirmed for this match in the matchday-3 designations, with Erwan Finjean and Julien Haulbert as assistants, Karim Abed as fourth official and Beno&icirc;t Millot and Bruno Cou&eacute; on VAR &mdash; a full published team, not a provisional listing. His 2025&ndash;26 Ligue 1 season: 17 matches, 50 yellow cards, 2 red cards, 3.1 cards per game, and 3 penalties awarded across those 17 matches, a rate of 0.18 per game. That penalty rate is the number to hold on to: fewer than one in five of his matches produced a spot-kick last season. <strong>Gap:</strong> his fouls-per-card ratio is not published in any source reached &mdash; the two referee databases that carry it returned a JavaScript shell and an HTTP 403 respectively &mdash; so whether 3.1 cards a game comes from booking early in a low-foul game or late in a high-foul one is not established. <strong>Gap:</strong> no Buquet record specific to either Lyon or Auxerre was found, and no current-season card rate for him was available, only the completed 2025&ndash;26 figures.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Lyon's 2025&ndash;26 was a fourth-place season built on a solid rather than spectacular goal record: 53 scored and 40 conceded across 34 matches, roughly 1.6 and 1.2 a game, with ten defeats &mdash; more than a side finishing fourth would usually carry, and a sign of a team that took its points in clusters. The continuity here is real and worth stating plainly, because it is rare on this card: Fonseca is the same manager, so the shape and the pressing height are not being rebuilt from a CV. What changed is who occupies the front line. Moreira and Malick Fofana, the two most valuable attacking assets, were both sold, and the replacement at centre-forward is Lo&iuml;s Openda on loan from Juventus, with Youssouf Fofana loaned in to sit in midfield. The probable XI &mdash; Greif; Athekame, Bacher, Niakhat&eacute;, Tagliafico; Bidstrup, Morton; Nuamah, Tolisso, Boudache; Openda &mdash; contains a summer signing at centre-back, both central midfielders new or newly promoted into the role, and a loanee at centre-forward. Two league matches is not enough to say what that combination does to Lyon's territorial or shooting profile, and the specific numbers that would settle it are not available: <strong>gap</strong> &mdash; no xG, shot-volume, home/away split, foul rate or card rate for Lyon's 2025&ndash;26 season was obtainable from any source reached within budget, which is the reason no such figure appears anywhere on this card.</p>
+    <p>Auxerre are the side where every stylistic input has moved at once. A new manager arrived in June; the goalkeeper is new; the centre-forward who led the line was sold to Paris FC for &euro;8m and replaced by a loanee and two late arrivals; and the two players who would ordinarily anchor the defensive structure, Okoh and Diousse, are both out until at least the New Year with cruciate injuries, with Sierralta and Senaya also unavailable. Last season's 34 goals scored and 44 conceded describe a side that was hard to beat and rarely won &mdash; ten draws in 34 &mdash; under a coach who has gone. What has replaced it in two matches is a defence that shipped three at home to Angers and five at Lens, eight in total, which is the single most concrete piece of 2026&ndash;27 evidence available about either team. The honest caveat is that two matches is two matches, and one of them was away at a side that has started strongly; the honest counterweight is that the absences behind those eight goals are documented and long-term, not a matter of form. Where a stylistic claim would need shot volume, crossing counts or set-piece frequency to be made properly, the same <strong>gap</strong> applies as for Lyon: none of those series was obtainable for Auxerre, so this card describes personnel and results, not playing patterns it cannot evidence.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row ok"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-mid">OK &mdash; the structural facts and the price point the same way, which is itself the problem</span></div><div class="mkt-why">1.45 against 7.00 is a wide but not extreme spread, and unusually for this card the reasoning behind it is documented rather than inferred: an unchanged manager and an unbeaten start on one side, a manager appointed in June with a new goalkeeper, a sold centre-forward, two cruciate absentees and eight goals conceded in two matches on the other, plus seven straight home matches unbeaten in the head-to-head and no Auxerre win ever at this ground. The caution is that the away price has to absorb all of that at once, and a 7.00 leaves very little room for the possibility that Still's late arrivals &mdash; Tuanzebe at the back, Archer in attack, both possibly debuting here &mdash; change the picture on their first appearance. The result row is priced on evidence, but on two matches of it.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Asian handicap &amp; double chance<span class="verdict tag t-mid">OK &mdash; the &minus;1 line is where the actual disagreement lives</span></div><div class="mkt-why">Lyon by two or more at 2.15, the draw-on-the-line at 3.80 and Auxerre +1 at 2.75 is a far more balanced statement than 1.45 against 7.00, and it is the honest one: the outright says who is better, the handicap says the book does not expect a rout. That fits a Lyon side that has scored two and one in its two league matches and has just replaced both first-choice attackers with loans. Double chance is close to unusable here in the ordinary sense &mdash; 1X at 1.09 and 12 at 1.19 have already absorbed everything structural and pay almost nothing for it &mdash; but X2 at 2.75 remains a genuinely two-sided proposition against a 1.45 favourite, and it is the one leg of the three still carrying reasoning.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-high">Dangerous &mdash; eight goals in two matches is a real number attached to an unreal sample</span></div><div class="mkt-why">Over at 1.60 leans hard on Auxerre's concession rate, and that rate is the most eye-catching statistic on the page: three at home to Angers, five at Lens. But it is two matches, one of them away, produced by a defence missing two cruciate-injury absentees and two more centre-backs, with a new goalkeeper behind them &mdash; and the summer's defensive signings, Tuanzebe and Makosso, may only now be coming into the side. On the other end, last season's totals belong to different attacks: Lyon scored 53 with two forwards who have since been sold for a combined figure led by Moreira's reported &euro;33.6m, and Auxerre scored 34 with a striker now at Paris FC. Neither club's goal profile from 2025&ndash;26 survives its own window, and this season's is two rounds deep.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; asymmetric, and the away attack is the load-bearing half</span></div><div class="mkt-why">1.77 against 1.97 is close to even money, and the two legs rest on very different qualities of evidence. That Auxerre concede is documented &mdash; eight in two, with named long-term absentees to explain it. That Auxerre score is the open question: they have managed three goals in two matches, so the attack has not been blank, but the man who scored their goals last season was sold and the replacements are a loanee from Bournemouth, a Porto signing carrying a &euro;5m option and a forward who arrived on 1 September. Lyon, for their part, have conceded twice in two matches with an unchanged coach. The No side needs the newest, least-settled attack on the card to fail; the Yes side needs it merely to function once.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-mid">OK &mdash; the appointment is confirmed and the referee's own average sits under the line</span></div><div class="mkt-why">This is the one fixture family where the evidence is properly in existence rather than pending: Buquet is confirmed with a full published officiating team, so the Discipline row is not evidence-thin for lack of an appointment. His 2025&ndash;26 record is 50 yellows and 2 reds in 17 matches, 3.1 cards a game, against a match line of 3.5 that the market leans over at 1.75 against 1.85. Those two statements pull in opposite directions, and the referee's number is the larger sample. What is missing is the ratio that would explain it: <strong>his fouls per card is not published anywhere reached</strong>, so there is no way to tell whether 3.1 is an early-booking official in a low-foul league or a permissive one, and that distinction is exactly what decides a 3.5 line in a match with a heavy favourite. His penalty rate, 3 in 17 for 0.18 a game, is established and low.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Corners<span class="verdict tag t-mid">OK &mdash; the race follows from the outright, the 9.5 line has no evidence behind it</span></div><div class="mkt-why">The race at 1.38 for Lyon against 3.35 restates the moneyline in territorial form, and the structural case for it is the same one: the home side is unbeaten, unchanged in the dugout and playing a team that has conceded eight in two matches and has four defenders unavailable. It asks little that the 1.45 has not already asked. The 9.5 total leaning over at 1.70 is the harder claim to support, because no corner-count series for either club was obtainable &mdash; not for last season, not for the two matches played &mdash; and Lyon's attacking personnel changed completely in the window that just closed. A team that replaces both wide attackers and its centre-forward is a team whose crossing and set-piece volume is an open question.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li>Auxerre's eight goals conceded come from two matches played without four defensive players &mdash; Okoh and Diousse with cruciate injuries and reported out beyond the New Year, Sierralta undisclosed, Senaya hamstring &mdash; and behind a goalkeeper signed this summer to replace one who left on a free. The number is real; treating it as a settled property of this defence rather than a snapshot of an unavailable one is where it misleads, particularly with Tuanzebe possibly debuting here.</li>
+      <li>Lyon's 53 goals last season were scored by an attack that no longer exists. Afonso Moreira left for a reported &euro;33.6m including bonuses and Malick Fofana went in the closing hours of the window; the centre-forward is Openda on loan from Juventus and the midfield anchor is Youssouf Fofana, also on loan. Two league matches, three goals scored. Any total or team-goals reasoning that reaches back to 2025&ndash;26 for Lyon is reading a different squad.</li>
+      <li>The head-to-head record is long and one-directional &mdash; seven home matches unbeaten, no Auxerre win at this stadium ever &mdash; but it was compiled by squads and coaching staffs that have both turned over, most drastically on the visiting side, where the manager arrived in June and the goalkeeper, centre-forward and at least two defenders are new.</li>
+      <li>Neither club's underlying numbers were obtainable. No xG, shot volume, home/away split, foul rate or card rate was published in any source reached for either side, for either season. Every market row above is reasoned from personnel, results and the referee's own record, and where a row would need those series &mdash; the corner line above all &mdash; the card says so instead of estimating them.</li>
+      <li><strong>Most sensitive:</strong> the goals total, where a genuinely striking two-match concession rate is attached to a defence missing four players, and where both attacks were rebuilt in the window that closed three days ago. <strong>Least sensitive:</strong> the discipline row, which is the only family here resting on a confirmed appointment and a completed 17-match referee sample rather than on two matchdays &mdash; with the caveat that the fouls-per-card ratio behind that sample is not published.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>The handicap is more robust than the outright here because the outright at 1.45/7.00 has already priced every documented fact &mdash; unchanged manager, unbeaten start, eight conceded, four absentees, seven home meetings unbeaten &mdash; while the &minus;1 line at 2.15 against 2.75 still has to resolve whether a Lyon attack rebuilt around two loanees wins comfortably or narrowly.</li>
+      <li>Both-teams-to-score is more robust than the goals total because it splits into two separately checkable questions rather than one compound estimate: Auxerre's defence is documented by name and injury, while the total additionally requires a view on a Lyon attack that has scored three goals since selling Moreira and Malick Fofana.</li>
+      <li>The discipline row is more robust than any of the goals markets because it is the only one on this fixture with a completed season of evidence attached to a named, confirmed official &mdash; Buquet, 50 yellows and 2 reds in 17 matches &mdash; rather than a two-matchday sample; the 3.1 cards a game against a 3.5 line is a comparison that can actually be made, even without the fouls-per-card ratio.</li>
+      <li>The corner race is more robust than the corner line because the race asks only that the side priced at 1.45 also holds territory, which the same evidence supports, whereas the 9.5 line needs a volume baseline for two teams &mdash; one of which replaced its entire front line, the other its manager and its striker &mdash; and no corner series for either was obtainable.</li>
+      <li>Where the book has priced near-indifference it is describing the evidence accurately. BTTS at 1.77 against 1.97 and the cards line at 1.85 against 1.75 are the two flattest rows here, and both sit on genuinely balanced material: a leaky but heavily depleted defence against a new attack, and a referee averaging 3.1 cards against a 3.5 line whose fouls-per-card ratio nobody publishes.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f2">
+  <div class="fx-head">
+    <p class="fx-league">Germany &middot; Bundesliga &middot; Matchday 2</p>
+    <h2 class="fx-title">Stuttgart &ndash; K&ouml;ln</h2>
+    <p class="fx-sub">20:30 CEST &middot; MHP Arena, Stuttgart &middot; A fourth-placed side that lost 5&ndash;1 on the opening day and replaced its goalkeeper meets a promoted-two-seasons-ago club whose new permanent coach has just won with a debut double from a loanee</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.48 &middot; 4.85 &middot; 5.75</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>1.13 &middot; 1.17 &middot; 2.60</dd></div>
+      <div class="od"><dt>EH &minus;1 (1/X/2)</dt><dd>2.15 &middot; 4.15 &middot; 2.60</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.33 / 3.10</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.45 / 2.60</dd></div>
+      <div class="od"><dt>Cards 3.5 U / O</dt><dd>1.70 / 1.90</dd></div>
+      <div class="od"><dt>Corners 10.5 U / O</dt><dd>1.75 / 1.95</dd></div>
+      <div class="od"><dt>Corner race 1/X/2</dt><dd>1.33 &middot; 9.50 &middot; 3.60</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>Neither side came up this summer, but one of them came up the summer before, and that matters here. K&ouml;ln were promoted into 2025&ndash;26 alongside Hamburger SV, and survived at the first attempt in 14th with 32 points from 34 matches &mdash; 7 wins, 11 draws, 16 defeats, 49 scored, 63 conceded. This is therefore their second season back, the one in which a promoted side's first-year allowances stop applying and the squad is judged on its own terms. Stuttgart finished 4th on 62 points with 18 wins, 8 draws, 8 defeats, 71 scored and 49 conceded &mdash; the fourth-best attack in the division. The structural headline is that the manager change on this card belongs to the visitors and the squad change belongs to the hosts: Ren&eacute; Wagner has been K&ouml;ln's head coach since March 2026, promoted from within and then confirmed permanently on a contract to 2028, so this is his first full season; Sebastian Hoene&szlig; continues at Stuttgart, where the summer removed the first-choice goalkeeper and spent a reported &euro;56m on three attacking or midfield signings. The head-to-head favours the hosts &mdash; K&ouml;ln have won once in the last seven meetings and lost five, including 3&ndash;1 here last season &mdash; and so does the venue record: Stuttgart lost only three domestic matches at this ground in 2025&ndash;26, winning 13 with eight clean sheets, while K&ouml;ln have won once in their last 14 away matches in all competitions.</p>
+    <ul>
+      <li><strong>Stuttgart &mdash; turnover high and concentrated at the top of the pitch, plus a new goalkeeper.</strong> Hoene&szlig; continues, so the system is not being rebuilt from a CV; the personnel around it partly is. <em>Goalkeeper:</em> Alexander N&uuml;bel returned to Bayern Munich, and two keepers arrived to replace him &mdash; Dennis Seimen back from a loan at Paderborn and Marius Funk on a free from Energie Cottbus. A club that finished fourth has changed its number one. <em>Centre-forward:</em> D&#382;enan Pej&#269;inovi&#263; from Wolfsburg for a reported &euro;25m, the largest fee either club paid this summer. <em>Midfield and wide:</em> Bilal El Khannouss from Leicester City, permanent, reported around &euro;18m; Leo Sauer from Feyenoord, reported around &euro;13m; Grischa Pr&ouml;mel from Hoffenheim on a free. <em>Defence:</em> Leonidas Stergiou back from a loan at Heidenheim; no outfield defensive signing for a fee was established. Out: N&uuml;bel to Bayern, Chema Andr&eacute;s to Brighton, Lazar Jovanovi&#263; to Udinese, Noah Darvich on loan to Elversberg. <strong>Gap:</strong> no fee is published for N&uuml;bel, Andr&eacute;s or Jovanovi&#263;, and the Pej&#269;inovi&#263;, El Khannouss and Sauer figures are all reported as approximations rather than confirmed by either club.</li>
+      <li><strong>K&ouml;ln &mdash; a coach appointed mid-season now in his first full one, and a window that sold the best asset and rented the replacement.</strong> Wagner took over in March 2026 as an internal promotion from assistant, was confirmed as permanent head coach and signed to 2028. The window: 10 arrivals against 8 departures, with the sale of Jakub Kami&#324;ski to Benfica for a reported &euro;17m the largest item on either side of the ledger. Also out: Ellyes Skhiri to Eintracht Frankfurt and Gideon Mensah on a free &mdash; to Auxerre, the away side in the first fixture on this card. In, and this is the part that has already mattered: Thijs Dallinga on loan from Bologna for the season with a purchase option reported at about &euro;10m, plus three more loans &mdash; Jahmai Simpson-Pusey from Manchester City, Julian Pauli from Dynamo Dresden and Elias Bakatukanda from Blau-Wei&szlig; Linz. That is a front line and a defensive rotation assembled largely from borrowed players. <strong>Conflict logged:</strong> two German outlets give incompatible window balances for K&ouml;ln &mdash; one reports &euro;25.65m spent against &euro;18m received, a net &minus;&euro;7.65m; the other reports &euro;9.4m spent against &euro;18m received, a net positive. Both agree on the &euro;17m Kami&#324;ski sale. Neither balance is carried as established.</li>
+      <li><strong>Suspensions / absences.</strong> No suspensions are reported for either side. Stuttgart are without Justin Diehl (thigh), Nikolas Nartey (hamstring) and Dan-Axel Zagadou (hamstring) &mdash; the last of those a centre-back, in a defence that conceded five on the opening day. K&ouml;ln are without Timo H&uuml;bers (knee) and Sebastian Sebulonsen (hamstring), with Gian-Luca Waldschmidt expected back at some point this month; H&uuml;bers is the more significant of the two for a side whose defensive problem last season was 63 goals conceded.</li>
+      <li><strong>Sample.</strong> One match each; this is matchday 2. Stuttgart lost 5&ndash;1 away at Bayern Munich &mdash; the champions, who scored 122 goals last season, so the venue and opponent carry most of that scoreline. K&ouml;ln beat Hoffenheim 3&ndash;2 at home, with Dallinga scoring twice on his debut. That leaves Stuttgart 18th on goal difference and K&ouml;ln 6th after one round, a table position that means nothing yet and is quoted only because it is the entire 2026&ndash;27 record of both clubs. Two matches of evidence, one of them against the strongest side in the division.</li>
+      <li><strong>Referee.</strong> Christian Dingert, confirmed in the matchday-2 designations with a full published team: assistants Nikolai Kimmeyer and Alexander Sather, fourth official Felix Wagner, VAR Bastian Dankert and Robert Hartmann. His 2025&ndash;26 Bundesliga season was 11 matches, 42 yellow cards and 6 red cards, an average of 4.09 yellows a game and 23.09 fouls a game. Six reds in eleven matches is the number that stands out &mdash; better than one every two games. <strong>Derived, not quoted:</strong> dividing the two published rates gives roughly 5.6 fouls per yellow card, which is a quick trigger by the standards usually cited for this division; it is arithmetic on his own figures rather than a published fouls-per-card statistic, and is flagged as such. <strong>Gap:</strong> no penalties-per-game figure for Dingert was published in any source reached, and no record of his specifically with Stuttgart or K&ouml;ln was found.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Stuttgart's 2025&ndash;26 was an attacking season with a soft edge: 71 goals scored, fourth-most in the division, against 49 conceded, which is more than any of the three sides above them. At home that profile was much harder &mdash; three defeats in nineteen domestic matches at this ground, thirteen wins, eight clean sheets &mdash; and the summer has now removed the goalkeeper who kept them. N&uuml;bel's return to Bayern is the kind of change that does not show in a transfer balance sheet: the replacements are a keeper returning from a loan in the second division and a free signing from Cottbus, and neither has an established Bundesliga first-choice record. In front of them the spending went the other way entirely, roughly &euro;56m across Pej&#269;inovi&#263;, El Khannouss and Sauer, all attacking or creative additions, with the only defensive movement a loan return. The opening 5&ndash;1 at Bayern is a single, heavily conditioned data point &mdash; away at a side that scored 122 last season &mdash; but it is consistent with a squad that was rebuilt in front of the ball rather than behind it. <strong>Gap:</strong> no xG, shot-volume, home/away goal split, foul rate or card rate for Stuttgart's 2025&ndash;26 was obtainable from any source reached, so nothing here rests on a pressing or possession metric.</p>
+    <p>K&ouml;ln are the more interesting case structurally, because their change of direction is a year old rather than three months old. Wagner was appointed in March 2026 with the club in the lower half, kept them up, and has been given the job permanently to 2028 &mdash; so unlike almost every other manager on this card, he has both a body of work with these players and a full pre-season with them. What he does not have is the squad that produced it: Kami&#324;ski was sold to Benfica for a reported &euro;17m, Skhiri left for Frankfurt, Mensah left on a free, and the replacements are overwhelmingly loans, including the centre-forward. Dallinga arrived from Bologna &mdash; where he was one of a long list of departures in a summer that also cost that club its first-choice striker &mdash; and scored twice on debut in a 3&ndash;2 win over Hoffenheim, a side that finished fifth last season. One match is one match, but it is a win over a top-six team achieved by the specific player K&ouml;ln borrowed to solve the specific problem of scoring goals. Against that sits the away record: one win in the last 14 on the road in all competitions, and 63 goals conceded across last season. The same <strong>gap</strong> applies as for the hosts &mdash; no underlying series for K&ouml;ln was obtainable, so this card describes results and personnel and does not pretend to a style measurement it cannot source.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row ok"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-mid">OK &mdash; the venue record carries this, not the opening weekend</span></div><div class="mkt-why">1.48 against 5.75 asks a side that has just lost 5&ndash;1 to be a clear favourite, and the justification is not this season's single match but the two long-run records behind it: three home defeats in nineteen domestic matches at this ground last season with eight clean sheets, and one K&ouml;ln away win in fourteen. The counterweight is real though: Stuttgart's fourth place was built with a goalkeeper who now plays for Bayern, and their one competitive outing since ended with five conceded. The away price has to cover a coach in his first full season who has already beaten a top-six side this month.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Asian handicap &amp; double chance<span class="verdict tag t-mid">OK &mdash; the line disagrees with the outright, which is the useful part</span></div><div class="mkt-why">Stuttgart &minus;1 at 2.15 against K&ouml;ln +1 at 2.60 is a much flatter statement than 1.48 against 5.75: the book expects the home side to win more often than not but does not expect them to be comfortable, which fits a team that conceded 49 last season and has changed goalkeeper. Double chance is near-dead in the ordinary sense &mdash; 1X at 1.13 and 12 at 1.17 have absorbed everything and pay almost nothing &mdash; leaving X2 at 2.60 as the one leg still carrying a genuine question, and it is the same question as the handicap: can a promoted-two-years-ago side with one away win in fourteen avoid defeat at a fortress that has just been breached five times.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-high">Dangerous &mdash; the shortest price on the fixture, sitting on eight goals from two matches</span></div><div class="mkt-why">Over at 1.33 against 3.10 is the most one-sided row on this card, and the evidence for it is a 5&ndash;1 at Bayern and a 3&ndash;2 against Hoffenheim &mdash; eight goals across the two matches these clubs have played. That is a genuinely small sample dominated by one fixture against the champions. The season-long numbers do point the same way &mdash; 71 and 49 for Stuttgart, 49 and 63 for K&ouml;ln, both among the higher-scoring profiles in the division &mdash; but they were produced by a Stuttgart side with a different goalkeeper and a K&ouml;ln side that has since sold its most valuable attacker and replaced him with a loan. At 1.33 the row has already spent every one of those facts and leaves nothing to discover.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; the more honest version of the same argument as the total</span></div><div class="mkt-why">Yes at 1.45 is short but not settled, and it splits into two separately checkable claims rather than one aggregate. That K&ouml;ln concede is established across 34 matches &mdash; 63 goals, the second-worst record among the sides that stayed up &mdash; and H&uuml;bers is injured. That K&ouml;ln score away from home is the weaker half: one win in their last 14 on the road, and their goals last week came from a player who had just arrived on loan and was playing his first match. Stuttgart's eight home clean sheets last season are the fact working against the Yes side, and they belong to a goalkeeper who has gone back to Bayern.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-high">Dangerous &mdash; the appointed official's own average sits above a line the market leans under</span></div><div class="mkt-why">Dingert is confirmed, so the appointment is not the problem; the contradiction is. His 2025&ndash;26 record is 4.09 yellow cards a game across 11 matches, plus six red cards in that span, and 23.09 fouls a game &mdash; roughly 5.6 fouls per booking, derived from his own two rates. The match line is 3.5 and it leans under, 1.70 against 1.90. An official averaging over four yellows a game is being priced into a market that expects three or fewer, in a fixture with a heavy favourite where the visiting side has lost five of the last seven meetings and may spend the evening defending. One of those two readings is wrong and the referee's is the one with eleven matches behind it. <strong>Gap:</strong> his penalty rate is not published anywhere reached, which matters in a fixture priced this asymmetrically.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Corners<span class="verdict tag t-mid">OK &mdash; the race restates the outright, the 10.5 line has no series behind it</span></div><div class="mkt-why">The race at 1.33 for Stuttgart against 3.60 is the moneyline in territorial form and rests on the same evidence: a home side unbeaten in all but three domestic matches at this ground last season against visitors with one away win in fourteen. It asks nothing new. The 10.5 total leaning under at 1.75 is the harder claim, and it is unevidenced in both directions &mdash; no corner-count series was obtainable for either club, for either season. What is known is that Stuttgart added three attacking players for a reported &euro;56m and K&ouml;ln's new front line is on loan, which is a reason to expect the volume to have changed, not a basis for saying which way.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li>Stuttgart's opening 5&ndash;1 was away at Bayern Munich, who scored 122 goals last season. Reading it as evidence about this defence rather than about that opponent is the single easiest mistake available on this fixture &mdash; but the goalkeeper who kept eight home clean sheets last season has genuinely gone back to Bayern, and the replacements are a loan return from the second division and a free from Cottbus.</li>
+      <li>K&ouml;ln's 3&ndash;2 win came from a striker playing his first match for the club. Dallinga is on loan from Bologna with a reported &euro;10m option, one of four loanees brought in; a front line assembled on borrowed terms in August has no established baseline in this division, and a debut double is the smallest possible sample of one.</li>
+      <li>This is K&ouml;ln's second season back, not their first. The allowance normally made for a promoted side &mdash; unfamiliar opposition, a squad built for a lower division &mdash; expired in May, and what is left is a 14th-place finish with 63 conceded, a mid-season coach now in his first full campaign, and a summer that sold the &euro;17m asset and rented the replacement.</li>
+      <li>Every quantitative claim on this page is a goal count, a card count or a transfer fee. No xG, shot volume, corner series, foul rate or home/away split was obtainable for either club from any source reached, which is why the corner line above is marked unevidenced rather than argued either way.</li>
+      <li><strong>Most sensitive:</strong> the goals total at 1.33, where a very short price rests on eight goals from two matches, one of them at the champions, and on season-long records belonging to a Stuttgart side with a different goalkeeper. <strong>Least sensitive:</strong> the corner race and the handicap, which need only the venue and away records &mdash; three home defeats in nineteen, one away win in fourteen &mdash; to hold rather than any projection about the new personnel.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>Both-teams-to-score is more robust than the goals total here because the total at 1.33 has already priced all eight goals from the opening weekend, while BTTS still turns on a separable and checkable question: whether a K&ouml;ln side with one away win in fourteen scores at a ground where the hosts kept eight clean sheets last season with a goalkeeper they no longer have.</li>
+      <li>The handicap is more robust than the outright because the outright leans on a 5&ndash;1 defeat that says more about Bayern than about Stuttgart, whereas the &minus;1 line at 2.15 against 2.60 is priced almost evenly and therefore still has to resolve the margin question that the two long-run records &mdash; the venue and the away form &mdash; genuinely bear on.</li>
+      <li>The corner race is more robust than the corner line for a specific reason: the race needs only the same territorial claim the 1.48 already makes, while the 10.5 line needs a volume baseline for a Stuttgart attack rebuilt for a reported &euro;56m and a K&ouml;ln attack led by a player who arrived on loan last month, and no corner series for either was obtainable.</li>
+      <li>Every other market on this fixture is better evidenced than the cards row, and for a checkable reason: Dingert averaged 4.09 yellows a game over 11 matches last season with six reds, and the line is 3.5 leaning under. The referee's own record and the market's lean point in opposite directions, and his penalty rate &mdash; which would matter most in a fixture this lopsided &mdash; is not published anywhere reached.</li>
+      <li>Where the book has priced near-indifference it is admitting what it does not know. The handicap at 2.15 against 2.60 and the corner line at 1.75 against 1.95 are the two flattest rows here, and both sit exactly where the evidence runs out: what a fourth-placed side does without its goalkeeper, and what two rebuilt attacks do for territory.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f3">
+  <div class="fx-head">
+    <p class="fx-league">Italy &middot; Serie A &middot; Matchday 3</p>
+    <h2 class="fx-title">Genoa &ndash; Como</h2>
+    <p class="fx-sub">20:45 CEST &middot; Stadio Luigi Ferraris, Genoa &middot; The only fixture on this card where neither club changed manager &mdash; a side yet to score this season against one that spent &euro;35m plus bonuses on a striker who starts on the bench</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>5.25 &middot; 3.35 &middot; 1.77</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>2.05 &middot; 1.30 &middot; 1.15</dd></div>
+      <div class="od"><dt>EH +1 (1/X/2)</dt><dd>2.05 &middot; 3.60 &middot; 3.05</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>2.00 / 1.75</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.87 / 1.87</dd></div>
+      <div class="od"><dt>Cards 3.5 U / O</dt><dd>2.00 / 1.63</dd></div>
+      <div class="od"><dt>Home cards 1.5 U / O</dt><dd>2.15 / 1.50</dd></div>
+      <div class="od"><dt>Away cards 1.5 U / O</dt><dd>2.10 / 1.55</dd></div>
+      <div class="od"><dt>Corners 8.5 U / O</dt><dd>1.80 / 1.80</dd></div>
+      <div class="od"><dt>Corner race 1/X/2</dt><dd>3.05 &middot; 9.00 &middot; 1.45</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>Neither club is promoted and neither changed manager, which makes this the most stable fixture on the card and the one where last season's numbers are most likely to still mean something. They finished twelve places apart. Como were 4th on 71 points from 38 matches &mdash; 20 wins, 11 draws, 7 defeats, 65 scored and 29 conceded, the meanest defensive record on this entire slate &mdash; and qualified for the Champions League. Genoa were 16th on 41 points with 10 wins, 11 draws, 17 defeats, 41 scored and 51 conceded, safe but not comfortable. Cesc F&agrave;bregas continues at Como and Daniele De Rossi at Genoa, both into a second season with the same squads they built. The structural headline is therefore not a coaching change but a spending gap that has widened: Como added Moise Kean on a loan with an obligation to buy reported at &euro;35m plus &euro;5m in bonuses and a 10 per cent sell-on, and Trevoh Chalobah permanently from Chelsea to June 2031, while Genoa's window was a long list of arrivals with no published fee attached to any of them. The head-to-head is short and one-directional: Como are unbeaten in the four most recent meetings, two wins and two draws, and neither club has ever won two in a row against the other.</p>
+    <ul>
+      <li><strong>Genoa &mdash; turnover very high in volume, unquantifiable in value, and the goalkeeper changed.</strong> De Rossi continues, so the system carries over. The list of arrivals is long and spread across every line: <em>defence</em> Marcelo Vaz from Varesina, Mario Puczka from Juventus NextGen, Alessandro Fabbri from Hellas Verona, Cole Drameh from Hull City and Mario Mitaj from Al-Ittihad; <em>midfield</em> Djibril Sow from Sevilla, Hamari Traor&eacute; from Marseille, Meichtry from Thun and Wiafe from Modena; <em>attack</em> Lorenzo Colombo made permanent from Milan on a contract to 2029, Nikola Osmaji&#263; from Preston North End, Havel from Hartberg, and Stephan El Shaarawy. Out: Alessandro Vogliacco permanently to Cremonese, Ruslan Malinovskyi, Ekhator, Ekuban, the goalkeeper Nicola Leali, and Brooke Norton-Cuffy, whose sale is the reason Ellertsson is expected at right wing-back with Mitaj on the opposite flank. Bijlow is the goalkeeper named in the probable XI. <strong>Gap:</strong> not one fee is published for any Genoa movement in either direction in any source consulted &mdash; thirteen arrivals and six departures, no prices. This is the single largest evidential hole on the fixture.</li>
+      <li><strong>Como &mdash; turnover medium, and every euro of it spent on the spine.</strong> F&agrave;bregas continues into his next season with a squad that finished fourth. <em>Centre-forward:</em> Moise Kean, on loan with an obligation to buy reported at &euro;35m plus &euro;5m in bonuses and a 10 per cent resale clause &mdash; comfortably the largest commitment made by any club on this card, and he is reported to be starting this match on the bench, with Andreas Douvikas keeping the shirt. <em>Centre-back:</em> Trevoh Chalobah permanently from Chelsea on a contract to 30 June 2031, plus Kaiki and Bruno from Cruzeiro, Cuenca from Barcelona and Kambwala from Villarreal. <em>Full-back:</em> Yan Couto on loan from Borussia Dortmund. <em>Midfield:</em> Luis Milla from Getafe and Mattia Liberali from Catanzaro. Out: Mergim Vojvoda to Udinese and Diego Carlos back to Fenerbah&ccedil;e at the end of his loan. <strong>Gap:</strong> Kean's is the only fee published; Chalobah, Couto, Milla, Cuenca, Kaiki, Bruno, Liberali and Kambwala all appear without one.</li>
+      <li><strong>Suspensions / absences.</strong> No suspensions on either side. Genoa are without Venturino; Como are without Addai. Both lists are unusually short for this card &mdash; two named absentees between them, against four at Auxerre and six across the Stuttgart fixture. The more consequential team-news item is not an injury at all: Kean, the &euro;35m-plus obligation, is expected to begin on the bench behind Douvikas, who has scored in five consecutive away matches.</li>
+      <li><strong>Sample.</strong> Two matches each; this is matchday 3, and the fixture opens the round on Friday night. Genoa have lost both and have not scored: 0 points, 0 goals for, 3 against, 16th. Como have 4 points from a win and a draw, 3 scored and 2 conceded, 8th &mdash; the win coming away at Napoli in the last round, and F&agrave;bregas is expected to name the same team that produced it. <strong>Gap:</strong> the individual scorelines of Genoa's two defeats and of Como's drawn match were not established in any source reached; the aggregate goal columns are, and only those are used here.</li>
+      <li><strong>Referee.</strong> Marco Guida of the Torre Annunziata section, confirmed in the published matchday-3 designations, with assistants Perrotti and Berti, Crezzini as fourth official, Aureliano on VAR and Paganessi as AVAR. His 2025&ndash;26 Serie A season ran to 15 matches with 62 yellow cards and 4 red cards, and 24.80 fouls per match. <strong>Conflict logged:</strong> one statistical service reports his average as 4.56 yellows per match, another as 4.13 cards per match; 62 yellows across 15 fixtures is 4.13, so the higher figure is not reconcilable with the raw counts and the card uses the counts. <strong>Derived, not quoted:</strong> 24.80 fouls against 4.13 cards is about 6.0 fouls per card, computed from his own two rates rather than published as such &mdash; a permissive-to-middling ratio attached to a high absolute card count, which is the profile of an official working high-foul matches rather than one with an unusually quick trigger. <strong>Gap:</strong> no penalties-per-game figure for Guida was published anywhere reached, and no record of his with either club was found.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Genoa's identifiable style is the one genuinely measured thing on this page: they lead Serie A for offensive recoveries with 20, which describes a side that wins the ball high and often, and it is consistent with a De Rossi team in its second season rather than a squad still learning a system. What that pressing has not produced is goals &mdash; none at all in two matches, against 41 in 38 last season, which was already the profile of a team that defended adequately and scored rarely. The window did address it, at volume: Colombo made permanent, El Shaarawy, Osmaji&#263; and Havel added to the front line, Sow and Traor&eacute; to the midfield behind it. Whether any of that has changed the output is unknowable from two goalless matches, and the fee-based reasoning normally available &mdash; who cost what, and therefore who is expected to play &mdash; is entirely unavailable here, because no Genoa fee is published anywhere. The shape reported for tonight is a 3&ndash;5&ndash;2 with Vitinha and Colombo paired, Bijlow in goal behind a back three of Marcandalli, &Oslash;stig&aring;rd and V&aacute;squez, and both wing-back slots filled by players covering for a sale. <strong>Gap:</strong> no xG, shot volume, home/away split, card rate or corner series for Genoa was obtainable, so the recovery count is the only style metric this card can honestly cite.</p>
+    <p>Como are the most settled side on the slate and the only one whose last-season record can be read more or less at face value: 65 scored and 29 conceded is a top-four profile at both ends, produced by the manager and most of the players who will take the field tonight. F&agrave;bregas has kept the 4&ndash;2&ndash;3&ndash;1 and, on the evidence reported, will keep the eleven that won at Napoli &mdash; Butez; Couto, Ramon, Chalobah, Valle; Milla and Da Cunha; Diao, Nico Paz, Baturina; Douvikas. Three of that eleven are summer signings, but they were signed into an existing structure rather than to replace a departed spine: Chalobah alongside Ramon in a defence that conceded 29 last season, Couto at right-back, Milla in the double pivot. Douvikas has scored in five consecutive away matches, which is the sort of run that ends without warning but is at least a run this season's squad actually produced. The single most interesting stylistic question is what Kean's arrival does to a front line that is currently working: a &euro;35m-plus obligation sitting on the bench behind a scoring incumbent is a live tactical variable rather than a settled one, and it will not be resolved by kickoff. The same <strong>gap</strong> applies as for the hosts &mdash; no xG, shot-volume, corner or foul series was obtainable for Como either.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row ok"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-mid">OK &mdash; the rare card where the two clubs' recent records were produced by the men picking the teams</span></div><div class="mkt-why">5.25 against 1.77 has an away side favoured at a ground where the home team has home advantage and little else: 4th against 16th last season, 71 points against 41, a manager and a system unchanged on both sides, and Como unbeaten in the four most recent meetings. Because neither club changed coach, this is the one moneyline on the slate not being asked to price a CV. The counterweight is small but real &mdash; neither of these two has ever beaten the other twice running, Genoa press high enough to lead the division in recoveries, and a 1.77 away price at the Ferraris is not generous.</div></div>
+      <div class="mkt-row good"><div class="mkt-name">Asian handicap &amp; double chance<span class="verdict tag t-low">Well-suited &mdash; the +1 line is priced almost evenly and both sides of it are evidenced</span></div><div class="mkt-why">Genoa +1 at 2.05, the draw on the line at 3.60 and Como &minus;1 at 3.05 is a genuinely balanced market, and unusually for this card the material to argue it is available on both sides. For the handicap: Como conceded 29 goals in 38 matches last season and have conceded twice in two this season, which is a defence that does not give up multi-goal margins easily; against it, Genoa have not scored at all this season, which is what a &minus;1 line needs. Double chance splits the same way &mdash; X2 at 1.15 and 12 at 1.30 have absorbed everything and pay accordingly, while 1X at 2.05 remains fully two-sided and rests on the one long-run fact that favours the hosts, that Como have not managed consecutive wins in this fixture.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-mid">OK &mdash; under is the lean and the season records agree, for once from stable squads</span></div><div class="mkt-why">2.00 against 1.75 leans under, and the supporting evidence is better here than anywhere else on the slate because it comes from two unchanged coaching regimes: Como conceded 29 in 38 last season, Genoa scored 41 in 38 and have scored none in two this year, and the five goals in these clubs' four combined matches this season split three&ndash;two toward Como. What keeps this from being well-suited is the same thing that makes it interesting &mdash; Como's attack has been re-equipped with a &euro;35m-plus centre-forward who has not yet started, and Genoa have added four forwards in a window whose fees nobody has published, so both attacking baselines have moving parts even though the defensive ones do not.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; priced at exact indifference, and the evidence is genuinely split</span></div><div class="mkt-why">1.87 against 1.87 is the only perfectly even market on this card, and it sits on a real disagreement rather than an absence of information. The No side has the stronger single fact: Genoa have not scored in 2026&ndash;27 and face the best defensive record on the slate, 29 conceded in 38. The Yes side has the better long-run one: Genoa scored 41 last season under this manager, they lead the division in high recoveries, and Como have conceded in one of their two matches. When a book sets both legs at the same price it is saying it cannot separate them, and on this evidence that is an accurate statement rather than a missing edge.</div></div>
+      <div class="mkt-row good"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-low">Well-suited &mdash; a confirmed high-card official and a market that agrees with him</span></div><div class="mkt-why">This is the best-evidenced discipline row on the slate. Guida is confirmed with a full team of officials, and his 2025&ndash;26 Serie A record is 62 yellows and 4 reds in 15 matches &mdash; 4.13 a game, against 24.80 fouls a game, which works out at about 6.0 fouls per card. The market is priced consistently with that in all three places: the 3.5 match line leans over at 1.63, and both 1.5 team lines lean over too, at 1.50 for the home side and 1.55 for the away side. Those three statements are arithmetically compatible with each other, which is not something that can be said of every card on these sheets. The remaining softness is that Guida's penalty rate is unpublished and one service reports his card average as 4.56 rather than 4.13.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Corners<span class="verdict tag t-mid">OK &mdash; the race is coherent, the 8.5 line is priced at a coin-flip with nothing behind it</span></div><div class="mkt-why">The race at 1.45 for Como against 3.05 restates the outright in territorial terms and is supported by the same facts: the better team, unchanged, unbeaten in the fixture's recent history, against hosts who have not scored. The 8.5 total at 1.80 both ways is the most honest price on the card and also the least informative: no corner-count series was obtainable for either club, for either season, and 8.5 is the lowest corner line on this slate, which itself suggests the book expects a low-volume game. Genoa's leading recovery count is the one piece of evidence that bears on territory at all, and it points toward a game broken up in midfield rather than one played in the boxes.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li>Genoa's 0 goals in 2 matches is the loudest number on the page and the least stable: it is two matches, from a side that scored 41 last season under the same manager and then added Colombo permanently, El Shaarawy, Osmaji&#263; and Havel to the attack. Two goalless matches do not establish that a rebuilt front line cannot score; they establish that it has not yet.</li>
+      <li>No fee is published for any Genoa transfer, in or out. Thirteen arrivals and six departures, and not a single price in any source consulted &mdash; which means the usual proxy for who is expected to start, and how seriously each position was addressed, is simply unavailable for one of the two teams here.</li>
+      <li>Como's &euro;35m-plus centre-forward is reported to be starting on the bench. Kean's obligation-to-buy is the largest commitment on this slate, and the incumbent he has not yet displaced has scored in five straight away matches. Any reasoning about the away attack has to specify which version of it is on the pitch and when.</li>
+      <li>The head-to-head is four matches long and says Como are unbeaten in it &mdash; but it also says neither club has ever won two consecutive matches against the other, and Como won the last one. Both halves of that record are the same size and point in opposite directions.</li>
+      <li><strong>Most sensitive:</strong> the goals total and BTTS, which both depend on whether Genoa's goalless start reflects a rebuilt attack or a two-match sample, and on when a &euro;35m striker enters the game. <strong>Least sensitive:</strong> the discipline family, where a confirmed official's 15-match record, his foul rate and all three card lines in this market point the same way &mdash; and, unusually, the handicap, because both clubs' defensive records were produced by the coaches picking tonight's teams.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>The handicap is more robust than the outright here because both clubs kept their manager: Como's 29 goals conceded in 38 matches and Genoa's inability to score are properties of the same coaching regimes that will pick tonight's teams, so a margin question can be argued from continuity rather than from a CV &mdash; which is not true of any other fixture on this card.</li>
+      <li>The discipline row is more robust than either goals market here, and it is the only place on the slate where that is true: Guida's 62 yellows in 15 matches and 24.80 fouls a game are a completed season of evidence, the appointment is confirmed with a full officiating team, and the match line and both team lines lean the same way rather than contradicting each other.</li>
+      <li>Both-teams-to-score is more robust than the 2.5 total because it needs only one question answered &mdash; whether a side that has not scored in two matches scores once &mdash; while the total additionally needs a view on when a &euro;35m-plus centre-forward comes off the bench and what he does to a Como attack that is currently working without him.</li>
+      <li>The corner race is more robust than the corner line because the race asks only that the 1.77 favourite also holds territory, whereas the 8.5 line asks for a volume estimate on two teams for whom no corner series exists in any source reached &mdash; and 8.5 is already the lowest corner line on this slate.</li>
+      <li>Where the book has priced exact indifference it is telling the truth about its own information. BTTS at 1.87 both ways and corners at 1.80 both ways are the two flattest prices anywhere on this card, and they sit precisely where the evidence divides: a goalless attack against the meanest defence on the slate, and two teams whose territorial volume nobody publishes.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture pending" id="f4">
+  <div class="fx-head">
+    <p class="fx-league">Awaiting research &middot; competition unconfirmed</p>
+    <h2 class="fx-title">Real Betis &ndash; Real Madrid</h2>
+    <p class="fx-sub">21:00 CEST &middot; venue unconfirmed &middot; odds only</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>6.25 &middot; 5.00 &middot; 1.43</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>2.80 &middot; 1.16 &middot; 1.11</dd></div>
+      <div class="od"><dt>EH +1 (1/X/2)</dt><dd>2.80 &middot; 4.10 &middot; 2.05</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.35 / 3.00</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.52 / 2.40</dd></div>
+      <div class="od"><dt>Cards 4.5 U / O</dt><dd>1.75 / 1.85</dd></div>
+      <div class="od"><dt>Corners 10.5 U / O</dt><dd>1.75 / 1.95</dd></div>
+      <div class="od"><dt>Corner race 1/X/2</dt><dd>3.15 &middot; 9.00 &middot; 1.43</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f5">
+  <div class="fx-head">
+    <p class="fx-league">Awaiting research &middot; competition unconfirmed</p>
+    <h2 class="fx-title">Ipswich Town &ndash; Liverpool</h2>
+    <p class="fx-sub">21:00 CEST &middot; venue unconfirmed &middot; odds only</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>5.75 &middot; 4.70 &middot; 1.50</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>2.55 &middot; 1.18 &middot; 1.13</dd></div>
+      <div class="od"><dt>EH +1 (1/X/2)</dt><dd>2.55 &middot; 4.05 &middot; 2.20</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.37 / 2.90</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.48 / 2.50</dd></div>
+      <div class="od"><dt>Cards 4.5 U / O</dt><dd>1.57 / 2.15</dd></div>
+      <div class="od"><dt>Home cards 2.5 U / O</dt><dd>1.55 / 2.10</dd></div>
+      <div class="od"><dt>Away cards 1.5 U / O</dt><dd>2.00 / 1.60</dd></div>
+      <div class="od"><dt>Corners 9.5 U / O</dt><dd>2.00 / 1.70</dd></div>
+      <div class="od"><dt>Corner race 1/X/2</dt><dd>3.25 &middot; 9.50 &middot; 1.40</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f6">
+  <div class="fx-head">
+    <p class="fx-league">Awaiting research &middot; competition unconfirmed</p>
+    <h2 class="fx-title">PSG &ndash; Monaco</h2>
+    <p class="fx-sub">21:05 CEST &middot; venue unconfirmed &middot; odds only</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.35 &middot; 5.50 &middot; 7.50</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>1.08 &middot; 1.14 &middot; 3.15</dd></div>
+      <div class="od"><dt>EH &minus;2 (1/X/2)</dt><dd>3.00 &middot; 4.40 &middot; 1.87</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.32 / 3.15</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.57 / 2.30</dd></div>
+      <div class="od"><dt>Cards 3.5 U / O</dt><dd>1.80 / 1.80</dd></div>
+      <div class="od"><dt>Corners 9.5 U / O</dt><dd>1.80 / 1.85</dd></div>
+      <div class="od"><dt>Corner race 1/X/2</dt><dd>1.30 &middot; 9.50 &middot; 3.95</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<section>
+  <h2 class="sec">Across the card</h2>
+  <ul><li><strong>Best structurally supported family so far &mdash; discipline at Genoa&ndash;Como, and only there.</strong> Marco Guida is confirmed with a full officiating team, his 2025&ndash;26 Serie A season ran to 62 yellows and 4 reds in 15 matches at 24.80 fouls a game, and the 3.5 match line and both 1.5 team lines lean the same way. That internal consistency is rare on these sheets and it is worth naming when it appears; the equivalent row at Stuttgart has the referee&rsquo;s own average sitting on the far side of the line from the market&rsquo;s lean.</li><li><strong>Least supported family &mdash; goals totals, on every card built so far.</strong> Lyon&ndash;Auxerre asks a 1.60 over to rest on eight goals conceded in two matches by a defence missing four players. Stuttgart&ndash;K&ouml;ln prices over 2.5 at 1.33 on the back of a 5&ndash;1 away at the champions and a 3&ndash;2 won by a striker on debut. Genoa&ndash;Como leans under on the only stable pair of records on the board, which is the strongest version of the argument and still rests on a rebuilt Genoa attack that has not scored.</li><li><strong>The one fixture that reads normally.</strong> Genoa&ndash;Como is the only match on this card where neither club changed manager and neither spine was dismantled: De Rossi and F&agrave;bregas both continue, Como&rsquo;s 29 goals conceded in 38 matches and Genoa&rsquo;s 20 offensive recoveries were produced by the men picking tonight&rsquo;s teams, and the handicap and discipline rows can be argued from continuity rather than from a curriculum vitae.</li><li><strong>Where the book has priced indifference.</strong> Genoa&ndash;Como carries both of the flattest markets on the board &mdash; both teams to score at 1.87 each way and corners at 1.80 each way &mdash; and in both cases the evidence really is split rather than absent. Alongside them, Lyon&rsquo;s cards line at 1.85 against 1.75 and PSG&ndash;Monaco&rsquo;s at 1.80 both ways say the same thing about the discipline family that the referee research says: the numbers that would separate the two sides of these rows are the ones nobody publishes.</li><li><strong>What the three blank cards below are not.</strong> They are not a view that those fixtures are thin. All six fixtures on this slate were tiered T1, and the three that carry odds only are simply the ones this pass has not reached.</li></ul>
+</section>
+
+<footer>
+  <p><strong>Scope.</strong> This page rates market <em>families</em> only. It contains no selections, no sides, no recommended lines and no confidence labels &mdash; by design. Where evidence is thin it says so rather than filling the gap.</p>
+  <p><strong>Sources.</strong> Sources are logged fixture by fixture in <span class="mono">sources_12.md</span> as each card is built. For the three cards on this board: Sports Mole match previews for team news and head-to-head; Wikipedia season pages for the 2025&ndash;26 Ligue 1, Bundesliga and Serie A final tables; Sofascore, Forebet and Sky Sport Italia listings for kickoff, round number and probable lineups; Foot Mercato, TeamAJA, Sportschau, Weltfussball, neunzigplus, Il Fatto Quotidiano and Sky Sport Italia for transfer ledgers and manager appointments; Eurosport and Bundesliga.com for the Fonseca and Wagner appointments and the Dallinga loan; Lyon Foot, the DFB Datencenter designations and Pianeta Genoa 1893 / Calcio News 24 for the three referee appointments; and Virgilio Sport, valuestats, kicker and statz.ai for the officials&rsquo; card and foul records. Every gap, conflict and blocked page &mdash; including the two referee databases that returned a JavaScript shell and an HTTP 403 &mdash; is recorded in the same file rather than filled in.</p>
+</footer>
+
+</div>
