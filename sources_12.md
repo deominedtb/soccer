@@ -178,3 +178,52 @@
   → Describes a **Real Madrid–Real Betis** at 16:15 on a Saturday, i.e. the reverse fixture. Not used.
 - Dedicated jornada-4 designation search returned no appointment; the Jornada Perfecta fixture page lists no referee; https://www.estadisticaslaliga.es/arbitros.php surfaced but carried no appointment for this match.
   → **Gap:** no referee appointment for this fixture could be established from any source reached, and therefore no cards-per-game, fouls-per-card or penalty rate appears on the card. Discipline is marked evidence-thin in section C for this reason alone, per the research spec.
+
+---
+
+## f5 · Ipswich Town – Liverpool
+
+**Fixture, venue, kickoff, team news**
+- Goal.com — Ipswich Town vs Liverpool Premier League preview
+  https://www.goal.com/en/news/ipswich-town-liverpool-premier-league-preview/blt68667b1af269e5f5
+  → 4 September 2026, Portman Road, 20:00 BST. Managers Gary O'Neil (Ipswich) and Andoni Iraola (Liverpool). Liverpool out: Conor Bradley, Hugo Ekitike, Joe Gomez, Federico Chiesa, Vítězslav Jaroš, Stefan Bajčetić, Giovanni Leoni. Ipswich out: Azor Matusiwa, Jack Taylor, Jaden Philogene-Bidace; no suspensions. Probable XIs — Ipswich (4-2-3-1): Scherpen; O'Shea, Diop, Greaves, Davis; Nunez, Lukić; Fatawu, Enciso, Maeda; Emersonn. Liverpool (4-2-3-1): Alisson; Frimpong, Jacquet, Van Dijk, Kerkez; Mac Allister, Szoboszlai; Gakpo, Wirtz, Muñoz; Isak. Ipswich beat Sunderland 2–1 and lost 5–2 at Manchester United, three wins in their last five including 3–1 v Leicester; Liverpool drew 2–2 at Newcastle and 2–2 with Nottingham Forest. H2H: Liverpool have won three of the last five, no Ipswich win; most recent Premier League meeting 2–0 Liverpool, 17 August 2024.
+- Sports Mole fixture page; This Is Anfield preview (https://www.thisisanfield.com/2026/09/ipswich-vs-liverpool-match-preview-team-news-how-to-watch/ → HTTP 403, body not served; not used).
+  https://www.sportsmole.co.uk/football/premier-league/ipswich-town-vs-liverpool_game_256814.html
+  → Corroborates matchweek 3, Friday-night kickoff, Florentino Luís a doubt to start, Emersonn expected to start.
+
+**League context, promotion and last-season baselines**
+- Wikipedia — 2025–26 Premier League (final table)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_Premier_League
+  → Liverpool 5th, 38/17/9/12, 63 GF, 53 GA, 60 pts. Arsenal champions on 85. Promoted into 2025-26: Leeds United, Burnley, Sunderland. Relegated at the end of 2025-26: Wolves, Burnley, West Ham — so two of the three promoted clubs survived.
+  → **Gap:** no xG, shot volume, home/away split, foul or card rate; none obtainable elsewhere for either club.
+- Premier League / NBC Sports / Wikipedia — Ipswich Town promotion and 2026-27 season pages
+  https://www.premierleague.com/en/news/4644752/all-you-need-to-know-as-ipswich-town-are-promoted-to-the-premier-league
+  https://en.wikipedia.org/wiki/2026%E2%80%9327_Ipswich_Town_F.C._season
+  → Ipswich promoted as Championship runners-up, confirmed with a 3–0 final-day win over QPR, back at the first attempt after relegation in 2024-25.
+- Sky Sports / The Analyst / EPL Index — promoted-club survival base rates
+  https://www.skysports.com/football/story-telling/11715/13413860/premier-league-relegation-2025-26-sky-sports-analyses-how-to-survive-in-englands-top-flight-after-last-six-promoted-clubs-stuggled
+  → ≈47% of promoted clubs relegated after one season; all three promoted clubs went down in both 2023-24 and 2024-25 (Ipswich among the 2024-25 three); 2022-23 all three survived.
+
+**Transfers and manager**
+- Sports Mole — Ipswich summer transfers, all confirmed ins and outs 2026; bet365 news — every Ipswich signing
+  https://www.sportsmole.co.uk/football/ipswich-town/transfer-talk/feature/ipswich-summer-transfers-all-confirmed-ins-and-outs-for-2026_599297.html
+  https://news.bet365.com/en-gb/article/every-ipswich-town-signing-summer-transfer-window/2026080811444103856
+  → Kieran McKenna stepped down at the end of last season to focus on family; Gary O'Neil announced 23 June 2026 from Strasbourg on a three-year deal. IN: Issa Diop (CB, Fulham), Daizen Maeda (CF, Celtic, £10m), Kjell Scherpen (GK, Union Saint-Gilloise, £8.5m), Florentino Luís (CM, Burnley, £16m), Saša Lukić (DM, Fulham), Emersonn (CF, Brazil). OUT: Elkan Baggott (Millwall), Wes Burns (Leicester City).
+  → **Gap:** no fee published for Diop, Lukić, Emersonn or either departure; no aggregate window balance obtainable.
+- This Is Anfield / Sports Mole / Empire of the Kop / Yahoo — Liverpool summer 2026 window
+  https://www.thisisanfield.com/2026/09/liverpool-transfers-summer-2026-roundup-ins-outs-loans/
+  https://www.empireofthekop.com/2026/09/02/liverpool-net-spend-summer-2026-transfer-window/
+  https://www.sportsmole.co.uk/football/liverpool/transfer-talk/feature/liverpool-summer-transfers-all-confirmed-ins-and-outs-for-2026_599112.html
+  → Arne Slot sacked after a stuttering title defence; Andoni Iraola appointed. IN: Bradley Barcola (PSG, £123m), Jeremy Jacquet (Rennes, £60m), Víctor Muñoz (Osasuna, £34.5m), Ronald Araújo (loan, Barcelona). OUT: Mohamed Salah (after nine seasons), Curtis Jones (Inter, £30m), Andy Robertson (Tottenham, free), Ibrahima Konaté (Real Madrid, free). Six in, six out, eleven loans.
+  → **Conflict logged:** one outlet reports £218.4m outlay against £31.7m recouped, another £242.5m of spending; the two do not reconcile and neither is carried, though both agree Liverpool had the largest net spend in the division.
+
+**Referee**
+- Rush The Kop / Live4Liverpool — match officials appointed for the Friday-night fixture
+  https://rushthekop.com/ipswich-town-vs-liverpool-premier-league-match-officials-appointed-for-friday-night-clash
+  → Darren England confirmed. Assistants Richard West and Adrian Holmes, fourth official Lewis Smith, VAR Nick Hopton, AVAR Gary Beswick.
+- Referee-record search aggregate (valuestats / statz.ai / worldfootball)
+  https://valuestats.com/en/referee/14812-darren-england
+  https://statz.ai/referee/darren-england
+  → 2025-26 Premier League: 23 matches, 101 yellows, 3 second-yellow dismissals, 0 straight reds, 4.48 yellows per game, 22.04 fouls per game.
+  → **Derived, flagged in the card:** ≈4.9 fouls per card from the two published rates.
+  → **Gap:** no penalties-per-game figure published anywhere reached; no record with either club found.
