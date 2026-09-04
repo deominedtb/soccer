@@ -85,3 +85,49 @@
   → 11 Bundesliga matches, 42 yellows, 6 reds, 4.09 yellows per game, 23.09 fouls per game.
   → **Derived, flagged in the card:** ≈5.6 fouls per yellow, computed from the two published rates — not a published fouls-per-card figure.
   → **Gap:** no penalties-per-game figure for Dingert published in any source reached; no record specific to Stuttgart or Köln found.
+
+---
+
+## f3 · Genoa – Como
+
+**Fixture, venue, kickoff, team news**
+- Eurosport IT — Genoa-Como: probabili formazioni, statistiche, quando e dove vederla
+  https://www.eurosport.it/calcio/serie-a/2026-2027/genoa-como-probabili-formazioni-statistiche-quando-e-dove-vederla_sto23333897/story.shtml
+  → Friday 4 September 2026, 20:45, Stadio Luigi Ferraris; opens matchday 3, DAZN. Genoa (3-5-2) Bijlow; Marcandalli, Østigård, Vásquez; Ellertsson, Sow, Frendrup, Baldanzi, Mitaj; Vitinha, Colombo — De Rossi. Como (4-2-3-1) Butez; Couto, Ramon, Chalobah, Valle; Milla, Da Cunha; Diao, Nico Paz, Baturina; Douvikas — Fàbregas. Genoa unavailable: Venturino. Como unavailable: Addai. "Genoa have lost the first two matches of this Serie A without scoring." H2H: Como unbeaten in the four most recent meetings (2 W, 2 D); neither club has ever won two in a row against the other. Genoa lead Serie A with 20 offensive recoveries; Douvikas has scored in five consecutive away matches.
+- Sky Sport IT — Genoa-Como, le probabili formazioni della 3ª giornata
+  https://sport.sky.it/calcio/serie-a/2026/09/03/genoa-como-probabili-formazioni-3-giornata
+  → Fàbregas expected to confirm the eleven that won at Napoli; new signing Kean expected to start on the bench. Ellertsson covers the sold Norton-Cuffy at right wing-back, Mitaj on the left.
+- Serie A table search aggregate (Sky / Corriere dello Sport live tables) — after 2 rounds: Como 8th, 4 points (1 W, 1 D), 3 GF, 2 GA; Genoa 16th, 0 points, 0 GF, 3 GA.
+  https://sport.sky.it/calcio/serie-a/classifica
+  → **Gap:** individual scorelines of Genoa's two defeats and of Como's draw were not established in any source reached; only the aggregate columns are used.
+
+**League context and last-season baselines**
+- Wikipedia — 2025–26 Serie A (final table)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_Serie_A
+  → Como 4th, 38/20/11/7, 65 GF, 29 GA, 71 pts, Champions League. Genoa 16th, 38/10/11/17, 41 GF, 51 GA, 41 pts. Promoted into 2025-26: Sassuolo, Pisa, Cremonese; relegated at the end of 2025-26: Cremonese, Hellas Verona, Pisa. Neither club here is promoted.
+  → **Gap:** no xG, shot volume, home/away split, foul or card rate on the page; none obtainable elsewhere for either club.
+
+**Transfers and manager**
+- Il Fatto Quotidiano — Serie A 2026-27 guide by club (Genoa page); Eurosport IT — tabellone mercato Serie A 2026-27; DAZN — Rosa Genoa 2026-27
+  https://www.ilfattoquotidiano.it/2026/08/20/serie-a-2026-27-acquisti-cessioni-formazioni-tipo-squadre/8483691/7/
+  https://www.eurosport.it/calcio/calciomercato/2026-2027/il-tabellone-del-mercato-estivo-della-serie-a-2026-27-acquisti-cessioni-ufficialita-e-tutte-le-operazioni_sto23311886/story.shtml
+  → Genoa: De Rossi confirmed, continuing last season's project. IN: Marcelo Vaz (Varesina), Meichtry (Thun), Puczka (Juventus NextGen), Havel (Hartberg), Hamari Traoré (Marseille), Mitaj (Al-Ittihad), Wiafe (Modena), Djibril Sow (Sevilla), Osmajić (Preston North End), A. Fabbri (Hellas Verona), Drameh (Hull City), Lorenzo Colombo (permanent from Milan, contract to 2029), El Shaarawy. OUT: Vogliacco (permanent, Cremonese), Malinovskyi, Ekhator, Ekuban, Leali (GK), Norton-Cuffy.
+  → **Gap:** no fee is published for any Genoa movement in either direction — thirteen arrivals, six departures, no prices anywhere consulted.
+- Il Fatto Quotidiano — Serie A 2026-27 guide by club (Como page); Sky Sport IT — acquisti ufficiali estate 2026
+  https://www.ilfattoquotidiano.it/2026/08/20/serie-a-2026-27-acquisti-cessioni-formazioni-tipo-squadre/8483691/5/
+  https://sport.sky.it/calciomercato/calciomercato-serie-a-estate-2026-acquisti-ufficiali
+  → Como: Fàbregas confirmed. IN: Moise Kean (loan with obligation to buy, €35m plus €5m bonuses, 10% sell-on), Trevoh Chalobah (permanent from Chelsea, contract to 30 June 2031), Yan Couto (loan, Borussia Dortmund), Kaiki (Cruzeiro), Bruno (Cruzeiro), Cuenca (Barcelona), Luis Milla (Getafe), Mattia Liberali (Catanzaro), Kambwala (Villarreal). OUT: Vojvoda (Udinese), Diego Carlos (loan ended, back to Fenerbahçe).
+  → **Gap:** Kean's is the only published fee; no price for Chalobah, Couto, Milla, Cuenca, Kaiki, Bruno, Liberali or Kambwala.
+
+**Referee**
+- Pianeta Genoa 1893 / Genoa Oggi / Calcio News 24 — designazioni 3ª giornata
+  https://www.pianetagenoa1893.net/primo-piano/genoa-como-larbitro-e-guida-aureliano-e-al-var-paganessi-e-avar/
+  https://www.calcionews24.com/arbitri-serie-a-designazioni-3a-giornata-serie-a-2026-2027/
+  → Marco Guida (Torre Annunziata) confirmed. Assistants Perrotti and Berti, fourth official Crezzini, VAR Aureliano, AVAR Paganessi.
+- Referee-record search aggregate (Virgilio Sport / valuestats / TMW season tables)
+  https://sport.virgilio.it/calcio/arbitri/marco-guida/
+  https://valuestats.com/en/referee/14343-marco-guida
+  → 2025-26 Serie A: 15 matches, 62 yellows, 4 reds, 24.80 fouls per match.
+  → **Conflict logged:** one service reports 4.56 yellows per match, another 4.13 cards per match; 62 in 15 is 4.13, so the counts are used and the higher average is not carried.
+  → **Derived, flagged in the card:** ≈6.0 fouls per card from the two published rates.
+  → **Gap:** no penalties-per-game figure for Guida published anywhere reached; no record with either club found.
