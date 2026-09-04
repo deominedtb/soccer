@@ -131,3 +131,50 @@
   → **Conflict logged:** one service reports 4.56 yellows per match, another 4.13 cards per match; 62 in 15 is 4.13, so the counts are used and the higher average is not carried.
   → **Derived, flagged in the card:** ≈6.0 fouls per card from the two published rates.
   → **Gap:** no penalties-per-game figure for Guida published anywhere reached; no record with either club found.
+
+---
+
+## f4 · Real Betis – Real Madrid
+
+**Fixture, venue, kickoff, team news**
+- Teleprensa — Previa del Real Betis - Real Madrid; Comuniate / Comunio / Deportes TVC probable-lineup pages
+  https://www.teleprensa.com/articulo/deportes/previa-real-betis-real-madrid/202609031617232499577.html
+  https://magazine.comunio.es/jornada-4-alineaciones-probables-del-betis-real-madrid-2/
+  → Friday 4 September 2026, 21:00, jornada 4, on Movistar; venue given as Estadio La Cartuja, Seville. Betis out: Giovani Lo Celso, Aitor Ruibal, Ez Abde, Dani Ceballos (manager Pellegrini). Real Madrid out: Tchouaméni, Raúl Asencio, Ferland Mendy, Éder Militão, Rodrygo, Endrick, Thiago Pitarch. Probable XIs — Betis: Valles; Bellerín, Llorente, Natan, Fran García; Marc Roca, Bernal, Fornals; Antony, Cucho Hernández, Riquelme. Real Madrid: Courtois; Dumfries, Konaté, Huijsen, Cucurella; Valverde, Bernardo Silva; Güler, Bellingham, Vinícius; Mbappé. "Real Madrid llega invicto con pleno de victorias, aunque no gana al equipo verdiblanco."
+- Jornada Perfecta — Betis-Real Madrid fixture page
+  https://www.jornadaperfecta.com/partido/13347/betis-real-madrid
+  → 04/09/2026 21:00, jornada 4. Absences corroborated, with Diego Conde additionally listed for Betis. No referee named.
+  → **Conflict logged:** this page gives the venue as Benito Villamarín; the preview sources give La Cartuja. Both grounds have hosted Betis home matches in recent seasons; left unresolved in the card.
+- LaLiga standings search aggregate (Claro Sports / El Debate, after jornada 3)
+  https://www.clarosports.com/futbol/laliga/tabla-posiciones-liga-espanola-jornada-3/
+  → Real Madrid 2nd, 9 points from 3 matches (three wins), behind Barcelona on goal difference; Real Betis 7th, 6 points (2 W, 1 L).
+  → **Gap:** individual scorelines for either club's three matches were not established.
+
+**League context and last-season baselines**
+- Wikipedia — 2025–26 La Liga (final table)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_La_Liga
+  → Real Madrid 2nd, 38/27/5/6, 77 GF, 35 GA, 86 pts. Real Betis 5th, 38/15/15/8, 59 GF, 48 GA, 60 pts. Barcelona champions on 94 points, clinched 10 May 2026 with a 2–0 win over Real Madrid. Promoted into 2025-26: Levante, Elche, Oviedo; relegated at the end of 2025-26: Mallorca, Girona, Real Oviedo. Neither club here is promoted.
+  → **Gap:** no xG, shot volume, home/away split, foul or card rate; none obtainable elsewhere for either club.
+
+**Transfers and manager**
+- El Pespunte / Jornada Perfecta / Fichajes.com — LaLiga 2026-27 altas y bajas (Betis)
+  https://www.elpespunte.es/articulo/futbol/mercado-fichajes-laliga-2026-27-fichajes-altas-bajas-todos-equipos-primera-division/20260901073854148606.html
+  https://www.fichajes.com/equipo/real-betis-balompie/altas-bajas/
+  → Betis: Pellegrini continuing. IN: Fran García (Real Madrid), Facundo Bernal (Fluminense), Troy Parrott (AZ Alkmaar), Diego Conde (loan, Villarreal). OUT: Mendy (Rayo Vallecano), Sergi Altimira (Sporting CP), Mateo Flores (Arouca), Gonzalo Petit (loan, Cádiz), Pau López (Andorra), Chimy Ávila (Independiente), Amrabat (loan ended, Fenerbahçe), Ricardo Rodríguez and Bakambu (free agents), Adrián (retired).
+  → **Gap:** no fee published for any Betis movement, including Fran García.
+- DAZN / Futbolfantasy / Wikipedia (es) — Real Madrid 2026-27 altas y bajas; corroborated against this repo's own fx_10_f6.html
+  https://www.dazn.com/es-MX/news/f%C3%BAtbol/fichajes-real-madrid-2026-altas-bajas-rumores-plantilla-actualizada/sngj3n46cxwf1uu0v9ggnix93
+  https://es.wikipedia.org/wiki/Anexo:Temporada_2026-27_del_Real_Madrid_Club_de_F%C3%BAtbol
+  → Real Madrid: José Mourinho appointed, announced 11 June 2026, contract to 30 June 2029, from Benfica for a reported €15m compensation, replacing Xabi Alonso (who took over in January and finished second). IN: Denzel Dumfries (Inter, €20m), Ibrahima Konaté (free, Liverpool contract expiry), Marc Cucurella (Chelsea), Bernardo Silva (Manchester City, free), Carlos Espí (Levante). OUT: Dani Carvajal, David Alaba, Dani Ceballos (to Betis).
+  → **Conflict logged:** one source calls both Cucurella and Bernardo Silva free agents; another lists Cucurella from Chelsea without terms. Cucurella's fee, if any, is not established.
+  → **Gap:** no fee published for Konaté, Cucurella, Bernardo Silva, Espí or any departure.
+
+**Referee — not established**
+- Mi Betis — "Soto Grado, el árbitro para el Real Betis - Real Madrid"
+  https://mibetis.com/soto-grado-el-arbitro-para-el-real-betis-real-madrid/
+  → Names César Soto Grado with Pablo González Fuertes on VAR — but the article is about a **matchday 32** Betis–Real Madrid at La Cartuja, i.e. a previous season. Not used.
+- Search aggregate naming Sánchez Martínez with Estrada Fernández on VAR
+  https://www.ysscores.com/en/news/13951006/Referee-for-Real-Madrid-vs-Real-Betis-in-La-Liga
+  → Describes a **Real Madrid–Real Betis** at 16:15 on a Saturday, i.e. the reverse fixture. Not used.
+- Dedicated jornada-4 designation search returned no appointment; the Jornada Perfecta fixture page lists no referee; https://www.estadisticaslaliga.es/arbitros.php surfaced but carried no appointment for this match.
+  → **Gap:** no referee appointment for this fixture could be established from any source reached, and therefore no cards-per-game, fouls-per-card or penalty rate appears on the card. Discipline is marked evidence-thin in section C for this reason alone, per the research spec.
