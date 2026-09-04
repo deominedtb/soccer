@@ -41,3 +41,47 @@
 - Adam Choi — Ruddy Buquet stats https://www.adamchoi.co.uk/referee/11729/ruddy-buquet-stats → page served without data (JavaScript shell); not used.
 - Playerstats.football — referee 347 https://playerstats.football/referee/347 → HTTP 403, body not served.
   → **Gap:** these two are the reason no fouls-per-card ratio for Buquet appears in the card, and no record specific to Lyon or Auxerre was found.
+
+---
+
+## f2 · Stuttgart – Köln
+
+**Fixture, venue, kickoff, team news**
+- Sports Mole — Preview: Stuttgart vs FC Koln - prediction, team news, lineups
+  https://www.sportsmole.co.uk/football/stuttgart/preview/stuttgart-vs-fc-koln-prediction-team-news-lineups_604211.html
+  → Friday 4 September 2026, MHP Arena. Stuttgart lost 5–1 at Bayern Munich on MD1; Köln beat Hoffenheim 3–2. Manager Sebastian Hoeneß (Stuttgart). Stuttgart out: Justin Diehl (thigh), Nikolas Nartey (hamstring), Dan-Axel Zagadou (hamstring). Köln out: Timo Hübers (knee), Sebastian Sebulonsen (hamstring), Gian-Luca Waldschmidt expected back this month. H2H: Köln one win in the last seven, five defeats; Stuttgart won 3–1 at home in 2025-26. Stuttgart lost only three domestic matches at the MHP Arena in 2025-26, winning 13, drawing 3, with eight clean sheets. Köln have won once in their last 14 away matches in all competitions.
+- Search aggregate (Sofascore / fubo / Forebet listings) — Bundesliga round 2, kickoff 18:30 UTC / 20:30 CEST, MHP Arena; Dallinga scored twice on debut against Hoffenheim; Stuttgart 18th, Köln 6th after one round.
+  https://www.sofascore.com/football/match/vfb-stuttgart-1-fc-koln/wdbsCdb
+  https://www.forebet.com/en/football-match-previews/30183-stuttgart-face-koln-can-the-hosts-bounce-back-in-bundesliga-round-2
+
+**League context and last-season baselines**
+- Wikipedia — 2025–26 Bundesliga (final table)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_Bundesliga
+  → Stuttgart 4th, 34/18/8/8, 71 GF, 49 GA, 62 pts. Köln 14th, 34/7/11/16, 49 GF, 63 GA, 32 pts. Promoted into 2025-26: Hamburger SV and 1. FC Köln (so 2026-27 is Köln's second season back). Relegated at the end of 2025-26: Wolfsburg, Heidenheim, St. Pauli. Promoted into 2026-27: SC Paderborn (play-off win over Wolfsburg). Bayern Munich champions with 122 goals scored.
+  → **Gap:** no xG, shot volume, home/away split, foul or card rate on the page; none obtainable elsewhere for either club.
+
+**Transfers and manager**
+- Sportschau — Die Zu- und Abgänge des VfB Stuttgart zur Saison 2026/27; Weltfussball / ZVW window summaries
+  https://www.sportschau.de/fussball/bundesliga/die-transfers-vfb-stuttgart-zur-saison-2026-27,wechselboerse-vfb-stuttgart-saison-26-27-100.html
+  https://www.weltfussball.de/teams/te2076/vfb-stuttgart/transfers/
+  → Hoeneß continues as head coach. IN: Dženan Pejčinović (Wolfsburg, ~€25m), Bilal El Khannouss (Leicester City, permanent, ~€18m), Leo Sauer (Feyenoord, ~€13m), Grischa Prömel (Hoffenheim, free), Dennis Seimen (GK, loan return from Paderborn), Marius Funk (GK, free, Energie Cottbus), Leonidas Stergiou (loan return from Heidenheim), Ertugrul Yigit (U19). OUT: Alexander Nübel (GK, to Bayern Munich), Chema Andrés (Brighton), Lazar Jovanović (Udinese), Noah Darvich (loan, Elversberg).
+  → **Gap:** no fee published for Nübel, Andrés or Jovanović; the three incoming fees are reported as approximations, not club-confirmed.
+- Sportschau — Die Zu- und Abgänge des 1. FC Köln zur Saison 2026/27; neunzigplus — Köln Transferbilanz 2026; Bundesliga.com — Dallinga loan; Bundesliga.com — René Wagner bleibt Cheftrainer
+  https://www.sportschau.de/fussball/bundesliga/die-transfers-fc-koeln-zur-saison-2026-27,wechselboerse-fc-koeln-saison-26-27-100.html
+  https://neunzigplus.de/bundesliga/1-fc-koeln-transferbilanz-2026-2565-mio-ausgaben-18-mio-einnahmen-alle-zugaenge-abgaenge-und-die-prognose
+  https://www.bundesliga.com/de/bundesliga/news/1-fc-koln-thijs-dallinga-leihe-transfer-wechsel-fc-bologna-38617
+  https://www.bundesliga.com/en/bundesliga/news/cologne-appoint-rene-wagner-head-coach-37519
+  → René Wagner head coach since March 2026, promoted from assistant, confirmed permanently on a contract to 2028. 10 arrivals, 8 departures. IN: Thijs Dallinga (loan from Bologna, purchase option ≈ €10m), Jahmai Simpson-Pusey (Manchester City, loan), Julian Pauli (Dynamo Dresden, loan), Elias Bakatukanda (Blau-Weiß Linz, loan). OUT: Jakub Kamiński to Benfica €17m, Ellyes Skhiri to Eintracht Frankfurt, Gideon Mensah to AJ Auxerre (free).
+  → **Conflict logged:** window balance reported two ways — €25.65m spent / €18m received (net −€7.65m) in one outlet, €9.4m spent / €18m received in another. Both agree on the €17m Kamiński fee. Neither balance carried as established.
+
+**Referee**
+- Search aggregate of the matchday-2 designations (DFB Datencenter listing, club/forum confirmations)
+  https://datencenter.dfb.de/global_referee_schedule
+  https://brustring-forum.de/forum/index.php?thread%2F2486-2-spieltag-vfb-stuttgart-1-fc-k%C3%B6ln-am-freitag-04-09-2026-um-20-30-uhr%2F=
+  → Christian Dingert confirmed. Assistants Nikolai Kimmeyer and Alexander Sather, fourth official Felix Wagner, VAR Bastian Dankert and Robert Hartmann. Kickoff 20:30, MHP Arena.
+- Kicker / statz.ai referee pages via search — Dingert 2025-26
+  https://www.kicker.de/christian-dingert/schiedsrichter/bundesliga/2025-26
+  https://statz.ai/referee/christian-dingert
+  → 11 Bundesliga matches, 42 yellows, 6 reds, 4.09 yellows per game, 23.09 fouls per game.
+  → **Derived, flagged in the card:** ≈5.6 fouls per yellow, computed from the two published rates — not a published fouls-per-card figure.
+  → **Gap:** no penalties-per-game figure for Dingert published in any source reached; no record specific to Stuttgart or Köln found.
