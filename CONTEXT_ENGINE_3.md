@@ -344,9 +344,15 @@ is the wrong signal.
 PHASE 2 — ONE FIXTURE PER RUN  (repeat until none left)
 
 Take the first TODO fixture in progress_N.md whose tier is T1 or T2,
-skipping T3 rows entirely. Research it to the depth that tier allows
-— T2 caps research at 2 searches per team plus the referee searches
-and drops sections B and E. Write the
+skipping T3 rows entirely. A star on the tier is a marker that the
+tier is mine, not part of it — strip it before you compare, so T1*
+reads as T1 and T3* as T3. Read it any other way and a fixture I
+forced to T1 matches neither T1 nor T2, and is silently skipped for
+the whole slate.
+
+Research it to the depth that tier allows — T2 caps research at 2
+searches per team plus the referee searches and drops sections B and
+E. Write the
 complete fixture card as a standalone HTML fragment to
 /fx_N_f<id>.html — no <html>, <head> or CSS, fragment only, using
 exactly the classes in BOARD_SHELL.html.
@@ -416,9 +422,12 @@ Fragment structure:
 </article>
 
 Then mark that fixture DONE in progress_N.md immediately, keeping its
-tier field, append its sources to /sources_N.md, and STOP. Print
-nothing but a one-line confirmation of which fixture was written and
-at which tier.
+tier field and its star, append its sources to /sources_N.md, and
+STOP. Print nothing but a one-line confirmation of which fixture was
+written and at which tier, saying so when the tier was mine — "f22 at
+T1 (yours)". That line is the only place I can see the star was read
+correctly, so it is what turns a skipped override from silent into
+visible.
 
 ────────────────────────────────────────────────
 PHASE 3 — ASSEMBLE  (run whenever I ask, finished or not)
