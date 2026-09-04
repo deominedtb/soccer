@@ -23,8 +23,13 @@ STANDING RULES
   published is reported as unreported, not guessed.
 - Do not narrate your reasoning or your research process. Produce the
   artifact.
-- Phase 1 and Phase 3 are mechanical — OCR and assembly. Run them on
-  a cheaper model. Reserve the strongest model for Phase 2 research.
+- Run Phase 1.5 once on any slate of 7 or more fixtures, between
+  Phase 1 and Phase 2 and never later. Phase 2 then reads each
+  fixture's tier from progress_N.md and researches to that depth.
+  Never research a T3 fixture, and never silently promote one.
+- Phase 1, Phase 1.5 and Phase 3 are mechanical — OCR, allocation
+  and assembly. Run them on a cheaper model. Reserve the strongest
+  model for Phase 2 research.
 - Between Phase 2 runs I send no other messages. Reply to each run
   with a single confirmation line, nothing more.
 
@@ -32,7 +37,11 @@ HARD BANS (apply to every phase)
 - No bets, sides, lines, stakes or prices recommended.
 - No LEAN / CONFIDENCE / BANKER / VALUE labels.
 - No expected-goals projections or implied probabilities.
-- No ranking fixtures against each other by attractiveness.
+- No ranking fixtures against each other by attractiveness. Phase 1.5
+  ranks them by how much evidence is available to research, which is
+  a different axis and produces a file that is never published. If a
+  triage reason could be read as a view on the game, it is banned
+  there too.
 
 ────────────────────────────────────────────────
 RESEARCH SPEC (applies in Phase 2 only)
@@ -138,15 +147,206 @@ Write /progress_N.md — every fixture as:
   f1 | kickoff | Home – Away | TODO
 
 Order progress_N.md by kickoff time, earliest first. Phase 2 always
-takes the earliest unfinished fixture, so a session that runs out
-loses the latest games, never the imminent ones.
+takes the earliest unfinished fixture Phase 1.5 left researchable, so
+a session that runs out loses the latest games, never the imminent
+ones.
 
 Print the table. STOP.
 
 ────────────────────────────────────────────────
+PHASE 1.5 — SLATE TRIAGE  (one run, then STOP)
+
+Decides which fixtures get a full card, which get a reduced one, and
+which are listed with odds only. Triage measures what the evidence
+will support, never what is worth backing. A fixture drops a tier
+because a card on it would be thin, not because the game is dull.
+
+Run it once, immediately after Phase 1. Skip it — research
+everything — when the slate has 6 or fewer fixtures, or when I say
+"no triage".
+
+--- INPUT ---
+- fixtures_N.md. The only mandatory input.
+- My capacity line if I gave one: "capacity 8" means eight full
+  cards. No line means capacity 10.
+- Any overrides I gave, in the form below.
+- The prior progress_*.md and fx_*_f*.html already in the repo, for
+  the marginal-yield signal.
+
+--- BUDGET ---
+At most 6 searches for the whole slate, spent only on league,
+matchday and promoted status. Never spend a team-research search
+here; that budget belongs to Phase 2.
+
+Do not spread them one per fixture. Score signals 1, 2 and 4 first —
+they are free — then spend every lookup on the fixtures whose totals
+straddle the capacity cut, because those are the only ones a lookup
+can move. Fixtures safely inside T1 and safely down in T3 are
+already decided and a search on them buys nothing.
+
+Where a league is unresolved at the cap, record it
+inferred-unverified and use it for grouping only — triage never
+publishes a league, Phase 2 confirms it. Log any search to
+sources_N.md under a Triage heading.
+
+--- SIGNALS ---
+Score every fixture on all four. Record the raw signals, not just
+the total.
+
+Do not score market width by counting families. Every fixture on
+every sheet so far carries all seven, so the count discriminates
+nothing. It survives only as a floor: a fixture capturing fewer than
+three families is T3 outright whatever else it scores, because
+section C cannot be written from two rows.
+
+1. Live rows (0–4). Of the markets captured for this fixture, count
+   the ones still two-sided. A three-way row is live when its
+   shortest price is 1.30 or longer; a two-way row when its shorter
+   side is 1.40 or longer. 9 or more live → 4. 7–8 → 3. 5–6 → 2.
+   4 or fewer → 0. This measures how many section C rows can carry
+   reasoning at all: a moneyline at 1.10, or a double chance at
+   1.04, has already absorbed every structural fact and leaves
+   nothing to discover — the cards say as much in their own prose.
+   It is not a view on the fixture and never becomes one; a dead row
+   is dead for both sides at once. Observed range on past sheets is
+   4 to 10, so this is the signal doing most of the separating.
+
+   Flag, do not score: where the 1X2 itself is dead but three or
+   more derived markets are live, write "result dead, derived live
+   n/m" on the triage line. Derived means the families that are not
+   the result restated — totals, BTTS, cards including the team card
+   lines, corners including the race. Double chance and the handicap
+   do not count; they are the moneyline in another form and die with
+   it. This separates a fixture that is thin everywhere from one
+   where only the outright is settled and the card still has a full
+   section C in it, which is the case for an override rather than a
+   demotion. It is rare enough to mean something: three fixtures in
+   the forty-two across slates 9 to 11 — Juventus–Parma, Real
+   Madrid–Malaga and Barcellona–Rayo Vallecano — and the last two
+   are exactly the fixtures the live-row score sends to T3.
+
+2. Discipline window (0–2). Kickoff within 72 hours of the run → 2,
+   the appointment is likely published and the Discipline row can be
+   evidenced. 72 hours to 7 days → 1. Beyond 7 days → 0, and by the
+   RESEARCH SPEC that fixture's Discipline row is evidence-thin
+   whatever else is true. A 0 here on a fixture carrying card lines
+   is the clearest downgrade on the sheet: markets captured,
+   evidence not yet in existence.
+
+3. Structural distinctiveness (0–3, lookup). +1 a promoted side, or
+   a division that prices its promoted sides badly early. +1 a
+   manager or system change inside this window. +1 either club newly
+   in this division or back after an absence. All three still
+   unknown at the triage cap → score 1 and mark the fixture
+   provisional.
+
+4. Marginal yield (0 to −2). Search the prior progress_*.md and
+   fx_*_f*.html. Both clubs already carded in full within the last
+   three slates → −2, and name the files. One club → −1. Neither →
+   0. A club researched two days ago has not changed since; carding
+   it again spends the budget to restate sources_N.md. Expect this
+   to score 0 almost everywhere on consecutive daily slates — no
+   club recurred once across slates 8 to 11 — and to start biting
+   only when the archive spans more than a week.
+
+Total runs −2 to 9.
+
+--- TIERS ---
+T1 · Full card. Phase 2 as written: full RESEARCH SPEC, full search
+     ceiling, sections A–E. Roughly 11 searches, 19 where the
+     promoted or manager-change ceiling applies.
+T2 · Reduced card. 2 searches per team plus the referee searches,
+     roughly 6. Sections A, C and D only; B and E omitted. The
+     fx-sub ends "reduced-depth card", and section A opens by naming
+     which RESEARCH SPEC fields were not pursued.
+T3 · Listed only. No research, no searches. Phase 3 emits the
+     placeholder card.
+
+Allocate in this order:
+- Anything scoring 0 or less is T3 before capacity is considered.
+- Rank the rest by total. Break ties on the raw live-row count
+  first, and only then on earlier kickoff. Totals cluster hard — 15
+  of the 22 fixtures on slate 9 scored the same 6 — and breaking
+  straight to kickoff throws away the one piece of free evidence
+  still separating them, dropping an 8-of-8 live card for a 7-of-8
+  one that starts earlier.
+- Fill T1 to capacity. The next four by score are T2. The rest T3.
+- Coverage floor: every competition on the slate keeps at least one
+  fixture at T2 or better, promoting the highest-scoring fixture in
+  an otherwise empty competition even when capacity is spent. The
+  board's competitions line must not name a league nothing was
+  researched in.
+
+--- OVERRIDES ---
+The tiers are mine to change. Any time after Phase 1.5 and before
+that fixture's Phase 2 run, I may say "force f7 to T1" or "drop f3
+to T3", in either direction and to any tier. Take it as given and do
+not argue the score.
+
+An override amends triage_N.md and progress_N.md — starring the tier
+there — and nothing else.
+Never re-score the slate, never re-tier a fixture I did not name,
+and never silently demote another fixture to pay for a promotion —
+raise the estimated spend instead and tell me the new figure.
+
+Record it on the fixture's own line, keeping the scored tier
+visible beside it so the two are never confused:
+
+  … | total 5 | scored T3 → T1 (mine) | result dead, derived live 3/5
+
+A tier reading "(mine)" is not a triage finding and carries no
+score. A re-run of Phase 1.5 leaves it alone.
+
+--- OUTPUT ---
+Write /triage_N.md. One line per fixture, in kickoff order:
+
+  f3 | 20:45 | Atalanta – Bologna | live 9/10 →4 | window 2 |
+  distinct 1 | yield 0 | total 7 | T1 | deciding signal in one clause
+
+  f5 | 21:30 | Barcellona – Rayo Vallecano | live 4/8 →0 | window 2 |
+  distinct 1 | yield 0 | total 3 | T3 | result dead, derived live 3/5
+  — override candidate, not a thin card
+
+Above the rows: slate size, capacity, the T1/T2/T3 counts, and
+estimated search spend against the ceiling. Say how many fixtures
+were separated by score and how many fell to a tie-break — when most
+of the slate ties, triage has mostly reproduced kickoff order and I
+should know that rather than read the tiers as findings.
+
+Below the rows, three lists: the competitions on the slate with the
+depth each keeps; every fixture carrying the result-dead flag,
+gathered in one place so I can see the override candidates without
+reading each row; and the fixtures whose distinctiveness score was
+still provisional at the cap. Phase 2 may promote one provisional
+fixture to T1 when its first search contradicts the triage
+assumption — say so in that run's confirmation line and amend
+progress_N.md.
+
+Then rewrite progress_N.md with the tier in every row:
+
+  f1 | 18:30 | Home – Away | T1 | TODO
+
+A tier I set myself is starred — T1*, T3* — so the override lives in
+the file Phase 2 actually reads and survives a stale or regenerated
+triage_N.md. A row with no tier field is T1, which is how slates
+parsed before triage existed still run. Print triage_N.md and STOP.
+
+--- TRIAGE IS NOT A VIEW ON THE GAMES ---
+It reaches market-board_N.html only through the completion note in
+Phase 3. No score, no tier ordering and no triage reason appears in
+a fixture card, the overview or the closing list. Nothing in
+triage_N.md names a side, a price, a projected outcome or which
+fixture is the more interesting. A reason that cannot be written
+without one of those is the wrong reason, and the signal behind it
+is the wrong signal.
+
+────────────────────────────────────────────────
 PHASE 2 — ONE FIXTURE PER RUN  (repeat until none left)
 
-Take the first TODO fixture in progress_N.md. Research it. Write the
+Take the first TODO fixture in progress_N.md whose tier is T1 or T2,
+skipping T3 rows entirely. Research it to the depth that tier allows
+— T2 caps research at 2 searches per team plus the referee searches
+and drops sections B and E. Write the
 complete fixture card as a standalone HTML fragment to
 /fx_N_f<id>.html — no <html>, <head> or CSS, fragment only, using
 exactly the classes in BOARD_SHELL.html.
@@ -215,9 +415,10 @@ Fragment structure:
   </div>
 </article>
 
-Then mark that fixture DONE in progress_N.md immediately, append its
-sources to /sources_N.md, and STOP. Print nothing but a one-line
-confirmation of which fixture was written.
+Then mark that fixture DONE in progress_N.md immediately, keeping its
+tier field, append its sources to /sources_N.md, and STOP. Print
+nothing but a one-line confirmation of which fixture was written and
+at which tier.
 
 ────────────────────────────────────────────────
 PHASE 3 — ASSEMBLE  (run whenever I ask, finished or not)
@@ -232,7 +433,8 @@ Copy BOARD_SHELL.html and fill its placeholders. Do not touch the CSS.
 - {{DATE}} and <!--DATE--> — the slate date
 - <!--HEADLINE--> — a real headline about this card, not a label
 - <!--STANDFIRST--> — one sentence: how many fixtures, which folder
-  they came from, what was rebuilt
+  they came from, what was rebuilt, and how many cards were built at
+  full depth
 - <!--COMPETITIONS--> — e.g. "LaLiga jornada 2 · Ligue 1 matchday 1"
 - <!--OVERVIEW--> — two or three <p> on the single structural fact
   shaping the whole card, closing with
@@ -242,12 +444,19 @@ Copy BOARD_SHELL.html and fill its placeholders. Do not touch the CSS.
   leading ~
 - <!--PROVENANCE_NOTE--> — a <div class="note"> naming the exact
   image files with unreadable values and what was derived from what
-- <!--COMPLETION_NOTE--> — omit entirely if every fixture is DONE.
-  Otherwise a <div class="note"> saying how many of how many cards
-  are built and which fixtures are still pending.
+- <!--COMPLETION_NOTE--> — omit entirely only when every fixture is
+  DONE at T1. Otherwise a <div class="note"> saying how many of how
+  many cards are built and at which depth, which fixtures are still
+  pending, and which were listed without research — stating plainly
+  that the selection was made on evidence available, not on merit,
+  and that a listed fixture is not a judgement on the game.
   Placeholder cards use <article class="fixture pending" id="fN">
   with the fx-head and fx-odds only, then
-  <div class="pending-note">Context not yet built.</div>
+  <div class="pending-note">Context not yet built.</div> for a
+  fixture still TODO, or <div class="pending-note">Not researched on
+  this slate — …</div> for a T3 one, naming the triage signal and
+  nothing else. Triage never removes a fixture from SLATE_ROWS or
+  NAV_LINKS: every fixture on the sheet appears on the board.
 - <!--NAV_LINKS--> — <a href="#f1">Home &ndash; Away<span>kickoff
   &middot; venue</span></a> per fixture
 - <!--FIXTURES--> — concatenate fx_N_f1.html … fx_N_fX.html in order,
