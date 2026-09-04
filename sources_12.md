@@ -227,3 +227,46 @@
   → 2025-26 Premier League: 23 matches, 101 yellows, 3 second-yellow dismissals, 0 straight reds, 4.48 yellows per game, 22.04 fouls per game.
   → **Derived, flagged in the card:** ≈4.9 fouls per card from the two published rates.
   → **Gap:** no penalties-per-game figure published anywhere reached; no record with either club found.
+
+---
+
+## f6 · PSG – Monaco
+
+**Fixture, venue, kickoff, team news**
+- Goal.com FR — PSG-Monaco, aperçu de Ligue 1; Paris Fans / Flashscore FR probable-lineup reports
+  https://www.goal.com/fr/news/apercu-de-ligue-1-tout-ce-qu-il-faut-savoir-avant-paris-saint-germain-monaco/blte6aace3494bb1f7b
+  https://www.parisfans.fr/l-1/psg-monaco-les-equipes-probables-dembele-ou-torres-922945.html
+  → Friday 4 September 2026, 21:05, Parc des Princes, matchday 3, on Ligue1+. PSG 11th, Monaco 1st. Probable XIs — PSG: Safonov; Hakimi, Marquinhos, Pacho, Digne; Zaire-Emery, Vitinha, Fabián Ruiz; Doué, Ferran Torres, Kvaratskhelia (Luis Enrique). Monaco: Hrádecký; Vanderson, Dier, Sané, Nazinho; Zakaria, Camara; Coulibaly, Golovin, Idumbo; Brunner (Filipe Luís). PSG: Nuno Mendes suspended, Ndjantou a selection choice. Monaco: Folarin Balogun and Ansu Fati both injured.
+  → **Gap:** neither club's opening-two-matchday scorelines or points totals were established in any source reached — only the table positions.
+
+**League context and last-season baselines**
+- Wikipedia — 2025–26 Ligue 1 (final table)
+  https://en.wikipedia.org/wiki/2025%E2%80%9326_Ligue_1
+  → PSG 1st, 34/24/4/6, 74 GF, 29 GA, 76 pts — a fifth consecutive title and a record fourteenth, secured 13 May 2026 with a 2–0 win over Lens. Monaco 7th, 34/16/6/12, 60 GF, 54 GA, 54 pts. Neither club promoted.
+  → **Gap:** no xG, shot volume, home/away split, foul or card rate for either club.
+
+**Transfers and manager**
+- Culture PSG — Le tableau mercato du PSG (été 2026); Wikipedia (fr) — Saison 2026-2027 du PSG; Maxifoot transfer table
+  https://www.culturepsg.com/news/mercato/le-tableau-mercato-du-psg-ete-2026/59647
+  https://fr.wikipedia.org/wiki/Saison_2026-2027_du_Paris_Saint-Germain
+  → Luis Enrique continues; his contract extension reported as not yet signed, with the club saying talks have not slowed. OUT: Bradley Barcola to Liverpool €125m, Gonçalo Ramos to Milan €74m, Ibrahim Mbaye to Aston Villa €55m — over €150m recovered. IN: Maghnes Akliouche from Monaco €50m, Ferran Torres from Barcelona €48.5m, Mika Godts from Ajax €45m.
+  → **Conflict logged:** Barcola's fee is €125m in the French coverage and £123m in the English (see f5); not the same figure in either currency, neither carried as definitive.
+  → **Gap:** no goalkeeper, centre-back or defensive-midfield signing established — all six major movements are attacking players.
+- Morning Foot / PK Foot / ASM Supporters / La Diagonale — Monaco summer 2026 and the managerial change
+  https://morning-foot.com/ligue-1/monaco/monaco-mercato-ete-2026-sane-fati-detourbet-nazinho-filipe-luis/
+  https://www.ladiagonale.net/index.php/2026/09/03/filipe-luis-concede-un-effectif-desequilibre/
+  → Filipe Luís, previously of Flamengo, succeeded Sébastien Pocognoli as head coach. IN: Flavio Nazinho (Cercle Brugge), Detourbet (Manchester City), Ansu Fati, Sadibou Sané (€7m). OUT: Maghnes Akliouche to PSG €50m. Caio Henrique, Vanderson, Golovin and Eric Dier reported as available or under review; a Balogun sale reported as the precondition for further signings. On 3 September 2026 Filipe Luís publicly described his squad as "déséquilibré" — unbalanced.
+  → **Gap:** no fee published for Nazinho, Detourbet or Ansu Fati. Departures beyond Akliouche were reported as possibilities, not completed moves, and are not stated as done in the card.
+
+**Referee**
+- VIPSG — "PSG vs Monaco : Jérôme Brisard, arbitre polémique pour le choc"; Culture PSG / Paris Fans designation reports
+  https://www.vipsg.fr/ligue1-psg/psg-vs-monaco-jerome-brisard-arbitre-polemique-pour-le-choc-297340/
+  https://www.culturepsg.com/news/discipline/arbitre-controverse-pour-le-choc-psg-monaco/60556
+  → Jérôme Brisard, 40, confirmed. Assistants Alexis Auger and Aurélien Berthomieu, fourth official Romain Lissorgue, VAR Alexandre Castro and Wilfried Bien. Record with PSG: 28 matches, 19 wins, 3 draws, 6 defeats for Paris. History: PSG–Marseille September 2020, 12 yellows and 5 reds; VAR for the Monaco–PSG Singo/Donnarumma collision in December 2024.
+  → **Conflict logged:** a search aggregate assigned this match the panel of Erwan Finjean, Julien Haulbert and Karim Abed — who are in fact appointed to Lyon–Auxerre the same evening (see f1). The dedicated appointment report is used instead.
+- Referee-record search aggregate (Monde du Foot Ligue 1 referee table / valuestats)
+  https://www.mondefootball.fr/competition/co71/france-ligue-1/referees/
+  https://valuestats.com/en/referee/15482-jerome-brisard
+  → 2025-26 Ligue 1: 17 matches, 75 yellow cards, 4.41 per match — joint-highest in the division with François Letexier — and 2 penalties awarded.
+  → **Conflict logged:** the same summary reports both "7 direct expulsions" and "1 red card" for the season; irreconcilable, neither carried.
+  → **Gap:** no fouls-per-match figure for Brisard published anywhere reached, so unlike Dingert, Guida and England his fouls-per-card ratio cannot be derived at all.
