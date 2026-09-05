@@ -3,7 +3,7 @@ f2 | 15:30 | Bayer Leverkusen – Union Berlino | T2 | DONE
 f3 | 15:30 | Borussia Mönchengladbach – SV 07 Elversberg | T1 | DONE
 f4 | 15:30 | Hoffenheim – Borussia Dortmund | T1 | DONE
 f5 | 15:30 | SC Paderborn – Friburgo | T1 | DONE
-f6 | 15:30 | Werder Brema – Lipsia | T2 | TODO
+f6 | 15:30 | Werder Brema – Lipsia | T2 | DONE
 f7 | 16:00 | Brentford – Sunderland | T2 | TODO
 f8 | 16:00 | Brighton – Leeds United | T2 | TODO
 f9 | 16:00 | Fulham FC – Crystal Palace | T1 | TODO
