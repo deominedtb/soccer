@@ -10,7 +10,7 @@ f9 | 16:00 | Fulham FC – Crystal Palace | T1 | DONE
 f10 | 16:00 | Manchester City – Coventry City | T3 | TODO
 f11 | 16:00 | Nottingham Forest – Tottenham | T1 | DONE
 f12 | 16:15 | Athletic Bilbao – Atletico Madrid | T3 | TODO
-f13 | 17:15 | Lens – Lorient | T1 | TODO
+f13 | 17:15 | Lens – Lorient | T1 | DONE
 f14 | 18:00 | Inter – Napoli | T3 | TODO
 f15 | 18:30 | Hull City – Aston Villa | T1 | TODO
 f16 | 18:30 | Rayo Vallecano – Racing Santander | T1 | TODO
