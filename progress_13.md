@@ -12,7 +12,7 @@ f11 | 16:00 | Nottingham Forest – Tottenham | T1 | DONE
 f12 | 16:15 | Athletic Bilbao – Atletico Madrid | T3 | TODO
 f13 | 17:15 | Lens – Lorient | T1 | DONE
 f14 | 18:00 | Inter – Napoli | T3 | TODO
-f15 | 18:30 | Hull City – Aston Villa | T1 | TODO
+f15 | 18:30 | Hull City – Aston Villa | T1 | DONE
 f16 | 18:30 | Rayo Vallecano – Racing Santander | T1 | TODO
 f17 | 18:30 | Schalke 04 – Bayern Monaco | T3 | TODO
 f18 | 20:45 | Roma – Atalanta | T3 | TODO
