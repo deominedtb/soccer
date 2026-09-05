@@ -1,4 +1,4 @@
-f1 | 15:00 | Fiorentina – Torino | T1 | TODO
+f1 | 15:00 | Fiorentina – Torino | T1 | DONE
 f2 | 15:30 | Bayer Leverkusen – Union Berlino | T2 | TODO
 f3 | 15:30 | Borussia Mönchengladbach – SV 07 Elversberg | T1 | TODO
 f4 | 15:30 | Hoffenheim – Borussia Dortmund | T1 | TODO
