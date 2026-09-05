@@ -1,0 +1,783 @@
+<title>Market Board Saturday 5 September 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<style>
+:root{
+  --bg:#EFF2F1; --surface:#FFFFFF; --surface-2:#F6F8F7; --band:#1D3F52;
+  --ink:#13201E; --ink-2:#485856; --muted:#6C7B78; --line:#D4DCDA;
+  --accent:#1D4E73; --accent-soft:#E3EDF3;
+  --good:#2C6E4B; --good-soft:#E2EFE8;
+  --warn:#8C6817; --warn-soft:#F4ECD9;
+  --bad:#A03528;  --bad-soft:#F6E2DF;
+  --brass:#856526;
+  --band-ink:#EAF1F4;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D1315; --surface:#141C1F; --surface-2:#1A2326; --band:#16303D;
+    --ink:#E3EAE8; --ink-2:#A6B4B1; --muted:#82938F; --line:#263236;
+    --accent:#79ACD0; --accent-soft:#152F3C;
+    --good:#66C093; --good-soft:#152C20;
+    --warn:#D2A950; --warn-soft:#2C2617;
+    --bad:#E27A6E;  --bad-soft:#321C19;
+    --brass:#C4A05A;
+    --band-ink:#DCE8EC;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D1315; --surface:#141C1F; --surface-2:#1A2326; --band:#16303D;
+  --ink:#E3EAE8; --ink-2:#A6B4B1; --muted:#82938F; --line:#263236;
+  --accent:#79ACD0; --accent-soft:#152F3C;
+  --good:#66C093; --good-soft:#152C20;
+  --warn:#D2A950; --warn-soft:#2C2617;
+  --bad:#E27A6E;  --bad-soft:#321C19;
+  --brass:#C4A05A;
+  --band-ink:#DCE8EC;
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:"Source Serif 4",Georgia,"Times New Roman",serif;
+  font-size:17px; line-height:1.6;
+  margin:0; padding:0 18px 96px;
+  -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:940px; margin:0 auto;}
+h1,h2,h3,h4,.ui{font-family:Archivo,"Helvetica Neue",Arial,sans-serif}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace; font-variant-numeric:tabular-nums}
+
+/* ---------- masthead ---------- */
+header.top{padding:52px 0 26px; border-bottom:2px solid var(--ink);}
+.eyebrow{
+  font-family:Archivo,sans-serif; font-size:12px; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase; color:var(--accent); margin:0 0 14px;
+}
+h1{
+  font-size:clamp(34px,7vw,54px); line-height:1.02; font-weight:800;
+  letter-spacing:-.02em; margin:0 0 14px; text-wrap:balance;
+}
+.standfirst{font-size:19px; color:var(--ink-2); margin:0; max-width:62ch;}
+.metaline{
+  display:flex; flex-wrap:wrap; gap:8px 20px; margin-top:22px;
+  font-family:Archivo,sans-serif; font-size:12.5px; font-weight:600;
+  letter-spacing:.06em; text-transform:uppercase; color:var(--muted);
+}
+
+/* ---------- generic blocks ---------- */
+section{margin-top:44px}
+h2.sec{
+  font-size:13px; font-weight:700; letter-spacing:.15em; text-transform:uppercase;
+  color:var(--muted); margin:0 0 16px; padding-bottom:8px; border-bottom:1px solid var(--line);
+}
+p{margin:0 0 14px; max-width:70ch}
+.note{
+  background:var(--accent-soft); border-left:3px solid var(--accent);
+  padding:14px 16px; font-size:15.5px; color:var(--ink-2); max-width:none;
+}
+.note strong{color:var(--ink)}
+
+/* ---------- odds table ---------- */
+.scroller{overflow-x:auto; border:1px solid var(--line); background:var(--surface)}
+table{border-collapse:collapse; width:100%; min-width:760px; font-size:14px}
+thead th{
+  background:var(--band); color:var(--band-ink);
+  font-family:Archivo,sans-serif; font-weight:700; font-size:11px;
+  letter-spacing:.09em; text-transform:uppercase;
+  padding:10px 11px; text-align:right; white-space:nowrap;
+}
+thead th:first-child{text-align:left}
+tbody td{
+  padding:10px 11px; border-top:1px solid var(--line); text-align:right;
+  font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums; white-space:nowrap;
+}
+tbody td:first-child{
+  text-align:left; font-family:Archivo,sans-serif; font-weight:600; font-size:14px;
+  white-space:normal; min-width:190px;
+}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td .ko{display:block; font-family:"IBM Plex Mono",monospace; font-weight:400; font-size:11.5px; color:var(--muted); letter-spacing:.02em}
+.unk{color:var(--brass); font-style:italic}
+
+/* ---------- fixture cards ---------- */
+.fixture{
+  background:var(--surface); border:1px solid var(--line);
+  margin-top:30px; scroll-margin-top:12px;
+}
+.fx-head{background:var(--band); color:var(--band-ink); padding:16px 20px 18px}
+.fx-league{
+  font-family:Archivo,sans-serif; font-size:11px; font-weight:700;
+  letter-spacing:.14em; text-transform:uppercase; opacity:.78; margin:0 0 6px;
+}
+.fx-title{font-family:Archivo,sans-serif; font-size:23px; font-weight:700; letter-spacing:-.01em; margin:0; line-height:1.15}
+.fx-sub{font-family:"IBM Plex Mono",monospace; font-size:12.5px; opacity:.8; margin:7px 0 0; letter-spacing:.02em}
+.fx-body{padding:20px}
+
+.fx-odds{
+  display:flex; flex-wrap:wrap; gap:0;
+  border:1px solid var(--line); background:var(--surface-2); margin:0 0 22px;
+}
+.od{flex:1 1 96px; padding:9px 12px; border-right:1px solid var(--line); border-bottom:1px solid var(--line)}
+.od:last-child{border-right:0}
+.od dt{
+  font-family:Archivo,sans-serif; font-size:10px; font-weight:700; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--muted); margin:0 0 3px;
+}
+.od dd{margin:0; font-family:"IBM Plex Mono",monospace; font-size:15px; font-weight:500; font-variant-numeric:tabular-nums}
+
+h3.blk{
+  font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--accent); margin:26px 0 10px;
+}
+h3.blk:first-of-type{margin-top:0}
+.fx-body ul{margin:0 0 14px; padding-left:20px; max-width:70ch}
+.fx-body li{margin-bottom:7px}
+.tag{
+  font-family:Archivo,sans-serif; font-size:11px; font-weight:700;
+  letter-spacing:.07em; text-transform:uppercase; padding:2px 7px; white-space:nowrap;
+}
+.t-low{background:var(--good-soft); color:var(--good)}
+.t-mid{background:var(--warn-soft); color:var(--warn)}
+.t-high{background:var(--bad-soft); color:var(--bad)}
+
+/* market suitability rows */
+.mkt{border-top:1px solid var(--line)}
+.mkt-row{
+  display:grid; grid-template-columns:150px 1fr; gap:0;
+  border-bottom:1px solid var(--line);
+}
+.mkt-name{
+  padding:13px 14px 13px 0; font-family:Archivo,sans-serif;
+  font-weight:700; font-size:14px; line-height:1.3;
+}
+.mkt-name .verdict{display:block; margin-top:6px}
+.mkt-why{padding:13px 0 13px 16px; border-left:3px solid var(--line); font-size:15.5px; color:var(--ink-2)}
+.mkt-row.good .mkt-why{border-left-color:var(--good)}
+.mkt-row.ok .mkt-why{border-left-color:var(--warn)}
+.mkt-row.bad .mkt-why{border-left-color:var(--bad)}
+@media (max-width:620px){
+  .mkt-row{grid-template-columns:1fr; gap:0}
+  .mkt-name{padding-bottom:6px}
+  .mkt-why{padding:0 0 14px 14px}
+}
+
+/* index list */
+.index{display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line)}
+.index a{
+  display:block; background:var(--surface); padding:12px 14px; text-decoration:none;
+  color:var(--ink); font-family:Archivo,sans-serif; font-weight:600; font-size:14.5px;
+}
+.index a:hover,.index a:focus-visible{background:var(--accent-soft); color:var(--accent)}
+.index a span{display:block; font-family:"IBM Plex Mono",monospace; font-weight:400; font-size:11.5px; color:var(--muted); margin-top:3px; letter-spacing:.03em}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+
+footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); font-size:14px; color:var(--muted); max-width:74ch}
+footer a{color:var(--accent)}
+
+/* ---------- not-yet-built fixture ---------- */
+.fixture.pending{opacity:.72}
+.pending-note{
+  font-family:Archivo,sans-serif; font-size:13px; font-weight:600;
+  letter-spacing:.04em; color:var(--muted);
+  background:var(--surface-2); border:1px dashed var(--line);
+  border-radius:8px; padding:14px 16px; margin-top:18px;
+}
+</style>
+
+<div class="wrap">
+
+<header class="top">
+  <p class="eyebrow">Context engine &middot; no picks, no sides, no lines</p>
+  <h1>Three promoted clubs, five new head coaches and a slate the triage cut in half &mdash; the first three cards are built and every one of them turns on a manager appointed since May</h1>
+  <p class="standfirst">Twenty-one fixtures across five countries, parsed in typed-file mode from <span class="mono">odds_13.xlsx</span> and triaged before research began &mdash; 3 of the 14 fixtures the triage left researchable are complete, 2 at full depth and 1 as reduced-depth cards, with the remaining 18 listed on odds alone.</p>
+  <div class="metaline">
+    <span>Saturday 5 September 2026</span>
+    <span>Serie A matchday 3 &middot; Bundesliga matchday 2 &middot; Premier League &middot; LaLiga &middot; Ligue 1 &middot; cup ties not yet established</span>
+    <span>Decimal odds, bet365 IT</span>
+  </div>
+</header>
+
+<section>
+  <h2 class="sec">The one thing shaping every game on this card</h2>
+  <p>The structural fact running through this card is that the odds sheet is 21 fixtures long and the evidence behind it is not. This is the largest slate parsed so far &mdash; three and a half times the size of the last one &mdash; and it arrives on the second or third matchday of five different competitions, which is precisely the point in a season when a club&rsquo;s last-season numbers describe a squad that no longer exists and its current numbers amount to 90 or 180 minutes. Every card on this board is written against that constraint rather than around it.</p><p>The second thread is managerial churn, and it is unusually concentrated. Of the six clubs carded so far, five are being coached by someone appointed since May 2026: Fabio Grosso arrived at Fiorentina from Sassuolo on a two-year deal reported at &euro;1.2m a year, Ignazio Abate took over at Torino, Carles Mart&iacute;nez replaced Ole Werner at Bayer Leverkusen, and Mauro Lustrinelli left a title-winning season at FC Thun on 21 May for his first Bundesliga job at Union Berlin. The exception proves the rule: Eugen Polanski keeps his job at M&ouml;nchengladbach precisely because he was the mid-season appointment who rescued the previous campaign, having taken over on 15 September 2025. The third thread is promotion. The Bundesliga came up three &mdash; Schalke 04, SV 07 Elversberg and SC Paderborn, replacing St. Pauli, Heidenheim and Wolfsburg &mdash; and one of them, Elversberg, won its first ever top-flight match 3&ndash;2 away at Leverkusen, which is the single loudest result on the sheet and also its least repeatable.</p><div class="note"><strong>Structural consequence.</strong> Discipline is again the family that carries the most evidence, and for the same reason as always: a referee&rsquo;s card rate does not move when clubs buy and sell. All three appointments on the built cards are named &mdash; Davide Massa at the Franchi, confirmed by the federation designation list with a full officiating team; Martin Petersen at Borussia-Park, confirmed; Benjamin Brand at the BayArena, reported in the match preview but not corroborated by a designation list, and flagged as such on that card. What none of the three has is a published fouls-per-card ratio, so on every card the mechanism behind the number is missing even where the number itself is solid. Two of the three sit above their posted line on the evidence available: Petersen&rsquo;s 4.07 yellows a game against a 3.5 line, Brand&rsquo;s 3.95 cards a game against the same. Massa is the odd case &mdash; the only figure published for him anywhere reached is a red-card rate of 0.41 per game, level-highest in Serie A and more than double the division average of 0.18, and it is set against the highest card line on the built cards at 4.5.</div>
+</section>
+
+<section>
+  <h2 class="sec">Today&rsquo;s slate &mdash; odds as read from the screenshots</h2>
+  <div class="scroller">
+  <table>
+    <thead>
+      <tr>
+        <th>Fixture</th><th>1</th><th>X</th><th>2</th><th>O2.5</th><th>U2.5</th><th>BTTS&nbsp;Y</th><th>BTTS&nbsp;N</th><th>Cards</th><th>Corners</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Fiorentina &ndash; Torino<span class="ko">15:00 &middot; Serie A</span></td><td>2.05</td><td>3.30</td><td>3.85</td><td>1.90</td><td>1.85</td><td>1.72</td><td>2.05</td><td>4.5</td><td>8.5</td></tr>
+      <tr><td>Bayer Leverkusen &ndash; Union Berlino<span class="ko">15:30 &middot; Bundesliga</span></td><td>1.37</td><td>5.25</td><td>7.50</td><td>1.35</td><td>2.95</td><td>1.50</td><td>2.40</td><td>3.5</td><td>10.5</td></tr>
+      <tr><td>Borussia M&ouml;nchengladbach &ndash; SV 07 Elversberg<span class="ko">15:30 &middot; Bundesliga</span></td><td>1.90</td><td>3.80</td><td>3.75</td><td>1.43</td><td>2.60</td><td>1.50</td><td>2.40</td><td>3.5</td><td>9.5</td></tr>
+      <tr><td>Hoffenheim &ndash; Borussia Dortmund<span class="ko">15:30 &middot; competition not yet established</span></td><td>2.60</td><td>3.80</td><td>2.45</td><td>1.42</td><td>2.65</td><td>1.37</td><td>2.85</td><td>3.5</td><td>9.5</td></tr>
+      <tr><td>SC Paderborn &ndash; Friburgo<span class="ko">15:30 &middot; competition not yet established</span></td><td>3.75</td><td>3.65</td><td>1.95</td><td>1.60</td><td>2.20</td><td>1.53</td><td>2.35</td><td>3.5</td><td>9.5</td></tr>
+      <tr><td>Werder Brema &ndash; Lipsia<span class="ko">15:30 &middot; competition not yet established</span></td><td>4.10</td><td>4.15</td><td>1.75</td><td>1.37</td><td>2.85</td><td>1.40</td><td>2.75</td><td>3.5</td><td>9.5</td></tr>
+      <tr><td>Brentford &ndash; Sunderland<span class="ko">16:00 &middot; competition not yet established</span></td><td>1.73</td><td>3.80</td><td>4.75</td><td>1.80</td><td>1.95</td><td>1.72</td><td>2.05</td><td>3.5</td><td>9.5</td></tr>
+      <tr><td>Brighton &ndash; Leeds United<span class="ko">16:00 &middot; competition not yet established</span></td><td>2.05</td><td>3.50</td><td>3.60</td><td>1.75</td><td>2.00</td><td>1.62</td><td>2.20</td><td>4.5</td><td>9.5</td></tr>
+      <tr><td>Fulham FC &ndash; Crystal Palace<span class="ko">16:00 &middot; competition not yet established</span></td><td>2.15</td><td>3.25</td><td>3.60</td><td>1.90</td><td>1.85</td><td>1.68</td><td>2.10</td><td>3.5</td><td>9.5</td></tr>
+      <tr><td>Manchester City &ndash; Coventry City<span class="ko">16:00 &middot; competition not yet established</span></td><td>1.18</td><td>7.50</td><td>13.00</td><td>1.35</td><td>3.00</td><td>2.00</td><td>1.75</td><td>2.5</td><td>10.5</td></tr>
+      <tr><td>Nottingham Forest &ndash; Tottenham<span class="ko">16:00 &middot; competition not yet established</span></td><td>2.50</td><td>3.40</td><td>2.80</td><td>1.75</td><td>2.00</td><td>1.60</td><td>2.25</td><td>3.5</td><td>10.5</td></tr>
+      <tr><td>Athletic Bilbao &ndash; Atletico Madrid<span class="ko">16:15 &middot; competition not yet established</span></td><td>3.00</td><td>3.30</td><td>2.40</td><td>1.85</td><td>1.85</td><td>1.62</td><td>2.15</td><td>4.5</td><td>9.5</td></tr>
+      <tr><td>Lens &ndash; Lorient<span class="ko">17:15 &middot; competition not yet established</span></td><td>1.55</td><td>4.35</td><td>5.50</td><td>1.60</td><td>2.20</td><td>1.68</td><td>2.05</td><td>3.5</td><td>9.5</td></tr>
+      <tr><td>Inter &ndash; Napoli<span class="ko">18:00 &middot; competition not yet established</span></td><td>1.67</td><td>3.75</td><td>5.50</td><td>1.85</td><td>1.90</td><td>1.85</td><td>1.90</td><td>3.5</td><td>9.5</td></tr>
+      <tr><td>Hull City &ndash; Aston Villa<span class="ko">18:30 &middot; competition not yet established</span></td><td>4.00</td><td>3.60</td><td>1.90</td><td>1.85</td><td>1.90</td><td>1.75</td><td>2.00</td><td>3.5</td><td>9.5</td></tr>
+      <tr><td>Rayo Vallecano &ndash; Racing Santander<span class="ko">18:30 &middot; competition not yet established</span></td><td>2.00</td><td>3.50</td><td>3.75</td><td>1.65</td><td>2.10</td><td>1.55</td><td>2.30</td><td>5.5</td><td>10.5</td></tr>
+      <tr><td>Schalke 04 &ndash; Bayern Monaco<span class="ko">18:30 &middot; competition not yet established</span></td><td>14.00</td><td>8.50</td><td>1.15</td><td>1.20</td><td>4.20</td><td>1.65</td><td>2.10</td><td>3.5</td><td>9.5</td></tr>
+      <tr><td>Roma &ndash; Atalanta<span class="ko">20:45 &middot; competition not yet established</span></td><td>1.70</td><td>3.80</td><td>4.90</td><td>1.65</td><td>2.15</td><td>1.62</td><td>2.20</td><td>3.5</td><td>9.5</td></tr>
+      <tr><td>Le Havre AC &ndash; Brest<span class="ko">20:45 &middot; competition not yet established</span></td><td>2.70</td><td>3.25</td><td>2.65</td><td>1.90</td><td>1.80</td><td>1.72</td><td>2.00</td><td>3.5</td><td>9.5</td></tr>
+      <tr><td>Nizza &ndash; Le Mans FC<span class="ko">20:45 &middot; competition not yet established</span></td><td>1.75</td><td>3.75</td><td>4.50</td><td>1.75</td><td>1.97</td><td>1.65</td><td>2.10</td><td>4.5</td><td>9.5</td></tr>
+      <tr><td>Villarreal &ndash; Deportivo La Coru&ntilde;a<span class="ko">21:00 &middot; competition not yet established</span></td><td>1.48</td><td>4.60</td><td>6.25</td><td>1.65</td><td>2.15</td><td>1.72</td><td>2.00</td><td>4.5</td><td>10.5</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="note"><strong>Provenance.</strong> This slate was parsed in typed-file mode from <span class="mono">odds_13.xlsx</span>. No screenshots were involved, so there are no source image filenames and no OCR step: every price was read directly from a spreadsheet cell, none derived, none unreadable, and no value on this board carries an uncertainty marker. The workbook now holds seven tabs &mdash; an unused <span class="mono">odds_EXAMPLE</span> template, then <span class="mono">odds_7</span> through <span class="mono">odds_11</span> (28, 29, 30, 31 August and 4 September, all already consumed as fixtures_8 to fixtures_12), and a seventh tab whose title row reads &ldquo;MATCHES 05-09-2026 &mdash; odds read from screenshots&rdquo;, which is today&rsquo;s slate and the one read here, despite the tab itself still being internally named <span class="mono">odds_12</span>. That is the same one-file lag seen in the three previous workbooks and it was not used for numbering. The file is written in strict OOXML, which returns an empty sheet list to the usual reader; the worksheet XML was parsed directly from the zip and cross-checked against the shared-strings table. Kickoff times were normalised from Excel&rsquo;s floating-point time serialisation (<span class="mono">20:44:59.99999999997441975</span> &rarr; 20:45). Two fields are structurally absent rather than unread &mdash; there is no <span class="mono">league</span> column and no <span class="mono">venue</span> column anywhere in the sheet, so every competition, matchday and stadium named on this board was established by research, and the fixtures not yet researched carry no competition or venue at all rather than an inferred one. <span class="mono">Win/+2 Home/Away</span> is empty for all 21 rows. Home and away card splits are present for eight fixtures only &mdash; f1, f7, f8, f9, f10, f11, f15 and f18 &mdash; and are shown on those cards. Team names are recorded exactly as typed in the source; the Italian-style forms carried over from earlier slates (&ldquo;Union Berlino&rdquo;, &ldquo;Friburgo&rdquo;, &ldquo;Lipsia&rdquo;, &ldquo;Werder Brema&rdquo;, &ldquo;Bayern Monaco&rdquo;, &ldquo;Nizza&rdquo;) are kept in the table and index and rendered conventionally inside a card once that card is built.</div>
+  <div class="note"><strong>Completion.</strong> 3 of the 21 cards on this board are built: 2 at full T1 depth and 1 as reduced-depth T2 cards, which carry sections A, C and D only. 11 fixtures the triage left researchable are still pending &mdash; f4, f5, f6, f7, f8, f9, f11, f13, f15, f16, f19 &mdash; and appear here with their odds strip and no context. A further 7 fixtures were listed without research at all: f10, f12, f14, f17, f18, f20, f21. That selection was made on the evidence available to research each fixture &mdash; how many of its captured markets are still two-sided, whether the referee appointment can exist yet, whether either club was already carded in full on a recent slate &mdash; and not on the merit of the games. A fixture listed with odds only is not a judgement on it, and every fixture on the sheet appears in the table and the index above regardless of tier.</div>
+</section>
+
+<section>
+  <h2 class="sec">Jump to a fixture</h2>
+  <nav class="jump">
+    <a href="#f1">Fiorentina &ndash; Torino<span>15:00 &middot; Stadio Artemio Franchi, Florence</span></a>
+    <a href="#f2">Bayer Leverkusen &ndash; Union Berlino<span>15:30 &middot; BayArena, Leverkusen</span></a>
+    <a href="#f3">Borussia M&ouml;nchengladbach &ndash; SV 07 Elversberg<span>15:30 &middot; Borussia-Park, M&ouml;nchengladbach</span></a>
+    <a href="#f4">Hoffenheim &ndash; Borussia Dortmund<span>15:30 &middot; venue not yet established</span></a>
+    <a href="#f5">SC Paderborn &ndash; Friburgo<span>15:30 &middot; venue not yet established</span></a>
+    <a href="#f6">Werder Brema &ndash; Lipsia<span>15:30 &middot; venue not yet established</span></a>
+    <a href="#f7">Brentford &ndash; Sunderland<span>16:00 &middot; venue not yet established</span></a>
+    <a href="#f8">Brighton &ndash; Leeds United<span>16:00 &middot; venue not yet established</span></a>
+    <a href="#f9">Fulham FC &ndash; Crystal Palace<span>16:00 &middot; venue not yet established</span></a>
+    <a href="#f10">Manchester City &ndash; Coventry City<span>16:00 &middot; venue not yet established</span></a>
+    <a href="#f11">Nottingham Forest &ndash; Tottenham<span>16:00 &middot; venue not yet established</span></a>
+    <a href="#f12">Athletic Bilbao &ndash; Atletico Madrid<span>16:15 &middot; venue not yet established</span></a>
+    <a href="#f13">Lens &ndash; Lorient<span>17:15 &middot; venue not yet established</span></a>
+    <a href="#f14">Inter &ndash; Napoli<span>18:00 &middot; venue not yet established</span></a>
+    <a href="#f15">Hull City &ndash; Aston Villa<span>18:30 &middot; venue not yet established</span></a>
+    <a href="#f16">Rayo Vallecano &ndash; Racing Santander<span>18:30 &middot; venue not yet established</span></a>
+    <a href="#f17">Schalke 04 &ndash; Bayern Monaco<span>18:30 &middot; venue not yet established</span></a>
+    <a href="#f18">Roma &ndash; Atalanta<span>20:45 &middot; venue not yet established</span></a>
+    <a href="#f19">Le Havre AC &ndash; Brest<span>20:45 &middot; venue not yet established</span></a>
+    <a href="#f20">Nizza &ndash; Le Mans FC<span>20:45 &middot; venue not yet established</span></a>
+    <a href="#f21">Villarreal &ndash; Deportivo La Coru&ntilde;a<span>21:00 &middot; venue not yet established</span></a>
+  </nav>
+</section>
+
+<article class="fixture" id="f1">
+  <div class="fx-head">
+    <p class="fx-league">Italy &middot; Serie A &middot; Matchday 3</p>
+    <h2 class="fx-title">Fiorentina &ndash; Torino</h2>
+    <p class="fx-sub">15:00 CEST &middot; Stadio Artemio Franchi, Florence &middot; Two clubs that changed manager in the summer meet with nothing between them: no points, no wins and, on the visiting side, five former Viola players who may start against their old club</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.05 &middot; 3.30 &middot; 3.85</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>1.25 &middot; 1.32 &middot; 1.75</dd></div>
+      <div class="od"><dt>EH &minus;1 (1/X/2)</dt><dd>3.75 &middot; 3.85 &middot; 1.75</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.90 / 1.85</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.72 / 2.05</dd></div>
+      <div class="od"><dt>Cards 4.5 U / O</dt><dd>1.80 / 1.80</dd></div>
+      <div class="od"><dt>Fiorentina cards 2.5 U / O</dt><dd>1.42 / 2.35</dd></div>
+      <div class="od"><dt>Torino cards 2.5 U / O</dt><dd>1.65 / 1.93</dd></div>
+      <div class="od"><dt>Corners 8.5 U / O</dt><dd>1.95 / 1.72</dd></div>
+      <div class="od"><dt>Corner race 1/X/2</dt><dd>1.47 &middot; 9.00 &middot; 2.95</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>Neither club is promoted; both were in Serie A last season and both changed manager for this one, which is what makes this fixture structurally unusual rather than routine. Fabio Grosso left Sassuolo after a two-year spell and signed for Fiorentina on a two-year contract reported at &euro;1.2m a year with a club option for a third; Ignazio Abate was appointed at Torino. Two matches into the new season neither appointment has produced a point: Fiorentina and Torino are both among Serie A's seven winless sides, Fiorentina beaten 0&ndash;3 by Frosinone in their most recent match and Torino 0&ndash;1 by Monza, which leaves the visitors 14th on zero points. The transfer flow between these two clubs is itself part of the story &mdash; Rolando Mandragora moved from Fiorentina to Torino for a reported &euro;5m and Alieu Njie in the opposite direction &mdash; and the preview material reaching this card reports that Torino could field five former Fiorentina players, with Pietro Comuzzo, Niccol&ograve; Fortini and Giovanni Simeone described as certain starters and Mandragora a possibility. The head-to-head at this ground is long and lopsided in the home side's favour on aggregate &mdash; 41 Fiorentina wins to 11 for Torino across 84 meetings at the Franchi &mdash; but the recent pattern is the opposite of decisive: four of the last five Serie A meetings between them were drawn.</p>
+    <ul>
+      <li><strong>Fiorentina &mdash; turnover very high in volume, and the manager is new on top of it.</strong> Grosso arrived this summer from Sassuolo, so the shape being asked of this squad has no Serie A record attached to it at this club. The window was large in both directions: arrivals reported include Pote from Sporting CP, Wilfried Gnonto from Leeds United, Beto from Everton, Thomas Campaniello from Empoli and Alieu Njie from Torino, described in the source as five of more than twenty movements in; departures include Rolando Mandragora to Torino for a reported &euro;5m, Albert Gudmundsson to Lazio, M'Bala Nzola to Cagliari, Anton&iacute;n Bar&aacute;k to APOEL Nicosia and Moise Kean to Como, again as part of a much longer list. Weighted as the spec asks: <em>centre-forward</em> is where the churn is heaviest &mdash; Beto in, Nzola out, and Kean's status contested below; <em>midfield</em> lost Mandragora and Bar&aacute;k. <strong>Gap:</strong> the only individual fee published in any source reached for either club's window is Mandragora's &euro;5m &mdash; no fee is reported for Pote, Gnonto, Beto, Campaniello, Njie, Gudmundsson, Nzola or Kean, and none is estimated here. <strong>Gap:</strong> no goalkeeper or centre-back movement was established in either direction for Fiorentina within the search ceiling. <strong>Conflict logged:</strong> one preview describes Moise Kean as Fiorentina's centre-forward for this season, "a striker eager for redemption"; a transfer listing from the same window records Kean as having moved to Como. Both statements were reached; neither is corroborated by a second source, so the card does not choose between them and no market row below rests on Kean playing.</li>
+      <li><strong>Torino &mdash; medium turnover, but concentrated exactly on the spine, and the manager is new too.</strong> Abate takes over a side reported to have finished 11th last season on 33 points, ahead of Parma on head-to-head. In, with fees where they are published: Giovanni Simeone from Napoli for a reported &euro;7.2m and Rolando Mandragora from Fiorentina for a reported &euro;5m &mdash; the two most expensive arrivals on this fixture &mdash; plus Kian Fitz-Jim from Ajax for a reported &euro;2.5m, Daniel Bragan&ccedil;a on loan from Sporting at a reported &euro;1m and Nathan Patterson from Everton on a free. Out: Jonathan Silva on loan to Mantova on 19 June 2026 and Demba Seck to Partizan on 26 June 2026. The window closed on 1 September 2026, four days before this match. The squad list reached for 2026&ndash;27 carries an unusually deep forward line &mdash; Simeone, Duv&aacute;n Zapata, Che Adams, Pietro Pellegri, Zakaria Aboukhlal, Sandro Kulenovi&cacute; &mdash; against a midfield rebuilt around Mandragora, Casadei, Bragan&ccedil;a and Fitz-Jim. <strong>Gap:</strong> no goalkeeper movement and no centre-back fee was established for Torino; Patterson is a full-back and the only defensive arrival reached.</li>
+      <li><strong>Suspensions / absences.</strong> No suspension is reported for this fixture on either side. Fiorentina's Fabiano Parisi is reported to have suffered an anterior cruciate ligament injury to his right knee and to have had reconstructive surgery, with a recovery measured in months. <strong>Gap:</strong> the source reached does not date that diagnosis, and other Fiorentina medical material returned by the same search is explicitly from the 2025&ndash;26 season (a Kean shin bruise dated 7 April to 23 May 2026, a Gudmundsson suspension from week 31), so whether Parisi's injury is current or historical is not established here and no absence list is asserted beyond it. <strong>Gap:</strong> no current injury or suspension information for Torino was obtainable within the ceiling.</li>
+      <li><strong>Sample.</strong> Two Serie A matches each and this is matchday 3, so every 2026&ndash;27 number on this page rests on 180 minutes per side. Fiorentina: no points, most recent result a 0&ndash;3 home defeat to Frosinone, one of the three promoted clubs. Torino: no points, 14th, most recent result a 0&ndash;1 defeat to Monza, another promoted club. Both new managers are therefore still looking for a first league win, and both sides have lost to a side that came up from Serie B. <strong>Gap:</strong> the goals-for and goals-against columns for each club across those two matches were not published in any source reached beyond the two scorelines named, and no xG, shot volume, BTTS or card figures for 2026&ndash;27 were obtainable for either club.</li>
+      <li><strong>Referee.</strong> Davide Massa, confirmed rather than provisional: the matchday-3 designations name him for this match with Meli and Imperiale as assistants, Arena as fourth official and Giua and Marini on VAR &mdash; a full published team three days before kickoff. The one hard number reached for him is a striking one: 0.41 red cards per game in 2025&ndash;26, level with Simone Sozza as the highest in Serie A, against a division-wide average of 0.18. The league context for the rest is established even where his personal split is not: Serie A referees averaged 25.34 fouls, 3.59 yellow cards, 0.28 penalties and 0.18 red cards per match last season. <strong>Gap:</strong> Massa's own yellow-cards-per-game, his fouls-per-card ratio and his penalty rate are not published in any source reached &mdash; the two referee databases carrying them were not retrievable within budget &mdash; so the only discipline number specific to this official is his sendings-off rate, which is more than double the league mean. <strong>Gap:</strong> no Massa record specific to Fiorentina or Torino was found.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Fiorentina's structural position is that almost nothing about how they play can be read from last season. Grosso is a new appointment whose Serie A body of work was built at Sassuolo, not here; the squad turned over on a scale the sources describe in aggregate rather than individually &mdash; more than twenty in, a departure list running to dozens &mdash; and the attacking department in particular has been rebuilt around Beto and Gnonto after Nzola left and with Kean's status contested between two sources. What is observable is that the first two matches under the new coach produced no points and a 0&ndash;3 home defeat to a promoted side, which is the single most concrete piece of 2026&ndash;27 evidence attached to this team. The honest limit on that is its size: two matches, one scoreline, no underlying series. <strong>Gap:</strong> no xG, shot volume, home/away split, foul rate or card rate was obtainable for Fiorentina for either 2025&ndash;26 or 2026&ndash;27 within the search ceiling, so this card describes personnel and results and declines to characterise a pressing height or a build-up pattern it cannot evidence. Even the club's final position last season was not established in any source reached, which is itself worth stating: the baseline that would let anyone say whether a 0&ndash;3 is normal or aberrant for this club is missing.</p>
+    <p>Torino arrive in a nearly symmetrical condition, with one asymmetry that matters. They too have a new manager in Abate and they too are winless, but their summer was narrower and better documented: two significant purchases in Simeone at a reported &euro;7.2m and Mandragora at &euro;5m, a midfield reshaped around those two plus Fitz-Jim and Bragan&ccedil;a, and a forward line now carrying six recognised centre-forwards. The strange feature of this particular match is continuity of personnel across the divide rather than within either club: the preview material reports Comuzzo, Fortini and Simeone as certain starters for Torino and Mandragora as a possible one, all of them formerly of Fiorentina, with Njie having gone the other way in the same window. Whatever tactical familiarity that produces cuts in both directions and is not evidence for a shape. As with the home side, the series that would let this section say more &mdash; possession share, crossing volume, set-piece frequency, fouls committed &mdash; were not published in any source reached for Torino in either season, so the claim made here is deliberately narrow: a new coach, a spine bought in one window, and 180 minutes of it played, none of them won.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row ok"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-mid">OK &mdash; genuinely three-sided, and the price says so</span></div><div class="mkt-why">2.05, 3.30 and 3.85 is one of the flattest result rows on this slate, and the structural reading matches it: two clubs that changed manager in the same summer, both without a point, both beaten by a promoted side in their most recent match. The home price rests mainly on venue history &mdash; 41 wins to 11 in 84 meetings at the Franchi &mdash; and that history was compiled under coaching staffs neither club now employs. Against it sits the most recent Serie A pattern between these two, four draws in five, which is the part of the record the 3.30 has to carry.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Asian handicap &amp; double chance<span class="verdict tag t-high">Dangerous &mdash; the &minus;1 asks a winless side to win by two</span></div><div class="mkt-why">Fiorentina &minus;1 at 3.75 against Torino +1 at 1.75 is the market stating plainly that it does not expect a margin, which is consistent with everything above: neither side has scored enough in two matches to have a goal-difference argument, and the visitors' summer was concentrated on buying a centre-forward at &euro;7.2m and a midfielder at &euro;5m rather than dismantling anything. Double chance carries the same information in shorter form &mdash; 1X at 1.25 and 12 at 1.32 have already absorbed the draw's likelihood, X2 at 1.75 is the only leg of the three still paying for a two-way question &mdash; and none of them adds a fact the moneyline has not already priced.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-mid">OK &mdash; near even money on two attacks nobody has seen work yet</span></div><div class="mkt-why">1.90 against 1.85 is the book declining to take a view, and the evidence supports that refusal rather than contradicting it. Both attacks were rebuilt this summer: Fiorentina's around Beto and Gnonto with Nzola gone and Kean's whereabouts contested between sources, Torino's around a &euro;7.2m Simeone in a forward line six deep. Neither has scored in the results reached &mdash; a 0&ndash;3 and a 0&ndash;1 are the two most recent scorelines and both are blanks for the teams playing here. Two matches is far too little to build a totals case on, and last season's goal columns for either club were not obtainable at all, which is the more important limitation.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; both sides failed to score in their last match, and the price barely reflects it</span></div><div class="mkt-why">1.72 for Yes against 2.05 for No sits on a symmetry that is real: each of these teams was kept off the scoresheet in its most recent match, Fiorentina losing 0&ndash;3 and Torino 0&ndash;1. That is one match each, which is why this row is rated OK rather than well-suited &mdash; but unlike the totals line it splits into two separately checkable questions, and both attacks are new enough that the answer to each is genuinely open. The structural asymmetry, such as it is, favours the visiting attack having more identifiable personnel behind it: Simeone and Zapata are established centre-forwards bought or retained for this role, where Fiorentina's centre-forward position is the one the sources disagree about.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-mid">OK &mdash; confirmed official with the division's highest red-card rate, and a line the book has already raised</span></div><div class="mkt-why">The appointment is not pending: Massa is confirmed with a full officiating team, so this row is not evidence-thin for want of a referee. Two facts drive it. First, the book has set the match card line at 4.5 here, a full card above the 3.5 it uses for most fixtures on this slate, and priced it dead even at 1.80 each way. Second, Massa's one published personal number is 0.41 red cards a game, level-highest in Serie A and more than double the 0.18 league average. The team split is where it gets asymmetric: Fiorentina under 2.5 cards at 1.42 against Torino under 2.5 at 1.65 says the book expects the visitors to be booked more, which fits a side arriving winless with five ex-Fiorentina players in it. <strong>Gap:</strong> Massa's yellow-card average and fouls-per-card ratio are unpublished in every source reached, so whether the 4.5 line is generous or tight against his actual booking behaviour cannot be established &mdash; only his sendings-off rate can.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Corners<span class="verdict tag t-mid">OK &mdash; the lowest corner line on the slate, and nothing published to test it against</span></div><div class="mkt-why">8.5 is the shortest corner total on this entire sheet &mdash; every other fixture is set at 9.5 or 10.5 &mdash; which is a statement about expected territorial volume in a match between two winless sides with new coaches. The race at 1.47 for Fiorentina against 2.95 restates the moneyline in territorial form and asks nothing extra of the evidence. The over at 1.72 against 1.95 is the harder claim: <strong>no corner series for either club was obtainable for either season</strong>, and both squads turned over heavily enough that a 2025&ndash;26 baseline would be describing different players. The line's own unusual lowness is the most informative thing available about it.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li>Both managers are new in the same window. Grosso came from Sassuolo on a two-year deal, Abate is in his first season at Torino, and between them they have two matches and no points at this club. Every stylistic inference on this page is therefore a CV inference, not a match inference, and the card says so rather than dressing it up.</li>
+      <li>The 84-match Franchi head-to-head record, 41&ndash;11 in Fiorentina's favour, is the longest-running fact available and the least applicable: it predates both coaching appointments, both of this summer's windows and, on the evidence of the transfer lists, most of both squads. The recent Serie A pattern between these clubs &mdash; four draws in the last five &mdash; is the part of the record built by teams closer to these.</li>
+      <li>The sources disagree about who leads the Fiorentina attack. One preview names Moise Kean as this season's centre-forward; a transfer listing from the same window records him as sold to Como. That contradiction is unresolved here, and it matters most to the totals and BTTS rows, which is why both are rated OK rather than anything stronger.</li>
+      <li>Almost none of the underlying series exists on this page. No xG, shot volume, foul rate, card rate, home/away split or corner count was obtainable for either club in either season, and Fiorentina's 2025&ndash;26 final position was not established at all. The one referee number that was reached &mdash; 0.41 reds per game &mdash; is doing a disproportionate share of the discipline reasoning as a result.</li>
+      <li><strong>Most sensitive:</strong> the goals markets, where two rebuilt attacks with one contested centre-forward between them are being priced off two matches in which neither team scored. <strong>Least sensitive:</strong> the discipline row, the only family here with a confirmed named official, a published league baseline to compare against and a visible market signal &mdash; a 4.5 line where the slate standard is 3.5.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>The result row is more robust than the handicap here because 2.05/3.30/3.85 only asks which of two winless, newly-managed sides is better at home, while &minus;1 at 3.75 additionally requires a two-goal margin from a team whose most recent match was a 0&ndash;3 defeat to a promoted club.</li>
+      <li>Both-teams-to-score is more robust than the goals total because it decomposes into two independent questions about two separately identifiable attacks &mdash; Simeone and Zapata on one side, Beto and Gnonto with a contested Kean on the other &mdash; whereas the total needs a joint estimate neither club's two-match sample can support.</li>
+      <li>The discipline row is more robust than either goals family because it is the only one attached to a confirmed named official with a published number: Massa's 0.41 red cards per game against a Serie A average of 0.18. Even that comparison is incomplete without his fouls-per-card ratio, which nobody reached publishes.</li>
+      <li>The corner race is more robust than the corner total because the race asks only that the 2.05 favourite also holds territory, which the same venue evidence supports, while the 8.5 line needs a volume baseline for two heavily rebuilt squads and no corner series for either was obtainable.</li>
+      <li>Where the book has priced indifference it is describing the evidence accurately, and it has done so twice: the match cards line at 1.80/1.80 and the goals total at 1.90/1.85. Both sit on material that genuinely does not lean &mdash; a referee whose only published metric is his red-card rate, and two attacks that have not yet scored under coaches who have not yet won.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f2">
+  <div class="fx-head">
+    <p class="fx-league">Germany &middot; Bundesliga &middot; Matchday 2</p>
+    <h2 class="fx-title">Bayer Leverkusen &ndash; Union Berlino</h2>
+    <p class="fx-sub">15:30 CEST &middot; BayArena, Leverkusen &middot; Two clubs that appointed new head coaches in May and opened the season by conceding three apiece &mdash; reduced-depth card</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.37 &middot; 5.25 &middot; 7.50</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>1.08 &middot; 1.15 &middot; 3.05</dd></div>
+      <div class="od"><dt>EH &minus;1 (1/X/2)</dt><dd>1.90 &middot; 4.15 &middot; 3.05</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.35 / 2.95</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.50 / 2.40</dd></div>
+      <div class="od"><dt>Cards 3.5 U / O</dt><dd>1.80 / 1.80</dd></div>
+      <div class="od"><dt>Corners 10.5 U / O</dt><dd>1.68 / 2.05</dd></div>
+      <div class="od"><dt>Corner race 1/X/2</dt><dd>1.27 &middot; 9.50 &middot; 4.15</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p><em>Reduced-depth card: research was capped at two searches per club plus the referee lookup. The RESEARCH SPEC fields not pursued here are both clubs' 2025&ndash;26 final position, goals scored and conceded, xG, shot volume, home/away split and foul and card rates; the full ins-and-outs ledger with fees beyond the named signings below; and the suspension list. Those absences are a budget decision, not a finding.</em></p>
+    <p>Neither club is promoted &mdash; both were in the Bundesliga last season &mdash; but both changed head coach in May 2026, which is the structural fact this fixture turns on. Leverkusen replaced Ole Werner with Carles Mart&iacute;nez, brought in from Girona and described as importing an intense pressing style. Union Berlin appointed Mauro Lustrinelli on 21 May 2026, arriving from FC Thun, whom he had just led to the first Swiss Super League title in that club's history &mdash; a first Bundesliga job for a coach whose track record is in a different league entirely. One matchday in, both new appointments have already produced a defensive result worth recording: Leverkusen lost their opener 3&ndash;2 at home to newly promoted SV 07 Elversberg and sit 12th on no points; Union drew 3&ndash;3 with Eintracht Frankfurt and sit 8th on one. Six goals in each of their opening matches, and three conceded each. The venue record is one-directional: Leverkusen have won six of nine meetings with Union at the BayArena, and Union have never won here, drawing three.</p>
+    <ul>
+      <li><strong>Leverkusen &mdash; new coach, and the recruitment reached here is on the flanks rather than the spine.</strong> Mart&iacute;nez took over from Werner this summer, so the shape is a Girona shape being installed rather than a continuation. The signings established within the cap are Gu&eacute;la Dou&eacute;, the Ivorian right-back signed from Strasbourg on a five-year contract to 2031, and Afonso Moreira, reported to have impressed in pre-season &mdash; the same player who left Lyon in this window for a reported &euro;33.6m including bonuses, a fee published on the selling side rather than by Leverkusen. Facundo Medina was expected to come into the side for his full Bundesliga debut in this match. <strong>Gap:</strong> no fee is published in anything reached for Dou&eacute; or for Leverkusen's side of the Moreira deal, and no goalkeeper, centre-back or centre-forward movement was established in either direction within the two-search cap.</li>
+      <li><strong>Union Berlin &mdash; low investment by design, with the club's money going into the stadium rather than the squad.</strong> The reporting is explicit that Union directed most of this summer's resources at infrastructure, including stadium work, rather than at players. The arrivals reached are Michel Aebischer from Pisa, Emmanuel Latte Lath on loan from Atlanta United, Zeno Van den Bosch on 23 June 2026 and Stanley Nsoki, made permanent on 1 July 2026. The predicted shape under Lustrinelli is a 4&ndash;2&ndash;2&ndash;2: Raab; Juranovi&cacute;, Querfeld, Van den Bosch, Rothe; Kemlein, Khedira; Jeong, Burcu; Latte Lath, Ljubi&ccaron;i&cacute; &mdash; a back four containing one of this summer's signings and a front two containing another. Pre-season was poor and is reported as such: two wins in nine friendlies, the victories coming against fifth-tier Rathenow (12&ndash;2) and Aris Limassol (3&ndash;2). <strong>Gap:</strong> no fee is published for Aebischer, Van den Bosch or Nsoki, and the Latte Lath deal is described as a loan without terms.</li>
+      <li><strong>Suspensions / absences.</strong> Not pursued at this depth beyond the team news carried in the match preview, which reports Medina expected to start for Leverkusen and no changes expected from Lustrinelli for Union. <strong>Gap:</strong> no injury or suspension list for either club was sought or established.</li>
+      <li><strong>Sample.</strong> One Bundesliga match each; this is matchday 2, and the league started later than Serie A, so this card rests on 90 minutes per side. Leverkusen: 0 points, 12th, beaten 3&ndash;2 at home by a promoted club. Union: 1 point, 8th, 3&ndash;3 with Eintracht Frankfurt. Both conceded three. Union additionally carry nine pre-season friendlies with two wins, which is context rather than competitive evidence and is treated as such here.</li>
+      <li><strong>Referee.</strong> Benjamin Brand, named in the match preview reached &mdash; carried here as the appointment but <strong>not corroborated by a federation designation list</strong>, so treat it as reported rather than confirmed. His record is unusually well documented for this slate. In 2025&ndash;26 he officiated 19 matches, showing 72 yellow cards and 3 red cards for 3.95 total cards per game &mdash; 3.79 yellow, 0.16 red &mdash; and awarded 4 penalties, a rate of 0.21 per match. Across a 214-match career, 101 of them in the Bundesliga, he averages 4.04 yellows and 0.10 reds a game with 66 penalties, roughly 0.31 per match. Last season therefore ran slightly below his career booking rate and slightly below his career penalty rate. <strong>Gap:</strong> his fouls-per-card ratio is not published in any source reached, so whether just under four cards a game reflects early booking in a low-foul match or late booking in a busy one is not established. <strong>Gap:</strong> no Brand record specific to either club was found.</li>
+    </ul>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous &mdash; a 1.37 favourite that lost at home to a promoted side last week</span></div><div class="mkt-why">The price is built on the venue record &mdash; six wins in nine, no Union victory ever at the BayArena &mdash; and on squad strength that predates both appointments. What it is being asked to absorb is that Leverkusen have a new coach installing a new system, opened the season by losing 3&ndash;2 at home to Elversberg, and sit 12th with nothing. Union have their own first-time Bundesliga coach and a summer spent on the stadium rather than the squad, which is the case for the 7.50; but one matchday is not enough for either side of that argument, and the favourite's price has already spent the venue history.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Asian handicap &amp; double chance<span class="verdict tag t-mid">OK &mdash; the &minus;1 is the only result-family row still asking a real question</span></div><div class="mkt-why">Leverkusen by two or more at 1.90 against Union +1 at 3.05 is a materially more balanced statement than 1.37 against 7.50, and it is the one that engages with the evidence: a home side that conceded three to a promoted club in a new system, against a visiting side that scored three against Frankfurt. Double chance is unusable in the ordinary sense here &mdash; 1X at 1.08 and 12 at 1.15 have absorbed everything structural and pay almost nothing &mdash; leaving X2 at 3.05 as the only leg of the three still carrying reasoning.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-high">Dangerous &mdash; the price has extrapolated two matchday-one scorelines</span></div><div class="mkt-why">Over 2.5 at 1.35 is one of the shortest totals on the slate, and the reason is transparent: six goals in Leverkusen's opener, six in Union's, three conceded by each. That is one match per club, played by two sides whose coaches were appointed in May and are still installing systems &mdash; exactly the circumstance in which early-season goal counts run hot and then regress once a defensive structure settles. The base rates that would test it do not exist on this page: <strong>no 2025&ndash;26 goals-for or goals-against column, no xG and no shot volume was pursued for either club at this depth</strong>. A 1.35 price on a two-match sample is asking to be right about a pattern nobody has established.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; both defences have already been breached, and the away attack scored three</span></div><div class="mkt-why">1.50 against 2.40 rests on the firmest thing available: both teams conceded three in their opening match, and Union's attack produced three goals against Eintracht Frankfurt with Latte Lath and Ljubi&ccaron;i&cacute; in the front two. Unlike the total, this row does not need a joint goal estimate &mdash; it needs each side to score once, and each has already done so under its new coach. The caution is the same one-match sample, and the fact that Union's summer was explicitly not spent on the squad, so the attack that scored three is not a reinforced one.</div></div>
+      <div class="mkt-row good"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-low">Well-suited &mdash; a named official with 19 matches of last-season record and a 214-match career behind it</span></div><div class="mkt-why">This is the best-evidenced family on the card and the only one where the sample is not one matchday. Brand's 2025&ndash;26 season was 19 matches, 72 yellows and 3 reds &mdash; 3.95 cards a game &mdash; against a match line of 3.5 priced dead even at 1.80 each way, and his career rate of 4.04 yellows per game across 214 matches points the same way. His penalty rate is the softer half: 0.21 per match last season against 0.31 across his career. The two structural caveats are that the appointment is reported in a preview rather than confirmed by a designation list, and that <strong>his fouls-per-card ratio is unpublished</strong>, so the mechanism behind a card rate that sits just above the line cannot be characterised.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Corners<span class="verdict tag t-mid">OK &mdash; the race restates the moneyline, the 10.5 line has no baseline behind it</span></div><div class="mkt-why">1.27 for Leverkusen in the race against 4.15 is the shortest corner-race price on the slate and asks nothing the 1.37 has not already asked: it is the result row expressed as territory, resting on the same venue history. The 10.5 total leaning under at 1.68 is the harder claim to support, because <strong>no corner series for either club was pursued at this depth</strong>, and both sides are one match into new coaching regimes whose territorial profiles are not yet observable. A high line and no volume baseline is a combination the card cannot resolve.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li>Both coaches were appointed in May 2026 and both are one competitive match into the job. Mart&iacute;nez arrives from Girona, Lustrinelli from a title-winning season at FC Thun and into his first Bundesliga post. Nothing on this page describes an established system; it describes two installations in progress.</li>
+      <li>The six-goal openers are doing almost all the work in the goals markets and they are one match each. Leverkusen's was a 3&ndash;2 home defeat to a promoted club, Union's a 3&ndash;3 draw. Neither club's last-season goal columns were pursued at this depth, so there is no base rate on this card against which to judge whether either scoreline was typical.</li>
+      <li>Union spent the summer on the stadium rather than the squad, by their own reporting, and went two wins from nine in pre-season. That is a club whose current XI is close to last season's, under a coach who is not &mdash; the opposite configuration to Leverkusen, who changed coach and recruited, but on the flanks rather than through the middle as far as the search reached.</li>
+      <li>The BayArena head-to-head &mdash; six Leverkusen wins in nine, no Union win ever &mdash; is the longest-running fact here and predates both appointments and both summers. It is priced into the 1.37 and the 1.27 corner race, and it is the least current evidence on the card.</li>
+      <li><strong>Most sensitive:</strong> the goals total, where 1.35 on the over extrapolates a single matchday from each side while the season baselines that would test it were never pursued. <strong>Least sensitive:</strong> the discipline row, the only family resting on a multi-season record &mdash; Brand's 19 matches last season and 214 across his career &mdash; rather than on 90 minutes, with the caveat that the appointment is reported rather than confirmed.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f3">
+  <div class="fx-head">
+    <p class="fx-league">Germany &middot; Bundesliga &middot; Matchday 2</p>
+    <h2 class="fx-title">Borussia M&ouml;nchengladbach &ndash; SV 07 Elversberg</h2>
+    <p class="fx-sub">15:30 CEST &middot; Borussia-Park, M&ouml;nchengladbach &middot; The 59th club in Bundesliga history arrives having won its first ever top-flight match, against a side that finished 12th and kept the coach who saved it</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.90 &middot; 3.80 &middot; 3.75</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>1.25 &middot; 1.25 &middot; 1.88</dd></div>
+      <div class="od"><dt>EH &minus;1 (1/X/2)</dt><dd>3.10 &middot; 4.20 &middot; 1.88</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.43 / 2.60</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.50 / 2.40</dd></div>
+      <div class="od"><dt>Cards 3.5 U / O</dt><dd>1.85 / 1.75</dd></div>
+      <div class="od"><dt>Corners 9.5 U / O</dt><dd>1.72 / 1.95</dd></div>
+      <div class="od"><dt>Corner race 1/X/2</dt><dd>1.62 &middot; 8.50 &middot; 2.55</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>This is the fixture on the slate where promotion is the whole structure. SV 07 Elversberg are newly promoted &mdash; the 59th club to play in the Bundesliga, up for the first time in their history after finishing 2nd in the 2025&ndash;26 2. Bundesliga on 62 points from 34 matches, 64 scored and 39 conceded for a goal difference of +25, having climbed from the fourth-tier Regionalliga as recently as 2021&ndash;22. They came up with Schalke 04, back after a three-year absence, and SC Paderborn, who won the relegation play-off against Wolfsburg; the three replaced St. Pauli, Heidenheim and Wolfsburg. How this division treats promoted sides early is normally the question, and Elversberg have already answered the first instalment of it in the most emphatic way available: in their first ever top-flight match, on 28&ndash;29 August, they won 3&ndash;2 away at Bayer Leverkusen. Borussia M&ouml;nchengladbach are not promoted. They finished 12th last season with 42 goals scored and 53 conceded across 34 matches, a negative difference for a mid-table side, and they retained Eugen Polanski &mdash; appointed on 15 September 2025 mid-season, after a start bad enough to put the club in genuine relegation danger, and kept for this campaign despite supporters calling for a change. They opened 2026&ndash;27 by losing 3&ndash;0 at RB Leipzig.</p>
+    <ul>
+      <li><strong>M&ouml;nchengladbach &mdash; turnover medium-to-high in volume, weighted young, and unusually well documented on fees.</strong> No manager change: Polanski continues, so last season's second half is the one piece of this squad's record produced by the coach who picks the team. The July window brought Jan Leszczy&nacute;ski from Legia Warsaw for a reported &euro;3m on 3 July, Isac Lidberg from Darmstadt 98 for &euro;3.5m, David Herold from Karlsruher SC for &euro;3.5m, Hugo Bolin from Malm&ouml; FF for &euro;2m, Zento Uno from Shimizu S-Pulse for &euro;500,000, and three free transfers &mdash; Enzo Leopold from Hannover 96, Yukhym Konoplya from Shakhtar Donetsk and, in the position the spec asks about first, goalkeeper Daniel Batz from Mainz 05. Tim Kleindienst, described as one of the club's most important players, is reported as returning to availability. Bolin is the arrival with early output: two goals and an assist across the last two matches, with 13 shots in that span. <strong>Gap:</strong> no departure list with fees was obtainable for Gladbach, so the window is documented in one direction only, and no centre-back or centre-forward sale is established either way.</li>
+      <li><strong>Elversberg &mdash; the promoted side kept its promotion team and spent about &euro;12.1m on top of it.</strong> Vincent Wagner, who masterminded the promotion, continues &mdash; so unlike most promoted clubs there is no manager change layered on top of the division change. The squad is reported as remaining almost entirely intact, with departures limited to Bambas&eacute; Cont&eacute; returning to Hoffenheim, Immanuel Pherai's loan expiring, Carlo Sickinger to Darmstadt and Mohammad Mahmoud to Austria Salzburg. In: Cole Campbell from Borussia Dortmund for a reported &euro;6m &mdash; half the summer's outlay on one player, described as a direct one-against-one attacker &mdash; Lukasz Poreba from Hamburger SV, Maurice Krattenmacher from Bayern Munich, and two loans from Bundesliga clubs, Francis Onyeka from Bayer Leverkusen and Noah Darvich from VfB Stuttgart. Onyeka has two goals and an assist in 86 minutes of football. The player the previews identify as pivotal is the Bulgarian winger Petkov, 13 goals and six assists in 34 second-tier appearances last season. <strong>Gap:</strong> fees are published for Campbell alone; nothing is reported for Poreba, Krattenmacher or the two loans, and no goalkeeper or centre-back movement was established.</li>
+      <li><strong>Suspensions / absences.</strong> <strong>Gap:</strong> no injury or suspension list for either club was obtainable within the ceiling. The only team-news item reached is that Wagner needed to make no changes to the XI that won at Leverkusen, and on the home side that Kleindienst is reported back. Neither is a clean bill of health and neither is presented as one.</li>
+      <li><strong>Sample.</strong> One Bundesliga match each &mdash; the season began on 28 August 2026 and this is matchday 2 &mdash; so the competitive 2026&ndash;27 evidence is 90 minutes per side and it points in opposite directions. Gladbach lost 3&ndash;0 at the Red Bull Arena. Elversberg won 3&ndash;2 at the BayArena. Both sides carry longer runs from before the division changed underneath one of them: Elversberg have lost one of their last ten across all competitions, with seven wins and two draws since 17 May; Gladbach are unbeaten in their last seven Bundesliga home matches, four wins and three draws, since a 3&ndash;0 home defeat by Stuttgart on 25 January. Those runs are the most substantial evidence on this card, and one of them was compiled in a different division.</li>
+      <li><strong>Referee.</strong> Martin Petersen, confirmed for this match at Borussia-Park with Polanski and Wagner named as the opposing coaches in the same listing. His record is a career one rather than a single-season one: 4.07 yellow cards and 0.10 red cards per match, roughly 4.17 cards a game, across 288 professional matches since his 2017 debut, 91 of them in the Bundesliga. Set against a match line of 3.5, his career booking rate sits above it. <strong>Gap:</strong> his penalties-per-game rate is not published in any source reached, nor is his fouls-per-card ratio &mdash; so whether 4.07 yellows reflects an early-booking official in a low-foul match or a permissive one in a busy match is not established. <strong>Gap:</strong> no Petersen record specific to either club was found, and Elversberg have played one Bundesliga match ever, so no meaningful history with this official could exist on their side.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Gladbach's shape is the more settled of the two on paper and the less convincing in evidence. Polanski's tenure began in September 2025 as a rescue job and ended in survival and a 12th-place finish, with a goal record &mdash; 42 for, 53 against &mdash; that describes a side which conceded more than it created across a full season. The summer response was volume rather than a single marquee signing: eight arrivals reached here, five of them paid for, none above &euro;3.5m, plus a free-transfer goalkeeper in Batz and the return of Kleindienst to the centre-forward position. That is a squad being widened, not rebuilt around a new idea, which is consistent with keeping the coach. The observable 2026&ndash;27 evidence is one match and it was a 3&ndash;0 defeat at RB Leipzig, which tells us little that is transferable: Leipzig away is among the hardest fixtures in the division and losing there is not a diagnosis. The home run &mdash; seven Bundesliga matches unbeaten at Borussia-Park, four wins and three draws since January &mdash; is the more useful series, and it is the one structural fact behind the 1.90. <strong>Gap:</strong> no xG, shot volume, home/away goal split, foul rate or card rate was obtainable for Gladbach in either season, so the pressing height and build-up pattern behind those results are not characterised here.</p>
+    <p>Elversberg are the more interesting case precisely because the usual promoted-side caveats mostly do not apply. The normal warning is that a promoted squad is a second-tier squad with a new coach and no top-flight players; here the coach who won promotion has stayed, the promotion team is reported as almost entirely intact, and the recruitment went upward rather than sideways &mdash; a &euro;6m signing from Dortmund, a Bayern Munich winger, and loans from Leverkusen and Stuttgart, all clubs above them. The 2. Bundesliga profile they arrive with is an attacking one: 64 goals in 34 matches, the second-best record in that division, built on a start that produced seven wins in the first nine. Then they won 3&ndash;2 at Leverkusen in their first Bundesliga match, which is the single most striking result on this entire slate. The honest limit is severe and needs stating plainly: that is one match, and a promoted club's first ninety minutes in a new division is the least representative sample in football. The 39 goals they conceded last season came against second-tier attacks, and the Leverkusen match involved conceding twice to a side that had just changed coach. <strong>Gap:</strong> no xG, shot count, foul rate or card rate was published for Elversberg in either division, so the style descriptions available &mdash; Campbell's one-against-one aggression, Petkov's 13 goals and six assists &mdash; are player-level, not team-level, and the card does not extrapolate them into a system.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row ok"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-mid">OK &mdash; a 1.90 favourite whose only 2026&ndash;27 evidence is a 3&ndash;0 defeat</span></div><div class="mkt-why">1.90 against 3.75 prices Gladbach as the better side by roughly two to one, and the structural case for that is real but historical: a 12th-place finish against a second-tier runner-up, and seven home matches unbeaten. What the price has to absorb is that the promoted side beat Leverkusen away last week and the favourite lost 3&ndash;0 at Leipzig, that Elversberg kept both their promotion coach and their promotion squad, and that this is the second week of a season in which nobody has a settled read on anyone. This row is genuinely three-sided &mdash; the draw at 3.80 is barely longer than the away price &mdash; which is the market saying it does not know either.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Asian handicap &amp; double chance<span class="verdict tag t-mid">OK &mdash; asymmetric, and the +1 is where the promotion question actually sits</span></div><div class="mkt-why">Gladbach &minus;1 at 3.10 against Elversberg +1 at 1.88 says the book expects a close match rather than a home team asserting a divisional gap, which is the correct reading of everything above: a 12th-place side with a negative goal difference is not structurally equipped to beat a well-organised promoted club by two. Double chance carries less here than usual because 1X and 12 are priced identically at 1.25 &mdash; an unusual symmetry that says the market rates a Gladbach win and an Elversberg win as near-equivalent risks &mdash; leaving X2 at 1.88 as the leg that still pays for a two-way question.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-high">Dangerous &mdash; 1.43 on the over rests on two matchday-one scorelines and a second-tier goal record</span></div><div class="mkt-why">The over is short because the inputs look loud: five goals in Elversberg's opener at Leverkusen, three in Gladbach's at Leipzig, and 64 goals scored by the visitors last season. Two of those three facts are the wrong evidence. Elversberg's 64 were scored against 2. Bundesliga defences, and the division change is exactly the variable in question; Gladbach's 3&ndash;0 was a defeat at the hardest away ground in the country. What remains is Gladbach's actual season-long profile, 42 scored and 53 conceded, which is a mid-table goal record rather than a chaotic one, and a home run of seven unbeaten whose scorelines were not obtainable. <strong>Gap:</strong> no xG or shot volume exists on this card for either club, in either division.</div></div>
+      <div class="mkt-row good"><div class="mkt-name">BTTS<span class="verdict tag t-low">Well-suited &mdash; both attacks have named, functioning scorers and both defences leaked in week one</span></div><div class="mkt-why">1.50 against 2.40 sits on the firmest personnel evidence on the card. Elversberg scored three at Leverkusen with Onyeka contributing two goals and an assist inside 86 minutes and Campbell, a &euro;6m Dortmund signing, in the attack; they scored 64 last season. Gladbach conceded 53 in 34 matches last season and three at Leipzig last week, and their own attack has Bolin with two goals and an assist in his last two, plus Kleindienst returning. Unlike the total, this row asks two separate one-goal questions rather than a joint estimate, and each half has a name attached to it. The caveat is the one-match Bundesliga sample on the visiting side.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-mid">OK &mdash; confirmed official whose career rate sits above the line, with the mechanism unpublished</span></div><div class="mkt-why">Petersen is confirmed, so this row is not evidence-thin for want of an appointment. His career record &mdash; 4.07 yellows and 0.10 reds per match over 288 matches since 2017, 91 in the Bundesliga &mdash; sits above the 3.5 line the book has set and prices at 1.75 for the over. That is a real comparison based on a large sample, which is more than most rows on this slate can say. Two things stop it being well-suited: <strong>his fouls-per-card ratio and penalty rate are unpublished</strong>, so the behaviour behind 4.07 cannot be characterised, and a promoted side's discipline profile against top-flight opposition is unestablished by definition &mdash; Elversberg have played one Bundesliga match.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Corners<span class="verdict tag t-mid">OK &mdash; the race is the flattest on the slate and the line has no baseline</span></div><div class="mkt-why">1.62 for Gladbach against 2.55 for Elversberg is the closest corner race on this sheet, and it is consistent with a 1.90 moneyline rather than an argument with it: the market expects territory to be contested, not dominated, which fits a promoted side that has just won away at Leverkusen. The 9.5 total leaning over at 1.95 against 1.72 is the weaker half, because <strong>no corner series for either club was obtainable in either division</strong>, and the visitors' 2025&ndash;26 volume was generated in the second tier where they were among the better sides &mdash; a status that has just changed.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li>Elversberg's 3&ndash;2 win at Leverkusen is the most eye-catching fact on the slate and the least repeatable kind of evidence: a promoted club's first ever top-flight match, against a side one week into a new coach's system. It is one result, and every market row that leans on it is leaning on 90 minutes.</li>
+      <li>The visitors' second-tier numbers &mdash; 62 points, 64 scored, 39 conceded, second place &mdash; are excellent and were produced against 2. Bundesliga opposition. The division change is the variable under test here, and it is precisely the variable that record cannot speak to.</li>
+      <li>Gladbach's 3&ndash;0 defeat is similarly unrepresentative in the other direction: it happened at RB Leipzig. The more informative home series &mdash; seven Bundesliga matches unbeaten at Borussia-Park since January &mdash; is the one supporting the 1.90, and its individual scorelines were not obtainable, so it supports a result claim rather than a goals claim.</li>
+      <li>Almost none of the underlying series exists for either club: no xG, shot volume, foul rate, card rate, home/away split or corner count was published in anything reached, in either division. The referee's career booking rate is the only multi-season number on this page, and even it comes without a fouls-per-card ratio or a penalty rate.</li>
+      <li><strong>Most sensitive:</strong> the goals total, where 1.43 on the over is built from a promoted club's second-tier scoring record and two matchday-one results, one of which was a defeat at Leipzig. <strong>Least sensitive:</strong> both-teams-to-score, which needs only that two attacks with named, already-scoring players each manage one goal against defences that conceded 53 and 39 respectively last season.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>The handicap is more robust than the outright here because &minus;1 at 3.10 engages the actual structural claim &mdash; whether a 12th-placed side with a &minus;11 goal difference can beat a promoted club by two &mdash; while the 1.90 has to price a home favourite whose only 2026&ndash;27 evidence is a 3&ndash;0 defeat.</li>
+      <li>Both-teams-to-score is more robust than the goals total because it decomposes into two one-goal questions with named scorers on each side &mdash; Onyeka and Campbell for Elversberg, Bolin and a returning Kleindienst for Gladbach &mdash; whereas the total needs a joint estimate resting on a second-tier goal record that the division change has just invalidated.</li>
+      <li>The discipline row is more robust than the corner line because it has a confirmed named official with 288 matches behind him at 4.07 yellows a game against a 3.5 line, while the corner market has no volume series at all for either club in either division.</li>
+      <li>The corner race is more robust than the corner total for the same reason it is on every fixture here: the race only asks who holds territory, which the moneyline evidence already addresses, while the 9.5 line needs a baseline that does not exist for a club playing its second top-flight match.</li>
+      <li>Where the book prices near-indifference it is being honest about what it knows. Pricing 1X and 12 identically at 1.25 is an explicit statement that a home win and an away win are near-equivalent propositions on matchday 2 &mdash; unusual for a 12th-placed Bundesliga side hosting a promoted club, and a fair reflection of the fact that the promoted club won at Leverkusen last week.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture pending" id="f4">
+  <div class="fx-head">
+    <p class="fx-league">Competition not yet established</p>
+    <h2 class="fx-title">Hoffenheim &ndash; Borussia Dortmund</h2>
+    <p class="fx-sub">15:30 CEST &middot; venue not yet established &mdash; card pending at T1</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.60 &middot; 3.80 &middot; 2.45</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.42 / 2.65</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.37 / 2.85</dd></div>
+      <div class="od"><dt>Cards line</dt><dd>3.5</dd></div>
+      <div class="od"><dt>Corners line</dt><dd>9.5</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f5">
+  <div class="fx-head">
+    <p class="fx-league">Competition not yet established</p>
+    <h2 class="fx-title">SC Paderborn &ndash; Friburgo</h2>
+    <p class="fx-sub">15:30 CEST &middot; venue not yet established &mdash; card pending at T1</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>3.75 &middot; 3.65 &middot; 1.95</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.60 / 2.20</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.53 / 2.35</dd></div>
+      <div class="od"><dt>Cards line</dt><dd>3.5</dd></div>
+      <div class="od"><dt>Corners line</dt><dd>9.5</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f6">
+  <div class="fx-head">
+    <p class="fx-league">Competition not yet established</p>
+    <h2 class="fx-title">Werder Brema &ndash; Lipsia</h2>
+    <p class="fx-sub">15:30 CEST &middot; venue not yet established &mdash; card pending at T2</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>4.10 &middot; 4.15 &middot; 1.75</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.37 / 2.85</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.40 / 2.75</dd></div>
+      <div class="od"><dt>Cards line</dt><dd>3.5</dd></div>
+      <div class="od"><dt>Corners line</dt><dd>9.5</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f7">
+  <div class="fx-head">
+    <p class="fx-league">Competition not yet established</p>
+    <h2 class="fx-title">Brentford &ndash; Sunderland</h2>
+    <p class="fx-sub">16:00 CEST &middot; venue not yet established &mdash; card pending at T2</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.73 &middot; 3.80 &middot; 4.75</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.80 / 1.95</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.72 / 2.05</dd></div>
+      <div class="od"><dt>Cards line</dt><dd>3.5</dd></div>
+      <div class="od"><dt>Corners line</dt><dd>9.5</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f8">
+  <div class="fx-head">
+    <p class="fx-league">Competition not yet established</p>
+    <h2 class="fx-title">Brighton &ndash; Leeds United</h2>
+    <p class="fx-sub">16:00 CEST &middot; venue not yet established &mdash; card pending at T2</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.05 &middot; 3.50 &middot; 3.60</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.75 / 2.00</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.62 / 2.20</dd></div>
+      <div class="od"><dt>Cards line</dt><dd>4.5</dd></div>
+      <div class="od"><dt>Corners line</dt><dd>9.5</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f9">
+  <div class="fx-head">
+    <p class="fx-league">Competition not yet established</p>
+    <h2 class="fx-title">Fulham FC &ndash; Crystal Palace</h2>
+    <p class="fx-sub">16:00 CEST &middot; venue not yet established &mdash; card pending at T1</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.15 &middot; 3.25 &middot; 3.60</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.90 / 1.85</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.68 / 2.10</dd></div>
+      <div class="od"><dt>Cards line</dt><dd>3.5</dd></div>
+      <div class="od"><dt>Corners line</dt><dd>9.5</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f10">
+  <div class="fx-head">
+    <p class="fx-league">Competition not yet established</p>
+    <h2 class="fx-title">Manchester City &ndash; Coventry City</h2>
+    <p class="fx-sub">16:00 CEST &middot; venue not established &mdash; listed with odds only</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.18 &middot; 7.50 &middot; 13.00</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.35 / 3.00</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>2.00 / 1.75</dd></div>
+      <div class="od"><dt>Cards line</dt><dd>2.5</dd></div>
+      <div class="od"><dt>Corners line</dt><dd>10.5</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; five of ten captured markets are still two-sided, the shortest result price is 1.18, and the fixture carries the result-dead, derived-live 4/7 flag. That is a statement about the evidence available to research, not a judgement on the game.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f11">
+  <div class="fx-head">
+    <p class="fx-league">Competition not yet established</p>
+    <h2 class="fx-title">Nottingham Forest &ndash; Tottenham</h2>
+    <p class="fx-sub">16:00 CEST &middot; venue not yet established &mdash; card pending at T1</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.50 &middot; 3.40 &middot; 2.80</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.75 / 2.00</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.60 / 2.25</dd></div>
+      <div class="od"><dt>Cards line</dt><dd>3.5</dd></div>
+      <div class="od"><dt>Corners line</dt><dd>10.5</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f12">
+  <div class="fx-head">
+    <p class="fx-league">Competition not yet established</p>
+    <h2 class="fx-title">Athletic Bilbao &ndash; Atletico Madrid</h2>
+    <p class="fx-sub">16:15 CEST &middot; venue not established &mdash; listed with odds only</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>3.00 &middot; 3.30 &middot; 2.40</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.85 / 1.85</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.62 / 2.15</dd></div>
+      <div class="od"><dt>Cards line</dt><dd>4.5</dd></div>
+      <div class="od"><dt>Corners line</dt><dd>9.5</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; it scored a total of 4 and lost the tie-break for the last reduced-depth slot; one club was carded in full within the last three slates. That is a statement about the evidence available to research, not a judgement on the game.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f13">
+  <div class="fx-head">
+    <p class="fx-league">Competition not yet established</p>
+    <h2 class="fx-title">Lens &ndash; Lorient</h2>
+    <p class="fx-sub">17:15 CEST &middot; venue not yet established &mdash; card pending at T1</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.55 &middot; 4.35 &middot; 5.50</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.60 / 2.20</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.68 / 2.05</dd></div>
+      <div class="od"><dt>Cards line</dt><dd>3.5</dd></div>
+      <div class="od"><dt>Corners line</dt><dd>9.5</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f14">
+  <div class="fx-head">
+    <p class="fx-league">Competition not yet established</p>
+    <h2 class="fx-title">Inter &ndash; Napoli</h2>
+    <p class="fx-sub">18:00 CEST &middot; venue not established &mdash; listed with odds only</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.67 &middot; 3.75 &middot; 5.50</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.85 / 1.90</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.85 / 1.90</dd></div>
+      <div class="od"><dt>Cards line</dt><dd>3.5</dd></div>
+      <div class="od"><dt>Corners line</dt><dd>9.5</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; it scored a total of 3, separated cleanly by score with no tie-break; both clubs were carded in full within the last three slates. That is a statement about the evidence available to research, not a judgement on the game.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f15">
+  <div class="fx-head">
+    <p class="fx-league">Competition not yet established</p>
+    <h2 class="fx-title">Hull City &ndash; Aston Villa</h2>
+    <p class="fx-sub">18:30 CEST &middot; venue not yet established &mdash; card pending at T1</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>4.00 &middot; 3.60 &middot; 1.90</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.85 / 1.90</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.75 / 2.00</dd></div>
+      <div class="od"><dt>Cards line</dt><dd>3.5</dd></div>
+      <div class="od"><dt>Corners line</dt><dd>9.5</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f16">
+  <div class="fx-head">
+    <p class="fx-league">Competition not yet established</p>
+    <h2 class="fx-title">Rayo Vallecano &ndash; Racing Santander</h2>
+    <p class="fx-sub">18:30 CEST &middot; venue not yet established &mdash; card pending at T1</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.00 &middot; 3.50 &middot; 3.75</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.65 / 2.10</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.55 / 2.30</dd></div>
+      <div class="od"><dt>Cards line</dt><dd>5.5</dd></div>
+      <div class="od"><dt>Corners line</dt><dd>10.5</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f17">
+  <div class="fx-head">
+    <p class="fx-league">Competition not yet established</p>
+    <h2 class="fx-title">Schalke 04 &ndash; Bayern Monaco</h2>
+    <p class="fx-sub">18:30 CEST &middot; venue not established &mdash; listed with odds only</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>14.00 &middot; 8.50 &middot; 1.15</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.20 / 4.20</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.65 / 2.10</dd></div>
+      <div class="od"><dt>Cards line</dt><dd>3.5</dd></div>
+      <div class="od"><dt>Corners line</dt><dd>9.5</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; four of eight captured markets are still two-sided, the lowest live-row count on the sheet, and the fixture carries the result-dead, derived-live 3/5 flag. That is a statement about the evidence available to research, not a judgement on the game.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f18">
+  <div class="fx-head">
+    <p class="fx-league">Competition not yet established</p>
+    <h2 class="fx-title">Roma &ndash; Atalanta</h2>
+    <p class="fx-sub">20:45 CEST &middot; venue not established &mdash; listed with odds only</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.70 &middot; 3.80 &middot; 4.90</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.65 / 2.15</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.62 / 2.20</dd></div>
+      <div class="od"><dt>Cards line</dt><dd>3.5</dd></div>
+      <div class="od"><dt>Corners line</dt><dd>9.5</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; it scored a total of 4 and lost the tie-break for the last reduced-depth slot; both clubs were carded in full within the last three slates. That is a statement about the evidence available to research, not a judgement on the game.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f19">
+  <div class="fx-head">
+    <p class="fx-league">Competition not yet established</p>
+    <h2 class="fx-title">Le Havre AC &ndash; Brest</h2>
+    <p class="fx-sub">20:45 CEST &middot; venue not yet established &mdash; card pending at T1</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.70 &middot; 3.25 &middot; 2.65</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.90 / 1.80</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.72 / 2.00</dd></div>
+      <div class="od"><dt>Cards line</dt><dd>3.5</dd></div>
+      <div class="od"><dt>Corners line</dt><dd>9.5</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f20">
+  <div class="fx-head">
+    <p class="fx-league">Competition not yet established</p>
+    <h2 class="fx-title">Nizza &ndash; Le Mans FC</h2>
+    <p class="fx-sub">20:45 CEST &middot; venue not established &mdash; listed with odds only</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.75 &middot; 3.75 &middot; 4.50</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.75 / 1.97</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.65 / 2.10</dd></div>
+      <div class="od"><dt>Cards line</dt><dd>4.5</dd></div>
+      <div class="od"><dt>Corners line</dt><dd>9.5</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; it scored a total of 4; both clubs were carded in full within the last three slates and its distinctiveness score was still provisional at the triage cap. That is a statement about the evidence available to research, not a judgement on the game.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f21">
+  <div class="fx-head">
+    <p class="fx-league">Competition not yet established</p>
+    <h2 class="fx-title">Villarreal &ndash; Deportivo La Coru&ntilde;a</h2>
+    <p class="fx-sub">21:00 CEST &middot; venue not established &mdash; listed with odds only</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.48 &middot; 4.60 &middot; 6.25</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.65 / 2.15</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.72 / 2.00</dd></div>
+      <div class="od"><dt>Cards line</dt><dd>4.5</dd></div>
+      <div class="od"><dt>Corners line</dt><dd>10.5</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; it scored a total of 4 and lost the tie-break for the last reduced-depth slot. That is a statement about the evidence available to research, not a judgement on the game.</div>
+  </div>
+</article>
+
+<section>
+  <h2 class="sec">Across the card</h2>
+  <ul><li><strong>Best structurally supported family today &mdash; discipline, on the two fixtures with a confirmed appointment.</strong> M&ouml;nchengladbach&ndash;Elversberg and Fiorentina&ndash;Torino both carry a federation-confirmed official, and in Petersen&rsquo;s case a 288-match career record at 4.07 yellows a game against a 3.5 line. That is the only kind of evidence on this board built from more than two matchdays. Leverkusen&ndash;Union has the better-documented referee record of the three &mdash; 19 matches, 72 yellows, 3 reds, four penalties last season &mdash; but the appointment itself is reported rather than confirmed, which is why that row is rated one step below.</li><li><strong>Least supported family &mdash; goals totals, on all three built cards without exception.</strong> Two of the three are priced at 1.43 or shorter on the over: Leverkusen&ndash;Union at 1.35 off two matchday-one scorelines that produced six goals each, and M&ouml;nchengladbach&ndash;Elversberg at 1.43 off a promoted club&rsquo;s 64-goal second-tier season and a 3&ndash;0 defeat at Leipzig. The third, Fiorentina&ndash;Torino at 1.90/1.85, is the book declining to take a view on two attacks that have not scored, which is the honest position given the evidence.</li><li><strong>The one fixture where a season-long record still describes the team &mdash; none of the three, and that is the finding.</strong> Every built card has either a new head coach or a promotion inside it. The closest to a stable reading is M&ouml;nchengladbach, whose 42 goals scored and 53 conceded were produced under the coach still in the job, and even there the number covers a season he only joined in mid-September.</li><li><strong>Where the book has priced indifference.</strong> Twice on the built cards, and in both cases it is describing the evidence accurately. Fiorentina&ndash;Torino has cards at 1.80 both ways and a goals total at 1.90/1.85 &mdash; two winless teams under two new coaches, and a referee whose only published metric is his red-card rate. M&ouml;nchengladbach&ndash;Elversberg prices 1X and 12 identically at 1.25, an explicit statement that a home win and an away win are near-equivalent risks when the promoted side won at Leverkusen the week before.</li></ul>
+</section>
+
+<footer>
+  <p><strong>Scope.</strong> This page rates market <em>families</em> only. It contains no selections, no sides, no recommended lines and no confidence labels &mdash; by design. Where evidence is thin it says so rather than filling the gap.</p>
+  <p><strong>Sources.</strong> Sources are logged per fixture in <span class="mono">sources_13.md</span> as each card is built. For the cards on this board: Lega Serie A designation lists via calcionews24, toro.it, toronews.net, firenzeviola.it and CalVAR; bundesliga.com, DFB Datencenter, kicker.de and sportschau.de for German appointments and squads; Wikipedia season and transfer pages; football-italia.net, flashscore.com, violanation.com, bulinews.com, getfootballnewsgermany.com and Yahoo Sports for previews and mercato; statshub.com, whoscored.com, fussballdaten.de, oddalerts.com and sbonews.sbostats.com for referee records; ESPN, fotmob.com and Sky Sports for team news and head-to-head. Triage searches are logged separately under the Triage heading in the same file.</p>
+</footer>
+
+</div>
