@@ -16,6 +16,6 @@ f15 | 18:30 | Hull City – Aston Villa | T1 | DONE
 f16 | 18:30 | Rayo Vallecano – Racing Santander | T1 | DONE
 f17 | 18:30 | Schalke 04 – Bayern Monaco | T3 | TODO
 f18 | 20:45 | Roma – Atalanta | T3 | TODO
-f19 | 20:45 | Le Havre AC – Brest | T1 | TODO
+f19 | 20:45 | Le Havre AC – Brest | T1 | DONE
 f20 | 20:45 | Nizza – Le Mans FC | T3 | TODO
 f21 | 21:00 | Villarreal – Deportivo La Coruña | T3 | TODO
