@@ -1,0 +1,499 @@
+<title>Market Board 9 September 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<style>
+:root{
+  --bg:#EFF2F1; --surface:#FFFFFF; --surface-2:#F6F8F7; --band:#1D3F52;
+  --ink:#13201E; --ink-2:#485856; --muted:#6C7B78; --line:#D4DCDA;
+  --accent:#1D4E73; --accent-soft:#E3EDF3;
+  --good:#2C6E4B; --good-soft:#E2EFE8;
+  --warn:#8C6817; --warn-soft:#F4ECD9;
+  --bad:#A03528;  --bad-soft:#F6E2DF;
+  --brass:#856526;
+  --band-ink:#EAF1F4;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D1315; --surface:#141C1F; --surface-2:#1A2326; --band:#16303D;
+    --ink:#E3EAE8; --ink-2:#A6B4B1; --muted:#82938F; --line:#263236;
+    --accent:#79ACD0; --accent-soft:#152F3C;
+    --good:#66C093; --good-soft:#152C20;
+    --warn:#D2A950; --warn-soft:#2C2617;
+    --bad:#E27A6E;  --bad-soft:#321C19;
+    --brass:#C4A05A;
+    --band-ink:#DCE8EC;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D1315; --surface:#141C1F; --surface-2:#1A2326; --band:#16303D;
+  --ink:#E3EAE8; --ink-2:#A6B4B1; --muted:#82938F; --line:#263236;
+  --accent:#79ACD0; --accent-soft:#152F3C;
+  --good:#66C093; --good-soft:#152C20;
+  --warn:#D2A950; --warn-soft:#2C2617;
+  --bad:#E27A6E;  --bad-soft:#321C19;
+  --brass:#C4A05A;
+  --band-ink:#DCE8EC;
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:"Source Serif 4",Georgia,"Times New Roman",serif;
+  font-size:17px; line-height:1.6;
+  margin:0; padding:0 18px 96px;
+  -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:940px; margin:0 auto;}
+h1,h2,h3,h4,.ui{font-family:Archivo,"Helvetica Neue",Arial,sans-serif}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace; font-variant-numeric:tabular-nums}
+
+/* ---------- masthead ---------- */
+header.top{padding:52px 0 26px; border-bottom:2px solid var(--ink);}
+.eyebrow{
+  font-family:Archivo,sans-serif; font-size:12px; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase; color:var(--accent); margin:0 0 14px;
+}
+h1{
+  font-size:clamp(34px,7vw,54px); line-height:1.02; font-weight:800;
+  letter-spacing:-.02em; margin:0 0 14px; text-wrap:balance;
+}
+.standfirst{font-size:19px; color:var(--ink-2); margin:0; max-width:62ch;}
+.metaline{
+  display:flex; flex-wrap:wrap; gap:8px 20px; margin-top:22px;
+  font-family:Archivo,sans-serif; font-size:12.5px; font-weight:600;
+  letter-spacing:.06em; text-transform:uppercase; color:var(--muted);
+}
+
+/* ---------- generic blocks ---------- */
+section{margin-top:44px}
+h2.sec{
+  font-size:13px; font-weight:700; letter-spacing:.15em; text-transform:uppercase;
+  color:var(--muted); margin:0 0 16px; padding-bottom:8px; border-bottom:1px solid var(--line);
+}
+p{margin:0 0 14px; max-width:70ch}
+.note{
+  background:var(--accent-soft); border-left:3px solid var(--accent);
+  padding:14px 16px; font-size:15.5px; color:var(--ink-2); max-width:none;
+}
+.note strong{color:var(--ink)}
+
+/* ---------- odds table ---------- */
+.scroller{overflow-x:auto; border:1px solid var(--line); background:var(--surface)}
+table{border-collapse:collapse; width:100%; min-width:760px; font-size:14px}
+thead th{
+  background:var(--band); color:var(--band-ink);
+  font-family:Archivo,sans-serif; font-weight:700; font-size:11px;
+  letter-spacing:.09em; text-transform:uppercase;
+  padding:10px 11px; text-align:right; white-space:nowrap;
+}
+thead th:first-child{text-align:left}
+tbody td{
+  padding:10px 11px; border-top:1px solid var(--line); text-align:right;
+  font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums; white-space:nowrap;
+}
+tbody td:first-child{
+  text-align:left; font-family:Archivo,sans-serif; font-weight:600; font-size:14px;
+  white-space:normal; min-width:190px;
+}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td .ko{display:block; font-family:"IBM Plex Mono",monospace; font-weight:400; font-size:11.5px; color:var(--muted); letter-spacing:.02em}
+.unk{color:var(--brass); font-style:italic}
+
+/* ---------- fixture cards ---------- */
+.fixture{
+  background:var(--surface); border:1px solid var(--line);
+  margin-top:30px; scroll-margin-top:12px;
+}
+.fx-head{background:var(--band); color:var(--band-ink); padding:16px 20px 18px}
+.fx-league{
+  font-family:Archivo,sans-serif; font-size:11px; font-weight:700;
+  letter-spacing:.14em; text-transform:uppercase; opacity:.78; margin:0 0 6px;
+}
+.fx-title{font-family:Archivo,sans-serif; font-size:23px; font-weight:700; letter-spacing:-.01em; margin:0; line-height:1.15}
+.fx-sub{font-family:"IBM Plex Mono",monospace; font-size:12.5px; opacity:.8; margin:7px 0 0; letter-spacing:.02em}
+.fx-body{padding:20px}
+
+.fx-odds{
+  display:flex; flex-wrap:wrap; gap:0;
+  border:1px solid var(--line); background:var(--surface-2); margin:0 0 22px;
+}
+.od{flex:1 1 96px; padding:9px 12px; border-right:1px solid var(--line); border-bottom:1px solid var(--line)}
+.od:last-child{border-right:0}
+.od dt{
+  font-family:Archivo,sans-serif; font-size:10px; font-weight:700; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--muted); margin:0 0 3px;
+}
+.od dd{margin:0; font-family:"IBM Plex Mono",monospace; font-size:15px; font-weight:500; font-variant-numeric:tabular-nums}
+
+h3.blk{
+  font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--accent); margin:26px 0 10px;
+}
+h3.blk:first-of-type{margin-top:0}
+.fx-body ul{margin:0 0 14px; padding-left:20px; max-width:70ch}
+.fx-body li{margin-bottom:7px}
+.tag{
+  font-family:Archivo,sans-serif; font-size:11px; font-weight:700;
+  letter-spacing:.07em; text-transform:uppercase; padding:2px 7px; white-space:nowrap;
+}
+.t-low{background:var(--good-soft); color:var(--good)}
+.t-mid{background:var(--warn-soft); color:var(--warn)}
+.t-high{background:var(--bad-soft); color:var(--bad)}
+
+/* market suitability rows */
+.mkt{border-top:1px solid var(--line)}
+.mkt-row{
+  display:grid; grid-template-columns:150px 1fr; gap:0;
+  border-bottom:1px solid var(--line);
+}
+.mkt-name{
+  padding:13px 14px 13px 0; font-family:Archivo,sans-serif;
+  font-weight:700; font-size:14px; line-height:1.3;
+}
+.mkt-name .verdict{display:block; margin-top:6px}
+.mkt-why{padding:13px 0 13px 16px; border-left:3px solid var(--line); font-size:15.5px; color:var(--ink-2)}
+.mkt-row.good .mkt-why{border-left-color:var(--good)}
+.mkt-row.ok .mkt-why{border-left-color:var(--warn)}
+.mkt-row.bad .mkt-why{border-left-color:var(--bad)}
+@media (max-width:620px){
+  .mkt-row{grid-template-columns:1fr; gap:0}
+  .mkt-name{padding-bottom:6px}
+  .mkt-why{padding:0 0 14px 14px}
+}
+
+/* index list */
+.index{display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line)}
+.index a{
+  display:block; background:var(--surface); padding:12px 14px; text-decoration:none;
+  color:var(--ink); font-family:Archivo,sans-serif; font-weight:600; font-size:14.5px;
+}
+.index a:hover,.index a:focus-visible{background:var(--accent-soft); color:var(--accent)}
+.index a span{display:block; font-family:"IBM Plex Mono",monospace; font-weight:400; font-size:11.5px; color:var(--muted); margin-top:3px; letter-spacing:.03em}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+
+footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); font-size:14px; color:var(--muted); max-width:74ch}
+footer a{color:var(--accent)}
+
+/* ---------- not-yet-built fixture ---------- */
+.fixture.pending{opacity:.72}
+.pending-note{
+  font-family:Archivo,sans-serif; font-size:13px; font-weight:600;
+  letter-spacing:.04em; color:var(--muted);
+  background:var(--surface-2); border:1px dashed var(--line);
+  border-radius:8px; padding:14px 16px; margin-top:18px;
+}
+</style>
+
+<div class="wrap">
+
+<header class="top">
+  <p class="eyebrow">Context engine &middot; no picks, no sides, no lines</p>
+  <h1>Matchday one, six different amounts of season</h1>
+  <p class="standfirst">Six fixtures read from odds_14.xlsx, all of them the opening night of the Champions League league phase, rebuilt from the sheet's own header row rather than from screenshots &mdash; three cards built at full depth so far, the other three listed with their odds until their research runs.</p>
+  <div class="metaline">
+    <span>9 September 2026</span>
+    <span>UEFA Champions League &middot; League phase, matchday 1</span>
+    <span>Decimal odds, bet365 IT</span>
+  </div>
+</header>
+
+<section>
+  <h2 class="sec">The one thing shaping every game on this card</h2>
+  <p>Every fixture on this sheet is the first Champions League match of the season for both clubs involved, which means the one sample that would speak directly to any of these markets &mdash; how these teams perform in this competition, this year &mdash; does not exist yet for anybody. What stands in for it is domestic form, and the striking thing about this particular card is how little the domestic samples resemble each other. Stuttgart have played two competitive matches in 2026&ndash;27. Liverpool have played three. Barcelona and Atl&eacute;tico have played four, Feyenoord five. Viking have played nineteen, because the Norwegian season runs March to November and they are two thirds of the way through it while their opponents are still finding out what their own summer purchases look like.</p><p>The second thread running through the researched cards is turnover at the two positions that are hardest to see in a season total and easiest to feel in a single match: goalkeeper and centre-back. Stuttgart lost Alexander N&uuml;bel back to Bayern after three years and more than a hundred appearances, with his deputy injured into late September. Viking replaced their first-choice goalkeeper too. Feyenoord sold Timon Wellenreuther to Wolfsburg in July and bought a &euro;6.9m centre-back. Barcelona loaned Ronald Ara&uacute;jo out and no source reached names a replacement; Liverpool sold Ibrahima Konat&eacute; to Real Madrid, bought a &pound;60m centre-back, borrowed the Ara&uacute;jo that Barcelona let go, and still have two more centre-backs unavailable through injury. Atl&eacute;tico, who changed almost everything else, are the one researched club on this board whose goalkeeping position did not move.</p><p>Three of the six clubs carded so far changed head coach since June &mdash; Feyenoord to Giovanni van Bronckhorst, Liverpool to Andoni Iraola &mdash; while the two longest continuities on the board, Hansi Flick in his third year and Diego Simeone in his fifteenth, meet opponents who did. That combination is what makes several rows on this card read the way they do: the market has priced results with confidence and priced the derived families at close to even money, which is a reasonable description of evidence that settles who is better and says almost nothing about how a match plays.</p><div class="note"><strong>Structural consequence.</strong> Section C on every card here is written against a European sample of zero and a domestic sample that ranges from two matches to nineteen. Where a row is rated well-suited it is because a named structural cause &mdash; a sold centre-back, a departed goalscorer, a confirmed referee's published number &mdash; can be pointed at directly; where it is rated dangerous it is usually because the price has already absorbed the only facts available. No card on this board rests on form narrative, because on nine September there is not enough form for a narrative to be made of.</div>
+</section>
+
+<section>
+  <h2 class="sec">Today&rsquo;s slate &mdash; odds as read from the screenshots</h2>
+  <div class="scroller">
+  <table>
+    <thead>
+      <tr>
+        <th>Fixture</th><th>1</th><th>X</th><th>2</th><th>O2.5</th><th>U2.5</th><th>BTTS&nbsp;Y</th><th>BTTS&nbsp;N</th><th>Cards</th><th>Corners</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Barcellona &ndash; Feyenoord<span class="ko">18:45 CEST</span></td><td>1.07</td><td>13.00</td><td>25.00</td><td>1.14</td><td>5.00</td><td>1.80</td><td>1.90</td><td>2.5 &nbsp;1.85/1.70</td><td>10.5 &nbsp;1.67/2.05</td></tr>
+      <tr><td>Stoccarda &ndash; Viking FK<span class="ko">18:45 CEST</span></td><td>1.25</td><td>6.50</td><td>10.00</td><td>1.23</td><td>3.85</td><td>1.53</td><td>2.40</td><td>3.5 &nbsp;2.00/1.65</td><td>10.5 &nbsp;1.72/1.97</td></tr>
+      <tr><td>Liverpool &ndash; Atletico Madrid<span class="ko">21:00 CEST</span></td><td>1.73</td><td>4.00</td><td>4.60</td><td>1.53</td><td>2.40</td><td>1.52</td><td>2.40</td><td>3.5 &nbsp;1.85/1.75</td><td>9.5 &nbsp;1.75/1.93</td></tr>
+      <tr><td>Napoli &ndash; Arsenal<span class="ko">21:00 CEST</span></td><td>5.75</td><td>3.85</td><td>1.62</td><td>1.87</td><td>1.87</td><td>1.93</td><td>1.80</td><td>3.5 &nbsp;1.55/2.10</td><td>8.5 &nbsp;2.05/1.67</td></tr>
+      <tr><td>PSG &ndash; Slovan Bratislava<span class="ko">21:00 CEST</span></td><td>1.03</td><td>20.00</td><td>30.00</td><td>1.14</td><td>5.00</td><td>2.65</td><td>1.43</td><td>2.5 &nbsp;1.90/1.70</td><td>10.5 &nbsp;1.98/1.70</td></tr>
+      <tr><td>Sporting Lisbona &ndash; Galatasaray<span class="ko">21:00 CEST</span></td><td>1.70</td><td>4.00</td><td>4.65</td><td>1.53</td><td>2.35</td><td>1.53</td><td>2.35</td><td>4.5 &nbsp;1.70/1.90</td><td>9.5 &nbsp;1.95/1.72</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="note"><strong>Provenance.</strong> No screenshots were read on this slate. Prices come from <code>odds_14.xlsx</code>, from the workbook's eighth tab &mdash; still internally labelled <code>odds_13</code>, a stale copy/paste name, but with a title row reading &ldquo;MATCHES 09-09-2026&rdquo; and the active tab on open. The file is saved in strict-OOXML conformance, which the normal reader could not open at all (it reported zero sheets); the sheet XML was read directly instead, with no effect on any value. The header row was read rather than assumed: the sheet carries no <code>league</code> or <code>venue</code> column, so both fields on every fixture come from Phase 2 research and appear only on cards that have been built. Nothing was derived and no price was estimated. Two double-chance cells are simply absent from the source &mdash; <strong>1X for Barcellona &ndash; Feyenoord, and both 1X and 12 for PSG &ndash; Slovan Bratislava</strong> &mdash; and are recorded as not given rather than reconstructed from the moneyline. Kickoff times carried no floating-point artefact this slate. All six fixtures share the date 09-09-2026 in two kickoff slots, 18:45 and 21:00 CEST.</div>
+  <div class="note"><strong>Completion.</strong> Three of six cards are built, all at full depth: <strong>f1 Barcellona &ndash; Feyenoord</strong>, <strong>f2 Stoccarda &ndash; Viking FK</strong> and <strong>f3 Liverpool &ndash; Atletico Madrid</strong>. Three remain to be researched and are listed here with their odds only: <strong>f4 Napoli &ndash; Arsenal</strong>, <strong>f5 PSG &ndash; Slovan Bratislava</strong> and <strong>f6 Sporting Lisbona &ndash; Galatasaray</strong>. Nothing on this slate was triaged out: at six fixtures the sheet sits at the threshold below which slate triage does not run, so every fixture here is scheduled for a full card and the three still pending are pending only because their research has not run yet. The order is kickoff order, earliest first, which is why the two 18:45 fixtures were built before the 21:00 ones. A fixture appearing without a card on this page is not a judgement on the game.</div>
+</section>
+
+<section>
+  <h2 class="sec">Jump to a fixture</h2>
+  <nav class="jump">
+    <a href="#f1">Barcellona &ndash; Feyenoord<span>18:45 CEST &middot; Spotify Camp Nou, Barcelona</span></a>
+    <a href="#f2">Stoccarda &ndash; Viking FK<span>18:45 CEST &middot; MHP Arena, Stuttgart</span></a>
+    <a href="#f3">Liverpool &ndash; Atletico Madrid<span>21:00 CEST &middot; Anfield, Liverpool</span></a>
+    <a href="#f4">Napoli &ndash; Arsenal<span>21:00 CEST &middot; venue not established</span></a>
+    <a href="#f5">PSG &ndash; Slovan Bratislava<span>21:00 CEST &middot; venue not established</span></a>
+    <a href="#f6">Sporting Lisbona &ndash; Galatasaray<span>21:00 CEST &middot; venue not established</span></a>
+  </nav>
+</section>
+
+<article class="fixture" id="f1">
+  <div class="fx-head">
+    <p class="fx-league">Europe &middot; UEFA Champions League &middot; League phase, matchday 1</p>
+    <h2 class="fx-title">Barcellona &ndash; Feyenoord</h2>
+    <p class="fx-sub">18:45 CEST &middot; Spotify Camp Nou, Barcelona &middot; The reigning Spanish champions, rebuilt around a &pound;65m defensive midfielder and a &pound;69m winger, open at home against a side that changed coach in June and has not lost yet</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.07 &middot; 13.00 &middot; 25.00</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>&mdash; &middot; 1.02 &middot; 8.50</dd></div>
+      <div class="od"><dt>EH &minus;3 (1/X/2)</dt><dd>2.20 &middot; 4.55 &middot; 2.30</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.14 / 5.00</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.80 / 1.90</dd></div>
+      <div class="od"><dt>Cards 2.5 U / O</dt><dd>1.85 / 1.70</dd></div>
+      <div class="od"><dt>Barcellona cards 0.5 U / O</dt><dd>2.00 / 1.57</dd></div>
+      <div class="od"><dt>Feyenoord cards 1.5 U / O</dt><dd>2.05 / 1.55</dd></div>
+      <div class="od"><dt>Corners 10.5 U / O</dt><dd>1.67 / 2.05</dd></div>
+      <div class="od"><dt>Corner race 1/X/2</dt><dd>1.08 &middot; 12.00 &middot; 8.00</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>Neither club is promoted; both qualified for this competition through their domestic league and both arrive four or five matches into their own season, so this is a first Champions League fixture played on a real if short 2026&ndash;27 sample rather than on last year's numbers alone. Barcelona are the reigning LaLiga champions and won that title with 94 points, 31 wins from 38 and 95 goals scored &mdash; their 29th, sealed with three matches to spare by beating Real Madrid 2&ndash;0 on 10 May 2026. Feyenoord finished second in the Eredivisie on 65 points from 19 wins, eight draws and seven defeats, scoring 70 and conceding 44, with Ayase Ueda the league top scorer on 25. The structural headline is that only one of these clubs kept its coach. Hansi Flick is in his third season at Barcelona and spent an enormous summer inside a settled framework; Feyenoord parted company with Robin van Persie on 7 June 2026 and appointed Giovanni van Bronckhorst in the middle of that month, so the shape the visitors bring to the Camp Nou has five competitive matches attached to it and nothing older. Both sides are unbeaten domestically &mdash; Barcelona lead LaLiga with 12 points from four, Feyenoord are third on 11 from five &mdash; and both won away last weekend, Barcelona 5&ndash;0 at Valencia on 6 September and Feyenoord 3&ndash;1 at NEC Nijmegen on 5 September.</p>
+    <ul>
+      <li><strong>Barcellona &mdash; turnover high in money and concentrated at the two ends of the spine; the coach is not new.</strong> Flick stays, which is the single most important continuity fact on this card, but the squad around him changed at the top of the market. In, with fees as published: Rodri from Manchester City for a reported &pound;65m &mdash; a World Cup-winning defensive midfielder, and the deepest-lying signing of the window; Anthony Gordon from Newcastle United for a reported &pound;69m, described in the sources as the club's largest single outlay since Frenkie de Jong in 2019; Gabriel Jesus from Arsenal for a reported &euro;10m rising to &euro;14.5m with add-ons; Karim Adeyemi, issued the No. 14; and Jo&atilde;o Cancelo returning to the No. 2. Out: Robert Lewandowski and Ferran Torres, Ansu Fati permanently to Monaco for a reported &euro;11m, and &mdash; the departure that matters most to the shape of this particular match &mdash; Ronald Ara&uacute;jo on a season-long loan to Liverpool. Weighted as the spec asks: <em>defensive midfield</em> is where the largest fee went, <em>centre-forward</em> has been entirely re-personned with Lewandowski out and Jesus in, and <em>centre-back</em> is the one department that lost a first-choice body without a published replacement. <strong>Gap:</strong> no fee is published in anything reached for Adeyemi or Cancelo, and no goalkeeper movement in either direction was established for Barcelona &mdash; neither is estimated here. <strong>Gap:</strong> Barcelona's 2025&ndash;26 goals-conceded column was not obtainable in any source reached, only the 95 scored, so the defensive baseline that would frame the Ara&uacute;jo loan is missing.</li>
+      <li><strong>Feyenoord &mdash; medium-to-high turnover, weighted unusually heavily to defence, and the head coach is new since June.</strong> Van Bronckhorst replaced Van Persie in June 2026 with Sipke Hulshoff named alongside him, so every stylistic claim about the visitors rests on five league matches. The window was defence-first to a degree worth naming: Anel Ahmedhod&#382;i&#263; arrived from Sheffield United on a four-year contract for a reported &euro;6.9m, the largest published fee of their summer and a centre-back; Jordan Bos, an Australian left-back, for a reported &euro;5m; M&aacute;rmol, a defender, on a free on 30 June 2026; a goalkeeper recorded in the sources as Ernst on 16 July 2026, signed after Timon Wellenreuther left for VfL Wolfsburg on that same date. In midfield, Vanhoutte was confirmed on 19 June 2026 and Chris-K&eacute;vin Nadje from KAS Eupen on 1 August 2026. Out, besides Wellenreuther: Kasanwirjo to Norway on 29 August 2026 and Casper Tengstedt to Toulouse on 31 August 2026, the latter two inside the last fortnight. Read together, the GK/CB ledger the spec asks for is genuinely busy on this side: the first-choice goalkeeper replaced, a &euro;6.9m centre-back and a &euro;5m left-back added, one defender sold late. <strong>Gap:</strong> the transfer listing reached also names Sem Steijn, Luciano Valente, Casper Tengstedt, Gon&ccedil;alo Borges, Tsuyoshi Watanabe and Gaoussou Diarra among &ldquo;summer signings&rdquo; without dating them, and at least one of those &mdash; Tengstedt &mdash; is recorded as sold this summer in the same material; the source does not separate the 2025 window from the 2026 one, so those six are not asserted as 2026 arrivals here. <strong>Gap:</strong> no fee is published for Vanhoutte, Nadje, M&aacute;rmol or the incoming goalkeeper.</li>
+      <li><strong>Suspensions / absences.</strong> No suspension is reported for either side for this fixture in anything reached. Barcelona had a fitness scare over Lamine Yamal before the Valencia match &mdash; he was reported missing from the final training session &mdash; which resolved itself: he started, scored twice and was named among the club's five captains for this season at nineteen. <strong>Gap:</strong> both previews reached state plainly that no confirmed injury or absence list had been published for either squad at the time of writing, Feyenoord's fitness situation described as unclear. This card therefore asserts no absentee for either team, which is a real limitation on a fixture where the visitors' defence is the department under scrutiny.</li>
+      <li><strong>Sample.</strong> Four LaLiga matches for Barcelona and five Eredivisie matches for Feyenoord, and this is matchday 1 of the league phase, so neither side has a European minute this season. Barcelona: 12 points from four, top of LaLiga, 19 goals scored and three conceded across their last five in all competitions, Raphinha with six league goals in four while playing centrally, the most recent result a 5&ndash;0 win at Mestalla. Feyenoord: 11 points from five, third, 13 scored and seven conceded, three wins and two draws, unbeaten &mdash; but both draws were 2&ndash;2, against Go Ahead Eagles on 16 August and ADO Den Haag on 30 August, and one preview reaching this card characterises their defence as suspect so far. <strong>Gap:</strong> no xG, shot volume, possession share, foul rate, card rate or corner count was obtainable for either club in either season, which is the binding constraint on sections B and C below.</li>
+      <li><strong>Referee.</strong> Sven Jablonski (Germany), confirmed rather than provisional, with a full published team: Eduard Beitinger and Eric M&uuml;ller on the lines, Tobias Reichel as fourth official and Bastian Dankert on VAR. Two published numbers matter. In 2025&ndash;26 he officiated 22 matches at 3.68 cards per game &mdash; 3.55 yellow, 0.14 red &mdash; across the Bundesliga, this competition, the DFB-Pokal, European World Cup qualifying, the Belgian Pro League and the Greek Super League. And he awarded one penalty in the whole of that season, 0.05 per match, which is a strikingly lenient reading of contact in the box by any standard and the single most distinctive thing about this appointment. Sources note this is his first European fixture of the season and that he has never taken charge of Barcelona in Europe before. <strong>Gap:</strong> his fouls-per-card ratio is not published in anything reached, so whether 3.68 cards a game comes from booking early in a low-foul match or late in a scrappy one cannot be established; and with no Barcelona history there is no club-specific record to report on either side.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Barcelona's shape is the one thing on this card that does not need to be inferred from a CV: Flick is in year three, the side won the league by fourteen clear of the 80-point mark and has started this season with four wins from four and three goals conceded in five matches across competitions. What the summer changed is the composition rather than the intent. Rodri at a reported &pound;65m is a single-pivot signing, the kind of purchase that lets a high line be held higher because the space in front of the centre-backs is covered by a specialist; Gordon at &pound;69m and Adeyemi are wide, direct additions to a front line that already carried Yamal and Raphinha; and Gabriel Jesus replaces Lewandowski with a centre-forward of an entirely different profile &mdash; more pressing, less penalty-box occupancy. The observable consequence so far is that Raphinha has been used centrally and has six league goals in four, which suggests the nominal No. 9 is not the reference point this attack builds around. Against that, the one departure nobody has replaced in the sources reached is Ara&uacute;jo, loaned to Liverpool for the season, and he was the centre-back most associated with defending the space behind that high line. <strong>Gap:</strong> without an xG series, a possession figure or a foul rate for either season, this section is describing personnel and results, not a measured pressing height, and it declines to assert one.</p>
+    <p>Feyenoord are the harder side to write about honestly, because the coach has been in post since June and the evidence is five league matches old. Van Bronckhorst inherits a squad that finished second and scored 70, and he has spent the summer reinforcing the back: a &euro;6.9m centre-back in Ahmedhod&#382;i&#263;, a &euro;5m left-back in Bos, a free-transfer defender in M&aacute;rmol, and a new goalkeeper after Wellenreuther's July sale to Wolfsburg. That is a defence rebuilt in one window and then asked to play its first away match of the European season at the Camp Nou. The five-match record reads as a side that scores freely and does not keep clean sheets: 13 for and seven against, a 5&ndash;2 win at Cambuur, and two 2&ndash;2 draws inside three weeks. The preview material reaching this card names Tsuyoshi Watanabe and Jeremiah St. Juste as the pairing anchoring that back line and describes both teams as front-foot sides, which if accurate is the most consequential stylistic fact here &mdash; a visiting side that presses rather than sits will meet a home side built to play through a press. <strong>Gap:</strong> that characterisation comes from a match preview, not from any measured series; no pressing, possession, crossing or set-piece volume figure was obtainable for Feyenoord under either coach, and the summer's defensive rebuild means even a 2025&ndash;26 baseline would describe partly different players. The evidence for how this team defends is a CV plus five matches, and the card says so rather than dressing it up.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous &mdash; the row is settled, and says nothing</span></div><div class="mkt-why">1.07 against 25.00 is a result market that has already absorbed every structural fact on this page: the champions of a bigger league, at home, unchanged in the dugout, four wins from four, against a side that changed coach in June. There is no reasoning left to do on it in either direction &mdash; a price that short is dead for the favourite and the underdog at the same time. The double chance restates it in shorter form, with 12 at 1.02 carrying no question at all and X2 at 8.50 the only leg still two-sided, and it adds nothing the moneyline has not already said.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Asian handicap / EH &minus;3<span class="verdict tag t-mid">OK &mdash; the only version of the result question still open</span></div><div class="mkt-why">2.20 / 4.55 / 2.30 on the three-goal line is where the result market becomes a real question again, and the structural material bears on it directly rather than by restatement. On one side: 19 goals in five matches for the home team, Raphinha scoring at a goal a game from a central role, and a 5&ndash;0 away win four days ago. On the other: a visiting defence with a &euro;6.9m centre-back, a &euro;5m left-back and a new goalkeeper who have been assembled since June, which cuts both ways &mdash; new pairings concede sloppy goals, but Feyenoord have also not lost a match this season and have scored in all five. The honest limit is that no xG or shot series exists for either club here, so the case rests on scorelines and personnel, not on underlying volume.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-high">Dangerous &mdash; 1.14 has priced the same facts the moneyline did</span></div><div class="mkt-why">The over is short enough that the row has stopped asking a question: it is the 1.07 favourite's scoring rate expressed in a second currency. The material behind it is real &mdash; Barcelona 19 goals in five, Feyenoord 13 in five and seven conceded, neither side having kept the other quiet in any recent match &mdash; but that is exactly why there is nothing left to discover at 1.14, and the 5.00 under is not a two-sided proposition either. Where a goals question survives on this fixture it survives in BTTS and in the handicap, not here.</div></div>
+      <div class="mkt-row good"><div class="mkt-name">BTTS<span class="verdict tag t-low">Well-suited &mdash; near even money, and both halves are separately evidenced</span></div><div class="mkt-why">1.80 against 1.90 is the flattest row on this fixture, and unusually for a match priced at 1.07 it decomposes into two questions that the evidence can address independently. The visiting attack is not the part of Feyenoord that changed: they scored 70 in the Eredivisie last season, have 13 in five this one, have scored in every league match, and drew 2&ndash;2 twice in three weeks. The home defence is the part of Barcelona that did change, with Ara&uacute;jo loaned out and no centre-back arrival published to replace him, against three conceded in five matches. That is a genuine tension between a settled scoring record on one side and a personnel change with a short sample on the other, and the price reflecting it at near even money is the book saying the same thing.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-mid">OK &mdash; confirmed official, but his own average sits above the line</span></div><div class="mkt-why">The appointment is published, so this row is not evidence-thin for want of a referee: Jablonski is confirmed with a full team. The tension is that the match line is 2.5 &mdash; the lowest on this slate along with one other &mdash; while his 2025&ndash;26 average was 3.68 cards a game across 22 matches. The reconciliation the book is implicitly making is that a 1.07 favourite at home rarely produces a competitive foul count, and the team lines say exactly that: Barcelona at 0.5 cards is the book stating it expects the home side to be booked at most once, while Feyenoord's line sits a full card higher at 1.5. His penalty rate is the other distinctive number &mdash; one awarded all last season, 0.05 per match &mdash; which matters on a fixture where a heavy favourite will spend the evening attacking a rebuilt back four. <strong>Gap:</strong> fouls per card is unpublished for him, so whether that 3.68 reflects early booking or late is not established.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Corners<span class="verdict tag t-mid">OK on the total, dead on the race</span></div><div class="mkt-why">10.5 with the under at 1.67 is one of the higher corner lines on this slate and the only corner question here still two-sided; the race at 1.08 is the moneyline again in territorial dress and carries no separate reasoning. What can be said structurally about the total is thin but real: a heavy favourite at home against a side that presses rather than sits produces a different corner profile than one that defends deep, and Feyenoord's five matches suggest a team that attacks rather than absorbs. <strong>Gap:</strong> no corner series was obtainable for either club in either season, and Feyenoord's defensive rebuild would undermine a 2025&ndash;26 baseline even if one existed, so the line's own level is most of what is available to reason from.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li>Half of this fixture has a new coach and half does not, and the asymmetry runs the opposite way to the prices. Van Bronckhorst has been at Feyenoord since June with five competitive matches behind him; Flick is in year three. Every stylistic statement about the visitors on this page is a five-match statement, and their defence in particular was rebuilt in the same window &mdash; new goalkeeper, &euro;6.9m centre-back, &euro;5m left-back &mdash; so even last season's 44 goals conceded describes a partly different unit.</li>
+      <li>Barcelona's own defensive baseline is the weakest-evidenced number on the card. Their 2025&ndash;26 goals-conceded column was not obtainable anywhere reached, only the 95 scored and the 94 points, and the one first-choice centre-back movement of the summer was outward &mdash; Ara&uacute;jo on loan to Liverpool &mdash; with no published replacement. Three conceded in five matches is the entire defensive record this page can show.</li>
+      <li>Neither side has played a European minute this season, and both are running on domestic form against domestic opposition &mdash; four LaLiga matches and five Eredivisie ones. Nothing on this page establishes how either squad travels in this competition or how a June-appointed coach sets up away from home in it, because there is no instance of it yet.</li>
+      <li>The transfer record for the visitors is partly undated. The listing reached mixes six further names into &ldquo;summer signings&rdquo; without dates, and records one of them as sold this summer in the same material, so the arrivals asserted above are only those with a date or a fee attached. A fuller squad picture exists somewhere; it was not obtainable within the ceiling.</li>
+      <li><strong>Most sensitive:</strong> the discipline rows, where a 2.5 match line and a 0.5 home-team line are being set against an official whose own published average is 3.68 cards a game, with no fouls-per-card figure available to reconcile the two. <strong>Least sensitive:</strong> BTTS, the one family here supported on both sides by a scoring record rather than by an inference &mdash; 70 goals last season and 13 in five this one for the visitors, against a home defence that lost a centre-back and has a five-match sample.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>The handicap is more robust than the moneyline here because 1.07 has already absorbed every fact on this page &mdash; champions, home, settled coach, four from four &mdash; while &minus;3 at 2.20 still asks something the evidence can be pointed at: whether a defence assembled since June, with a new goalkeeper and a &euro;6.9m centre-back, concedes three to an attack averaging nearly four a game.</li>
+      <li>Both-teams-to-score is more robust than the goals total because it splits into two separately evidenced halves &mdash; Feyenoord have scored in all five league matches and drew 2&ndash;2 twice in three weeks, and Barcelona lost Ara&uacute;jo with no published centre-back replacement &mdash; whereas the 1.14 over needs no reasoning at all, being the favourite's scoring rate restated.</li>
+      <li>The match cards line is more robust than the team card lines because it is the only discipline row that engages Jablonski's one solid published number, 3.68 cards per game, directly against the 2.5 the book has set; the 0.5 home line asks instead for a prediction about how a match at 1.07 is refereed, which no published fouls-per-card figure for this official exists to support.</li>
+      <li>The corner total is more robust than the corner race because the race at 1.08 dies with the moneyline and restates it, while the 10.5 line at least asks about territorial volume in a match between two sides both described as front-foot &mdash; though with no corner series obtainable for either club, that question is asked on thinner evidence than any other live row here.</li>
+      <li>Where the book has priced indifference it has done so exactly once, and it is worth reading as a statement about its own confidence: BTTS at 1.80/1.90 on a fixture where it is otherwise willing to quote 1.07 and 25.00. A book that certain about the result and that uncertain about whether the underdog scores is telling you which of the two questions the evidence actually settles.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f2">
+  <div class="fx-head">
+    <p class="fx-league">Europe &middot; UEFA Champions League &middot; League phase, matchday 1</p>
+    <h2 class="fx-title">Stoccarda &ndash; Viking FK</h2>
+    <p class="fx-sub">18:45 CEST &middot; MHP Arena, Stuttgart &middot; A German side two matches into its season, without the goalkeeper who played the last three, against a Norwegian side nineteen matches into its own and back in this competition after four decades</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.25 &middot; 6.50 &middot; 10.00</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>1.04 &middot; 1.10 &middot; 3.90</dd></div>
+      <div class="od"><dt>EH &minus;2 (1/X/2)</dt><dd>2.40 &middot; 4.35 &middot; 2.20</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.23 / 3.85</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.53 / 2.40</dd></div>
+      <div class="od"><dt>Cards 3.5 U / O</dt><dd>2.00 / 1.65</dd></div>
+      <div class="od"><dt>Stoccarda cards 1.5 U / O</dt><dd>1.65 / 1.90</dd></div>
+      <div class="od"><dt>Viking cards 2.5 U / O</dt><dd>1.55 / 2.10</dd></div>
+      <div class="od"><dt>Corners 10.5 U / O</dt><dd>1.72 / 1.97</dd></div>
+      <div class="od"><dt>Corner race 1/X/2</dt><dd>1.16 &middot; 10.00 &middot; 5.75</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>Neither club is promoted, but the structural headline here is not promotion &mdash; it is the calendar. Stuttgart are two Bundesliga matches into 2026&ndash;27, having taken three points from a win and a defeat with five scored and six conceded as of 6 September; Viking are nineteen matches into a Norwegian season that runs March to November, sitting second in the Eliteserien on 44 points from 14 wins, two draws and three defeats, with 43 scored and 19 conceded, three points behind Bod&oslash;/Glimt. One of these teams is in the fitness state of matchday two and the other is in the state of matchday nineteen, and everything below follows from that. Stuttgart finished fourth in the Bundesliga last season on 62 points, won the DFB-Pokal in 2025 and reached a second consecutive final in 2026, losing 3&ndash;0 to Bayern Munich to a Harry Kane hat-trick; Sebastian Hoene&szlig; remains in charge and the sources reaching this card describe the squad as the deepest of his tenure. Viking won the Norwegian title in 2025 &mdash; their first in 34 years &mdash; and converted it into a Champions League place by eliminating Dinamo Zagreb 5&ndash;3 on aggregate in the play-off round, returning to the main draw of this competition after more than four decades away.</p>
+    <ul>
+      <li><strong>Stoccarda &mdash; medium turnover by volume, but the goalkeeping position turned over completely and no fee was published for anything.</strong> Hoene&szlig; is unchanged, so the shape has a record; the personnel behind it has moved at exactly the places the spec asks about. <em>Goalkeeper:</em> Alexander N&uuml;bel returned to Bayern Munich at the end of a three-year loan having made more than a hundred appearances, and the predicted XI reaching this card starts Bredlow instead, with the other senior option, Dennis Seimen, reported out with a thigh injury until late September. <em>Centre-forward:</em> D&#382;enan Pej&#269;inovi&#263; arrived from Wolfsburg and Jovan Milosevic left for Braga. <em>Midfield:</em> Grischa Pr&ouml;mel, 31, came from Hoffenheim on a three-year deal and Bilal El Khannouss was made permanent after his loan from Leicester &mdash; he scored five Europa League goals last season. Also reported in: Leo Sauer, a 20-year-old winger from Feyenoord, plus Badredine Bouanani from Nice, Tiago Tom&aacute;s from Wolfsburg, Chema Andr&eacute;s from Real Madrid, Jeremy Arevalo from Racing Santander and Tim van der Leij, a 20-year-old striker from RKC Waalwijk on a four-year deal to June 2030. Out besides N&uuml;bel and Milosevic: Pascal Stenzel on an expired contract, Laurin Ulrich on loan to Paderborn, Yannik Keitel and Noah Darvich on loan exits, Darvich to Elversberg. <strong>Gap:</strong> <em>no transfer fee is published in any source reached for a single one of these movements, in either direction.</em> One report names asking prices &mdash; Stergiou around &euro;2m, Keitel around &euro;1.5m, Milosevic around &euro;8m &mdash; but those are valuations in a &ldquo;set to leave&rdquo; piece, not confirmed fees, and nothing is estimated here. <strong>Gap:</strong> no centre-back arrival was established.</li>
+      <li><strong>Viking FK &mdash; medium turnover, weighted to goalkeeper and forward, under a coaching structure that is itself the unusual fact.</strong> The club is run by two head coaches, Bjarte Lunde Aarsheim and Morten Jensen, in their sixth consecutive season together with what the sources describe as equal authority and responsibility &mdash; not a change this window, but a standing arrangement worth naming because it is the thing least like the rest of this slate. Their 2026 window: <em>goalkeeper</em> &#317;ubom&iacute;r Belko in from &#381;ilina and Erlend Jacobsen from Brodd, against Kristoffer Klaesson out to Aalesund &mdash; a first-choice replacement, mirroring the home side's; <em>forward</em> Erik Botheim in from Malm&ouml; FF, Romano Postema from Groningen and Kelvin Frimpong, against Edvin Austb&oslash; out to West Ham United; <em>midfield</em> Henrik Bj&oslash;rdal from V&aring;lerenga; <em>defence</em> Essi&euml;n Bassey from PSV Eindhoven. Peter Christiansen leads their league scoring with nine. <strong>Gap:</strong> no fee is published for any Viking movement either, in or out &mdash; so this fixture carries two full transfer ledgers and not one confirmed fee between them, which is unusual on this board and is stated rather than papered over.</li>
+      <li><strong>Suspensions / absences.</strong> This is the best-evidenced part of the fixture and it cuts against both sides. Viking are reported without Veton Berisha, Martin Ove R&oslash;seth, Nick D'Agostino, Anders B&aelig;rtelsen and Henrik Falchener, and the source describes them as particularly short in defence as a result. Stuttgart are reported to have up to seven players unavailable, including centre-back Dan-Axel Zagadou, with Nikolas Nartey out with a muscle injury and goalkeeper Dennis Seimen out until late September. <strong>Gap:</strong> no suspension is named for either club, and the Stuttgart list is given as a count with two or three names attached rather than in full, so the identity of four of those seven is not established here.</li>
+      <li><strong>Sample.</strong> Radically asymmetric, and this is the fact to carry into every row below. Stuttgart have played two competitive matches this season: three points, five goals scored, six conceded, and the preview material records three wins in their last six across all competitions. Viking have played nineteen league matches plus a full Champions League qualifying run: 44 points, 43 goals for, 19 against, most recently a 1&ndash;1 draw away at Sandefjord on 4 September, with August bringing a 3&ndash;0 win over Start, a 2&ndash;1 win over Aalesund and a 2&ndash;1 defeat to Rosenborg. One preview describes them as unbeaten in five arriving in Germany. <strong>Gap:</strong> no xG, shot volume, possession, foul rate, card rate or corner series was obtainable for either club in either season. The Stuttgart figures rest on two matches; the Viking figures rest on nineteen but in a league whose level relative to the Bundesliga this card has no measured basis to convert.</li>
+      <li><strong>Referee.</strong> Nenad Minakovi&#263; (Serbia), confirmed rather than provisional, with Nikola Borovi&#263; and Bo&scaron;ko Bo&#382;ovi&#263; on the lines, Danilo Nikoli&#263; as fourth official and Ivan Bebek of Croatia on VAR. The one published figure reached is a career aggregate and it is high: 190 fixtures, 836 yellow cards and 20 red, which is 4.40 yellows a game and roughly a red every ten matches. <strong>Gap:</strong> that number is not split by season or by competition, so how much of it comes from Serbian domestic football and how much from European ties is not established; his penalties-per-game and his fouls-per-card ratio are not published anywhere reached; and no record of him with either of these clubs was found. The direction of the one number available is unambiguous, but it is a career mean carrying the whole Discipline row on its own.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Stuttgart's shape has continuity that most sides on this slate do not: Hoene&szlig; is in his fourth season, the side finished fourth, and the predicted lineup reaching this card is a recognisable 4&ndash;2&ndash;3&ndash;1 &mdash; Bredlow behind Vagnoman, Jeltsch, Chabot and Mittelst&auml;dt, Stiller and Pr&ouml;mel as the double pivot, Leweling, Undav and F&uuml;hrich behind Pej&#269;inovi&#263;. Undav is the reference point in that structure: 25 goals and 14 assists across all competitions last season with nine goal involvements in the Europa League, and El Khannouss adds five European goals of his own from midfield. What has changed underneath it is the last line. N&uuml;bel's three-year loan ended and he went back to Bayern with more than a hundred appearances behind him; his most obvious deputy is injured into late September; and Zagadou is among up to seven players unavailable. Two league matches have produced six goals conceded. That is a very small sample and the card does not treat it as a trend &mdash; but it is a small sample sitting directly on top of a goalkeeper change and a centre-back absence, which is the one place where the personnel record and the results record point the same way. <strong>Gap:</strong> no xG, shot or possession series was obtainable for Stuttgart in either season, so nothing here characterises a pressing height or a build-up pattern as measured.</p>
+    <p>Viking are the harder side to place, not because the evidence is thin &mdash; nineteen matches is the largest sample on this board &mdash; but because it is evidence from a different competition and a different point in the year. A team second in the Eliteserien with 43 goals in 19, three points off the top, arriving mid-season and match-sharp, is a genuinely different proposition from the qualifier-round opponents this competition usually produces at matchday one; they eliminated Dinamo Zagreb 5&ndash;3 across two legs to get here, which is a result against a side of established European pedigree rather than a walkover. The coaching arrangement &mdash; Aarsheim and Jensen jointly, sixth season, equal authority &mdash; is stable rather than experimental at this point, and stability is the relevant property: unlike most sides on this card, nothing about how Viking play was rewritten this summer. Against that sit two facts pulling the other way: five named absentees, with the source stating the shortage is heaviest in defence, and a goalkeeping position that changed hands this season. <strong>Gap:</strong> no measured series exists for them either &mdash; no xG, no shot volume, no foul or card rate, no corner count &mdash; and this card has no published basis for converting Eliteserien output into an expectation against Bundesliga opposition, so it declines to make that conversion and says so.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous &mdash; settled at 1.25, and the double chance more so</span></div><div class="mkt-why">1.25 against 10.00 has already absorbed the league gap, the venue and the squad-value difference, and there is no reasoning left to do on either side of it. The interesting structural facts on this fixture &mdash; a nineteen-match side against a two-match one, a goalkeeper change at the home club, five absentees at the away one &mdash; do not resolve into a result question the price has not already answered. Double chance is the same statement in shorter form: 1X at 1.04 and 12 at 1.10 ask nothing at all, and X2 at 3.90 is the only leg still two-sided.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Asian handicap / EH &minus;2<span class="verdict tag t-mid">OK &mdash; where the margin question actually lives</span></div><div class="mkt-why">2.40 / 4.35 / 2.20 on the two-goal line is close to a coin toss between the favourite covering and not, and the structural material bears on it directly. For the margin: Stuttgart's forward line is the settled part of their squad, Undav coming off 25 goals and 14 assists, and Viking are missing five players with the shortage named as defensive. Against it: the visitors are mid-season and match-sharp while the hosts are two matches in with up to seven unavailable, and Viking's own record is 43 goals in 19 with only three defeats. Both halves of that are real, which is what makes this the live version of the result question rather than a restatement of it.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-high">Dangerous &mdash; 1.23 has priced the favourite's scoring rate, not a joint question</span></div><div class="mkt-why">The over is short enough to have stopped asking anything, and the 3.85 under is not a two-sided proposition either. The raw material is not absent &mdash; six conceded in two matches for the hosts, 43 goals in 19 for the visitors &mdash; but that material is precisely what the price has already used, and neither side's sample supports a total that the market has not already set. Where a goals question survives here it survives as BTTS, where the two halves can be examined separately, or on the handicap.</div></div>
+      <div class="mkt-row good"><div class="mkt-name">BTTS<span class="verdict tag t-low">Well-suited &mdash; two changed goalkeeping situations, and both attacks evidenced</span></div><div class="mkt-why">1.53 against 2.40 is the goals row that still splits into separately checkable questions, and unusually both halves are supported by personnel facts rather than by form. The home side conceded six in two league matches having lost N&uuml;bel back to Bayern after three years and with his deputy injured until late September and Zagadou among the absentees &mdash; that is a defensive question with a named cause. The visitors have scored 43 in 19, carry a nine-goal league top scorer in Christiansen and added Botheim from Malm&ouml; and Postema from Groningen this year, so the away half is not a hopeful inference either. The limitation is honest and specific: no basis exists on this page for converting Eliteserien scoring into Champions League scoring.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-mid">OK &mdash; confirmed official whose one number sits well above the line</span></div><div class="mkt-why">The appointment is published, so this row is evidenced rather than pending: Minakovi&#263; is confirmed with a full team including Bebek on VAR. The tension is larger here than anywhere else on this slate. His career figure is 4.40 yellow cards a game across 190 fixtures, while the match line is set at 3.5 with the over at 1.65 &mdash; the book pricing under an official whose own mean is nearly a card above it. The team split says the rest: Viking at 2.5 cards against Stuttgart at 1.5 is the book expecting the away side to foul substantially more, which is what a defensively short team facing a 1.25 favourite normally does. <strong>Gap:</strong> the 4.40 is a career aggregate with no season or competition split, no penalty rate and no fouls-per-card ratio published, so whether it transfers to a Champions League tie is not established.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Corners<span class="verdict tag t-mid">OK on the total, dead on the race</span></div><div class="mkt-why">10.5 priced 1.72 under against 1.97 over is genuinely two-sided; the race at 1.16 is the moneyline in territorial form and adds nothing. What structural reasoning is available for the total runs through the absentee lists rather than through any corner series: a visiting side short in defence against a favourite whose attacking department is its settled one is the shape of a match with sustained territory in one half of the pitch. <strong>Gap:</strong> no corner count was obtainable for either club in any season, and the visitors' nineteen-match sample is in a competition this card cannot convert from, so the line's own level does most of the work here.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li>The two clubs are not at the same point of a season and are not comparable on that axis. Stuttgart have two competitive matches in 2026&ndash;27; Viking have nineteen league matches plus a qualifying campaign in a calendar-year league. Every early-season caveat that applies to the home side's numbers &mdash; six conceded in two is a fragment, not a trend &mdash; does not apply to the visitors', and the reverse problem applies instead: their sample is large but drawn from a league this page has no measured way to convert.</li>
+      <li>Not one transfer fee is published for either club. Stuttgart's window and Viking's window between them produced upwards of fifteen movements in the sources reached and no confirmed figure attached to any of them, only asking prices in a speculative report. Any statement about the scale of either rebuild on this page is therefore about names and positions, never about money.</li>
+      <li>Both goalkeeping positions changed hands this year. N&uuml;bel went back to Bayern after three years and more than a hundred appearances, with Bredlow expected to start and Seimen injured until late September; Klaesson left Viking for Aalesund with Belko arriving from &#381;ilina. Goalkeeper changes are among the least visible in aggregate season numbers and among the most relevant to the goals and BTTS families, and neither club's new arrangement has a Champions League match behind it.</li>
+      <li>The absence lists are large on both sides and only partly named. Up to seven Stuttgart players are reported unavailable with three identified; five Viking players are named absent with the shortage described as defensive. That is enough to affect the handicap and the discipline rows and not enough to say how.</li>
+      <li><strong>Most sensitive:</strong> the corner total and the goals total, both of which need a volume baseline for a Norwegian side mid-season against German opposition, and no corner or shot series exists for either club. <strong>Least sensitive:</strong> the discipline rows, the only family with a confirmed named official carrying a published number &mdash; 4.40 yellows a game &mdash; and a visible market signal in the split team lines, 2.5 for the visitors against 1.5 for the hosts.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>The handicap is more robust than the moneyline here because 1.25 has already used every fact this page contains, while &minus;2 at 2.40 still asks something answerable: whether a side missing up to seven players, two matches into its season and with a new goalkeeper, beats a mid-season league runner-up by two.</li>
+      <li>Both-teams-to-score is more robust than the goals total because each half has a named cause &mdash; N&uuml;bel's departure and Zagadou's absence on one side, 43 goals in 19 matches and Botheim's arrival on the other &mdash; whereas the 1.23 over asks for a joint estimate that the two-match home sample cannot support and the price has already made anyway.</li>
+      <li>The match cards line is more robust than the corner line because discipline has a confirmed official with a published mean to test the 3.5 against, while the 10.5 corner line has no corner series for either club in any season behind it and rests almost entirely on where the book set it.</li>
+      <li>The team card lines are more robust here than on most fixtures because the asymmetry they price has an independent structural cause: Viking at 2.5 against Stuttgart at 1.5 matches a visiting side reported short in defence facing a 1.25 favourite, which is a fouling profile rather than a form read.</li>
+      <li>Where the book has priced closest to indifference it is on the handicap, 2.40 against 2.20 either side of a two-goal line, and that is the honest place to read its own confidence: it is certain about who wins and genuinely unsure by how much, which is exactly what a fixture between a two-match side and a nineteen-match side should produce.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f3">
+  <div class="fx-head">
+    <p class="fx-league">Europe &middot; UEFA Champions League &middot; League phase, matchday 1</p>
+    <h2 class="fx-title">Liverpool &ndash; Atletico Madrid</h2>
+    <p class="fx-sub">21:00 CEST &middot; Anfield, Liverpool &middot; A club that finished fifth, changed manager and spent &pound;123m on one winger, against a club that sold Griezmann for nothing and bought a &euro;45m holding midfielder and a &euro;35m centre-back</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.73 &middot; 4.00 &middot; 4.60</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>1.19 &middot; 1.25 &middot; 2.10</dd></div>
+      <div class="od"><dt>EH &minus;1 (1/X/2)</dt><dd>2.75 &middot; 3.90 &middot; 2.10</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.53 / 2.40</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.52 / 2.40</dd></div>
+      <div class="od"><dt>Cards 3.5 U / O</dt><dd>1.85 / 1.75</dd></div>
+      <div class="od"><dt>Liverpool cards 1.5 U / O</dt><dd>1.50 / 2.15</dd></div>
+      <div class="od"><dt>Atletico cards 2.5 U / O</dt><dd>1.52 / 2.10</dd></div>
+      <div class="od"><dt>Corners 9.5 U / O</dt><dd>1.75 / 1.93</dd></div>
+      <div class="od"><dt>Corner race 1/X/2</dt><dd>1.40 &middot; 9.50 &middot; 3.25</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>Neither club is promoted and both are long-established in this competition; what makes the fixture structurally unusual is that one of them has rebuilt everything except the dugout and the other has rebuilt the dugout as well. Liverpool finished fifth in the Premier League last season on 60 points from 17 wins, nine draws and twelve defeats, conceding 53 with a goal difference of +10, and qualified for this competition on that basis. Arne Slot left and Andoni Iraola was appointed from Bournemouth &mdash; described in the sources reaching this card as a risk on the grounds that he has not managed a club of this size &mdash; and the summer that followed was the largest in the club's history by outlay. Atl&eacute;tico finished fourth in LaLiga behind Barcelona, Real Madrid and Villarreal, and Diego Simeone remains in charge in his fifteenth year, which makes him the single longest continuity on this entire board. Both sides arrive with something to explain about the weekend: Liverpool won 2&ndash;0 at Ipswich on Friday for their first league win under the new coach after two consecutive 2&ndash;2 draws, and Atl&eacute;tico were beaten 3&ndash;0 at Athletic Bilbao on 5 September. The head-to-head is recent and close: the last meeting was in this competition on 17 September 2025, Liverpool winning 3&ndash;2 at Anfield, and across the last five &mdash; all Champions League ties &mdash; Liverpool have won three and Atl&eacute;tico two.</p>
+    <ul>
+      <li><strong>Liverpool &mdash; turnover very high in money and at every position the spec asks about, and the manager is new on top of it.</strong> Iraola replaced Slot this summer, so the shape being asked of this squad has no Premier League record at this club. In, with fees as published: Bradley Barcola from Paris Saint-Germain for a reported &pound;123m, the largest fee of the club's summer; J&eacute;r&eacute;my Jacquet from Rennes for a reported &pound;60m; V&iacute;ctor Mu&ntilde;oz from Osasuna for a reported &pound;34.5m; Lucca Brughmans from Genk for a reported &pound;30m; and Ronald Ara&uacute;jo on a season-long loan from Barcelona with an option to buy attached. Out: Mohamed Salah and Andy Robertson on expired contracts, Ibrahima Konat&eacute; to Real Madrid, Curtis Jones to Inter for a reported &pound;25.7m and Harvey Elliott on loan to Valencia. Weighted as the spec asks: <em>centre-back</em> is the department that turned over hardest &mdash; Konat&eacute; sold, Jacquet bought at &pound;60m, Ara&uacute;jo borrowed &mdash; and it is also the department carrying the injuries, with Joe Gomez and Giovanni Leoni both yet to feature this season; <em>attack</em> lost Salah after a decade and replaced him with a &pound;123m winger; <em>left-back</em> lost Robertson with no arrival named in that position. <strong>Gap:</strong> no goalkeeper movement was established in either direction, and no fee is published for the Ara&uacute;jo loan or for the buy option attached to it.</li>
+      <li><strong>Atletico Madrid &mdash; high turnover, unusually well documented, and aimed squarely at the spine; the manager has not changed in fifteen years.</strong> In, with fees: Morten Hjulmand from Sporting CP for a reported &euro;45m &mdash; a specialist holding midfielder, and the largest fee of their window; Lee Kang-in from Paris Saint-Germain for a reported &euro;35m; Cristian Romero from Tottenham, an aggressive centre-back, on a contract to June 2031; and &Aacute;lex Grimaldo from Bayer Leverkusen at left-back on a deal to June 2030, with Jonathan David arriving on loan from Juventus late in the window. Out: Antoine Griezmann on a free transfer to Orlando City after more than a decade, Matteo Ruggeri to Aston Villa for a reported &euro;25m, Thiago Almada to River Plate for a reported &euro;20m and Nahuel Molina to Roma for a reported &euro;18m. Juli&aacute;n &Aacute;lvarez was retained through reported interest from Barcelona. Jan Oblak continues in goal with Juan Musso behind him, so this is the one club on the fixture whose goalkeeping position did not move. <strong>Conflict logged:</strong> the Romero fee is reported as &euro;35m in one source and around &euro;40m &mdash; &pound;34.2m &mdash; in two others, and Grimaldo's as &euro;15m in one and &euro;20m in another; neither is resolved here and neither is averaged. <strong>Gap:</strong> Atl&eacute;tico's exact 2025&ndash;26 points total and goal columns were not obtainable in any source reached, only the fourth-place finish.</li>
+      <li><strong>Suspensions / absences.</strong> No suspension is reported for either side. Liverpool's absence list is long and specific and sits on the rebuilt part of the squad: Joe Gomez, Giovanni Leoni, Conor Bradley and Hugo Ekitike have not featured at all this season, all recovering from long-term injuries, which removes two centre-backs, a right-back and a centre-forward from a defence and attack already reconstructed by transfer. <strong>Gap:</strong> no injury or suspension list for Atl&eacute;tico was obtainable within the ceiling, so the visitors are carried here as fully available without that being established &mdash; a real asymmetry in what this card can say about the two teams.</li>
+      <li><strong>Sample.</strong> Three Premier League matches for Liverpool and four LaLiga matches for Atl&eacute;tico, so this is a fixture where 2026&ndash;27 evidence exists but barely. Liverpool: five points from three &mdash; 2&ndash;2 with Newcastle, 2&ndash;2 with Nottingham Forest, then 2&ndash;0 at Ipswich with an Alexander Isak brace made by Cody Gakpo and a debut for Barcola. Both of the first two matches finished 2&ndash;2, which is the single most repeated pattern in the sample. Atl&eacute;tico: seven points from four, sixth, seven scored and six conceded &mdash; 2&ndash;0 against M&aacute;laga, 2&ndash;2 with Villarreal, 3&ndash;1 away at Sevilla, then 0&ndash;3 at Athletic Bilbao, with &Aacute;lex Baena their leading scorer on three. One preview describes them as continuing to have problems up front, which the Griezmann departure and the late David loan both speak to. <strong>Gap:</strong> no xG, shot volume, possession, foul rate, card rate or corner series was obtainable for either club in either season.</li>
+      <li><strong>Referee.</strong> Davide Massa (Italy), confirmed rather than provisional, with Filippo Meli and Alessio Berti on the lines, Matteo Marcenaro as fourth official, Marco Di Bello on VAR and Daniele Chiffi as AVAR. There is a genuine history with one of these clubs, and it is unusually pointed: Massa refereed Paris Saint-Germain against Liverpool in the Champions League round of 16 first leg at the Parc des Princes, went to a check on whether Ibrahima Konat&eacute; had pushed Bradley Barcola in the back, gave nothing, was not sent to the monitor by VAR, and was then shouted at by PSG's Luis Campos afterwards; Liverpool won that match 1&ndash;0. Both players named in that incident have since moved &mdash; Barcola to Liverpool for &pound;123m and Konat&eacute; to Real Madrid &mdash; so the official arrives at a fixture where one of the two protagonists is now in the home shirt. On numbers, the figure established for him on the previous slate stands: 0.41 red cards per game in 2025&ndash;26, level with Simone Sozza as the highest in Serie A against a division-wide 0.18, with league averages that season of 25.34 fouls, 3.59 yellows and 0.28 penalties per match. <strong>Gap:</strong> his own yellow-cards-per-game, fouls-per-card ratio and penalty rate remain unpublished in everything reached across two slates of looking, so the only discipline number specific to this official is again his sendings-off rate.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Liverpool are the least readable side on this board from last season's evidence, and the reason is cumulative rather than single. Iraola's body of work is at Bournemouth, a side built on a high, aggressive press and rapid vertical transition &mdash; but that is a CV, not a match at this club, and three Premier League games is what exists of it here. Underneath the coaching change, the spine was replaced: Salah gone after a decade and Barcola bought at &pound;123m to occupy the width, Konat&eacute; sold to Real Madrid with Jacquet bought at &pound;60m and Ara&uacute;jo borrowed to replace him, Robertson gone at left-back, Curtis Jones sold out of midfield. Then the injury list takes out two more of the defenders who would have provided continuity, Gomez and Leoni, plus Bradley and Ekitike. What the three matches show is a team that scores &mdash; two goals in each of them &mdash; and that conceded twice in each of the first two before keeping a clean sheet at Ipswich. Fifth place and 53 conceded last season is the only defensive baseline available, and it describes a back line that has since lost its first-choice centre-back and its first-choice left-back. <strong>Gap:</strong> no xG, shot or possession series was obtainable, so nothing here measures a pressing height; the claim is about personnel and results only.</p>
+    <p>Atl&eacute;tico are the opposite case and the more interesting one, because the continuity is at the top and the change is underneath. Simeone has been in post fifteen years and the defensive identity attached to that tenure is the most stable structural fact on this fixture &mdash; but the sources describe him moving from 4&ndash;2&ndash;3&ndash;1 to a 3&ndash;4&ndash;1&ndash;2 this season, with a back three of Marc Pubill, Robin Le Normand and David Hancko in front of Oblak, and the summer's two biggest fees went to the two positions that shape holds together: a &euro;45m holding midfielder in Hjulmand and a centre-back in Romero bought to be, in the sources' phrasing, exactly the kind of aggressive defender this coach asks for. Grimaldo at left wing-back is the attacking dimension that a back three needs and that this club has not had. The forward line is the part nobody has solved: Griezmann left on a free after more than a decade, &Aacute;lvarez was kept through Barcelona interest, and Jonathan David arrived on loan from Juventus in the closing days of the window, which is the transfer profile of a club still looking. Four league matches have produced seven goals and six conceded, three of those conceded in one away defeat at Bilbao. <strong>Gap:</strong> no foul rate, card rate or possession figure was obtainable for Atl&eacute;tico in either season, which matters more here than on most cards because this club's reputation for fouling is exactly the kind of thing that should be evidenced rather than assumed, and this page cannot evidence it.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row good"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-low">Well-suited &mdash; the only genuinely three-sided result row on this slate</span></div><div class="mkt-why">1.73, 4.00 and 4.60 leaves every outcome carrying a real price, and the structural material is correspondingly two-sided rather than decorative. For the home side: Anfield, three wins in the last five meetings, and a forward line that has scored twice in each of its three league matches. Against it: a first-season manager with no record at a club of this size, a centre-back department that lost Konat&eacute; and has Gomez and Leoni injured, and a fifth-place finish with 53 conceded as the only baseline. The visitors bring the longest managerial continuity on the board and a spine bought for it, against a 0&ndash;3 at Bilbao four days ago. The draw at 4.00 is the leg with the most support in the sample: two of Liverpool's three league matches this season finished 2&ndash;2.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Asian handicap / EH &minus;1<span class="verdict tag t-mid">OK &mdash; asymmetric, and the +1 side carries the structural case</span></div><div class="mkt-why">2.75 for the home side to win by two against 2.10 for Atl&eacute;tico +1 is the market saying it does not expect a comfortable margin, which the evidence supports from both ends. Liverpool have won one of three this season and that by two against Ipswich; every other match ended level. Atl&eacute;tico have conceded six in four but three of those came in a single away defeat, and the summer's spending went into the two positions &mdash; holding midfield and centre-back &mdash; that most directly resist a margin. The double chance restates the same information in shorter form, with 1X at 1.19 already carrying the draw's likelihood and X2 at 2.10 the only leg still doing independent work.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-mid">OK &mdash; the sample says over, the structure says the sample is three matches long</span></div><div class="mkt-why">1.53 against 2.40 is a moderate lean rather than a settled row, and there is material on both sides. For the over: every one of Liverpool's three league matches has produced at least two of their own goals, two of them finished 2&ndash;2, and Isak scored twice on Friday. For the under: Atl&eacute;tico's summer bought a &euro;45m defensive midfielder and a &euro;35m centre-back into a new back three, their forward line is the department the sources say is unresolved, and Griezmann's departure removed the club's most established goalscorer for nothing. The binding limitation is that no xG or shot series exists for either side, so this row rests on seven matches of scorelines between the two of them.</div></div>
+      <div class="mkt-row good"><div class="mkt-name">BTTS<span class="verdict tag t-low">Well-suited &mdash; both halves separately evidenced, and both are about defence</span></div><div class="mkt-why">1.52 against 2.40 decomposes cleanly. The home-goals half is the better supported of the two: Liverpool have scored in all three league matches, Isak is scoring, Barcola arrived for &pound;123m and Anfield produced 3&ndash;2 against these opponents a year ago. The away-goals half is the one with a real structural argument on each side &mdash; Atl&eacute;tico have scored in three of four and put three past Sevilla away, but they lost Griezmann for nothing, their striker arrived on loan in the final days of the window, and one preview states plainly that their forward problems persist. Against that, the defence they would be scoring past has lost Konat&eacute; and Robertson and has two more centre-backs injured. Both questions are live, and both have named causes rather than form behind them.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-mid">OK &mdash; confirmed official with real history here, but one published number</span></div><div class="mkt-why">The appointment is published, so this row is evidenced: Massa is confirmed with a full Italian team including Di Bello on VAR. Two things drive it. First, his one hard number is a sendings-off rate of 0.41 per game in 2025&ndash;26, level-highest in Serie A and more than double that division's 0.18 average &mdash; a red-card profile rather than a yellow-card one. Second, he arrives at a fixture he has a specific history with: the PSG&ndash;Liverpool tie in which he declined to punish a Konat&eacute; challenge on Barcola and was publicly berated for it, with Barcola now a Liverpool player. The team split is the market's own structural read &mdash; Atl&eacute;tico at 2.5 cards against Liverpool at 1.5 &mdash; and it is consistent with a Simeone side away from home, though this card could not evidence that club's foul rate directly. <strong>Gap:</strong> his yellows per game, fouls per card and penalty rate remain unpublished across two slates of searching.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Corners<span class="verdict tag t-mid">OK &mdash; live on both the total and, unusually, the race</span></div><div class="mkt-why">9.5 at 1.75 under against 1.93 over is two-sided, and at 1.40 / 9.50 / 3.25 the corner race is one of the few on this board that has not simply died with the moneyline &mdash; a 1.73 favourite leaves the territorial question genuinely open in a way a 1.07 one does not. What structural reasoning is available points at the visitors' shape rather than at any series: a back three with wing-backs, one of them Grimaldo, is a different territorial proposition from the 4&ndash;2&ndash;3&ndash;1 this club used last season, and the change is four matches old. <strong>Gap:</strong> no corner count was obtainable for either club in either season, so nothing here tests the 9.5 against a baseline.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li>Liverpool changed manager and spine in the same window, and the two changes compound rather than sit side by side. Iraola has three Premier League matches at this club; Barcola, Jacquet, Mu&ntilde;oz, Brughmans and Ara&uacute;jo have three or fewer between them in these colours; Salah, Konat&eacute;, Robertson and Jones are gone. Last season's 60 points and 53 conceded describe a team under a different coach with a different back line.</li>
+      <li>The injury list removes the players who would have provided continuity. Gomez, Leoni, Bradley and Ekitike have not featured this season, and the first two are centre-backs at a club that just sold its first-choice centre-back. That is the one place where the transfer ledger and the medical room point at the same weakness.</li>
+      <li>Atl&eacute;tico's shape is four matches old. The move from 4&ndash;2&ndash;3&ndash;1 to a 3&ndash;4&ndash;1&ndash;2 with Pubill, Le Normand and Hancko behind Hjulmand is new this season even though the coach is not, and the last of those four matches was a 0&ndash;3 defeat. Fifteen years of Simeone is a reason to expect a defensive identity; it is not evidence about this particular structure.</li>
+      <li>Two fees on this page are contested between sources &mdash; Romero at &euro;35m or around &euro;40m, Grimaldo at &euro;15m or &euro;20m &mdash; and Atl&eacute;tico's 2025&ndash;26 points and goal columns were not obtainable at all, only fourth place. No injury list for the visitors was reachable either, so the absence section is one-sided by availability of evidence rather than by fact.</li>
+      <li><strong>Most sensitive:</strong> the corner total, which needs a volume baseline for a side four matches into a new formation and one three matches into a new manager, with no corner series available for either. <strong>Least sensitive:</strong> BTTS and the moneyline, the two rows where the evidence is scoreline evidence from this season on both sides and where the structural causes &mdash; a sold centre-back, an unresolved centre-forward &mdash; are named rather than inferred.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>The result row is more robust here than on any other fixture on this board because 1.73 / 4.00 / 4.60 still prices three outcomes, and each has a named structural support: Anfield and three wins in five head-to-head for the home side, fifteen years of one coach and a &euro;45m holding midfielder for the away one, and two 2&ndash;2 draws in three matches for the draw.</li>
+      <li>Both-teams-to-score is more robust than the goals total because each half attaches to a specific personnel fact &mdash; Konat&eacute; sold with Gomez and Leoni injured on one side, Griezmann gone for free with a deadline-week loan striker on the other &mdash; whereas the total needs a joint estimate from a three-match and a four-match sample with no xG behind either.</li>
+      <li>The handicap is more robust than the double chance because &minus;1 at 2.75 asks a question the evidence can address &mdash; whether a first-season manager's side wins by two against a back three built this summer for &euro;80m &mdash; while 1X at 1.19 has already absorbed the draw and adds nothing the moneyline did not say.</li>
+      <li>The corner race is more robust here than it is on a fixture with a short favourite, because at 1.40 the territorial question survives the result question; but it is still less robust than the discipline rows, which at least attach to a confirmed official with a published number and a documented history with one of these clubs.</li>
+      <li>Where the book has priced closest to even money it has done so on the match cards line, 1.85 against 1.75 at 3.5, and that is a fair statement of its own confidence: the only referee metric anyone publishes for Massa is a red-card rate, and a red-card rate says almost nothing about whether a match produces three yellows or four.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture pending" id="f4">
+  <div class="fx-head">
+    <p class="fx-league">Europe &middot; midweek fixture &middot; competition not yet established</p>
+    <h2 class="fx-title">Napoli &ndash; Arsenal</h2>
+    <p class="fx-sub">21:00 CEST &middot; venue not established &mdash; card not yet built</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>5.75 &middot; 3.85 &middot; 1.62</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.87 / 1.87</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.93 / 1.80</dd></div>
+      <div class="od"><dt>Cards line</dt><dd>3.5</dd></div>
+      <div class="od"><dt>Corners line</dt><dd>8.5</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f5">
+  <div class="fx-head">
+    <p class="fx-league">Europe &middot; midweek fixture &middot; competition not yet established</p>
+    <h2 class="fx-title">PSG &ndash; Slovan Bratislava</h2>
+    <p class="fx-sub">21:00 CEST &middot; venue not established &mdash; card not yet built</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.03 &middot; 20.00 &middot; 30.00</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.14 / 5.00</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>2.65 / 1.43</dd></div>
+      <div class="od"><dt>Cards line</dt><dd>2.5</dd></div>
+      <div class="od"><dt>Corners line</dt><dd>10.5</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f6">
+  <div class="fx-head">
+    <p class="fx-league">Europe &middot; midweek fixture &middot; competition not yet established</p>
+    <h2 class="fx-title">Sporting Lisbona &ndash; Galatasaray</h2>
+    <p class="fx-sub">21:00 CEST &middot; venue not established &mdash; card not yet built</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.70 &middot; 4.00 &middot; 4.65</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.53 / 2.35</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.53 / 2.35</dd></div>
+      <div class="od"><dt>Cards line</dt><dd>4.5</dd></div>
+      <div class="od"><dt>Corners line</dt><dd>9.5</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<section>
+  <h2 class="sec">Across the card</h2>
+  <ul><li><strong>Best structurally supported today, on the cards built so far:</strong> both-teams-to-score, which is rated well-suited on all three. It is the one family here that splits into two questions with separate named causes on each side &mdash; a sold or loaned-out centre-back on one half, a departed or unreplaced goalscorer on the other &mdash; rather than needing a joint estimate from a sample that does not exist yet.</li><li><strong>Least supported:</strong> corners, on every card built. Not one corner series was obtainable for any of the six clubs researched, in either season, and three of them rebuilt their defence or their formation over the summer, so even a prior-season baseline would be describing different players in a different shape. Where a corner row is rated OK it is on the strength of the line's own level and the absentee lists, and the cards say so.</li><li><strong>The one normal fixture:</strong> Liverpool &ndash; Atletico Madrid, and it is normal in the specific sense that its result market is still three-sided at 1.73 / 4.00 / 4.60. On the other two built cards the moneyline is settled &mdash; 1.07 and 1.25 &mdash; and the reasoning has to move to the handicap and the derived families to find anything two-sided at all.</li><li><strong>Where the book has priced indifference:</strong> three times, and each is worth reading as a statement about its own confidence. Barcellona &ndash; Feyenoord at 1.80/1.90 on BTTS, on a fixture it will quote at 1.07 and 25.00. Stoccarda &ndash; Viking at 2.40 against 2.20 either side of a two-goal handicap, certain about the winner and unsure of the margin. Liverpool &ndash; Atletico at 1.85/1.75 on a 3.5 card line, under an official whose only published metric is a red-card rate.</li><li><strong>Discipline is the family where evidence and price diverge most on this board.</strong> All three built cards have a confirmed referee &mdash; Jablonski, Minakovi&#263;, Massa &mdash; and on two of them the official's own published card average sits above the line the book has set: 3.68 a game against a 2.5 line, and a career 4.40 yellows a game against a 3.5. On the third, the only number published anywhere for the official is his sendings-off rate. That is three confirmed appointments and not one complete discipline profile between them.</li></ul>
+</section>
+
+<footer>
+  <p><strong>Scope.</strong> This page rates market <em>families</em> only. It contains no selections, no sides, no recommended lines and no confidence labels &mdash; by design. Where evidence is thin it says so rather than filling the gap.</p>
+  <p><strong>Sources.</strong> UEFA.com, Wikipedia season and transfer pages (2026&ndash;27 Feyenoord, 2026&ndash;27 Atl&eacute;tico Madrid, 2026 Viking FK, 2025&ndash;26 and 2026&ndash;27 Eredivisie, La Liga, Bundesliga and Premier League), law5-theref.blogspot.com for referee designations, ESPN, Goal.com, Yahoo Sports, Sports Mole, thisisanfield.com, barcablaugranes.com, bulinews.com, footballtransfers.com, givemesport.com, teamtalk.com, flashscore, soccerway, fotmob, sofascore, whoscored, statshub, valuestats, corner-stats, footymetrics, playerstats.football, football-espana.net, france24, atleticodemadrid.com, feyenoord.com, laliga.com, premierleague.com, bundesliga.com, nbcsports.com, sportinglife.com, lastseason.co.uk, theanalyst.com, readliverpoolfc.com, khan.co.kr, weltfussball, kicker, sportschau. Full per-search log, including every gap and every conflict left unresolved, in <code>sources_14.md</code>.</p>
+</footer>
+
+</div>
