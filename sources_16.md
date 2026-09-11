@@ -136,3 +136,63 @@ Gaps stated on the card: Venezia's third Serie A defeat (opponent and score)
 not obtainable; Fiorentina's 2025-26 final columns not obtainable; no injury
 list for Fiorentina; no xG, foul or corner series for either club; the terms
 of the Moreno and Sohm loans unpublished.
+
+## f3 · Stade Rennes FC – Marsiglia (T1)
+
+Searches: 8 of a 15 ceiling (Rennes have no manager change and are not
+promoted, so 4; Marseille changed manager and take the extended 8; + 1 preview
++ 2 referee), plus 3 WebFetches. Stopped short once both season-length tables,
+both transfer ledgers and the full referee profile were established; no injury
+list, xG series or corner series was obtainable for either club.
+
+1. "Stade Rennais 2026-27 Ligue 1 summer transfers manager season preview" —
+   126th season, 33rd consecutive in the top flight, Europa League entry, the
+   £60m Jacquet sale to Liverpool, Gonçalo Oliveira as the defensive
+   reinforcement.
+2. "Marseille 2026-27 Ligue 1 summer transfers manager season preview De Zerbi"
+   — **De Zerbi's February 2026 departure by mutual consent** after the 5-0 to
+   PSG and Champions League elimination, twelve points off the top; Habib Beye
+   appointed as his replacement.
+3. "Rennes Marseille preview 11 September 2026 Ligue 1 team news lineups" —
+   Roazhon Park, gameweek 4, Rennes 5th on 7 and Marseille 11th on 3, Lepaul's
+   3 goals in 3 and Gouiri's 4 in 4, both recent elevens, the 65-meeting
+   head-to-head (27-16 to Rennes).
+4. "arbitre Rennes Marseille 11 septembre 2026 Ligue 1 désignation" — **Stinat
+   confirmed**, full team (Mouysset, Luczynski, Landry; VAR Gringore and
+   Bollengier), 20:45 kickoff, and the note that he had not refereed OM since
+   22 February 2025 at Auxerre.
+5. "Jérémy Stinat arbitre statistiques cartons jaunes par match penalties
+   Ligue 1 2025-26" — 3.74 career yellows per match; a 17-match sample at 4.41
+   and a 16-match sample at 0.43 reds, **both mislabelled 2026-27 by the
+   source and impossible for a four-round-old season** — carried on the card
+   with that caveat stated; 0.53 dismissals per match the previous season;
+   0.37 penalties against a 0.34 divisional average.
+6. "Marseille Bruno Génésio appointed head coach 2026 summer signings OM
+   mercato" — **Génésio appointed (reported 1 July 2026) after Beye's
+   dismissal**, his Lyon/Rennes/Lille background and Lille's third place;
+   **the sales of Greenwood, Medina, Rulli and Aubameyang, Balerdi's loan to
+   Roma, and no signings at all**; Génésio's own quote on registration.
+7. "Rennes Marseille cartons jaunes fautes corners statistiques par match
+   Ligue 1 2026-27" — Marseille 659.7 passes per match at 91% accuracy;
+   Rennes 83% accuracy, 15.7 aerial duels won, 13.7 interceptions, 10.3
+   tackles, 29% cross accuracy. No card, foul or corner per-match series.
+
+WebFetches:
+
+- en.wikipedia.org/wiki/2026–27_Stade_Rennais_FC_season — transfer ledger with
+  dates and positions (Lemaître, Oliveira, Soumaré, Thomasson all 1 July;
+  Jacquet £60m and Østigård out), Franck Haise unchanged, the three Ligue 1
+  results and the 7-point standing.
+- en.wikipedia.org/wiki/2026–27_Olympique_de_Marseille_season — **€0m in both
+  transfer columns**, Génésio as head coach, the three results (4-0, 0-2, 2-3),
+  Weah as captain, Gouiri's goals, the 17 September Beşiktaş fixture.
+- en.wikipedia.org/wiki/2025–26_Ligue_1 — **both final rows**: Marseille 5th
+  (18-5-11, 63-45, +18, 59) and Rennes 6th (17-8-9, 59-50, +9, 59), level on
+  points; PSG 76, Lens 70, Lille 61, Lyon 60; division average 2.82 goals.
+
+Contradictions and caveats logged on the card rather than resolved: Marseille's
+current position given as 10th and 11th; the 65-match head-to-head attached by
+its source to Roazhon Park although the sample suggests the overall record;
+the year-label on Stinat's 17- and 16-match samples. Gaps stated on the card:
+no injury or suspension list for either club — the widest hole on this
+fixture — and no xG, foul-rate or corner series for either.
