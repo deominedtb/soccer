@@ -72,3 +72,67 @@ the head-to-head at the Alte Försterei given variously as three draws, four
 matches with three draws, and one previous meeting; one preview lists Tomas
 Kalas as a late fitness test and another does not list him at all; one source
 reports Hwang Hee-chan on loan from Wolves and no other corroborates it.
+
+## f2 · Venezia – Fiorentina (T1)
+
+Searches: 7 of a 19 ceiling (extended ceiling applies on both sides — Venezia
+newly promoted, Fiorentina changed manager on 7 September 2026; 8 per team +
+1 preview + 2 referee), plus 4 WebFetches. Stopped short of the ceiling once
+the referee was fully documented and both transfer ledgers were complete;
+xG and corner series were not obtainable from any reachable source.
+
+1. "Venezia 2026-27 Serie A promoted summer transfers manager season preview" —
+   promotion as Serie B champions one year after relegation, third title in
+   club history, sealed with a 2-2 at Spezia; Stroppa unchanged, his fourth
+   career promotion; Bašić, Correia, Helgason, the Svoboda sale.
+2. "Fiorentina 2026-27 Serie A summer transfers manager season preview" —
+   the €150.30m summer (third-largest in Serie A), Mastantuono, Pellegrino
+   and Atta; 100th season in club history, 23rd consecutive in the top flight;
+   the 2025-26 relegation scare.
+3. "Venezia Fiorentina preview 11 September 2026 Serie A team news Vanoli first
+   match" — round-four opener, both clubs on zero points, Fiorentina's three
+   defeats (0-4 Roma, 0-3 Frosinone, 1-2 Torino), the Grosso dismissal and
+   Vanoli's return, Venezia's absences (Šverko, Franjić, Adorante, and
+   Bella-Kotchap doubtful), Beto's first start, last meeting 2-1 to Venezia.
+4. "arbitro Venezia Fiorentina 11 settembre 2026 designazioni arbitrali Serie A"
+   — **Fourneau confirmed**, full quaterna (Alassio, Barone, Ayroldi; VAR
+   Dionisi, AVAR Maggioni), 20:45 kickoff, and Fiorentina's 5-match record
+   under him (2W 2D 1L, unbeaten away, 1-1 at Frosinone and 0-6 at Lecce).
+5. "Francesco Fourneau arbitro media cartellini gialli a partita rigori
+   statistiche 2025-26" — 4.5 cards per match in 2025-26; 2.8 in 2024-25
+   (30 yellows in 11 matches) and 4 penalties that season; the "lets play run,
+   does not whistle half-fouls" characterisation.
+6. "Serie B 2025-26 final table Venezia champions points goals scored conceded
+   promotion" — champions, Pohjanpalo top scorer, division average 2.56 goals
+   per match, longest winning run of 8. Returned a 79-point / +44 variant that
+   **fails its own arithmetic**; superseded by the Wikipedia row below.
+7. "Venezia Fiorentina statistiche cartellini falli calci d'angolo 2026-27
+   Serie A media" — Fourneau's 2026-27 match to date (35 fouls, 5 yellows,
+   0 reds, 0 penalties = 7.0 fouls per card); Venezia 0 points, 2 scored and
+   7 conceded in 3. No club-level card, foul or corner series surfaced.
+
+WebFetches:
+
+- en.wikipedia.org/wiki/2026–27_ACF_Fiorentina_season — transfer ledger with
+  fees and positions (de Gea, Pongračić €15m, Drăgușin €1.5m loan+obligation,
+  Brescianini €10m, Atta €25m+5m, Pellegrino €25m+5m, Beto €18m; Kean to Como
+  with a €35m obligation, Guðmundsson, Mandragora €5m), and **the 7 September
+  2026 Vanoli-for-Grosso change**.
+- en.wikipedia.org/wiki/2026–27_Venezia_FC_season — transfer ledger with fees
+  (Adams €16m+6m, Rrahmani €7.5m+2m, Bella-Kotchap €7m+3m, Halhal €5m, Lisman
+  €2.5m, Montipò €250k; Doumbia out for €20.53m+6m), results to date, and the
+  **Moreno and Sohm loans in from Fiorentina**.
+- en.wikipedia.org/wiki/2025–26_Serie_B — Venezia's exact final row: 1st, 38
+  played, 24-10-4, 77-31, +46, 82 points; Frosinone 81, Monza 76, Palermo 72.
+- football-italia.net/venezia-v-fiorentina-probable-line-ups-tv/ — both
+  probable elevens, Venezia's 3-5-2 with **Sohm named to start against his
+  parent club**, Drăgușin reported on the bench, 20:45 CET confirmation.
+
+Contradictions logged on the card rather than resolved: Venezia's current
+position given as 18th and 19th; the Serie B final row given as 82pts/+46
+(Wikipedia, internally consistent) against 79pts/+44 (aggregator, not);
+Vanoli's Venezia promotion given as 2024-25 by one source without corroboration.
+Gaps stated on the card: Venezia's third Serie A defeat (opponent and score)
+not obtainable; Fiorentina's 2025-26 final columns not obtainable; no injury
+list for Fiorentina; no xG, foul or corner series for either club; the terms
+of the Moreno and Sohm loans unpublished.
