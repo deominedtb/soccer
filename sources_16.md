@@ -196,3 +196,67 @@ its source to Roazhon Park although the sample suggests the overall record;
 the year-label on Stinat's 17- and 16-match samples. Gaps stated on the card:
 no injury or suspension list for either club — the widest hole on this
 fixture — and no xG, foul-rate or corner series for either.
+
+## f4 · Siviglia – Valencia (T1)
+
+Searches: 7 of a 15 ceiling (Sevilla changed manager on 25 March 2026 and take
+the extended 8; Valencia are unchanged and not promoted, so 4; + 1 preview +
+2 referee), plus 2 WebFetches. Stopped short once the referee profile, both
+final tables and both windows were established; Valencia's 2026-27 goals for
+and against were never obtainable and are reported as a gap on the card.
+
+1. "Sevilla 2026-27 LaLiga summer transfers manager season preview" — 120th
+   season, 26th consecutive in LaLiga, Guridi / Juan Iglesias / Sangante and
+   the deadline-day Fofana loan, the Gudelj and Alexis Sánchez departures.
+   **Also returned a relegation-probability figure, which is an implied
+   probability and barred by the board's hard bans — discarded, not used.**
+2. "Valencia 2026-27 LaLiga summer transfers manager season preview" — Corberán
+   under supporter pressure, the ownership protests, **the final season at the
+   Mestalla after 103 years**, and last season's 9th on 49 points (13-10-15).
+3. "Sevilla Valencia preview 11 September 2026 LaLiga team news lineups jornada"
+   — Ramón Sánchez-Pizjuán, matchday 5, 21:00; Sevilla 7 points from 4 and
+   sixth, all four results; **Valencia bottom on one point from twelve after a
+   5-0 home defeat to Barcelona**; the full nine-name Valencia absence list;
+   Vargas doubtful and **Sangante suspended after his red card at Espanyol**;
+   Valencia unbeaten in the last six meetings.
+4. "árbitro Sevilla Valencia 11 septiembre 2026 designación LaLiga jornada 5" —
+   **Busquets Ferrer confirmed**, 21:00 kickoff, matchday 5.
+5. "Mateo Busquets Ferrer árbitro estadísticas tarjetas amarillas por partido
+   penaltis LaLiga" — born Palma de Mallorca 31 October 1993; **58 matches,
+   321 yellows (5.53/match), 17 straight reds, 8 second yellows, 24 penalties
+   (~0.41/match)**; most recent published season 18 matches, 104 yellows,
+   4 reds, 7 penalties; the "strict, above average" characterisation.
+6. "Sevilla Luis García Plaza appointed coach 2026 Sevilla 2025-26 LaLiga final
+   position points" — **appointed 25 March 2026**, the day after Almeyda was
+   dismissed, contract to 30 June 2027; inherited the club 15th on 31 points
+   after 29 rounds; his 229-match top-flight record (66-58-105, 1.12 ppg).
+   This source also states Sevilla "finished 17th", which the published final
+   table contradicts — logged on the card, not resolved.
+7. "Valencia CF fichajes verano 2026 altas bajas Corberán plantilla mercado" —
+   **eight in and ten out**, Arnau Martínez the most expensive at €5.00m, the
+   Sato / Dieng / de Haas / Elliott / Van Oevelen / Maffeo arrivals, the Dutch
+   goalkeeper on loan from Ipswich, Guido Rodríguez's July renewal, Özkacar
+   out for €1.75m, Danjuma and Duro staying, window closing 1 September 2026.
+
+WebFetches:
+
+- en.wikipedia.org/wiki/2026–27_Sevilla_FC_season — transfer ledger with fees
+  and positions (Vlachodimos loan, Julio Díaz €1m, Kochorashvili €4.5m, Ure
+  €5.5m, Stassin €2.5m loan, Correia loan; **Adams out for €17m**, Juanlu
+  €11.2m, Sow €4m), Luis García Plaza as head coach, all four results.
+- en.wikipedia.org/wiki/2025–26_La_Liga — **both final rows**: Sevilla 13th
+  (12-7-19, 46-60, −14, 43) and Valencia 9th (13-10-15, 46-55, −9, 49);
+  Barcelona 94, Real Madrid 86, Villarreal 72; the three relegated clubs;
+  division average 2.69 goals per match.
+
+Unreachable (404): en.wikipedia.org/wiki/2026–27_Valencia_CF_season — no such
+page exists, which is why Valencia's per-match figures for this season are
+absent from the card.
+
+Contradictions logged on the card rather than resolved: Sevilla's 2025-26
+finish given as 13th by the published table and 17th by a press summary;
+the Akor Adams fee given as €17m by the selling club's reporting and €16m plus
+€6m in add-ons by the buying club's — the same transfer, the same window,
+carried both ways on the two cards it appears on. Gaps stated on the card:
+Valencia's goals scored and conceded this season; positions and fees for most
+Valencia arrivals; and no xG, foul, card or corner series for either club.
