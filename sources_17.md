@@ -342,3 +342,35 @@ result.
 - UNRESOLVED: Reading's fifth league fixture. Sources describe a continuous
   four-match sequence from the opening day to last weekend while the rest
   of the division has played five or six. Left unreconciled on the card.
+
+## f31 · Milton Keynes Dons – Peterborough United (T1)
+
+- WebFetch: https://en.wikipedia.org/wiki/2026%E2%80%9327_Milton_Keynes_Dons_F.C._season
+  — 19th, 4 points from 5 (0W 4D 1L), 7 scored 9 conceded; Paul Warne
+  manager, Stadium MK, chairman Fahad Al-Ghanim; in Nombe (£600,000,
+  Rotherham), Goode (free, Stevenage), Bramall (Luton); out
+  Thompson-Sommers (Fleetwood), Trueman (GK, free to Sheffield Wednesday);
+  Aaron Collins 4 goals all comps; 16,198 v Leicester; 1-4 EFL Cup exit to
+  Norwich.
+- WebFetch: https://en.wikipedia.org/wiki/2026%E2%80%9327_Peterborough_United_F.C._season
+  — 20th, 4 points from 5 (1W 1D 3L), 3 scored 9 conceded, five results
+  with dates; Luke Williams manager; in Jones (Sunderland), E. Williams
+  (Manchester United), Kelly (MK Dons); out Hayes (Rochdale), Odoh
+  (Salford City), Lisbie (Millwall); Harry Leonard 4 all comps, Ben Woods
+  2 in the league.
+- WebSearch: "MK Dons vs Peterborough United preview 12 September 2026 team
+  news referee Stadium MK League One" — Stadium MK, 15:00 UK; MK Dons drew
+  their opening three with Oxford, Huddersfield and Leicester before losing
+  at Wigan; first League One campaign since 2022-23; Peterborough on a
+  three-match winless run. NO referee named and NO absence list for either
+  club.
+- WebSearch: "MK Dons 2025-26 League Two promotion runners-up points goals
+  scored conceded Paul Warne" — 2nd in League Two, promoted, Warne retained;
+  Callum Paterson top league scorer on 16. Points/goals aggregate NOT
+  published.
+- DERIVED, not read: MK Dons' 2025-26 points total of 86, from the Bromley
+  title reporting (champions on 87, "one point ahead of MK Dons"). Flagged
+  as derived on the card.
+- UNRESOLVED: the individual scorelines of MK Dons' draws with Oxford
+  United and Huddersfield Town; the published totals imply 3 scored and 3
+  conceded across the two but they cannot be separated.
