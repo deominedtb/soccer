@@ -107,3 +107,38 @@ result.
   ban; Jellis among four Rotherham absentees, Spence a doubt, Sebine may
   come in; Dan Scarr (from Wrexham) due first minutes, Wiredu to start;
   confirms Salford's two wins were both at home. No referee named.
+
+## f13 · Walsall – Rochdale (T1)
+
+- WebFetch: https://en.wikipedia.org/wiki/2026%E2%80%9327_Walsall_F.C._season
+  — 5th, 9 points from 5 (2W 3D 0L), 8 scored 4 conceded, five results with
+  dates; Lee Grant head coach on a three-year contract; in Connolly (free,
+  Crewe), Dallas (Barnsley), Smith (Harrogate), Dixon (free, Everton), Ward
+  (GK, Bristol Rovers); out Barrett (Wigan), Matt, Gordon, Weir; EFL Cup
+  1-0 over Bristol City then out to Leyton Orient 5-6 on penalties.
+- WebFetch: https://en.wikipedia.org/wiki/2026%E2%80%9327_Rochdale_A.F.C._season
+  — 22nd, 3 points from 5, 5 scored 10 conceded, five results with dates;
+  Ian Watson appointed 9 June 2026 replacing Jimmy McNulty (to Stockport);
+  in Hayes, Jenkins, Maguire, Waller, Middleton, Flint (from Walsall); out
+  Humbles, Gordon, Tutonda, Smith.
+- WebSearch: "Walsall vs Rochdale preview 12 September 2026 team news
+  referee Bescot Stadium League Two" — Pallet-Track Bescot Stadium, 15:00
+  UK; Walsall team news (Sprangler, Dixon, Browne, Skura); Rochdale five
+  defeats in six.
+- WebSearch: "Rochdale 2025-26 National League promotion play-off final
+  goals scored conceded record season" — 2nd on 106 points, 33W 7D 6L, 88
+  scored 41 conceded (+47), home 18-2-3, away 15-5-3; play-off final 10 May
+  2026 at Wembley, 2-2 aet v Boreham Wood from 2-0 down, won 3-1 on pens.
+- WebFetch: https://rochdaleafc.co.uk/preview-walsall-a/ — REFEREE JAMIE
+  O'CONNOR confirmed (assistants Marc Wilson, James Wilson; fourth official
+  Matthew Parry); Rochdale absences (Francis suspended, Beckwith, Bilongo,
+  Maguire/Hayes short of fitness, Ebanks-Landell, East, Pettit, Jenkins);
+  Flint eligible; Lee Grant's background at Huddersfield Town.
+- WebSearch: "Walsall 2025-26 League Two final position goals scored
+  conceded season record Bescot" — 13th, 42 scored 36 conceded; top at
+  Christmas then 22 points in the second half; eight-match home winless run
+  Boxing Day to 21 March; 36 away points, best since 2015-16; Sadler out in
+  March, Byfield to season's end.
+- WebSearch: "referee Jamie O'Connor EFL cards per game fouls penalties
+  record 2026-27 League Two" — 4 matches, 5.75 yellows per game, 0.00 reds.
+  Fouls-per-card, penalty rate and club history NOT established.
