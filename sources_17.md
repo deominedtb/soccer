@@ -278,3 +278,35 @@ result.
   out by Ekomie; head-to-head, Burnley have won the last four league
   meetings including 2-0 at this ground in March 2025. No referee named,
   and NO Burnley absence list could be established.
+
+## f28 · Blackpool FC – Bromley FC (T1)
+
+- WebFetch: https://en.wikipedia.org/wiki/2026%E2%80%9327_Bromley_F.C._season
+  — 21st, 4 points from 5, 4 scored 15 conceded, five results with dates;
+  first ever League One season, 135th overall; Andy Woodman manager; in
+  Conteh (Bristol Rovers), George (free, Wycombe), Headman (Harrogate),
+  Mendy (free, Peterborough), Adeboyejo (free, Mansfield); loans Archer
+  (Luton), Taylor (Bolton), Grant (Millwall). No fee published either way.
+- WebFetch: https://en.wikipedia.org/wiki/2026%E2%80%9327_Blackpool_F.C._season
+  — 12th, 7 points from 5 (2W 1D 2L), 9 scored 7 conceded; Ian Evatt
+  manager, Bloomfield Road, fourth consecutive League One season; in
+  Anderson (Charlton), Southwood (GK, Bristol Rovers), Earl (Barnsley);
+  loans Charles (Huddersfield), Williams (Portsmouth), Yates (Luton); out
+  Finnigan (Dundee), Ravizzoli (Leicester), Kouassi (Colchester).
+- WebSearch: "Blackpool vs Bromley preview 12 September 2026 team news
+  referee Bloomfield Road League One" — Bloomfield Road, 15:00 UK;
+  BROMLEY LOST THREE KEY DEFENDERS AND GK SHAMAL GEORGE TO INJURY ON
+  MONDAY, Owen Mason to deputise, Grant and Miller in the back four;
+  Blackpool without CJ Hamilton (10-12 weeks, knee) and Honeyman (until
+  after the international break), Niskanen and Bloxham may return;
+  Adeboyejo credited with all three of Bromley's goals (club total is 4 on
+  the season page — discrepancy logged). No referee named.
+- WebSearch: "Bromley 2025-26 League Two champions points goals scored
+  conceded Andy Woodman promotion record" — League Two CHAMPIONS on 87
+  points, 46 played, 24W 15D 7L, 71 scored 46 conceded; one point ahead of
+  MK Dons (also on this slate); division's longest unbeaten run at 21
+  matches; first fourth-tier title; "Project 73" renamed "Project
+  Champions".
+- DERIVED, not read: Blackpool's opening fixture resolves to a 1-1 draw
+  from the published totals (9 scored, 7 conceded, 2W 1D 2L) once the other
+  four results are subtracted. Flagged as derived on the card.

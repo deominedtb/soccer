@@ -25,7 +25,7 @@ f24 | 16:00 | Oldham Athletic – Chesterfield FC | T3 | TODO
 f25 | 16:00 | Port Vale – Exeter City | T3 | TODO
 f26 | 16:00 | Swansea – Burnley | T2 | DONE
 f27 | 16:00 | Watford – Stoke City | T3 | TODO
-f28 | 16:00 | Blackpool FC – Bromley FC | T1 | TODO
+f28 | 16:00 | Blackpool FC – Bromley FC | T1 | DONE
 f29 | 16:00 | Cambridge United – Reading FC | T1 | TODO
 f30 | 16:00 | Mansfield Town – Huddersfield | T3 | TODO
 f31 | 16:00 | Milton Keynes Dons – Peterborough United | T1 | TODO
