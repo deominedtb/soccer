@@ -29,5 +29,5 @@ f28 | 16:00 | Blackpool FC – Bromley FC | T1 | DONE
 f29 | 16:00 | Cambridge United – Reading FC | T1 | DONE
 f30 | 16:00 | Mansfield Town – Huddersfield | T3 | TODO
 f31 | 16:00 | Milton Keynes Dons – Peterborough United | T1 | DONE
-f32 | 16:00 | Oxford United – Burton Albion | T2* | TODO
+f32 | 16:00 | Oxford United – Burton Albion | T2* | DONE
 f33 | 16:00 | Plymouth Argyle – Barnsley | T3 | TODO

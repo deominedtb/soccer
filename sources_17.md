@@ -374,3 +374,31 @@ result.
 - UNRESOLVED: the individual scorelines of MK Dons' draws with Oxford
   United and Huddersfield Town; the published totals imply 3 scored and 3
   conceded across the two but they cannot be separated.
+
+## f32 · Oxford United – Burton Albion (T2, tier by override)
+
+- WebFetch: https://en.wikipedia.org/wiki/2026%E2%80%9327_Oxford_United_F.C._season
+  — 11th, 7 points from 4 (2W 1D 1L), 9 scored 6 conceded; four results
+  (2-2 MK Dons, 2-1 Stevenage, 1-3 Huddersfield, 4-0 Leicester); Aaron
+  Ramsey replaced Matt Bloomfield in June 2026; in Roosken (Huddersfield),
+  Kent (free, Hearts); loans Andrews (Coventry), Lynch (Aston Villa); out
+  Mills (£2.5m, Preston), Prelec (Jagiellonia), Vaulks (free, Tranmere);
+  relegated from the Championship, 133rd season; 0-2 EFL Cup exit to
+  Leyton Orient.
+- WebFetch: https://en.wikipedia.org/wiki/2026%E2%80%9327_Burton_Albion_F.C._season
+  — 6th, 8 points from 5 (2W 2D 1L), 10 scored 7 conceded, five results
+  with dates; Gary Bowyer manager, Wouter Gudde interim chairman, Nordic
+  Football Group; in Tilt (Bradford City), Dennis (Notts County), Vickers
+  (Brighton); loan Addai (GK, Stockport); out Shade (£1.8m + £400k
+  add-ons, Portsmouth), Beesley (Bradford City), Williams (Motherwell);
+  1-2 EFL Cup defeat to Blackburn.
+- WebSearch: "Oxford United vs Burton Albion preview 12 September 2026 team
+  news referee Kassam Stadium League One" — Kassam Stadium, 14:00 UTC;
+  Oxford's 4-0 scorers (Mark Harris 2, Missanga, McDonnell), Ramsey's
+  "absolute best" quote; Burton's 2-2 scorers (Delap, Tilt) against a
+  Gassan Ahadme brace; FRANKIE KENT out with a cruciate ligament injury,
+  Oxford otherwise complete; GBEMI ARUBI out (knee) for Burton, otherwise
+  healthy; Oxford have won seven of the last eight league meetings. No
+  referee named.
+- UNRESOLVED: Oxford have played four league matches to the division's
+  five or six; no postponement explanation was found.
