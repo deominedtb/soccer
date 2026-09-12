@@ -228,3 +228,30 @@ result.
   game over 90 matches (277 yellows, 5 straight reds, 3 second yellows); 75
   Championship matches; 24 penalties across all competitions, sample
   unstated. Fouls-per-card and club history NOT established.
+
+## f18 · Preston North End – Lincoln City (T1)
+
+- WebFetch: https://en.wikipedia.org/wiki/2026%E2%80%9327_Lincoln_City_F.C._season
+  — 19th, 5 points from 5 (1W 2D 2L), 4 scored 6 conceded; home 0W 2D 1L
+  (2 GF 4 GA), away 1W 0D 1L (2 GF 2 GA); Chris Cohen and Tom Shaw joint
+  head coaches after Michael Skubala left for Bristol City; in Elder (free,
+  Derby), Coubiș (Universitatea Cluj), Ladefoged (Västerås SK), Oyegoke
+  (Hellas Verona); out Ring (released); House 2 goals all comps; EFL Cup
+  4-1 over Blackpool then 0-4 at Bournemouth; attendances 10,523 / 10,758.
+- WebFetch: https://en.wikipedia.org/wiki/2026%E2%80%9327_Preston_North_End_F.C._season
+  — 24th, 3 points from 6 (1W 0D 5L), 6 scored 12 conceded, six results with
+  dates; Paul Heckingbottom manager; 12th consecutive Championship season;
+  in Devine (£6m, Tottenham), Clarke (Ipswich), Leroy (£2.5m, Basel), Mills
+  (£2.5m, Oxford); out Whiteman (£3m, Wrexham), Osmajić (£2.1m, Genoa);
+  Callum Lang 3 league goals.
+- WebSearch: "Preston North End vs Lincoln City preview 12 September 2026
+  team news referee Deepdale" — Deepdale, 14:00 UTC; PRESTON HAVE NOT KEPT
+  A CLEAN SHEET IN 23 COMPETITIVE GAMES, back to 7 February; Preston out
+  Potts and McCann, Vukcevic back injury, Wiley to return, Gibbs and Mills
+  options; Lincoln made mass changes for the Bournemouth cup tie and rested
+  the first-choice XI; Lincoln on a three-match unbeaten run, first season
+  at this level in over 60 years. No referee named.
+- WebSearch: "Lincoln City 2025-26 League One promotion Championship
+  play-off final goals scored conceded Skubala" — League One CHAMPIONS on
+  103 points, 31W 10D 5L, 89 scored 41 conceded (+48); automatic promotion
+  sealed 2-0 over Doncaster Rovers on 21 April; Cardiff City second.

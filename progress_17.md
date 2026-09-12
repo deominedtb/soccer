@@ -15,7 +15,7 @@ f14 | 16:00 | York City FC – Swindon Town | T1 | DONE
 f15 | 16:00 | Blackburn Rovers – Millwall | T1 | DONE
 f16 | 16:00 | Charlton Athletic – Portsmouth | T1 | DONE
 f17 | 16:00 | Middlesbrough – Norwich | T3 | TODO
-f18 | 16:00 | Preston North End – Lincoln City | T1 | TODO
+f18 | 16:00 | Preston North End – Lincoln City | T1 | DONE
 f19 | 16:00 | Southampton – Bristol City | T3 | TODO
 f20 | 16:00 | Barnet FC – Accrington Stanley | T3 | TODO
 f21 | 16:00 | Colchester United – Crewe Alexandra | T3 | TODO
