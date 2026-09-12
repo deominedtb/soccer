@@ -59,3 +59,30 @@ result.
 - WebFetch: https://www.sportsmole.co.uk/football/sheffield-wednesday/preview/sheff-weds-vs-wigan-prediction-team-news-lineups_604855.html
   — 15:00 BST kickoff at Hillsborough, both absence lists, Wednesday out of
   administration under new ownership. No referee named.
+
+## f9 · Stockport County FC – Leicester City (T2)
+
+- WebFetch: https://en.wikipedia.org/wiki/2026%E2%80%9327_Leicester_City_F.C._season
+  — 18th on 5 points from 5; Russell Martin appointed 15 June 2026 on a
+  three-year deal; 2025-26 relegation from the Championship in 23rd on 46
+  points conceding 68, a club Championship record; free arrivals Lundstram,
+  Chaplin, McCarthy; Mavididi, Skipp, Kristiansen loaned out. NOTE: this
+  page's summary listed Fatawu's £20m as an arrival — corrected below.
+- WebFetch: https://en.wikipedia.org/wiki/2026%E2%80%9327_Stockport_County_F.C._season
+  — 3rd, 9 points from 5, 13 scored 6 conceded, five results with dates;
+  Challinor out by mutual consent, Jimmy McNulty in on a three-year deal
+  after promotion with Rochdale; Osborn, O'Connell, Gordon, Mandron in.
+- WebSearch: "Leicester City summer 2026 transfers out Fatawu Ipswich fee
+  League One squad Russell Martin goals scored conceded" — resolves the
+  Fatawu direction: SOLD to Ipswich Town 20 July 2026, £20m plus £3m
+  add-ons (€23.5m), five-year deal; 44 apps, 9 goals, 8 assists in his
+  final Championship season.
+- WebSearch: "Stockport County vs Leicester City preview 12 September 2026
+  team news referee Edgeley Park" — Edgeley Park, 14:00 UTC; Stockport's
+  4-0 scorers (Wootton, Wood, Diamond, Gover); Chaplin unavailable;
+  Martin's "too soft and too naive". No referee named.
+- WebFetch: https://www.sportsmole.co.uk/football/stockport-county/preview/stockport-vs-leicester-prediction-team-news-lineups_604862.html
+  — Leicester's five results in full (1-1 Notts County, 1-2 Burton Albion,
+  0-0 MK Dons, 2-0 Plymouth, 0-4 Oxford), 4 scored 9 conceded; Wootton on
+  3 in five; expected changes (Bistric for Riis, Howell for Burns). No
+  referee named.

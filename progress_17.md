@@ -6,7 +6,7 @@ f5 | 13:30 | Grimsby Town – Bristol Rovers | T3 | TODO
 f6 | 13:30 | Leyton Orient – Wycombe Wanderers | T3 | TODO
 f7 | 13:30 | Notts County – Bradford City | T1 | TODO
 f8 | 16:00 | Sheffield Wednesday – Wigan | T2 | DONE
-f9 | 16:00 | Stockport County FC – Leicester City | T2 | TODO
+f9 | 16:00 | Stockport County FC – Leicester City | T2 | DONE
 f10 | 16:00 | Wimbledon – Doncaster Rovers | T3 | TODO
 f11 | 16:00 | Rotherham United – Salford City | T2 | TODO
 f12 | 16:00 | Shrewsbury Town – Northampton Town | T3 | TODO
