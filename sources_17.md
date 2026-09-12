@@ -86,3 +86,24 @@ result.
   0-0 MK Dons, 2-0 Plymouth, 0-4 Oxford), 4 scored 9 conceded; Wootton on
   3 in five; expected changes (Bistric for Riis, Howell for Burns). No
   referee named.
+
+## f11 · Rotherham United – Salford City (T2)
+
+- WebFetch: https://en.wikipedia.org/wiki/2026%E2%80%9327_Rotherham_United_F.C._season
+  — 17th on 5 points from 5, 6 scored 7 conceded, five results with dates;
+  first League Two season since 2012-13 after relegation; Alex Bruce head
+  coach on a two-year contract; Tavares (free, Burton Albion), Mullin
+  (Wrexham), Bradshaw (Oxford United), Ngwenya, Otoo in; 1-4 EFL Cup exit
+  to West Bromwich Albion.
+- WebFetch: https://en.wikipedia.org/wiki/2026%E2%80%9327_Salford_City_F.C._season
+  — 15th on 6 points from 5, 4 scored 6 conceded, five results with dates;
+  eighth consecutive League Two season; Karl Robinson dismissed, Peter
+  Cklamovski (ex-Malaysia) appointed; Langstaff (Millwall), Powell
+  (Rotherham), Norris (Wycombe) in, ~10 permanent signings; EFL Cup exit
+  to Shrewsbury on penalties.
+- WebSearch: "Rotherham United vs Salford City preview 12 September 2026
+  team news referee New York Stadium" — AESSEAL New York Stadium, 15:00
+  UK; Alex Bruce sent off at full time last match and facing a touchline
+  ban; Jellis among four Rotherham absentees, Spence a doubt, Sebine may
+  come in; Dan Scarr (from Wrexham) due first minutes, Wiredu to start;
+  confirms Salford's two wins were both at home. No referee named.
