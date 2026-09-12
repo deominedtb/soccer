@@ -1,0 +1,978 @@
+<title>Market Board Saturday 12 September 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<style>
+:root{
+  --bg:#EFF2F1; --surface:#FFFFFF; --surface-2:#F6F8F7; --band:#1D3F52;
+  --ink:#13201E; --ink-2:#485856; --muted:#6C7B78; --line:#D4DCDA;
+  --accent:#1D4E73; --accent-soft:#E3EDF3;
+  --good:#2C6E4B; --good-soft:#E2EFE8;
+  --warn:#8C6817; --warn-soft:#F4ECD9;
+  --bad:#A03528;  --bad-soft:#F6E2DF;
+  --brass:#856526;
+  --band-ink:#EAF1F4;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D1315; --surface:#141C1F; --surface-2:#1A2326; --band:#16303D;
+    --ink:#E3EAE8; --ink-2:#A6B4B1; --muted:#82938F; --line:#263236;
+    --accent:#79ACD0; --accent-soft:#152F3C;
+    --good:#66C093; --good-soft:#152C20;
+    --warn:#D2A950; --warn-soft:#2C2617;
+    --bad:#E27A6E;  --bad-soft:#321C19;
+    --brass:#C4A05A;
+    --band-ink:#DCE8EC;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D1315; --surface:#141C1F; --surface-2:#1A2326; --band:#16303D;
+  --ink:#E3EAE8; --ink-2:#A6B4B1; --muted:#82938F; --line:#263236;
+  --accent:#79ACD0; --accent-soft:#152F3C;
+  --good:#66C093; --good-soft:#152C20;
+  --warn:#D2A950; --warn-soft:#2C2617;
+  --bad:#E27A6E;  --bad-soft:#321C19;
+  --brass:#C4A05A;
+  --band-ink:#DCE8EC;
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:"Source Serif 4",Georgia,"Times New Roman",serif;
+  font-size:17px; line-height:1.6;
+  margin:0; padding:0 18px 96px;
+  -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:940px; margin:0 auto;}
+h1,h2,h3,h4,.ui{font-family:Archivo,"Helvetica Neue",Arial,sans-serif}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace; font-variant-numeric:tabular-nums}
+
+/* ---------- masthead ---------- */
+header.top{padding:52px 0 26px; border-bottom:2px solid var(--ink);}
+.eyebrow{
+  font-family:Archivo,sans-serif; font-size:12px; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase; color:var(--accent); margin:0 0 14px;
+}
+h1{
+  font-size:clamp(34px,7vw,54px); line-height:1.02; font-weight:800;
+  letter-spacing:-.02em; margin:0 0 14px; text-wrap:balance;
+}
+.standfirst{font-size:19px; color:var(--ink-2); margin:0; max-width:62ch;}
+.metaline{
+  display:flex; flex-wrap:wrap; gap:8px 20px; margin-top:22px;
+  font-family:Archivo,sans-serif; font-size:12.5px; font-weight:600;
+  letter-spacing:.06em; text-transform:uppercase; color:var(--muted);
+}
+
+/* ---------- generic blocks ---------- */
+section{margin-top:44px}
+h2.sec{
+  font-size:13px; font-weight:700; letter-spacing:.15em; text-transform:uppercase;
+  color:var(--muted); margin:0 0 16px; padding-bottom:8px; border-bottom:1px solid var(--line);
+}
+p{margin:0 0 14px; max-width:70ch}
+.note{
+  background:var(--accent-soft); border-left:3px solid var(--accent);
+  padding:14px 16px; font-size:15.5px; color:var(--ink-2); max-width:none;
+}
+.note strong{color:var(--ink)}
+
+/* ---------- odds table ---------- */
+.scroller{overflow-x:auto; border:1px solid var(--line); background:var(--surface)}
+table{border-collapse:collapse; width:100%; min-width:760px; font-size:14px}
+thead th{
+  background:var(--band); color:var(--band-ink);
+  font-family:Archivo,sans-serif; font-weight:700; font-size:11px;
+  letter-spacing:.09em; text-transform:uppercase;
+  padding:10px 11px; text-align:right; white-space:nowrap;
+}
+thead th:first-child{text-align:left}
+tbody td{
+  padding:10px 11px; border-top:1px solid var(--line); text-align:right;
+  font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums; white-space:nowrap;
+}
+tbody td:first-child{
+  text-align:left; font-family:Archivo,sans-serif; font-weight:600; font-size:14px;
+  white-space:normal; min-width:190px;
+}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td .ko{display:block; font-family:"IBM Plex Mono",monospace; font-weight:400; font-size:11.5px; color:var(--muted); letter-spacing:.02em}
+.unk{color:var(--brass); font-style:italic}
+
+/* ---------- fixture cards ---------- */
+.fixture{
+  background:var(--surface); border:1px solid var(--line);
+  margin-top:30px; scroll-margin-top:12px;
+}
+.fx-head{background:var(--band); color:var(--band-ink); padding:16px 20px 18px}
+.fx-league{
+  font-family:Archivo,sans-serif; font-size:11px; font-weight:700;
+  letter-spacing:.14em; text-transform:uppercase; opacity:.78; margin:0 0 6px;
+}
+.fx-title{font-family:Archivo,sans-serif; font-size:23px; font-weight:700; letter-spacing:-.01em; margin:0; line-height:1.15}
+.fx-sub{font-family:"IBM Plex Mono",monospace; font-size:12.5px; opacity:.8; margin:7px 0 0; letter-spacing:.02em}
+.fx-body{padding:20px}
+
+.fx-odds{
+  display:flex; flex-wrap:wrap; gap:0;
+  border:1px solid var(--line); background:var(--surface-2); margin:0 0 22px;
+}
+.od{flex:1 1 96px; padding:9px 12px; border-right:1px solid var(--line); border-bottom:1px solid var(--line)}
+.od:last-child{border-right:0}
+.od dt{
+  font-family:Archivo,sans-serif; font-size:10px; font-weight:700; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--muted); margin:0 0 3px;
+}
+.od dd{margin:0; font-family:"IBM Plex Mono",monospace; font-size:15px; font-weight:500; font-variant-numeric:tabular-nums}
+
+h3.blk{
+  font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--accent); margin:26px 0 10px;
+}
+h3.blk:first-of-type{margin-top:0}
+.fx-body ul{margin:0 0 14px; padding-left:20px; max-width:70ch}
+.fx-body li{margin-bottom:7px}
+.tag{
+  font-family:Archivo,sans-serif; font-size:11px; font-weight:700;
+  letter-spacing:.07em; text-transform:uppercase; padding:2px 7px; white-space:nowrap;
+}
+.t-low{background:var(--good-soft); color:var(--good)}
+.t-mid{background:var(--warn-soft); color:var(--warn)}
+.t-high{background:var(--bad-soft); color:var(--bad)}
+
+/* market suitability rows */
+.mkt{border-top:1px solid var(--line)}
+.mkt-row{
+  display:grid; grid-template-columns:150px 1fr; gap:0;
+  border-bottom:1px solid var(--line);
+}
+.mkt-name{
+  padding:13px 14px 13px 0; font-family:Archivo,sans-serif;
+  font-weight:700; font-size:14px; line-height:1.3;
+}
+.mkt-name .verdict{display:block; margin-top:6px}
+.mkt-why{padding:13px 0 13px 16px; border-left:3px solid var(--line); font-size:15.5px; color:var(--ink-2)}
+.mkt-row.good .mkt-why{border-left-color:var(--good)}
+.mkt-row.ok .mkt-why{border-left-color:var(--warn)}
+.mkt-row.bad .mkt-why{border-left-color:var(--bad)}
+@media (max-width:620px){
+  .mkt-row{grid-template-columns:1fr; gap:0}
+  .mkt-name{padding-bottom:6px}
+  .mkt-why{padding:0 0 14px 14px}
+}
+
+/* index list */
+.index{display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line)}
+.index a{
+  display:block; background:var(--surface); padding:12px 14px; text-decoration:none;
+  color:var(--ink); font-family:Archivo,sans-serif; font-weight:600; font-size:14.5px;
+}
+.index a:hover,.index a:focus-visible{background:var(--accent-soft); color:var(--accent)}
+.index a span{display:block; font-family:"IBM Plex Mono",monospace; font-weight:400; font-size:11.5px; color:var(--muted); margin-top:3px; letter-spacing:.03em}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+
+footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); font-size:14px; color:var(--muted); max-width:74ch}
+footer a{color:var(--accent)}
+
+/* ---------- not-yet-built fixture ---------- */
+.fixture.pending{opacity:.72}
+.pending-note{
+  font-family:Archivo,sans-serif; font-size:13px; font-weight:600;
+  letter-spacing:.04em; color:var(--muted);
+  background:var(--surface-2); border:1px dashed var(--line);
+  border-radius:8px; padding:14px 16px; margin-top:18px;
+}
+</style>
+
+<div class="wrap">
+
+<header class="top">
+  <p class="eyebrow">Context engine &middot; no picks, no sides, no lines</p>
+  <h1>Thirty-three English fixtures, three divisions, and one question the odds sheet cannot answer</h1>
+  <p class="standfirst">Thirty-three fixtures parsed from odds_17.xlsx, all played on 12 September 2026 across the Championship, League One and League Two; the slate was triaged to 10 full cards and 5 reduced ones, and 3 of those 15 are built so far &mdash; this session covering the 16:00 group only.</p>
+  <div class="metaline">
+    <span>Saturday 12 September 2026</span>
+    <span>EFL Championship &middot; League One matchday 6 &middot; League Two matchday 6</span>
+    <span>Decimal odds, bet365 IT</span>
+  </div>
+</header>
+
+<section>
+  <h2 class="sec">The one thing shaping every game on this card</h2>
+    <p>This is an English slate five matchdays old, and almost everything that normally separates
+  one fixture from another on this board is missing from it. The odds sheet carries three market
+  families and no more &mdash; <strong>1X2, the 2.5 goals line and both-teams-to-score</strong>, with double chance on nine
+  rows &mdash; and <em>no cards line, no corners line, no corner race and no handicap anywhere</em>. So the usual
+  breadth of section C is not available on any of the thirty-three, and the two markets that are
+  priced on every single row are the two this card is written around.</p>
+  <p>The second fact is that nothing on the sheet is dead. The shortest 1X2 price across all thirty-three
+  fixtures is 1.45, the shortest goals-line price 1.43 and the shortest BTTS price 1.45 &mdash; every market
+  on every fixture clears the two-sided thresholds comfortably. That is what an early-September
+  three-division English slate looks like when the bookmaker has five matchdays of evidence and no more:
+  the prices are tight because the information is thin, not because the games are finely balanced.
+  It also means the one structural variable left is simply <strong>which clubs are new to their division this
+  season</strong> &mdash; promoted, or dropped in from above &mdash; and that is what the triage ranked on.</p>
+  <p>Behind that sits the thing the goals markets actually turn on. A club relegated into a lower
+  division arrives with a squad assembled for a harder league and a balance sheet that has usually just
+  been cut; a club promoted into a higher one arrives with the opposite problem. Both produce defences
+  playing unfamiliar opposition with five matches of evidence behind them, which is why on this card the
+  concession columns are consistently more legible than the scoring ones.</p>
+  <div class="note"><strong>Structural consequence.</strong> With cards and corners absent and the result
+  family deliberately left unwritten on these cards, every fixture below is argued through the same two
+  rows &mdash; the 2.5 goals line and both-teams-to-score &mdash; and in almost every case the better-evidenced
+  half of those rows is a defence that has already been shown to leak, not an attack that has been shown
+  to score.</div>
+</section>
+
+<section>
+  <h2 class="sec">Today&rsquo;s slate &mdash; odds as read from the screenshots</h2>
+  <div class="scroller">
+  <table>
+    <thead>
+      <tr>
+        <th>Fixture</th><th>1</th><th>X</th><th>2</th><th>O2.5</th><th>U2.5</th><th>BTTS&nbsp;Y</th><th>BTTS&nbsp;N</th><th>Cards</th><th>Corners</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Bolton &ndash; Cardiff<span class="ko">13:30 CEST</span></td><td>2.55</td><td>3.60</td><td>2.50</td><td>1.50</td><td>2.40</td><td>1.45</td><td>2.60</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Derby County &ndash; Birmingham City<span class="ko">13:30 CEST</span></td><td>3.50</td><td>3.25</td><td>2.10</td><td>2.00</td><td>1.73</td><td>1.80</td><td>1.90</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>West Bromwich &ndash; Queens Park Rangers<span class="ko">13:30 CEST</span></td><td>2.20</td><td>3.25</td><td>3.25</td><td>1.80</td><td>1.90</td><td>1.65</td><td>2.10</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Crawley &ndash; Cheltenham Town<span class="ko">13:30 CEST</span></td><td>2.45</td><td>3.50</td><td>2.55</td><td>1.57</td><td>2.25</td><td>1.47</td><td>2.40</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Grimsby Town &ndash; Bristol Rovers<span class="ko">13:30 CEST</span></td><td>2.35</td><td>3.50</td><td>2.65</td><td>1.70</td><td>2.00</td><td>1.58</td><td>2.15</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Leyton Orient &ndash; Wycombe Wanderers<span class="ko">13:30 CEST</span></td><td>2.35</td><td>3.45</td><td>2.70</td><td>1.68</td><td>2.00</td><td>1.58</td><td>2.20</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Notts County &ndash; Bradford City<span class="ko">13:30 CEST</span></td><td>3.00</td><td>3.25</td><td>2.25</td><td>2.00</td><td>1.70</td><td>1.80</td><td>1.88</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Sheffield Wednesday &ndash; Wigan<span class="ko">16:00 CEST</span></td><td>1.58</td><td>4.05</td><td>4.90</td><td>1.48</td><td>2.40</td><td>1.55</td><td>2.25</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Stockport County FC &ndash; Leicester City<span class="ko">16:00 CEST</span></td><td>1.75</td><td>3.95</td><td>3.80</td><td>1.48</td><td>2.40</td><td>1.50</td><td>2.40</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Wimbledon &ndash; Doncaster Rovers<span class="ko">16:00 CEST</span></td><td>2.55</td><td>3.35</td><td>2.50</td><td>1.90</td><td>1.77</td><td>1.73</td><td>1.95</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Rotherham United &ndash; Salford City<span class="ko">16:00 CEST</span></td><td>2.55</td><td>3.60</td><td>2.40</td><td>1.70</td><td>2.00</td><td>1.58</td><td>2.15</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Shrewsbury Town &ndash; Northampton Town<span class="ko">16:00 CEST</span></td><td>2.55</td><td>3.10</td><td>2.70</td><td>2.25</td><td>1.55</td><td>1.92</td><td>1.72</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Walsall &ndash; Rochdale<span class="ko">16:00 CEST</span></td><td>1.70</td><td>3.65</td><td>4.35</td><td>1.67</td><td>2.05</td><td>1.65</td><td>2.05</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>York City FC &ndash; Swindon Town<span class="ko">16:00 CEST</span></td><td>1.53</td><td>4.30</td><td>4.85</td><td>1.43</td><td>2.60</td><td>1.50</td><td>2.30</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Blackburn Rovers &ndash; Millwall<span class="ko">16:00 CEST</span></td><td>2.60</td><td>3.30</td><td>2.60</td><td>1.90</td><td>1.80</td><td>1.72</td><td>2.00</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Charlton Athletic &ndash; Portsmouth<span class="ko">16:00 CEST</span></td><td>2.70</td><td>3.15</td><td>2.65</td><td>2.10</td><td>1.65</td><td>1.85</td><td>1.85</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Middlesbrough &ndash; Norwich<span class="ko">16:00 CEST</span></td><td>1.85</td><td>3.85</td><td>3.75</td><td>1.55</td><td>2.30</td><td>1.53</td><td>2.35</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Preston North End &ndash; Lincoln City<span class="ko">16:00 CEST</span></td><td>2.30</td><td>3.40</td><td>2.90</td><td>1.78</td><td>1.93</td><td>1.65</td><td>2.10</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Southampton &ndash; Bristol City<span class="ko">16:00 CEST</span></td><td>1.65</td><td>4.10</td><td>4.45</td><td>1.55</td><td>2.30</td><td>1.60</td><td>2.20</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Barnet FC &ndash; Accrington Stanley<span class="ko">16:00 CEST</span></td><td>1.45</td><td>4.35</td><td>6.00</td><td>1.48</td><td>2.45</td><td>1.60</td><td>2.10</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Colchester United &ndash; Crewe Alexandra<span class="ko">16:00 CEST</span></td><td>2.05</td><td>3.60</td><td>3.15</td><td>1.63</td><td>2.15</td><td>1.53</td><td>2.25</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Gillingham &ndash; Tranmere Rovers FC<span class="ko">16:00 CEST</span></td><td>2.50</td><td>3.00</td><td>2.80</td><td>1.95</td><td>1.75</td><td>1.70</td><td>1.95</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Newport County &ndash; Fleetwood Town<span class="ko">16:00 CEST</span></td><td>3.10</td><td>3.50</td><td>2.05</td><td>1.77</td><td>1.92</td><td>1.65</td><td>2.05</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Oldham Athletic &ndash; Chesterfield FC<span class="ko">16:00 CEST</span></td><td>2.05</td><td>3.35</td><td>3.30</td><td>1.80</td><td>1.90</td><td>1.65</td><td>2.05</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Port Vale &ndash; Exeter City<span class="ko">16:00 CEST</span></td><td>2.05</td><td>3.30</td><td>3.35</td><td>1.97</td><td>1.73</td><td>1.78</td><td>1.85</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Swansea &ndash; Burnley<span class="ko">16:00 CEST</span></td><td>2.05</td><td>3.40</td><td>3.50</td><td>1.83</td><td>1.87</td><td>1.70</td><td>2.05</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Watford &ndash; Stoke City<span class="ko">16:00 CEST</span></td><td>2.30</td><td>3.35</td><td>3.00</td><td>1.83</td><td>1.87</td><td>1.68</td><td>2.05</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Blackpool FC &ndash; Bromley FC<span class="ko">16:00 CEST</span></td><td>1.65</td><td>3.80</td><td>4.65</td><td>1.60</td><td>2.15</td><td>1.62</td><td>2.10</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Cambridge United &ndash; Reading FC<span class="ko">16:00 CEST</span></td><td>2.60</td><td>3.30</td><td>2.50</td><td>1.92</td><td>1.75</td><td>1.75</td><td>1.95</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Mansfield Town &ndash; Huddersfield<span class="ko">16:00 CEST</span></td><td>3.35</td><td>3.60</td><td>1.95</td><td>1.55</td><td>2.25</td><td>1.50</td><td>2.35</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Milton Keynes Dons &ndash; Peterborough United<span class="ko">16:00 CEST</span></td><td>1.90</td><td>3.80</td><td>3.40</td><td>1.50</td><td>2.40</td><td>1.47</td><td>2.45</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Oxford United &ndash; Burton Albion<span class="ko">16:00 CEST</span></td><td>1.80</td><td>3.70</td><td>3.80</td><td>1.67</td><td>2.05</td><td>1.63</td><td>2.10</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Plymouth Argyle &ndash; Barnsley<span class="ko">16:00 CEST</span></td><td>1.62</td><td>4.10</td><td>4.45</td><td>1.45</td><td>2.50</td><td>1.50</td><td>2.35</td><td>&mdash;</td><td>&mdash;</td></tr>
+    </tbody>
+  </table>
+  </div>
+    <div class="note"><strong>Provenance.</strong> Typed-file mode: prices were read from
+  <span class="mono">odds_17.xlsx</span> (sheet &ldquo;odds 17&rdquo;), not from images, so nothing on this
+  board is derived or OCR-uncertain and no value carries a tilde. The workbook is saved in strict-OOXML
+  conformance and returned zero sheets to the normal reader; it was parsed directly from the sheet XML.
+  The sheet's own provenance comment on cell A1 names six source screenshots &mdash;
+  <span class="mono">Screenshot 2026-09-12 115101, 115111, 115128, 115142, 115206 and 115215 .png</span>,
+  uploaded 2026-09-12. <strong>Cards and corners are shown as &mdash; throughout because those columns do not
+  exist in the source file</strong>, not because they were unreadable.</div>
+    <div class="note"><strong>How much of this board is built.</strong> 3 of the 33 fixtures carry a
+  researched card. Triage allocated 10 fixtures to full depth (T1) and 5 to reduced depth (T2, sections A, C
+  and D only); this session was scoped to the <strong>16:00 kickoffs only</strong>, so the two 13:30 fixtures that
+  triage had placed at full depth &mdash; Bolton &ndash; Cardiff and Notts County &ndash; Bradford City &mdash; are
+  listed without research alongside the T3 group. The remaining 18 fixtures were listed without research.
+  <strong>That selection was made on the evidence available to research, not on the merit of the games.</strong>
+  The signal that decided it was whether either club is new to its division this season; on a slate where
+  live-row counts and the discipline window were constants across all 33 fixtures, that was the only thing
+  that varied. A fixture listed without a card is not a judgement on the fixture, and two of the T3 rows
+  &mdash; Shrewsbury &ndash; Northampton and Port Vale &ndash; Exeter &mdash; tied on score with cards that were
+  built and lost only a tie-break. Oxford United &ndash; Burton Albion is carried at T2 by override rather
+  than by score.</div>
+</section>
+
+<section>
+  <h2 class="sec">Jump to a fixture</h2>
+  <nav class="jump">
+    <a href="#f1">Bolton &ndash; Cardiff<span>13:30 CEST</span></a>
+    <a href="#f2">Derby County &ndash; Birmingham City<span>13:30 CEST</span></a>
+    <a href="#f3">West Bromwich &ndash; Queens Park Rangers<span>13:30 CEST</span></a>
+    <a href="#f4">Crawley &ndash; Cheltenham Town<span>13:30 CEST</span></a>
+    <a href="#f5">Grimsby Town &ndash; Bristol Rovers<span>13:30 CEST</span></a>
+    <a href="#f6">Leyton Orient &ndash; Wycombe Wanderers<span>13:30 CEST</span></a>
+    <a href="#f7">Notts County &ndash; Bradford City<span>13:30 CEST</span></a>
+    <a href="#f8">Sheffield Wednesday &ndash; Wigan<span>16:00 CEST &middot; Hillsborough, Sheffield</span></a>
+    <a href="#f9">Stockport County FC &ndash; Leicester City<span>16:00 CEST &middot; Edgeley Park, Stockport</span></a>
+    <a href="#f10">Wimbledon &ndash; Doncaster Rovers<span>16:00 CEST</span></a>
+    <a href="#f11">Rotherham United &ndash; Salford City<span>16:00 CEST &middot; AESSEAL New York Stadium, Rotherham</span></a>
+    <a href="#f12">Shrewsbury Town &ndash; Northampton Town<span>16:00 CEST</span></a>
+    <a href="#f13">Walsall &ndash; Rochdale<span>16:00 CEST</span></a>
+    <a href="#f14">York City FC &ndash; Swindon Town<span>16:00 CEST</span></a>
+    <a href="#f15">Blackburn Rovers &ndash; Millwall<span>16:00 CEST</span></a>
+    <a href="#f16">Charlton Athletic &ndash; Portsmouth<span>16:00 CEST</span></a>
+    <a href="#f17">Middlesbrough &ndash; Norwich<span>16:00 CEST</span></a>
+    <a href="#f18">Preston North End &ndash; Lincoln City<span>16:00 CEST</span></a>
+    <a href="#f19">Southampton &ndash; Bristol City<span>16:00 CEST</span></a>
+    <a href="#f20">Barnet FC &ndash; Accrington Stanley<span>16:00 CEST</span></a>
+    <a href="#f21">Colchester United &ndash; Crewe Alexandra<span>16:00 CEST</span></a>
+    <a href="#f22">Gillingham &ndash; Tranmere Rovers FC<span>16:00 CEST</span></a>
+    <a href="#f23">Newport County &ndash; Fleetwood Town<span>16:00 CEST</span></a>
+    <a href="#f24">Oldham Athletic &ndash; Chesterfield FC<span>16:00 CEST</span></a>
+    <a href="#f25">Port Vale &ndash; Exeter City<span>16:00 CEST</span></a>
+    <a href="#f26">Swansea &ndash; Burnley<span>16:00 CEST</span></a>
+    <a href="#f27">Watford &ndash; Stoke City<span>16:00 CEST</span></a>
+    <a href="#f28">Blackpool FC &ndash; Bromley FC<span>16:00 CEST</span></a>
+    <a href="#f29">Cambridge United &ndash; Reading FC<span>16:00 CEST</span></a>
+    <a href="#f30">Mansfield Town &ndash; Huddersfield<span>16:00 CEST</span></a>
+    <a href="#f31">Milton Keynes Dons &ndash; Peterborough United<span>16:00 CEST</span></a>
+    <a href="#f32">Oxford United &ndash; Burton Albion<span>16:00 CEST</span></a>
+    <a href="#f33">Plymouth Argyle &ndash; Barnsley<span>16:00 CEST</span></a>
+  </nav>
+</section>
+
+<article class="fixture pending" id="f1">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL Championship</p>
+    <h2 class="fx-title">Bolton &ndash; Cardiff</h2>
+    <p class="fx-sub">13:30 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.55 &middot; 3.60 &middot; 2.50</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.50 / 2.40</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.45 / 2.60</dd></div>
+    </dl>
+    <div class="pending-note">Not built on this slate &mdash; 13:30 kickoff, outside the 16:00 group this session was scoped to.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f2">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL Championship</p>
+    <h2 class="fx-title">Derby County &ndash; Birmingham City</h2>
+    <p class="fx-sub">13:30 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>3.50 &middot; 3.25 &middot; 2.10</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>2.00 / 1.73</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.80 / 1.90</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; triage floor score: neither club is new to this division this season, the one signal that varied across the sheet.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f3">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL Championship</p>
+    <h2 class="fx-title">West Bromwich &ndash; Queens Park Rangers</h2>
+    <p class="fx-sub">13:30 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.20 &middot; 3.25 &middot; 3.25</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.80 / 1.90</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.65 / 2.10</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; triage floor score: neither club is new to this division this season, the one signal that varied across the sheet.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f4">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL League Two</p>
+    <h2 class="fx-title">Crawley &ndash; Cheltenham Town</h2>
+    <p class="fx-sub">13:30 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.45 &middot; 3.50 &middot; 2.55</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.57 / 2.25</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.47 / 2.40</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; triage floor score: neither club is new to this division this season, the one signal that varied across the sheet.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f5">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL League Two</p>
+    <h2 class="fx-title">Grimsby Town &ndash; Bristol Rovers</h2>
+    <p class="fx-sub">13:30 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.35 &middot; 3.50 &middot; 2.65</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.70 / 2.00</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.58 / 2.15</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; triage floor score: neither club is new to this division this season, the one signal that varied across the sheet.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f6">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL League One</p>
+    <h2 class="fx-title">Leyton Orient &ndash; Wycombe Wanderers</h2>
+    <p class="fx-sub">13:30 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.35 &middot; 3.45 &middot; 2.70</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.68 / 2.00</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.58 / 2.20</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; triage floor score: neither club is new to this division this season, the one signal that varied across the sheet.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f7">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL League One</p>
+    <h2 class="fx-title">Notts County &ndash; Bradford City</h2>
+    <p class="fx-sub">13:30 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>3.00 &middot; 3.25 &middot; 2.25</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>2.00 / 1.70</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.80 / 1.88</dd></div>
+    </dl>
+    <div class="pending-note">Not built on this slate &mdash; 13:30 kickoff, outside the 16:00 group this session was scoped to.</div>
+  </div>
+</article>
+
+<article class="fixture" id="f8">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL League One &middot; Matchday 6</p>
+    <h2 class="fx-title">Sheffield Wednesday &ndash; Wigan</h2>
+    <p class="fx-sub">16:00 CEST (15:00 BST) &middot; Hillsborough, Sheffield &middot; The division's leaders, relegated and out of administration under new ownership, against a side that has failed to score in three of five &mdash; reduced-depth card</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.58 &middot; 4.05 &middot; 4.90</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.48 / 2.40</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.55 / 2.25</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p><em>Reduced-depth card. Not pursued at this tier: transfer fees beyond the one published figure below, the full summer ins-and-outs ledger for either club, last season's xG, shot volume, home/away splits and foul and card rates, and any record for the appointed official. What follows is the promotion/relegation structure, the named signings that bear on scoring and conceding, this season's results in full, and the absence lists.</em></p>
+    <p><strong>One side is newly in this division and the other has been here four years.</strong> Sheffield Wednesday were relegated from the Championship at the end of 2025&ndash;26 &mdash; confirmed by a 2&ndash;1 defeat to Sheffield United &mdash; after a campaign the club spent in administration, and they enter League One under new ownership having exited it. That combination, a relegated club with a rebuilt balance sheet spending in the third tier, is the structural headline, and it is showing up in the goal column rather than anywhere subtle: <strong>13 scored and 6 conceded in five League One matches</strong>, top of the table on 12 points. Wigan are in their <strong>fourth consecutive League One season</strong>, finished <strong>16th in 2025&ndash;26</strong>, and have started <strong>5 scored, 11 conceded, 3 points, 24th</strong>. Neither club is promoted, so the promoted-side question does not arise here; the division-newness is entirely on the home side and it is newness from above, not below.</p>
+    <ul>
+      <li><strong>Sheffield Wednesday &mdash; high turnover, rebuilt through the spine, manager unchanged.</strong> <strong>Henrik Pedersen</strong> remains in post, appointed 31 July 2025 on a three-year deal, so the manager who was relegated is the manager running the response. The window was weighted to exactly the positions that decide whether this card's markets behave: in goal <strong>Joe Lumley, free from Bristol City</strong>; at centre-back <strong>Ricardo Santos from Swansea City</strong>; in midfield <strong>Barry Bannan from Millwall</strong> and <strong>Tyler Onyango, released by Everton, on a three-year deal</strong>; in attack <strong>Jamal Lowe free from Bournemouth</strong>, who is the club's top scorer already on 4 league goals, plus <strong>Louie Barry from Aston Villa</strong>, <strong>Kieran Morrison on a season loan from Liverpool</strong> and <strong>Ali Al-Hamadi on loan from Ipswich</strong>. Also in: <strong>Ashley Maynard-Brewer</strong>, 27, on a one-year deal as goalkeeping cover. <strong>Gap:</strong> no fees were published for the arrivals above beyond their free or loan status, and they are recorded as unreported rather than estimated.</li>
+      <li><strong>Wigan &mdash; moderate turnover, the only published fee spent at centre-back, manager in his first full season.</strong> <strong>Gary Caldwell returned to the club in February 2026</strong> and took it to 16th; this is his first full campaign. In: <strong>Finley Burns from Manchester City for &pound;200,000</strong>, a centre-back and the only fee published on either side of this fixture; <strong>Connor Barrett from Walsall</strong> (10 June); <strong>Max Power, returning</strong> (6 June); <strong>Sonny Perkins from Leyton Orient</strong> (26 June); <strong>Jeremiah Chilokoa-Mullen</strong> (1 July); <strong>Akeel Higgins</strong> (3 July). <strong>Contradiction logged:</strong> two secondary sources name different Wigan managers in this window &mdash; one referring to Ryan Lowe, another to a Kolo Tour&eacute; appointment. The club's own season page and this week's match preview both name Caldwell, and Caldwell is what is carried here; the other two are recorded as unresolved and not used.</li>
+      <li><strong>Suspensions / absences.</strong> Both lists are long and the home one lands on the attack. Wednesday are without <strong>Louie Barry, who faces a lengthy absence</strong>, plus <strong>Max Lowe, Tyler Onyango, Jordi Liongola, Harry Gray, Ricardo Santos and Sil Swinkels</strong> &mdash; note that two of the named summer arrivals, Onyango and Santos, are among them, so the midfield and centre-back rebuild is not fully on the pitch. Davis Keillor-Dunn is expected to start alongside Morrison and Jamal Lowe. Wigan are without <strong>Luke Harris, Christian Saydee and Ryan Trevitt</strong>, with <strong>Akeel Higgins unlikely</strong>; Caldwell is expected to rotate after last weekend. No suspensions surfaced for either side.</li>
+      <li><strong>Sample.</strong> Five league matches each plus a cup tie for the hosts. <strong>Wednesday: 2&ndash;1 at Leyton Orient (15 Aug), 0&ndash;1 at home to Bradford City (20 Aug), 7&ndash;2 at home to Bromley (29 Aug), 2&ndash;1 at Wycombe (1 Sep), 2&ndash;1 at Peterborough (5 Sep)</strong>, plus a 0&ndash;2 EFL Cup defeat to Wolverhampton Wanderers (25 Aug). Average home league attendance 31,597. <strong>Wigan: 3&ndash;2 defeat at Cambridge United (15 Aug), 0&ndash;2 at home to Leyton Orient (22 Aug), 1&ndash;0 defeat at AFC Wimbledon (30 Aug), 3&ndash;1 home win over MK Dons (2 Sep), 0&ndash;4 at home to Stockport County (5 Sep)</strong>. <strong>Gap:</strong> no xG, shot-volume, possession or card series was pursued for either club at this tier, and last season's goals-for and goals-against totals were not established for either &mdash; the 2025&ndash;26 evidence here is a finishing position and a relegation, nothing more granular. <strong>Contradiction logged:</strong> one source describes Wednesday as having "finished 1st in League One" in 2026&ndash;27; that is a five-match table position being read as a final standing, and it is carried here only as the current position.</li>
+      <li><strong>Referee.</strong> <strong>Not established.</strong> One dedicated search on the appointment returned EFL referee stories for other Wednesday fixtures but nothing for this one, so no name, no cards per game, no fouls per card, no penalty rate and no history with either club. League One appointments are normally published inside the final few days, and kickoff is hours away, so this is a failure to reach the appointment rather than a fixture too far out to have one. The discipline family is unpriced on this sheet in any case &mdash; no cards line was captured &mdash; so the gap constrains nothing below except to the extent that an unknown official widens the variance behind every foul-driven goal, penalty included.</li>
+    </ul>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row good"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-low">Well-suited &mdash; both sides' matches have gone over at a rate the structure explains</span></div><div class="mkt-why">1.48 over against 2.40 under, and unusually for an early-season card the structural reasons and the match evidence point the same way. <strong>Four of Wednesday's five league matches have produced three or more goals</strong> (2&ndash;1, 7&ndash;2, 2&ndash;1, 2&ndash;1; only the 0&ndash;1 to Bradford did not), and <strong>three of Wigan's five</strong> have too (3&ndash;2, 3&ndash;1, 0&ndash;4). The structure behind the home half is a relegated club out of administration under new ownership that spent its window on the forward line &mdash; Jamal Lowe free from Bournemouth and already on 4 league goals, Barry on loan-level pedigree from Aston Villa, Morrison from Liverpool's under-21s, Al-Hamadi on loan from Ipswich &mdash; against third-tier defences. The structure behind the away half is simpler: <strong>Wigan have conceded 11 in five, including 0&ndash;4 at home last weekend</strong>, with the only published fee of their summer (&pound;200,000 for Finley Burns) spent at centre-back precisely because that was the problem. The caution that keeps this from being unqualified: the 7&ndash;2 is one match doing heavy lifting in the home goal column, and Wednesday's own blank against Bradford shows the floor exists.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; the leg that has to be argued is Wigan scoring, and it has failed three times in five</span></div><div class="mkt-why">1.55 Yes against 2.25 No. The home leg is close to the safest assumption on the card: Wednesday have scored in all five league matches and 13 in total, with a settled front line despite Barry's lengthy absence. The away leg is the whole question, and the record is split rather than damning &mdash; <strong>Wigan have failed to score in three of five (0&ndash;2, 1&ndash;0 defeat, 0&ndash;4) and scored two or more in the other two (3&ndash;2 at Cambridge, 3&ndash;1 against MK Dons)</strong>. Structurally the away attack is a Caldwell first full season with Sonny Perkins and Max Power added and <strong>Christian Saydee, Luke Harris and Ryan Trevitt all sidelined</strong>, which is three attacking or midfield absences in a side already 24th on 5 goals. What makes this OK rather than dangerous is that Wednesday's own concession record is real too &mdash; 6 in five, and they have conceded in four of the five &mdash; so the Yes does not need Wigan to be good, only to be scored against by a leaky opponent and to convert once. What keeps it off well-suited is that 1.55 has already priced in most of that, on a five-match sample containing a 7&ndash;2 and a 0&ndash;4.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous &mdash; abbreviated by request; not written up on this card</span></div><div class="mkt-why">1.58 / 4.05 / 4.90. The result family is not analysed on this board today; the only note carried is the one that bears on the rows above &mdash; the price gap is what a five-match table-topper at home to a side 24th on 3 points looks like, and it is the reason the goals rows lean the way they do rather than an independent finding.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li><strong>The 7&ndash;2 is one match and it is carrying the home goal column.</strong> Strip it out and Wednesday have scored 6 in four, not 13 in five. Every over-2.5 and BTTS-Yes argument on this page is materially weaker against the four-match version than the five-match one, and the fixture that produced it &mdash; at home to a side promoted from League Two &mdash; is not this fixture.</li>
+      <li><strong>Two of Wednesday's summer signings in the spine are unavailable.</strong> Onyango in midfield and Santos at centre-back were both brought in this summer and are both out, alongside Max Lowe, Liongola, Gray and Swinkels, with Louie Barry facing a lengthy absence. The side that produced the five-match record is not intact, and the concession half of the BTTS row depends on a back line missing its summer centre-back.</li>
+      <li><strong>Wigan's five matches contain both extremes and nothing in between.</strong> A 3&ndash;1 win and a 0&ndash;4 loss inside four days, three blanks and two multi-goal returns. There is no stable central tendency to reason from on the away scoring leg, which is exactly the leg BTTS needs.</li>
+      <li><strong>Last season's numbers are absent on both sides, not merely thin.</strong> No goals-for, goals-against, xG or card rate was established for either club at this tier, so there is no prior-year baseline to test the five-match samples against &mdash; unusual for a card and worth weighing before treating either goal column as settled.</li>
+      <li><strong>Most sensitive:</strong> BTTS, which rests entirely on Wigan converting at a venue where they are heavy outsiders, off a record of three blanks in five and three attacking absences. <strong>Least sensitive:</strong> the goals total, which needs only one of these sides to keep producing what both have produced in seven of their ten league matches combined.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f9">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL League One &middot; Matchday 6</p>
+    <h2 class="fx-title">Stockport County FC &ndash; Leicester City</h2>
+    <p class="fx-sub">16:00 CEST (15:00 BST) &middot; Edgeley Park, Stockport &middot; Thirteen goals in five against four in five: a third-placed side under a new manager hosts a twice-relegated club that has sold its two best attacking outlets &mdash; reduced-depth card</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.75 &middot; 3.95 &middot; 3.80</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.48 / 2.40</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.50 / 2.40</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p><em>Reduced-depth card. Not pursued at this tier: the full ins-and-outs ledger for either club, last season's xG, shot volume, home/away splits and foul and card rates, and any record for the appointed official. What follows is the relegation structure, the named transfers that bear on scoring and conceding, this season's results in full, and the absence lists.</em></p>
+    <p><strong>Leicester City are in League One for the first time since 2008&ndash;09, by way of back-to-back relegations.</strong> They went down from the Premier League, then finished <strong>23rd in the 2025&ndash;26 Championship on 46 points, conceding 68 &mdash; the most they have ever conceded in a Championship season</strong>. That is the structural headline and it points in two directions at once, because the summer that followed subtracted from the attack rather than the defence: <strong>Abdul Fatawu sold to Ipswich Town on 20 July 2026 for &pound;20m plus &pound;3m in add-ons</strong> (&euro;23.5m, five-year deal) after 44 appearances, 9 goals and 8 assists in his final Championship season, and <strong>Bilal El Khannouss sold to Stuttgart for &pound;15.3m</strong>. Stockport are not promoted or relegated &mdash; this is their <strong>third consecutive League One season</strong> &mdash; but they have changed manager, and they have started 3W&ndash;0D&ndash;2L, third, <strong>13 scored and 6 conceded in five</strong>. The two goal columns are the fixture: 13 for against 4 for.</p>
+    <ul>
+      <li><strong>Stockport County &mdash; moderate turnover, free transfers into the spine, and a new manager before a ball was kicked.</strong> <strong>Dave Challinor parted ways with the club by mutual consent</strong> and was replaced by former player <strong>Jimmy McNulty on a three-year contract</strong>, who arrives having guided <em>Rochdale to promotion</em> &mdash; a promotion-winning third-tier CV, and relevant to this board because Rochdale appear on this same slate. In, all free or undisclosed: <strong>Ben Osborn from Derby County (free)</strong>, <strong>Eoghan O'Connell from Barnsley (free)</strong> at centre-back, <strong>Kyron Gordon from Rochdale</strong>, <strong>Mikael Mandron from St Mirren</strong> up front, plus youth signings from Manchester United and Everton. <strong>Kyle Wootton has 3 goals in five league matches</strong> and led the line in last weekend's 4&ndash;0. <strong>Gap:</strong> no fee was published for Gordon or Mandron, and outgoings were not pursued at this tier.</li>
+      <li><strong>Leicester City &mdash; high turnover, and every published fee is money leaving the attack.</strong> <strong>Russell Martin was appointed on 15 June 2026 on a three-year contract.</strong> The two transfers with figures attached are both sales, both attacking: Fatawu (&pound;20m + &pound;3m) and El Khannouss (&pound;15.3m). Incoming business was done on frees &mdash; <strong>John Lundstram</strong>, <strong>Conor Chaplin</strong> and goalkeeper <strong>Alex McCarthy</strong> &mdash; and further attacking depth went out on loan, with <strong>Stephy Mavididi, Oliver Skipp and Victor Kristiansen</strong> all loaned out. So the GK/CB/DM ledger reads: a free goalkeeper in, a free central midfielder in, <strong>no published fee spent anywhere</strong>, and the club's two most productive creators sold for a combined &pound;35m+. For a side that conceded 68 last season, the summer addressed the wrong end &mdash; and it shows in a return of 4 goals in five matches.</li>
+      <li><strong>Suspensions / absences.</strong> <strong>Conor Chaplin is unavailable</strong>, with Martin saying "we're hopeful for next week, but if not, then obviously as soon as possible after that" &mdash; one preview lists him as a possible return, the club line does not, and the contradiction is left unresolved here. Changes are expected after the Oxford defeat, with <strong>Admir Bistric</strong> possibly replacing <strong>Emil Riis</strong> in attack and <strong>Harry Howell</strong> for <strong>Wes Burns</strong>. Stockport are expected to keep the same side. No suspensions surfaced for either club.</li>
+      <li><strong>Sample.</strong> Five league matches each. <strong>Stockport: 3&ndash;1 win at Plymouth Argyle (15 Aug), 1&ndash;2 home defeat to Blackpool (22 Aug), 5&ndash;1 home win over Wycombe Wanderers (29 Aug), 2&ndash;0 defeat at Luton Town (2 Sep), 4&ndash;0 win at Wigan Athletic (5 Sep)</strong> &mdash; the last through Wootton, Harry Wood, Jack Diamond and Ryan Gover. <strong>Leicester: 1&ndash;1 with Notts County, 1&ndash;2 to Burton Albion, 0&ndash;0 with MK Dons, 2&ndash;0 over Plymouth Argyle, 0&ndash;4 at home to Oxford United (5 Sep)</strong>, after which Martin called his side "too soft and too naive". <strong>4 scored, 9 conceded, 18th on 5 points.</strong> <strong>Gap:</strong> no xG, shot volume, possession or card data was pursued for either club at this tier, and Stockport's 2025&ndash;26 finishing position was not established.</li>
+      <li><strong>Referee.</strong> <strong>Not established.</strong> One dedicated search on the appointment returned previews and match pages but no official named for this fixture, so there is nothing here on cards per game, fouls per card, penalty rate or history with either club. No cards line was captured on this sheet, so the gap does not orphan a priced row; it survives only as added variance behind penalty-driven goals in the two markets that are priced.</li>
+    </ul>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-mid">OK &mdash; two opposite five-match records, and the structure supports the goals coming from one end only</span></div><div class="mkt-why">1.48 over against 2.40 under. The two samples disagree almost perfectly: <strong>four of Stockport's five have gone over</strong> (4, 3, 6 and 4 goals; only the 2&ndash;0 at Luton did not), <strong>and only two of Leicester's five have</strong> (a 1&ndash;2 and the 0&ndash;4; the others produced 2, 0 and 2). The structural case for the over is one-sided but strong: a Leicester defence that shipped <strong>68 in the Championship last season, a club record for that division</strong>, has conceded 9 in five here including four at home to Oxford, and the summer spent nothing on it &mdash; a free goalkeeper and a free midfielder, with the money moving the other way. Against that sits the reason this is not well-suited: <strong>Leicester have scored 4 goals in five matches</strong>, so the over is largely asking one team to reach three on its own. Stockport have done exactly that twice (5&ndash;1, 4&ndash;0), which is why the price is 1.48 rather than shorter.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">BTTS<span class="verdict tag t-high">Dangerous &mdash; the short leg needs goals from the side that sold both its creators</span></div><div class="mkt-why">1.50 Yes against 2.40 No, and the Yes depends entirely on Leicester, who have <strong>failed to score in two of five (0&ndash;0 with MK Dons, 0&ndash;4 to Oxford) and managed a single goal in two more</strong>. The structural reason is named and unfixed: <strong>Fatawu (9 goals, 8 assists last season) sold for &pound;20m plus add-ons and El Khannouss for &pound;15.3m</strong>, with Mavididi loaned out on top, replaced by free transfers &mdash; the attack was the part of the squad that was dismantled, and 4 goals in 450 minutes is what that has produced. <strong>Conor Chaplin is unavailable</strong>, and changes in the forward line are expected rather than settled. The other leg is comparatively safe &mdash; Stockport have scored in four of five and 13 in total &mdash; but BTTS pays only if both land, and at 1.50 the market is asking for a side averaging 0.8 goals a game to find one against a defence that has conceded 6 in five. <strong>Three of Leicester's five matches have finished with them on nought or one.</strong></div></div>
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous &mdash; abbreviated by request; not written up on this card</span></div><div class="mkt-why">1.75 / 3.95 / 3.80. The result family is not analysed on this board today. The only note carried across is the one the goals rows rest on: the price reflects a third-placed side with 13 goals hosting an 18th-placed side with 4, and that gap is the input to the rows above rather than a finding of its own.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li><strong>Stockport's goal column is two matches wide.</strong> The 5&ndash;1 over Wycombe and the 4&ndash;0 at Wigan account for 9 of their 13 goals; the other three matches produced 3, 1 and 0. Both of those routs came against sides currently in the bottom reaches of the division, and Leicester &mdash; whatever their form &mdash; are not Wycombe at Edgeley Park or Wigan at home.</li>
+      <li><strong>Leicester have a new manager and a squad still being emptied.</strong> Martin arrived 15 June, and since then the club has sold Fatawu and El Khannouss and loaned out Mavididi, Skipp and Kristiansen. Both the attacking and the defensive numbers on this page belong to a squad in mid-subtraction, and the 0&ndash;4 that prompted "too soft and too naive" was five matches into that process.</li>
+      <li><strong>Stockport also changed manager, and the comparison case is on this same slate.</strong> Jimmy McNulty replaced Dave Challinor before the season, arriving from a Rochdale promotion. A promotion-winning third-tier manager in his first season at a bigger club has no League One record at this club to test against, so the 13-goal start is five matches of a new system, not an established one.</li>
+      <li><strong>Neither club's prior-season attacking or defensive rates were established here beyond Leicester's 68 conceded.</strong> No xG, no shot volume, no card rate, and no 2025&ndash;26 finishing position for Stockport &mdash; so the five-match samples above are doing nearly all the work on both goals rows, with no baseline behind them.</li>
+      <li><strong>Most sensitive:</strong> BTTS, which needs a goal from a side that has scored four in five and sold both players who created most of last season's. <strong>Least sensitive:</strong> the goals total, which can be satisfied by the home side alone and has a named, unaddressed structural reason &mdash; a record-setting concession rate that the summer did not touch &mdash; behind the other half.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture pending" id="f10">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL League One</p>
+    <h2 class="fx-title">Wimbledon &ndash; Doncaster Rovers</h2>
+    <p class="fx-sub">16:00 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.55 &middot; 3.35 &middot; 2.50</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.90 / 1.77</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.73 / 1.95</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; triage floor score: neither club is new to this division this season, the one signal that varied across the sheet.</div>
+  </div>
+</article>
+
+<article class="fixture" id="f11">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL League Two &middot; Matchday 6</p>
+    <h2 class="fx-title">Rotherham United &ndash; Salford City</h2>
+    <p class="fx-sub">16:00 CEST (15:00 BST) &middot; AESSEAL New York Stadium, Rotherham &middot; A relegated side that has conceded in all five, against a side rebuilt under a new manager and winning 1&ndash;0s &mdash; reduced-depth card</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.55 &middot; 3.60 &middot; 2.40</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.70 / 2.00</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.58 / 2.15</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p><em>Reduced-depth card. Not pursued at this tier: the full ins-and-outs ledger for either club, transfer fees beyond the free transfers named below, last season's xG, shot volume, home/away splits and foul and card rates, and any record for the appointed official. What follows is the relegation structure, the named signings that bear on scoring and conceding, this season's results in full, and the absence lists.</em></p>
+    <p><strong>Rotherham United are newly in this division from above.</strong> Relegated from League One in 2025&ndash;26, this is their <strong>first League Two season since 2012&ndash;13</strong>, and the club responded by signing three forwards and changing head coach. It has not yet produced goals: <strong>6 scored and 7 conceded in five, 17th on 5 points</strong>, having <em>conceded in all five matches</em>. Salford City are not new to the level at all &mdash; this is their <strong>eighth consecutive League Two season</strong>, their 87th in existence &mdash; but they have changed manager too, and after losing their first three they have won two in a row by <strong>2&ndash;1 and 1&ndash;0, both at home</strong>, to sit 15th on 6 points with <strong>4 scored and 6 conceded</strong>. Ten goals between them in ten matches is the number the goals markets on this card have to argue with.</p>
+    <ul>
+      <li><strong>Rotherham United &mdash; high turnover weighted to the forward line, new head coach on a two-year deal.</strong> <strong>Alex Bruce</strong> was appointed before the season on a two-year contract. The window bought attackers, plural: <strong>Paul Mullin from Wrexham</strong>, <strong>Tom Bradshaw from Oxford United</strong> and <strong>F&aacute;bio Tavares, free from Burton Albion</strong>, with defensive additions in <strong>Kieran Ngwenya</strong> and <strong>Ewan Otoo</strong>. Going the other way, and directly into today's opposition: <strong>Joe Powell left for Salford City</strong>. So the attacking ledger is unusually well stocked for a relegated League Two side &mdash; and has returned 6 goals in 450 minutes. <strong>Gap:</strong> no fees were published for Mullin, Bradshaw, Ngwenya or Otoo and they are recorded as unreported, not estimated.</li>
+      <li><strong>Salford City &mdash; high turnover, around ten permanent signings, and a new manager after a dismissal.</strong> <strong>Karl Robinson was dismissed before the season</strong> and replaced by <strong>Peter Cklamovski</strong>, previously manager of the Malaysia national team &mdash; an appointment with no third-tier or fourth-tier English record to test against. The signings land on exactly the GK/CB/forward spine: goalkeeper <strong>Will Norris from Wycombe Wanderers</strong>, striker <strong>Macaulay Langstaff from Millwall</strong>, midfielder <strong>Joe Powell from Rotherham United</strong>, and centre-back <strong>Dan Scarr from Wrexham</strong>, who is expected to make his first appearance in this fixture. <strong>Gap:</strong> no fees published for any of them.</li>
+      <li><strong>Suspensions / absences.</strong> The notable one is on the touchline rather than the pitch: <strong>Alex Bruce was sent off at full time in Rotherham's last match and faces a touchline ban</strong>. <strong>Jamie Jellis is among four confirmed Rotherham absentees</strong>, with <strong>Kian Spence</strong> a fitness doubt and <strong>George Sebine</strong> possibly stepping into midfield. For Salford, <strong>Dan Scarr should get his first minutes since joining</strong> and <strong>Brendan Wiredu</strong> is expected to start in central midfield. No player suspensions surfaced for either side.</li>
+      <li><strong>Sample.</strong> Five league matches each, plus a cup tie each. <strong>Rotherham: 2&ndash;1 defeat at Cheltenham (15 Aug), 1&ndash;1 at home to York City (22 Aug), 2&ndash;1 home win over Chesterfield (29 Aug), 2&ndash;2 at Tranmere (1 Sep), 1&ndash;0 defeat at Bristol Rovers (5 Sep)</strong> &mdash; a winless run on the road now three matches long &mdash; plus a 4&ndash;1 EFL Cup defeat to West Bromwich Albion (8 Aug). <strong>Salford: 3&ndash;1 defeat to Barnet (15 Aug), 0&ndash;1 to Chesterfield (22 Aug), 0&ndash;1 to Shrewsbury Town (29 Aug), 2&ndash;1 home win over Newport County (1 Sep), 1&ndash;0 home win over Port Vale (5 Sep)</strong>, plus an EFL Cup exit to Shrewsbury on penalties after a 1&ndash;1 draw. <strong>Gap:</strong> no xG, shot volume, possession or card series was pursued for either club, and neither club's 2025&ndash;26 goals-for or goals-against totals were established &mdash; Rotherham's relegation and Salford's eighth straight season at this level are the whole of the prior-year evidence here.</li>
+      <li><strong>Referee.</strong> <strong>Not established.</strong> One dedicated search on the appointment returned previews, head-to-head pages and tipping articles but no official named, so nothing is known about cards per game, fouls per card, penalty rate or history with either club. No cards line was captured on this sheet. The one discipline-adjacent fact that did surface is the home manager's touchline ban, which is a consequence of the last match rather than a signal about this one.</li>
+    </ul>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; best-supported row on the card, and the support is one-sided</span></div><div class="mkt-why">1.58 Yes against 2.15 No. The home leg of the Yes is the single most consistent fact in either sample: <strong>Rotherham have conceded in all five league matches</strong> &mdash; 2, 1, 1, 2 and 1 &mdash; so the visitors scoring is the likelier half, not the harder one, despite Salford having managed only 4 goals in five. The harder half is Rotherham scoring, and there the structure argues where the sample does not: three forwards were signed this summer (<strong>Mullin, Bradshaw, Tavares</strong>) and they have scored in four of five, the exception being the 1&ndash;0 at Bristol Rovers. Against that, Salford have <strong>kept a clean sheet in one of five and conceded only once in each of their last three</strong>, with a new goalkeeper in Will Norris and a centre-back, Dan Scarr, arriving from a Championship club and possibly debuting here. So: a home side that cannot keep clean sheets, a visiting side that has just started keeping them. <strong>Four of Rotherham's five matches have seen both teams score; only two of Salford's have.</strong></div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-high">Dangerous &mdash; the market leans over, both samples lean under</span></div><div class="mkt-why">1.70 over against 2.00 under is a clear lean to goals, and it is the row where the price and the evidence disagree most sharply on this card. <strong>Ten goals in ten combined league matches.</strong> Rotherham have gone over 2.5 in three of five (3, 3 and 4 goals; 2 and 1 in the others); <strong>Salford in only two of five</strong>, and their two wins were 2&ndash;1 and 1&ndash;0, with three of their five matches producing exactly one goal in total. The structural case for an over exists &mdash; a home attack rebuilt with three signed forwards, a home defence that has conceded in every match, a visiting manager with no English league record to price against &mdash; but it is a case about <em>volatility</em>, not about established scoring, and the volatility argument cuts both ways at a 1.70 price. What makes this dangerous rather than merely OK is that both of the mechanisms that would deliver the over (Rotherham's forwards clicking, Salford's new back line failing) are things that have not yet happened in the sample being used to price them.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous &mdash; abbreviated by request; not written up on this card</span></div><div class="mkt-why">2.55 / 3.60 / 2.40. The result family is not analysed on this board today. The only carry-across to the rows above is that the market makes this close to a pick, which is consistent with two mid-table sides on 5 and 6 points and does not add anything the goals rows do not already have.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li><strong>Rotherham's attacking signings have not yet produced at the rate their names imply.</strong> Mullin, Bradshaw and Tavares arrived for a side dropping into League Two, and the return is 6 goals in five matches. Any over-2.5 or BTTS reasoning that leans on the quality of that forward line is leaning on reputation, not on anything this season has shown.</li>
+      <li><strong>Salford's two wins came against sides beaten 2&ndash;1 and 1&ndash;0, at home, in the last two weeks.</strong> Before that they lost three straight and scored once. Both halves of that record are five matches old under a manager whose previous job was the Malaysia national team, with no English league sample to compare against.</li>
+      <li><strong>The home manager is banned from the touchline.</strong> Alex Bruce was dismissed at full time in the last match. It is a genuine in-game difference on a card where the home side's shape is five matches old, and it is the only discipline-related fact available, since the referee could not be established.</li>
+      <li><strong>Neither club has a prior-season goals baseline on this page.</strong> No 2025&ndash;26 goals-for, goals-against, xG or card rate was established for either side, so the goals rows rest entirely on five matches each &mdash; and Salford's five contain three one-goal games, which is the kind of cluster that moves a 2.5 line hard in either direction with one result.</li>
+      <li><strong>Most sensitive:</strong> the goals total, where the book's 1.70 over sits against ten goals in ten matches and a visiting side that has produced three single-goal games in five. <strong>Least sensitive:</strong> BTTS, which rests on the most repeated fact available &mdash; Rotherham conceding in every match they have played &mdash; rather than on a projection of either attack.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture pending" id="f12">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL League Two</p>
+    <h2 class="fx-title">Shrewsbury Town &ndash; Northampton Town</h2>
+    <p class="fx-sub">16:00 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.55 &middot; 3.10 &middot; 2.70</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>2.25 / 1.55</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.92 / 1.72</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; tied on score with the researched cohort and separated only by tie-break.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f13">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL League Two</p>
+    <h2 class="fx-title">Walsall &ndash; Rochdale</h2>
+    <p class="fx-sub">16:00 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.70 &middot; 3.65 &middot; 4.35</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.67 / 2.05</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.65 / 2.05</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f14">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL League Two</p>
+    <h2 class="fx-title">York City FC &ndash; Swindon Town</h2>
+    <p class="fx-sub">16:00 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.53 &middot; 4.30 &middot; 4.85</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.43 / 2.60</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.50 / 2.30</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f15">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL Championship</p>
+    <h2 class="fx-title">Blackburn Rovers &ndash; Millwall</h2>
+    <p class="fx-sub">16:00 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.60 &middot; 3.30 &middot; 2.60</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.90 / 1.80</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.72 / 2.00</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f16">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL Championship</p>
+    <h2 class="fx-title">Charlton Athletic &ndash; Portsmouth</h2>
+    <p class="fx-sub">16:00 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.70 &middot; 3.15 &middot; 2.65</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>2.10 / 1.65</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.85 / 1.85</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f17">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL Championship</p>
+    <h2 class="fx-title">Middlesbrough &ndash; Norwich</h2>
+    <p class="fx-sub">16:00 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.85 &middot; 3.85 &middot; 3.75</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.55 / 2.30</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.53 / 2.35</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; triage floor score: neither club is new to this division this season, the one signal that varied across the sheet.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f18">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL Championship</p>
+    <h2 class="fx-title">Preston North End &ndash; Lincoln City</h2>
+    <p class="fx-sub">16:00 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.30 &middot; 3.40 &middot; 2.90</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.78 / 1.93</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.65 / 2.10</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f19">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL Championship</p>
+    <h2 class="fx-title">Southampton &ndash; Bristol City</h2>
+    <p class="fx-sub">16:00 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.65 &middot; 4.10 &middot; 4.45</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.55 / 2.30</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.60 / 2.20</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; triage floor score: neither club is new to this division this season, the one signal that varied across the sheet.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f20">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL League Two</p>
+    <h2 class="fx-title">Barnet FC &ndash; Accrington Stanley</h2>
+    <p class="fx-sub">16:00 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.45 &middot; 4.35 &middot; 6.00</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.48 / 2.45</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.60 / 2.10</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; triage floor score: neither club is new to this division this season, the one signal that varied across the sheet.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f21">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL League Two</p>
+    <h2 class="fx-title">Colchester United &ndash; Crewe Alexandra</h2>
+    <p class="fx-sub">16:00 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.05 &middot; 3.60 &middot; 3.15</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.63 / 2.15</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.53 / 2.25</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; triage floor score: neither club is new to this division this season, the one signal that varied across the sheet.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f22">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL League Two</p>
+    <h2 class="fx-title">Gillingham &ndash; Tranmere Rovers FC</h2>
+    <p class="fx-sub">16:00 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.50 &middot; 3.00 &middot; 2.80</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.95 / 1.75</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.70 / 1.95</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; triage floor score: neither club is new to this division this season, the one signal that varied across the sheet.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f23">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL League Two</p>
+    <h2 class="fx-title">Newport County &ndash; Fleetwood Town</h2>
+    <p class="fx-sub">16:00 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>3.10 &middot; 3.50 &middot; 2.05</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.77 / 1.92</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.65 / 2.05</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; triage floor score: neither club is new to this division this season, the one signal that varied across the sheet.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f24">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL League Two</p>
+    <h2 class="fx-title">Oldham Athletic &ndash; Chesterfield FC</h2>
+    <p class="fx-sub">16:00 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.05 &middot; 3.35 &middot; 3.30</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.80 / 1.90</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.65 / 2.05</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; triage floor score: neither club is new to this division this season, the one signal that varied across the sheet.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f25">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL League Two</p>
+    <h2 class="fx-title">Port Vale &ndash; Exeter City</h2>
+    <p class="fx-sub">16:00 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.05 &middot; 3.30 &middot; 3.35</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.97 / 1.73</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.78 / 1.85</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; tied on score with the researched cohort and separated only by tie-break.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f26">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL Championship</p>
+    <h2 class="fx-title">Swansea &ndash; Burnley</h2>
+    <p class="fx-sub">16:00 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.05 &middot; 3.40 &middot; 3.50</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.83 / 1.87</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.70 / 2.05</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f27">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL Championship</p>
+    <h2 class="fx-title">Watford &ndash; Stoke City</h2>
+    <p class="fx-sub">16:00 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.30 &middot; 3.35 &middot; 3.00</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.83 / 1.87</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.68 / 2.05</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; triage floor score: neither club is new to this division this season, the one signal that varied across the sheet.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f28">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL League One</p>
+    <h2 class="fx-title">Blackpool FC &ndash; Bromley FC</h2>
+    <p class="fx-sub">16:00 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.65 &middot; 3.80 &middot; 4.65</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.60 / 2.15</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.62 / 2.10</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f29">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL League One</p>
+    <h2 class="fx-title">Cambridge United &ndash; Reading FC</h2>
+    <p class="fx-sub">16:00 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.60 &middot; 3.30 &middot; 2.50</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.92 / 1.75</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.75 / 1.95</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f30">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL League One</p>
+    <h2 class="fx-title">Mansfield Town &ndash; Huddersfield</h2>
+    <p class="fx-sub">16:00 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>3.35 &middot; 3.60 &middot; 1.95</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.55 / 2.25</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.50 / 2.35</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; triage floor score: neither club is new to this division this season, the one signal that varied across the sheet.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f31">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL League One</p>
+    <h2 class="fx-title">Milton Keynes Dons &ndash; Peterborough United</h2>
+    <p class="fx-sub">16:00 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.90 &middot; 3.80 &middot; 3.40</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.50 / 2.40</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.47 / 2.45</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f32">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL League One</p>
+    <h2 class="fx-title">Oxford United &ndash; Burton Albion</h2>
+    <p class="fx-sub">16:00 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.80 &middot; 3.70 &middot; 3.80</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.67 / 2.05</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.63 / 2.10</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f33">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL League One</p>
+    <h2 class="fx-title">Plymouth Argyle &ndash; Barnsley</h2>
+    <p class="fx-sub">16:00 CEST</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.62 &middot; 4.10 &middot; 4.45</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.45 / 2.50</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.50 / 2.35</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; triage floor score: neither club is new to this division this season, the one signal that varied across the sheet.</div>
+  </div>
+</article>
+
+<section>
+  <h2 class="sec">Across the card</h2>
+    <ul>
+    <li><strong>Best structurally supported family today: both-teams-to-score, and only on the fixtures where one
+    defence has already failed repeatedly.</strong> The recurring evidence on this slate is concession, not creation
+    &mdash; Rotherham have conceded in all five of their matches, Wigan have shipped 11 in five, Leicester 9 in five
+    after a Championship season of 68. Where a BTTS row can be argued from a defence with a five-match failure
+    record, it has something behind it.</li>
+    <li><strong>Least supported family today: the goals total, wherever it depends on a promoted or relegated attack
+    finding its level.</strong> The same clubs that concede reliably are scoring erratically &mdash; Leicester have 4 goals
+    in five, Salford 4 in five, Wigan 5 in five &mdash; and several of the over-2.5 prices on this sheet are asking one
+    side to reach three on its own. Rotherham &ndash; Salford is the clearest instance: ten goals in ten combined
+    matches, priced 1.70 to the over.</li>
+    <li><strong>The one ordinary fixture:</strong> Rotherham United &ndash; Salford City, in the narrow sense that both clubs sit
+    mid-table on 5 and 6 points with near-identical goal records and a market that prices it almost level. Every other
+    researched fixture on the board has a structural asymmetry of some kind driving its two goals rows.</li>
+    <li><strong>Where the book has priced indifference:</strong> Charlton Athletic &ndash; Portsmouth at 1.85 / 1.85 on BTTS
+    and Watford &ndash; Stoke City and Swansea &ndash; Burnley at 1.83 / 1.87 on the goals line are as close to
+    even money as this sheet gets &mdash; three Championship fixtures where the bookmaker is declining to lean, which on
+    a five-matchday sample is the most honest thing a price can say.</li>
+    <li><strong>What is absent from every row on this board:</strong> a referee. Not one appointment could be established for
+    any fixture researched so far, and no cards line was captured anywhere on the sheet, so the discipline family is
+    both unpriced and unevidenced across all thirty-three fixtures.</li>
+  </ul>
+</section>
+
+<footer>
+  <p><strong>Scope.</strong> This page rates market <em>families</em> only. It contains no selections, no sides, no recommended lines and no confidence labels &mdash; by design. Where evidence is thin it says so rather than filling the gap.</p>
+  <p><strong>Sources.</strong> Per-fixture sources are logged in <span class="mono">sources_17.md</span>. For this build: club
+  season pages on Wikipedia for 2026&ndash;27 (Sheffield Wednesday, Wigan Athletic, Leicester City, Stockport
+  County, Rotherham United, Salford City) and for the three divisions; Sports Mole match previews for
+  Sheffield Wednesday &ndash; Wigan and Stockport &ndash; Leicester; club and press reporting for the
+  Fatawu and El Khannouss transfer fees. Prices throughout from <span class="mono">odds_17.xlsx</span>.</p>
+</footer>
+
+</div>
