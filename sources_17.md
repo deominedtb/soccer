@@ -255,3 +255,26 @@ result.
   play-off final goals scored conceded Skubala" — League One CHAMPIONS on
   103 points, 31W 10D 5L, 89 scored 41 conceded (+48); automatic promotion
   sealed 2-0 over Doncaster Rovers on 21 April; Cardiff City second.
+
+## f26 · Swansea – Burnley (T2)
+
+- WebFetch: https://en.wikipedia.org/wiki/2026%E2%80%9327_Burnley_F.C._season
+  — 23rd, 3 points from 6 (0W 3D 3L), 7 scored 13 conceded, six results;
+  Nicky Hayen appointed 10 July 2026 on a three-year contract; in
+  Florentino (£20.8m, Benfica), Ahmedhodžić (£6m, Feyenoord), Hatate
+  (undisclosed, Celtic), Vardy (free, Cremonese); out Estève (£22m, RB
+  Leipzig), Flemming (£20m, Ipswich), Tchaouna (£20m, Coventry), Anthony
+  (£15m, Brentford).
+- WebFetch: https://en.wikipedia.org/wiki/2026%E2%80%9327_Swansea_City_A.F.C._season
+  — 3rd, 11 points from 6 (3W 2D 1L), 8 scored 4 conceded, six results with
+  dates; Vítor Matos manager, Championship Manager of the Month for August
+  2026; in Just (£5m, Motherwell), Opoku (£6m, Zulte Waregem), Eustáquio
+  (£3.4m, Porto), Welsh (free, Celtic), Stewart (free, Southampton);
+  average home attendance 17,987.
+- WebSearch: "Swansea City vs Burnley preview 12 September 2026 team news
+  referee Swansea.com Stadium Championship" — Swansea.com Stadium, 15:00;
+  Key, Widell, Eustáquio, Eom Ji-sung and Idah could return, Vipotnik may
+  drop to the bench; Amdouni scored Burnley's goal at Wrexham, cancelled
+  out by Ekomie; head-to-head, Burnley have won the last four league
+  meetings including 2-0 at this ground in March 2025. No referee named,
+  and NO Burnley absence list could be established.

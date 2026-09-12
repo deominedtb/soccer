@@ -23,7 +23,7 @@ f22 | 16:00 | Gillingham – Tranmere Rovers FC | T3 | TODO
 f23 | 16:00 | Newport County – Fleetwood Town | T3 | TODO
 f24 | 16:00 | Oldham Athletic – Chesterfield FC | T3 | TODO
 f25 | 16:00 | Port Vale – Exeter City | T3 | TODO
-f26 | 16:00 | Swansea – Burnley | T2 | TODO
+f26 | 16:00 | Swansea – Burnley | T2 | DONE
 f27 | 16:00 | Watford – Stoke City | T3 | TODO
 f28 | 16:00 | Blackpool FC – Bromley FC | T1 | TODO
 f29 | 16:00 | Cambridge United – Reading FC | T1 | TODO
