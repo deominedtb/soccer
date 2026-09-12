@@ -310,3 +310,35 @@ result.
 - DERIVED, not read: Blackpool's opening fixture resolves to a 1-1 draw
   from the published totals (9 scored, 7 conceded, 2W 1D 2L) once the other
   four results are subtracted. Flagged as derived on the card.
+
+## f29 · Cambridge United – Reading FC (T1)
+
+- WebFetch: https://en.wikipedia.org/wiki/2026%E2%80%9327_Cambridge_United_F.C._season
+  — 5th, 8 points from 5 (2W 2D 1L), 9 scored 8 conceded, five results with
+  dates; Neil Harris manager; in Heath (Everton), Stead (free, Barnet),
+  Bauer (AFC Wimbledon), Breeze (GK, Carlisle), Heffernan (Harrogate);
+  loans Ahadme (Charlton), Perry (Coventry), Moxon (Stockport), Curtis
+  (Sheffield United); out Munday (Brighton), Brophy/Gibbons/Purrington
+  released; EFL Cup 0-1 to Millwall.
+- WebFetch: https://en.wikipedia.org/wiki/2026%E2%80%9327_Reading_F.C._season
+  — 8th; Leam Richardson manager, Madejski Stadium, Redwood Holdings/Rob
+  Couhig; fourth consecutive League One season, 156th overall; in Brown
+  (free, Luton), Lisbie (Colchester), Earthy (West Ham); loans in Stokes
+  (Bristol City), Knight (Portsmouth); Norcott out on loan to Derry City;
+  Jack Marriott top scorer on 5; attendances 11,756 avg / 14,065 v Luton /
+  2,652 v Wycombe. Season goal totals NOT established.
+- WebSearch: "Cambridge United vs Reading preview 12 September 2026 team
+  news referee Abbey Stadium League One form" — Cledara Abbey Stadium,
+  15:00 UK; Reading's four results (3-4 Luton, 0-0 Wimbledon, 5-0
+  Mansfield, 3-1 Blackpool) with Earthy, Lisbie and Brown scoring; NEIL
+  HARRIS SENT OFF at Burton and banned from the touchline; Bauer among
+  three Cambridge absentees; Richardson to name an unchanged XI, Sean
+  Patton the only Reading concern. No referee named.
+- WebSearch: "Cambridge United 2025-26 League Two promotion third automatic
+  play-off goals scored conceded Neil Harris" — 3rd in League Two,
+  automatic promotion; Harris took over February 2025 and stayed; Ben
+  Knight 11 league goals, Sullay Kaikai 12 all comps. Season aggregate
+  goals for/against NOT established.
+- UNRESOLVED: Reading's fifth league fixture. Sources describe a continuous
+  four-match sequence from the opening day to last weekend while the rest
+  of the division has played five or six. Left unreconciled on the card.
