@@ -142,3 +142,32 @@ result.
 - WebSearch: "referee Jamie O'Connor EFL cards per game fouls penalties
   record 2026-27 League Two" — 4 matches, 5.75 yellows per game, 0.00 reds.
   Fouls-per-card, penalty rate and club history NOT established.
+
+## f14 · York City FC – Swindon Town (T1)
+
+- WebFetch: https://en.wikipedia.org/wiki/2026%E2%80%9327_York_City_F.C._season
+  — 9th, 8 points from 5 (2W 2D 1L), 9 scored 8 conceded; 3-2 home win over
+  Bristol Rovers, 3-2 defeat at Cheltenham; Scott Lindsey appointed after
+  Stuart Maynard's dismissal ("difference in direction and vision"), date
+  NOT established; in Johnson (Sunderland), Akinyemi (Derry City), Maguire
+  (free, Boston United); out Fagan-Walcott to Hearts for £750,000, Olley to
+  AFC Fylde; promotion with club-record 108 points and 114 goals.
+- WebFetch: https://en.wikipedia.org/wiki/2026%E2%80%9327_Swindon_Town_F.C._season
+  — 2nd, 10 points from 5 (3W 1D 1L), 8 scored 6 conceded; Ian Holloway
+  manager; sixth consecutive League Two season; in Clark (free, Port Vale),
+  Negru (Oxford United), Virtue (Fleetwood), Drinan (AFC Wimbledon),
+  Thomson (undisclosed, Kilmarnock); out Oldaker (Southend), Delaney
+  (Oldham); Drinan 5 league goals in 6; 2-3 EFL Cup defeat at Cardiff.
+- WebSearch: "York City vs Swindon Town preview 12 September 2026 team news
+  referee LNER Community Stadium" — LNER Community Stadium, 14:00 UTC;
+  four York players injured, Louis Millard out after a shoulder scan;
+  Glatzel to return for Swindon; Drinan hat-trick in 3-1 over Colchester.
+  No referee named.
+- WebSearch: "York City 2026-27 League Two results all five matches scores
+  Swindon Town form September 2026" — confirms York's fixture sequence
+  (Bristol Rovers H, Rotherham A, Exeter H, Cheltenham A, Crewe A) and the
+  1-1 at Crewe with Alex Newby scoring. Full scorelines for the Exeter
+  match and for two Swindon matches NOT established.
+- DERIVED, not read: York 2-1 Exeter City (29 Aug) — forced by the
+  published season totals (9 scored, 8 conceded, 2W 2D 1L) once the other
+  four results are subtracted. Flagged as derived on the card.
