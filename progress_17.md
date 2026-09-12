@@ -12,7 +12,7 @@ f11 | 16:00 | Rotherham United – Salford City | T2 | DONE
 f12 | 16:00 | Shrewsbury Town – Northampton Town | T3 | TODO
 f13 | 16:00 | Walsall – Rochdale | T1 | DONE
 f14 | 16:00 | York City FC – Swindon Town | T1 | DONE
-f15 | 16:00 | Blackburn Rovers – Millwall | T1 | TODO
+f15 | 16:00 | Blackburn Rovers – Millwall | T1 | DONE
 f16 | 16:00 | Charlton Athletic – Portsmouth | T1 | TODO
 f17 | 16:00 | Middlesbrough – Norwich | T3 | TODO
 f18 | 16:00 | Preston North End – Lincoln City | T1 | TODO

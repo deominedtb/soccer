@@ -171,3 +171,32 @@ result.
 - DERIVED, not read: York 2-1 Exeter City (29 Aug) — forced by the
   published season totals (9 scored, 8 conceded, 2W 2D 1L) once the other
   four results are subtracted. Flagged as derived on the card.
+
+## f15 · Blackburn Rovers – Millwall (T1)
+
+- WebFetch: https://en.wikipedia.org/wiki/2026%E2%80%9327_Blackburn_Rovers_F.C._season
+  — 18th; Tony Mowbray appointed 5 June 2026, Mike Dodds assistant from 27
+  June; in Baradji (£2m, Yverdon Sport), Fevrier (£500k, Stockport County),
+  Morsy (free, Bristol City), Beyuku (Modena); out Tronstad (SK Brann),
+  Hedges (Derby County), Redmond (released); Guðjohnsen top scorer on 2.
+- WebFetch: https://en.wikipedia.org/wiki/2026%E2%80%9327_Millwall_F.C._season
+  — 8th, 9 points from 5, 10 scored 8 conceded, five results with dates and
+  the 19,564 record Den attendance; in Servais (£5.1m, Mechelen), Coburn
+  (£5m, Middlesbrough), Arconte (£2.6m, Rodez), Taylor (£2.5m, West Brom);
+  out Azeez to Brighton (~£12.5m), Bannan free to Sheffield Wednesday;
+  Alex Neil head coach.
+- WebSearch: "Blackburn Rovers vs Millwall preview 12 September 2026 team
+  news referee Ewood Park Championship form" — Ewood Park, 14:00 UTC;
+  Blackburn five-game winless run, 5 points from six, 18th; Millwall's 4-0
+  scorers (Taylor, Dykes 2, Neghli). No referee named.
+- WebSearch: "Blackburn Rovers 2026-27 Championship results first five
+  matches goals conceded Mowbray 2025-26 final position" — 2025-26: 20th
+  under Ismaël (to 2 Feb), Damien Johnson (interim), Michael O'Neill (from
+  13 Feb). Full 2026-27 scoreline list NOT established (sources conflict).
+- WebFetch: https://www.sportsmole.co.uk/football/blackburn-rovers/preview/blackburn-vs-millwall-prediction-team-news-lineups_604911.html
+  — calls it Championship gameweek 7 (CONTRADICTS the five/six matches
+  played on the club season pages — logged unresolved); Blackburn out:
+  Wharton, Miller, Litherland, Kargbo, Jørgensen, Baradji may debut,
+  Guðjohnsen hoped fit; Millwall out: De Norre, Coburn (injured at
+  Wrexham), Jensen, Crama, Doughty, Servais, Cundle, Luongo, Ivanovic,
+  Sykes may return. No referee named.
