@@ -200,3 +200,31 @@ result.
   Guðjohnsen hoped fit; Millwall out: De Norre, Coburn (injured at
   Wrexham), Jensen, Crama, Doughty, Servais, Cundle, Luongo, Ivanovic,
   Sykes may return. No referee named.
+
+## f16 · Charlton Athletic – Portsmouth (T1)
+
+- WebFetch: https://en.wikipedia.org/wiki/2026%E2%80%9327_Charlton_Athletic_F.C._season
+  — 5th, 11 points from 6 (3W 2D 1L), 6 scored 7 conceded, six results with
+  dates; Nathan Jones manager, ~18,890 average attendance; in Grant (free,
+  West Brom), Koumetio (Dundee), Mesík (Heracles), Chalobah (free, Sheffield
+  Wednesday); loans Skipp (Leicester), Okonkwo (Wrexham), Bindon (Forest);
+  out Dykes (Millwall), Gillesphey (Bradford), Mitchell (Plymouth);
+  Tyreece Campbell 4 goals all comps, 3 league.
+- WebFetch: https://en.wikipedia.org/wiki/2026%E2%80%9327_Portsmouth_F.C._season
+  — 14th, 6 points from 5 (2W 0D 3L), 7 scored 8 conceded, five results;
+  John Mousinho manager, Marlon Pack captain; in Milovanović (£3m,
+  Almería), Kamara (£2.5m, Hull City), Shein (£2.1m, Fredrikstad);
+  Milovanović 2 league goals; 1-3 EFL Cup exit to West Ham.
+- WebSearch: "Charlton Athletic vs Portsmouth preview 12 September 2026 team
+  news referee The Valley Championship" — REFEREE ANDREW KITCHEN confirmed;
+  The Valley, 14:00 UTC; Portsmouth's Wolves away fixture pushed back from
+  9 September (explains the uneven matches-played across the Championship);
+  Charlton out: Ramsay, Mannion, Godden, Chalobah, Koumetio, Sichenje;
+  McNamara back from suspension. Preview places Portsmouth 17th, club page
+  14th — logged, position left unasserted.
+- WebSearch: "referee Andrew Kitchen EFL Championship cards per game fouls
+  per card penalties record statistics" — CONTRADICTORY rates: 568 yellows
+  and 10 reds in 221 fixtures (2.57/game) vs 3.08 yellows and 0.06 reds per
+  game over 90 matches (277 yellows, 5 straight reds, 3 second yellows); 75
+  Championship matches; 24 penalties across all competitions, sample
+  unstated. Fouls-per-card and club history NOT established.
