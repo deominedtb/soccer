@@ -429,3 +429,39 @@ against; reds 4 and 2.
 ## Sources for the f8 line
 - ESPN scoreboard `site.web.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates={202206,202209,202409,202410,202411}` and summaries `…/uefa.nations/summary?event={id}` — the 96 League B group events (90 played, 6 cancelled), read 26 September 2026 on f8; linescores for the 90-minute and half-time score (they carry the Wilson penalty in Wales 1–0 Montenegro that the key events miss).
 - ESPN standings `site.api.espn.com/apis/v2/sports/soccer/uefa.nations/standings?season={2020,2022,2024,2026}` for division membership and group finishes.
+
+### Sides that stayed in League C hosting sides promoted from League D (context line, not a baseline — added on f10)
+Recomputed on f10 with zero searches from the same 96 ESPN League C group
+summaries as the League C lines above. The rerun reproduces the 2022–23 line
+exactly (48 matches, 2.65 goals, over 2.5 45.8%, BTTS 41.7%, home win 43.8%,
+first-half goals 1.10, cards 4.21, fouls 11.16 per team, 5.30 fouls per card,
+0.29 penalty kicks) and the 2024–25 box-score figures (cards 4.85, fouls 12.91
+per team, 5.32 fouls per card, 0.38 penalty kicks, first-half goals 1.15); its
+2024–25 goal figures differ only because the parser reads Romania – Kosovo
+(698999) at the awarded 3–0 where the line above counts it 0–0, and that match
+is not in the eight below.
+Every 2022–23 and 2024–25 League C match whose home side was in League C the
+previous edition and whose visitor had just come up from League D. 8 matches (4
+in 2022–23, 4 in 2024–25). Home side W4 D4 L0 (2.00 points per match), 1.75
+scored and 0.50 conceded (14–4); 2.25 goals per match; over 2.5 37.5% (3 of 8);
+BTTS 37.5%; under 1.5 goals in 3 of 8; home side kept a clean sheet 62.5%,
+failed to score 12.5% (one match); first-half goals 1.25 per match (home 1.12,
+visitor 0.12 — one visitor goal before half-time in eight); at half-time the
+home side led in 4, was level in 4 (three at 0–0) and trailed in none; final
+margins 0, 0, 0, 0, +1, +1, +4, +4 — within one goal in 6 of 8, the two wins by
+two or more both 4–0 against Gibraltar in June 2022. **Split by edition:
+2022–23 3.50 goals per match (Georgia 4–0 Gibraltar, North Macedonia 4–0
+Gibraltar, Luxembourg 2–2 Faroe Islands, Lithuania 1–1 Faroe Islands);
+2024–25 1.00 (Faroe Islands 1–1 Latvia, North Macedonia 1–0 Latvia, Azerbaijan
+0–0 Estonia, Slovakia 1–0 Estonia), over 2.5 in none of the four and one
+first-half goal between them.** Box score: cards 3.88 per match (home 1.88,
+visitor 2.00); fouls 10.25 committed by the home side and 11.12 by the visitor
+(5.52 fouls per card); corners 5.62 won and 2.62 conceded by the home side,
+which won more in 6 of 8 (the visitor in 2, both 2022–23 Faroe Islands
+matches); shots 17.50 and 6.25; home possession 63.1%; penalty kicks 1 in 8
+(0.12 per match, to the home side); no red card. Slovakia 1–0 Estonia (Trnava,
+November 2024) is one of the eight.
+
+## Sources for the f10 line
+- ESPN scoreboard `site.web.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates={202206,202209,202409,202410,202411}` and summaries `…/uefa.nations/summary?event={id}` — the 96 League C group matches, read 26 September 2026 on f10 (linescores for the 90-minute and half-time score; box scores for cards, fouls, corners, shots, possession and penalty kicks).
+- Division membership and movement between divisions from ESPN standings `site.api.espn.com/apis/v2/sports/soccer/uefa.nations/standings?season={2020,2022,2024,2026}`, as in the League C lines above.
