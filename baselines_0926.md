@@ -250,23 +250,18 @@ other.
 - Wikipedia https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Nations_League (format section) for the no-relegation rule; logged in sources_0926.md under f2.
 
 ### Sides relegated from League B hosting sides that stayed in League C (context line, not a baseline — added on f5)
-Recomputed with zero searches, but **not from ESPN**: ESPN's API was blocked at
-this run's egress proxy. Source: the public international-results record
-compiled on GitHub (martj42/international_results, `results.csv` and
-`goalscorers.csv`, raw files; the Kaggle "International football results"
-dataset). It carries results, venues and goal minutes (with penalty and own-goal
-flags) and no box score, so **no cards, fouls, corners or shots on this line.**
-Reconciliation before use: from the same record, League C 2024–25 gives 48
+Recomputed on the f5 rebuild with zero searches from ESPN's 96 League C group
+summaries (the same matches as the League C line above), Romania – Kosovo
+counted as played, 0–0, as there. The first f5 run wrote this line from the
+GitHub international-results record while ESPN was blocked, with no box score;
+every results-side figure it printed reproduces here, and the box-score figures
+are new. Reconciliation before use: the same summaries give League C 2024–25 48
 matches, 2.40 goals, over 2.5 47.9%, BTTS 37.5%, home win 41.7%, first-half
-goals 1.15 (Romania – Kosovo 0–0 as played); 2022–23 gives 48, 2.65, 45.8%,
-41.7%, 43.8%, 1.10 — every figure matches the League C lines above. The
-relegated-from-B line above (42: W21 D10 L11, 1.95 scored, 1.07 conceded, over
-2.5 61.9%, BTTS 52.4%, clean sheet 35.7%, failed to score 19.0%; away W11 D5 L5,
-1.76/0.95) and the f3 line (17: W4 D4 L9, 0.94/1.76, over 2.5 58.8%, BTTS
-41.2%) also reproduce; the record gives the f3 line's visitor first-half goals
-as 13 in 17 (0.76; the f3 line prints 0.77, total 1.24 in both). Goal counts
-match the recorded score in all 96 matches (Romania – Kosovo recorded 0–0, as played). First half = goal minute 45 or
-earlier (stoppage-time goals are recorded at 45).
+goals 1.15, cards 4.85, 5.32 fouls per card, 0.38 penalty kicks; 2022–23 48,
+2.65, 45.8%, 41.7%, 43.8%, 1.10, cards 4.21, 5.30 fouls per card — the League C
+lines above. They also reproduce the f3 and f4 lines (the f3 line's visitor
+first-half rate is 13 in 17, 0.76 where the f3 line prints 0.77; total 1.24 in
+both).
 Every 2022–23 and 2024–25 League C match whose home side had just come down from
 League B and whose visitor was in League C the previous edition. 17 matches (10
 in 2022–23, 7 in 2024–25). Home side W6 D5 L6 (1.35 points per match), 1.71
@@ -274,28 +269,34 @@ scored and 1.35 conceded (29–23); 3.06 goals per match; over 2.5 52.9%; BTTS
 58.8%; under 1.5 goals in 4 of 17; home side kept a clean sheet 17.6%, failed to
 score 29.4%; first-half goals 1.35 per match (home 0.65, visitor 0.71); at
 half-time the home side led in 4, was level in 6 (three 0–0) and trailed in 7;
-penalty goals 4 for the home side, 2 for the visitor. Margins ran from −3
-(Bulgaria 2–5 Georgia, June 2022) to +6 (Sweden 6–0 Azerbaijan, November 2024);
-the home side won by two or more in 4 of 17. The 17: Northern Ireland 0–1
-Greece, 2–2 Cyprus, 2–1 Kosovo; Bulgaria 1–1 North Macedonia, 2–5 Georgia;
-Slovakia 0–1 Kazakhstan, 1–2 Azerbaijan, 1–1 Belarus; Türkiye 2–0 Lithuania,
-3–3 Luxembourg (2022–23); Romania 3–1 Lithuania, 0–0 Kosovo, 4–1 Cyprus;
-Armenia 0–2 North Macedonia, 0–1 Faroe Islands; Sweden 2–1 Slovakia, 6–0
-Azerbaijan (2024–25).
+home side won by two or more in 4, lost by two or more in 2, and 11 of 17
+finished within one goal. **Box score: cards 4.76 per match (home 1.88, visitor
+2.88); fouls 10.76 committed by the home side and 12.12 by the visitor (5.72
+and 4.20 fouls per card); corners 6.29 won and 2.71 conceded by the home side,
+which won more in 12 of 17 (visitor 5, level 0); shots 17.88 and 8.35; home
+possession 60.9%; penalty kicks 0.53 per match (9 in 17).** Margins ran from −3
+(Bulgaria 2–5 Georgia, June 2022) to +6 (Sweden 6–0 Azerbaijan, November 2024).
+The 17: Northern Ireland 0–1 Greece, 2–2 Cyprus, 2–1 Kosovo; Bulgaria 1–1 North
+Macedonia, 2–5 Georgia; Slovakia 0–1 Kazakhstan, 1–2 Azerbaijan, 1–1 Belarus;
+Türkiye 2–0 Lithuania, 3–3 Luxembourg (2022–23); Romania 3–1 Lithuania, 0–0
+Kosovo, 4–1 Cyprus; Armenia 0–2 North Macedonia, 0–1 Faroe Islands; Sweden 2–1
+Slovakia, 6–0 Azerbaijan (2024–25).
 
 ### Sides relegated from League B, at home in League C (context line, not a baseline — added on f5)
-The home half of the relegated-from-B line above. From the same record: 21
-matches, W10 D5 L6 (1.67 points per match), 2.14 scored and 1.19 conceded
-(45–25); over 2.5 61.9%; BTTS 57.1%; clean sheet 23.8%, failed to score 23.8%;
-first-half goals 1.57 per match (0.90 scored, 0.67 conceded). Corners and cards,
-by subtraction of the away figures from the all-venue figures in the
-relegated-from-B line above (the integer totals behind each printed two-decimal
-rate are unique: corners won 264 and 123, conceded 119 and 66; cards 83 and 49,
-opponents' 106 and 51): corners 6.71 won and 2.52 conceded per match (141 and
-53 in 21); cards 1.62 per match against their opponents' 2.62 (34 and 55).
+The home half of the relegated-from-B line above, counted directly from the same
+ESPN rows (the first f5 run derived its corner and card figures by subtraction;
+the direct count gives the same). 21 matches, W10 D5 L6 (1.67 points per match),
+2.14 scored and 1.19 conceded (45–25); over 2.5 61.9%; BTTS 57.1%; under 1.5
+goals in 4; clean sheet 23.8%, failed to score 23.8%; first-half goals 1.57 per
+match (0.90 scored, 0.67 conceded); at half-time led 8, level 6, trailed 7; won
+by two or more in 8, lost by two or more in 2. Cards 4.24 per match (home 1.62,
+visitor 2.62); fouls 10.24 committed and 11.95 suffered; corners 6.71 won and
+2.52 conceded (141 and 53), won more in 16 of 21; shots 18.76 and 7.48; home
+possession 63.0%; penalty kicks 0.43 per match (9 in 21).
 
 ## Sources for the f5 lines
-- GitHub raw files https://raw.githubusercontent.com/martj42/international_results/master/results.csv and …/goalscorers.csv, fetched 26 September 2026 (dataset last row 26 August 2026).
+- ESPN scoreboard `site.web.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates={202206,202209,202409,202410,202411}` and summaries `…/uefa.nations/summary?event={id}` — the 96 League C group matches, read 26 September 2026 on the f5 rebuild; group membership and movement between divisions as in the League C lines above.
+- GitHub raw files https://raw.githubusercontent.com/martj42/international_results/master/results.csv and …/goalscorers.csv, fetched 26 September 2026 (dataset last row 26 August 2026) — the first f5 run's source for the results side, which the ESPN count reproduces.
 
 ---
 
