@@ -301,27 +301,21 @@ opponents' 106 and 51): corners 6.71 won and 2.52 conceded per match (141 and
 
 ## UEFA Nations League A — first carded on f6 (Czechia – Croatia)
 
-**Zero baseline searches spent.** ESPN's API was blocked at this run's egress
-proxy, as on f5, so the line is built in two halves, each labelled.
-
-- **Results side, recomputed this run** from the public international-results
-  record on GitHub (martj42/international_results, `results.csv` and
-  `goalscorers.csv`, raw files, last row 26 August 2026): goals, over 2.5, BTTS,
-  outcome split, clean sheet / failed to score, under 1.5, 0–0s and first-half
-  goals (first half = goal minute 45 or earlier; stoppage-time goals are
-  recorded at 45). Goal counts match the recorded score in all 96 group
-  matches. Every figure reproduces the League A entry in baselines_0925.md
-  (and baselines_0924.md) exactly; 2022–23 goals per game is 126 in 48, 2.625,
-  printed 2.63 there and here.
-- **Box-score side, carried, not recomputed**: cards, fouls, fouls per card,
-  corners, shots and penalty kicks are copied from the League A entry in
-  baselines_0925.md, which recomputed them from ESPN's 96 group-stage summaries
-  on 25 September 2026. They describe completed 2022–23 and 2024–25 group
-  matches and cannot have moved since; they could not be re-read this run. The
-  GitHub record carries no box score, only penalty goals (flagged separately
-  below).
-No xG exists for this competition in either record: **no divisional xG line,
-none estimated.**
+Recomputed for this slate from the same 96 ESPN summaries as the League A
+entries in baselines_0924.md and baselines_0925.md, with the same counting
+conventions as the League B and C entries above. **Zero baseline searches
+spent.** ESPN's API was blocked at this run's egress proxy when the f6 run
+began (as on f5) and was reachable again later in the run; the lines below are
+ESPN's. Key events de-duplicated on type, period, clock, team and participants
+(Scotland 2–3 Poland carries every event twice); the goal-timing parser then
+reconciles against the official score on 96 of 96. No match went to extra
+time; every match has a two-team box score. **Every figure matches the 0925
+entry** (2024–25 cards per game 4.125, printed 4.13; 2022–23 goals per game
+2.625, printed 2.63). As a cross-check, the public international-results record
+on GitHub (martj42/international_results, fetched this run) reproduces every
+results-side figure (goals, over 2.5, BTTS, outcome split, clean sheets, under
+1.5, 0–0s, first-half goals) on all 96 matches. No xG exists for this
+competition in ESPN's record: **no divisional xG line, none estimated.**
 
 ### 2024–25 League A (48 matches — the primary line on every League A card)
 Group stage only, four groups of four, six matches per side: A1 Portugal,
@@ -332,27 +326,27 @@ Finals are not in the line.
 Ten of the sixteen are in 2026–27 League A. Today's Group A3 (Spain, Croatia,
 England, Czechia) has two of them: Croatia (second in A1) and Spain (first in
 A4). England (B2 winners) and Czechia (B1 winners) come up from League B.
-- goals per game 2.94; over 2.5 56.3%; BTTS 58.3%; home win 43.8%; draw 29.2%; away win 27.1% (recomputed)
-- clean sheet / failed to score 26.0% per team-appearance; under 1.5 goals 22.9% of matches; five 0–0s (recomputed)
-- first-half goals 1.33 per match; level at half-time in 18 of 48; final margin within one goal in 30 of 48 (recomputed)
-- cards per game 4.13 (2.06 per team; 188 yellows, 10 reds); fouls 11.39 per team (22.77 per match); 5.52 fouls per card; corners 4.75 per team (carried from baselines_0925.md, ESPN)
-- shots 12.93 per team; shots on target 4.48 per team (carried, ESPN)
-- penalty kicks 0.42 per match (20 in 48) (carried, ESPN); penalty goals 0.29 per match (14 in 48) in the GitHub record
+- goals per game 2.94; over 2.5 56.3%; BTTS 58.3%; home win 43.8%; draw 29.2%; away win 27.1%
+- clean sheet / failed to score 26.0% per team-appearance; under 1.5 goals 22.9% of matches; five 0–0s
+- first-half goals 1.33 per match; level at half-time in 18 of 48; final margin within one goal in 30 of 48
+- cards per game 4.13 (2.06 per team; 188 yellows, 10 reds); fouls 11.39 per team (22.77 per match); 5.52 fouls per card; corners 4.75 per team
+- shots 12.93 per team; shots on target 4.48 per team
+- penalty kicks 0.42 per match (20 in 48)
 
 ### 2022–23 League A (48 matches — cross-check, not the card line)
 A1 Croatia, Denmark, France, Austria; A2 Spain, Portugal, Switzerland,
 Czechia; A3 Italy, Hungary, Germany, England; A4 Netherlands, Belgium,
 Poland, Wales. Group stage only.
-- goals per game 2.63; over 2.5 45.8%; BTTS 52.1%; home win 39.6%; draw 22.9%; away win 37.5% (recomputed)
-- clean sheet / failed to score 25.0% per team-appearance; under 1.5 goals 25.0%; one 0–0 (recomputed)
-- first-half goals 1.02 per match (recomputed)
-- cards per game 3.33 (1.67 per team; 159 yellows, 1 red); fouls 11.01 per team (22.02 per match); 6.61 fouls per card; corners 4.68 per team (carried, ESPN)
-- shots 11.38 per team; shots on target 4.18 per team (carried, ESPN)
-- penalty kicks 0.23 per match (11 in 48) (carried, ESPN); penalty goals 0.17 per match (8 in 48) in the GitHub record
+- goals per game 2.63; over 2.5 45.8%; BTTS 52.1%; home win 39.6%; draw 22.9%; away win 37.5%
+- clean sheet / failed to score 25.0% per team-appearance; under 1.5 goals 25.0%; one 0–0
+- first-half goals 1.02 per match
+- cards per game 3.33 (1.67 per team; 159 yellows, 1 red); fouls 11.01 per team (22.02 per match); 6.61 fouls per card; corners 4.68 per team
+- shots 11.38 per team; shots on target 4.18 per team
+- penalty kicks 0.23 per match (11 in 48)
 
 ### Both editions pooled (96 matches)
-- goals per game 2.78; over 2.5 51.0%; BTTS 55.2%; home win 41.7%; draw 26.0%; first-half goals 1.18 (recomputed)
-- cards per game 3.73; fouls 11.20 per team; 6.01 fouls per card; corners 4.71 per team; penalty kicks 0.32 per match (carried, ESPN)
+- goals per game 2.78; over 2.5 51.0%; BTTS 55.2%; home win 41.7%; draw 26.0%
+- first-half goals 1.18; cards per game 3.73; fouls 11.20 per team; 6.01 fouls per card; corners 4.71 per team; penalty kicks 0.32 per match
 
 **League A moved between editions on goals and cards, not on fouls or
 corners** (as the 0925 entry says): goals rose by 0.31 per match, over 2.5 by
@@ -361,23 +355,24 @@ the same foul count. The 2024–25 line is printed because it is the most recent
 edition and shares ten of its sixteen sides with 2026–27.
 
 ### Sides promoted from League B into League A (context line, not a baseline — added on f6)
-Recomputed from the same GitHub rows, zero searches. The eight sides promoted
-for 2022–23 (Austria, Czechia, Hungary, Wales — the 2020–21 League B group
-winners) and 2024–25 (Scotland, Israel, Bosnia-Herzegovina, Serbia — the
-2022–23 League B group winners), in their League A group matches. Results only:
-**no cards, fouls, corners or shots on this line.** It reproduces every figure
-the archive cards already print from ESPN (fx_0924_f4.html, fx_0924_f5.html,
-fx_0925_f4.html: 0.79 points per match, 0.92 scored and 1.73 conceded; home
-0.88/1.42; away 0.62 points per match, 0.96/2.04, over 2.5 62.5%, BTTS 50.0%,
-failed to score 37.5%; at home on matchday one W2 D1 L1).
+Recomputed from the same 96 ESPN summaries, zero searches. The eight sides
+promoted for 2022–23 (Austria, Czechia, Hungary, Wales — the 2020–21 League B
+group winners) and 2024–25 (Scotland, Israel, Bosnia-Herzegovina, Serbia — the
+2022–23 League B group winners), in their League A group matches. It
+reproduces every promoted-side figure the archive cards already print
+(fx_0924_f4.html, fx_0924_f5.html, fx_0925_f4.html: 0.79 points per match,
+0.92 scored and 1.73 conceded; home 0.88/1.42; away 0.62 points per match,
+0.96/2.04, over 2.5 62.5%, BTTS 50.0%, failed to score 37.5%; at home on
+matchday one W2 D1 L1), and the GitHub record reproduces its results side.
 - All venues: 48 matches, W9 D11 L28 (0.79 points per match), 0.92 scored and 1.73 conceded (44–83); over 2.5 52.1%; BTTS 52.1%; clean sheet 25.0%, failed to score 33.3%; first-half goals 0.35 scored and 0.83 conceded.
-- **At home: 24 matches, W5 D8 L11 (0.96 points per match), 0.88 scored and 1.42 conceded (21–34); 2.29 goals per match; over 2.5 41.7%; BTTS 54.2%; under 1.5 goals in 7 of 24, three 0–0s; clean sheet 29.2%, failed to score 29.2%; first-half goals 1.00 per match (0.29 scored, 0.71 conceded); at half-time led 2, level 13 (nine at 0–0), trailed 9; final margin within one goal in 18 of 24, home side won by two or more once and lost by two or more five times.** Every one of the 24 was against a side that had stayed in League A (the promoted sides were drawn in different groups). Israel's three home matches were played in Budapest and are counted as home.
-- Away: 24 matches, W4 D3 L17 (0.62 points per match), 0.96 scored and 2.04 conceded; over 2.5 62.5%; BTTS 50.0%; failed to score 37.5%.
+- **At home: 24 matches, W5 D8 L11 (0.96 points per match), 0.88 scored and 1.42 conceded (21–34); 2.29 goals per match; over 2.5 41.7%; BTTS 54.2%; under 1.5 goals in 7 of 24, three 0–0s; clean sheet 29.2%, failed to score 29.2%; first-half goals 1.00 per match (0.29 scored, 0.71 conceded); at half-time led 2, level 13 (nine at 0–0), trailed 9; final margin within one goal in 18 of 24, home side won by two or more once and lost by two or more five times. Corners 3.79 won and 5.46 conceded per match (won more in 9 of 24); cards 1.92 per match against their visitors' 1.75 (3.67 per match); fouls 11.21 committed and 11.08 suffered; shots 9.92 for and 11.67 against.** Every one of the 24 was against a side that had stayed in League A (the promoted sides were drawn in different groups). Israel's three home matches were played in Budapest and are counted as home.
+- Away: 24 matches, W4 D3 L17 (0.62 points per match), 0.96 scored and 2.04 conceded; over 2.5 62.5%; BTTS 50.0%; failed to score 37.5%; corners 2.79 won and 6.38 conceded; cards 1.88 against their hosts' 1.50; shots 8.21 for and 18.29 against.
 - Matchday one: W3 D1 L4. At home on matchday one W2 D1 L1: Czechia 2–1 Switzerland (Prague, June 2022), Hungary 1–0 England, Serbia 0–0 Spain, Scotland 2–3 Poland.
 - Group finishes: second once (Hungary 2022–23), third twice (Scotland, Serbia), fourth five times (Austria, Czechia and Wales in 2022–23; Israel and Bosnia-Herzegovina in 2024–25).
 - Czechia's own previous promotion is inside this line: 2022–23 Group A2, W1 D1 L4, 5–13, fourth and relegated; at home in Prague 2–1 Switzerland, 2–2 Spain, 0–4 Portugal.
 
 ## Sources for the League A lines
-- GitHub raw files https://raw.githubusercontent.com/martj42/international_results/master/results.csv and …/goalscorers.csv, fetched 26 September 2026 (dataset last row 26 August 2026) — every "recomputed" figure and the promoted-sides line.
-- baselines_0925.md, League A entry (ESPN summaries of the 96 group matches, `site.web.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event={id}`, read 25 September 2026) — every "carried" figure.
+- ESPN scoreboard `site.web.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates={202206,202209,202409,202410,202411}`.
+- ESPN summaries `site.web.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event={id}` — 96 League A group matches, read 26 September 2026.
+- GitHub raw files https://raw.githubusercontent.com/martj42/international_results/master/results.csv and …/goalscorers.csv, fetched 26 September 2026 (dataset last row 26 August 2026) — results-side cross-check.
 - Division membership and movement between divisions from triage_0926.md and baselines_0925.md (ESPN standings, seasons 2020, 2022, 2024, 2026).
