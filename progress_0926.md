@@ -6,5 +6,5 @@ f5 | 18:00 | Iceland – Estonia | T1 | DONE
 f6 | 20:45 | Czechia – Croatia | T1 | DONE
 f7 | 20:45 | England – Spain | T1 | DONE
 f8 | 20:45 | North Macedonia – Switzerland | T1 | DONE
-f9 | 20:45 | Albania – Belarus | T1 | TODO
+f9 | 20:45 | Albania – Belarus | T1 | DONE
 f10 | 20:45 | Slovakia – Moldova | T1 | TODO
