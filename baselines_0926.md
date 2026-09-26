@@ -377,3 +377,55 @@ matchday one W2 D1 L1), and the GitHub record reproduces its results side.
 - ESPN summaries `site.web.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event={id}` — 96 League A group matches, read 26 September 2026.
 - GitHub raw files https://raw.githubusercontent.com/martj42/international_results/master/results.csv and …/goalscorers.csv, fetched 26 September 2026 (dataset last row 26 August 2026) — results-side cross-check.
 - Division membership and movement between divisions from triage_0926.md and baselines_0925.md (ESPN standings, seasons 2020, 2022, 2024, 2026).
+
+---
+
+### Sides promoted from League C, at home in League B (context line, not a baseline — added on f8)
+Recomputed on f8 with zero searches from the same ESPN League B group summaries
+as the League B lines above; the rerun reproduces those lines exactly (2024–25:
+48 matches, 2.67 goals, over 2.5 50.0%, BTTS 43.8%, home win 45.8%, first-half
+goals 1.12, cards 4.42, fouls 11.48 per team, corners 4.52, 13 penalty kicks;
+2022–23: 42, 2.67, 47.6%, 52.4%, 45.2%, 1.07, 4.57, 11.17, 4.77, 9) and the
+relegated-from-League-A away line (23 matches, 1.52 scored and 1.35 conceded,
+over 2.5 52.2%, BTTS 60.9%, failed to score 13.0%, corners 4.22/4.65, cards
+2.35 against 1.74). The six Russia fixtures of 2022–23 Group B2 are cancelled in
+ESPN's record and are not counted, as in the 2022–23 line.
+The eight sides promoted from League C for 2022–23 (Montenegro, Armenia,
+Slovenia, Albania — the 2020–21 League C group winners) and 2024–25 (Türkiye,
+Greece, Kazakhstan, Georgia — the 2022–23 League C group winners), in their home
+League B group matches: 23 matches (Albania – Russia, June 2022, cancelled).
+Home side W8 D6 L9 (1.30 points per match), 1.09 scored and 1.30 conceded
+(25–30); 2.39 goals per match; over 2.5 39.1%; BTTS 39.1%; under 1.5 goals in 6
+of 23; home side kept a clean sheet 30.4%, failed to score 39.1%; first-half
+goals 0.78 per match (home 0.30, visitor 0.48); at half-time the home side led
+in 4, was level in 12 (eleven at 0–0) and trailed in 7; 18 of the home sides'
+25 goals came after half-time; won by two or more in 5, lost by two or more in
+6, final margin within one goal in 12. Cards 4.61 per match (home 2.52, visitor
+2.09); fouls 11.52 committed by the home side and 11.43 by the visitor; corners
+4.61 won and 4.87 conceded by the home side, which won more in 10 of 23; shots
+13.17 and 10.91; home possession 47.0%; penalty kicks 3 for the home side and 1
+against; reds 4 and 2.
+- All venues: 46 matches, W14 D10 L22, 1.02 scored and 1.52 conceded; over 2.5
+  45.7%; BTTS 39.1%; failed to score 41.3%; at half-time level in 22 (nineteen at
+  0–0), trailing in 18; 35 of their 47 goals after half-time; corners 4.11 won and
+  5.43 conceded.
+- First match of each promoted side's edition: W4 D3 L1 (at home W4 D1 L1:
+  Slovenia 0–2 Sweden, Armenia 1–0 Republic of Ireland, Montenegro 2–0 Romania in
+  June 2022; Kazakhstan 0–0 Norway, Georgia 4–1 Czechia, Greece 3–0 Finland in
+  September 2024).
+- Group finishes: none won its League B group; second twice (Greece, Türkiye in
+  2024–25), third four times (Albania, Montenegro, Slovenia, Georgia), fourth
+  twice (Armenia, Kazakhstan).
+- **Hosting a side just relegated from League A: 8 matches** (Slovenia 0–2
+  Sweden, Montenegro 1–1 Bosnia-Herzegovina, Armenia 0–5 Ukraine, Albania 1–1
+  Iceland in 2022–23; Georgia 4–1 Czechia, Kazakhstan 0–2 Austria, Greece 0–3
+  England, Türkiye 0–0 Wales in 2024–25). Home side W1 D3 L4, 6–15; 2.62 goals per
+  match; over 2.5 37.5%; BTTS 37.5%; home side failed to score in 5 of 8; first-half
+  goals 0.88 per match (home 0.25, visitor 0.62); at half-time the home side led
+  in 2, was level in 2 (both 0–0) and trailed in 4; corners 4.38 won and 4.50
+  conceded by the home side, which won more in 3 of 8; cards 1.88 for the home
+  side against 2.12; penalty kicks 2 for and 1 against.
+
+## Sources for the f8 line
+- ESPN scoreboard `site.web.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates={202206,202209,202409,202410,202411}` and summaries `…/uefa.nations/summary?event={id}` — the 96 League B group events (90 played, 6 cancelled), read 26 September 2026 on f8; linescores for the 90-minute and half-time score (they carry the Wilson penalty in Wales 1–0 Montenegro that the key events miss).
+- ESPN standings `site.api.espn.com/apis/v2/sports/soccer/uefa.nations/standings?season={2020,2022,2024,2026}` for division membership and group finishes.
