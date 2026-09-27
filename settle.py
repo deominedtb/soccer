@@ -64,12 +64,15 @@ COMPETITIONS = {
     "ligue 1": "fra.1", "ligue 2": "fra.2", "coupe de france": "fra.coupe_de_france",
     "uefa champions league": "uefa.champions", "uefa europa league": "uefa.europa",
     "uefa conference league": "uefa.europa.conf",
+    "nations league": "uefa.nations",
 }
-LEAGUES = {"eng.1", "esp.1", "ita.1", "ger.1", "fra.1", "eng.2", "esp.2", "ita.2", "ger.2", "fra.2"}
+LEAGUES = {"eng.1", "esp.1", "ita.1", "ger.1", "fra.1", "eng.2", "esp.2", "ita.2", "ger.2", "fra.2",
+           "uefa.nations"}
 SECOND_TIER = {"eng.1": "eng.2", "esp.1": "esp.2", "ita.1": "ita.2", "ger.1": "ger.2", "fra.1": "fra.2"}
 MIN_THIS = 5      # the strip's rule: this season's figure from five matches
 MIN_LAST = 10
 MIN_PRIOR = 30
+MIN_LAST_NATIONS = 4  # a full Nations League edition is 4 matches in a 3-team group, 6 in a 4-team one
 
 ALIASES = {
     "man city": "manchester city", "man united": "manchester united",
@@ -137,6 +140,48 @@ def cached(slug, dates, refresh=False):
     doc = {"events": [slim(ev) for ev in fetch(slug, dates).get("events", [])]}
     json.dump(doc, open(path, "w", encoding="utf-8"))
     return doc
+
+
+SUMMARY = "https://{host}/apis/site/v2/sports/soccer/{slug}/summary?event={eid}"
+
+
+def fetch_summary(slug, eid):
+    last = None
+    for attempt in range(3):
+        for host in HOSTS:
+            url = SUMMARY.format(host=host, slug=slug, eid=eid)
+            try:
+                with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=120) as r:
+                    return json.loads(r.read())
+            except (urllib.error.URLError, TimeoutError, ValueError, http.client.HTTPException) as e:
+                last = e
+        time.sleep(2 * (attempt + 1))
+    raise RuntimeError(f"ESPN summary {slug} {eid}: {last}")
+
+
+def officials_for(slug, eid):
+    """Cached list of {'name', 'role'} for one settled match, from the summary endpoint
+    (the scoreboard pull settle.py otherwise uses never carries officials)."""
+    os.makedirs(CACHE, exist_ok=True)
+    path = os.path.join(CACHE, f"{slug}_officials_{eid}.json")
+    if os.path.exists(path):
+        return json.load(open(path, encoding="utf-8"))
+    try:
+        raw = fetch_summary(slug, eid)
+        officials = [{"name": o.get("fullName"), "role": (o.get("position") or {}).get("name")}
+                     for o in (raw.get("gameInfo") or {}).get("officials") or []]
+    except RuntimeError:
+        officials = []
+    json.dump(officials, open(path, "w", encoding="utf-8"))
+    return officials
+
+
+def referee_for(slug, eid):
+    officials = officials_for(slug, eid)
+    for o in officials:
+        if (o.get("role") or "").lower() == "referee":
+            return o.get("name")
+    return officials[0]["name"] if officials else None
 
 
 def minute(display):
@@ -409,13 +454,124 @@ def add(*xs):
     return None if any(x is None for x in xs) else sum(xs)
 
 
+# ─────────────────── UEFA Nations League (one slug, four divisions) ───────────────────
+# uefa.nations covers Leagues A/B/C/D under a single ESPN slug, and its editions run two
+# calendar years (season = the edition's start year, e.g. 2024 for 2024-25). Both facts
+# break the club-league assumptions above: a raw season_matches() pool mixes four
+# divisions with materially different rates, and "last season" is season-2, not season-1.
+# These helpers filter to one division's own group-stage matches before doing anything else.
+
+_division_memo = {}
+
+
+def nations_divisions(season):
+    """team_id -> 'A'/'B'/'C'/'D' for one uefa.nations edition, from its standings."""
+    if season in _division_memo:
+        return _division_memo[season]
+    os.makedirs(CACHE, exist_ok=True)
+    path = os.path.join(CACHE, f"uefa.nations_standings_{season}.json")
+    if os.path.exists(path):
+        raw = json.load(open(path, encoding="utf-8"))
+    else:
+        url = f"https://site.api.espn.com/apis/v2/sports/soccer/uefa.nations/standings?season={season}"
+        raw, last = None, None
+        # this endpoint 403s on settle.py's usual UA string; a generic one works
+        browser_ua = {"User-Agent": "Mozilla/5.0"}
+        for attempt in range(3):
+            try:
+                with urllib.request.urlopen(urllib.request.Request(url, headers=browser_ua), timeout=60) as r:
+                    raw = json.loads(r.read())
+                break
+            except (urllib.error.URLError, TimeoutError, ValueError, http.client.HTTPException) as e:
+                last = e
+                time.sleep(2 * (attempt + 1))
+        if raw is None:
+            raise RuntimeError(f"ESPN uefa.nations standings {season}: {last}")
+        json.dump(raw, open(path, "w", encoding="utf-8"))
+    out = {}
+    for ch in raw.get("children", []):
+        mm = re.search(r"\b([ABCD])\d*\b", (ch.get("name") or "").upper())
+        if not mm:
+            continue
+        for e in (ch.get("standings") or {}).get("entries", []):
+            tid = (e.get("team") or {}).get("id")
+            if tid:
+                out[tid] = mm.group(1)
+    _division_memo[season] = out
+    return out
+
+
+def nations_league_matches(season, letter, before=None):
+    """Completed group-stage matches of one division in one edition (cross-division
+    promotion/relegation play-offs are excluded automatically: the two sides differ
+    in division there, so neither passes the same-letter filter)."""
+    divs = nations_divisions(season)
+    ms = season_matches("uefa.nations", season)
+    if before is not None:
+        ms = [m for m in ms if m["utc"] < before]
+    return [m for m in ms if divs.get(m["home_id"]) == letter and divs.get(m["away_id"]) == letter]
+
+
+def nations_team_window(tid, season, before):
+    letter = nations_divisions(season).get(tid)
+    if not letter:
+        return None, None, "no record"
+    this_league = nations_league_matches(season, letter, before)
+    this = [m for m in this_league if tid in (m["home_id"], m["away_id"])]
+    if len(this) >= MIN_THIS:
+        return this, this_league, f"{season}-{season + 1} League {letter} ({len(this)})"
+    prev = season - 2
+    letter_prev = nations_divisions(prev).get(tid)
+    if letter_prev:
+        lg = nations_league_matches(prev, letter_prev)
+        last = [m for m in lg if tid in (m["home_id"], m["away_id"])]
+        if len(last) >= MIN_LAST_NATIONS:
+            return last, lg, f"{prev}-{prev + 1} League {letter_prev} ({len(last)})"
+    if this:
+        return this, this_league, f"{season}-{season + 1} League {letter} ({len(this)}, thin)"
+    return None, None, "no record"
+
+
+def nations_deviations(tid, season, before):
+    ms, lg, label = nations_team_window(tid, season, before)
+    if not ms:
+        return None, label
+    t, L = team_rates(ms, tid), league_rates(lg)
+
+    def dev(a, b):
+        return None if a is None or b is None else a - b
+    return {
+        "o25": dev(t["o25"], L["o25"]), "btts": dev(t["btts"], L["btts"]),
+        "h1": dev(t["h1"], L["h1"]), "cards": dev(t["cards"], L["cards_pt"]),
+        "cf": dev(t["cf"], L["corners_pt"]), "ca": dev(t["ca"], L["corners_pt"]),
+        "gf": dev(t["gf"], L["gpt"]), "ga": dev(t["ga"], L["gpt"]),
+    }, label
+
+
+def nations_prior_rates(season, letter, before):
+    ms = nations_league_matches(season, letter, before)
+    if len(ms) >= MIN_PRIOR:
+        return league_rates(ms), f"League {letter} {season}-{season + 1} to date ({len(ms)})"
+    prev = season - 2
+    ms = nations_league_matches(prev, letter)
+    return league_rates(ms), f"League {letter} {prev}-{prev + 1} ({len(ms)})"
+
+
 def lean_tests(card, m, slug, season):
     """One test per family (two for team goals). Lean is worked out after the match."""
     before = m["utc"]
-    dh, lh = deviations(m["home_id"], slug, season, before)
-    da, la = deviations(m["away_id"], slug, season, before)
-    P, plabel = prior_rates(slug, season, before)
+    if slug == "uefa.nations":
+        dh, lh = nations_deviations(m["home_id"], season, before)
+        da, la = nations_deviations(m["away_id"], season, before)
+        letter = nations_divisions(season).get(m["home_id"]) or nations_divisions(season).get(m["away_id"])
+        P, plabel = nations_prior_rates(season, letter, before) if letter else (None, "division unknown")
+    else:
+        dh, lh = deviations(m["home_id"], slug, season, before)
+        da, la = deviations(m["away_id"], slug, season, before)
+        P, plabel = prior_rates(slug, season, before)
     info = {"home_window": lh, "away_window": la, "prior": plabel}
+    if P is None:
+        return [], info
     if not dh or not da:
         return [], info
     hg, ag = m["hg"], m["ag"]
@@ -589,6 +745,12 @@ def grade(pick, card, m):
     if fam == "halves":
         half = "2h" if re.search(r"\b2h|second", sel) else "1h"
         h = (m["h1h"], m["h1a"]) if half == "1h" else (hg - m["h1h"], ag - m["h1a"])
+        if "both teams to score" in sel or "btts" in sel:
+            yn = re.search(r"\b(yes|no)\s*$", sel)
+            if not yn:
+                return None
+            both = h[0] > 0 and h[1] > 0
+            return "win" if both == (yn.group(1) == "yes") else "loss"
         if ou:
             return _combine(_ou(h[0] + h[1], line, direction))
         tok = re.sub(r"\b[12]h\b|first half|second half|result", "", sel).strip()
@@ -597,6 +759,14 @@ def grade(pick, card, m):
             return "win" if res == "d" else "loss"
         s = _side(tok, card, m)
         return None if not s else ("win" if res == s else "loss")
+    if fam == "disc" and not ou:
+        mc = re.search(r"^(.*?)\s+most\s+(?:cards|bookings)\b", sel)
+        if mc:
+            s = _side(mc.group(1), card, m)
+            if not s:
+                return None
+            mine, theirs = (m["ch"], m["ca"]) if s == "h" else (m["ca"], m["ch"])
+            return "push" if mine == theirs else ("win" if mine > theirs else "loss")
     if fam in ("disc", "corners") and ou:
         fouls = "foul" in sel or pick["family_raw"].lower() == "fouls"
         if fam == "corners":
@@ -653,6 +823,7 @@ def settle(slate, refresh=False):
         if swapped:
             unsettled.append((card, "ESPN has home and away the other way round; check the card"))
             continue
+        m["referee"] = referee_for(slug, m["id"])
         tests, info = ([], {"note": "cup or European tie: results only, no lean audit"})
         if slug in LEAGUES:
             tests, info = lean_tests(card, m, slug, season)
@@ -700,8 +871,8 @@ def write_results_md(doc):
          "# source: ESPN public scoreboard (final). 90-minute figures; cards = yellows + reds,",
          "# both teams, the count baselines_N.md uses. Written after the matches; never read by Phase 1–3.",
          "",
-         "fid | fixture | FT (90') | HT | goals | BTTS | 1H goals | cards | corners | fouls | note",
-         "--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---"]
+         "fid | fixture | FT (90') | HT | goals | BTTS | 1H goals | cards | corners | fouls | referee | note",
+         "--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---"]
     for f in doc["fixtures"]:
         m = f["match"]
         corners = add(m["kh"], m["ka"])
@@ -716,9 +887,10 @@ def write_results_md(doc):
             str(m["hg"] + m["ag"]), "yes" if m["hg"] and m["ag"] else "no",
             str(m["h1h"] + m["h1a"]), str(m["ch"] + m["ca"]),
             "–" if corners is None else f"{corners:.0f}", "–" if fouls is None else f"{fouls:.0f}",
+            m.get("referee") or "–",
             "; ".join(note)]))
     for u in doc["unsettled"]:
-        L.append(f"{u['fid']} | {u['title']} | – | – | – | – | – | – | – | – | NOT SETTLED: {u['why']}")
+        L.append(f"{u['fid']} | {u['title']} | – | – | – | – | – | – | – | – | – | NOT SETTLED: {u['why']}")
 
     L += ["", "## Lean audit",
           "Which way each family's pre-kickoff base rates leaned — both sides' rates against their",
