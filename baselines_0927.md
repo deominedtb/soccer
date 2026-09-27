@@ -296,3 +296,97 @@ first leg (1–0 Portugal) is outside the group-stage line.
 - ESPN standings `site.api.espn.com/apis/v2/sports/soccer/uefa.nations/standings?season={2018,2020,2022,2024,2026}` for group membership, finishing positions and movement between divisions.
 - Wikipedia https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Nations_League_A (raw wikitext; format section, team changes, Group 2 fixtures); logged in sources_0927.md under f2.
 - Added on f3: the three League A context lines above, recomputed from the same 96 ESPN League A group summaries (scoreboards `…/uefa.nations/scoreboard?dates={202206,202209,202409,202410,202411}`, group membership from `…/uefa.nations/standings?season={2022,2024}`), read 27 September 2026. Zero searches.
+
+---
+
+## UEFA Nations League B — first carded on f4 (Austria – Kosovo)
+
+Recomputed for this slate from the same 90 ESPN League B group summaries as
+the League B entries in baselines_0924.md, baselines_0925.md and
+baselines_0926.md, with the counting conventions above. **Zero baseline
+searches spent.** Group membership from the 2022 and 2024 standings (the
+four Russia fixtures of 2022–23 Group B2 were never played and are not in the
+line). Wales 1–0 Montenegro (698976) again has no key events in ESPN's
+record; its 36th-minute Wilson penalty is added from ESPN's commentary, as on
+0924, 0925 and 0926, and goal counts then reconcile against the official
+score on 90 of 90. No match went to extra time; every match has a two-team
+box score. **Every figure matches the 0926 entry** (2024–25 goals 2.667,
+printed 2.67; first-half goals 1.125, printed 1.12; cards 4.417, printed
+4.42; 5.198 fouls per card, printed 5.20). No xG exists for this competition
+in ESPN's record: **no divisional xG line, none estimated.**
+
+**Format, 2026–27 (Wikipedia's 2026–27 League B page, citing UEFA):** four
+groups of four, six matches per side. Group winners are promoted to League A
+for 2028–29; runners-up play League A third- or fourth-placed sides in March
+2027 promotion play-offs; fourth-placed sides play League C runners-up in
+relegation play-offs. Today's Group B3: Israel (relegated from League A),
+Austria (lost the 2025 A/B play-off to Serbia, stayed in League B), Republic
+of Ireland (third in 2024–25 Group B2, stayed in League B), Kosovo (second in 2024–25
+League C Group C2, promoted by beating Iceland 2–1 and 3–1 in the March 2025
+B/C play-off; **Kosovo's first League B edition**).
+
+### 2024–25 League B (48 matches — the primary line on every League B card)
+Group stage only, four groups of four, six matches per side: B1 Czechia,
+Ukraine, Georgia, Albania; B2 England, Greece, Finland, Republic of Ireland;
+B3 Norway, Austria, Slovenia, Kazakhstan; B4 Türkiye, Wales, Iceland,
+Montenegro. The March 2025 A/B and B/C play-offs are not in the line.
+Five of the sixteen are in 2026–27 League B (Austria, Republic of Ireland,
+Slovenia, Ukraine, Georgia). Today's fixture has one of them: Austria (second
+in B3 on 11 points, 14–5).
+- goals per game 2.67; over 2.5 50.0%; BTTS 43.8%; home win 45.8%; draw 18.8%; away win 35.4%
+- clean sheet / failed to score 32.3% per team-appearance; under 1.5 goals 22.9% of matches; four 0–0s
+- first-half goals 1.12 per match
+- cards per game 4.42 (2.21 per team; 209 yellows, 3 reds); fouls 11.48 per team (22.96 per match); 5.20 fouls per card; corners 4.52 per team
+- shots 12.68 per team; shots on target 4.19 per team
+- penalty kicks 0.27 per match (13 in 48)
+
+### 2022–23 League B (42 matches — cross-check, not the card line)
+- goals per game 2.67; over 2.5 47.6%; BTTS 52.4%; home win 45.2%; draw 28.6%; away win 26.2%
+- clean sheet / failed to score 26.2%; under 1.5 goals 21.4%; two 0–0s
+- first-half goals 1.07 per match
+- cards per game 4.57 (184 yellows, 8 reds); fouls 11.17 per team; 4.89 fouls per card; corners 4.77 per team
+- shots 11.61 per team; shots on target 3.99 per team
+- penalty kicks 0.21 per match (9 in 42)
+
+### Both editions pooled (90 matches)
+- goals per game 2.67; over 2.5 48.9%; BTTS 47.8%; home win 45.6%; draw 23.3%
+- first-half goals 1.10; cards per game 4.49; fouls 11.33 per team; 5.05 fouls per card; corners 4.64 per team; penalty kicks 0.24 per match
+
+**League B is steady on volume, not on outcome**, as on 0924–0926: goals,
+first-half goals, cards, fouls and corners barely moved between editions;
+BTTS, draws, away wins and reds did.
+
+### 2026–27 League B so far (8 matches — not a baseline)
+Matchday 1, 24–26 September: Austria 3–1 Israel, Kosovo 1–0 Republic of
+Ireland, Georgia 0–1 Northern Ireland, Hungary 0–1 Ukraine, Poland 0–0
+Bosnia-Herzegovina, Sweden 2–1 Romania, Slovenia 0–0 Scotland, North Macedonia
+0–3 Switzerland. 1.63 goals per match; over 2.5 3 of 8; BTTS 2 of 8; home side
+W3 D2 L3; first-half goals 0.88; cards 5.25 per match (2 reds); fouls 13.25
+per team; 5.05 fouls per card; corners 2.88 per team; two penalty kicks.
+
+### Sides that stayed in League B hosting sides promoted from League C (context line, not a baseline — added on f4)
+From the same 90 League B rows, zero searches: every 2022–23 and 2024–25
+League B match with a home side that was in League B the edition before
+(neither promoted nor relegated from League A) and a visitor promoted from
+League C (2022–23: Montenegro, Albania, Armenia, Slovenia; 2024–25: Georgia,
+Greece, Kazakhstan, Türkiye). 15 matches (7 and 8). No promoted side in
+either edition came up through a play-off; Kosovo are the first.
+- Home side W9 D1 L5 (1.87 points per match), 1.80 scored and 1.13 conceded (27–17); 2.93 goals per match; over 2.5 8 of 15; BTTS 5 of 15; under 1.5 goals 3 of 15; home clean sheet 6 of 15, home side failed to score 5 of 15.
+- First-half goals 1.00 scored and 0.20 conceded (1.20 per match); at half-time the home side led 8, level 6, trailed 1; final margin within one goal in 5 of 15 (home side won by two or more 6, lost by two or more 4).
+- Box score: cards 2.07 home, 2.53 visitor (4.60 per match); fouls 10.93 and 10.13; corners 5.00 won and 3.47 conceded, home side won more in 7 of 15; shots 13.80 and 11.07; home possession 53.0%.
+- By edition: 2022–23 home W5 D1 L1, 13–7, corners 6.14/2.57, possession 61.0%; 2024–25 home W4 D0 L4, 14–10, corners 4.00/4.25, possession 45.9% (Greece and Türkiye won away twice each).
+
+### Sides promoted from League C, away in League B (context line, not a baseline — added on f4)
+The same eight promoted sides' 23 away League B matches (all hosts), from the
+visitor's side: W6 D4 L13 (0.96 points per match), 0.96 scored and 1.74
+conceded (22–40); 2.70 goals per match; over 2.5 12 of 23; BTTS 9 of 23;
+failed to score 10 of 23; first-half goals 0.22 scored and 0.87 conceded, at
+half-time led 2, level 10, trailed 11; cards 2.83 against their hosts' 2.26
+(5.09 per match); fouls 11.70 committed and 11.39 suffered; corners 3.61 won
+and 6.00 conceded, won more in 8 of 23; shots 10.13 and 14.26; possession 44.9%.
+
+## Sources for the League B lines
+- ESPN scoreboard `site.web.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates={202206,202209,202409,202410,202411,202609}`.
+- ESPN summaries `site.web.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event={id}` — 90 League B group matches and the eight 2026–27 matchday-1 League B matches; commentary of event 698976 for the Wilson penalty; read 27 September 2026.
+- ESPN standings `site.api.espn.com/apis/v2/sports/soccer/uefa.nations/standings?season={2020,2022,2024,2026}` for group membership, promotion and relegation between editions.
+- Wikipedia https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Nations_League_B (raw wikitext; format, team changes, Group 3 fixtures); logged in sources_0927.md under f4.
