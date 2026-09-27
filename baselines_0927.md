@@ -309,6 +309,37 @@ the eleven. The 2024–25 knockout matches in Germany (3–3 Italy in Dortmund,
 Greece's 2026–27 edition is their first in League A (League C in 2018–19,
 2020–21 and 2022–23; League B in 2024–25; ESPN standings).
 
+### Promoted sides hosting sides that stayed in League A (context line, not a baseline — added on f6)
+Recomputed on f6 from the same 96 ESPN League A group summaries, zero searches:
+every 2022–23 and 2024–25 League A match with a home side promoted from League B
+(2022–23: Austria, Czechia, Hungary, Wales; 2024–25: Scotland, Israel,
+Bosnia-Herzegovina, Serbia) and a visitor that was in League A the edition
+before. 24 matches (12 in each edition). Israel's three were at neutral venues
+in Hungary; they are kept in the line.
+- Home side W5 D8 L11 (0.96 points per match), 0.88 scored and 1.42 conceded (21–34); 2.29 goals per match; over 2.5 10 of 24; BTTS 13 of 24; under 1.5 goals 7 of 24; three 0–0s; home clean sheet 7 of 24, home side failed to score 7 of 24.
+- First-half goals 0.29 scored and 0.71 conceded (1.00 per match); at half-time the home side led 2, was level 13 (nine at 0–0) and trailed 9; 31 of the 55 goals came after half-time; final margin within one goal in 18 of 24 (visitor won by two or more 5, home side 1).
+- Box score: cards 1.92 home, 1.75 visitor (3.67 per match); fouls 11.21 and 11.08 (22.29 per match); corners 3.79 won and 5.46 conceded, home side won more in 9 of 24; shots 9.92 and 11.67.
+- By edition: 2022–23 home W2 D4 L6, 11–20, over 2.5 6 of 12, BTTS 8 of 12; 2024–25 home W3 D4 L5, 10–14, over 2.5 4 of 12, BTTS 5 of 12, home clean sheets 6 of 12.
+
+### Portugal away in League A, all editions (context line, not a baseline — added on f6)
+Every Portugal League A group match away from home, 11 in four editions, from
+ESPN's summaries (2018–19 A3: Italy in Milan, Poland in Chorzów; 2020–21 A3:
+Sweden, France, Croatia; 2022–23 A2: Spain, Switzerland, Czechia; 2024–25 A1:
+Poland, Scotland, Croatia). W5 D5 L1, 17–8 (1.55 scored, 0.73 conceded); 2.27
+goals per match; over 2.5 4 of 11; BTTS 5 of 11; Portugal clean sheet 5 of 11,
+failed to score 4 of 11 (0–0 in Italy, France and Scotland; 0–1 in
+Switzerland, the one defeat); first-half goals 0.73 scored and 0.36 conceded,
+half-time led 5, level 3 (all three 0–0), trailed 3; final margin within one
+goal in 8 of 11 (the exceptions 2–0 in Solna, 4–0 in Prague and 3–1 in
+Warsaw, all wins). Box score: cards 2.27 Portugal and 1.64 hosts (3.91 per
+match; no Portuguese red, two for the hosts); fouls 12.36 committed and 11.45
+suffered; corners 6.82 won and 3.64 conceded, won more in 7 of 11; shots 14.82
+and 9.73; possession 55.0%; one penalty kick in the eleven. The 2019 Finals
+(in Portugal) and the 2024–25 quarter-final and 2025 Finals are outside the
+group line. Norway's 2026–27 edition is their first in League A (League C in
+2018–19; League B in 2020–21, 2022–23 and 2024–25; ESPN standings and team
+schedules).
+
 ## Sources for the League A lines
 - ESPN scoreboard `site.web.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates={202206,202209,202409,202410,202411,202609}`.
 - ESPN summaries `site.web.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event={id}` — 96 League A group matches, the eight 2026–27 matchday-1 matches and the Netherlands' 2018–19 and 2020–21 away group matches (505528, 505510, 570737, 570709, 570637), read 27 September 2026.
@@ -317,6 +348,7 @@ Greece's 2026–27 edition is their first in League A (League C in 2018–19,
 - Wikipedia https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Nations_League_A (raw wikitext; format section, team changes, Group 2 fixtures); logged in sources_0927.md under f2.
 - Added on f3: the three League A context lines above, recomputed from the same 96 ESPN League A group summaries (scoreboards `…/uefa.nations/scoreboard?dates={202206,202209,202409,202410,202411}`, group membership from `…/uefa.nations/standings?season={2022,2024}`), read 27 September 2026. Zero searches.
 - Added on f5: the Germany-at-home line, from ESPN team schedules `site.web.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/{481,455}/schedule?season={2018,2020,2022}` and summaries 505510, 505532, 570678, 570694, 570793, 624041, 624061, 624112, 698906, 698971, 699011; Greece's divisions from the same schedules and `…/uefa.nations/standings?season={2020,2022,2024,2026}`. Read 27 September 2026. Zero searches.
+- Added on f6: the promoted-hosts line, from the same 96 ESPN League A group summaries and `…/uefa.nations/standings?season={2022,2024}`; the Portugal-away line, from ESPN team schedules `site.web.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/{482,464}/schedule?season={2018,2020,2022}` and summaries 505513, 505524, 570655, 570730, 570748, 624159, 624077, 624033, 698958, 698982, 699020. Read 27 September 2026. Zero searches.
 
 ---
 
