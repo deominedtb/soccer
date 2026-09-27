@@ -438,8 +438,31 @@ half-time led 2, level 10, trailed 11; cards 2.83 against their hosts' 2.26
 (5.09 per match); fouls 11.70 committed and 11.39 suffered; corners 3.61 won
 and 6.00 conceded, won more in 8 of 23; shots 10.13 and 14.26; possession 44.9%.
 
+### Sides relegated from League A hosting sides that stayed in League B (context line, not a baseline — added on f7)
+From the same 90 League B rows, zero searches: every 2022–23 and 2024–25
+League B match with a home side relegated from League A the edition before
+(2022–23: Bosnia-Herzegovina, Iceland, Sweden, Ukraine; 2024–25: Austria,
+Czechia, England, Wales) and a visitor that was in League B the edition before
+(neither promoted nor relegated). 15 matches (7 and 8). **All 15 were played at
+the relegated side's own ground; no relegated side in either edition hosted at a
+neutral venue.** Israel, relegated for 2026–27, host in Hungary.
+- Home side W9 D4 L2 (2.07 points per match), 2.07 scored and 0.87 conceded (31–13); 2.93 goals per match; over 2.5 7 of 15; BTTS 8 of 15; under 1.5 goals 4 of 15; home clean sheet 6 of 15, home side failed to score 2 of 15.
+- First-half goals 0.73 scored and 0.60 conceded (1.33 per match); at half-time the home side led 5, level 7, trailed 3; final margin within one goal in 10 of 15.
+- Box score: cards 2.27 home, 2.33 visitor (4.60 per match); fouls 11.87 and 11.07; corners 5.53 won and 3.20 conceded, home side won more in 10 of 15; shots 15.13 and 9.27; home possession 58.9%; 6 penalty kicks.
+- By edition: 2022–23 home W2 D3 L2, 8–8, over 2.5 3 of 7, BTTS 4 of 7, level at half-time 4 of 7, corners 5.29/4.29; 2024–25 home W7 D1 L0, 23–5, over 2.5 4 of 8, BTTS 4 of 8, corners 5.75/2.25, possession 64.2%. Republic of Ireland were the visitor twice: 1–1 in Ukraine (2022) and 0–5 at Wembley (2024).
+
+### Sides that stayed in League B, away (context line, not a baseline — added on f7)
+The same rows from the visitor's side, every host: 44 matches. Visitors W14 D8
+L22 (1.14 points per match), 1.02 scored and 1.52 conceded (45–67); 2.55 goals
+per match; over 2.5 20 of 44; BTTS 20 of 44; under 1.5 goals 12 of 44;
+visitor failed to score 17 of 44; first-half goals 0.50 scored and 0.57
+conceded, level at half-time 19; cards 2.11 against their hosts' 2.27 (4.39
+per match); fouls 11.41 committed and 11.55 suffered; corners 3.98 won and
+5.34 conceded, won more in 13 of 44; shots 10.55 and 13.48.
+
 ## Sources for the League B lines
 - ESPN scoreboard `site.web.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates={202206,202209,202409,202410,202411,202609}`.
 - ESPN summaries `site.web.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event={id}` — 90 League B group matches and the eight 2026–27 matchday-1 League B matches; commentary of event 698976 for the Wilson penalty; read 27 September 2026.
 - ESPN standings `site.api.espn.com/apis/v2/sports/soccer/uefa.nations/standings?season={2020,2022,2024,2026}` for group membership, promotion and relegation between editions.
 - Wikipedia https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Nations_League_B (raw wikitext; format, team changes, Group 3 fixtures); logged in sources_0927.md under f4.
+- Added on f7: the relegated-hosts and stayed-away lines, from the same 90 ESPN League B group summaries (`f4` cache) and `…/uefa.nations/standings?season={2020,2022,2024}` for division membership. Read 27 September 2026. Zero searches.
