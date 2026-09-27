@@ -258,9 +258,41 @@ Serbian red); fouls 11.75 committed and 9.50 suffered; corners 3.50 won and 6.25
 conceded, won more in 1 of 4; shots 11.75 and 16.50; possession 37.1%; penalty
 kicks 0 for and 1 against.
 
+### Sides that stayed in League A hosting promoted sides (context line, not a baseline — added on f3)
+Recomputed on f3 from the same 96 ESPN League A group summaries, zero searches:
+every 2022–23 and 2024–25 League A match with a home side that was in League A
+the edition before and a visitor promoted from League B (2022–23: Austria,
+Czechia, Hungary, Wales; 2024–25: Scotland, Israel, Bosnia-Herzegovina, Serbia).
+24 matches (12 in each edition). It reproduces, from the host's side, the
+promoted-away line in baselines_0926.md (promoted visitors W4 D3 L17, 0.96
+scored and 2.04 conceded, corners 2.79/6.38, shots 8.21/18.29).
+- Home side W17 D3 L4 (2.25 points per match), 2.04 scored and 0.96 conceded (49–23); 3.00 goals per match; over 2.5 15 of 24 (62.5%); BTTS 12 of 24 (50.0%); home clean sheet 9 of 24 (the promoted visitor failed to score in 37.5%), home side failed to score 5 of 24.
+- First-half goals 0.96 scored and 0.42 conceded (1.38 per match); at half-time the home side led 12, level 7, trailed 5; final margin within one goal in 12 of 24.
+- Box score: cards 1.50 home, 1.88 visitor (3.38 per match); fouls 10.96 and 10.75; corners 6.38 won and 2.79 conceded, home side won more in 20 of 24; shots 18.29 and 8.21.
+- By edition: 2022–23 home W9 D0 L3, 19–14, over 2.5 7 of 12, BTTS 5 of 12, corners 5.25/3.42; 2024–25 home W8 D3 L1, 30–9, over 2.5 8 of 12, BTTS 7 of 12, corners 7.50/2.17.
+
+### Wales in League A, 2022–23 — their last promotion (context line, not a baseline — added on f3)
+Group A4 (Netherlands, Belgium, Poland, Wales), from ESPN's summaries and the 2022
+standings: W0 D1 L5, 6–11, fourth and relegated. Home: 1–2 Netherlands, 1–1
+Belgium, 0–1 Poland. Away: 1–2 Poland, 2–3 Netherlands, 1–2 Belgium — all three
+lost by one goal; 4–7 away; first-half goals 0.33 scored and 1.33 conceded away
+(trailing at half-time twice, level once); Wales 2.67 cards per away match, hosts
+1.00; fouls 10.67 committed and 13.67 suffered; corners 3.33 won and 5.00
+conceded; shots 11.00 and 18.67.
+
+### Denmark at home in League A, 2022–25 (context line, not a baseline — added on f3)
+Six home group matches, all at Parken: 0–1 Croatia, 2–0 Austria, 2–0 France
+(2022–23); 2–0 Switzerland, 2–0 Serbia, 1–2 Spain (2024–25). W4 D0 L2, 9–3; 2.00
+goals per match; over 2.5 1 of 6; BTTS 1 of 6; clean sheets 4 of 6; first-half
+goals 0.83 scored and 0.17 conceded, half-time led 3, level 2, trailed 1; cards
+2.50 Denmark and 2.33 visitors; fouls 11.00 and 12.00; corners 7.83 won and 4.83
+conceded, won more in 5 of 6; shots 13.67 and 9.67. The 2024–25 quarter-final
+first leg (1–0 Portugal) is outside the group-stage line.
+
 ## Sources for the League A lines
 - ESPN scoreboard `site.web.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates={202206,202209,202409,202410,202411,202609}`.
 - ESPN summaries `site.web.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event={id}` — 96 League A group matches, the eight 2026–27 matchday-1 matches and the Netherlands' 2018–19 and 2020–21 away group matches (505528, 505510, 570737, 570709, 570637), read 27 September 2026.
 - ESPN team schedules `site.web.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/{449,6757}/schedule?season={2018,2020,2022}` for both sides' earlier Nations League editions.
 - ESPN standings `site.api.espn.com/apis/v2/sports/soccer/uefa.nations/standings?season={2018,2020,2022,2024,2026}` for group membership, finishing positions and movement between divisions.
 - Wikipedia https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Nations_League_A (raw wikitext; format section, team changes, Group 2 fixtures); logged in sources_0927.md under f2.
+- Added on f3: the three League A context lines above, recomputed from the same 96 ESPN League A group summaries (scoreboards `…/uefa.nations/scoreboard?dates={202206,202209,202409,202410,202411}`, group membership from `…/uefa.nations/standings?season={2022,2024}`), read 27 September 2026. Zero searches.
