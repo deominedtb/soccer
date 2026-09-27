@@ -289,6 +289,26 @@ goals 0.83 scored and 0.17 conceded, half-time led 3, level 2, trailed 1; cards
 conceded, won more in 5 of 6; shots 13.67 and 9.67. The 2024–25 quarter-final
 first leg (1–0 Portugal) is outside the group-stage line.
 
+### Germany at home in League A, all editions (context line, not a baseline — added on f5)
+Every Germany League A group match at home, 11 in four editions, from ESPN's
+summaries, zero searches (2018–19 A1: France at the Allianz Arena, Netherlands
+in Gelsenkirchen; 2020–21 A4: Spain in Stuttgart, Switzerland in Cologne,
+Ukraine in Leipzig; 2022–23 A3: England in Munich, Italy in Mönchengladbach,
+Hungary in Leipzig; 2024–25 A3: Hungary in Düsseldorf, Netherlands in Munich,
+Bosnia-Herzegovina in Freiburg). W5 D5 L1, 28–11 (2.55 scored, 1.00 conceded);
+3.55 goals per match; over 2.5 6 of 11; BTTS 6 of 11; Germany clean sheet 4 of
+11, failed to score 2 of 11 (0–0 France 2018, 0–1 Hungary 2022, the one
+defeat); first-half goals 1.00 scored and 0.36 conceded, half-time led 5, level
+4 (all four 0–0), trailed 2; won by two or more 4 (5–2 Italy, 5–0 Hungary, 7–0
+Bosnia-Herzegovina, 3–1 Ukraine), final margin within one goal in 7 of 11.
+Box score: cards 1.55 Germany and 1.09 visitors (2.64 per match); fouls 10.55
+committed and 10.18 suffered; corners 5.45 won and 3.18 conceded, won more in 9
+of 11; shots 15.45 and 9.00; possession 58.6%. No promoted visitor appears in
+the eleven. The 2024–25 knockout matches in Germany (3–3 Italy in Dortmund,
+1–2 Portugal in Munich, 0–2 France in Stuttgart) are outside the group line.
+Greece's 2026–27 edition is their first in League A (League C in 2018–19,
+2020–21 and 2022–23; League B in 2024–25; ESPN standings).
+
 ## Sources for the League A lines
 - ESPN scoreboard `site.web.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates={202206,202209,202409,202410,202411,202609}`.
 - ESPN summaries `site.web.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event={id}` — 96 League A group matches, the eight 2026–27 matchday-1 matches and the Netherlands' 2018–19 and 2020–21 away group matches (505528, 505510, 570737, 570709, 570637), read 27 September 2026.
@@ -296,6 +316,7 @@ first leg (1–0 Portugal) is outside the group-stage line.
 - ESPN standings `site.api.espn.com/apis/v2/sports/soccer/uefa.nations/standings?season={2018,2020,2022,2024,2026}` for group membership, finishing positions and movement between divisions.
 - Wikipedia https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Nations_League_A (raw wikitext; format section, team changes, Group 2 fixtures); logged in sources_0927.md under f2.
 - Added on f3: the three League A context lines above, recomputed from the same 96 ESPN League A group summaries (scoreboards `…/uefa.nations/scoreboard?dates={202206,202209,202409,202410,202411}`, group membership from `…/uefa.nations/standings?season={2022,2024}`), read 27 September 2026. Zero searches.
+- Added on f5: the Germany-at-home line, from ESPN team schedules `site.web.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/{481,455}/schedule?season={2018,2020,2022}` and summaries 505510, 505532, 570678, 570694, 570793, 624041, 624061, 624112, 698906, 698971, 699011; Greece's divisions from the same schedules and `…/uefa.nations/standings?season={2020,2022,2024,2026}`. Read 27 September 2026. Zero searches.
 
 ---
 
