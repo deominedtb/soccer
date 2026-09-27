@@ -1,0 +1,2937 @@
+{
+ "slate": "0919",
+ "date": "2026-09-19",
+ "settled_at": "2026-09-24T11:57+00:00",
+ "fixtures": [
+  {
+   "card": {
+    "fid": "f1",
+    "title": "Tottenham Hotspur \u2013 Aston Villa",
+    "home": "Tottenham Hotspur",
+    "away": "Aston Villa",
+    "competition": "Premier League",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 the rates are real, the sample is four matches each",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "good",
+      "tag": "Well-suited \u2014 the clearest structural signal on the card",
+      "short": "Well-suited"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "Split \u2014 the scoring side of each is well evidenced, the level is not",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "Split \u2014 1H goals OK, 1H result Dangerous",
+      "short": "Split"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 referee well documented, club rates pull apart",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 asymmetric, and the mechanism is visible",
+      "short": "OK"
+     }
+    },
+    "tier": "T2"
+   },
+   "match": {
+    "id": "401879269",
+    "slug": "eng.1",
+    "utc": "2026-09-19T11:30Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "367",
+    "away_id": "362",
+    "home": "Tottenham Hotspur",
+    "away": "Aston Villa",
+    "hg": 2,
+    "ag": 3,
+    "h1h": 0,
+    "h1a": 1,
+    "ch": 1,
+    "ca": 2,
+    "kh": 11.0,
+    "ka": 1.0,
+    "fh": 9.0,
+    "fa": 13.0
+   },
+   "match_score": 1.0,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "over",
+     "d": 0.058,
+     "hit": true,
+     "prior": 0.5365853658536586,
+     "line": 2.5,
+     "actual": 5,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "btts",
+     "lean": "yes",
+     "d": 0.063,
+     "hit": true,
+     "prior": 0.5121951219512195,
+     "line": null,
+     "actual": "yes",
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "team",
+     "lean": "home under",
+     "d": -0.197,
+     "hit": false,
+     "prior": 0.5365853658536586,
+     "line": 1.43,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "team",
+     "lean": "away over",
+     "d": 0.224,
+     "hit": true,
+     "prior": 0.4634146341463415,
+     "line": 1.43,
+     "actual": 3,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals over",
+     "d": 0.095,
+     "hit": false,
+     "prior": 0.3902439024390244,
+     "line": 1.27,
+     "actual": 1,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "disc",
+     "lean": "cards over",
+     "d": 0.405,
+     "hit": false,
+     "prior": 0.5609756097560976,
+     "line": 3.9,
+     "actual": 3,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "corners",
+     "lean": "corners over",
+     "d": 0.479,
+     "hit": true,
+     "prior": 0.4146341463414634,
+     "line": 9.29,
+     "actual": 12.0,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "1x2",
+     "lean": "away",
+     "d": -0.421,
+     "hit": true,
+     "prior": 0.3170731707317073,
+     "line": null,
+     "actual": "2-3",
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "ah",
+     "lean": "away DNB",
+     "d": -0.421,
+     "hit": true,
+     "prior": 0.48148148148148145,
+     "line": 0,
+     "actual": "2-3",
+     "level": "bad",
+     "verdict": "Dangerous"
+    }
+   ],
+   "info": {
+    "home_window": "25/26 eng.1 (38)",
+    "away_window": "25/26 eng.1 (38)",
+    "prior": "26/27 to date (41)"
+   }
+  },
+  {
+   "card": {
+    "fid": "f2",
+    "title": "CA Osasuna \u2013 Rayo Vallecano",
+    "home": "CA Osasuna",
+    "away": "Rayo Vallecano",
+    "competition": "LaLiga",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "Split \u2014 well evidenced on Rayo, contradictory on Osasuna",
+      "short": "Split"
+     },
+     "btts": {
+      "level": "good",
+      "tag": "Well-suited \u2014 best-evidenced family here",
+      "short": "Well-suited"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "Split \u2014 asymmetric, and the asymmetry is venue-shaped",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 1H goals evidenced, 1H result not",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "good",
+      "tag": "Well-suited on the official, thin on the clubs \u2014 and the two disagree",
+      "short": "Well-suited"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 stable rates, and the gap holds in both seasons",
+      "short": "OK"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401882860",
+    "slug": "esp.1",
+    "utc": "2026-09-19T12:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "97",
+    "away_id": "101",
+    "home": "Osasuna",
+    "away": "Rayo Vallecano",
+    "hg": 1,
+    "ag": 1,
+    "h1h": 1,
+    "h1a": 0,
+    "ch": 3,
+    "ca": 2,
+    "kh": 4.0,
+    "ka": 4.0,
+    "fh": 21.0,
+    "fa": 13.0
+   },
+   "match_score": 1.0,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "over",
+     "d": 0.2,
+     "hit": false,
+     "prior": 0.5666666666666667,
+     "line": 2.5,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "btts",
+     "lean": "yes",
+     "d": 0.2,
+     "hit": true,
+     "prior": 0.5666666666666667,
+     "line": null,
+     "actual": "yes",
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "team",
+     "lean": "home over",
+     "d": 0.267,
+     "hit": false,
+     "prior": 0.4166666666666667,
+     "line": 1.53,
+     "actual": 1,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "team",
+     "lean": "away over",
+     "d": 0.6,
+     "hit": false,
+     "prior": 0.4166666666666667,
+     "line": 1.53,
+     "actual": 1,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals over",
+     "d": 0.467,
+     "hit": false,
+     "prior": 0.48333333333333334,
+     "line": 1.43,
+     "actual": 1,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "disc",
+     "lean": "cards over",
+     "d": 0.7,
+     "hit": true,
+     "prior": 0.5333333333333333,
+     "line": 4.47,
+     "actual": 5,
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "corners",
+     "lean": "corners under",
+     "d": -0.1,
+     "hit": true,
+     "prior": 0.4833333333333333,
+     "line": 9.88,
+     "actual": 8.0,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "1x2",
+     "lean": "away",
+     "d": -0.333,
+     "hit": false,
+     "prior": 0.31666666666666665,
+     "line": null,
+     "actual": "1-1",
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "ah",
+     "lean": "away DNB",
+     "d": -0.333,
+     "hit": null,
+     "prior": 0.41304347826086957,
+     "line": 0,
+     "actual": "1-1",
+     "level": "bad",
+     "verdict": "Dangerous"
+    }
+   ],
+   "info": {
+    "home_window": "26/27 esp.1 (6)",
+    "away_window": "26/27 esp.1 (6)",
+    "prior": "26/27 to date (60)"
+   }
+  },
+  {
+   "card": {
+    "fid": "f4",
+    "title": "Udinese \u2013 Cagliari",
+    "home": "Udinese",
+    "away": "Cagliari",
+    "competition": "Serie A",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "Split \u2014 well evidenced on Udinese, contradictory on Cagliari",
+      "short": "Split"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "Split \u2014 one side at 100%, the other at 25%",
+      "short": "Split"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "Split \u2014 Udinese readable, Cagliari not",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 1H goals evidenced, 1H result not",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 referee documented, and everything points low",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "good",
+      "tag": "Well-suited \u2014 the most extreme and best-mechanised number on the card",
+      "short": "Well-suited"
+     }
+    },
+    "tier": "T2"
+   },
+   "match": {
+    "id": "401874964",
+    "slug": "ita.1",
+    "utc": "2026-09-19T13:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "118",
+    "away_id": "2925",
+    "home": "Udinese",
+    "away": "Cagliari",
+    "hg": 0,
+    "ag": 1,
+    "h1h": 0,
+    "h1a": 0,
+    "ch": 2,
+    "ca": 0,
+    "kh": 16.0,
+    "ka": 1.0,
+    "fh": 10.0,
+    "fa": 8.0
+   },
+   "match_score": 1.0,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "over",
+     "d": 0.032,
+     "hit": false,
+     "prior": 0.5853658536585366,
+     "line": 2.5,
+     "actual": 1,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "btts",
+     "lean": "yes",
+     "d": 0.042,
+     "hit": false,
+     "prior": 0.6097560975609756,
+     "line": null,
+     "actual": "no",
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "team",
+     "lean": "home over",
+     "d": 0.153,
+     "hit": false,
+     "prior": 0.4634146341463415,
+     "line": 1.51,
+     "actual": 0,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "team",
+     "lean": "away under",
+     "d": -0.111,
+     "hit": true,
+     "prior": 0.5365853658536586,
+     "line": 1.51,
+     "actual": 1,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals under",
+     "d": -0.058,
+     "hit": true,
+     "prior": 0.6829268292682926,
+     "line": 1.2,
+     "actual": 0,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "disc",
+     "lean": "cards over",
+     "d": 0.237,
+     "hit": false,
+     "prior": 0.4634146341463415,
+     "line": 3.12,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "corners",
+     "lean": "corners over",
+     "d": 0.568,
+     "hit": true,
+     "prior": 0.4634146341463415,
+     "line": 9.54,
+     "actual": 17.0,
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "1x2",
+     "lean": "home",
+     "d": 0.263,
+     "hit": false,
+     "prior": 0.43902439024390244,
+     "line": null,
+     "actual": "0-1",
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "ah",
+     "lean": "home DNB",
+     "d": 0.263,
+     "hit": false,
+     "prior": 0.5142857142857143,
+     "line": 0,
+     "actual": "0-1",
+     "level": "bad",
+     "verdict": "Dangerous"
+    }
+   ],
+   "info": {
+    "home_window": "25/26 ita.1 (38)",
+    "away_window": "25/26 ita.1 (38)",
+    "prior": "26/27 to date (41)"
+   }
+  },
+  {
+   "card": {
+    "fid": "f9",
+    "title": "Brighton & Hove Albion \u2013 Arsenal",
+    "home": "Brighton & Hove Albion",
+    "away": "Arsenal",
+    "competition": "Premier League",
+    "rows": {
+     "1x2": {
+      "level": "ok",
+      "tag": "OK \u2014 asymmetric evidence, unusually good on one side",
+      "short": "OK"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "Split \u2014 Brighton\u2019s matches are loud, Arsenal\u2019s are not",
+      "short": "Split"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 both sides score, one side rarely concedes",
+      "short": "OK"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "Split \u2014 Arsenal readable at two seasons\u2019 depth, Brighton at four matches",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 1H goals well evidenced on both sides",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 deep referee record, but it points two ways",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "good",
+      "tag": "Well-suited \u2014 both rates stable across two seasons, and the mechanisms differ",
+      "short": "Well-suited"
+     }
+    },
+    "tier": "T2"
+   },
+   "match": {
+    "id": "401879274",
+    "slug": "eng.1",
+    "utc": "2026-09-19T14:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "331",
+    "away_id": "359",
+    "home": "Brighton & Hove Albion",
+    "away": "Arsenal",
+    "hg": 3,
+    "ag": 0,
+    "h1h": 2,
+    "h1a": 0,
+    "ch": 4,
+    "ca": 1,
+    "kh": 5.0,
+    "ka": 6.0,
+    "fh": 13.0,
+    "fa": 11.0
+   },
+   "match_score": 1.0,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "under",
+     "d": -0.074,
+     "hit": false,
+     "prior": 0.45238095238095233,
+     "line": 2.5,
+     "actual": 3,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "btts",
+     "lean": "no",
+     "d": -0.095,
+     "hit": true,
+     "prior": 0.47619047619047616,
+     "line": null,
+     "actual": "no",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "team",
+     "lean": "home under",
+     "d": -0.671,
+     "hit": false,
+     "prior": 0.5238095238095238,
+     "line": 1.45,
+     "actual": 3,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "team",
+     "lean": "away over",
+     "d": 0.329,
+     "hit": false,
+     "prior": 0.47619047619047616,
+     "line": 1.45,
+     "actual": 0,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals under",
+     "d": -0.142,
+     "hit": false,
+     "prior": 0.6190476190476191,
+     "line": 1.26,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "disc",
+     "lean": "cards under",
+     "d": -0.253,
+     "hit": false,
+     "prior": 0.45238095238095233,
+     "line": 3.88,
+     "actual": 5,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "corners",
+     "lean": "corners under",
+     "d": -1.258,
+     "hit": false,
+     "prior": 0.5714285714285714,
+     "line": 9.36,
+     "actual": 11.0,
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "1x2",
+     "lean": "away",
+     "d": -1.0,
+     "hit": false,
+     "prior": 0.3333333333333333,
+     "line": null,
+     "actual": "3-0",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "ah",
+     "lean": "away DNB",
+     "d": -1.0,
+     "hit": false,
+     "prior": 0.5,
+     "line": 0,
+     "actual": "3-0",
+     "level": "bad",
+     "verdict": "Dangerous"
+    }
+   ],
+   "info": {
+    "home_window": "25/26 eng.1 (38)",
+    "away_window": "25/26 eng.1 (38)",
+    "prior": "26/27 to date (42)"
+   }
+  },
+  {
+   "card": {
+    "fid": "f10",
+    "title": "Everton \u2013 Ipswich Town",
+    "home": "Everton",
+    "away": "Ipswich Town",
+    "competition": "Premier League",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "Split \u2014 the two clubs point hard in opposite directions",
+      "short": "Split"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 the away side is well evidenced, the home side is not",
+      "short": "OK"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "Split \u2014 neither side\u2019s scoring rate has a usable history",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "Split \u2014 1H goals readable, 1H result not",
+      "short": "Split"
+     },
+     "disc": {
+      "level": "good",
+      "tag": "Well-suited \u2014 the deepest and most one-directional evidence on the card",
+      "short": "Well-suited"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 Everton stable, Ipswich\u2019s rate has inverted",
+      "short": "OK"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401878778",
+    "slug": "eng.1",
+    "utc": "2026-09-19T14:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "368",
+    "away_id": "373",
+    "home": "Everton",
+    "away": "Ipswich Town",
+    "hg": 1,
+    "ag": 0,
+    "h1h": 1,
+    "h1a": 0,
+    "ch": 2,
+    "ca": 2,
+    "kh": 4.0,
+    "ka": 4.0,
+    "fh": 6.0,
+    "fa": 12.0
+   },
+   "match_score": 1.0,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "under",
+     "d": -0.084,
+     "hit": true,
+     "prior": 0.45238095238095233,
+     "line": 2.5,
+     "actual": 1,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "btts",
+     "lean": "no",
+     "d": -0.061,
+     "hit": true,
+     "prior": 0.47619047619047616,
+     "line": null,
+     "actual": "no",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "team",
+     "lean": "home under",
+     "d": -0.412,
+     "hit": true,
+     "prior": 0.5238095238095238,
+     "line": 1.45,
+     "actual": 1,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "team",
+     "lean": "away over",
+     "d": 0.385,
+     "hit": false,
+     "prior": 0.47619047619047616,
+     "line": 1.45,
+     "actual": 0,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals under",
+     "d": -0.126,
+     "hit": true,
+     "prior": 0.6190476190476191,
+     "line": 1.26,
+     "actual": 1,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "disc",
+     "lean": "cards over",
+     "d": 0.281,
+     "hit": true,
+     "prior": 0.5476190476190477,
+     "line": 3.88,
+     "actual": 4,
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "corners",
+     "lean": "corners under",
+     "d": -1.163,
+     "hit": true,
+     "prior": 0.5714285714285714,
+     "line": 9.36,
+     "actual": 8.0,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "1x2",
+     "lean": "away",
+     "d": -0.796,
+     "hit": false,
+     "prior": 0.3333333333333333,
+     "line": null,
+     "actual": "1-0",
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "ah",
+     "lean": "away DNB",
+     "d": -0.796,
+     "hit": false,
+     "prior": 0.5,
+     "line": 0,
+     "actual": "1-0",
+     "level": "bad",
+     "verdict": "Dangerous"
+    }
+   ],
+   "info": {
+    "home_window": "25/26 eng.1 (38)",
+    "away_window": "25/26 eng.2 (46)",
+    "prior": "26/27 to date (42)"
+   }
+  },
+  {
+   "card": {
+    "fid": "f11",
+    "title": "Newcastle United \u2013 Hull City",
+    "home": "Newcastle United",
+    "away": "Hull City",
+    "competition": "Premier League",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "Split \u2014 two well-evidenced readings pointing opposite ways",
+      "short": "Split"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "Split \u2014 the home side is settled, the away side is not",
+      "short": "Split"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "Split \u2014 asymmetric, and the asymmetry is about who left",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 1H goals well separated, 1H result not readable",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 the official is not identifiable",
+      "short": "Dangerous"
+     },
+     "corners": {
+      "level": "good",
+      "tag": "Well-suited \u2014 the most mechanised asymmetry on the card",
+      "short": "Well-suited"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401879271",
+    "slug": "eng.1",
+    "utc": "2026-09-19T14:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "361",
+    "away_id": "306",
+    "home": "Newcastle United",
+    "away": "Hull City",
+    "hg": 2,
+    "ag": 1,
+    "h1h": 2,
+    "h1a": 0,
+    "ch": 1,
+    "ca": 4,
+    "kh": 4.0,
+    "ka": 7.0,
+    "fh": 4.0,
+    "fa": 10.0
+   },
+   "match_score": 1.0,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "over",
+     "d": 0.191,
+     "hit": true,
+     "prior": 0.5476190476190477,
+     "line": 2.5,
+     "actual": 3,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "btts",
+     "lean": "yes",
+     "d": 0.144,
+     "hit": true,
+     "prior": 0.5238095238095238,
+     "line": null,
+     "actual": "yes",
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "team",
+     "lean": "home over",
+     "d": 0.071,
+     "hit": true,
+     "prior": 0.47619047619047616,
+     "line": 1.45,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "team",
+     "lean": "away over",
+     "d": 0.267,
+     "hit": false,
+     "prior": 0.47619047619047616,
+     "line": 1.45,
+     "actual": 1,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals over",
+     "d": 0.363,
+     "hit": true,
+     "prior": 0.38095238095238093,
+     "line": 1.26,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "disc",
+     "lean": "cards over",
+     "d": 0.355,
+     "hit": true,
+     "prior": 0.5476190476190477,
+     "line": 3.88,
+     "actual": 5,
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "corners",
+     "lean": "corners over",
+     "d": 0.981,
+     "hit": true,
+     "prior": 0.42857142857142855,
+     "line": 9.36,
+     "actual": 11.0,
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "1x2",
+     "lean": "away",
+     "d": -0.195,
+     "hit": false,
+     "prior": 0.3333333333333333,
+     "line": null,
+     "actual": "2-1",
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "ah",
+     "lean": "away DNB",
+     "d": -0.195,
+     "hit": false,
+     "prior": 0.5,
+     "line": 0,
+     "actual": "2-1",
+     "level": "bad",
+     "verdict": "Dangerous"
+    }
+   ],
+   "info": {
+    "home_window": "25/26 eng.1 (38)",
+    "away_window": "25/26 eng.2 (49)",
+    "prior": "26/27 to date (42)"
+   }
+  },
+  {
+   "card": {
+    "fid": "f12",
+    "title": "Athletic Club \u2013 Deportivo Alav\u00e9s",
+    "home": "Athletic Club",
+    "away": "Deportivo Alav\u00e9s",
+    "competition": "LaLiga",
+    "rows": {
+     "1x2": {
+      "level": "ok",
+      "tag": "OK \u2014 asymmetric, and the asymmetry is unusually clean",
+      "short": "OK"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 both clubs below the divisional line, and both xG lines argue the other way",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 last season is emphatic, this season contradicts it",
+      "short": "OK"
+     },
+     "team": {
+      "level": "good",
+      "tag": "Well-suited \u2014 both attacks are improving and the chance data says so",
+      "short": "Well-suited"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 1H goals well below the divisional line on both sides",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "good",
+      "tag": "Well-suited \u2014 three deep records that point the same way, with one caveat",
+      "short": "Well-suited"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 Alav\u00e9s stable, Athletic\u2019s conceded figure has moved sharply",
+      "short": "OK"
+     }
+    },
+    "tier": "T2 \u2192 T1 (Phase 2 promotion)"
+   },
+   "match": {
+    "id": "401882866",
+    "slug": "esp.1",
+    "utc": "2026-09-19T14:15Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "93",
+    "away_id": "96",
+    "home": "Athletic Club",
+    "away": "Alav\u00e9s",
+    "hg": 0,
+    "ag": 0,
+    "h1h": 0,
+    "h1a": 0,
+    "ch": 2,
+    "ca": 0,
+    "kh": 5.0,
+    "ka": 1.0,
+    "fh": 14.0,
+    "fa": 13.0
+   },
+   "match_score": 0.9,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "under",
+     "d": -0.215,
+     "hit": true,
+     "prior": 0.4426229508196722,
+     "line": 2.5,
+     "actual": 0,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "btts",
+     "lean": "no",
+     "d": -0.248,
+     "hit": true,
+     "prior": 0.42622950819672134,
+     "line": null,
+     "actual": "no",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "team",
+     "lean": "home under",
+     "d": -0.649,
+     "hit": true,
+     "prior": 0.5901639344262295,
+     "line": 1.52,
+     "actual": 0,
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "team",
+     "lean": "away under",
+     "d": -0.016,
+     "hit": true,
+     "prior": 0.5901639344262295,
+     "line": 1.52,
+     "actual": 0,
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals under",
+     "d": -1.219,
+     "hit": true,
+     "prior": 0.5245901639344263,
+     "line": 1.43,
+     "actual": 0,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "disc",
+     "lean": "cards over",
+     "d": 0.058,
+     "hit": false,
+     "prior": 0.5409836065573771,
+     "line": 4.48,
+     "actual": 2,
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "corners",
+     "lean": "corners over",
+     "d": 2.462,
+     "hit": false,
+     "prior": 0.5081967213114754,
+     "line": 9.85,
+     "actual": 6.0,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "1x2",
+     "lean": "away",
+     "d": -0.633,
+     "hit": false,
+     "prior": 0.3114754098360656,
+     "line": null,
+     "actual": "0-0",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "ah",
+     "lean": "away DNB",
+     "d": -0.633,
+     "hit": null,
+     "prior": 0.4130434782608696,
+     "line": 0,
+     "actual": "0-0",
+     "level": "bad",
+     "verdict": "Dangerous"
+    }
+   ],
+   "info": {
+    "home_window": "26/27 esp.1 (5)",
+    "away_window": "26/27 esp.1 (6)",
+    "prior": "26/27 to date (61)"
+   }
+  },
+  {
+   "card": {
+    "fid": "f15",
+    "title": "Celta Vigo \u2013 Racing Santander",
+    "home": "Celta Vigo",
+    "away": "Racing Santander",
+    "competition": "LaLiga",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "Split \u2014 the widest disagreement on this board",
+      "short": "Split"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "Split \u2014 Racing well evidenced, Celta\u2019s attack is the unknown",
+      "short": "Split"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "Split \u2014 one side\u2019s rate is well evidenced, the other\u2019s is collapsing",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 1H goals sharply separated, 1H result not readable",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 deep referee record, but the penalty rate is the live number",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "good",
+      "tag": "Well-suited \u2014 the most extreme and best-corroborated figure on this board",
+      "short": "Well-suited"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401882864",
+    "slug": "esp.1",
+    "utc": "2026-09-19T16:30Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "85",
+    "away_id": "87",
+    "home": "Celta Vigo",
+    "away": "Racing Santander",
+    "hg": 5,
+    "ag": 0,
+    "h1h": 2,
+    "h1a": 0,
+    "ch": 2,
+    "ca": 5,
+    "kh": 3.0,
+    "ka": 3.0,
+    "fh": 13.0,
+    "fa": 11.0
+   },
+   "match_score": 1.0,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "under",
+     "d": -0.097,
+     "hit": false,
+     "prior": 0.4516129032258065,
+     "line": 2.5,
+     "actual": 5,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "btts",
+     "lean": "yes",
+     "d": 0.204,
+     "hit": false,
+     "prior": 0.5645161290322581,
+     "line": null,
+     "actual": "no",
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "team",
+     "lean": "home over",
+     "d": 0.167,
+     "hit": true,
+     "prior": 0.4032258064516129,
+     "line": 1.5,
+     "actual": 5,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "team",
+     "lean": "away under",
+     "d": -0.167,
+     "hit": true,
+     "prior": 0.5967741935483871,
+     "line": 1.5,
+     "actual": 0,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals over",
+     "d": 1.027,
+     "hit": true,
+     "prior": 0.46774193548387094,
+     "line": 1.4,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "disc",
+     "lean": "cards under",
+     "d": -0.435,
+     "hit": false,
+     "prior": 0.467741935483871,
+     "line": 4.44,
+     "actual": 7,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "corners",
+     "lean": "corners over",
+     "d": 3.419,
+     "hit": false,
+     "prior": 0.5,
+     "line": 9.79,
+     "actual": 6.0,
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "1x2",
+     "lean": "home",
+     "d": 0.333,
+     "hit": true,
+     "prior": 0.43548387096774194,
+     "line": null,
+     "actual": "5-0",
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "ah",
+     "lean": "home DNB",
+     "d": 0.333,
+     "hit": true,
+     "prior": 0.5869565217391304,
+     "line": 0,
+     "actual": "5-0",
+     "level": "bad",
+     "verdict": "Dangerous"
+    }
+   ],
+   "info": {
+    "home_window": "26/27 esp.1 (6)",
+    "away_window": "26/27 esp.1 (6)",
+    "prior": "26/27 to date (62)"
+   }
+  },
+  {
+   "card": {
+    "fid": "f16",
+    "title": "Nottingham Forest \u2013 Coventry City",
+    "home": "Nottingham Forest",
+    "away": "Coventry City",
+    "competition": "Premier League",
+    "rows": {
+     "1x2": {
+      "level": "ok",
+      "tag": "OK \u2014 asymmetric, and both sides\u2019 evidence is unusually legible",
+      "short": "OK"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 both clubs at 50%, and the components disagree",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "good",
+      "tag": "Well-suited \u2014 the away side\u2019s record is complete and mechanically explained",
+      "short": "Well-suited"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "Split \u2014 Forest\u2019s creation is real, their conversion is not established",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 both first halves are nearly empty, and both figures are extreme",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 referee well documented, and one club has moved sharply",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "Split \u2014 Coventry\u2019s rate survived the step up, Forest\u2019s halved",
+      "short": "Split"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401879270",
+    "slug": "eng.1",
+    "utc": "2026-09-19T16:30Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "393",
+    "away_id": "388",
+    "home": "Nottingham Forest",
+    "away": "Coventry City",
+    "hg": 0,
+    "ag": 1,
+    "h1h": 0,
+    "h1a": 0,
+    "ch": 2,
+    "ca": 0,
+    "kh": 6.0,
+    "ka": 2.0,
+    "fh": 12.0,
+    "fa": 10.0
+   },
+   "match_score": 1.0,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "over",
+     "d": 0.104,
+     "hit": false,
+     "prior": 0.5555555555555556,
+     "line": 2.5,
+     "actual": 1,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "btts",
+     "lean": "no",
+     "d": -0.065,
+     "hit": true,
+     "prior": 0.48888888888888893,
+     "line": null,
+     "actual": "no",
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "team",
+     "lean": "home under",
+     "d": -0.429,
+     "hit": true,
+     "prior": 0.5333333333333333,
+     "line": 1.43,
+     "actual": 0,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "team",
+     "lean": "away over",
+     "d": 0.78,
+     "hit": false,
+     "prior": 0.4666666666666667,
+     "line": 1.43,
+     "actual": 1,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals over",
+     "d": 0.105,
+     "hit": false,
+     "prior": 0.4,
+     "line": 1.29,
+     "actual": 0,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "disc",
+     "lean": "cards under",
+     "d": -0.658,
+     "hit": true,
+     "prior": 0.4222222222222223,
+     "line": 3.93,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "corners",
+     "lean": "corners under",
+     "d": -0.728,
+     "hit": true,
+     "prior": 0.5555555555555556,
+     "line": 9.4,
+     "actual": 8.0,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "1x2",
+     "lean": "away",
+     "d": -1.209,
+     "hit": true,
+     "prior": 0.3111111111111111,
+     "line": null,
+     "actual": "0-1",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "ah",
+     "lean": "away DNB",
+     "d": -1.209,
+     "hit": true,
+     "prior": 0.45161290322580644,
+     "line": 0,
+     "actual": "0-1",
+     "level": "bad",
+     "verdict": "Dangerous"
+    }
+   ],
+   "info": {
+    "home_window": "25/26 eng.1 (38)",
+    "away_window": "25/26 eng.2 (46)",
+    "prior": "26/27 to date (45)"
+   }
+  },
+  {
+   "card": {
+    "fid": "f17",
+    "title": "VfB Stuttgart \u2013 Borussia Dortmund",
+    "home": "VfB Stuttgart",
+    "away": "Borussia Dortmund",
+    "competition": "Bundesliga",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "good",
+      "tag": "Well-suited \u2014 every input large and pointing the same way",
+      "short": "Well-suited"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "Split \u2014 the home side is at 100%, the away side keeps clean sheets",
+      "short": "Split"
+     },
+     "team": {
+      "level": "good",
+      "tag": "Well-suited \u2014 four rates across two seasons that barely move",
+      "short": "Well-suited"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 last season is deep, this season contradicts it",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 everything points low, and the referee\u2019s history here does not",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "Split \u2014 Dortmund stable, Stuttgart\u2019s conceded figure has jumped",
+      "short": "Split"
+     }
+    },
+    "tier": "T2"
+   },
+   "match": {
+    "id": "401884789",
+    "slug": "ger.1",
+    "utc": "2026-09-19T16:30Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "134",
+    "away_id": "124",
+    "home": "VfB Stuttgart",
+    "away": "Borussia Dortmund",
+    "hg": 0,
+    "ag": 1,
+    "h1h": 0,
+    "h1a": 0,
+    "ch": 2,
+    "ca": 5,
+    "kh": 6.0,
+    "ka": 2.0,
+    "fh": 9.0,
+    "fa": 14.0
+   },
+   "match_score": 1.0,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "over",
+     "d": 0.02,
+     "hit": false,
+     "prior": 0.84375,
+     "line": 2.5,
+     "actual": 1,
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "btts",
+     "lean": "no",
+     "d": -0.118,
+     "hit": true,
+     "prior": 0.375,
+     "line": null,
+     "actual": "no",
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "team",
+     "lean": "home under",
+     "d": -0.147,
+     "hit": true,
+     "prior": 0.609375,
+     "line": 2.03,
+     "actual": 0,
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "team",
+     "lean": "away over",
+     "d": 0.265,
+     "hit": false,
+     "prior": 0.390625,
+     "line": 2.03,
+     "actual": 1,
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals over",
+     "d": 0.023,
+     "hit": false,
+     "prior": 0.40625,
+     "line": 1.5,
+     "actual": 0,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "disc",
+     "lean": "cards over",
+     "d": 0.007,
+     "hit": true,
+     "prior": 0.5625,
+     "line": 3.56,
+     "actual": 7,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "corners",
+     "lean": "corners under",
+     "d": -0.026,
+     "hit": true,
+     "prior": 0.4375,
+     "line": 10.94,
+     "actual": 8.0,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "1x2",
+     "lean": "away",
+     "d": -0.412,
+     "hit": true,
+     "prior": 0.28125,
+     "line": null,
+     "actual": "0-1",
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "ah",
+     "lean": "away DNB",
+     "d": -0.412,
+     "hit": true,
+     "prior": 0.34615384615384615,
+     "line": 0,
+     "actual": "0-1",
+     "level": "bad",
+     "verdict": "Dangerous"
+    }
+   ],
+   "info": {
+    "home_window": "25/26 ger.1 (34)",
+    "away_window": "25/26 ger.1 (34)",
+    "prior": "26/27 to date (32)"
+   }
+  },
+  {
+   "card": {
+    "fid": "f18",
+    "title": "Venezia \u2013 Lazio",
+    "home": "Venezia",
+    "away": "Lazio",
+    "competition": "Serie A",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "Split \u2014 identical current rates built from opposite histories",
+      "short": "Split"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "Split \u2014 Venezia cannot keep a clean sheet, Lazio could not score",
+      "short": "Split"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "Split \u2014 Lazio\u2019s rise is evidenced, Venezia\u2019s fall is a change of level",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 one striking figure, on a four-match base",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 deep referee record, and the red-card rate is the live number",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 both low, and Venezia\u2019s is oddly low for a side with 59% of the ball",
+      "short": "OK"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401874956",
+    "slug": "ita.1",
+    "utc": "2026-09-19T18:45Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "17530",
+    "away_id": "112",
+    "home": "Venezia",
+    "away": "Lazio",
+    "hg": 0,
+    "ag": 2,
+    "h1h": 0,
+    "h1a": 0,
+    "ch": 6,
+    "ca": 0,
+    "kh": 7.0,
+    "ka": 2.0,
+    "fh": 14.0,
+    "fa": 8.0
+   },
+   "match_score": 1.0,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "under",
+     "d": -0.045,
+     "hit": true,
+     "prior": 0.43181818181818177,
+     "line": 2.5,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "btts",
+     "lean": "no",
+     "d": -0.144,
+     "hit": true,
+     "prior": 0.38636363636363635,
+     "line": null,
+     "actual": "no",
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "team",
+     "lean": "home over",
+     "d": 0.595,
+     "hit": false,
+     "prior": 0.45454545454545453,
+     "line": 1.49,
+     "actual": 0,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "team",
+     "lean": "away under",
+     "d": -0.589,
+     "hit": false,
+     "prior": 0.5454545454545454,
+     "line": 1.49,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals over",
+     "d": 0.067,
+     "hit": false,
+     "prior": 0.3181818181818182,
+     "line": 1.18,
+     "actual": 0,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "disc",
+     "lean": "cards under",
+     "d": -0.098,
+     "hit": false,
+     "prior": 0.5454545454545454,
+     "line": 3.16,
+     "actual": 6,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "corners",
+     "lean": "corners under",
+     "d": -1.215,
+     "hit": true,
+     "prior": 0.5454545454545454,
+     "line": 9.57,
+     "actual": 9.0,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "1x2",
+     "lean": "home",
+     "d": 1.184,
+     "hit": false,
+     "prior": 0.4090909090909091,
+     "line": null,
+     "actual": "0-2",
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "ah",
+     "lean": "home DNB",
+     "d": 1.184,
+     "hit": false,
+     "prior": 0.5,
+     "line": 0,
+     "actual": "0-2",
+     "level": "bad",
+     "verdict": "Dangerous"
+    }
+   ],
+   "info": {
+    "home_window": "25/26 ita.2 (38)",
+    "away_window": "25/26 ita.1 (38)",
+    "prior": "26/27 to date (44)"
+   }
+  },
+  {
+   "card": {
+    "fid": "f19",
+    "title": "Angers SCO \u2013 ESTAC Troyes",
+    "home": "Angers SCO",
+    "away": "ESTAC Troyes",
+    "competition": "Ligue 1",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 identical current rates, and the histories disagree sharply",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 both at 50%, and both blank halves are well evidenced",
+      "short": "OK"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "Split \u2014 Angers\u2019 creation is evidenced, their conversion is not",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 Angers\u2019 first-half record has changed markedly",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 the official has no record at this level",
+      "short": "Dangerous"
+     },
+     "corners": {
+      "level": "good",
+      "tag": "Well-suited \u2014 two league-extreme figures, each with a visible mechanism",
+      "short": "Well-suited"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401876457",
+    "slug": "fra.1",
+    "utc": "2026-09-19T18:45Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "7868",
+    "away_id": "170",
+    "home": "Angers",
+    "away": "Troyes",
+    "hg": 2,
+    "ag": 0,
+    "h1h": 1,
+    "h1a": 0,
+    "ch": 3,
+    "ca": 2,
+    "kh": 2.0,
+    "ka": 11.0,
+    "fh": 14.0,
+    "fa": 15.0
+   },
+   "match_score": 1.0,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "under",
+     "d": -0.149,
+     "hit": true,
+     "prior": 0.4473684210526315,
+     "line": 2.5,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "btts",
+     "lean": "no",
+     "d": -0.083,
+     "hit": true,
+     "prior": 0.42105263157894735,
+     "line": null,
+     "actual": "no",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "team",
+     "lean": "home under",
+     "d": -0.858,
+     "hit": false,
+     "prior": 0.5394736842105263,
+     "line": 1.38,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "team",
+     "lean": "away over",
+     "d": 0.495,
+     "hit": false,
+     "prior": 0.4605263157894737,
+     "line": 1.38,
+     "actual": 0,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals under",
+     "d": -0.223,
+     "hit": true,
+     "prior": 0.631578947368421,
+     "line": 1.21,
+     "actual": 1,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "disc",
+     "lean": "cards under",
+     "d": -0.248,
+     "hit": false,
+     "prior": 0.6052631578947368,
+     "line": 3.0,
+     "actual": 5,
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "corners",
+     "lean": "corners under",
+     "d": -1.757,
+     "hit": false,
+     "prior": 0.5,
+     "line": 9.5,
+     "actual": 13.0,
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "1x2",
+     "lean": "away",
+     "d": -1.353,
+     "hit": false,
+     "prior": 0.34210526315789475,
+     "line": null,
+     "actual": "2-0",
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "ah",
+     "lean": "away DNB",
+     "d": -1.353,
+     "hit": false,
+     "prior": 0.52,
+     "line": 0,
+     "actual": "2-0",
+     "level": "bad",
+     "verdict": "Dangerous"
+    }
+   ],
+   "info": {
+    "home_window": "25/26 fra.1 (34)",
+    "away_window": "25/26 fra.2 (34)",
+    "prior": "26/27 to date (38)"
+   }
+  },
+  {
+   "card": {
+    "fid": "f20",
+    "title": "Le Mans FC \u2013 FC Lorient",
+    "home": "Le Mans FC",
+    "away": "FC Lorient",
+    "competition": "Ligue 1",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "Split \u2014 Le Mans\u2019 matches are loud, and that contradicts their own history",
+      "short": "Split"
+     },
+     "btts": {
+      "level": "good",
+      "tag": "Well-suited \u2014 the home side\u2019s record is complete and mechanically supported",
+      "short": "Well-suited"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "Split \u2014 Le Mans\u2019 scoring has travelled, Lorient\u2019s has drifted down",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 Le Mans\u2019 first-half rate has quadrupled at one end",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 the official has no record at this level, and his lower-division record points the opposite way",
+      "short": "Dangerous"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 both concede heavily, and one figure is a clean division effect",
+      "short": "OK"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401876455",
+    "slug": "fra.1",
+    "utc": "2026-09-19T18:45Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "2697",
+    "away_id": "273",
+    "home": "Le Mans",
+    "away": "Lorient",
+    "hg": 2,
+    "ag": 1,
+    "h1h": 1,
+    "h1a": 0,
+    "ch": 3,
+    "ca": 3,
+    "kh": 1.0,
+    "ka": 3.0,
+    "fh": 15.0,
+    "fa": 15.0
+   },
+   "match_score": 1.0,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "under",
+     "d": -0.208,
+     "hit": false,
+     "prior": 0.4473684210526315,
+     "line": 2.5,
+     "actual": 3,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "btts",
+     "lean": "yes",
+     "d": 0.005,
+     "hit": true,
+     "prior": 0.5789473684210527,
+     "line": null,
+     "actual": "yes",
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "team",
+     "lean": "home over",
+     "d": 0.289,
+     "hit": true,
+     "prior": 0.4605263157894737,
+     "line": 1.38,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "team",
+     "lean": "away under",
+     "d": -0.358,
+     "hit": true,
+     "prior": 0.5394736842105263,
+     "line": 1.38,
+     "actual": 1,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals under",
+     "d": -0.282,
+     "hit": true,
+     "prior": 0.631578947368421,
+     "line": 1.21,
+     "actual": 1,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "disc",
+     "lean": "cards over",
+     "d": 0.046,
+     "hit": true,
+     "prior": 0.39473684210526316,
+     "line": 3.0,
+     "actual": 6,
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "corners",
+     "lean": "corners under",
+     "d": -0.169,
+     "hit": true,
+     "prior": 0.5,
+     "line": 9.5,
+     "actual": 4.0,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "1x2",
+     "lean": "home",
+     "d": 0.647,
+     "hit": true,
+     "prior": 0.3157894736842105,
+     "line": null,
+     "actual": "2-1",
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "ah",
+     "lean": "home DNB",
+     "d": 0.647,
+     "hit": true,
+     "prior": 0.4799999999999999,
+     "line": 0,
+     "actual": "2-1",
+     "level": "bad",
+     "verdict": "Dangerous"
+    }
+   ],
+   "info": {
+    "home_window": "25/26 fra.2 (34)",
+    "away_window": "25/26 fra.1 (34)",
+    "prior": "26/27 to date (38)"
+   }
+  },
+  {
+   "card": {
+    "fid": "f21",
+    "title": "Olympique Lyonnais \u2013 Stade Rennais",
+    "home": "Olympique Lyonnais",
+    "away": "Stade Rennais",
+    "competition": "Ligue 1",
+    "rows": {
+     "1x2": {
+      "level": "ok",
+      "tag": "OK \u2014 both sides well documented, but the schedule is unmeasured",
+      "short": "OK"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "Split \u2014 two clubs at opposite ends, both with a season behind them",
+      "short": "Split"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 Rennes always score, Lyon have stopped conceding",
+      "short": "OK"
+     },
+     "team": {
+      "level": "good",
+      "tag": "Well-suited \u2014 Rennes\u2019 creation is corroborated four ways",
+      "short": "Well-suited"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 Rennes\u2019 first-half rate has nearly doubled",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 strong referee history with the home club, everything else pointing low",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "good",
+      "tag": "Well-suited \u2014 Rennes\u2019 conceded figure repeats and has a named cause",
+      "short": "Well-suited"
+     }
+    },
+    "tier": "T3 \u2192 T1* (yours)"
+   },
+   "match": {
+    "id": "401876454",
+    "slug": "fra.1",
+    "utc": "2026-09-19T18:45Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "167",
+    "away_id": "169",
+    "home": "Lyon",
+    "away": "Stade Rennais",
+    "hg": 4,
+    "ag": 0,
+    "h1h": 2,
+    "h1a": 0,
+    "ch": 4,
+    "ca": 2,
+    "kh": 3.0,
+    "ka": 8.0,
+    "fh": 13.0,
+    "fa": 14.0
+   },
+   "match_score": 1.0,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "over",
+     "d": 0.209,
+     "hit": true,
+     "prior": 0.5526315789473685,
+     "line": 2.5,
+     "actual": 4,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "btts",
+     "lean": "yes",
+     "d": 0.072,
+     "hit": false,
+     "prior": 0.5789473684210527,
+     "line": null,
+     "actual": "no",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "team",
+     "lean": "home over",
+     "d": 0.2,
+     "hit": true,
+     "prior": 0.4605263157894737,
+     "line": 1.38,
+     "actual": 4,
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "team",
+     "lean": "away over",
+     "d": 0.082,
+     "hit": false,
+     "prior": 0.4605263157894737,
+     "line": 1.38,
+     "actual": 0,
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals over",
+     "d": 0.142,
+     "hit": true,
+     "prior": 0.3684210526315789,
+     "line": 1.21,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "disc",
+     "lean": "cards under",
+     "d": -0.245,
+     "hit": false,
+     "prior": 0.6052631578947368,
+     "line": 3.0,
+     "actual": 6,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "corners",
+     "lean": "corners over",
+     "d": 2.234,
+     "hit": true,
+     "prior": 0.5,
+     "line": 9.5,
+     "actual": 11.0,
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "1x2",
+     "lean": "home",
+     "d": 0.118,
+     "hit": true,
+     "prior": 0.3157894736842105,
+     "line": null,
+     "actual": "4-0",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "ah",
+     "lean": "home DNB",
+     "d": 0.118,
+     "hit": true,
+     "prior": 0.4799999999999999,
+     "line": 0,
+     "actual": "4-0",
+     "level": "bad",
+     "verdict": "Dangerous"
+    }
+   ],
+   "info": {
+    "home_window": "25/26 fra.1 (34)",
+    "away_window": "25/26 fra.1 (34)",
+    "prior": "26/27 to date (38)"
+   }
+  },
+  {
+   "card": {
+    "fid": "f22",
+    "title": "Toulouse FC \u2013 Le Havre AC",
+    "home": "Toulouse FC",
+    "away": "Le Havre AC",
+    "competition": "Ligue 1",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 both clubs low, and one chance line disagrees",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 both at 50%, and both blank halves are well documented",
+      "short": "OK"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "Split \u2014 Toulouse\u2019s creation is real, their conversion is not",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "good",
+      "tag": "Well-suited \u2014 the quietest first-half pair on the board, in both seasons",
+      "short": "Well-suited"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 a real foul signal, a real referee record, and they conflict on cards",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 the most stable pair of rates on the board, and therefore the least informative",
+      "short": "OK"
+     }
+    },
+    "tier": "T3 \u2192 T1* (yours)"
+   },
+   "match": {
+    "id": "401876450",
+    "slug": "fra.1",
+    "utc": "2026-09-19T18:45Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "179",
+    "away_id": "3236",
+    "home": "Toulouse",
+    "away": "Le Havre AC",
+    "hg": 3,
+    "ag": 2,
+    "h1h": 0,
+    "h1a": 0,
+    "ch": 3,
+    "ca": 1,
+    "kh": 6.0,
+    "ka": 7.0,
+    "fh": 17.0,
+    "fa": 15.0
+   },
+   "match_score": 1.0,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "under",
+     "d": -0.187,
+     "hit": false,
+     "prior": 0.4473684210526315,
+     "line": 2.5,
+     "actual": 5,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "btts",
+     "lean": "no",
+     "d": -0.032,
+     "hit": false,
+     "prior": 0.42105263157894735,
+     "line": null,
+     "actual": "yes",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "team",
+     "lean": "home under",
+     "d": -0.111,
+     "hit": false,
+     "prior": 0.5394736842105263,
+     "line": 1.38,
+     "actual": 3,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "team",
+     "lean": "away under",
+     "d": -0.494,
+     "hit": false,
+     "prior": 0.5394736842105263,
+     "line": 1.38,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals under",
+     "d": -0.085,
+     "hit": true,
+     "prior": 0.631578947368421,
+     "line": 1.21,
+     "actual": 0,
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "disc",
+     "lean": "cards over",
+     "d": 0.652,
+     "hit": true,
+     "prior": 0.39473684210526316,
+     "line": 3.0,
+     "actual": 4,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "corners",
+     "lean": "corners under",
+     "d": -0.541,
+     "hit": false,
+     "prior": 0.5,
+     "line": 9.5,
+     "actual": 13.0,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "1x2",
+     "lean": "home",
+     "d": 0.383,
+     "hit": true,
+     "prior": 0.3157894736842105,
+     "line": null,
+     "actual": "3-2",
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "ah",
+     "lean": "home DNB",
+     "d": 0.383,
+     "hit": true,
+     "prior": 0.4799999999999999,
+     "line": 0,
+     "actual": "3-2",
+     "level": "bad",
+     "verdict": "Dangerous"
+    }
+   ],
+   "info": {
+    "home_window": "25/26 fra.1 (33)",
+    "away_window": "25/26 fra.1 (34)",
+    "prior": "26/27 to date (38)"
+   }
+  },
+  {
+   "card": {
+    "fid": "f23",
+    "title": "Sevilla FC \u2013 FC Barcelona",
+    "home": "Sevilla FC",
+    "away": "FC Barcelona",
+    "competition": "LaLiga",
+    "rows": {
+     "1x2": {
+      "level": "ok",
+      "tag": "OK \u2014 the best-documented side on the board, against a real caveat",
+      "short": "OK"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "good",
+      "tag": "Well-suited \u2014 every input large, and they agree",
+      "short": "Well-suited"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 both always score, and one rarely concedes",
+      "short": "OK"
+     },
+     "team": {
+      "level": "good",
+      "tag": "Well-suited on the away side \u2014 the largest and best-corroborated figure on the board",
+      "short": "Well-suited"
+     },
+     "halves": {
+      "level": "good",
+      "tag": "Well-suited \u2014 the widest first-half gap on the board, both sides two seasons deep",
+      "short": "Well-suited"
+     },
+     "disc": {
+      "level": "good",
+      "tag": "Well-suited \u2014 a wide club gap, a deep referee record, and a specific precedent",
+      "short": "Well-suited"
+     },
+     "corners": {
+      "level": "good",
+      "tag": "Well-suited \u2014 a large asymmetry with a fully visible mechanism",
+      "short": "Well-suited"
+     }
+    },
+    "tier": "T3 \u2192 T1* (yours)"
+   },
+   "match": {
+    "id": "401882859",
+    "slug": "esp.1",
+    "utc": "2026-09-19T19:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "243",
+    "away_id": "83",
+    "home": "Sevilla",
+    "away": "Barcelona",
+    "hg": 1,
+    "ag": 3,
+    "h1h": 1,
+    "h1a": 1,
+    "ch": 1,
+    "ca": 0,
+    "kh": 1.0,
+    "ka": 3.0,
+    "fh": 10.0,
+    "fa": 11.0
+   },
+   "match_score": 1.0,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "over",
+     "d": 0.222,
+     "hit": true,
+     "prior": 0.5555555555555556,
+     "line": 2.5,
+     "actual": 4,
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "btts",
+     "lean": "yes",
+     "d": 0.056,
+     "hit": true,
+     "prior": 0.5555555555555556,
+     "line": null,
+     "actual": "yes",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "team",
+     "lean": "home under",
+     "d": -0.532,
+     "hit": true,
+     "prior": 0.5952380952380952,
+     "line": 1.52,
+     "actual": 1,
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "team",
+     "lean": "away over",
+     "d": 2.635,
+     "hit": true,
+     "prior": 0.40476190476190477,
+     "line": 1.52,
+     "actual": 3,
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals over",
+     "d": 0.508,
+     "hit": true,
+     "prior": 0.47619047619047616,
+     "line": 1.41,
+     "actual": 2,
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "disc",
+     "lean": "cards over",
+     "d": 0.357,
+     "hit": false,
+     "prior": 0.5396825396825397,
+     "line": 4.48,
+     "actual": 1,
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "corners",
+     "lean": "corners under",
+     "d": -1.127,
+     "hit": true,
+     "prior": 0.5079365079365079,
+     "line": 9.73,
+     "actual": 4.0,
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "1x2",
+     "lean": "away",
+     "d": -3.167,
+     "hit": true,
+     "prior": 0.30158730158730157,
+     "line": null,
+     "actual": "1-3",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "ah",
+     "lean": "away DNB",
+     "d": -3.167,
+     "hit": true,
+     "prior": 0.40425531914893614,
+     "line": 0,
+     "actual": "1-3",
+     "level": "bad",
+     "verdict": "Dangerous"
+    }
+   ],
+   "info": {
+    "home_window": "26/27 esp.1 (6)",
+    "away_window": "26/27 esp.1 (6)",
+    "prior": "26/27 to date (63)"
+   }
+  }
+ ],
+ "picks": [],
+ "unsettled": []
+}

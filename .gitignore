@@ -1,2 +1,4 @@
 ~$*
 *.tmp
+settle_data/espn/
+__pycache__/

@@ -1,0 +1,924 @@
+{
+ "slate": "0914",
+ "date": "2026-09-14",
+ "settled_at": "2026-09-24T11:57+00:00",
+ "fixtures": [
+  {
+   "card": {
+    "fid": "f1",
+    "title": "Como \u2013 Parma",
+    "home": "Como",
+    "away": "Parma",
+    "competition": "Serie A",
+    "rows": {
+     "1x2": {
+      "level": "ok",
+      "tag": "OK \u2014 wide structural gap, thin current sample",
+      "short": "OK"
+     },
+     "ah": {
+      "level": "ok",
+      "tag": "OK \u2014 margin evidence exists at both ends",
+      "short": "OK"
+     },
+     "totals": {
+      "level": "bad",
+      "tag": "Split \u2014 the two clubs\u2019 event rates point opposite ways",
+      "short": "Split"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 one leg well evidenced, the other contested",
+      "short": "OK"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "OK \u2014 asymmetric: Parma\u2019s line has the evidence, Como\u2019s the variance",
+      "short": "OK"
+     },
+     "halves": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 no half-time series exists",
+      "short": "Dangerous"
+     },
+     "disc": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 a referee with almost no Serie A record and no club rates",
+      "short": "Dangerous"
+     },
+     "corners": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 no corner data at club or league level",
+      "short": "Dangerous"
+     }
+    },
+    "tier": ""
+   },
+   "match": {
+    "id": "401874933",
+    "slug": "ita.1",
+    "utc": "2026-09-14T16:30Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "2572",
+    "away_id": "115",
+    "home": "Como",
+    "away": "Parma",
+    "hg": 2,
+    "ag": 1,
+    "h1h": 1,
+    "h1a": 0,
+    "ch": 1,
+    "ca": 0,
+    "kh": 11.0,
+    "ka": 4.0,
+    "fh": 8.0,
+    "fa": 4.0
+   },
+   "match_score": 1.0,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "under",
+     "d": -0.179,
+     "hit": false,
+     "prior": 0.43243243243243246,
+     "line": 2.5,
+     "actual": 3,
+     "level": "bad",
+     "verdict": "Split"
+    },
+    {
+     "family": "btts",
+     "lean": "no",
+     "d": -0.089,
+     "hit": false,
+     "prior": 0.4054054054054054,
+     "line": null,
+     "actual": "yes",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "team",
+     "lean": "home over",
+     "d": 0.495,
+     "hit": true,
+     "prior": 0.44594594594594594,
+     "line": 1.46,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "team",
+     "lean": "away under",
+     "d": -0.926,
+     "hit": true,
+     "prior": 0.5540540540540541,
+     "line": 1.46,
+     "actual": 1,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals under",
+     "d": -0.347,
+     "hit": true,
+     "prior": 0.6756756756756757,
+     "line": 1.16,
+     "actual": 1,
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "disc",
+     "lean": "cards over",
+     "d": 0.079,
+     "hit": false,
+     "prior": 0.4864864864864865,
+     "line": 3.19,
+     "actual": 1,
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "corners",
+     "lean": "corners under",
+     "d": -1.116,
+     "hit": false,
+     "prior": 0.5675675675675675,
+     "line": 9.3,
+     "actual": 15.0,
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "1x2",
+     "lean": "home",
+     "d": 1.421,
+     "hit": true,
+     "prior": 0.40540540540540543,
+     "line": null,
+     "actual": "2-1",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "ah",
+     "lean": "home DNB",
+     "d": 1.421,
+     "hit": true,
+     "prior": 0.48387096774193544,
+     "line": 0,
+     "actual": "2-1",
+     "level": "ok",
+     "verdict": "OK"
+    }
+   ],
+   "info": {
+    "home_window": "25/26 ita.1 (38)",
+    "away_window": "25/26 ita.1 (38)",
+    "prior": "26/27 to date (37)"
+   }
+  },
+  {
+   "card": {
+    "fid": "f2",
+    "title": "Torino \u2013 Roma",
+    "home": "Torino",
+    "away": "Roma",
+    "competition": "Serie A",
+    "rows": {
+     "1x2": {
+      "level": "ok",
+      "tag": "OK \u2014 the gap is documented at every level, the schedule is the counterweight",
+      "short": "OK"
+     },
+     "ah": {
+      "level": "ok",
+      "tag": "OK \u2014 margin evidence on both sides of the ball",
+      "short": "OK"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 the two three-match samples agree, the two seasons less so",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 asymmetric: one leg rests on Torino\u2019s depleted attack",
+      "short": "OK"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "OK \u2014 Roma\u2019s line best evidenced on the card",
+      "short": "OK"
+     },
+     "halves": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 no half-time data",
+      "short": "Dangerous"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 a documented, card-heavy official; no club rates",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 volume proxies only",
+      "short": "Dangerous"
+     }
+    },
+    "tier": ""
+   },
+   "match": {
+    "id": "401874950",
+    "slug": "ita.1",
+    "utc": "2026-09-14T16:30Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "239",
+    "away_id": "104",
+    "home": "Torino",
+    "away": "AS Roma",
+    "hg": 0,
+    "ag": 2,
+    "h1h": 0,
+    "h1a": 1,
+    "ch": 0,
+    "ca": 2,
+    "kh": 1.0,
+    "ka": 8.0,
+    "fh": 7.0,
+    "fa": 20.0
+   },
+   "match_score": 1.0,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "over",
+     "d": 0.084,
+     "hit": false,
+     "prior": 0.5675675675675675,
+     "line": 2.5,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "btts",
+     "lean": "no",
+     "d": -0.063,
+     "hit": true,
+     "prior": 0.4054054054054054,
+     "line": null,
+     "actual": "no",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "team",
+     "lean": "home under",
+     "d": -0.453,
+     "hit": true,
+     "prior": 0.5540540540540541,
+     "line": 1.46,
+     "actual": 0,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "team",
+     "lean": "away over",
+     "d": 0.784,
+     "hit": true,
+     "prior": 0.44594594594594594,
+     "line": 1.46,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals over",
+     "d": 0.153,
+     "hit": false,
+     "prior": 0.32432432432432434,
+     "line": 1.16,
+     "actual": 1,
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "disc",
+     "lean": "cards under",
+     "d": -0.026,
+     "hit": true,
+     "prior": 0.5135135135135135,
+     "line": 3.19,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "corners",
+     "lean": "corners under",
+     "d": -0.484,
+     "hit": true,
+     "prior": 0.5675675675675675,
+     "line": 9.3,
+     "actual": 9.0,
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "1x2",
+     "lean": "away",
+     "d": -1.237,
+     "hit": true,
+     "prior": 0.43243243243243246,
+     "line": null,
+     "actual": "0-2",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "ah",
+     "lean": "away DNB",
+     "d": -1.237,
+     "hit": true,
+     "prior": 0.5161290322580645,
+     "line": 0,
+     "actual": "0-2",
+     "level": "ok",
+     "verdict": "OK"
+    }
+   ],
+   "info": {
+    "home_window": "25/26 ita.1 (38)",
+    "away_window": "25/26 ita.1 (38)",
+    "prior": "26/27 to date (37)"
+   }
+  },
+  {
+   "card": {
+    "fid": "f3",
+    "title": "Inter \u2013 Udinese",
+    "home": "Inter",
+    "away": "Udinese",
+    "competition": "Serie A",
+    "rows": {
+     "1x2": {
+      "level": "ok",
+      "tag": "OK \u2014 a documented gap with two specific counterweights",
+      "short": "OK"
+     },
+     "ah": {
+      "level": "ok",
+      "tag": "OK \u2014 margin question, both ends evidenced",
+      "short": "OK"
+     },
+     "totals": {
+      "level": "good",
+      "tag": "Well-suited \u2014 last season and this season point the same way",
+      "short": "Well-suited"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 one leg rests on a weakened Udinese attack",
+      "short": "OK"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "OK \u2014 asymmetric: Inter\u2019s total best evidenced",
+      "short": "OK"
+     },
+     "halves": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 no half-time data",
+      "short": "Dangerous"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 a card-heavy, penalty-heavy snapshot that is not a season",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 volume proxies only",
+      "short": "Dangerous"
+     }
+    },
+    "tier": ""
+   },
+   "match": {
+    "id": "401874966",
+    "slug": "ita.1",
+    "utc": "2026-09-14T18:45Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "110",
+    "away_id": "118",
+    "home": "Internazionale",
+    "away": "Udinese",
+    "hg": 5,
+    "ag": 3,
+    "h1h": 2,
+    "h1a": 2,
+    "ch": 1,
+    "ca": 1,
+    "kh": 10.0,
+    "ka": 1.0,
+    "fh": 9.0,
+    "fa": 9.0
+   },
+   "match_score": 1.0,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "over",
+     "d": 0.084,
+     "hit": true,
+     "prior": 0.5641025641025641,
+     "line": 2.5,
+     "actual": 8,
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "btts",
+     "lean": "yes",
+     "d": 0.016,
+     "hit": true,
+     "prior": 0.5897435897435898,
+     "line": null,
+     "actual": "yes",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "team",
+     "lean": "home over",
+     "d": 1.179,
+     "hit": true,
+     "prior": 0.44871794871794873,
+     "line": 1.45,
+     "actual": 5,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "team",
+     "lean": "away under",
+     "d": -0.321,
+     "hit": false,
+     "prior": 0.5512820512820513,
+     "line": 1.45,
+     "actual": 3,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals over",
+     "d": 0.337,
+     "hit": true,
+     "prior": 0.3076923076923077,
+     "line": 1.15,
+     "actual": 4,
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "disc",
+     "lean": "cards under",
+     "d": -0.158,
+     "hit": true,
+     "prior": 0.5384615384615384,
+     "line": 3.1,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "corners",
+     "lean": "corners over",
+     "d": 0.884,
+     "hit": true,
+     "prior": 0.4358974358974359,
+     "line": 9.44,
+     "actual": 11.0,
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "1x2",
+     "lean": "home",
+     "d": 1.5,
+     "hit": true,
+     "prior": 0.41025641025641024,
+     "line": null,
+     "actual": "5-3",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "ah",
+     "lean": "home DNB",
+     "d": 1.5,
+     "hit": true,
+     "prior": 0.48484848484848486,
+     "line": 0,
+     "actual": "5-3",
+     "level": "ok",
+     "verdict": "OK"
+    }
+   ],
+   "info": {
+    "home_window": "25/26 ita.1 (38)",
+    "away_window": "25/26 ita.1 (38)",
+    "prior": "26/27 to date (39)"
+   }
+  },
+  {
+   "card": {
+    "fid": "f4",
+    "title": "Leeds United \u2013 Newcastle United",
+    "home": "Leeds United",
+    "away": "Newcastle United",
+    "competition": "Premier League",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 nothing structural separates the two sides",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "ok",
+      "tag": "OK \u2014 draw frequency is the documented input",
+      "short": "OK"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "Split \u2014 goals say low for Leeds, xG says otherwise for both",
+      "short": "Split"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 the two samples agree",
+      "short": "OK"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "OK \u2014 symmetric and thin",
+      "short": "OK"
+     },
+     "halves": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 no half-time data",
+      "short": "Dangerous"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 club rates and referee record point opposite ways",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 no corner data",
+      "short": "Dangerous"
+     }
+    },
+    "tier": ""
+   },
+   "match": {
+    "id": "401879280",
+    "slug": "eng.1",
+    "utc": "2026-09-14T19:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "357",
+    "away_id": "361",
+    "home": "Leeds United",
+    "away": "Newcastle United",
+    "hg": 4,
+    "ag": 1,
+    "h1h": 3,
+    "h1a": 0,
+    "ch": 1,
+    "ca": 2,
+    "kh": 5.0,
+    "ka": 5.0,
+    "fh": 8.0,
+    "fa": 13.0
+   },
+   "match_score": 1.0,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "over",
+     "d": 0.084,
+     "hit": true,
+     "prior": 0.5128205128205128,
+     "line": 2.5,
+     "actual": 5,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "btts",
+     "lean": "yes",
+     "d": 0.116,
+     "hit": true,
+     "prior": 0.5128205128205128,
+     "line": null,
+     "actual": "yes",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "team",
+     "lean": "home under",
+     "d": -0.013,
+     "hit": false,
+     "prior": 0.5384615384615384,
+     "line": 1.4,
+     "actual": 4,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "team",
+     "lean": "away over",
+     "d": 0.118,
+     "hit": false,
+     "prior": 0.46153846153846156,
+     "line": 1.4,
+     "actual": 1,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals under",
+     "d": -0.037,
+     "hit": false,
+     "prior": 0.6153846153846154,
+     "line": 1.26,
+     "actual": 3,
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "disc",
+     "lean": "cards under",
+     "d": -0.463,
+     "hit": true,
+     "prior": 0.41025641025641024,
+     "line": 3.97,
+     "actual": 3,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "corners",
+     "lean": "corners over",
+     "d": 0.505,
+     "hit": true,
+     "prior": 0.38461538461538464,
+     "line": 9.1,
+     "actual": 10.0,
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "1x2",
+     "lean": "away",
+     "d": -0.132,
+     "hit": false,
+     "prior": 0.3333333333333333,
+     "line": null,
+     "actual": "4-1",
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "ah",
+     "lean": "away DNB",
+     "d": -0.132,
+     "hit": false,
+     "prior": 0.52,
+     "line": 0,
+     "actual": "4-1",
+     "level": "ok",
+     "verdict": "OK"
+    }
+   ],
+   "info": {
+    "home_window": "25/26 eng.1 (38)",
+    "away_window": "25/26 eng.1 (38)",
+    "prior": "26/27 to date (39)"
+   }
+  },
+  {
+   "card": {
+    "fid": "f5",
+    "title": "Villarreal \u2013 Real Betis",
+    "home": "Villarreal",
+    "away": "Real Betis",
+    "competition": "LaLiga",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 results and chances point opposite ways for both sides",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "ok",
+      "tag": "OK \u2014 margins have been small in Betis\u2019 wins",
+      "short": "OK"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "Split \u2014 scorelines diverge, chance volume does not",
+      "short": "Split"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "Split \u2014 the same divergence as totals",
+      "short": "Split"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "OK \u2014 Villarreal\u2019s line has the volume evidence",
+      "short": "OK"
+     },
+     "halves": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 no half-time data",
+      "short": "Dangerous"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 low-booking clubs, and a referee whose two records disagree",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 no corner data",
+      "short": "Dangerous"
+     }
+    },
+    "tier": ""
+   },
+   "match": {
+    "id": "401882877",
+    "slug": "esp.1",
+    "utc": "2026-09-14T19:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "102",
+    "away_id": "244",
+    "home": "Villarreal",
+    "away": "Real Betis",
+    "hg": 1,
+    "ag": 2,
+    "h1h": 1,
+    "h1a": 2,
+    "ch": 1,
+    "ca": 0,
+    "kh": 7.0,
+    "ka": 4.0,
+    "fh": 7.0,
+    "fa": 8.0
+   },
+   "match_score": 1.0,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "over",
+     "d": 0.105,
+     "hit": true,
+     "prior": 0.54,
+     "line": 2.5,
+     "actual": 3,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "btts",
+     "lean": "yes",
+     "d": 0.184,
+     "hit": true,
+     "prior": 0.56,
+     "line": null,
+     "actual": "yes",
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "team",
+     "lean": "home over",
+     "d": 0.463,
+     "hit": false,
+     "prior": 0.41,
+     "line": 1.49,
+     "actual": 1,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "team",
+     "lean": "away over",
+     "d": 0.068,
+     "hit": true,
+     "prior": 0.41,
+     "line": 1.49,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals over",
+     "d": 0.595,
+     "hit": true,
+     "prior": 0.46,
+     "line": 1.34,
+     "actual": 3,
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "disc",
+     "lean": "cards under",
+     "d": -0.463,
+     "hit": true,
+     "prior": 0.52,
+     "line": 4.38,
+     "actual": 1,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "corners",
+     "lean": "corners under",
+     "d": -0.6,
+     "hit": false,
+     "prior": 0.5800000000000001,
+     "line": 10.02,
+     "actual": 11.0,
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "1x2",
+     "lean": "home",
+     "d": 0.395,
+     "hit": false,
+     "prior": 0.46,
+     "line": null,
+     "actual": "1-2",
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "ah",
+     "lean": "home DNB",
+     "d": 0.395,
+     "hit": false,
+     "prior": 0.638888888888889,
+     "line": 0,
+     "actual": "1-2",
+     "level": "ok",
+     "verdict": "OK"
+    }
+   ],
+   "info": {
+    "home_window": "25/26 esp.1 (38)",
+    "away_window": "25/26 esp.1 (38)",
+    "prior": "26/27 to date (50)"
+   }
+  }
+ ],
+ "picks": [],
+ "unsettled": []
+}

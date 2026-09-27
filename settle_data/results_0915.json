@@ -1,0 +1,861 @@
+{
+ "slate": "0915",
+ "date": "2026-09-15",
+ "settled_at": "2026-09-24T11:57+00:00",
+ "fixtures": [
+  {
+   "card": {
+    "fid": "f1",
+    "title": "Genoa \u2013 S\u00fcdtirol",
+    "home": "Genoa",
+    "away": "S\u00fcdtirol",
+    "competition": "Coppa Italia",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 division gap and current samples point opposite ways",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "ok",
+      "tag": "OK \u2014 the margin question is at least measurable",
+      "short": "OK"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 both clubs\u2019 current samples agree on direction",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 consistent rates, not discriminating ones",
+      "short": "OK"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "OK \u2014 asymmetric: Genoa\u2019s line has agreeing evidence, S\u00fcdtirol\u2019s a gap",
+      "short": "OK"
+     },
+     "halves": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 one side has no half-time series at all",
+      "short": "Dangerous"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 official and one club\u2019s contact rate are both sourced",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 the match total can be built, the split cannot",
+      "short": "OK"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401911654",
+    "slug": "ita.coppa_italia",
+    "utc": "2026-09-15T16:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "3263",
+    "away_id": "11139",
+    "home": "Genoa",
+    "away": "Sudtirol",
+    "hg": 1,
+    "ag": 0,
+    "h1h": 0,
+    "h1a": 0,
+    "ch": 0,
+    "ca": 0,
+    "kh": 10.0,
+    "ka": 3.0,
+    "fh": 10.0,
+    "fa": 7.0
+   },
+   "match_score": 1.0,
+   "tests": [],
+   "info": {
+    "note": "cup or European tie: results only, no lean audit"
+   }
+  },
+  {
+   "card": {
+    "fid": "f2",
+    "title": "Rayo Vallecano \u2013 Espanyol",
+    "home": "Rayo Vallecano",
+    "away": "Espanyol",
+    "competition": "LaLiga EA Sports",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 the home advantage has been relocated",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 margin data dominated by two fixtures",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 current samples agree, Rayo\u2019s last season disagrees",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 one leg stable, one leg changed with the personnel",
+      "short": "OK"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "OK \u2014 asymmetric: both attacks agree, Rayo\u2019s defence is skewed",
+      "short": "OK"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 both clubs have a half-time series, the seasons disagree",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 strongest club inputs on the card, appointment unconfirmed",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 Rayo\u2019s series is robust, Espanyol\u2019s has collapsed",
+      "short": "OK"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401882868",
+    "slug": "esp.1",
+    "utc": "2026-09-15T17:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "101",
+    "away_id": "88",
+    "home": "Rayo Vallecano",
+    "away": "Espanyol",
+    "hg": 2,
+    "ag": 1,
+    "h1h": 2,
+    "h1a": 0,
+    "ch": 5,
+    "ca": 2,
+    "kh": 3.0,
+    "ka": 5.0,
+    "fh": 10.0,
+    "fa": 15.0
+   },
+   "match_score": 1.0,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "over",
+     "d": 0.302,
+     "hit": true,
+     "prior": 0.5490196078431373,
+     "line": 2.5,
+     "actual": 3,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "btts",
+     "lean": "yes",
+     "d": 0.463,
+     "hit": true,
+     "prior": 0.5686274509803921,
+     "line": null,
+     "actual": "yes",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "team",
+     "lean": "home under",
+     "d": -0.38,
+     "hit": false,
+     "prior": 0.5882352941176471,
+     "line": 1.49,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "team",
+     "lean": "away over",
+     "d": 1.42,
+     "hit": false,
+     "prior": 0.4117647058823529,
+     "line": 1.49,
+     "actual": 1,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals over",
+     "d": 1.055,
+     "hit": true,
+     "prior": 0.47058823529411764,
+     "line": 1.37,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "disc",
+     "lean": "cards over",
+     "d": 1.486,
+     "hit": true,
+     "prior": 0.47058823529411764,
+     "line": 4.31,
+     "actual": 7,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "corners",
+     "lean": "corners under",
+     "d": -1.078,
+     "hit": true,
+     "prior": 0.5686274509803921,
+     "line": 10.04,
+     "actual": 8.0,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "1x2",
+     "lean": "away",
+     "d": -1.8,
+     "hit": false,
+     "prior": 0.27450980392156865,
+     "line": null,
+     "actual": "2-1",
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "ah",
+     "lean": "away DNB",
+     "d": -1.8,
+     "hit": false,
+     "prior": 0.37837837837837834,
+     "line": 0,
+     "actual": "2-1",
+     "level": "bad",
+     "verdict": "Dangerous"
+    }
+   ],
+   "info": {
+    "home_window": "26/27 esp.1 (5)",
+    "away_window": "26/27 esp.1 (5)",
+    "prior": "26/27 to date (51)"
+   }
+  },
+  {
+   "card": {
+    "fid": "f3",
+    "title": "Deportivo Alav\u00e9s \u2013 Valencia",
+    "home": "Deportivo Alav\u00e9s",
+    "away": "Valencia",
+    "competition": "LaLiga EA Sports",
+    "rows": {
+     "1x2": {
+      "level": "ok",
+      "tag": "OK \u2014 every current measure agrees, but the coach who produced them has gone",
+      "short": "OK"
+     },
+     "ah": {
+      "level": "ok",
+      "tag": "OK \u2014 results and chance data share a sign on both sides",
+      "short": "OK"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 one high-event side, one goal-starved one",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 the whole family sits on one leg",
+      "short": "OK"
+     },
+     "team": {
+      "level": "good",
+      "tag": "Well-suited \u2014 on Valencia\u2019s side, where five measures agree",
+      "short": "Well-suited"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 Valencia\u2019s first-half series is stable, Alav\u00e9s\u2019s has moved",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 stable club rates, a referee with a thin top-flight record",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 Alav\u00e9s\u2019s series stable, Valencia\u2019s fell with the back five",
+      "short": "OK"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401882876",
+    "slug": "esp.1",
+    "utc": "2026-09-15T18:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "96",
+    "away_id": "94",
+    "home": "Alav\u00e9s",
+    "away": "Valencia",
+    "hg": 0,
+    "ag": 1,
+    "h1h": 0,
+    "h1a": 0,
+    "ch": 1,
+    "ca": 4,
+    "kh": 2.0,
+    "ka": 5.0,
+    "fh": 7.0,
+    "fa": 14.0
+   },
+   "match_score": 0.9,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "under",
+     "d": -0.115,
+     "hit": true,
+     "prior": 0.4423076923076923,
+     "line": 2.5,
+     "actual": 1,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "btts",
+     "lean": "no",
+     "d": -0.354,
+     "hit": true,
+     "prior": 0.42307692307692313,
+     "line": null,
+     "actual": "no",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "team",
+     "lean": "home over",
+     "d": 1.219,
+     "hit": false,
+     "prior": 0.41346153846153844,
+     "line": 1.49,
+     "actual": 0,
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "team",
+     "lean": "away under",
+     "d": -1.781,
+     "hit": true,
+     "prior": 0.5865384615384616,
+     "line": 1.49,
+     "actual": 1,
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals under",
+     "d": -0.769,
+     "hit": true,
+     "prior": 0.5192307692307692,
+     "line": 1.38,
+     "actual": 0,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "disc",
+     "lean": "cards under",
+     "d": -0.165,
+     "hit": false,
+     "prior": 0.5192307692307692,
+     "line": 4.37,
+     "actual": 5,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "corners",
+     "lean": "corners under",
+     "d": -1.6,
+     "hit": true,
+     "prior": 0.5769230769230769,
+     "line": 10.0,
+     "actual": 7.0,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "1x2",
+     "lean": "home",
+     "d": 3.0,
+     "hit": false,
+     "prior": 0.46153846153846156,
+     "line": null,
+     "actual": "0-1",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "ah",
+     "lean": "home DNB",
+     "d": 3.0,
+     "hit": false,
+     "prior": 0.631578947368421,
+     "line": 0,
+     "actual": "0-1",
+     "level": "ok",
+     "verdict": "OK"
+    }
+   ],
+   "info": {
+    "home_window": "26/27 esp.1 (5)",
+    "away_window": "26/27 esp.1 (5)",
+    "prior": "26/27 to date (52)"
+   }
+  },
+  {
+   "card": {
+    "fid": "f4",
+    "title": "Peterborough United \u2013 Barnsley",
+    "home": "Peterborough United",
+    "away": "Barnsley",
+    "competition": "EFL Cup",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 competition splits and a penalties format",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "ok",
+      "tag": "OK \u2014 chance data says the sides are level",
+      "short": "OK"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 Barnsley\u2019s rate is stable across two seasons",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 both clubs sit at or near the baseline",
+      "short": "OK"
+     },
+     "team": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 both attacks score below their chances, one far above in the cup",
+      "short": "Dangerous"
+     },
+     "halves": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 no half-time series exists",
+      "short": "Dangerous"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 low-contact clubs, an average official, appointment unconfirmed",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 Barnsley\u2019s series moved sharply with the coach",
+      "short": "OK"
+     }
+    },
+    "tier": "T2"
+   },
+   "match": {
+    "id": "401914284",
+    "slug": "eng.league_cup",
+    "utc": "2026-09-15T18:30Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FINAL_PEN",
+    "extra_time": true,
+    "reconciled": true,
+    "home_id": "342",
+    "away_id": "397",
+    "home": "Peterborough United",
+    "away": "Barnsley",
+    "hg": 3,
+    "ag": 3,
+    "h1h": 2,
+    "h1a": 2,
+    "ch": 3,
+    "ca": 3,
+    "kh": 7.0,
+    "ka": 1.0,
+    "fh": 14.0,
+    "fa": 14.0
+   },
+   "match_score": 1.0,
+   "tests": [],
+   "info": {
+    "note": "cup or European tie: results only, no lean audit"
+   }
+  },
+  {
+   "card": {
+    "fid": "f5",
+    "title": "West Ham United \u2013 Fulham",
+    "home": "West Ham United",
+    "away": "Fulham",
+    "competition": "EFL Cup",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 cross-division rates and unpublished selection intent",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 the margin inputs are in different currencies",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 both clubs at or above the baseline in both seasons",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 stable around the baseline, one scoring streak",
+      "short": "OK"
+     },
+     "team": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 the attacking rates belong to different divisions and players",
+      "short": "Dangerous"
+     },
+     "halves": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 no current first-half series for West Ham",
+      "short": "Dangerous"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 a confirmed below-average booker and low-contact clubs",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 both corners-for series agree",
+      "short": "OK"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401914283",
+    "slug": "eng.league_cup",
+    "utc": "2026-09-15T18:45Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "371",
+    "away_id": "370",
+    "home": "West Ham United",
+    "away": "Fulham",
+    "hg": 2,
+    "ag": 3,
+    "h1h": 2,
+    "h1a": 2,
+    "ch": 0,
+    "ca": 1,
+    "kh": 5.0,
+    "ka": 4.0,
+    "fh": 7.0,
+    "fa": 7.0
+   },
+   "match_score": 1.0,
+   "tests": [],
+   "info": {
+    "note": "cup or European tie: results only, no lean audit"
+   }
+  },
+  {
+   "card": {
+    "fid": "f6",
+    "title": "Ipswich Town \u2013 Arsenal",
+    "home": "Ipswich Town",
+    "away": "Arsenal",
+    "competition": "EFL Cup",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 the favoured side\u2019s rates belong to an eleven that may not play",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 margins depend on selection",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 last season both sat on the baseline, this season they split",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 the two clubs\u2019 rates point opposite ways",
+      "short": "Dangerous"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "OK \u2014 asymmetric: Ipswich\u2019s attack has agreeing numbers, Arsenal\u2019s depends on selection",
+      "short": "OK"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 Arsenal\u2019s first-half series is stable, Ipswich\u2019s is four matches",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 an average official and two low-card clubs",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 both series published, Ipswich\u2019s fell with the step up",
+      "short": "OK"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401914268",
+    "slug": "eng.league_cup",
+    "utc": "2026-09-15T19:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "373",
+    "away_id": "359",
+    "home": "Ipswich Town",
+    "away": "Arsenal",
+    "hg": 2,
+    "ag": 4,
+    "h1h": 0,
+    "h1a": 2,
+    "ch": 2,
+    "ca": 0,
+    "kh": 3.0,
+    "ka": 2.0,
+    "fh": 11.0,
+    "fa": 13.0
+   },
+   "match_score": 1.0,
+   "tests": [],
+   "info": {
+    "note": "cup or European tie: results only, no lean audit"
+   }
+  },
+  {
+   "card": {
+    "fid": "f7",
+    "title": "Liverpool \u2013 Tottenham Hotspur",
+    "home": "Liverpool",
+    "away": "Tottenham Hotspur",
+    "competition": "EFL Cup",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 both team sheets are rotated",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 margins built by other players",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 last season high, this season low, for both",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 Tottenham\u2019s scoring leg has no rate that applies",
+      "short": "Dangerous"
+     },
+     "team": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 both attacks are rotated and one has no goals",
+      "short": "Dangerous"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 both clubs have half-time series in both seasons",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 an official who lets play run, clubs with shifting rates",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 both clubs above the baseline in both seasons",
+      "short": "OK"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401914257",
+    "slug": "eng.league_cup",
+    "utc": "2026-09-15T19:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "364",
+    "away_id": "367",
+    "home": "Liverpool",
+    "away": "Tottenham Hotspur",
+    "hg": 3,
+    "ag": 1,
+    "h1h": 1,
+    "h1a": 0,
+    "ch": 3,
+    "ca": 2,
+    "kh": 5.0,
+    "ka": 9.0,
+    "fh": 15.0,
+    "fa": 11.0
+   },
+   "match_score": 1.0,
+   "tests": [],
+   "info": {
+    "note": "cup or European tie: results only, no lean audit"
+   }
+  },
+  {
+   "card": {
+    "fid": "f8",
+    "title": "Reading \u2013 Brentford",
+    "home": "Reading",
+    "away": "Brentford",
+    "competition": "EFL Cup",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 two divisions apart, rates on different scales",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 no common baseline for a margin",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 both clubs\u2019 current matches are high-event",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 both clubs above the baseline in both seasons",
+      "short": "OK"
+     },
+     "team": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 Reading\u2019s attack has doubled on a lower-division sample",
+      "short": "Dangerous"
+     },
+     "halves": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 Reading have no half-time series",
+      "short": "Dangerous"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 a confirmed, average official",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 both corners-for series near the baseline",
+      "short": "OK"
+     }
+    },
+    "tier": "T2"
+   },
+   "match": {
+    "id": "401914285",
+    "slug": "eng.league_cup",
+    "utc": "2026-09-15T19:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "338",
+    "away_id": "337",
+    "home": "Reading",
+    "away": "Brentford",
+    "hg": 1,
+    "ag": 2,
+    "h1h": 0,
+    "h1a": 2,
+    "ch": 0,
+    "ca": 0,
+    "kh": 5.0,
+    "ka": 7.0,
+    "fh": 8.0,
+    "fa": 11.0
+   },
+   "match_score": 1.0,
+   "tests": [],
+   "info": {
+    "note": "cup or European tie: results only, no lean audit"
+   }
+  }
+ ],
+ "picks": [],
+ "unsettled": []
+}

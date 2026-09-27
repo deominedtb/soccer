@@ -1,0 +1,576 @@
+{
+ "slate": "0916",
+ "date": "2026-09-16",
+ "settled_at": "2026-09-24T11:57+00:00",
+ "fixtures": [
+  {
+   "card": {
+    "fid": "f1",
+    "title": "Milan \u2013 Benfica",
+    "home": "Milan",
+    "away": "Benfica",
+    "competition": "UEFA Europa League",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 two new coaches, two rotated elevens, no common opponent",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 the margins on the card were made against weaker opposition",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 both histories point the same way, one of them against weaker defences",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 both attacks have scored in every match this season",
+      "short": "OK"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "OK \u2014 asymmetric: Benfica\u2019s line has two seasons of agreeing data, Milan\u2019s a new front line",
+      "short": "OK"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 both first-half series are published, one is four matches long",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 official sourced, but from a different competition",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 asymmetric: Benfica\u2019s volume is stable, Milan\u2019s has fallen",
+      "short": "OK"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401915586",
+    "slug": "uefa.europa",
+    "utc": "2026-09-16T19:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "103",
+    "away_id": "1929",
+    "home": "AC Milan",
+    "away": "Benfica",
+    "hg": 0,
+    "ag": 2,
+    "h1h": 0,
+    "h1a": 1,
+    "ch": 1,
+    "ca": 5,
+    "kh": 10.0,
+    "ka": 1.0,
+    "fh": 14.0,
+    "fa": 12.0
+   },
+   "match_score": 1.0,
+   "tests": [],
+   "info": {
+    "note": "cup or European tie: results only, no lean audit"
+   }
+  },
+  {
+   "card": {
+    "fid": "f2",
+    "title": "Anderlecht \u2013 Lyon",
+    "home": "Anderlecht",
+    "away": "Lyon",
+    "competition": "UEFA Europa League",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 a new coach, a depleted back line and a scoring record that contradicts its chances",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 goal difference and xG difference disagree for the home side",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 split by competition, but fully published on both sides",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 the home defence tonight is in none of its samples",
+      "short": "Dangerous"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "Split \u2014 Anderlecht dangerous, Lyon OK",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 no current half-time series for the home side",
+      "short": "Dangerous"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 official and both clubs sourced, the official from one page",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 both sides above baseline in both seasons",
+      "short": "OK"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401915590",
+    "slug": "uefa.europa",
+    "utc": "2026-09-16T19:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "441",
+    "away_id": "167",
+    "home": "Anderlecht",
+    "away": "Lyon",
+    "hg": 1,
+    "ag": 2,
+    "h1h": 0,
+    "h1a": 2,
+    "ch": 0,
+    "ca": 2,
+    "kh": 6.0,
+    "ka": 4.0,
+    "fh": 14.0,
+    "fa": 12.0
+   },
+   "match_score": 1.0,
+   "tests": [],
+   "info": {
+    "note": "cup or European tie: results only, no lean audit"
+   }
+  },
+  {
+   "card": {
+    "fid": "f3",
+    "title": "Bayer Leverkusen \u2013 Celje",
+    "home": "Bayer Leverkusen",
+    "away": "Celje",
+    "competition": "UEFA Europa League",
+    "rows": {
+     "1x2": {
+      "level": "ok",
+      "tag": "OK \u2014 the gap is documented, the home sample is short",
+      "short": "OK"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 no common reference for the size of the gap",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 every series on both sides runs above the baseline",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 Celje score almost every match, Leverkusen rarely keep clean sheets",
+      "short": "OK"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "OK \u2014 asymmetric: Leverkusen\u2019s attack is measured, Celje\u2019s is counted",
+      "short": "OK"
+     },
+     "halves": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 Celje have no domestic half-time series",
+      "short": "Dangerous"
+     },
+     "disc": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 one side\u2019s card and foul rates rest on two matches",
+      "short": "Dangerous"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 asymmetric: Leverkusen\u2019s volume is published, Celje\u2019s only in Europe",
+      "short": "OK"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401915587",
+    "slug": "uefa.europa",
+    "utc": "2026-09-16T19:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "131",
+    "away_id": "3362",
+    "home": "Bayer Leverkusen",
+    "away": "NK Celje",
+    "hg": 2,
+    "ag": 0,
+    "h1h": 1,
+    "h1a": 0,
+    "ch": 0,
+    "ca": 0,
+    "kh": 6.0,
+    "ka": 2.0,
+    "fh": 16.0,
+    "fa": 10.0
+   },
+   "match_score": 0.9,
+   "tests": [],
+   "info": {
+    "note": "cup or European tie: results only, no lean audit"
+   }
+  },
+  {
+   "card": {
+    "fid": "f4",
+    "title": "Hapoel Be\u2019er Sheva \u2013 Dinamo Zagreb",
+    "home": "Hapoel Be\u2019er Sheva",
+    "away": "Dinamo Zagreb",
+    "competition": "UEFA Europa League",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 neutral venue, no common opponent, two suspended starters",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 no chance data to size a margin",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 most series on both sides sit above the baseline",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 both attacks have scored in every league match this season",
+      "short": "OK"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "OK \u2014 asymmetric: Dinamo\u2019s line is better evidenced",
+      "short": "OK"
+     },
+     "halves": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 one side has no first-half series outside six qualifiers",
+      "short": "Dangerous"
+     },
+     "disc": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 one club\u2019s bookings unpublished, the official\u2019s record conflicting",
+      "short": "Dangerous"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 both sides above baseline domestically, both directions published in qualifying",
+      "short": "OK"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401915589",
+    "slug": "uefa.europa",
+    "utc": "2026-09-16T19:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "13083",
+    "away_id": "597",
+    "home": "Hapoel Be'er",
+    "away": "Dinamo Zagreb",
+    "hg": 0,
+    "ag": 0,
+    "h1h": 0,
+    "h1a": 0,
+    "ch": 0,
+    "ca": 0,
+    "kh": 6.0,
+    "ka": 2.0,
+    "fh": 10.0,
+    "fa": 13.0
+   },
+   "match_score": 0.9,
+   "tests": [],
+   "info": {
+    "note": "cup or European tie: results only, no lean audit"
+   }
+  },
+  {
+   "card": {
+    "fid": "f5",
+    "title": "Olympiacos \u2013 Jagiellonia Bia\u0142ystok",
+    "home": "Olympiacos",
+    "away": "Jagiellonia Bia\u0142ystok",
+    "competition": "UEFA Europa League",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 a six-day coach and a rebuilt squad",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 Olympiacos\u2019s chances and goals point different ways",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 two stable series pointing opposite ways",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 same split: low at home, high away",
+      "short": "OK"
+     },
+     "team": {
+      "level": "bad",
+      "tag": "Split \u2014 Olympiacos dangerous, Jagiellonia OK",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 both first-half series published, the home one partial",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 the official\u2019s record is one number",
+      "short": "Dangerous"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 best on the card: the home volume and the away concession rate agree",
+      "short": "OK"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401915588",
+    "slug": "uefa.europa",
+    "utc": "2026-09-16T19:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "435",
+    "away_id": "11505",
+    "home": "Olympiacos",
+    "away": "Jagiellonia Bialystok",
+    "hg": 2,
+    "ag": 1,
+    "h1h": 1,
+    "h1a": 1,
+    "ch": 2,
+    "ca": 3,
+    "kh": 13.0,
+    "ka": 0.0,
+    "fh": 10.0,
+    "fa": 13.0
+   },
+   "match_score": 0.98,
+   "tests": [],
+   "info": {
+    "note": "cup or European tie: results only, no lean audit"
+   }
+  },
+  {
+   "card": {
+    "fid": "f6",
+    "title": "Sturm Graz \u2013 Rennes",
+    "home": "Sturm Graz",
+    "away": "Rennes",
+    "competition": "UEFA Europa League",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 the home side\u2019s domestic and European records contradict each other",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 both chance balances are unreliable guides to margin",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 two stable series pointing opposite ways",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 both sides above the baseline in both seasons",
+      "short": "OK"
+     },
+     "team": {
+      "level": "bad",
+      "tag": "Split \u2014 Sturm dangerous, Rennes OK",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 both first-half series published, one partial",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 UEFA card rate for the official, clubs sourced, no foul data for the official",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 asymmetric: Sturm\u2019s domestic volume is high, their European volume low",
+      "short": "OK"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401915593",
+    "slug": "uefa.europa",
+    "utc": "2026-09-16T19:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "3746",
+    "away_id": "169",
+    "home": "SK Sturm Graz",
+    "away": "Stade Rennais",
+    "hg": 0,
+    "ag": 0,
+    "h1h": 0,
+    "h1a": 0,
+    "ch": 2,
+    "ca": 0,
+    "kh": 5.0,
+    "ka": 4.0,
+    "fh": 12.0,
+    "fa": 6.0
+   },
+   "match_score": 1.0,
+   "tests": [],
+   "info": {
+    "note": "cup or European tie: results only, no lean audit"
+   }
+  },
+  {
+   "card": {
+    "fid": "f7",
+    "title": "Sunderland \u2013 AZ Alkmaar",
+    "home": "Sunderland",
+    "away": "AZ Alkmaar",
+    "competition": "UEFA Europa League",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 results and chance data disagree on both sides",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 no common scale for a margin",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 two stable series pointing opposite ways",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 AZ always score, Sunderland often do not",
+      "short": "OK"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "OK \u2014 asymmetric: AZ\u2019s volume is measured, Sunderland\u2019s attack is new",
+      "short": "OK"
+     },
+     "halves": {
+      "level": "good",
+      "tag": "Well-suited \u2014 complete first-half series on both sides, both seasons",
+      "short": "Well-suited"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 the best-documented official on the slate",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 both directions published this season, strongly asymmetric",
+      "short": "OK"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401915592",
+    "slug": "uefa.europa",
+    "utc": "2026-09-16T19:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "366",
+    "away_id": "140",
+    "home": "Sunderland",
+    "away": "AZ Alkmaar",
+    "hg": 1,
+    "ag": 0,
+    "h1h": 0,
+    "h1a": 0,
+    "ch": 3,
+    "ca": 2,
+    "kh": 12.0,
+    "ka": 5.0,
+    "fh": 14.0,
+    "fa": 13.0
+   },
+   "match_score": 1.0,
+   "tests": [],
+   "info": {
+    "note": "cup or European tie: results only, no lean audit"
+   }
+  }
+ ],
+ "picks": [],
+ "unsettled": []
+}

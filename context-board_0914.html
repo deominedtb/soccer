@@ -1,0 +1,684 @@
+<title>Market Board Monday 14 September 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<style>
+:root{
+  --bg:#EFF2F1; --surface:#FFFFFF; --surface-2:#F6F8F7; --band:#1D3F52;
+  --ink:#13201E; --ink-2:#485856; --muted:#6C7B78; --line:#D4DCDA;
+  --accent:#1D4E73; --accent-soft:#E3EDF3;
+  --good:#2C6E4B; --good-soft:#E2EFE8;
+  --warn:#8C6817; --warn-soft:#F4ECD9;
+  --bad:#A03528;  --bad-soft:#F6E2DF;
+  --brass:#856526;
+  --band-ink:#EAF1F4;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D1315; --surface:#141C1F; --surface-2:#1A2326; --band:#16303D;
+    --ink:#E3EAE8; --ink-2:#A6B4B1; --muted:#82938F; --line:#263236;
+    --accent:#79ACD0; --accent-soft:#152F3C;
+    --good:#66C093; --good-soft:#152C20;
+    --warn:#D2A950; --warn-soft:#2C2617;
+    --bad:#E27A6E;  --bad-soft:#321C19;
+    --brass:#C4A05A;
+    --band-ink:#DCE8EC;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D1315; --surface:#141C1F; --surface-2:#1A2326; --band:#16303D;
+  --ink:#E3EAE8; --ink-2:#A6B4B1; --muted:#82938F; --line:#263236;
+  --accent:#79ACD0; --accent-soft:#152F3C;
+  --good:#66C093; --good-soft:#152C20;
+  --warn:#D2A950; --warn-soft:#2C2617;
+  --bad:#E27A6E;  --bad-soft:#321C19;
+  --brass:#C4A05A;
+  --band-ink:#DCE8EC;
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:"Source Serif 4",Georgia,"Times New Roman",serif;
+  font-size:17px; line-height:1.6;
+  margin:0; padding:0 18px 96px;
+  -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:940px; margin:0 auto;}
+h1,h2,h3,h4,.ui{font-family:Archivo,"Helvetica Neue",Arial,sans-serif}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace; font-variant-numeric:tabular-nums}
+
+/* ---------- masthead ---------- */
+header.top{padding:52px 0 26px; border-bottom:2px solid var(--ink);}
+.eyebrow{
+  font-family:Archivo,sans-serif; font-size:12px; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase; color:var(--accent); margin:0 0 14px;
+}
+h1{
+  font-size:clamp(34px,7vw,54px); line-height:1.02; font-weight:800;
+  letter-spacing:-.02em; margin:0 0 14px; text-wrap:balance;
+}
+.standfirst{font-size:19px; color:var(--ink-2); margin:0; max-width:62ch;}
+.metaline{
+  display:flex; flex-wrap:wrap; gap:8px 20px; margin-top:22px;
+  font-family:Archivo,sans-serif; font-size:12.5px; font-weight:600;
+  letter-spacing:.06em; text-transform:uppercase; color:var(--muted);
+}
+
+/* ---------- generic blocks ---------- */
+section{margin-top:44px}
+h2.sec{
+  font-size:13px; font-weight:700; letter-spacing:.15em; text-transform:uppercase;
+  color:var(--muted); margin:0 0 16px; padding-bottom:8px; border-bottom:1px solid var(--line);
+}
+p{margin:0 0 14px; max-width:70ch}
+.note{
+  background:var(--accent-soft); border-left:3px solid var(--accent);
+  padding:14px 16px; font-size:15.5px; color:var(--ink-2); max-width:none;
+}
+.note strong{color:var(--ink)}
+
+/* ---------- odds table ---------- */
+.scroller{overflow-x:auto; border:1px solid var(--line); background:var(--surface)}
+table{border-collapse:collapse; width:100%; min-width:760px; font-size:14px}
+thead th{
+  background:var(--band); color:var(--band-ink);
+  font-family:Archivo,sans-serif; font-weight:700; font-size:11px;
+  letter-spacing:.09em; text-transform:uppercase;
+  padding:10px 11px; text-align:right; white-space:nowrap;
+}
+thead th:first-child{text-align:left}
+tbody td{
+  padding:10px 11px; border-top:1px solid var(--line); text-align:right;
+  font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums; white-space:nowrap;
+}
+tbody td:first-child{
+  text-align:left; font-family:Archivo,sans-serif; font-weight:600; font-size:14px;
+  white-space:normal; min-width:190px;
+}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td .ko{display:block; font-family:"IBM Plex Mono",monospace; font-weight:400; font-size:11.5px; color:var(--muted); letter-spacing:.02em}
+.unk{color:var(--brass); font-style:italic}
+
+/* ---------- fixture cards ---------- */
+.fixture{
+  background:var(--surface); border:1px solid var(--line);
+  margin-top:30px; scroll-margin-top:12px;
+}
+.fx-head{background:var(--band); color:var(--band-ink); padding:16px 20px 18px}
+.fx-league{
+  font-family:Archivo,sans-serif; font-size:11px; font-weight:700;
+  letter-spacing:.14em; text-transform:uppercase; opacity:.78; margin:0 0 6px;
+}
+.fx-title{font-family:Archivo,sans-serif; font-size:23px; font-weight:700; letter-spacing:-.01em; margin:0; line-height:1.15}
+.fx-sub{font-family:"IBM Plex Mono",monospace; font-size:12.5px; opacity:.8; margin:7px 0 0; letter-spacing:.02em}
+.fx-body{padding:20px}
+
+.fx-odds{
+  display:flex; flex-wrap:wrap; gap:0;
+  border:1px solid var(--line); background:var(--surface-2); margin:0 0 22px;
+}
+.od{flex:1 1 96px; padding:9px 12px; border-right:1px solid var(--line); border-bottom:1px solid var(--line)}
+.od:last-child{border-right:0}
+.od dt{
+  font-family:Archivo,sans-serif; font-size:10px; font-weight:700; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--muted); margin:0 0 3px;
+}
+.od dd{margin:0; font-family:"IBM Plex Mono",monospace; font-size:15px; font-weight:500; font-variant-numeric:tabular-nums}
+
+h3.blk{
+  font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--accent); margin:26px 0 10px;
+}
+h3.blk:first-of-type{margin-top:0}
+.fx-body ul{margin:0 0 14px; padding-left:20px; max-width:70ch}
+.fx-body li{margin-bottom:7px}
+.tag{
+  font-family:Archivo,sans-serif; font-size:11px; font-weight:700;
+  letter-spacing:.07em; text-transform:uppercase; padding:2px 7px; white-space:nowrap;
+}
+.t-low{background:var(--good-soft); color:var(--good)}
+.t-mid{background:var(--warn-soft); color:var(--warn)}
+.t-high{background:var(--bad-soft); color:var(--bad)}
+
+/* market suitability rows */
+.mkt{border-top:1px solid var(--line)}
+.mkt-row{
+  display:grid; grid-template-columns:150px 1fr; gap:0;
+  border-bottom:1px solid var(--line);
+}
+.mkt-name{
+  padding:13px 14px 13px 0; font-family:Archivo,sans-serif;
+  font-weight:700; font-size:14px; line-height:1.3;
+}
+.mkt-name .verdict{display:block; margin-top:6px}
+.mkt-why{padding:13px 0 13px 16px; border-left:3px solid var(--line); font-size:15.5px; color:var(--ink-2)}
+.mkt-row.good .mkt-why{border-left-color:var(--good)}
+.mkt-row.ok .mkt-why{border-left-color:var(--warn)}
+.mkt-row.bad .mkt-why{border-left-color:var(--bad)}
+@media (max-width:620px){
+  .mkt-row{grid-template-columns:1fr; gap:0}
+  .mkt-name{padding-bottom:6px}
+  .mkt-why{padding:0 0 14px 14px}
+}
+
+/* index list */
+.index{display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line)}
+.index a{
+  display:block; background:var(--surface); padding:12px 14px; text-decoration:none;
+  color:var(--ink); font-family:Archivo,sans-serif; font-weight:600; font-size:14.5px;
+}
+.index a:hover,.index a:focus-visible{background:var(--accent-soft); color:var(--accent)}
+.index a span{display:block; font-family:"IBM Plex Mono",monospace; font-weight:400; font-size:11.5px; color:var(--muted); margin-top:3px; letter-spacing:.03em}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+
+footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); font-size:14px; color:var(--muted); max-width:74ch}
+footer a{color:var(--accent)}
+
+/* ---------- not-yet-built fixture ---------- */
+.fixture.pending{opacity:.72}
+.pending-note{
+  font-family:Archivo,sans-serif; font-size:13px; font-weight:600;
+  letter-spacing:.04em; color:var(--muted);
+  background:var(--surface-2); border:1px dashed var(--line);
+  border-radius:8px; padding:14px 16px; margin-top:18px;
+}
+</style>
+
+<div class="wrap">
+
+<header class="top">
+  <p class="eyebrow">Context engine &middot; no picks, no sides, no lines</p>
+  <h1>Five fixtures, four of them shadowed by a Champions League match four to six days old</h1>
+  <p class="standfirst">Five fixtures parsed from slate.xlsx (Phase 1B, the sheet named &ldquo;slate.xlsx&rdquo;), all kicking off on 14 September 2026 across Serie A, the Premier League and LaLiga; the slate sits at the six-fixture triage floor, so Phase 1.5 was skipped and all five were built at full T1 depth.</p>
+  <div class="metaline">
+    <span>Monday 14 September 2026</span>
+    <span>Serie A matchday 4 &middot; Premier League matchweek 4 &middot; LaLiga jornada 5</span>
+    <span>Decimal odds, bet365 IT</span>
+  </div>
+</header>
+
+<!--GRID:start-->
+<style>
+/* verdict grid - board_grid.py */
+.vgrid-wrap{border:1px solid var(--line); background:var(--surface); overflow-x:auto}
+table.vgrid{min-width:820px; font-size:13px; table-layout:fixed}
+table.vgrid thead th{text-align:center; padding:9px 6px; font-size:10.5px; letter-spacing:.07em}
+table.vgrid thead th:first-child{text-align:left; width:210px; position:sticky; left:0; z-index:1}
+table.vgrid tbody td{padding:0; text-align:center; font-family:Archivo,sans-serif; white-space:nowrap}
+table.vgrid tbody td:first-child{
+  padding:8px 11px; text-align:left; position:sticky; left:0; z-index:1;
+  background:var(--surface); border-right:1px solid var(--line);
+  white-space:normal; overflow-wrap:anywhere; line-height:1.3;
+}
+table.vgrid tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
+table.vgrid td:first-child a{color:var(--ink); text-decoration:none; font-weight:600; font-size:13.5px}
+table.vgrid td:first-child a:hover{color:var(--accent)}
+table.vgrid td:first-child .ko{font-size:11px}
+table.vgrid td.v a{
+  display:block; padding:9px 4px; text-decoration:none; font-weight:700;
+  font-size:11px; letter-spacing:.05em; text-transform:uppercase;
+  border-left:1px solid var(--surface);
+}
+table.vgrid td.good a{background:var(--good-soft); color:var(--good)}
+table.vgrid td.ok a{background:var(--warn-soft); color:var(--warn)}
+table.vgrid td.bad a{background:var(--bad-soft); color:var(--bad)}
+table.vgrid td.v a:hover,table.vgrid td.v a:focus-visible{outline:2px solid currentColor; outline-offset:-2px}
+table.vgrid td.none{
+  padding:9px 12px; text-align:left; font-size:12px; font-weight:600;
+  color:var(--muted); font-style:italic; letter-spacing:.02em;
+}
+table.vgrid tfoot th, table.vgrid tfoot td{
+  padding:8px 6px; border-top:2px solid var(--ink); font-family:"IBM Plex Mono",monospace;
+  font-size:12px; text-align:center; color:var(--ink-2); background:var(--surface-2);
+}
+table.vgrid tfoot th{
+  text-align:left; font-family:Archivo,sans-serif; font-weight:700; font-size:10.5px;
+  letter-spacing:.09em; text-transform:uppercase; position:sticky; left:0; padding-left:11px;
+}
+.vgrid-key{display:flex; flex-wrap:wrap; gap:6px 16px; margin:10px 0 0; font-size:13px; color:var(--muted)}
+.vgrid-key span{display:inline-flex; align-items:center; gap:6px}
+.vgrid-key i{display:inline-block; width:12px; height:12px}
+.vgrid-key .k-good{background:var(--good-soft); border:1px solid var(--good)}
+.vgrid-key .k-ok{background:var(--warn-soft); border:1px solid var(--warn)}
+.vgrid-key .k-bad{background:var(--bad-soft); border:1px solid var(--bad)}
+.mkt-row.vflash{animation:vflash 1.6s ease-out 1}
+@keyframes vflash{0%,35%{background:var(--accent-soft); box-shadow:inset 3px 0 0 var(--accent)}100%{background:transparent}}
+@media (prefers-reduced-motion:reduce){.mkt-row.vflash{animation:none; background:var(--accent-soft)}}
+</style>
+<section class="vgrid-sec">
+  <h2 class="sec">At a glance &mdash; every verdict on this board</h2>
+  <div class="vgrid-wrap">
+  <table class="vgrid">
+    <thead><tr><th scope="col">Fixture</th><th scope="col">1X2</th><th scope="col">AH / DNB</th><th scope="col">Totals</th><th scope="col">BTTS</th><th scope="col">Team goals</th><th scope="col">Halves</th><th scope="col">Discipline</th><th scope="col">Corners</th></tr></thead>
+    <tbody>
+      <tr><td><a href="#f1">Como &#8211; Parma</a><span class="ko">18:30 &middot; Serie A</span></td><td class="v ok"><a href="#f1" data-row="1X2" title="1X2 / Moneyline: OK &#8212; wide structural gap, thin current sample" aria-label="Como &#8211; Parma, 1X2 / Moneyline: OK &#8212; wide structural gap, thin current sample">OK</a></td><td class="v ok"><a href="#f1" data-row="Asian handicap" title="Asian handicap / DNB: OK &#8212; margin evidence exists at both ends" aria-label="Como &#8211; Parma, Asian handicap / DNB: OK &#8212; margin evidence exists at both ends">OK</a></td><td class="v bad"><a href="#f1" data-row="Totals" title="Totals (O/U goals): Split &#8212; the two clubs&#8217; event rates point opposite ways" aria-label="Como &#8211; Parma, Totals (O/U goals): Split &#8212; the two clubs&#8217; event rates point opposite ways">Split</a></td><td class="v ok"><a href="#f1" data-row="BTTS" title="BTTS: OK &#8212; one leg well evidenced, the other contested" aria-label="Como &#8211; Parma, BTTS: OK &#8212; one leg well evidenced, the other contested">OK</a></td><td class="v ok"><a href="#f1" data-row="Team goals" title="Team goals: OK &#8212; asymmetric: Parma&#8217;s line has the evidence, Como&#8217;s the variance" aria-label="Como &#8211; Parma, Team goals: OK &#8212; asymmetric: Parma&#8217;s line has the evidence, Como&#8217;s the variance">OK</a></td><td class="v bad"><a href="#f1" data-row="Halves" title="Halves (1H result, 1H goals): Dangerous &#8212; no half-time series exists" aria-label="Como &#8211; Parma, Halves (1H result, 1H goals): Dangerous &#8212; no half-time series exists">Dangerous</a></td><td class="v bad"><a href="#f1" data-row="Discipline" title="Discipline (cards, fouls): Dangerous &#8212; a referee with almost no Serie A record and no club rates" aria-label="Como &#8211; Parma, Discipline (cards, fouls): Dangerous &#8212; a referee with almost no Serie A record and no club rates">Dangerous</a></td><td class="v bad"><a href="#f1" data-row="Corners" title="Corners: Dangerous &#8212; no corner data at club or league level" aria-label="Como &#8211; Parma, Corners: Dangerous &#8212; no corner data at club or league level">Dangerous</a></td></tr>
+      <tr><td><a href="#f2">Torino &#8211; Roma</a><span class="ko">18:30 &middot; Serie A</span></td><td class="v ok"><a href="#f2" data-row="1X2" title="1X2 / Moneyline: OK &#8212; the gap is documented at every level, the schedule is the counterweight" aria-label="Torino &#8211; Roma, 1X2 / Moneyline: OK &#8212; the gap is documented at every level, the schedule is the counterweight">OK</a></td><td class="v ok"><a href="#f2" data-row="Asian handicap" title="Asian handicap / DNB: OK &#8212; margin evidence on both sides of the ball" aria-label="Torino &#8211; Roma, Asian handicap / DNB: OK &#8212; margin evidence on both sides of the ball">OK</a></td><td class="v ok"><a href="#f2" data-row="Totals" title="Totals (O/U goals): OK &#8212; the two three-match samples agree, the two seasons less so" aria-label="Torino &#8211; Roma, Totals (O/U goals): OK &#8212; the two three-match samples agree, the two seasons less so">OK</a></td><td class="v ok"><a href="#f2" data-row="BTTS" title="BTTS: OK &#8212; asymmetric: one leg rests on Torino&#8217;s depleted attack" aria-label="Torino &#8211; Roma, BTTS: OK &#8212; asymmetric: one leg rests on Torino&#8217;s depleted attack">OK</a></td><td class="v ok"><a href="#f2" data-row="Team goals" title="Team goals: OK &#8212; Roma&#8217;s line best evidenced on the card" aria-label="Torino &#8211; Roma, Team goals: OK &#8212; Roma&#8217;s line best evidenced on the card">OK</a></td><td class="v bad"><a href="#f2" data-row="Halves" title="Halves (1H result, 1H goals): Dangerous &#8212; no half-time data" aria-label="Torino &#8211; Roma, Halves (1H result, 1H goals): Dangerous &#8212; no half-time data">Dangerous</a></td><td class="v ok"><a href="#f2" data-row="Discipline" title="Discipline (cards, fouls): OK &#8212; a documented, card-heavy official; no club rates" aria-label="Torino &#8211; Roma, Discipline (cards, fouls): OK &#8212; a documented, card-heavy official; no club rates">OK</a></td><td class="v bad"><a href="#f2" data-row="Corners" title="Corners: Dangerous &#8212; volume proxies only" aria-label="Torino &#8211; Roma, Corners: Dangerous &#8212; volume proxies only">Dangerous</a></td></tr>
+      <tr><td><a href="#f3">Inter &#8211; Udinese</a><span class="ko">20:45 &middot; Serie A</span></td><td class="v ok"><a href="#f3" data-row="1X2" title="1X2 / Moneyline: OK &#8212; a documented gap with two specific counterweights" aria-label="Inter &#8211; Udinese, 1X2 / Moneyline: OK &#8212; a documented gap with two specific counterweights">OK</a></td><td class="v ok"><a href="#f3" data-row="Asian handicap" title="Asian handicap / DNB: OK &#8212; margin question, both ends evidenced" aria-label="Inter &#8211; Udinese, Asian handicap / DNB: OK &#8212; margin question, both ends evidenced">OK</a></td><td class="v good"><a href="#f3" data-row="Totals" title="Totals (O/U goals): Well-suited &#8212; last season and this season point the same way" aria-label="Inter &#8211; Udinese, Totals (O/U goals): Well-suited &#8212; last season and this season point the same way">Well-suited</a></td><td class="v ok"><a href="#f3" data-row="BTTS" title="BTTS: OK &#8212; one leg rests on a weakened Udinese attack" aria-label="Inter &#8211; Udinese, BTTS: OK &#8212; one leg rests on a weakened Udinese attack">OK</a></td><td class="v ok"><a href="#f3" data-row="Team goals" title="Team goals: OK &#8212; asymmetric: Inter&#8217;s total best evidenced" aria-label="Inter &#8211; Udinese, Team goals: OK &#8212; asymmetric: Inter&#8217;s total best evidenced">OK</a></td><td class="v bad"><a href="#f3" data-row="Halves" title="Halves (1H result, 1H goals): Dangerous &#8212; no half-time data" aria-label="Inter &#8211; Udinese, Halves (1H result, 1H goals): Dangerous &#8212; no half-time data">Dangerous</a></td><td class="v ok"><a href="#f3" data-row="Discipline" title="Discipline (cards, fouls): OK &#8212; a card-heavy, penalty-heavy snapshot that is not a season" aria-label="Inter &#8211; Udinese, Discipline (cards, fouls): OK &#8212; a card-heavy, penalty-heavy snapshot that is not a season">OK</a></td><td class="v bad"><a href="#f3" data-row="Corners" title="Corners: Dangerous &#8212; volume proxies only" aria-label="Inter &#8211; Udinese, Corners: Dangerous &#8212; volume proxies only">Dangerous</a></td></tr>
+      <tr><td><a href="#f4">Leeds United &#8211; Newcastle United</a><span class="ko">21:00 &middot; Premier League</span></td><td class="v bad"><a href="#f4" data-row="1X2" title="1X2 / Moneyline: Dangerous &#8212; nothing structural separates the two sides" aria-label="Leeds United &#8211; Newcastle United, 1X2 / Moneyline: Dangerous &#8212; nothing structural separates the two sides">Dangerous</a></td><td class="v ok"><a href="#f4" data-row="Asian handicap" title="Asian handicap / DNB: OK &#8212; draw frequency is the documented input" aria-label="Leeds United &#8211; Newcastle United, Asian handicap / DNB: OK &#8212; draw frequency is the documented input">OK</a></td><td class="v ok"><a href="#f4" data-row="Totals" title="Totals (O/U goals): Split &#8212; goals say low for Leeds, xG says otherwise for both" aria-label="Leeds United &#8211; Newcastle United, Totals (O/U goals): Split &#8212; goals say low for Leeds, xG says otherwise for both">Split</a></td><td class="v ok"><a href="#f4" data-row="BTTS" title="BTTS: OK &#8212; the two samples agree" aria-label="Leeds United &#8211; Newcastle United, BTTS: OK &#8212; the two samples agree">OK</a></td><td class="v ok"><a href="#f4" data-row="Team goals" title="Team goals: OK &#8212; symmetric and thin" aria-label="Leeds United &#8211; Newcastle United, Team goals: OK &#8212; symmetric and thin">OK</a></td><td class="v bad"><a href="#f4" data-row="Halves" title="Halves (1H result, 1H goals): Dangerous &#8212; no half-time data" aria-label="Leeds United &#8211; Newcastle United, Halves (1H result, 1H goals): Dangerous &#8212; no half-time data">Dangerous</a></td><td class="v ok"><a href="#f4" data-row="Discipline" title="Discipline (cards, fouls): OK &#8212; club rates and referee record point opposite ways" aria-label="Leeds United &#8211; Newcastle United, Discipline (cards, fouls): OK &#8212; club rates and referee record point opposite ways">OK</a></td><td class="v bad"><a href="#f4" data-row="Corners" title="Corners: Dangerous &#8212; no corner data" aria-label="Leeds United &#8211; Newcastle United, Corners: Dangerous &#8212; no corner data">Dangerous</a></td></tr>
+      <tr><td><a href="#f5">Villarreal &#8211; Real Betis</a><span class="ko">21:00 &middot; LaLiga</span></td><td class="v bad"><a href="#f5" data-row="1X2" title="1X2 / Moneyline: Dangerous &#8212; results and chances point opposite ways for both sides" aria-label="Villarreal &#8211; Real Betis, 1X2 / Moneyline: Dangerous &#8212; results and chances point opposite ways for both sides">Dangerous</a></td><td class="v ok"><a href="#f5" data-row="Asian handicap" title="Asian handicap / DNB: OK &#8212; margins have been small in Betis&#8217; wins" aria-label="Villarreal &#8211; Real Betis, Asian handicap / DNB: OK &#8212; margins have been small in Betis&#8217; wins">OK</a></td><td class="v ok"><a href="#f5" data-row="Totals" title="Totals (O/U goals): Split &#8212; scorelines diverge, chance volume does not" aria-label="Villarreal &#8211; Real Betis, Totals (O/U goals): Split &#8212; scorelines diverge, chance volume does not">Split</a></td><td class="v ok"><a href="#f5" data-row="BTTS" title="BTTS: Split &#8212; the same divergence as totals" aria-label="Villarreal &#8211; Real Betis, BTTS: Split &#8212; the same divergence as totals">Split</a></td><td class="v ok"><a href="#f5" data-row="Team goals" title="Team goals: OK &#8212; Villarreal&#8217;s line has the volume evidence" aria-label="Villarreal &#8211; Real Betis, Team goals: OK &#8212; Villarreal&#8217;s line has the volume evidence">OK</a></td><td class="v bad"><a href="#f5" data-row="Halves" title="Halves (1H result, 1H goals): Dangerous &#8212; no half-time data" aria-label="Villarreal &#8211; Real Betis, Halves (1H result, 1H goals): Dangerous &#8212; no half-time data">Dangerous</a></td><td class="v ok"><a href="#f5" data-row="Discipline" title="Discipline (cards, fouls): OK &#8212; low-booking clubs, and a referee whose two records disagree" aria-label="Villarreal &#8211; Real Betis, Discipline (cards, fouls): OK &#8212; low-booking clubs, and a referee whose two records disagree">OK</a></td><td class="v bad"><a href="#f5" data-row="Corners" title="Corners: Dangerous &#8212; no corner data" aria-label="Villarreal &#8211; Real Betis, Corners: Dangerous &#8212; no corner data">Dangerous</a></td></tr>
+    </tbody>
+    <tfoot><tr><th scope="row">Well-suited</th><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><th scope="row">Dangerous</th><td>2</td><td>0</td><td>1</td><td>0</td><td>0</td><td>5</td><td>1</td><td>5</td></tr></tfoot>
+  </table>
+  </div>
+  <div class="vgrid-key">
+    <span><i class="k-good"></i>Well-suited</span><span><i class="k-ok"></i>OK / Split</span>
+    <span><i class="k-bad"></i>Dangerous</span>
+    <span>Kickoff order. Click a cell for the reasoning on that card; hover for the full verdict.</span>
+  </div>
+</section>
+<script>
+/* verdict grid - jump to the family's row on the card */
+document.addEventListener("click", function (e) {
+  var a = e.target.closest && e.target.closest("a[data-row]");
+  if (!a) return;
+  var card = document.getElementById(a.getAttribute("href").slice(1));
+  if (!card) return;
+  var want = a.getAttribute("data-row").toLowerCase(), hit = null;
+  card.querySelectorAll(".mkt-row").forEach(function (r) {
+    var n = r.querySelector(".mkt-name");
+    if (!hit && n && n.textContent.trim().toLowerCase().indexOf(want) === 0) hit = r;
+  });
+  if (!hit) return;
+  e.preventDefault();
+  history.replaceState(null, "", "#" + card.id);
+  hit.scrollIntoView({block: "center"});
+  hit.classList.remove("vflash"); void hit.offsetWidth; hit.classList.add("vflash");
+});
+</script>
+<!--GRID:end-->
+
+
+<section>
+  <h2 class="sec">The one thing shaping every game on this card</h2>
+  <p>Four of the five fixtures carry a side that played Champions League football in the same week. Como beat RB Leipzig 4&ndash;1 at home on 10 September; Roma drew 1&ndash;1 at Fenerbah&ccedil;e the same night; Inter lost 2&ndash;1 at Real Madrid on 8 September; Villarreal lost 3&ndash;2 at Borussia Dortmund and Real Betis won 3&ndash;2 from behind at Lille, both also on 8 September. That leaves between four and six days before tonight&rsquo;s kickoffs &mdash; four for Como and Roma, six for Inter, Villarreal and Betis &mdash; and in two fixtures it is specifically the away side carrying the fatigue (Roma at Torino, and Udinese have no European football to weigh against Inter&rsquo;s); in Villarreal &ndash; Real Betis both sides do.</p>
+  <p>The one fixture untouched by Europe, Leeds &ndash; Newcastle, carries a version of the same evidential problem by a different route. Newcastle&rsquo;s manager has been in post five weeks, the club sold three first-team regulars for &pound;236.8m and spent &pound;265.3m rebuilding around him, so &ldquo;this season&rsquo;s Newcastle&rdquo; is itself a three-match sample rather than a settled side &mdash; the same kind of gap a Champions League turnaround opens elsewhere on the card, produced here by recruitment rather than a fixture list. Torino, Villarreal and (on the touchline, not the pitch) Newcastle are also all several weeks into a new head coach, so the slate carries very little continuity to lean on anywhere.</p>
+  <div class="note"><strong>Structural consequence.</strong> Confirmed selection &mdash; who starts, how heavily either side rotates after a European trip &mdash; is the one thing no source published this far ahead, so every card below names the relevant gap explicitly in section D rather than assuming a settled eleven. Independently of that, no publication reached anywhere on this slate carries a club-level corner count or a first-half goals series for any of the ten clubs, which is why the corners and halves families are rated Dangerous on all five cards for a second, unrelated reason.</div>
+</section>
+
+<section>
+  <h2 class="sec">Today&rsquo;s slate &mdash; odds as read from the screenshots</h2>
+  <div class="scroller">
+  <table>
+    <thead>
+      <tr>
+        <th>Kickoff</th><th>Competition</th><th>Fixture</th><th>Venue</th><th>Referee</th><th>Played</th><th>Flag</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>18:30 CEST</td><td>Serie A</td><td><a href="#f1">Como &ndash; Parma</a></td><td>Stadio Giuseppe Sinigaglia, Como</td><td>Giuseppe Mucera</td><td>Como 3 &middot; Parma 3</td><td>European turnaround</td></tr>
+      <tr><td>18:30 CEST</td><td>Serie A</td><td><a href="#f2">Torino &ndash; Roma</a></td><td>Stadio Olimpico Grande Torino</td><td>Fabio Maresca</td><td>Torino 3 &middot; Roma 3</td><td>new manager</td></tr>
+      <tr><td>20:45 CEST</td><td>Serie A</td><td><a href="#f3">Inter &ndash; Udinese</a></td><td>Stadio Giuseppe Meazza, Milan</td><td>Luca Pairetto</td><td>Inter 3 &middot; Udinese 3</td><td>European turnaround</td></tr>
+      <tr><td>21:00 CEST (20:00 BST)</td><td>Premier League</td><td><a href="#f4">Leeds United &ndash; Newcastle United</a></td><td>Elland Road, Leeds</td><td>Michael Salisbury</td><td>Leeds 3 &middot; Newcastle 3</td><td>new manager</td></tr>
+      <tr><td>21:00 CEST</td><td>LaLiga</td><td><a href="#f5">Villarreal &ndash; Real Betis</a></td><td>Estadio de la Cer&aacute;mica, Vila-real</td><td>Hern&aacute;ndez Maeso</td><td>Villarreal 4 &middot; Betis 4</td><td>both sides in Europe</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="note"><strong>Provenance.</strong> Typed-file mode: fixtures were read from <span class="mono">slate.xlsx</span> (the tab literally named &ldquo;slate.xlsx&rdquo;, header row league/kickoff/venue/home/away/matchday), not sourced from a live endpoint, and venue and matchday were recovered in Phase 2 rather than typed. Card and corner league baselines were sourced only for the Premier League and LaLiga, computed from ESPN&rsquo;s 2025&ndash;26 club discipline tables (Serie A&rsquo;s equivalent could not be reached); goals-per-game baselines for all three competitions come from each league&rsquo;s Wikipedia season page. 2026&ndash;27 rates throughout are FootyStats club-page figures on three- or four-match samples and are labelled as such in every strip; last season&rsquo;s figures stand in only at league level for goals and cards per game, never substituted into a team&rsquo;s current-season row.</div>
+</section>
+
+<section>
+  <h2 class="sec">Jump to a fixture</h2>
+  <nav class="jump">
+    <a href="#f1">Como &ndash; Parma<span>18:30 CEST &middot; Stadio Giuseppe Sinigaglia, Como</span></a>
+    <a href="#f2">Torino &ndash; Roma<span>18:30 CEST &middot; Stadio Olimpico Grande Torino</span></a>
+    <a href="#f3">Inter &ndash; Udinese<span>20:45 CEST &middot; Stadio Giuseppe Meazza (San Siro), Milan</span></a>
+    <a href="#f4">Leeds United &ndash; Newcastle United<span>21:00 CEST (20:00 BST) &middot; Elland Road, Leeds</span></a>
+    <a href="#f5">Villarreal &ndash; Real Betis<span>21:00 CEST &middot; Estadio de la Cer&aacute;mica, Vila-real</span></a>
+  </nav>
+</section>
+
+<article class="fixture" id="f1">
+  <div class="fx-head">
+    <p class="fx-league">Italy &middot; Serie A &middot; Matchday 4</p>
+    <h2 class="fx-title">Como &ndash; Parma</h2>
+    <p class="fx-sub">18:30 CEST &middot; Stadio Giuseppe Sinigaglia, Como &middot; Last season&rsquo;s fourth-best attack and best defence, unchanged at the top and four days off a Champions League night, against a side with one goal in three that sold its goalkeeper, centre-back and centre-forward &mdash; under a referee with a handful of Serie A matches &middot; high-uncertainty: no card, corner or half-time series sourced for either club</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>Played this season</dt><dd>Como 4 (3 Serie A, 1 Champions League) &middot; Parma 4 (3 Serie A, 1 Coppa Italia)</dd></div>
+      <div class="od"><dt>Goals for / against pg</dt><dd>25/26: 1.71/0.76 &middot; 0.74/1.21 &middot; Lg 2.43 total &middot; 26/27 (3): 2.33/1.00 &middot; 0.33/1.33</dd></div>
+      <div class="od"><dt>xG for / against pg</dt><dd>25/26 not published for either &middot; 26/27 (3): Como 1.82/1.00 (FootyStats; 1vs1 gives 4.64 total for) &middot; Parma not published &middot; Lg not published</dd></div>
+      <div class="od"><dt>Over 2.5</dt><dd>25/26 not published &middot; 26/27 (3): 67% &middot; 0% (counted) &middot; Lg not published</dd></div>
+      <div class="od"><dt>BTTS</dt><dd>25/26 not published &middot; 26/27 (3): 100% &middot; 33% (counted) &middot; Lg not published</dd></div>
+      <div class="od"><dt>Clean sheet / failed to score</dt><dd>25/26 not published &middot; 26/27 (3): 0%/0% &middot; 0%/67% (counted) &middot; Lg not published</dd></div>
+      <div class="od"><dt>First-half goals pg</dt><dd>not published &middot; not published &middot; Lg not published</dd></div>
+      <div class="od"><dt>Cards / fouls pg</dt><dd>not published &middot; not published &middot; Lg not published</dd></div>
+      <div class="od"><dt>Corners for / against pg</dt><dd>not published &middot; not published &middot; Lg not published</dd></div>
+      <div class="od"><dt>Referee</dt><dd>Giuseppe Mucera (Palermo) &middot; 3.78 Y / 0.46 R pg, competition mix unstated &middot; confirmed</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>Neither club is promoted. <strong>Como finished 4th in 2025&ndash;26 &mdash; 20 wins, 11 draws, 7 defeats, 65 scored, 29 conceded, 71 points</strong> &mdash; the fewest goals conceded in the division and a Champions League place, with Anastasios Douvikas on 14 league goals. <strong>Parma finished 13th &mdash; 11 wins, 12 draws, 15 defeats, 28 scored, 46 conceded, 45 points</strong>; only Hellas Verona (25) and Pisa (26), both relegated, scored fewer, and Lecce matched 28. Both head coaches continue: Cesc F&agrave;bregas into another season at Como, Carlos Cuesta into his second at Parma. The structural headline is on the Parma side of the ledger &mdash; in one window they sold the goalkeeper, a first-choice centre-back and the centre-forward from a side that already scored 28, and three matches in they have one goal.</p>
+    <ul>
+      <li><strong>Como &mdash; turnover medium-to-high, concentrated in the spine; manager unchanged.</strong> <em>Centre-back:</em> Trevoh Chalobah from Chelsea, &euro;30m. <em>Centre-forward:</em> Moise Kean from Fiorentina on loan &mdash; &euro;5m loan fee with an obligation to buy (Wikipedia), the obligation reported in the Italian press at &euro;35m plus &euro;5m in bonuses; &Aacute;lvaro Morata out on loan to Legan&eacute;s. <em>Goalkeeper:</em> Robert S&aacute;nchez on a free loan from Chelsea; Viktor T&ouml;rnqvist out to Monza. <em>Defensive midfield:</em> Samuele Ricci from Milan, &euro;1.5m loan with option; Luis Milla from Getafe; Yannik Engelhardt out to Freiburg, &euro;7m. Also in: Kaiki (Cruzeiro), Mattia Liberali (Catanzaro), Yan Couto (Borussia Dortmund), Kambwala (Villarreal). Also out: Stefan Posch to Mainz (&euro;4m), Sergi Roberto (LA Galaxy), Mergim Vojvoda (Udinese), Fadera (Cagliari), Van der Brempt (Sassuolo), Kuhn (M&ouml;nchengladbach). <strong>Gap:</strong> no fee published for Milla, Kaiki, Liberali, Couto, Kambwala or any departure other than Engelhardt and Posch.</li>
+      <li><strong>Parma &mdash; turnover high, and all three priority positions sold; manager unchanged.</strong> <em>Goalkeeper:</em> Zion Suzuki to Aston Villa, officially announced 19 August 2026 &mdash; an offer reported at &euro;35m, no confirmed final fee found; Rinaldi out to Catania; Daffara (from Avellino) and Ghidotti (from Sampdoria) in, with Corvi named in every probable XI reached. <em>Centre-back:</em> Alessandro Circati to Benfica, permanent, &ldquo;circa 20 milioni&rdquo;, official 19 August 2026; Diego Carlos in from Fenerbah&ccedil;e (on loan at Como in 2025&ndash;26 per fx_12_f3). <em>Centre-forward:</em> Mateo Pellegrino to Fiorentina, reported &euro;22.5m; El Bilal Tour&eacute; (from Be&#351;ikta&#351;), Dami&aacute;n Romero (Tigre) and Diallo (Borussia Dortmund II) in. <em>Midfield:</em> Est&eacute;vez (Palermo) and Oliver S&oslash;rensen (Celtic) out; Giovanni Fabbian in from Fiorentina. Also out: Oristanio (Torino), Strefezza (Palermo), Ondrejka (Groningen), Balogh and Amoran (Westerlo), Mena Mart&iacute;nez (Arezzo). Sales reported at roughly &euro;80m in total. <strong>Gap:</strong> no fee published for any Parma arrival.</li>
+      <li><strong>Suspensions / absences.</strong> Como: <strong>Addai injured</strong>; Kean, S&aacute;nchez and every other summer arrival in the squad list. Parma: <strong>Nicolussi Caviglia injured</strong>, <strong>Mazzocchi not called up</strong>. No suspension reported on either side. Probable elevens disagree on Como&rsquo;s centre-forward &mdash; Sky Sport has Kean making his first start, other previews keep Douvikas &mdash; and on Parma&rsquo;s shape, 3&ndash;5&ndash;2 or 5&ndash;3&ndash;2.</li>
+      <li><strong>Sample.</strong> Three Serie A matches each. <strong>Como: 2W&ndash;1D, 7 scored, 3 conceded, 6th</strong> &mdash; 4&ndash;1 at Genoa, a win at Napoli, a draw with Udinese &mdash; plus a <strong>4&ndash;1 home win over RB Leipzig in the Champions League on 10 September</strong>, nine official matches unbeaten. FootyStats records all three league matches as away fixtures, which would make this Como&rsquo;s first league match at the Sinigaglia this season; single-sourced. <strong>Parma: 0W&ndash;1D&ndash;2L, 1 scored, 4 conceded, 17th</strong> &mdash; home defeat to Cagliari on matchday 1, defeat at Juventus on matchday 2 (per fx_9_f17), 1&ndash;1 at home to promoted Monza on matchday 3 with Lontani scoring &mdash; plus a <strong>0&ndash;2 home Coppa Italia defeat to Cremonese</strong>, so one goal in four competitive matches. The two league defeats were goalless, so the conceded goals split one and two; one preview puts Parma at 8 league shots on target in three.</li>
+      <li><strong>Referee.</strong> <strong>Giuseppe Mucera</strong> (Palermo section), <strong>confirmed</strong> in the matchday-4 designations, with Biffi and Santarossa assisting, Massa fourth official, Giua on VAR and Mazzoleni AVAR. He made his Serie A debut on 7 December 2025 (Cremonese&ndash;Lecce) and one preview counts tonight as his fourth Serie A match. The only published rate is <strong>3.78 yellow and 0.46 red cards per match</strong> across his record, without a competition split &mdash; most of that sample is below Serie A. <strong>Gap:</strong> no fouls-per-card figure, no penalties-per-game figure and no history with either club.</li>
+      <li><strong>Not sourced.</strong> For both clubs, 2025&ndash;26 xG for and against, shot volume, home/away split, foul and card rate, corners for and against, over 2.5 %, BTTS %, clean-sheet and failed-to-score %, first-half goals; Parma&rsquo;s 2026&ndash;27 xG; every card and corner figure this season; every Serie A league baseline except goals per game. FootyStats premium tables, FBref, Squawka, soccerstats and sportstats365 were all unreachable. Goals-per-game figures in the strip are computed from published season totals; Parma&rsquo;s this-season percentages are counted from their three results.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Como under F&agrave;bregas are a possession side: build-up from goalkeeper and centre-backs through Perrone as the link, full-backs stepping inside against a high press, immediate counter-pressing after central turnovers, and a 4&ndash;4&ndash;2 or 5&ndash;3&ndash;2 block without the ball; Valle is a principal outlet from full-back and Nico Paz a direct free-kick threat. That profile produced the division&rsquo;s best defensive record last season and it has survived the summer at coach level. What changed is the personnel at the two ends of the spine &mdash; Chalobah in for Posch, S&aacute;nchez added in goal, Kean in for Morata &mdash; and the early evidence is that the attack has not been diluted by it: seven league goals in three and four against Leipzig. The early evidence on defence runs the other way from last season&rsquo;s record: Como have conceded in every league match and the BTTS rate is three from three, with one conceded each time. <strong>Gap:</strong> no possession, shot, foul or corner series for Como in either season.</p>
+    <p>Parma under Cuesta arrived last summer with a 4&ndash;3&ndash;3, possession-and-high-press identity and moved to a back three before the 2025&ndash;26 opener; this season&rsquo;s probable elevens are a 3&ndash;5&ndash;2 with wing-backs, and Cuesta&rsquo;s own framing of the fixture is that Como are beaten &ldquo;by scoring one more goal&rdquo;. The problem that framing addresses is documented: 28 goals last season and one this season, and the man who led the line has been sold. His replacements &mdash; Tour&eacute;, Romero, Diallo, with Lontani the only scorer so far &mdash; are evidence by CV rather than by match. Behind them the goalkeeper and a first-choice centre-back were also sold, and Diego Carlos, Circati&rsquo;s replacement, arrives from a season in which he was on the other side of tonight&rsquo;s fixture. <strong>Gap:</strong> no xG, possession, shot, foul or corner figure for Parma in either season; Troilo shared the division&rsquo;s highest individual red-card count in 2025&ndash;26 with two, which is the only Parma discipline fact sourced.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row ok"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-mid">OK &mdash; wide structural gap, thin current sample</span></div><div class="mkt-why">The season-long separation is large and fully published: 4th against 13th, 65 scored against 28, 29 conceded against 46, both coaches unchanged. The current sample agrees with it &mdash; 7 points to 1, 7 goals to 1. What keeps the family from well-suited is structure rather than form: Como play four days after a Champions League match and have not, on FootyStats&rsquo; split, played a league match at home yet, and Parma&rsquo;s spine is three sales and three arrivals old.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Asian handicap / DNB<span class="verdict tag t-mid">OK &mdash; margin evidence exists at both ends</span></div><div class="mkt-why">A margin question has more to work with here than most: Parma have conceded in all three league matches and scored in one, and Como have scored at least once in all four competitive matches, two of them by three goals. Against that, Como have conceded in every league match too, and Parma&rsquo;s two defeats were by one and two goals, not heavy ones. No shot or xG series for Parma means the margin reading rests on scorelines alone.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Totals (O/U goals)<span class="verdict tag t-high">Split &mdash; the two clubs&rsquo; event rates point opposite ways</span></div><div class="mkt-why">Como&rsquo;s league matches have produced 10 goals in 3 (over 2.5 in two); Parma&rsquo;s have produced 5 in 3 (over 2.5 in none), and last season Parma&rsquo;s fixtures averaged 1.95 goals against a league 2.43. Both records are three matches long and neither club&rsquo;s last-season over 2.5 rate was obtainable, so there is no longer series to arbitrate between them. Rated Dangerous because the two samples cancel rather than combine.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; one leg well evidenced, the other contested</span></div><div class="mkt-why">The Como-scores leg rests on 65 league goals last season and scoring in every match this season. The Parma-scores leg is the question: 28 last season, one this season, the centre-forward sold, 8 shots on target in three &mdash; against a Como defence that has conceded in all three league matches despite last season&rsquo;s 29. The family is readable because the uncertainty sits in one named place.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Team goals<span class="verdict tag t-mid">OK &mdash; asymmetric: Parma&rsquo;s line has the evidence, Como&rsquo;s the variance</span></div><div class="mkt-why">Parma&rsquo;s team total has the most consistent evidence on the card &mdash; 0.74 per game last season, 0.33 this season, the leading scorer sold. Como&rsquo;s own total is harder: 2.33 per game this season on three away matches, a new centre-forward whose first start is disputed between previews, and a Champions League match four days earlier.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Halves (1H result, 1H goals)<span class="verdict tag t-high">Dangerous &mdash; no half-time series exists</span></div><div class="mkt-why">No first-half goals figure was sourced for either club in either season, and no half-time scores for this season&rsquo;s matches. Rotation after a Champions League match is a live variable for the first half specifically, and nothing published describes it.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-high">Dangerous &mdash; a referee with almost no Serie A record and no club rates</span></div><div class="mkt-why">Mucera is confirmed but has roughly four Serie A matches since a December 2025 debut; his 3.78 yellows and 0.46 reds per match come from a record mostly below this division, with no fouls-per-card or penalty figure. Neither club&rsquo;s card or foul rate was obtainable, and the league baseline for cards is missing. An official with no top-flight record is itself a source of variance in this family.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Corners<span class="verdict tag t-high">Dangerous &mdash; no corner data at club or league level</span></div><div class="mkt-why">No corners-for or corners-against figure for either club in either season and no league baseline. The only structural input is style &mdash; a possession side with overlapping full-backs against a five-man defensive line &mdash; and that is a description, not a rate.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li><strong>Como&rsquo;s league numbers were, on FootyStats&rsquo; split, all made away from home.</strong> Tonight is the first league match at the Sinigaglia in that record, and last season&rsquo;s home/away split was not obtainable, so there is nothing to translate the away rates into a home setting.</li>
+      <li><strong>Como&rsquo;s 29 conceded last season and three conceded in three this season describe different defences.</strong> Posch and Engelhardt left, Chalobah and S&aacute;nchez arrived, and the 100% BTTS start is on a sample of three.</li>
+      <li><strong>Parma&rsquo;s 28 goals last season were scored with the players they have just sold.</strong> Pellegrino&rsquo;s departure means last season&rsquo;s low attacking rate is not a floor for this squad in either direction; this season&rsquo;s one goal is a three-match figure from a new forward line.</li>
+      <li><strong>Fixture congestion is one-sided.</strong> Como played Leipzig on 10 September; Parma&rsquo;s last match was matchday 3. Squad rotation for tonight is unpublished beyond disagreeing probable elevens.</li>
+      <li><strong>Most sensitive:</strong> totals and halves, where two three-match samples point opposite ways and no half-time or last-season over-2.5 series exists. <strong>Least sensitive:</strong> Parma&rsquo;s team goals, where last season&rsquo;s 28, this season&rsquo;s one and the sale of the centre-forward all describe the same thing.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>Team goals are more robust than the match total here because Parma&rsquo;s attacking rate is consistent across two seasons (0.74 and 0.33 per game) while the match total has to combine it with a Como rate made in three away matches.</li>
+      <li>BTTS is more robust than halves because it needs one contested fact &mdash; whether Parma score against a Como defence that has conceded in every league match &mdash; whereas no half-time figure exists for either club at all.</li>
+      <li>The moneyline family is more robust than discipline because 71 points against 45 and 65 goals against 28 are complete, published seasons, while the cards family has a referee with about four Serie A matches, no club rates and no league baseline.</li>
+      <li>The handicap is more robust than corners because the margin question can at least be argued from scorelines &mdash; Parma&rsquo;s defeats by one and two, Como&rsquo;s three-goal wins &mdash; while corners have no figure at any level.</li>
+      <li><strong>The fact that would most change the family choice:</strong> whether Como&rsquo;s three league matches were genuinely all away. If the Sinigaglia is only now hosting its first league match, every Como rate on this card is an away rate; a published fixture list with venues, or Como&rsquo;s 2025&ndash;26 home/away split, would settle it.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f2">
+  <div class="fx-head">
+    <p class="fx-league">Italy &middot; Serie A &middot; Matchday 4</p>
+    <h2 class="fx-title">Torino &ndash; Roma</h2>
+    <p class="fx-sub">18:30 CEST &middot; Stadio Olimpico Grande Torino &middot; A third head coach in fifteen months and a defence that has conceded in eight straight league matches, against last season&rsquo;s second-best defence, after a window of more than &euro;100m and four days back from Istanbul &mdash; with a confirmed official booking at 4.58 a game</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>Played this season</dt><dd>Torino 4 (3 Serie A, 1 Coppa Italia) &middot; Roma 4 (3 Serie A, 1 Champions League)</dd></div>
+      <div class="od"><dt>Goals for / against pg</dt><dd>25/26: 1.16/1.66 &middot; 1.55/0.82 &middot; Lg 2.43 total &middot; 26/27 (3): 1.33/1.67 &middot; 3.33/0.33</dd></div>
+      <div class="od"><dt>xG for / against pg</dt><dd>25/26 not published &middot; 26/27 (3): 1.03/1.88 &middot; 2.65/0.89 (FootyStats) &middot; Lg not published</dd></div>
+      <div class="od"><dt>Over 2.5</dt><dd>25/26 not published &middot; 26/27 (3): 100% &middot; 100% &middot; Lg not published</dd></div>
+      <div class="od"><dt>BTTS</dt><dd>25/26 not published &middot; 26/27 (3): 100% &middot; 33% &middot; Lg not published</dd></div>
+      <div class="od"><dt>Clean sheet / failed to score</dt><dd>25/26 not published &middot; 26/27 (3): 0%/0% &middot; 67%/0% &middot; Lg not published</dd></div>
+      <div class="od"><dt>First-half goals pg</dt><dd>not published &middot; not published &middot; Lg not published</dd></div>
+      <div class="od"><dt>Cards / fouls pg</dt><dd>not published &middot; not published &middot; Lg not published</dd></div>
+      <div class="od"><dt>Corners for / against pg</dt><dd>not published &middot; not published &middot; Lg not published &middot; shots pg 26/27 (3): 8.33 &middot; 23.67</dd></div>
+      <div class="od"><dt>Referee</dt><dd>Fabio Maresca (Napoli) &middot; 4.58 Y / 0.50 R pg, 25.92 fouls pg (25/26, 12 matches) &middot; confirmed</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>Neither club is promoted. <strong>Torino finished 12th in 2025&ndash;26 &mdash; 12 wins, 9 draws, 17 defeats, 44 scored, 63 conceded, 45 points</strong>; only relegated Pisa (71) conceded more. <strong>Roma finished 3rd &mdash; 23 wins, 4 draws, 11 defeats, 59 scored, 31 conceded, 73 points</strong>; only Como (29) conceded fewer. The structural headline is continuity against its absence. Gian Piero Gasperini is into his second season at Roma with contract renewals for Dybala (to 2027) and Cristante (to 2028) and a window that crossed &euro;100m. Torino have had three head coaches since last summer: Marco Baroni was dismissed on 23 February 2026 with the division&rsquo;s worst defence at that point (47 conceded in 26 matches), Roberto D&rsquo;Aversa took over to June and left by mutual consent on 12 June 2026, and <strong>Ignazio Abate was appointed the same day, starting 1 July on a contract to June 2028</strong>, from Juve Stabia in Serie B.</p>
+    <ul>
+      <li><strong>Torino &mdash; turnover high, weighted to defence and midfield; new manager.</strong> <em>Goalkeeper:</em> Lucas Perri on loan from Leeds United, Mascardi permanently from Spezia; no goalkeeper departure established. <em>Defence:</em> Comuzzo on loan from Fiorentina, Cemal C&ouml;mert free from Valencia, Rafik Belghali permanently from Hellas Verona for about &euro;7m, Nathan Patterson permanently from Everton (fee undisclosed, 30% sell-on to Everton), Tyron Alexandre from Osnabr&uuml;ck, Bragan&ccedil;a on loan from Sporting. Out: <strong>Guillermo Marip&aacute;n to Internacional</strong> (fee not found), Lazaro to Al Ain, Walukiewicz to Sassuolo, Pedersen to Olympiacos, Ali Demb&eacute;l&eacute; to Lecce, Tam&egrave;ze released. <em>Midfield:</em> Rolando Mandragora from Fiorentina for about &euro;5m on a contract to 2030, Fitz-Jim permanently from Ajax (fee not published), Fortini on loan from Fiorentina; Ili&#263; to Lecce, Prati to Racing Santander, W. Acquah to Modena. <em>Attack:</em> Oristanio on loan (from Venezia per Toro.it, from Parma per Eurosport &mdash; unreconciled); Njie to Fiorentina, Seck to Partizan. No new centre-forward.</li>
+      <li><strong>Roma &mdash; turnover medium, expensive, and concentrated at centre-forward, centre-back and wing-back; manager unchanged.</strong> <em>Centre-forward:</em> Santiago Castro from Bologna, permanent, &euro;36m, 30 July; Donyell Malen made permanent from Aston Villa, &euro;25m, 26 May, contract to 2030; Artem Dovbyk out to Bologna on loan with option, Robinio Vaz on loan to Hull City, Zaragoza to Espanyol. <em>Centre-back:</em> Konstantinos Koulierakis from Wolfsburg, permanent, &euro;16.5m (another report: about &euro;17m plus bonuses and a sell-on); Leonardo Balerdi from Marseille on loan with option, 30 August; Zi&oacute;&#322;kowski on loan to Monza. <em>Wing-back:</em> Nahuel Molina from Atl&eacute;tico Madrid, permanent, four-year contract, &euro;13m (about &euro;17m with bonuses in another report); &Ccedil;elik to Juventus, Angeli&ntilde;o on loan to Deportivo. <em>Midfield:</em> Marten de Roon from Atalanta, permanent, 30 August (fee not published); Rodrigo Mora, born 2007, from Porto, &euro;25m with a 50% sell-on. <em>Goalkeeper:</em> no first-team movement; third-choice Zelezny to Perugia.</li>
+      <li><strong>Suspensions / absences.</strong> Torino: <strong>Ch&eacute; Adams out with an adductor problem</strong> &mdash; he scored the winner at Fiorentina &mdash; and <strong>Giovanni Simeone doubtful with a back problem</strong>; Coco recovered. Roma: <strong>Manu Kon&eacute; reported out with a knee problem</strong> after leaving the Champions League match in Istanbul early (single-sourced); Lulli carrying a fever; Pellegrini recovering and travelling. No suspensions reported. Probable elevens differ on Torino&rsquo;s front two (Vlasic&ndash;Kulenovic or Adams&ndash;Simeone, the latter now unlikely) and Roma&rsquo;s back three.</li>
+      <li><strong>Sample.</strong> <strong>Torino: 1W&ndash;2L in Serie A, 4 scored, 5 conceded, 14th</strong> &mdash; 1&ndash;2 at home to Milan, 1&ndash;2 at Sassuolo, 2&ndash;1 at Fiorentina on 5 September (Mandragora, Adams) &mdash; plus a <strong>0&ndash;1 home Coppa Italia defeat to promoted Monza</strong>; Torino have conceded in each of their last eight league matches. <strong>Roma: 3W in Serie A, 10 scored, 1 conceded, 2nd</strong> &mdash; Fiorentina and Atalanta at home, Lecce away (4&ndash;0) &mdash; plus <strong>1&ndash;1 at Fenerbah&ccedil;e in the Champions League on 10 September</strong>. Individual scores for the Fiorentina and Atalanta wins conflict between sources (4&ndash;0 and 2&ndash;1, or 2&ndash;0 and 4&ndash;1); only the aggregate is used. Malen has 5 league goals. Head-to-head per FootyStats: 32 meetings, Roma 21 wins, Torino 6, 5 draws, with Torino winning the most recent 3&ndash;1; Roma have won seven of their last nine visits to Turin.</li>
+      <li><strong>Referee.</strong> <strong>Fabio Maresca</strong> (Napoli section, born 1981), <strong>confirmed</strong>, with Tegoni and Fontani assisting, Sozza fourth official, Aureliano on VAR, Ghersini AVAR. 2025&ndash;26 record reported by Statz: <strong>12 matches, 55 yellows (4.58 per game), 6 reds (0.50), 25.92 fouls per game</strong> &mdash; about <strong>5.1 fouls per card</strong>, derived from those two published rates rather than quoted. That is an official who books relatively early. History: <strong>19 Roma matches (8W&ndash;5D&ndash;6L) and 15 Torino matches (7W&ndash;3D&ndash;5L)</strong>. <strong>Gap:</strong> no penalties-per-game figure, and whether the 12-match sample is Serie A only is not stated.</li>
+      <li><strong>Not sourced.</strong> For both clubs: 2025&ndash;26 xG, shot volume, home/away split, foul and card rates, corners, over 2.5 %, BTTS %, clean-sheet and failed-to-score %, first-half goals; this-season cards, fouls, corners and half-time scores; every fee for Marip&aacute;n, Fitz-Jim and de Roon; Serie A baselines other than goals per game. Goals-per-game figures for 2025&ndash;26 are computed from published season totals.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Roma under Gasperini are a volume side and the early numbers say so without ambiguity: 64% possession, 23.67 shots and 2.65 xG per league match against 0.89 conceded, two clean sheets in three. The summer bought depth into that shape rather than a new one &mdash; Castro and a permanent Malen at the top, Koulierakis and Balerdi into a back three, Molina at wing-back, de Roon beside Cristante, Mora behind the striker &mdash; and last season&rsquo;s 31 conceded was produced under the same coach. The Champions League is the variable: a 1&ndash;1 in Istanbul on Thursday, a reported knee injury to Kon&eacute; from that match, and four days to Monday. <strong>Gap:</strong> no Roma foul, card or corner series, and no 2025&ndash;26 xG.</p>
+    <p>Torino are in their first two months under Abate, whose Juve Stabia sides used a 3&ndash;4&ndash;1&ndash;2; previews for tonight give 3&ndash;5&ndash;2 or 3&ndash;4&ndash;1&ndash;2. The early numbers describe a low-volume side that defends a lot: 8.33 shots and 1.03 xG per match against 1.88 xG conceded, all three league matches over 2.5 with both teams scoring. The one win came with a different profile &mdash; 60% possession, 557 passes at 89%, seven shots to Fiorentina&rsquo;s thirteen &mdash; while home possession so far is 41%. The rebuild replaced Marip&aacute;n and most of last season&rsquo;s back line with loans and cheap permanents, and the defensive record they inherit is 63 conceded; whether a new coach and new centre-backs have changed it is evidenced by three matches and by a CV from Serie B. <strong>Gap:</strong> no Torino foul, card or corner series in either season.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row ok"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-mid">OK &mdash; the gap is documented at every level, the schedule is the counterweight</span></div><div class="mkt-why">Third against twelfth, 31 conceded against 63, and this season 10&ndash;1 against 4&ndash;5 with xG of 2.65/0.89 against 1.03/1.88, plus a 21&ndash;6 head-to-head. The structural counterweights are specific: Roma play four days after a Champions League trip to Istanbul with a reported knee injury to Kon&eacute;, and Torino have had nine days. Not well-suited because Torino&rsquo;s side is two months old under its coach.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Asian handicap / DNB<span class="verdict tag t-mid">OK &mdash; margin evidence on both sides of the ball</span></div><div class="mkt-why">Roma&rsquo;s 23.67 shots per match and Torino&rsquo;s 1.88 xG conceded both bear on margin, and Torino have conceded in eight straight league matches. Against that, Torino have scored in every league match and none of their three defeats this season (two league, one cup) was by more than one goal.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U goals)<span class="verdict tag t-mid">OK &mdash; the two three-match samples agree, the two seasons less so</span></div><div class="mkt-why">Every league match either club has played this season went over 2.5, and Torino&rsquo;s 2025&ndash;26 fixtures averaged 2.82 goals against a league 2.43. The pull the other way is Roma&rsquo;s own profile: 31 conceded last season, fixtures averaging 2.37, two clean sheets this season. No last-season over-2.5 rate exists for either club to test the agreement.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; asymmetric: one leg rests on Torino&rsquo;s depleted attack</span></div><div class="mkt-why">Torino are 100% BTTS and have not failed to score in the league, but tonight they are without Adams and possibly Simeone, against a defence at 0.89 xG conceded with two clean sheets in three. The Roma-scores leg has the volume numbers behind it. The family is readable because the doubt sits in one named place: who leads Torino&rsquo;s line.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Team goals<span class="verdict tag t-mid">OK &mdash; Roma&rsquo;s line best evidenced on the card</span></div><div class="mkt-why">Roma&rsquo;s total has shots, xG and possession all pointing the same way over three matches, plus Malen&rsquo;s five goals; Torino&rsquo;s total has four league goals from 8.33 shots a game and loses its match-winner from last time. Rotation after Istanbul is the unpublished variable on the Roma side.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Halves (1H result, 1H goals)<span class="verdict tag t-high">Dangerous &mdash; no half-time data</span></div><div class="mkt-why">No first-half goals figure for either club in either season and no half-time scores this season. A four-day Champions League turnaround bears on how Roma start, and nothing published measures it.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-mid">OK &mdash; a documented, card-heavy official; no club rates</span></div><div class="mkt-why">Maresca is confirmed, experienced with both clubs (34 matches between them), and booked 4.58 yellows and 0.50 reds per game in 2025&ndash;26 at about 5.1 fouls per card &mdash; an early-booking profile. What holds this at OK: neither club&rsquo;s card or foul rate was obtainable, the league card baseline is missing, and his penalty rate is unpublished.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Corners<span class="verdict tag t-high">Dangerous &mdash; volume proxies only</span></div><div class="mkt-why">No corner figure for either club or the league. The proxies are strong in direction &mdash; Roma 23.67 shots and 64% possession, Torino 8.33 shots and 41% home possession &mdash; but a shot and possession gap is not a corner rate.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li><strong>Torino&rsquo;s 63 conceded belongs to two previous coaches.</strong> Baroni&rsquo;s 47 in 26 and D&rsquo;Aversa&rsquo;s finish were made with Marip&aacute;n and a back line that has largely gone; Abate&rsquo;s three league matches (5 conceded, 1.88 xG against) are the only evidence for the new version.</li>
+      <li><strong>Roma&rsquo;s league numbers were made before the Champions League started.</strong> All three league matches preceded Thursday&rsquo;s 1&ndash;1 in Istanbul; tonight is the first league match after a European trip, with Kon&eacute; reported injured.</li>
+      <li><strong>Torino&rsquo;s attack changes shape tonight.</strong> Adams, scorer of the only league winner, is out and Simeone doubtful, so the four league goals were scored by a front line that is not available.</li>
+      <li><strong>Individual Roma scorelines conflict between sources.</strong> Aggregates (10&ndash;1) agree; any rate that needs per-match scores beyond over 2.5 and BTTS is unsafe.</li>
+      <li><strong>Most sensitive:</strong> BTTS and halves &mdash; one depends on a Torino front line nobody has confirmed, the other has no data. <strong>Least sensitive:</strong> Roma&rsquo;s team goals, where shots, xG, possession and goals all agree across three matches.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>Roma&rsquo;s team goals are more robust than the match total because 23.67 shots, 2.65 xG and 3.33 goals per game all describe Roma, whereas the total also needs Torino&rsquo;s contribution without Adams and possibly Simeone.</li>
+      <li>Discipline is more robust than corners here because Maresca&rsquo;s 4.58 yellows and 25.92 fouls per game over 12 matches are a real record, and 34 matches with these two clubs mean neither is new to him.</li>
+      <li>The moneyline is more robust than halves because the season-long gap (third v twelfth, 31 v 63 conceded) is complete and published, while no half-time series exists and the Istanbul turnaround bears most on the first half.</li>
+      <li>Totals are more robust than BTTS because six league matches between the two clubs all went over 2.5 regardless of who scored, whereas BTTS depends on a Torino front line that has lost its only league match-winner.</li>
+      <li><strong>The fact that would most change the family choice:</strong> Torino&rsquo;s confirmed centre-forward. With Adams out, the BTTS and team-goals rows turn on whether Simeone starts; the official line-up, published about an hour before kickoff, would settle it.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f3">
+  <div class="fx-head">
+    <p class="fx-league">Italy &middot; Serie A &middot; Matchday 4</p>
+    <h2 class="fx-title">Inter &ndash; Udinese</h2>
+    <p class="fx-sub">20:45 CEST &middot; Stadio Giuseppe Meazza (San Siro), Milan &middot; The champions, perfect in the league and beaten in Madrid six days ago, with a new goalkeeper and two veteran centre-backs replaced &mdash; against a side that sold a midfielder and a centre-back for about &euro;65m including bonuses and arrives without two more centre-backs</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>Played this season</dt><dd>Inter 4 (3 Serie A, 1 Champions League) &middot; Udinese 4 (3 Serie A, 1 Coppa Italia)</dd></div>
+      <div class="od"><dt>Goals for / against pg</dt><dd>25/26: 2.34/0.92 &middot; 1.18/1.26 &middot; Lg 2.43 total &middot; 26/27 (3): 2.67/1.00 &middot; 1.67/1.67</dd></div>
+      <div class="od"><dt>xG for / against pg</dt><dd>25/26 not published &middot; 26/27 (3): 2.44/1.14 &middot; 1.40/1.85 (FootyStats) &middot; Lg not published</dd></div>
+      <div class="od"><dt>Over 2.5</dt><dd>25/26 not published &middot; 26/27 (3): 67% &middot; 67% &middot; Lg not published</dd></div>
+      <div class="od"><dt>BTTS</dt><dd>25/26 not published &middot; 26/27 (3): 67% &middot; 100% &middot; Lg not published</dd></div>
+      <div class="od"><dt>Clean sheet / failed to score</dt><dd>25/26 not published &middot; 26/27 (3): 33%/0% &middot; 0%/0% &middot; Lg not published</dd></div>
+      <div class="od"><dt>First-half goals pg</dt><dd>not published &middot; not published &middot; Lg not published</dd></div>
+      <div class="od"><dt>Cards / fouls pg</dt><dd>not published &middot; not published &middot; Lg not published</dd></div>
+      <div class="od"><dt>Corners for / against pg</dt><dd>not published &middot; not published &middot; Lg not published &middot; shots pg 26/27 (3): 24.33 &middot; 13.0</dd></div>
+      <div class="od"><dt>Referee</dt><dd>Luca Pairetto &middot; 6.1 cards pg, 8-match 25/26 snapshot &middot; confirmed</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>Neither club is promoted. <strong>Inter are champions: 27 wins, 6 draws, 5 defeats in 2025&ndash;26, 89 scored, 35 conceded, 87 points</strong>, the club&rsquo;s 21st title, in Cristian Chivu&rsquo;s first season; Lautaro Mart&iacute;nez led the division with 17 league goals. <strong>Udinese finished 10th: 14 wins, 8 draws, 16 defeats, 45 scored, 48 conceded, 50 points</strong>, under Kosta Runjai&#263;, who continues. Both coaches are unchanged. The structural headline is two different kinds of renewal. Inter replaced an ageing defensive core &mdash; Sommer, de Vrij, Acerbi and Darmian all left at the end of their contracts &mdash; and lost Dumfries to Real Madrid, while spending on midfield and wing-back. Udinese cashed in on the spine: Arthur Atta, a central midfielder, went to Fiorentina for close to &euro;40m and Thomas Kristensen, a centre-back, to Atalanta for &euro;22m plus &euro;3m in bonuses.</p>
+    <ul>
+      <li><strong>Inter &mdash; turnover medium, aimed at the defensive spine and the right flank; manager unchanged.</strong> <em>Goalkeeper:</em> Yann Sommer out at the end of his contract (to Club Brugge); Ivan Provedel in from Lazio for &euro;3m; Josep Mart&iacute;nez named in every probable XI. <em>Centre-back:</em> Stefan de Vrij (to Panathinaikos) and Francesco Acerbi out at the end of their contracts; John Stones in free from Manchester City and projected to start; Manuel Akanji&rsquo;s loan made permanent (fee not published). <em>Defensive midfield:</em> Aleksandar Stankovi&#263; bought back from Club Brugge (fee not published); Curtis Jones from Liverpool, permanent, &euro;35m, contract to 2031; Kristjan Asllani on loan to Al-Jazira, Davide Frattesi on loan with option to Lazio. <em>Wing-back:</em> Denzel Dumfries to Real Madrid on his release clause (fee not published in sources reached); Djed Spence from Tottenham, &euro;35m; Matteo Darmian released. Also out: Kamate (Atl&eacute;tico Madrid), Topalovi&#263; (Carrarese), Massolin (Cagliari, loan), Akinsanmiro (Monza). Calcio e Finanza puts the window at &euro;56.28m of new costs against &euro;65.41m of gains on the 2026&ndash;27 accounts, a fee deficit of &euro;64.5m. No centre-forward moved in either direction.</li>
+      <li><strong>Udinese &mdash; turnover high at centre-back and in midfield; manager unchanged.</strong> <em>Midfield:</em> <strong>Arthur Atta to Fiorentina</strong>, officially 11 July 2026, an operation reported at close to &euro;40m including bonuses (&euro;30m plus bonuses in other reports); Unai G&oacute;mez in from Athletic Club for &euro;4.5m plus &euro;1.5m in variables; Giorgi Chakvetadze in from Watford on a permanent deal to 2030 (fee not published). <em>Centre-back:</em> <strong>Thomas Kristensen to Atalanta</strong>, loan with obligation, &euro;22m plus &euro;3m bonuses and 10% of a future sale; Goglichidze to Monza; Mlacic and Zemura to Watford; Oumar Traor&eacute; in from Heidenheim, Abankwah from Watford, Palma back from Sampdoria, Mergim Vojvoda from Como. <em>Goalkeeper:</em> Sava to Universitatea Craiova, Nunziante to Arezzo; Bartosz Mrozek in from Lech Pozna&#324; on loan with a &euro;1.5m obligation; Okoye named in the probable XIs. <em>Centre-forward:</em> Buksa to Mallorca; no striker bought. Also out: Ehizibue released, A. Camara (Ajax U21).</li>
+      <li><strong>Suspensions / absences.</strong> No suspensions on either side. Inter: <strong>Spence unavailable</strong>. Udinese: <strong>Zanoli, Zaniolo, Palma, Solet and Piotrowski unavailable</strong> &mdash; Solet and Palma are centre-backs, which with Kristensen sold leaves the probable back three as Abankwah, Kabasele and Ebosse.</li>
+      <li><strong>Sample.</strong> <strong>Inter: 3W in Serie A, 8 scored, 3 conceded, 3rd</strong> &mdash; Monza and Napoli at home (7 scored, 3 conceded combined), 1&ndash;0 at Cagliari &mdash; then <strong>a 2&ndash;1 defeat at Real Madrid in the Champions League on 8 September</strong> (Mbapp&eacute;, Valverde; Carlos Augusto for Inter). Individual home scores were not reliably extracted; the percentages in the strip are FootyStats&rsquo;. <strong>Udinese: 1W&ndash;1D&ndash;1L in Serie A, 5 scored, 5 conceded, 13th</strong> &mdash; 1&ndash;1 at home to Como on 22 August (Kamara; Douvikas), a win at Monza, a home defeat to Lazio &mdash; plus <strong>2&ndash;1 over Venezia in the Coppa Italia</strong> with two from Bayo. Udinese have scored in all four competitive matches. Head-to-head: Inter have won 18 of the last 23 Serie A meetings (2 draws, 3 defeats); Udinese won their most recent visit to Inter after seven straight away defeats there.</li>
+      <li><strong>Referee.</strong> <strong>Luca Pairetto</strong>, <strong>confirmed</strong>, with Moro and Yoshikawa assisting, Colombo fourth official, Marini on VAR, Gariglio AVAR. The published record is a partial 2025&ndash;26 snapshot: <strong>8 Serie A matches, 46 yellows, 3 reds, 5 penalties, 229 fouls</strong> &mdash; 6.1 cards per match; about 28.6 fouls per match, 4.7 fouls per card and 0.63 penalties per match derived from those counts. A later snapshot gives 4 penalties in 7 matches (0.57); the two do not reconcile. Described in one source as quick to show red cards, with a high penalty frequency. <strong>Gap:</strong> no full-season 2025&ndash;26 record, nothing for 2026&ndash;27, and no history with either club.</li>
+      <li><strong>Not sourced.</strong> For both clubs: 2025&ndash;26 xG, shots, home/away split, fouls, cards, corners, over 2.5 %, BTTS %, clean-sheet and failed-to-score %, first-half goals; this-season cards, corners and half-time scores; the Dumfries, Akanji and Stankovi&#263; fees; Serie A league baselines other than goals per game. 2025&ndash;26 goals per game are computed from published totals.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Inter under Chivu are a 3&ndash;5&ndash;2 built on territory: 66% possession and 24.33 shots per league match this season, 2.44 xG for against 1.14 against, and last season&rsquo;s 89 goals. The fixtures around them have been high-scoring &mdash; Inter&rsquo;s 38 league matches in 2025&ndash;26 averaged 3.26 goals against a league 2.43, and this season&rsquo;s three average 3.67. The summer changed the back of the side more than the front: Stones and a permanent Akanji in for de Vrij and Acerbi, Mart&iacute;nez in goal after Sommer, Spence (unavailable tonight) for Dumfries, Jones added to the midfield rotation. The first test at Champions League level went 2&ndash;1 against them in Madrid. <strong>Gap:</strong> no Inter card, foul or corner series and no 2025&ndash;26 xG.</p>
+    <p>Udinese under Runjai&#263; are the lower-possession side: 43% on average and 13 shots per match this season, 1.40 xG for and 1.85 against, with probable elevens in a 3&ndash;4&ndash;2&ndash;1 around Davis, Ekkelenkamp and either Unai G&oacute;mez or Bayo. Every one of their league matches has had both teams scoring. The squad that finished 10th lost its most valuable midfielder and a first-choice centre-back, and the replacements &mdash; Unai G&oacute;mez, Chakvetadze, Traor&eacute;, Abankwah &mdash; are cheap and unproven at this level; tonight two further centre-backs are missing. What the evidence cannot say is how a back three that is partly new and partly makeshift handles a side taking 24 shots a match: that is a CV question with three matches of data behind it. <strong>Gap:</strong> no Udinese card, foul or corner series in either season.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row ok"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-mid">OK &mdash; a documented gap with two specific counterweights</span></div><div class="mkt-why">Champions against tenth, 89&ndash;35 against 45&ndash;48, 24.33 shots against 13, and 18 wins in the last 23 league meetings. The counterweights are structural and named: Inter&rsquo;s defensive core is new this summer and conceded twice in Madrid six days ago, and Udinese won the last meeting at this ground. Not well-suited because the renewed Inter back line has four matches of evidence.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Asian handicap / DNB<span class="verdict tag t-mid">OK &mdash; margin question, both ends evidenced</span></div><div class="mkt-why">Inter&rsquo;s shot and xG volume and Udinese&rsquo;s missing centre-backs (Solet, Palma, with Kristensen sold) bear on margin. Against it: Udinese have scored in all four competitive matches and conceded 1.67 per game, not a collapse rate, and one of Inter&rsquo;s three league wins was 1&ndash;0.</div></div>
+      <div class="mkt-row good"><div class="mkt-name">Totals (O/U goals)<span class="verdict tag t-low">Well-suited &mdash; last season and this season point the same way</span></div><div class="mkt-why">Inter&rsquo;s league fixtures averaged 3.26 goals last season and 3.67 this season; both clubs are at 67% over 2.5 over three matches; Udinese&rsquo;s fixtures average 3.33 this season. The inputs agree across a full season and the current sample, which is uncommon evidence for this family. The one caution is that neither club&rsquo;s last-season over-2.5 rate itself was obtainable.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; one leg rests on a weakened Udinese attack</span></div><div class="mkt-why">Udinese are 100% BTTS and have scored in every competitive match; Inter have conceded in two of three league matches and twice in Madrid. The pull the other way: Zaniolo is out, Udinese take 13 shots a match, and Inter kept a clean sheet at Cagliari. The doubt sits in one named place &mdash; Udinese&rsquo;s attack without Zaniolo.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Team goals<span class="verdict tag t-mid">OK &mdash; asymmetric: Inter&rsquo;s total best evidenced</span></div><div class="mkt-why">Inter&rsquo;s own total has 24.33 shots, 2.44 xG, 2.67 goals per game and last season&rsquo;s 89, against a back three missing two centre-backs. Udinese&rsquo;s total has 1.40 xG and a scoring run that has held for four matches, but no named striker bought and Zaniolo absent.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Halves (1H result, 1H goals)<span class="verdict tag t-high">Dangerous &mdash; no half-time data</span></div><div class="mkt-why">No first-half goals figure for either club in either season, and no half-time scores this season were sourced. Nothing supports a reading of when in the match the goals in the totals row arrive.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-mid">OK &mdash; a card-heavy, penalty-heavy snapshot that is not a season</span></div><div class="mkt-why">Pairetto is confirmed and his published 2025&ndash;26 numbers are high on every axis: 6.1 cards, about 28.6 fouls and 0.57&ndash;0.63 penalties per match, about 4.7 fouls per card. But they cover eight matches from the first half of that season, two snapshots disagree on penalties, and neither club&rsquo;s card or foul rate nor the league baseline was obtainable.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Corners<span class="verdict tag t-high">Dangerous &mdash; volume proxies only</span></div><div class="mkt-why">No corner figure at club or league level. Possession (66% against 43%) and shots (24.33 against 13) describe a territorial imbalance, but no corner series exists to translate it.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li><strong>Inter&rsquo;s 35 conceded last season was made by a defence that has left.</strong> Sommer, de Vrij, Acerbi and Dumfries all played in that record; tonight&rsquo;s probable back line has Stones and Mart&iacute;nez, and conceded twice at the Bernab&eacute;u in its first Champions League test.</li>
+      <li><strong>Udinese&rsquo;s back three tonight is not the one that finished 10th.</strong> Kristensen was sold, Solet and Palma are out, and the probable trio includes a summer arrival; their 1.85 xG against is from three matches with a different selection.</li>
+      <li><strong>Inter&rsquo;s individual league scores are unconfirmed.</strong> Aggregates (8&ndash;3) and FootyStats&rsquo; percentages are consistent with each other; per-match home scores were not reliably extracted and are not used.</li>
+      <li><strong>The referee&rsquo;s record is a December snapshot.</strong> Eight matches of 2025&ndash;26 cannot distinguish a strict official from a run of high-foul fixtures.</li>
+      <li><strong>Most sensitive:</strong> halves and corners, with no data at any level. <strong>Least sensitive:</strong> the goals total, where a full season of Inter fixtures at 3.26 goals and three matches from each side agree.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>Totals are more robust than BTTS here because 3.26 goals per Inter fixture last season and 67% over 2.5 for both sides this season hold regardless of who scores, while BTTS needs Udinese to score without Zaniolo.</li>
+      <li>Inter&rsquo;s team goals are more robust than the handicap because 24.33 shots and 2.44 xG per game describe Inter alone, whereas the handicap also needs a view on whether Udinese keep scoring at the rate they have for four matches.</li>
+      <li>The moneyline is more robust than discipline because a 27&ndash;6&ndash;5 title season and an 18&ndash;2&ndash;3 recent head-to-head are complete records, while Pairetto&rsquo;s numbers are eight matches from a season ago with two penalty figures that disagree.</li>
+      <li>Discipline is more robust than corners because the referee at least has a published card and foul count, while no corner count exists for either club or the league.</li>
+      <li><strong>The fact that would most change the family choice:</strong> Pairetto&rsquo;s full 2025&ndash;26 record. If his eight-match rate of 6.1 cards and 0.6 penalties per game held across the season, discipline would carry the best official evidence on this card; a completed season table from AIA or a referee-stats service would settle it.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f4">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; Premier League &middot; Matchweek 4</p>
+    <h2 class="fx-title">Leeds United &ndash; Newcastle United</h2>
+    <p class="fx-sub">21:00 CEST (20:00 BST) &middot; Elland Road, Leeds &middot; Two sides level on five points and two points apart last season &mdash; one with an unchanged manager and a rebuilt goal and back line, the other with a manager of five weeks, &pound;265m in and Tonali, Bruno Guim&atilde;res and Gordon sold</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>Played this season</dt><dd>Leeds 5 (3 Premier League, 2 EFL Cup) &middot; Newcastle 5 (3 Premier League, 2 EFL Cup)</dd></div>
+      <div class="od"><dt>Goals for / against pg</dt><dd>25/26: 1.29/1.47 &middot; 1.39/1.45 &middot; Lg 2.75 total &middot; 26/27 (3): 1.33/0.67 &middot; 2.00/1.33</dd></div>
+      <div class="od"><dt>xG for / against pg</dt><dd>25/26 not published &middot; 26/27 (3): 1.19/1.87 &middot; 1.11/2.11 (FootyStats) &middot; Lg not published</dd></div>
+      <div class="od"><dt>Over 2.5</dt><dd>25/26 not published &middot; 26/27 (3): 0% &middot; 67% &middot; Lg not published</dd></div>
+      <div class="od"><dt>BTTS</dt><dd>25/26 not published &middot; 26/27 (3): 67% &middot; 67% &middot; Lg not published</dd></div>
+      <div class="od"><dt>Clean sheet / failed to score</dt><dd>25/26 not published &middot; 26/27 (3): 33%/0% &middot; 33%/0% &middot; Lg not published</dd></div>
+      <div class="od"><dt>First-half goals pg</dt><dd>not published &middot; not published &middot; Lg not published</dd></div>
+      <div class="od"><dt>Cards / fouls pg</dt><dd>25/26 cards: 1.66 &middot; 1.74 &middot; Lg 1.93 per team (3.86 per match) &middot; fouls not published</dd></div>
+      <div class="od"><dt>Corners for / against pg</dt><dd>not published &middot; not published &middot; Lg not published</dd></div>
+      <div class="od"><dt>Referee</dt><dd>Michael Salisbury &middot; 3.83 Y pg (last 18 to May 2026), 2.49 Y pg career &middot; confirmed</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>Neither club is promoted this season; Leeds were promoted into 2025&ndash;26 and are in their second season back. <strong>Leeds finished 14th: 11 wins, 14 draws, 13 defeats, 49 scored, 56 conceded, 47 points</strong>, under Daniel Farke, who continues. <strong>Newcastle finished 12th: 14 wins, 7 draws, 17 defeats, 53 scored, 55 conceded, 49 points</strong>. The structural headline is on the Newcastle side and it is total: <strong>Eddie Howe stepped down on 31 July 2026 and Matthias Jaissle was appointed on 5&ndash;6 August</strong> (announcement 5 August, Wikipedia gives 6 August), from Al-Ahli, where he won consecutive Asian Champions League Elite titles, and earlier Red Bull Salzburg. In the same window the club sold its two senior central midfielders and its first-choice left winger for &pound;236.8m and spent &pound;265.3m replacing them.</p>
+    <ul>
+      <li><strong>Leeds &mdash; turnover high at goalkeeper and centre-back, low in attack; manager unchanged.</strong> <em>Goalkeeper:</em> James Trafford from Manchester City, &pound;40m plus &pound;5m in add-ons, and Michael Zetterer from Eintracht Frankfurt, permanent; Illan Meslier (to Arsenal) and Karl Darlow (to Manchester United) left at the end of their contracts, Lucas Perri on loan to Torino &mdash; the whole goalkeeping department changed. <em>Centre-back:</em> Tarik Muharemovi&#263; from Sassuolo, &pound;34m; Nico Elvedi from Borussia M&ouml;nchengladbach, &pound;7m; Pascal Struijk sold to Brighton, &pound;20m; Max W&ouml;ber to Schalke, Sebastiaan Bornauw on loan to Hamburg. <em>Wide and full-back:</em> Harry Wilson free from Fulham, Melvin Bard on loan from Nice, Jean-Matt&eacute;o Bahoya on loan with option from Frankfurt; Jack Harrison to New England (&pound;0.9m), Largie Ramazani on loan to Burnley, Willy Gnonto on loan to Fiorentina, Isaac Schmidt to Young Boys. <em>Centre-forward:</em> no arrival; Joe Gelhardt sold to Hull (&pound;6.5m), Joel Piroe on loan to West Ham. <em>Defensive midfield:</em> no movement. Seven in, fifteen out.</li>
+      <li><strong>Newcastle &mdash; turnover very high, concentrated in central midfield and on the left; new manager.</strong> <em>Midfield:</em> <strong>Sandro Tonali to Tottenham, &pound;100m</strong> (6 July) and <strong>Bruno Guim&atilde;res to Arsenal, &pound;75m</strong> (8 August); Nico Gonz&aacute;lez in from Manchester City, &pound;47m (26 August), Sean Steur from Ajax, &pound;19.6m (9 July). <em>Wide:</em> <strong>Anthony Gordon to Barcelona, &pound;69.3m</strong> (1 July); Bazoumana Tour&eacute; from Hoffenheim, &pound;42.8m (5 July). <em>Centre-forward:</em> Mat&iacute;as Fern&aacute;ndez-Pardo from Lille, &pound;51m, on deadline day (1 September). <em>Goalkeeper:</em> Ewen Jaouen from Reims, &pound;18.5m (15 June), and Luk&aacute;&scaron; Horn&iacute;&#269;ek from Braga, &pound;25.7m (3 August). <em>Full-back:</em> Amar Dedi&#263; from Benfica, &pound;30.7m (18 August). <em>Centre-back:</em> no major movement recorded. <strong>Gap:</strong> the season page lists first-team moves above a threshold only; smaller departures and loans are not established.</li>
+      <li><strong>Suspensions / absences.</strong> No suspensions reported. Leeds: <strong>Ilia Gruev (knee) and Mateo Joseph (knee) out, Joe Rodon (hamstring) doubtful</strong> &mdash; Farke said Rodon remains unavailable and there are no new concerns. Newcastle: <strong>Ewen Jaouen (ankle), Dan Burn (ankle), Joelinton (muscle) and William Osula (knock) out, Amar Dedi&#263; (hamstring) doubtful</strong>; Horn&iacute;&#269;ek is the projected goalkeeper.</li>
+      <li><strong>Sample.</strong> <strong>Leeds: Premier League 1W&ndash;2D, 2&ndash;0 at Nottingham Forest, 1&ndash;1 at home to Brentford, 1&ndash;1 at Brighton</strong> (4&ndash;2; FootyStats lists 3 scored, unreconciled); EFL Cup 2&ndash;0 at Forest (Dan James, James Justin) three days after the league win, then <strong>3&ndash;6 at Chelsea in midweek after leading 2&ndash;0 on the hour</strong> with a heavily rotated side. <strong>Newcastle: Premier League 1W&ndash;2D, 2&ndash;2 at home to Liverpool on 23 August, 2&ndash;0 at Tottenham on 29 August, 2&ndash;2 at home to Bournemouth on 6 September</strong>; EFL Cup wins over West Brom and Millwall (1&ndash;0, Willock), 10 scored and 6 conceded across the five. Head-to-head: 102 meetings, Newcastle 41, Leeds 39, 22 draws; Newcastle have lost one of their last nine competitive visits to Leeds.</li>
+      <li><strong>Referee.</strong> <strong>Michael Salisbury</strong>, <strong>confirmed</strong> (ESPN), with John Brooks on VAR; one listing also names Adam Nunn and Nick Hopton as assistants and Tom Nield fourth official, but does not tie them clearly to this match. Career: <strong>364 fixtures, 906 yellows, 42 reds &mdash; 2.49 yellows per game</strong>. His last 18 fixtures to May 2026 across the Premier League, Championship and EFL Cup: <strong>69 yellows (3.83 per game), one second-yellow dismissal, one straight red, eight penalties (0.44 per game)</strong>. <strong>Gap:</strong> no Premier-League-only 2025&ndash;26 split, no fouls-per-card figure, and no history with either club.</li>
+      <li><strong>Not sourced.</strong> For both clubs: 2025&ndash;26 xG, shots, home/away split, fouls, corners, over 2.5 %, BTTS %, clean-sheet and failed-to-score %, first-half goals; this-season cards, fouls, corners and half-time scores. League baselines other than goals and cards per game. Card rates in the strip are computed from ESPN&rsquo;s 2025&ndash;26 club totals (Leeds 62 Y, 1 R; Newcastle 63 Y, 3 R; league 1,424 Y, 44 R).</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Leeds under Farke are the continuous side and the numbers describe a team that concedes territory and defends its box: 41% possession and 11 shots per league match, 1.19 xG for, and 1.87 xG against set beside only two goals conceded in three. That gap between chances conceded and goals conceded is the most important fact on the Leeds side of the card, and it coincides with a brand-new goalkeeping department &mdash; Trafford for Meslier &mdash; and a centre-back pairing rebuilt around &pound;41m of arrivals. Last season&rsquo;s 14 draws in 38 are the other structural marker, and the league start (two 1&ndash;1s) repeats it. The Chelsea cup collapse was a rotated team and is weak evidence about tonight&rsquo;s eleven. <strong>Gap:</strong> no foul or corner series.</p>
+    <p>Newcastle under Jaissle are a side with five weeks of coaching and three new first-choice positions. The early profile is not the high-possession one his CV might suggest: 46% possession, 10.67 shots and 1.11 xG per league match, and 2.11 xG against &mdash; the highest xG-against figure on either side of this card &mdash; while they have scored two in each league match. The attack lost Gordon and gained Tour&eacute; and, only on 1 September, Fern&aacute;ndez-Pardo; the midfield lost Tonali and Bruno Guim&atilde;res and gained Gonz&aacute;lez and Steur; and tonight Joelinton and Burn are also missing. Jaissle&rsquo;s own description is &ldquo;togetherness, hard work, intensity&rdquo;, and his record at Salzburg and Al-Ahli is evidence by CV rather than by match. <strong>Gap:</strong> no foul or corner series; last season&rsquo;s 63 yellows were earned under Howe.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous &mdash; nothing structural separates the two sides</span></div><div class="mkt-why">47 points against 49 last season, five points each this season, xG for of 1.19 against 1.11 and xG against of 1.87 against 2.11, and a 41&ndash;39 all-time head-to-head. The one large structural difference &mdash; Newcastle&rsquo;s new manager and sold spine &mdash; has three league matches of evidence and no settled direction.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Asian handicap / DNB<span class="verdict tag t-mid">OK &mdash; draw frequency is the documented input</span></div><div class="mkt-why">Leeds drew 14 of 38 last season and two of three this season; Newcastle have drawn both home league matches. A family that removes or splits the draw is readable against that record in a way the three-way result is not. It is only OK because Newcastle&rsquo;s draws were made by a squad that changed through 1 September.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U goals)<span class="verdict tag t-mid">Split &mdash; goals say low for Leeds, xG says otherwise for both</span></div><div class="mkt-why">Leeds&rsquo; league matches have produced 6 goals in 3, none over 2.5; Newcastle&rsquo;s 10 in 3, two over 2.5. Last season both clubs&rsquo; fixtures ran at or just above the league&rsquo;s 2.75 (Leeds 2.76, Newcastle 2.84). The unifying fact is chance volume: both sides are conceding about two xG a match, well above their goals conceded, which argues the low Leeds totals are not yet a settled property.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; the two samples agree</span></div><div class="mkt-why">Both clubs are 67% BTTS, both have scored in every league match, and both concede close to two xG a match. The weakening factors are named: Newcastle&rsquo;s forward line is days old with Osula out, and Leeds are without Mateo Joseph, but neither removes a scorer who has carried the numbers.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Team goals<span class="verdict tag t-mid">OK &mdash; symmetric and thin</span></div><div class="mkt-why">Each side has scored in every league match on almost identical xG for (1.19, 1.11) and similar shot volume (11, 10.67). There is no asymmetry to rest the family on, and Newcastle&rsquo;s two-a-game rate outruns its xG by nearly a goal.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Halves (1H result, 1H goals)<span class="verdict tag t-high">Dangerous &mdash; no half-time data</span></div><div class="mkt-why">No first-half goals series for either club in either season. The only half-specific fact is a rotated Leeds side leading 2&ndash;0 at Chelsea on the hour and losing 6&ndash;3, which says nothing about the first-choice eleven.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-mid">OK &mdash; club rates and referee record point opposite ways</span></div><div class="mkt-why">Both clubs booked below the league&rsquo;s 1.93 per team per match last season (Leeds 1.66, Newcastle 1.74), on full 38-match samples. Salisbury&rsquo;s recent run &mdash; 3.83 yellows per game over 18 fixtures &mdash; sits well above his 2.49 career rate, with 0.44 penalties per game. A new Newcastle manager also means last season&rsquo;s Newcastle rate was made under a different method. Readable, but the inputs disagree.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Corners<span class="verdict tag t-high">Dangerous &mdash; no corner data</span></div><div class="mkt-why">No corner figure for either club or the league. Possession (41% against 46%) and shots (11 against 10.67) are near-identical, so even the territorial proxy offers no direction.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li><strong>Newcastle&rsquo;s 2025&ndash;26 record describes a different club.</strong> Howe, Tonali, Bruno Guim&atilde;res and Gordon produced it; Jaissle has been in post since early August and his centre-forward arrived on 1 September.</li>
+      <li><strong>Leeds&rsquo; two goals conceded in three sit against 1.87 xG conceded per match.</strong> A new goalkeeper and new centre-backs have not yet been tested by a sample large enough to say whether that gap is saving or luck.</li>
+      <li><strong>Both sides are five matches into the season with a midweek cup tie behind them.</strong> Leeds rotated heavily at Chelsea; Newcastle played Millwall. Neither club&rsquo;s selection for tonight is confirmed beyond injury lists.</li>
+      <li><strong>The referee&rsquo;s recent rate is a mixed-competition sample.</strong> 18 fixtures across three divisions to May 2026, with no Premier-League-only split.</li>
+      <li><strong>Most sensitive:</strong> the moneyline, which needs a separation none of the published numbers provide. <strong>Least sensitive:</strong> BTTS, where both clubs&rsquo; goals, xG conceded and scoring records agree.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>BTTS is more robust than the moneyline here because both sides have scored in every league match and concede about two xG a game, while the result needs a separation that 47 v 49 points and 5 v 5 this season do not supply.</li>
+      <li>Draw-no-bet style handicaps are more robust than the three-way result because Leeds&rsquo; 14 draws in 38 last season and two in three this season are a documented tendency that those markets can absorb.</li>
+      <li>Discipline is more robust than corners because both clubs have full-season card counts beside a computed league baseline and the referee has an 18-fixture recent record, whereas no corner figure exists at any level.</li>
+      <li>Totals are more robust than halves because season goals and xG exist for both sides, while no half-time figure does.</li>
+      <li><strong>The fact that would most change the family choice:</strong> Newcastle&rsquo;s shape under Jaissle with Joelinton and Burn absent. Their 2.11 xG conceded is the number doing most of the work across totals and BTTS; the confirmed eleven and one more match of shot data would settle whether it is a system or a sample.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f5">
+  <div class="fx-head">
+    <p class="fx-league">Spain &middot; LaLiga &middot; Jornada 5</p>
+    <h2 class="fx-title">Villarreal &ndash; Real Betis</h2>
+    <p class="fx-sub">21:00 CEST &middot; Estadio de la Cer&aacute;mica, Vila-real &middot; Last season&rsquo;s third, winless in five under a new coach while out-creating its opponents, against last season&rsquo;s fifth with three 1&ndash;0-shaped wins in four and more chances conceded than created &mdash; both six days on from five-goal Champions League nights</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>Played this season</dt><dd>Villarreal 5 (4 LaLiga, 1 Champions League) &middot; Betis 5 (4 LaLiga, 1 Champions League)</dd></div>
+      <div class="od"><dt>Goals for / against pg</dt><dd>25/26: 1.89/1.21 &middot; 1.55/1.26 &middot; Lg 2.69 total &middot; 26/27 (4): 1.50/2.00 &middot; 1.25/1.25</dd></div>
+      <div class="od"><dt>xG for / against pg</dt><dd>25/26 not published &middot; 26/27 (4): 1.92/1.38 &middot; 1.72/1.81 (FootyStats) &middot; Lg not published</dd></div>
+      <div class="od"><dt>Over 2.5</dt><dd>25/26 not published &middot; 26/27 (4): 75% &middot; 25% &middot; Lg not published</dd></div>
+      <div class="od"><dt>BTTS</dt><dd>25/26 not published &middot; 26/27 (4): 75% &middot; 25% &middot; Lg not published</dd></div>
+      <div class="od"><dt>Clean sheet / failed to score</dt><dd>25/26 not published &middot; 26/27 (4): 0%/25% &middot; 75%/0% &middot; Lg not published</dd></div>
+      <div class="od"><dt>First-half goals pg</dt><dd>not published &middot; not published &middot; Lg not published</dd></div>
+      <div class="od"><dt>Cards / fouls pg</dt><dd>25/26 cards: 2.08 &middot; 1.95 &middot; Lg 2.26 per team (4.52 per match) &middot; fouls not published</dd></div>
+      <div class="od"><dt>Corners for / against pg</dt><dd>not published &middot; not published &middot; Lg not published &middot; shots pg 26/27 (4): 15.25 &middot; 15.75</dd></div>
+      <div class="od"><dt>Referee</dt><dd>Francisco Jos&eacute; Hern&aacute;ndez Maeso (Extremadura) &middot; 4.55 Y pg LaLiga career (29) &middot; 2.5 Y, 22 fouls pg 26/27 (2) &middot; confirmed</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>Neither club is promoted. <strong>Villarreal finished 3rd in 2025&ndash;26 &mdash; 22 wins, 6 draws, 10 defeats, 72 scored, 46 conceded, 72 points</strong> &mdash; under Marcelino, who left when the two sides could not agree a renewal. <strong>Real Betis finished 5th &mdash; 15 wins, 15 draws, 8 defeats, 59 scored, 48 conceded, 60 points</strong> &mdash; and are in the Champions League for the first time in 21 years, under Manuel Pellegrini, who continues and who coached Villarreal from 2004 to 2009. The structural headline is Villarreal&rsquo;s change of coach: <strong>&Iacute;&ntilde;igo P&eacute;rez was announced on 1 June 2026 on a contract to June 2029</strong>, arriving from two and a half years at Rayo Vallecano that included a Conference League final. His Villarreal have not won in five competitive matches.</p>
+    <ul>
+      <li><strong>Villarreal &mdash; turnover medium, concentrated at goalkeeper and defensive midfield; new manager.</strong> <em>Goalkeeper:</em> P&eacute;ter Gul&aacute;csi from RB Leipzig, &euro;1.5m (3 August); Diego Conde on loan to Betis &mdash; tonight&rsquo;s opponents &mdash; and Arnau Tenas on loan to Mallorca. <em>Defensive midfield:</em> Nathan-Dylan Saliba from Anderlecht, &euro;15m (25 August); Thomas Partey free to Al Shabab, Ram&oacute;n Terrats to Getafe for &euro;2.5m; one preview also records Dani Parejo as departed, which the transfer list does not show &mdash; unreconciled. <em>Centre-back:</em> Rafa Mar&iacute;n back from a loan at Napoli; Willy Kambwala on loan to Como. <em>Full-back:</em> Alfonso Pedraza free to Lazio; Carlos Romero back from Espanyol. <em>Wide:</em> Ilias Akhomach back from Rayo, Alfon Gonz&aacute;lez back from Sevilla. <em>Centre-forward:</em> no arrival; &Aacute;lex For&eacute;s to Burgos. Georges Mikautadze (&euro;30m, 2025) and Alexander Freeman (&euro;3.5m, January 2026) are last season&rsquo;s signings, not this summer&rsquo;s.</li>
+      <li><strong>Real Betis &mdash; turnover medium, &euro;30.5m spent on attack and midfield; manager unchanged.</strong> <em>Centre-forward:</em> Troy Parrott from AZ, &euro;16m; C&eacute;dric Bakambu and Chimy &Aacute;vila left as free agents. <em>Defensive midfield:</em> Facundo Bernal from Fluminense, &euro;10.5m; Dani Ceballos free from Real Madrid on a contract to June 2029. <em>Full-back:</em> Fran Garc&iacute;a on loan from Real Madrid, &euro;4m loan fee; Ricardo Rodr&iacute;guez left as a free agent. <em>Goalkeeper:</em> Adri&aacute;n San Miguel retired; Diego Conde in on a free loan from Villarreal. Out for a fee: Pablo Garc&iacute;a, 50% of his rights to Racing Santander for &euro;5.5m. <strong>Gap:</strong> no centre-back movement in either direction.</li>
+      <li><strong>Suspensions / absences.</strong> No suspensions reported. Villarreal: <strong>Juan Foyth and Carlos Romero injured</strong> &mdash; both defenders. Betis: <strong>Aitor Ruibal out since pre-season</strong>; <strong>Diego Llorente</strong> training in a protective mask after a nasal fracture against Real Madrid, reported both as available and, by one summary, as ruled out &mdash; unreconciled; Ez Abde available after knee problems; Ceballos in the squad but short of match rhythm after missing pre-season; Cucho Hern&aacute;ndez and Antony trained normally at the weekend.</li>
+      <li><strong>Sample.</strong> <strong>Villarreal: LaLiga 0W&ndash;2D&ndash;2L, 6 scored, 8 conceded, 17th&ndash;18th</strong> &mdash; one home match, lost 2&ndash;3, and three away (two draws and a defeat, 4&ndash;5 combined), the last two league matches both lost &mdash; plus <strong>3&ndash;2 defeat at Borussia Dortmund in the Champions League on 8 September</strong>: three defeats in a row, five without a win. <strong>Betis: LaLiga 3W&ndash;1L, 5 scored, 5 conceded, 4th&ndash;7th</strong> &mdash; two home wins by 1&ndash;0 including <strong>1&ndash;0 over Real Madrid</strong>, a 1&ndash;0 away win, and a <strong>5&ndash;2 defeat at Levante</strong> &mdash; plus <strong>3&ndash;2 at Lille in the Champions League on 8 September</strong>, from behind (Bartra 2, Parrott). Head-to-head per FootyStats: 28 meetings, Villarreal 12, Betis 9, 7 draws.</li>
+      <li><strong>Referee.</strong> <strong>Francisco Jos&eacute; Hern&aacute;ndez Maeso</strong> (Extremadura committee, born 31 August 1988 in Brussels, LaLiga debut 12 August 2023), <strong>confirmed</strong>, with Iv&aacute;n Mass&oacute; and Abraham P&eacute;rez assisting, Mill&aacute;n B&aacute;rcena fourth official, Valent&iacute;n Pizarro G&oacute;mez on VAR and Alejandro Mu&ntilde;iz Ruiz AVAR. LaLiga career as last reported: <strong>29 matches, 132 yellows (4.55 per game), 3 straight reds, 7 penalties (0.24 per game)</strong>. 2026&ndash;27 so far: <strong>2 matches, 5 yellows, 0 reds, 0 penalties, 44 fouls</strong> &mdash; 22 fouls per game and about 8.8 fouls per card, derived from those counts. History: <strong>Betis 5 matches (1W&ndash;1D&ndash;3L), Villarreal 6 (3W&ndash;2D&ndash;1L)</strong>. <strong>Gap:</strong> no separate 2025&ndash;26 season line; the career figure&rsquo;s cut-off date is not stated.</li>
+      <li><strong>Not sourced.</strong> For both clubs: 2025&ndash;26 xG, shots, home/away split, fouls, corners, over 2.5 %, BTTS %, clean-sheet and failed-to-score %, first-half goals; this-season cards, fouls, corners and half-time scores; the scorelines of Villarreal&rsquo;s league matches individually; LaLiga baselines other than goals and cards per game. Card rates in the strip are computed from ESPN&rsquo;s 2025&ndash;26 club totals (Villarreal 76 Y, 3 R; Betis 72 Y, 2 R; league 1,612 Y, 107 R).</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Villarreal under P&eacute;rez are a possession side so far &mdash; 62% on average, 15.25 shots and 1.92 xG per league match against 1.38 conceded &mdash; and the results have gone the other way: 1.50 scored and 2.00 conceded per game, no clean sheet in four. That gap between process and outcome is the defining fact of their start, and it arrives with a new coach, a new goalkeeper at 36 (Gul&aacute;csi) in the probable XI and a rebuilt base of midfield after Partey and Terrats left and Saliba arrived. Last season&rsquo;s 72 goals under Marcelino were made by a different coach&rsquo;s method; P&eacute;rez&rsquo;s Rayo record is a CV. Tonight two defenders, Foyth and Carlos Romero, are unavailable. <strong>Gap:</strong> no foul or corner series.</p>
+    <p>Betis under Pellegrini are the mirror image: 52% possession and 15.75 shots per league match, 1.72 xG for and 1.81 against, and three wins with three clean sheets, all 1&ndash;0-shaped, alongside a 5&ndash;2 defeat at Levante. The team that drew 15 of 38 last season has not drawn yet. The summer added a centre-forward (Parrott), a defensive midfielder (Bernal) and two Real Madrid players (Ceballos, Fran Garc&iacute;a) to a squad whose coach has not changed, and the Champions League debut in Lille came from behind. What the evidence cannot yet say is whether three clean sheets against 1.81 xG conceded per match is a defence or a run. <strong>Gap:</strong> no foul or corner series.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous &mdash; results and chances point opposite ways for both sides</span></div><div class="mkt-why">Villarreal have the better xG difference this season (+0.54 per match against Betis&rsquo; &minus;0.09) and finished two places higher last season, yet have no win in five; Betis have three wins from a negative xG difference. A new home coach adds a further unknown. There is no single structural fact to anchor the family.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Asian handicap / DNB<span class="verdict tag t-mid">OK &mdash; margins have been small in Betis&rsquo; wins</span></div><div class="mkt-why">Betis&rsquo; three league wins were all by one goal, and Villarreal&rsquo;s defeats this season include 2&ndash;3 at home and 2&ndash;3 in Dortmund. Betis drew 15 of 38 last season. Those are margin facts the handicap family can use, even while the result itself is unreadable; Betis&rsquo; 5&ndash;2 at Levante is the counter-example.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U goals)<span class="verdict tag t-mid">Split &mdash; scorelines diverge, chance volume does not</span></div><div class="mkt-why">Villarreal&rsquo;s league matches are 75% over 2.5; Betis&rsquo; are 25%. But the combined xG in each side&rsquo;s matches is similar and high &mdash; 3.30 per Villarreal match, 3.53 per Betis match &mdash; so Betis&rsquo; low scorelines rest on finishing and goalkeeping against volume, not on low volume. Last season both clubs&rsquo; fixtures ran above the league&rsquo;s 2.69 (Villarreal 3.11, Betis 2.82).</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">Split &mdash; the same divergence as totals</span></div><div class="mkt-why">75% for Villarreal, 25% for Betis, with Betis&rsquo; 75% clean-sheet rate set against 1.81 xG conceded. Villarreal have failed to score once in four despite 1.92 xG. Readable only as a question about whether Betis&rsquo; clean sheets hold, which is a four-match question.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Team goals<span class="verdict tag t-mid">OK &mdash; Villarreal&rsquo;s line has the volume evidence</span></div><div class="mkt-why">Villarreal: 15.25 shots and 1.92 xG per match, 72 league goals last season, against a Betis side conceding 1.81 xG per match with Llorente&rsquo;s availability disputed. Betis: 1.72 xG per match and a new centre-forward, against a Villarreal defence missing Foyth and Romero. Both team lines have inputs; Villarreal&rsquo;s are larger and longer.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Halves (1H result, 1H goals)<span class="verdict tag t-high">Dangerous &mdash; no half-time data</span></div><div class="mkt-why">No first-half figure for either club in either season; the only half-specific fact sourced is that Betis trailed at half-time in Lille, a different competition and venue.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-mid">OK &mdash; low-booking clubs, and a referee whose two records disagree</span></div><div class="mkt-why">Both clubs booked below LaLiga&rsquo;s 2.26 per team per match last season (Villarreal 2.08, Betis 1.95) over 38 matches. Hern&aacute;ndez Maeso&rsquo;s LaLiga career rate is 4.55 yellows per game with a low penalty rate (0.24), but his two matches this season produced 2.5 yellows and 22 fouls each &mdash; about 8.8 fouls per card, a let-play-run profile. A two-match sample cannot settle which record describes him now.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Corners<span class="verdict tag t-high">Dangerous &mdash; no corner data</span></div><div class="mkt-why">No corner figure for either club or the league. Shot volume is almost identical (15.25 against 15.75); only possession (62% against 52%) separates them, and possession is not a corner rate.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li><strong>Villarreal&rsquo;s 72 goals and third place belong to Marcelino.</strong> P&eacute;rez&rsquo;s team has four league matches and a Champions League defeat; the xG says the attack is creating, the table says it is not converting, and nothing separates those yet.</li>
+      <li><strong>Betis&rsquo; defensive record is three clean sheets against 1.81 xG conceded per match.</strong> The one match where the chances converted was 5&ndash;2 at Levante. The 75% clean-sheet rate is the least stable number on this card.</li>
+      <li><strong>Betis&rsquo; 15 draws last season have not reappeared.</strong> Four league matches without a draw is a small sample against a 38-match tendency under the same coach.</li>
+      <li><strong>Both sides played five-goal Champions League matches on 8 September.</strong> Rotation for tonight is unpublished beyond probable elevens, and Ceballos is reported short of rhythm.</li>
+      <li><strong>Most sensitive:</strong> the moneyline, where results and chance quality contradict each other on both sides. <strong>Least sensitive:</strong> the discipline family&rsquo;s club component &mdash; a full season of below-average booking for both clubs beside a computed league baseline &mdash; though the referee component is unsettled.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>Villarreal&rsquo;s team goals are more robust than the moneyline because 15.25 shots and 1.92 xG per match describe what Villarreal produce, while the result depends on whether a five-match winless run or an xG edge is the truer reading.</li>
+      <li>The handicap family is more robust than the three-way result because every Betis win this season has been by a single goal and Betis drew 15 of 38 last season, both usable margin facts.</li>
+      <li>Totals are more robust than BTTS because the combined xG in both clubs&rsquo; matches (3.30 and 3.53) points to volume regardless of who scores, whereas BTTS turns on whether Betis&rsquo; clean-sheet run survives.</li>
+      <li>Discipline is more robust than corners because both clubs have full-season card counts and the referee has a published career and current-season record, while no corner figure exists at any level.</li>
+      <li><strong>The fact that would most change the family choice:</strong> Hern&aacute;ndez Maeso&rsquo;s 2025&ndash;26 season line. If his fouls-per-card ratio last season resembled this season&rsquo;s 8.8 rather than his 4.55-yellow career rate, the discipline row would have a coherent official profile beside two low-booking clubs; a season table from LaLiga or a referee-stats service would settle it.</li>
+    </ul>
+  </div>
+</article>
+
+<section>
+  <h2 class="sec">Across the card</h2>
+  <ul>
+    <li><strong>Totals is the best-supported family across the slate</strong>, and specifically well-suited on f3 (Inter &ndash; Udinese), where a completed 2025&ndash;26 season (3.26 goals per Inter fixture) and the current three-match sample (67% over 2.5 for both clubs) point the same way &mdash; the only Well-suited row on the whole card.</li>
+    <li><strong>Corners and the halves families are the least-supported on every one of the five cards.</strong> No club or league corner figure was sourced anywhere on this slate, and no first-half goals series exists for any of the ten clubs; both families are rated Dangerous on all five fixtures.</li>
+    <li>The 1X2 / moneyline family is Dangerous on two cards specifically &mdash; f4 (Leeds &ndash; Newcastle) and f5 (Villarreal &ndash; Betis) &mdash; the two fixtures where last season&rsquo;s table and this season&rsquo;s results and chance data point in different directions rather than the same one.</li>
+    <li>No fixture on this slate is free of a live structural complication. European football in the preceding week touches f1, f2, f3 and f5; a head coach appointed since June touches f2, f4 and f5; a summer sale of a first-choice spine position touches f1 and f3. There is no normal fixture on this card to use as a baseline for the others.</li>
+    <li>Evidence is thinnest, slate-wide, on Serie A&rsquo;s card and corner baselines specifically: a league-level card rate could be computed for the Premier League and LaLiga from ESPN&rsquo;s discipline tables, but no equivalent could be reached for Italy, leaving f1, f2 and f3&rsquo;s discipline rows with no league figure to compare against at all.</li>
+  </ul>
+</section>
+
+<footer>
+  <p><strong>Scope.</strong> This page rates market <em>families</em> only. It contains no selections, no sides, no recommended lines and no confidence labels &mdash; by design. Where evidence is thin it says so rather than filling the gap.</p>
+  <p><strong>Sources.</strong> Per-fixture sources are logged in <span class="mono">sources_0914.md</span>. For this build: club and league season pages on Wikipedia for 2025&ndash;26 and 2026&ndash;27 (Serie A, Premier League, LaLiga, and the ten clubs on this card); FootyStats club pages for 2026&ndash;27 rates; ESPN&rsquo;s 2025&ndash;26 discipline tables for the Premier League and LaLiga card baselines; official transfer trackers and match previews including Eurosport, Sky Sport Italia, Toro.it, Tuttosport, ANSA, Voce Giallorossa, Calcio e Finanza, LeedsUnited.com, Fichajes.com and El Gol Digital; referee statistics from Statz, ValueStats, PianetaFanta, EstadisticasLaLiga and the AIA; and official refereeing designations via CalVAR, Legaseriea.it and Futbolfantasy. No prices were requested or read from any source.</p>
+</footer>
+
+</div>
