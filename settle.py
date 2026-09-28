@@ -767,6 +767,14 @@ def grade(pick, card, m):
                 return None
             mine, theirs = (m["ch"], m["ca"]) if s == "h" else (m["ca"], m["ch"])
             return "push" if mine == theirs else ("win" if mine > theirs else "loss")
+    if fam == "corners" and not ou:
+        mc = re.search(r"^(.*?)\s+most\s+corners\b", sel)
+        if mc and m["kh"] is not None and m["ka"] is not None:
+            s = _side(mc.group(1), card, m)
+            if not s:
+                return None
+            mine, theirs = (m["kh"], m["ka"]) if s == "h" else (m["ka"], m["kh"])
+            return "push" if mine == theirs else ("win" if mine > theirs else "loss")
     if fam in ("disc", "corners") and ou:
         fouls = "foul" in sel or pick["family_raw"].lower() == "fouls"
         if fam == "corners":

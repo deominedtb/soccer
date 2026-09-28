@@ -13,6 +13,9 @@ v4.2 (2026-09-28)
   and corrections. It runs only when I ask, writes no file, and
   nothing from it enters a card, a board or another phase. The hard
   bans below hold everywhere else.
+- Phase 5 carries rules learned from the settled 27 September picks,
+  a combo section, and a paste-ready picks_N.md block. settle.py now
+  grades "X most corners".
 
 v4.1 (2026-09-24)
 - Phase 3 adds a verdict grid under the masthead: every fixture against
@@ -739,7 +742,58 @@ HOW PICKS ARE MADE
   most change which family reads best" (section E). Say whether it
   was answered and which way it moves the read.
 - Three tiers per fixture at most: Pick 1, Pick 2, and one of "Side
-  bet", "Lean" or "Bolder". Nothing else is labelled.
+  bet", "Lean" or "Bolder". Nothing else is labelled. Keep a Bolder
+  when the card supports one: I may play it later.
+
+RULES FROM SETTLED PICKS (27 September: 13–7–1 on picks, both leans
+lost; the losses below broke a rule or were mispriced)
+- Goals that need both sides — BTTS Yes, match Overs — only when both
+  teams' scoring sides are readable on the card. If Team goals is
+  Split with one side dangerous, BTTS Yes and the Over are out,
+  whatever the BTTS verdict says. (Germany – Greece: Greece readable,
+  Germany dangerous on personnel; Germany did not score.) The same
+  holds in reverse for BTTS No and Unders: both defences must be
+  readable.
+- A Split is pickable only when the card names one side as readable
+  ("Andorra side OK", "fouls OK"). A Split between the official and
+  the team lines, or between two records that point opposite ways,
+  is not a pick. (Norway – Portugal cards Under: 9 cards.)
+- When the card's windows disagree, price from the less favourable
+  one and say which window it is. The host's record and the visitor's
+  record both count, and the division prior counts. (Wales +1.5: the
+  visitor's eight tight away matches were priced, the host's 4 of 8
+  wins by two or more were not; fair was about 1.60, not 1.43.)
+- A first-half Under needs every first-half window the card prints
+  for that match (venue window as well as level window) at or under
+  the line. If the section E unknown touches either defence, drop it
+  to a Lean or leave it out. (Austria – Kosovo, 2–0 at half-time.)
+- Every pick names its line: "Andorra fouls over 16.5", never "fouls
+  Over". A card or foul pick with no line cannot be graded.
+- On a whole-number line say what a push looks like: Norway +1 pushes
+  on a one-goal defeat.
+- A pick lifted from my analysis is re-priced from the card on both
+  sides, not only tightened.
+- Name shared risk inside one fixture. Picks that all lose to the
+  same game state — an early goal for the visitor, say — are one bet,
+  not three. (Israel Over 0.5, Israel most corners and 1H Under 1.5
+  all died to Ireland's 3–0 by the 25th minute.) Keep the strongest
+  and say why the others go with it.
+- Read scorecard.md before pricing. When a verdict tier has 30 or
+  more tests, give its hit rate beside Pick 1, and say so plainly if
+  the tier behind a pick is running at or below its prior.
+
+COMBOS
+- Cross-fixture: at most one combo, two or three legs, taken only
+  from Pick 1s and Pick 2s. Its rough fair price is the legs' fair
+  prices multiplied; its threshold is set the same way as a single's.
+  Say what the legs land together roughly, in plain words, and that
+  every leg's thin sample compounds.
+- Same fixture (bet builder): name a pairing only when the legs do not
+  depend on each other, and say which way they are linked. No fair
+  price — the cards cannot measure the link, and the bookmaker prices
+  it in.
+- Never a leg from a Dangerous family, and never a Side bet, Lean or
+  Bolder as a leg.
 
 HOW MY ANALYSIS IS CHECKED
 - Every number in it that also appears on the card is compared.
@@ -792,6 +846,14 @@ OUTPUT (chat, markdown, this shape)
 
   **Ranked, if you only take a few:** a numbered list of at most five
   picks from across the fixtures, most consistent evidence first.
+
+  **Combo:** (optional) the cross-fixture combo and its fair price,
+  and any same-fixture pairing with its link named.
+
+  **To grade these later:** a code block in picks_N.md format, one
+  line per pick with its line written out, Leans and Bolders marked
+  in a trailing comment, so I can paste it into picks_N.md for
+  Phase 4.
 
   One closing line on stakes and why the samples are thin today.
 

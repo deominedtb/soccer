@@ -1,0 +1,1595 @@
+{
+ "slate": "0927",
+ "date": "2026-09-27",
+ "settled_at": "2026-09-28T05:28+00:00",
+ "fixtures": [
+  {
+   "card": {
+    "fid": "f1",
+    "title": "Gibraltar \u2013 Andorra",
+    "home": "Gibraltar",
+    "away": "Andorra",
+    "competition": "Nations League D, Group D1",
+    "rows": {
+     "1x2": {
+      "level": "ok",
+      "tag": "OK \u2014 asymmetric: Andorra\u2019s away half is steady, Gibraltar\u2019s home half rests on another coach\u2019s matches",
+      "short": "OK"
+     },
+     "ah": {
+      "level": "ok",
+      "tag": "OK \u2014 margin size steady at this level, direction not",
+      "short": "OK"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 best on the card: both sides\u2019 recent League D windows sit low; the division line does not hold still",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 Andorra\u2019s scoring half decides it, and it has just moved",
+      "short": "OK"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "Split \u2014 Andorra side OK; Gibraltar side dangerous",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 first-half goals are the steadier half; the 1H result follows the division\u2019s draw rate",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "Split \u2014 fouls OK, best-evidenced number on the card; cards dangerous, as the division line and the official diverge",
+      "short": "Split"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 volume low and steady at this level; direction splits by window",
+      "short": "OK"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401861069",
+    "slug": "uefa.nations",
+    "utc": "2026-09-27T16:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "16721",
+    "away_id": "587",
+    "home": "Gibraltar",
+    "away": "Andorra",
+    "hg": 0,
+    "ag": 0,
+    "h1h": 0,
+    "h1a": 0,
+    "ch": 2,
+    "ca": 3,
+    "kh": 4.0,
+    "ka": 4.0,
+    "fh": 15.0,
+    "fa": 24.0,
+    "referee": "Genc Nuza"
+   },
+   "match_score": 1.0,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "under",
+     "d": -0.083,
+     "hit": true,
+     "prior": 0.8333333333333334,
+     "line": 2.5,
+     "actual": 0,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "team",
+     "lean": "home over",
+     "d": 0.417,
+     "hit": false,
+     "prior": 0.5416666666666666,
+     "line": 0.79,
+     "actual": 0,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "team",
+     "lean": "away under",
+     "d": -0.833,
+     "hit": true,
+     "prior": 0.45833333333333337,
+     "line": 0.79,
+     "actual": 0,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals under",
+     "d": -0.167,
+     "hit": true,
+     "prior": 0.5,
+     "line": 0.58,
+     "actual": 0,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "disc",
+     "lean": "cards over",
+     "d": 0.583,
+     "hit": false,
+     "prior": 0.3333333333333333,
+     "line": 7.42,
+     "actual": 5,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "corners",
+     "lean": "corners over",
+     "d": 0.417,
+     "hit": true,
+     "prior": 0.5,
+     "line": 6.17,
+     "actual": 8.0,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "1x2",
+     "lean": "home",
+     "d": 1.25,
+     "hit": false,
+     "prior": 0.4166666666666667,
+     "line": null,
+     "actual": "0-0",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "ah",
+     "lean": "home DNB",
+     "d": 1.25,
+     "hit": null,
+     "prior": 0.625,
+     "line": 0,
+     "actual": "0-0",
+     "level": "ok",
+     "verdict": "OK"
+    }
+   ],
+   "info": {
+    "home_window": "2024-2025 League D (4)",
+    "away_window": "2024-2025 League D (4)",
+    "prior": "League D 2024-2025 (12)"
+   }
+  },
+  {
+   "card": {
+    "fid": "f2",
+    "title": "Serbia \u2013 Netherlands",
+    "home": "Serbia",
+    "away": "Netherlands",
+    "competition": "Nations League A, Group A2",
+    "rows": {
+     "1x2": {
+      "level": "ok",
+      "tag": "OK \u2014 asymmetric: Serbia\u2019s record against this level is steady; the Netherlands\u2019 is draw-heavy and built mostly below it",
+      "short": "OK"
+     },
+     "ah": {
+      "level": "ok",
+      "tag": "OK \u2014 margin evidence splits by side",
+      "short": "OK"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 the windows nearest tonight sit around the division line, with both sides\u2019 leading scorers out",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 the two records point opposite ways",
+      "short": "Dangerous"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "Split \u2014 Serbia side OK, best on the card; Netherlands side dangerous on the count",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 first-half goals sit near the division line; the 1H result follows two sides that start slowly against this level",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "Split \u2014 fouls OK; cards dangerous: the official books below the division, the match-up above it",
+      "short": "Split"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 volume near the line; the split leans one way overall but not against this level",
+      "short": "OK"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401861068",
+    "slug": "uefa.nations",
+    "utc": "2026-09-27T16:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "6757",
+    "away_id": "449",
+    "home": "Serbia",
+    "away": "Netherlands",
+    "hg": 1,
+    "ag": 2,
+    "h1h": 0,
+    "h1a": 1,
+    "ch": 1,
+    "ca": 1,
+    "kh": 3.0,
+    "ka": 4.0,
+    "fh": 7.0,
+    "fa": 10.0,
+    "referee": "Szymon Marciniak"
+   },
+   "match_score": 1.0,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "under",
+     "d": -0.375,
+     "hit": false,
+     "prior": 0.41666666666666663,
+     "line": 2.5,
+     "actual": 3,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "btts",
+     "lean": "no",
+     "d": -0.283,
+     "hit": false,
+     "prior": 0.4,
+     "line": null,
+     "actual": "yes",
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "team",
+     "lean": "home under",
+     "d": -1.225,
+     "hit": true,
+     "prior": 0.5333333333333333,
+     "line": 1.55,
+     "actual": 1,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "team",
+     "lean": "away over",
+     "d": 0.025,
+     "hit": true,
+     "prior": 0.4666666666666667,
+     "line": 1.55,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals under",
+     "d": -0.608,
+     "hit": true,
+     "prior": 0.6166666666666667,
+     "line": 1.37,
+     "actual": 1,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "disc",
+     "lean": "cards over",
+     "d": 0.125,
+     "hit": false,
+     "prior": 0.5333333333333333,
+     "line": 4.33,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "corners",
+     "lean": "corners under",
+     "d": -1.158,
+     "hit": true,
+     "prior": 0.4666666666666667,
+     "line": 9.85,
+     "actual": 7.0,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "1x2",
+     "lean": "away",
+     "d": -1.25,
+     "hit": true,
+     "prior": 0.26666666666666666,
+     "line": null,
+     "actual": "1-2",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "ah",
+     "lean": "away DNB",
+     "d": -1.25,
+     "hit": true,
+     "prior": 0.380952380952381,
+     "line": 0,
+     "actual": "1-2",
+     "level": "ok",
+     "verdict": "OK"
+    }
+   ],
+   "info": {
+    "home_window": "2024-2025 League A (6)",
+    "away_window": "2024-2025 League A (8)",
+    "prior": "League A 2024-2025 (60)"
+   }
+  },
+  {
+   "card": {
+    "fid": "f3",
+    "title": "Denmark \u2013 Wales",
+    "home": "Denmark",
+    "away": "Wales",
+    "competition": "Nations League A, Group A4",
+    "rows": {
+     "1x2": {
+      "level": "ok",
+      "tag": "OK \u2014 the structural priors are one-sided; the host\u2019s turnover is the caveat",
+      "short": "OK"
+     },
+     "ah": {
+      "level": "ok",
+      "tag": "OK \u2014 asymmetric: Wales\u2019s away margins are consistently tight; the division prior is wider",
+      "short": "OK"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 the windows nearest tonight sit below the division line, and both sides\u2019 absentees point the same way",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 both sides\u2019 nearest windows sit under the division line",
+      "short": "OK"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "Split \u2014 Wales side OK, best on the card; Denmark side OK but resting on a new back line opposite",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 first-half goals sit below the line in the nearest windows; Thursday was the exception for Denmark",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "Split \u2014 fouls OK; cards dangerous: the official books below the division, Parken\u2019s visitors above it",
+      "short": "Split"
+     },
+     "corners": {
+      "level": "good",
+      "tag": "Well-suited \u2014 the corner split points one way in every window reached",
+      "short": "Well-suited"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401861070",
+    "slug": "uefa.nations",
+    "utc": "2026-09-27T16:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "479",
+    "away_id": "578",
+    "home": "Denmark",
+    "away": "Wales",
+    "hg": 2,
+    "ag": 0,
+    "h1h": 0,
+    "h1a": 0,
+    "ch": 1,
+    "ca": 2,
+    "kh": 2.0,
+    "ka": 4.0,
+    "fh": 10.0,
+    "fa": 17.0,
+    "referee": "Willy Delajod"
+   },
+   "match_score": 1.0,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "under",
+     "d": -0.208,
+     "hit": true,
+     "prior": 0.41666666666666663,
+     "line": 2.5,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "btts",
+     "lean": "no",
+     "d": -0.162,
+     "hit": true,
+     "prior": 0.4,
+     "line": null,
+     "actual": "no",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "team",
+     "lean": "home under",
+     "d": -0.967,
+     "hit": false,
+     "prior": 0.5333333333333333,
+     "line": 1.55,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "team",
+     "lean": "away under",
+     "d": -0.383,
+     "hit": true,
+     "prior": 0.5333333333333333,
+     "line": 1.55,
+     "actual": 0,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals under",
+     "d": -0.554,
+     "hit": true,
+     "prior": 0.6166666666666667,
+     "line": 1.37,
+     "actual": 0,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "disc",
+     "lean": "cards over",
+     "d": 0.833,
+     "hit": false,
+     "prior": 0.5333333333333333,
+     "line": 4.33,
+     "actual": 3,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "corners",
+     "lean": "corners over",
+     "d": 2.608,
+     "hit": false,
+     "prior": 0.5333333333333333,
+     "line": 9.85,
+     "actual": 6.0,
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "1x2",
+     "lean": "away",
+     "d": -0.583,
+     "hit": false,
+     "prior": 0.26666666666666666,
+     "line": null,
+     "actual": "2-0",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "ah",
+     "lean": "away DNB",
+     "d": -0.583,
+     "hit": false,
+     "prior": 0.380952380952381,
+     "line": 0,
+     "actual": "2-0",
+     "level": "ok",
+     "verdict": "OK"
+    }
+   ],
+   "info": {
+    "home_window": "2024-2025 League A (8)",
+    "away_window": "2024-2025 League B (6)",
+    "prior": "League A 2024-2025 (60)"
+   }
+  },
+  {
+   "card": {
+    "fid": "f4",
+    "title": "Austria \u2013 Kosovo",
+    "home": "Austria",
+    "away": "Kosovo",
+    "competition": "Nations League B, Group B3",
+    "rows": {
+     "1x2": {
+      "level": "ok",
+      "tag": "OK \u2014 asymmetric: the host\u2019s home record is long, but both spines have turned over",
+      "short": "OK"
+     },
+     "ah": {
+      "level": "ok",
+      "tag": "OK \u2014 the draw is the live structural fact at this level",
+      "short": "OK"
+     },
+     "totals": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 the windows nearest tonight disagree by a goal and a half",
+      "short": "Dangerous"
+     },
+     "btts": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 the two sides\u2019 nearest windows point opposite ways",
+      "short": "Dangerous"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "Split \u2014 Kosovo side OK, the more readable; Austria side resting on absent scorers",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 first-half goals sit at or below the line in the windows at this level; Basel is the outlier",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 the official sits on the division line; the venue runs below it and the visitors above",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "good",
+      "tag": "Well-suited \u2014 the corner split points one way in the host\u2019s and the visitor\u2019s windows alike",
+      "short": "Well-suited"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401861071",
+    "slug": "uefa.nations",
+    "utc": "2026-09-27T16:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "474",
+    "away_id": "18272",
+    "home": "Austria",
+    "away": "Kosovo",
+    "hg": 3,
+    "ag": 1,
+    "h1h": 2,
+    "h1a": 0,
+    "ch": 2,
+    "ca": 2,
+    "kh": 5.0,
+    "ka": 1.0,
+    "fh": 21.0,
+    "fa": 15.0,
+    "referee": "Nick Walsh"
+   },
+   "match_score": 1.0,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "over",
+     "d": 0.333,
+     "hit": true,
+     "prior": 0.5,
+     "line": 2.5,
+     "actual": 4,
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "btts",
+     "lean": "yes",
+     "d": 0.021,
+     "hit": true,
+     "prior": 0.4375,
+     "line": null,
+     "actual": "yes",
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "team",
+     "lean": "home over",
+     "d": 0.938,
+     "hit": true,
+     "prior": 0.375,
+     "line": 1.33,
+     "actual": 3,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "team",
+     "lean": "away under",
+     "d": -0.062,
+     "hit": true,
+     "prior": 0.625,
+     "line": 1.33,
+     "actual": 1,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals over",
+     "d": 0.417,
+     "hit": true,
+     "prior": 0.3541666666666667,
+     "line": 1.1,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "disc",
+     "lean": "cards under",
+     "d": -0.427,
+     "hit": true,
+     "prior": 0.5,
+     "line": 4.33,
+     "actual": 4,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "corners",
+     "lean": "corners under",
+     "d": -1.542,
+     "hit": true,
+     "prior": 0.5625,
+     "line": 9.04,
+     "actual": 6.0,
+     "level": "good",
+     "verdict": "Well-suited"
+    },
+    {
+     "family": "1x2",
+     "lean": "home",
+     "d": 1.0,
+     "hit": true,
+     "prior": 0.4583333333333333,
+     "line": null,
+     "actual": "3-1",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "ah",
+     "lean": "home DNB",
+     "d": 1.0,
+     "hit": true,
+     "prior": 0.5641025641025641,
+     "line": 0,
+     "actual": "3-1",
+     "level": "ok",
+     "verdict": "OK"
+    }
+   ],
+   "info": {
+    "home_window": "2024-2025 League B (6)",
+    "away_window": "2024-2025 League C (6)",
+    "prior": "League B 2024-2025 (48)"
+   }
+  },
+  {
+   "card": {
+    "fid": "f5",
+    "title": "Germany \u2013 Greece",
+    "home": "Germany",
+    "away": "Greece",
+    "competition": "Nations League A, Group A2",
+    "rows": {
+     "1x2": {
+      "level": "ok",
+      "tag": "OK \u2014 asymmetric: the division prior is strong; the host\u2019s personnel and bench are new",
+      "short": "OK"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 Germany\u2019s wide margins came below this level, with players who are not here",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 the nearest windows sit at or above the division line, with Germany\u2019s scorers mostly out",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 Greece\u2019s away scoring is steady; Germany\u2019s home clean sheets came below this level",
+      "short": "OK"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "Split \u2014 Greece side OK, best on the card; Germany side dangerous on personnel",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 first-half goals sit near the division line; the 1H result follows Greece\u2019s slow starts against this level",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 a confirmed official with a deep record at the division\u2019s rate; penalties read low",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "Split \u2014 the split has a strong prior and one Klopp match against it; volume OK",
+      "short": "Split"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401861074",
+    "slug": "uefa.nations",
+    "utc": "2026-09-27T18:45Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "481",
+    "away_id": "455",
+    "home": "Germany",
+    "away": "Greece",
+    "hg": 0,
+    "ag": 1,
+    "h1h": 0,
+    "h1a": 0,
+    "ch": 1,
+    "ca": 4,
+    "kh": 8.0,
+    "ka": 2.0,
+    "fh": 12.0,
+    "fa": 11.0,
+    "referee": "Chris Kavanagh"
+   },
+   "match_score": 1.0,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "over",
+     "d": 0.117,
+     "hit": false,
+     "prior": 0.5833333333333334,
+     "line": 2.5,
+     "actual": 1,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "btts",
+     "lean": "no",
+     "d": -0.271,
+     "hit": true,
+     "prior": 0.4,
+     "line": null,
+     "actual": "no",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "team",
+     "lean": "home over",
+     "d": 0.183,
+     "hit": false,
+     "prior": 0.4666666666666667,
+     "line": 1.55,
+     "actual": 0,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "team",
+     "lean": "away over",
+     "d": 0.15,
+     "hit": false,
+     "prior": 0.4666666666666667,
+     "line": 1.55,
+     "actual": 1,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals under",
+     "d": -0.571,
+     "hit": true,
+     "prior": 0.6166666666666667,
+     "line": 1.37,
+     "actual": 0,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "disc",
+     "lean": "cards over",
+     "d": 0.2,
+     "hit": true,
+     "prior": 0.5333333333333333,
+     "line": 4.33,
+     "actual": 5,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "corners",
+     "lean": "corners under",
+     "d": -0.292,
+     "hit": false,
+     "prior": 0.4666666666666667,
+     "line": 9.85,
+     "actual": 10.0,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "1x2",
+     "lean": "home",
+     "d": 0.033,
+     "hit": false,
+     "prior": 0.43333333333333335,
+     "line": null,
+     "actual": "0-1",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "ah",
+     "lean": "home DNB",
+     "d": 0.033,
+     "hit": false,
+     "prior": 0.6190476190476191,
+     "line": 0,
+     "actual": "0-1",
+     "level": "bad",
+     "verdict": "Dangerous"
+    }
+   ],
+   "info": {
+    "home_window": "2024-2025 League A (10)",
+    "away_window": "2024-2025 League B (6)",
+    "prior": "League A 2024-2025 (60)"
+   }
+  },
+  {
+   "card": {
+    "fid": "f6",
+    "title": "Norway \u2013 Portugal",
+    "home": "Norway",
+    "away": "Portugal",
+    "competition": "Nations League A, Group A4",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 the division prior and the host\u2019s record point opposite ways",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "ok",
+      "tag": "OK \u2014 margins at this level have been narrow on every side of the record",
+      "short": "OK"
+     },
+     "totals": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 the windows nearest tonight run from 2.27 to 5.12 goals per match",
+      "short": "Dangerous"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 Norway\u2019s scoring is the steadiest fact on the card; Portugal\u2019s away scoring is not",
+      "short": "OK"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "Split \u2014 Norway side OK, best on the card; Portugal side OK but resting on one match under the new coach",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 asymmetric: Norway start fast at home, Portugal\u2019s first halves at this level are quiet",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "Split \u2014 the official sits at the division\u2019s rate; Norway\u2019s matches run far below it",
+      "short": "Split"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "Split \u2014 volume OK; the split meets two records that point opposite ways",
+      "short": "Split"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401861073",
+    "slug": "uefa.nations",
+    "utc": "2026-09-27T18:45Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "464",
+    "away_id": "482",
+    "home": "Norway",
+    "away": "Portugal",
+    "hg": 1,
+    "ag": 2,
+    "h1h": 0,
+    "h1a": 1,
+    "ch": 3,
+    "ca": 6,
+    "kh": 7.0,
+    "ka": 2.0,
+    "fh": 8.0,
+    "fa": 12.0,
+    "referee": "Francois Letexier"
+   },
+   "match_score": 1.0,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "over",
+     "d": 0.45,
+     "hit": true,
+     "prior": 0.5833333333333334,
+     "line": 2.5,
+     "actual": 3,
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "btts",
+     "lean": "yes",
+     "d": 0.263,
+     "hit": true,
+     "prior": 0.6,
+     "line": null,
+     "actual": "yes",
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "team",
+     "lean": "home over",
+     "d": 0.717,
+     "hit": false,
+     "prior": 0.4666666666666667,
+     "line": 1.55,
+     "actual": 1,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "team",
+     "lean": "away over",
+     "d": 0.283,
+     "hit": true,
+     "prior": 0.4666666666666667,
+     "line": 1.55,
+     "actual": 2,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals over",
+     "d": 0.462,
+     "hit": false,
+     "prior": 0.38333333333333336,
+     "line": 1.37,
+     "actual": 1,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "disc",
+     "lean": "cards under",
+     "d": -1.033,
+     "hit": false,
+     "prior": 0.4666666666666667,
+     "line": 4.33,
+     "actual": 9,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "corners",
+     "lean": "corners over",
+     "d": 0.908,
+     "hit": false,
+     "prior": 0.5333333333333333,
+     "line": 9.85,
+     "actual": 9.0,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "1x2",
+     "lean": "home",
+     "d": 0.433,
+     "hit": false,
+     "prior": 0.43333333333333335,
+     "line": null,
+     "actual": "1-2",
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "ah",
+     "lean": "home DNB",
+     "d": 0.433,
+     "hit": false,
+     "prior": 0.6190476190476191,
+     "line": 0,
+     "actual": "1-2",
+     "level": "ok",
+     "verdict": "OK"
+    }
+   ],
+   "info": {
+    "home_window": "2024-2025 League B (6)",
+    "away_window": "2024-2025 League A (10)",
+    "prior": "League A 2024-2025 (60)"
+   }
+  },
+  {
+   "card": {
+    "fid": "f7",
+    "title": "Israel \u2013 Republic of Ireland",
+    "home": "Israel",
+    "away": "Republic of Ireland",
+    "competition": "Nations League B, Group B3",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 the division\u2019s relegated-host line rests on home grounds Israel do not have",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "ok",
+      "tag": "OK \u2014 Ireland\u2019s margins are narrow in every window",
+      "short": "OK"
+     },
+     "totals": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 the two sides\u2019 windows sit two goals apart",
+      "short": "Dangerous"
+     },
+     "btts": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 the nearest windows point opposite ways",
+      "short": "Dangerous"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "Split \u2014 Israel side OK, the more readable; Ireland side resting on one scorer",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 first halves run below the line for both sides",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 asymmetric: the official and the visitors run above the line, the hosts well below",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 Ireland\u2019s away deficit is consistent; Israel\u2019s host record at this level is too",
+      "short": "OK"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401861072",
+    "slug": "uefa.nations",
+    "utc": "2026-09-27T18:45Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "461",
+    "away_id": "476",
+    "home": "Israel",
+    "away": "Republic of Ireland",
+    "hg": 0,
+    "ag": 3,
+    "h1h": 0,
+    "h1a": 3,
+    "ch": 1,
+    "ca": 2,
+    "kh": 2.0,
+    "ka": 4.0,
+    "fh": 16.0,
+    "fa": 12.0,
+    "referee": "Harm Osmers"
+   },
+   "match_score": 1.0,
+   "tests": [
+    {
+     "family": "totals",
+     "lean": "under",
+     "d": -0.083,
+     "hit": false,
+     "prior": 0.5,
+     "line": 2.5,
+     "actual": 3,
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "btts",
+     "lean": "no",
+     "d": -0.204,
+     "hit": true,
+     "prior": 0.5625,
+     "line": null,
+     "actual": "no",
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "team",
+     "lean": "home under",
+     "d": -0.05,
+     "hit": true,
+     "prior": 0.625,
+     "line": 1.33,
+     "actual": 0,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "team",
+     "lean": "away under",
+     "d": -0.217,
+     "hit": false,
+     "prior": 0.625,
+     "line": 1.33,
+     "actual": 3,
+     "level": "ok",
+     "verdict": "Split"
+    },
+    {
+     "family": "halves",
+     "lean": "1H goals under",
+     "d": -0.638,
+     "hit": false,
+     "prior": 0.6458333333333333,
+     "line": 1.1,
+     "actual": 3,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "disc",
+     "lean": "cards under",
+     "d": -1.333,
+     "hit": true,
+     "prior": 0.5,
+     "line": 4.33,
+     "actual": 3,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "corners",
+     "lean": "corners under",
+     "d": -2.225,
+     "hit": true,
+     "prior": 0.5625,
+     "line": 9.04,
+     "actual": 6.0,
+     "level": "ok",
+     "verdict": "OK"
+    },
+    {
+     "family": "1x2",
+     "lean": "home",
+     "d": 0.167,
+     "hit": false,
+     "prior": 0.4583333333333333,
+     "line": null,
+     "actual": "0-3",
+     "level": "bad",
+     "verdict": "Dangerous"
+    },
+    {
+     "family": "ah",
+     "lean": "home DNB",
+     "d": 0.167,
+     "hit": false,
+     "prior": 0.5641025641025641,
+     "line": 0,
+     "actual": "0-3",
+     "level": "ok",
+     "verdict": "OK"
+    }
+   ],
+   "info": {
+    "home_window": "2024-2025 League A (6)",
+    "away_window": "2024-2025 League B (6)",
+    "prior": "League B 2024-2025 (48)"
+   }
+  }
+ ],
+ "picks": [
+  {
+   "line": 6,
+   "fid": "f1",
+   "family": "totals",
+   "family_raw": "Totals",
+   "selection": "under 2.5 goals",
+   "price": null,
+   "stake": 1.0,
+   "result": "win",
+   "note": "",
+   "level": "ok",
+   "verdict": "OK",
+   "profit": null
+  },
+  {
+   "line": 7,
+   "fid": "f1",
+   "family": "ah",
+   "family_raw": "Asian handicap",
+   "selection": "Andorra +1",
+   "price": null,
+   "stake": 1.0,
+   "result": "win",
+   "note": "",
+   "level": "ok",
+   "verdict": "OK",
+   "profit": null
+  },
+  {
+   "line": 8,
+   "fid": "f1",
+   "family": "disc",
+   "family_raw": "Fouls",
+   "selection": "Andorra fouls over 16.5",
+   "price": null,
+   "stake": 1.0,
+   "result": "win",
+   "note": "",
+   "level": "ok",
+   "verdict": "Split",
+   "profit": null
+  },
+  {
+   "line": 9,
+   "fid": "f1",
+   "family": "halves",
+   "family_raw": "Halves",
+   "selection": "1h under 1.5",
+   "price": null,
+   "stake": 1.0,
+   "result": "win",
+   "note": "",
+   "level": "ok",
+   "verdict": "OK",
+   "profit": null
+  },
+  {
+   "line": 10,
+   "fid": "f2",
+   "family": "team",
+   "family_raw": "Team goals",
+   "selection": "Serbia under 1.5",
+   "price": null,
+   "stake": 1.0,
+   "result": "win",
+   "note": "",
+   "level": "ok",
+   "verdict": "Split",
+   "profit": null
+  },
+  {
+   "line": 11,
+   "fid": "f2",
+   "family": "ah",
+   "family_raw": "Asian handicap",
+   "selection": "Netherlands dnb",
+   "price": null,
+   "stake": 1.0,
+   "result": "win",
+   "note": "",
+   "level": "ok",
+   "verdict": "OK",
+   "profit": null
+  },
+  {
+   "line": 12,
+   "fid": "f3",
+   "family": "corners",
+   "family_raw": "Corners",
+   "selection": "Denmark most corners",
+   "price": null,
+   "stake": 1.0,
+   "result": "loss",
+   "note": "",
+   "level": "good",
+   "verdict": "Well-suited",
+   "profit": null
+  },
+  {
+   "line": 13,
+   "fid": "f3",
+   "family": "ah",
+   "family_raw": "Asian handicap",
+   "selection": "Wales +1.5",
+   "price": null,
+   "stake": 1.0,
+   "result": "loss",
+   "note": "",
+   "level": "ok",
+   "verdict": "OK",
+   "profit": null
+  },
+  {
+   "line": 14,
+   "fid": "f3",
+   "family": "team",
+   "family_raw": "Team goals",
+   "selection": "Wales under 1.5",
+   "price": null,
+   "stake": 1.0,
+   "result": "win",
+   "note": "",
+   "level": "ok",
+   "verdict": "Split",
+   "profit": null
+  },
+  {
+   "line": 15,
+   "fid": "f4",
+   "family": "corners",
+   "family_raw": "Corners",
+   "selection": "Austria most corners",
+   "price": null,
+   "stake": 1.0,
+   "result": "win",
+   "note": "",
+   "level": "good",
+   "verdict": "Well-suited",
+   "profit": null
+  },
+  {
+   "line": 16,
+   "fid": "f4",
+   "family": "halves",
+   "family_raw": "Halves",
+   "selection": "1h under 1.5",
+   "price": null,
+   "stake": 1.0,
+   "result": "loss",
+   "note": "",
+   "level": "ok",
+   "verdict": "OK",
+   "profit": null
+  },
+  {
+   "line": 18,
+   "fid": "f5",
+   "family": "team",
+   "family_raw": "Team goals",
+   "selection": "Greece over 0.5",
+   "price": null,
+   "stake": 1.0,
+   "result": "win",
+   "note": "",
+   "level": "ok",
+   "verdict": "Split",
+   "profit": null
+  },
+  {
+   "line": 19,
+   "fid": "f5",
+   "family": "btts",
+   "family_raw": "BTTS",
+   "selection": "yes",
+   "price": null,
+   "stake": 1.0,
+   "result": "loss",
+   "note": "",
+   "level": "ok",
+   "verdict": "OK",
+   "profit": null
+  },
+  {
+   "line": 21,
+   "fid": "f5",
+   "family": "totals",
+   "family_raw": "Totals",
+   "selection": "over 2.5 goals",
+   "price": null,
+   "stake": 1.0,
+   "result": "loss",
+   "note": "",
+   "level": "ok",
+   "verdict": "OK",
+   "profit": null
+  },
+  {
+   "line": 22,
+   "fid": "f6",
+   "family": "team",
+   "family_raw": "Team goals",
+   "selection": "Norway over 0.5",
+   "price": null,
+   "stake": 1.0,
+   "result": "win",
+   "note": "",
+   "level": "ok",
+   "verdict": "Split",
+   "profit": null
+  },
+  {
+   "line": 23,
+   "fid": "f6",
+   "family": "ah",
+   "family_raw": "Asian handicap",
+   "selection": "Norway +1",
+   "price": null,
+   "stake": 1.0,
+   "result": "push",
+   "note": "",
+   "level": "ok",
+   "verdict": "OK",
+   "profit": null
+  },
+  {
+   "line": 24,
+   "fid": "f6",
+   "family": "disc",
+   "family_raw": "Cards",
+   "selection": "under 4.5 cards",
+   "price": null,
+   "stake": 1.0,
+   "result": "loss",
+   "note": "",
+   "level": "ok",
+   "verdict": "Split",
+   "profit": null
+  },
+  {
+   "line": 25,
+   "fid": "f7",
+   "family": "team",
+   "family_raw": "Team goals",
+   "selection": "Israel over 0.5",
+   "price": null,
+   "stake": 1.0,
+   "result": "loss",
+   "note": "",
+   "level": "ok",
+   "verdict": "Split",
+   "profit": null
+  },
+  {
+   "line": 26,
+   "fid": "f7",
+   "family": "ah",
+   "family_raw": "Asian handicap",
+   "selection": "Ireland +1",
+   "price": null,
+   "stake": 1.0,
+   "result": "win",
+   "note": "",
+   "level": "ok",
+   "verdict": "OK",
+   "profit": null
+  },
+  {
+   "line": 27,
+   "fid": "f7",
+   "family": "disc",
+   "family_raw": "Cards",
+   "selection": "Ireland most cards",
+   "price": null,
+   "stake": 1.0,
+   "result": "win",
+   "note": "",
+   "level": "ok",
+   "verdict": "OK",
+   "profit": null
+  },
+  {
+   "line": 28,
+   "fid": "f7",
+   "family": "halves",
+   "family_raw": "Halves",
+   "selection": "1h under 1.5",
+   "price": null,
+   "stake": 1.0,
+   "result": "loss",
+   "note": "",
+   "level": "ok",
+   "verdict": "OK",
+   "profit": null
+  },
+  {
+   "line": 29,
+   "fid": "f7",
+   "family": "corners",
+   "family_raw": "Corners",
+   "selection": "Israel most corners",
+   "price": null,
+   "stake": 1.0,
+   "result": "loss",
+   "note": "",
+   "level": "ok",
+   "verdict": "OK",
+   "profit": null
+  }
+ ],
+ "unsettled": []
+}
