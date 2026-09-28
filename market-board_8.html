@@ -1,0 +1,758 @@
+<title>Market Board Friday 28 August 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<style>
+:root{
+  --bg:#EFF2F1; --surface:#FFFFFF; --surface-2:#F6F8F7; --band:#1D3F52;
+  --ink:#13201E; --ink-2:#485856; --muted:#6C7B78; --line:#D4DCDA;
+  --accent:#1D4E73; --accent-soft:#E3EDF3;
+  --good:#2C6E4B; --good-soft:#E2EFE8;
+  --warn:#8C6817; --warn-soft:#F4ECD9;
+  --bad:#A03528;  --bad-soft:#F6E2DF;
+  --brass:#856526;
+  --band-ink:#EAF1F4;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D1315; --surface:#141C1F; --surface-2:#1A2326; --band:#16303D;
+    --ink:#E3EAE8; --ink-2:#A6B4B1; --muted:#82938F; --line:#263236;
+    --accent:#79ACD0; --accent-soft:#152F3C;
+    --good:#66C093; --good-soft:#152C20;
+    --warn:#D2A950; --warn-soft:#2C2617;
+    --bad:#E27A6E;  --bad-soft:#321C19;
+    --brass:#C4A05A;
+    --band-ink:#DCE8EC;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D1315; --surface:#141C1F; --surface-2:#1A2326; --band:#16303D;
+  --ink:#E3EAE8; --ink-2:#A6B4B1; --muted:#82938F; --line:#263236;
+  --accent:#79ACD0; --accent-soft:#152F3C;
+  --good:#66C093; --good-soft:#152C20;
+  --warn:#D2A950; --warn-soft:#2C2617;
+  --bad:#E27A6E;  --bad-soft:#321C19;
+  --brass:#C4A05A;
+  --band-ink:#DCE8EC;
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:"Source Serif 4",Georgia,"Times New Roman",serif;
+  font-size:17px; line-height:1.6;
+  margin:0; padding:0 18px 96px;
+  -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:940px; margin:0 auto;}
+h1,h2,h3,h4,.ui{font-family:Archivo,"Helvetica Neue",Arial,sans-serif}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace; font-variant-numeric:tabular-nums}
+
+/* ---------- masthead ---------- */
+header.top{padding:52px 0 26px; border-bottom:2px solid var(--ink);}
+.eyebrow{
+  font-family:Archivo,sans-serif; font-size:12px; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase; color:var(--accent); margin:0 0 14px;
+}
+h1{
+  font-size:clamp(34px,7vw,54px); line-height:1.02; font-weight:800;
+  letter-spacing:-.02em; margin:0 0 14px; text-wrap:balance;
+}
+.standfirst{font-size:19px; color:var(--ink-2); margin:0; max-width:62ch;}
+.metaline{
+  display:flex; flex-wrap:wrap; gap:8px 20px; margin-top:22px;
+  font-family:Archivo,sans-serif; font-size:12.5px; font-weight:600;
+  letter-spacing:.06em; text-transform:uppercase; color:var(--muted);
+}
+
+/* ---------- generic blocks ---------- */
+section{margin-top:44px}
+h2.sec{
+  font-size:13px; font-weight:700; letter-spacing:.15em; text-transform:uppercase;
+  color:var(--muted); margin:0 0 16px; padding-bottom:8px; border-bottom:1px solid var(--line);
+}
+p{margin:0 0 14px; max-width:70ch}
+.note{
+  background:var(--accent-soft); border-left:3px solid var(--accent);
+  padding:14px 16px; font-size:15.5px; color:var(--ink-2); max-width:none;
+}
+.note strong{color:var(--ink)}
+
+/* ---------- odds table ---------- */
+.scroller{overflow-x:auto; border:1px solid var(--line); background:var(--surface)}
+table{border-collapse:collapse; width:100%; min-width:760px; font-size:14px}
+thead th{
+  background:var(--band); color:var(--band-ink);
+  font-family:Archivo,sans-serif; font-weight:700; font-size:11px;
+  letter-spacing:.09em; text-transform:uppercase;
+  padding:10px 11px; text-align:right; white-space:nowrap;
+}
+thead th:first-child{text-align:left}
+tbody td{
+  padding:10px 11px; border-top:1px solid var(--line); text-align:right;
+  font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums; white-space:nowrap;
+}
+tbody td:first-child{
+  text-align:left; font-family:Archivo,sans-serif; font-weight:600; font-size:14px;
+  white-space:normal; min-width:190px;
+}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td .ko{display:block; font-family:"IBM Plex Mono",monospace; font-weight:400; font-size:11.5px; color:var(--muted); letter-spacing:.02em}
+.unk{color:var(--brass); font-style:italic}
+
+/* ---------- fixture cards ---------- */
+.fixture{
+  background:var(--surface); border:1px solid var(--line);
+  margin-top:30px; scroll-margin-top:12px;
+}
+.fx-head{background:var(--band); color:var(--band-ink); padding:16px 20px 18px}
+.fx-league{
+  font-family:Archivo,sans-serif; font-size:11px; font-weight:700;
+  letter-spacing:.14em; text-transform:uppercase; opacity:.78; margin:0 0 6px;
+}
+.fx-title{font-family:Archivo,sans-serif; font-size:23px; font-weight:700; letter-spacing:-.01em; margin:0; line-height:1.15}
+.fx-sub{font-family:"IBM Plex Mono",monospace; font-size:12.5px; opacity:.8; margin:7px 0 0; letter-spacing:.02em}
+.fx-body{padding:20px}
+
+.fx-odds{
+  display:flex; flex-wrap:wrap; gap:0;
+  border:1px solid var(--line); background:var(--surface-2); margin:0 0 22px;
+}
+.od{flex:1 1 96px; padding:9px 12px; border-right:1px solid var(--line); border-bottom:1px solid var(--line)}
+.od:last-child{border-right:0}
+.od dt{
+  font-family:Archivo,sans-serif; font-size:10px; font-weight:700; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--muted); margin:0 0 3px;
+}
+.od dd{margin:0; font-family:"IBM Plex Mono",monospace; font-size:15px; font-weight:500; font-variant-numeric:tabular-nums}
+
+h3.blk{
+  font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--accent); margin:26px 0 10px;
+}
+h3.blk:first-of-type{margin-top:0}
+.fx-body ul{margin:0 0 14px; padding-left:20px; max-width:70ch}
+.fx-body li{margin-bottom:7px}
+.tag{
+  font-family:Archivo,sans-serif; font-size:11px; font-weight:700;
+  letter-spacing:.07em; text-transform:uppercase; padding:2px 7px; white-space:nowrap;
+}
+.t-low{background:var(--good-soft); color:var(--good)}
+.t-mid{background:var(--warn-soft); color:var(--warn)}
+.t-high{background:var(--bad-soft); color:var(--bad)}
+
+/* market suitability rows */
+.mkt{border-top:1px solid var(--line)}
+.mkt-row{
+  display:grid; grid-template-columns:150px 1fr; gap:0;
+  border-bottom:1px solid var(--line);
+}
+.mkt-name{
+  padding:13px 14px 13px 0; font-family:Archivo,sans-serif;
+  font-weight:700; font-size:14px; line-height:1.3;
+}
+.mkt-name .verdict{display:block; margin-top:6px}
+.mkt-why{padding:13px 0 13px 16px; border-left:3px solid var(--line); font-size:15.5px; color:var(--ink-2)}
+.mkt-row.good .mkt-why{border-left-color:var(--good)}
+.mkt-row.ok .mkt-why{border-left-color:var(--warn)}
+.mkt-row.bad .mkt-why{border-left-color:var(--bad)}
+@media (max-width:620px){
+  .mkt-row{grid-template-columns:1fr; gap:0}
+  .mkt-name{padding-bottom:6px}
+  .mkt-why{padding:0 0 14px 14px}
+}
+
+/* index list */
+.index{display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line)}
+.index a{
+  display:block; background:var(--surface); padding:12px 14px; text-decoration:none;
+  color:var(--ink); font-family:Archivo,sans-serif; font-weight:600; font-size:14.5px;
+}
+.index a:hover,.index a:focus-visible{background:var(--accent-soft); color:var(--accent)}
+.index a span{display:block; font-family:"IBM Plex Mono",monospace; font-weight:400; font-size:11.5px; color:var(--muted); margin-top:3px; letter-spacing:.03em}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+
+footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); font-size:14px; color:var(--muted); max-width:74ch}
+footer a{color:var(--accent)}
+
+/* ---------- not-yet-built fixture ---------- */
+.fixture.pending{opacity:.72}
+.pending-note{
+  font-family:Archivo,sans-serif; font-size:13px; font-weight:600;
+  letter-spacing:.04em; color:var(--muted);
+  background:var(--surface-2); border:1px dashed var(--line);
+  border-radius:8px; padding:14px 16px; margin-top:18px;
+}
+</style>
+
+<div class="wrap">
+
+<header class="top">
+  <p class="eyebrow">Context engine &middot; no picks, no sides, no lines</p>
+  <h1>Four new managers and two promotions: nothing on this card is the team its table describes</h1>
+  <p class="standfirst">Six fixtures across five competitions, parsed in typed-file mode from <span class="mono">odds_7.xlsx</span> rather than a screenshot folder, with all six context cards researched from source and five of them since re-researched to close the summer-transfer gaps the first pass left open.</p>
+  <div class="metaline">
+    <span>Friday 28 August 2026</span>
+    <span>LaLiga jornada 3 &middot; Bundesliga matchday 1 &middot; Ligue 1 matchday 2 &middot; Serie A matchday 2 &middot; Premier League matchday 2</span>
+    <span>Decimal odds, bet365 IT</span>
+  </div>
+</header>
+
+<section>
+  <h2 class="sec">The one thing shaping every game on this card</h2>
+  <p>Four of the twelve clubs on this card are working under a head coach appointed
+this summer: Davide Ancelotti at Lille on 1 June, Pierre Sage at Crystal Palace on 15 June,
+Enzo Maresca at Manchester City on 29 June, and I&ntilde;igo P&eacute;rez at Villarreal in place of
+Marcelino. Two more have changed division entirely &mdash; Racing Santander are up as Segunda
+champions after fourteen years away, and Venezia are back at the first attempt as Serie B
+champions on a record 82 points. The single fixture with neither a new manager nor a promoted
+side, Bayern Munich against Stuttgart, is the Bundesliga&rsquo;s opening night, so neither team has
+a league match to its name. There is no fixture on this slate where last season&rsquo;s table
+describes both teams.</p>
+
+<p>That is a different problem from the usual early-season one. The familiar complaint is that
+the samples are small; here the large samples exist and are attached to teams that no longer do.
+Manchester City&rsquo;s runners-up finish was produced by Pep Guardiola with Rodri, Bernardo Silva,
+John Stones, Nathan Ak&eacute; and Tijjani Reijnders, every one of whom has left &mdash; the club has
+since spent a record &pound;116m on Elliot Anderson and &pound;81.4m on Ayyoub Bouaddi, and Maresca
+said this week he still wants &ldquo;one or two more captains&rdquo; before the window shuts.
+Villarreal&rsquo;s third place belongs to Marcelino. Lille&rsquo;s third place belongs to Bruno
+Genesio, now at Marseille, above a squad that has turned over seven in and twelve out. Reading any
+of those finishes onto tonight&rsquo;s team imports a manager who is not in the building.</p>
+
+<p>One side on the slate is fully describable from its own recent football. Alav&eacute;s kept Quique
+S&aacute;nchez Flores, who arrived in March and now has his first full pre-season with the group, and
+changed as few players as possible on purpose. Everywhere else the usable evidence is the kind that
+survives a regime change rather than the kind that resets with it &mdash; Villarreal&rsquo;s sixteen
+consecutive matches without a clean sheet, which outlived Marcelino&rsquo;s departure; Venezia&rsquo;s
+eleven visits to San Siro without a win; Elche taking roughly 35 of their 43 points at home. Those are
+properties of a squad. A league position, on this particular card, is not.</p>
+
+<div class="note"><strong>Structural consequence.</strong> The families that need to know a team&rsquo;s
+current playing pattern &mdash; outright results, corner totals, anything that turns on how high a side
+presses or how a block holds its shape &mdash; are the ones this card degrades most, because pattern is
+the first thing a new manager or a new division changes. The families that rest on properties which
+outlive a change of coach hold up better: both teams scoring, and discipline in the two fixtures where a
+per-team card line exists to check the asymmetry against. Where the book has priced those two within a
+few points of each other, it is generally saying the same thing about the evidence.</div>
+</section>
+
+<section>
+  <h2 class="sec">Today&rsquo;s slate &mdash; odds as read from the screenshots</h2>
+  <div class="scroller">
+  <table>
+    <thead>
+      <tr>
+        <th>Fixture</th><th>1</th><th>X</th><th>2</th><th>O2.5</th><th>U2.5</th><th>BTTS&nbsp;Y</th><th>BTTS&nbsp;N</th><th>Cards</th><th>Corners</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Racing Santander &ndash; Elche<span class="ko">19:00 &middot; LaLiga</span></td><td>2.05</td><td>3.50</td><td>3.55</td><td>1.65</td><td>2.15</td><td>1.57</td><td>2.30</td><td>4.5</td><td>9.5</td></tr>
+      <tr><td>Bayern Munich &ndash; Stuttgart<span class="ko">20:30 &middot; Bundesliga</span></td><td>1.23</td><td>7.00</td><td>10.50</td><td>1.16</td><td>4.50</td><td>1.43</td><td>2.65</td><td>3.5</td><td>9.5</td></tr>
+      <tr><td>Lille &ndash; Paris Saint-Germain<span class="ko">20:45 &middot; Ligue 1</span></td><td>5.00</td><td>3.80</td><td>1.70</td><td>1.72</td><td>2.00</td><td>1.68</td><td>2.10</td><td>3.5</td><td>9.5</td></tr>
+      <tr><td>AC Milan &ndash; Venezia<span class="ko">20:45 &middot; Serie A</span></td><td>1.47</td><td>4.35</td><td>7.10</td><td>1.68</td><td>2.10</td><td>1.85</td><td>1.90</td><td>2.5</td><td>9.5</td></tr>
+      <tr><td>Crystal Palace &ndash; Man City<span class="ko">21:00 &middot; Premier League</span></td><td>4.80</td><td>4.00</td><td>1.68</td><td>1.68</td><td>2.10</td><td>1.65</td><td>2.15</td><td>3.5</td><td>9.5</td></tr>
+      <tr><td>Alav&eacute;s &ndash; Villarreal<span class="ko">21:30 &middot; LaLiga</span></td><td>3.20</td><td>3.50</td><td>2.20</td><td>1.75</td><td>2.00</td><td>1.63</td><td>2.20</td><td>4.5</td><td>9.5</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="note"><strong>Provenance.</strong> This slate was parsed in
+typed-file mode from <span class="mono">odds_7.xlsx</span>, sheet <span class="mono">odds_7</span>
+&mdash; despite the heading above, no screenshots were involved, so there are no source image
+filenames and no OCR step. Every price on this page was read directly from a spreadsheet cell:
+none is derived, none was unreadable, and no cell carried a <span class="mono">-</span> or a
+leading <span class="mono">~</span>, which is why nothing here is marked
+<span class="unk">uncertain</span>. One header was re-read after Phase 1 and is the only correction
+on the record: the columns labelled <span class="mono">1 H / X H / 2 H</span> were first taken as
+half-time 1X2 and are in fact the three-way handicap prices attached to the
+<span class="mono">AH line</span> column &mdash; Bayern&rsquo;s line of &minus;2 with 2.25 / 4.55 / 2.35
+parses only as &minus;2, exactly&nbsp;2, and +2, and is incoherent as a half-time market against a 1.23
+outright. The label was corrected in <span class="mono">fixtures_8.md</span>; no price was changed.
+Kickoff times were normalised from Excel&rsquo;s floating-point time serialisation
+(<span class="mono">18:59:59.9999999999968050</span> &rarr; 19:00). The source file carried no league
+and no venue column: both were established by research in Phase 2 rather than inferred at parse time.
+The workbook also holds an unused <span class="mono">odds_EXAMPLE</span> tab, which was not read.</div>
+
+<div class="note"><strong>Known inconsistency inside the Milan &ndash; Venezia card.</strong> Five cards were
+re-researched after first publication to close the summer-transfer gaps the original pass left open, and that
+patch was scoped to section&nbsp;A only. For Milan the new evidence reverses the old reading: the club did sign
+both players it wanted &mdash; Gon&ccedil;alo Ramos at around &euro;70m and Mario Gila at &euro;30m with bonuses,
+inside a reported first-wave outlay above &euro;100m &mdash; where section&nbsp;A previously recorded only
+&euro;30m going out. Section&nbsp;C of that card still argues from the superseded position, describing Milan&rsquo;s
+incoming business as unverified and the net movement as outward. It has deliberately not been rewritten, because
+section&nbsp;C was frozen for this pass. Read the Milan 1X2 row as resting on a premise the card itself now
+contradicts. The same patch added a significant absence the first pass missed entirely: Andrea Adorante,
+Venezia&rsquo;s 17-goal Serie&nbsp;B top scorer, is out until roughly October after back surgery.</div>
+</section>
+
+<section>
+  <h2 class="sec">Jump to a fixture</h2>
+  <nav class="jump">
+    <a href="#f1">Racing Santander &ndash; Elche<span>19:00 &middot; El Sardinero</span></a>
+    <a href="#f2">Bayern Munich &ndash; Stuttgart<span>20:30 &middot; Allianz Arena</span></a>
+    <a href="#f3">Lille &ndash; Paris Saint-Germain<span>20:45 &middot; Stade Pierre-Mauroy</span></a>
+    <a href="#f4">AC Milan &ndash; Venezia<span>20:45 &middot; San Siro</span></a>
+    <a href="#f5">Crystal Palace &ndash; Manchester City<span>21:00 &middot; Selhurst Park</span></a>
+    <a href="#f6">Alav&eacute;s &ndash; Villarreal<span>21:30 &middot; Mendizorroza</span></a>
+  </nav>
+</section>
+
+<article class="fixture" id="f1">
+  <div class="fx-head">
+    <p class="fx-league">Spain &middot; LaLiga EA Sports &middot; Matchday 3</p>
+    <h2 class="fx-title">Racing Santander &ndash; Elche</h2>
+    <p class="fx-sub">19:00 &middot; Campos de Sport de El Sardinero, Santander &middot; High uncertainty &mdash; promoted champions three games into a 14-year absence, and Elche&rsquo;s 2026 summer window unestablished</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.05 &middot; 3.50 &middot; 3.55</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>1.30 &middot; 1.30 &middot; 1.75</dd></div>
+      <div class="od"><dt>EH &minus;1 (1/X/2)</dt><dd>3.60 &middot; 4.10 &middot; 1.75</dd></div>
+      <div class="od"><dt>Win or +2</dt><dd>1.98 / 3.40</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.65 / 2.15</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.57 / 2.30</dd></div>
+      <div class="od"><dt>Cards 4.5 U / O</dt><dd>1.90 / 1.70</dd></div>
+      <div class="od"><dt>Corners 9.5 U / O</dt><dd>1.77 / 1.90</dd></div>
+      <div class="od"><dt>Corner race 1/X/2</dt><dd>1.95 &middot; 8.50 &middot; 2.00</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>Racing Santander are promoted, and promoted as champions &mdash; they won the 2025&ndash;26 Segunda Divisi&oacute;n and sealed it with a 4&ndash;1 win over Real Valladolid at this ground in May 2026, ending an absence from the top flight that runs back to 2012. Their record across the campaign was 28 wins, 8 draws and 11 defeats from 47 matches, a figure that spans all competitions rather than the 42-game league programme. Elche arrive from the opposite direction: 15th last season, 43 points, safe by a single point in their first year back since 2022&ndash;23. The structural headline is that neither number means what it looks like. Racing&rsquo;s is second-division output with no top-flight baseline attached to it, and Elche&rsquo;s 43 points are not a level but a split &mdash; roughly 35 of them came at home, which leaves about 8 from nineteen away matches.</p>
+    <ul>
+      <li><strong>Racing Santander &mdash; turnover medium-to-high, weighted to the creative spine.</strong> The signing that changes the side is Sergio Canales, the window&rsquo;s first arrival and a free agent &mdash; his Monterrey contract expired on 30 June 2026 &mdash; on a deal to 30 June 2028, described by the player as the most important move of his career. He is 35, Santander-born, and returns sixteen years after leaving, with 384 LaLiga appearances behind him; because he cost nothing he does not appear in fee-ranked summaries of this window, which is worth noting when reading them. An established top-flight playmaker dropping into a promoted squad is a different proposition from a promoted side buying depth. Pablo Ram&oacute;n, the stated priority target after 27 appearances on loan under this manager, did arrive. Mario Garc&iacute;a left for Widzew &Lstrok;&oacute;d&zacute;. The promotion attack ran through Andr&eacute;s Mart&iacute;n (23 goals), Asier Villalibre (16) and Vicente Elorduy (9), and Villalibre has been made a permanent arrival this summer. The goalkeeping position was rebuilt outright: Julen Agirrezabala came in for &euro;4.5m, the club&rsquo;s largest fee of the window, with Jokin Ezkieta loaned out to C&aacute;diz. Centre-back was addressed twice &mdash; Pedro Felipe, a Brazilian, for around &euro;500,000, and Facundo Gonz&aacute;lez Molino; a further centre-back was reported to be completing a four-year deal from Espanyol, unnamed in these sources. Out: Mario Garc&iacute;a to Widzew &Lstrok;&oacute;d&zacute;, Javi Castro to C&aacute;diz, Michelin and Cabanz&oacute;n to Real Valladolid on frees, plus Suleiman Camara Sanneh and Samuel Calera. The window balance is reported at &minus;&euro;6.9m. Jos&eacute; Alberto stays &mdash; no manager change; the coach who won promotion takes the side up.</li>
+      <li><strong>Elche &mdash; turnover medium, spent forward, with manager continuity underneath it.</strong> Eder Sarabia extended to 2027 on 10 June 2025 and is into a third season, so the system is not this summer&rsquo;s variable. The squad he inherited from the previous window included H&eacute;ctor Fort from Barcelona, Tete Morente from Lecce, &Aacute;lvaro Rodr&iacute;guez from Real Madrid and Lucas Cepeda from Colo-Colo; Andr&eacute; Silva led the scoring with 9 league goals, a modest ceiling for a lead forward, and the summer has been spent trying to raise it. In: Ezequiel Ponce and Fer Ni&ntilde;o, both forwards; Gonzalo Villar in midfield; V&iacute;ctor Chust, a centre-back, free from C&aacute;diz on 30 June 2026, joining Pedro Bigas and Matia Barzic &mdash; Barzic himself back from a loan at Le&oacute;n; Umaru Konare Tounkara; and the window&rsquo;s largest outlay, Aboubacar &ldquo;Buba&rdquo; Sangar&eacute; Traor&eacute;, an 18-year-old right-back from Roma at &euro;4.5m. Out: &Aacute;lvaro Rodr&iacute;guez, one of last season&rsquo;s recruits, and Bema Sina. Net investment is reported at around &euro;13m. Goalkeeper is the one position deliberately untouched &mdash; Mat&iacute;as Dituro is expected to continue as first choice into a fourth season at the club.</li>
+      <li><strong>Suspensions / absences.</strong> The fixture preview names two absentees &mdash; defender Pedro Felipe, a micro-tear in the right hamstring, and forward Giorgi Guliashvili, a leg problem that cost him the whole of pre-season and the opening weeks &mdash; without attributing either to a side. The transfer ledger settles the first: Pedro Felipe is one of Racing&rsquo;s two summer centre-back signings, so that absence is Racing&rsquo;s, and it means one of the two players bought to rebuild the defence for a top-flight return is unavailable for it. Guliashvili appears in neither club&rsquo;s 2026 business and remains unattributed; he is recorded as reported rather than assigned. No suspensions surfaced. No referee is named in the odds file.</li>
+      <li><strong>Sample.</strong> Two competitive matches each, and both sides sit on one point. Racing drew 2&ndash;2 with Villarreal on the opening weekend, then lost 1&ndash;0 at Getafe to a goal four minutes after missing a penalty. Elche took a point from their opener and were beaten 5&ndash;0 at home by Barcelona. Racing are 13th, Elche 18th. Two matches is a scoreline, not a sample, and the table positions carry no information at this stage.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Racing won a 22-team division by scoring, and by scoring through more than one route: 23 goals from Mart&iacute;n, 16 from Villalibre and 9 from Elorduy is a distributed attack rather than a single centre-forward carrying a promotion. Twenty-eight wins in 47 is a front-foot record, and El Sardinero is where the title was settled. The problem is that every one of those numbers was produced against Segunda opposition, and Canales&rsquo;s arrival then changes the question rather than answering it. A side whose identity was built on Mart&iacute;n and Villalibre attacking space now has a controller who wants the ball in front of him. Whether Jos&eacute; Alberto runs the promotion system with a better passer inside it, or rebuilds the shape around him, is genuinely unresolved after two matches &mdash; and the two matches point different ways. Trading 2&ndash;2 with Villarreal says the attack can function at this level; losing at Getafe to a late goal after a missed penalty says nothing structural at all.</p>
+    <p>Elche are the more established side on paper and the less reliable one in this specific setting. The number that governs them is the home&ndash;away split: about 35 points at home, sixth-best home record in the division, against roughly 8 from nineteen away trips. That is not a style preference, it is a dependency, and it means their league position last season describes a version of the team that does not travel. Sarabia&rsquo;s third year removes the usual early-season caveat about a new system bedding in &mdash; the shape is known, the personnel inside it are what this research could not pin down. Andr&eacute; Silva&rsquo;s 9 league goals as top scorer caps how much of that home record was built on scoring rather than on not conceding, which matters when the venue changes. The 5&ndash;0 at home to Barcelona is the one result that cuts against the home story, and it is also the least generalisable fixture on anyone&rsquo;s calendar. What this game asks of them &mdash; go to a promoted champion&rsquo;s ground and take something &mdash; is the exact profile that produced an eight-point away season.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous</span></div><div class="mkt-why">The outright needs two things settled that are both open: Racing&rsquo;s real level after a fourteen-year absence, and Elche&rsquo;s squad after a window that has not closed. A promoted champion is priced at 2.05 on the strength of second-division evidence, against a side whose own record splits so hard by venue that the away half of it is nearly a different team. Neither input resolves before kickoff.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Handicap &amp; double chance<span class="verdict tag t-mid">OK &mdash; asymmetric</span></div><div class="mkt-why">Structurally sounder than the outright, because the three-way handicap spreads the promoted-side variance across outcomes instead of compressing it into one price: &minus;1 at 3.60 is the book declining to expect a comfortable home win. But 1X and 12 sitting at the identical 1.30 flags the draw as the live third of this market, and a draw is precisely what a two-match sample of a newly promoted side cannot speak to. Asymmetric rather than clean.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-mid">OK</span></div><div class="mkt-why">Both structural drivers exist but neither is measured at this level. Racing&rsquo;s promotion attack was high-volume and Segunda-calibrated; Elche away last season was low-yield in both directions, which pulls the other way. The corner and card lines suggest a book expecting an ordinary game, and the goals market is the one place where a promoted side&rsquo;s divisional step-up is most likely to show up first &mdash; in what they concede rather than what they score.</div></div>
+      <div class="mkt-row good"><div class="mkt-name">BTTS<span class="verdict tag t-low">Well-suited</span></div><div class="mkt-why">The family least hostage to the unresolved question. It does not require knowing whether Racing&rsquo;s title-winning attack translates, only that a side with three double-figure-adjacent scorers and eleven defeats in 47 both scores and concedes. Elche have already scored this campaign and, structurally, have to score to take anything from this ground. Both halves of the market rest on stable properties of the two squads rather than on divisional level or on two matches of form.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-mid">OK</span></div><div class="mkt-why">LaLiga&rsquo;s refereeing culture is high-card by European standards and that does not change because a team was promoted, which makes the 4.5 line one of the more transferable numbers here. Two structural pushes upward: a promoted side defending an early home fixture, and two teams on a point each in matchday three. Held to OK by what is missing &mdash; no referee is named in the odds file, and unlike Milan and Palace this fixture has no per-team card lines, so there is no way to see which side the book has loaded.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Corners<span class="verdict tag t-high">Dangerous</span></div><div class="mkt-why">Corner volume is the most style-dependent family on the board, and Racing&rsquo;s style is the single least-established fact in this fixture. Whether attacks finish in crosses or in central combinations is exactly what Canales&rsquo;s arrival is likely to alter, and two matches cannot show it. The three-way corner race at 1.95 against 2.00 is the book pricing the two sides as interchangeable, which is an admission that it has no read on the pattern either.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li>Racing&rsquo;s entire attacking record &mdash; 28 wins, Mart&iacute;n&rsquo;s 23, Villalibre&rsquo;s 16 &mdash; is Segunda output. There is no top-flight baseline for this squad in any form; the club&rsquo;s last one is from 2012 and shares no players, no manager and no system with this team.</li>
+      <li>The 47-match figure covers all competitions, not the 42-game league season. Any per-match rate derived from it is diluted by cup ties against lower-division opposition, so it understates nothing and overstates the schedule.</li>
+      <li>Elche&rsquo;s 43 points read as mid-table competence and are not that. About 35 came at home and about 8 from nineteen away matches. Using their finishing position to price an away trip imports the half of their season that did not happen on the road.</li>
+      <li>Both squads have been rebuilt in the areas that decide this fixture, and in opposite directions. Racing spent their largest fee on a goalkeeper (Agirrezabala, &euro;4.5m) and signed two centre-backs, running a &minus;&euro;6.9m balance &mdash; a promoted side buying defence. Elche invested about &euro;13m going forward, adding two centre-forwards and an 18-year-old right-back at &euro;4.5m while leaving goalkeeper untouched. Neither pattern has a top-flight match behind it, and the Spanish window is open until 1 September, the day after this game.</li>
+      <li><strong>Most sensitive:</strong> corners and the outright. Both need Racing&rsquo;s top-flight playing pattern settled, and with a division change and a marquee midfield signing landing in the same summer, three matches is nowhere near enough to settle it. <strong>Least sensitive:</strong> BTTS and cards &mdash; both driven by properties (two functioning attacks, a leaky promotion defence, LaLiga referee culture, a promoted home debut) that survive the sample problem intact.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>BTTS is more robust than the 1X2 here because it never has to answer whether 23 goals from Andr&eacute;s Mart&iacute;n and 16 from Villalibre translate upward &mdash; it only needs each side to score once, which both records support in either division.</li>
+      <li>The three-way handicap is more robust than the outright because at &minus;1/3.60 against +1/1.75 the book has distributed its uncertainty over three outcomes rather than folding it into a single 2.05 favourite, and a promoted side&rsquo;s first weeks are exactly where a compressed price goes wrong.</li>
+      <li>Cards are more robust than corners because card volume is driven by refereeing culture and match state, neither of which Racing&rsquo;s promotion changes, while corner volume is driven by crossing and pressing patterns &mdash; the thing Canales&rsquo;s arrival is most likely to have changed and the thing two matches cannot reveal.</li>
+      <li>Totals are more robust than any team-level goal read because the odds file captured no team-goals market for this fixture at all. A side-specific goals view would have to be constructed rather than priced, and constructing it on a promoted side&rsquo;s Segunda numbers is the error the whole card is exposed to.</li>
+      <li>The book has 1X and 12 at the same 1.30 and the corner race at 1.95 against 2.00. Pricing two opposite outcomes identically is a bookmaker saying it has found nothing to separate them &mdash; a statement about the thinness of the evidence in a matchday-three fixture involving a promoted champion, and a reason to treat those two families as the least informative on the card rather than the most accessible.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f2">
+  <div class="fx-head">
+    <p class="fx-league">Germany &middot; Bundesliga &middot; Matchday 1</p>
+    <h2 class="fx-title">Bayern Munich &ndash; Stuttgart</h2>
+    <p class="fx-sub">20:30 &middot; Allianz Arena, Munich &middot; Season opener &mdash; record champions at home; Stuttgart arrive without N&uuml;bel and with his designated replacement injured</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.23 &middot; 7.00 &middot; 10.50</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>1.04 &middot; 1.09 &middot; 4.15</dd></div>
+      <div class="od"><dt>EH &minus;2 (1/X/2)</dt><dd>2.25 &middot; 4.55 &middot; 2.35</dd></div>
+      <div class="od"><dt>Win or +2</dt><dd>1.20 / 9.50</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.16 / 4.50</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.43 / 2.65</dd></div>
+      <div class="od"><dt>Cards 3.5 U / O</dt><dd>1.65 / 2.00</dd></div>
+      <div class="od"><dt>Corners 9.5 U / O</dt><dd>1.95 / 1.73</dd></div>
+      <div class="od"><dt>Corner race 1/X/2</dt><dd>1.23 &middot; 10.00 &middot; 4.55</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>Neither side is promoted; this is the Bundesliga&rsquo;s opening night with the champions at home. Bayern won the 2025&ndash;26 title by sixteen points from Borussia Dortmund with 89 points &mdash; their highest total in twelve seasons &mdash; and 122 goals, a Bundesliga record for a single campaign. They completed the double by beating this opponent 3&ndash;0 in the DFB-Pokal final in May 2026, and have won each of the last five meetings between the clubs. Stuttgart finished on 62 points, good for Champions League football for the second time in three seasons, and scored 71 league goals &mdash; a total bettered only by Bayern. The structural headline is not the gap between those records but a single transaction that sits on both sides of it: Alexander N&uuml;bel&rsquo;s loan ended and he went back to Munich, which deepened Bayern&rsquo;s goalkeeping and hollowed out Stuttgart&rsquo;s.</p>
+    <ul>
+      <li><strong>Bayern Munich &mdash; turnover low at the top, unresolved underneath.</strong> The headline arrival is Ismael Saibari, a &euro;50m move from PSV Eindhoven after three goals for Morocco at the World Cup &mdash; an attacking addition to a forward line that already had Harry Kane, Michael Olise and Luis D&iacute;az. Sacha Boey stays at right-back; Manuel Neuer remains, with 2026&ndash;27 all but confirmed as his final season, and N&uuml;bel&rsquo;s return from Stuttgart restores a senior deputy behind him. The unfinished business is defensive midfield: the club has been trying to move Jo&atilde;o Palhinha and his roughly &euro;12m package on, with Aston Villa willing only to take him on loan. Vincent Kompany continues as head coach &mdash; no change &mdash; and was personally working the window for attacking reinforcements, Antony among the names he approached.</li>
+      <li><strong>Stuttgart &mdash; turnover medium, spent upward, but the goalkeeper is the story.</strong> Roughly &euro;55m went on adding to a squad that already finished fourth, rather than the usual Stuttgart pattern of selling the best asset. In: centre-forward Dzenan Pejcinovi&cacute;, attacking midfielder Bilal El Khannouss, left-winger Leo Sauer (20, Slovakia international, from Feyenoord), and Grischa Pr&ouml;mel from Hoffenheim &mdash; 31, a three-year deal, born in Cannstatt, and expected to take Atakan Karazor&rsquo;s place in midfield. Out: N&uuml;bel, back to Bayern at the end of his loan, described as the only major departure from the established first-choice group. The club then deliberately declined to buy an established replacement and handed the job to academy product Dennis Seimen on the strength of a loan at Paderborn &mdash; and Seimen tore a thigh in the second week of pre-season and misses the start of the season. Sebastian Hoene&szlig; continues as head coach &mdash; no change.</li>
+      <li><strong>Suspensions / absences.</strong> Bayern are without Jamal Musiala, officially ruled out with Kompany taking a deliberately cautious long-term view of his recovery, and Serge Gnabry, still out with a thigh tendon tear. Stuttgart are without Seimen, which leaves the goalkeeping berth unresolved going into an away opener. No suspensions surfaced; no referee is named in the odds file.</li>
+      <li><strong>Sample.</strong> Zero Bundesliga matches for either side &mdash; this is matchday one. Competitive football has been played, but not league football: Bayern beat Dortmund 2&ndash;1 on 22 August to win the DFL Super Cup, through first-half goals from Nathaniel Brown and Michael Olise, and Stuttgart opened with a 4&ndash;0 home win over Hansa Rostock in the first round of the DFB-Pokal. One of those is a one-off against a rival, the other is a tie against second-tier opposition. Neither is evidence about this fixture.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Bayern&rsquo;s 122 goals are the most any side has scored in a Bundesliga season, and they were produced by a settled front line under a coach in his third year. That is a high-possession, high-territory team that turns sustained pressure into shot volume, and the Allianz Arena is where it compounds. Two things complicate importing it wholesale into matchday one. The first is that a record season is by definition an outlier, and the numbers that will be quoted about this team all weekend are the extreme end of what it has ever done, not its centre. The second is that the midfield behind the record is not intact: Musiala is out on a long-view plan rather than a short one, Gnabry is still recovering, and Palhinha is a player the club has actively been trying to move, which is not the profile of a settled defensive-midfield rotation. Saibari at &euro;50m is a genuine addition, but he is an addition to the department Bayern were already best in, and a World Cup and a Super Cup are not a Bundesliga baseline for him.</p>
+    <p>Stuttgart are the interesting side here precisely because their summer ran against type. They scored 71 goals last season &mdash; second in the division &mdash; and rather than cashing in they spent about &euro;55m deepening the squad: El Khannouss and Sauer widen the creative options, Pejcinovi&cacute; adds a centre-forward, and Pr&ouml;mel is a straight functional swap for Karazor in midfield. That is a side built to keep attacking, and Hoene&szlig;&rsquo;s continuity means the system is not the variable. What is the variable is behind all of it. Losing N&uuml;bel was planned for; losing his planned successor in the second week of pre-season was not, and it means Stuttgart open the season at the champions&rsquo; ground with a goalkeeper who was not the first or second choice for the role. The evidence that the new midfield and attack work together is a 4&ndash;0 against Hansa Rostock &mdash; a CV, not a match. The evidence about the goalkeeper is nothing at all, and there is no honest way to size it.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous &mdash; no room</span></div><div class="mkt-why">Every structural fact in this fixture &mdash; 89 points, 122 goals, a 3&ndash;0 Pokal final, five straight wins in the head-to-head, an away side without its first two goalkeepers &mdash; points the same way, and 1.23 has already absorbed all of it. The only inputs that could move the result are the ones nobody can size: a third-choice keeper with no top-flight sample, and a Bayern midfield missing Musiala and Gnabry. A market with no residual question is not a readable market.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Handicap &amp; double chance<span class="verdict tag t-mid">OK &mdash; best of the derivatives</span></div><div class="mkt-why">The handicap is where this fixture is actually priced as a question. Double chance has been flattened &mdash; 1X at 1.04 and 12 at 1.09 are not markets &mdash; but &minus;2 at 2.25 against +2 at 2.35 asks about margin rather than winner, and margin is the thing the structural evidence genuinely speaks to: a record scoring season, a 3&ndash;0 final between these teams, and an unresolved goalkeeper. It also cuts the other way, because 71 goals and &euro;55m of additions is not a side built to be held to nothing.</div></div>
+      <div class="mkt-row good"><div class="mkt-name">Totals (O/U goals)<span class="verdict tag t-low">Well-suited</span></div><div class="mkt-why">The two highest-scoring attacks in the division last season, 122 and 71, meeting at the ground where the higher of them plays. Both drivers are stable properties rather than form: Bayern&rsquo;s home output under a third-year coach, and a Stuttgart side that spent its summer adding attackers instead of selling them. The goalkeeping situation pushes the same way without needing to be quantified. This is the one family here where the absence of a league sample costs least, because the inputs are season-long records rather than recent matches.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; one-sided question</span></div><div class="mkt-why">Structurally this is not a two-team market. Bayern scoring at home is close to a given on the record above, so BTTS reduces almost entirely to whether Stuttgart score at the Allianz Arena &mdash; a single-team question wearing a two-team label. The inputs on that side are real but contradictory: 71 league goals and three new attacking signings against a 3&ndash;0 Pokal defeat by this opponent and five straight losses in the fixture. Readable, but narrower than it looks.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-high">Dangerous</span></div><div class="mkt-why">Three problems stack. The Bundesliga runs the lowest card culture of the major leagues, so the base rate is thin to begin with; no referee is named in the odds file, and unlike Milan and Crystal Palace this fixture carries no per-team card lines, so there is no way to see where the book has loaded the 3.5. And Stuttgart&rsquo;s midfield is the unit most changed this summer &mdash; Pr&ouml;mel in for Karazor &mdash; which is exactly where fouls are generated, with one Pokal tie of evidence behind it.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Corners<span class="verdict tag t-mid">Split &mdash; race readable, total less so</span></div><div class="mkt-why">The two halves of this family are not equally sound. Which side wins the corner count follows directly from the mismatch: a record-scoring home team against an opponent likely to spend long spells defending with an emergency goalkeeper, and the book&rsquo;s 1.23 on Bayern reflects a structural certainty rather than a guess. The 9.5 total is a different and weaker question, because it depends on how long the pressure lasts &mdash; a side that leads early may stop generating territory, and matchday one offers nothing on game state.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li>Neither side has played a Bundesliga match. The competitive evidence is a Super Cup one-off against Dortmund and a Pokal tie against second-division Hansa Rostock. Stuttgart&rsquo;s 4&ndash;0 says nothing transferable about a trip to Munich, and a 2&ndash;1 in a showpiece says nothing about Bayern&rsquo;s league rhythm.</li>
+      <li>Bayern&rsquo;s 89 points and 122 goals are a record-setting outlier, not a norm. Every number quoted about them this weekend is drawn from the best campaign the club has had in over a decade, and matchday one is the worst place to test whether it repeats.</li>
+      <li>Stuttgart&rsquo;s goalkeeper is the largest unpriced variable on this card. N&uuml;bel returned to Bayern as planned, the club chose not to buy an established replacement, and Dennis Seimen &mdash; the academy product handed the job after a loan at Paderborn &mdash; tore a thigh in the second week of pre-season. Who plays, and how they cope, has no supporting data at this level whatsoever.</li>
+      <li>Bayern&rsquo;s own gaps run against the record: Musiala is out on a deliberately long-term care plan, Gnabry is recovering from a thigh tendon tear, and Palhinha is a defensive midfielder the club has been trying to offload against only a loan offer from Aston Villa. The midfield that set the record is not the midfield that starts the season.</li>
+      <li><strong>Contradiction, recorded not resolved.</strong> One source presents Hoene&szlig; criticising a late-window sale of Nick Woltemade without a replacement as current business. That transfer belongs to the 2025 window, so the item reads as a resurfaced older report rather than 2026 activity. It is logged rather than used.</li>
+      <li><strong>Most sensitive:</strong> cards and the outright &mdash; the first has no referee, the division&rsquo;s thinnest card base rate and a rebuilt Stuttgart midfield behind it; the second has no room left in the price. <strong>Least sensitive:</strong> totals and the corner race, both resting on season-long scoring records and a territorial mismatch that do not require a league sample to be true.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>Totals are more robust than the 1X2 here because the goals family rests on two season-long records &mdash; 122 for Bayern, 71 for Stuttgart, the two best in the division &mdash; while the outright rests on a 1.23 that has already priced every one of those facts and left nothing to read.</li>
+      <li>The three-way handicap is more robust than double chance because 1X at 1.04 and 12 at 1.09 have been priced out of being questions at all, whereas &minus;2 at 2.25 against +2 at 2.35 asks about margin &mdash; and margin is precisely what a record scoring season and a 3&ndash;0 Pokal final between these two sides bear on.</li>
+      <li>The corner race is more robust than the corner total because territorial dominance follows mechanically from a record-scoring home side facing an opponent with an emergency goalkeeper, while the 9.5 line turns on how long Bayern keep pressing after going ahead &mdash; a game-state question that a Super Cup and a Pokal tie cannot answer.</li>
+      <li>BTTS is more robust than any Stuttgart-specific goals read because the odds file captured no team-goals market for this fixture. Building one would mean extrapolating from a 4&ndash;0 against Hansa Rostock and from the arrival of El Khannouss, Pejcinovi&cacute; and Sauer &mdash; three CVs and one second-division opponent, none of it a Bundesliga sample.</li>
+      <li>The book prices Bayern&rsquo;s corner race at 1.23 and O2.5 at 1.16, then prices the corner total at 1.95 against 1.73 and the &minus;2 handicap at 2.25 against 2.35 &mdash; near-indifference in both. That combination is a bookmaker declaring high confidence about direction and openly admitting it has no view on magnitude, which is an honest description of what a matchday-one champion against a reinforced fourth-place side actually offers.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f3">
+  <div class="fx-head">
+    <p class="fx-league">France &middot; Ligue 1 &middot; Matchday 2</p>
+    <h2 class="fx-title">Lille &ndash; Paris Saint-Germain</h2>
+    <p class="fx-sub">20:45 &middot; Stade Pierre-Mauroy, Villeneuve-d&rsquo;Ascq &middot; High uncertainty &mdash; Ancelotti&rsquo;s second league match after 7 in and 12 out, against a PSG attack missing four names</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>5.00 &middot; 3.80 &middot; 1.70</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>2.15 &middot; 1.25 &middot; 1.16</dd></div>
+      <div class="od"><dt>EH +1 (1/X/2)</dt><dd>2.15 &middot; 3.75 &middot; 2.80</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.72 / 2.00</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.68 / 2.10</dd></div>
+      <div class="od"><dt>Cards 3.5 U / O</dt><dd>1.55 / 2.15</dd></div>
+      <div class="od"><dt>Corners 9.5 U / O</dt><dd>1.80 / 1.88</dd></div>
+      <div class="od"><dt>Corner race 1/X/2</dt><dd>2.60 &middot; 9.50 &middot; 1.57</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>Neither side is promoted. Lille finished third in Ligue 1 last season, fifteen points behind champions Paris Saint-Germain, and qualified for the Champions League group phase &mdash; PSG&rsquo;s title was their fourteenth and their fifth in a row, sealed with a match to spare on 13 May 2026 by beating their nearest challengers Lens 2&ndash;0. The structural headline is that the two clubs arrive at this fixture unreliable in opposite ways. Lille have changed everything except the badge: Bruno Genesio left for Marseille, Davide Ancelotti was appointed on 1 June 2026, and the summer produced seven arrivals against twelve departures. PSG have changed almost nothing structurally &mdash; Luis Enrique is so secure the club has reportedly floated a decade-long deal &mdash; but arrive with four attacking or wide players unavailable. One side&rsquo;s system is unknown; the other side&rsquo;s system is known and under-staffed.</p>
+    <ul>
+      <li><strong>Lille &mdash; turnover high, and a manager change on top of it.</strong> Davide Ancelotti took over on 1 June 2026 on a two-year contract, succeeding Bruno Genesio, who guided the third-place finish and then joined Olympique de Marseille. This is only Ancelotti&rsquo;s second standalone head-coach role; the first was five months at Botafogo, 15 wins, 10 draws, 8 defeats. The window ran seven in, twelve out. In: Ba&scedil;ar &Ouml;nal, the club&rsquo;s biggest outlay at &euro;12.5m; Tanguy Nianzou; and Loun Srdanovic, a Swiss right-back from Servette signed to 2030. The defining departure is Ayyoub Bouaddi, sold to Manchester City for a total of &pound;86m &mdash; &pound;81.3m fixed plus &pound;4.3m in add-ons, on a five-year deal &mdash; making the 18-year-old Morocco midfielder the most expensive teenage signing in Premier League history, ahead of the &pound;58.9m Manchester United committed to Lille for Leny Yoro in 2024. Ugo Raghouber and Vincent Burlet also left, and the club president Olivier L&eacute;tang has said the door is open for Edon Zhegrova and Gabriel Gudmundsson, both a year from the end of their contracts. Olivier Giroud stays and is the main continuity point in the forward line. <em>Gap: three arrivals and nine departures are still unnamed in the public tabulations &mdash; two differently-framed searches returned the same three names each way &mdash; so no goalkeeper or centre-back movement can be confirmed in either direction, and the defensive-midfield ledger amounts to selling Bouaddi and replacing him with nobody named.</em></li>
+      <li><strong>PSG &mdash; turnover low, described by the manager as &ldquo;small adjustments&rdquo;.</strong> Luis Enrique continues, with the club crediting him for the first Champions League title in its history and two Ligue 1 titles. &ldquo;Small adjustments&rdquo; undersells it slightly: the confirmed 2026 intake is Maghnes Akliouche for &euro;50m on 6 August, Mika Godts from Ajax on 15 August in a deal reported at &euro;45m plus &euro;10m in bonuses and running to 2031, the experienced left-back Lucas Digne, the 18-year-old Italian goalkeeper Alessandro Longoni, and Ferran Torres &mdash; the arrival that has already shown, a World Cup winner who scored twice on his Ligue 1 debut off the bench. Goalkeeper is therefore addressed with a teenager rather than a first choice. The outgoing side is where the money is: an agreement in principle has been reached with Liverpool for Bradley Barcola at a reported &pound;120m, and Randal Kolo Muani &mdash; bought for &euro;95m and never convincing &mdash; has been linked with Juventus without a deal being done. <em>Gap: no centre-back or defensive-midfield arrival is confirmed for the 2026 window. Illia Zabarnyi is described as the &euro;63m centre-back signed from Bournemouth to rebuild the central defence, but the departures that account for is Kimpembe and &Scaron;krini&aacute;r, which belong to 2025, and no source consulted dates the deal to this window &mdash; so it is recorded, not claimed as summer 2026 business. The French window shuts on 1 September, after this match.</em></li>
+      <li><strong>Suspensions / absences.</strong> Lille are without Hamza Igamane, out long-term with a severe cruciate ligament tear, and Tanguy Nianzou &mdash; who is himself one of this summer&rsquo;s arrivals and is reported unavailable for selection. Captain Benjamin Andr&eacute; returns after serving an opening-day suspension and is expected to go straight back in to anchor the midfield. PSG list Ousmane Demb&eacute;l&eacute;, Bradley Barcola, Nuno Mendes and Ibrahim Mbaye as sidelined &mdash; and for Barcola the picture is now clearer rather than cleaner: PSG and Liverpool have an agreement in principle at a reported &pound;120m, so his absence is at least as likely to be a transfer being completed as an injury being managed. Mbaye is also named as an outgoing file. Two of the four names on this list are therefore players the club is in the process of selling, which changes what the absence means. No referee is named in the odds file.</li>
+      <li><strong>Sample.</strong> One league match each. Lille won 2&ndash;0 away at Angers on the opening day with a clean sheet and sit first; PSG drew 2&ndash;2 with Rennes and sit eighth on one point. That is a single fixture apiece, and for Lille it is also the first competitive league match of an entirely new coaching regime. The long-run head-to-head is heavily one-sided &mdash; PSG have gone ten competitive meetings unbeaten against Lille and won the last one 3&ndash;0, with Lille winless in the fixture since August 2021 &mdash; but that run was compiled against previous Lille managers and a squad that has since turned over twelve players.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>What Lille are now is genuinely open. Genesio&rsquo;s third-place side is the reference point every number will be drawn from, and that side no longer exists in either of the two senses that matter: the coach has gone to Marseille and twelve players have left. Davide Ancelotti brings a Real Madrid assistant&rsquo;s background and five months of standalone experience at Botafogo, which is a CV rather than a pattern &mdash; there is no body of Ancelotti-managed Ligue 1 football to describe. The one match available points to something organised and low-risk: a 2&ndash;0 win at Angers with a clean sheet, achieved without the suspended Benjamin Andr&eacute;. Andr&eacute;&rsquo;s return matters more than a captain&rsquo;s return usually would, because he is the anchor the new coach has not yet had, and inserting him changes the midfield that produced the only evidence there is. The attack is the thinner half: Igamane is gone for the season to a cruciate tear, the marquee signing is &Ouml;nal at &euro;12.5m, and Giroud &mdash; who stays &mdash; is the only settled reference point in it.</p>
+    <p>PSG are the opposite proposition, and the more legible one. Luis Enrique is in his fourth season with the club treating him as a decade-long fixture, so the shape, the pressing height and the possession model are all established quantities that do not need a sample to describe. What needs describing is who executes them. Demb&eacute;l&eacute;, Barcola, Nuno Mendes and Mbaye out is not squad rotation, it is the wide and forward department stripped in one go, and Nuno Mendes&rsquo;s absence also removes the left-back who supplies much of the width. Ferran Torres scoring twice off the bench on debut is the counterweight, and it is exactly the kind of counterweight that is hard to size &mdash; one substitute appearance. The honest reading is that PSG&rsquo;s system will look like PSG&rsquo;s system and their finishing may not, and that a 2&ndash;2 with Rennes in the only league match so far is consistent with both a slow start and nothing at all.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous</span></div><div class="mkt-why">Every anchor available is stale or thin. Lille&rsquo;s third place belongs to a coach now at Marseille; the ten-game unbeaten head-to-head belongs to previous Lille regimes and a squad twelve players lighter; and PSG&rsquo;s away price of 1.70 has to carry a forward line missing Demb&eacute;l&eacute;, Barcola and Mbaye. One league match each is not enough to replace any of that, and the direction of the error is not even clear.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Handicap &amp; double chance<span class="verdict tag t-mid">OK &mdash; asymmetric</span></div><div class="mkt-why">The most structurally honest family here, because the injuries and the result question separate cleanly: losing three forwards bears heavily on margin while bearing much less on who wins. &minus;1 at 2.80 against +1 at 2.15 prices that distinction; X2 at 1.16 against 12 at 1.25 shows the book has all but removed a Lille win from its derivative thinking. Asymmetric rather than clean, because the Lille half rests on one match under a new coach.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-mid">OK</span></div><div class="mkt-why">The one genuinely division-level input on this card: Ligue 1 ran at 2.82 goals per match across 306 games last season, a base rate that survives both a coaching change and an injury list. Both sides have already produced a two-goal game this season. Held to OK because the specific question &mdash; whether a PSG attack without three of its forwards, and a Lille attack without Igamane, reach that base rate &mdash; routes through exactly the personnel that cannot be assessed yet.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; weaker on the Lille side</span></div><div class="mkt-why">Two-sided on the surface: Lille kept a clean sheet at Angers, PSG conceded twice to Rennes. But the halves are not equal in quality of evidence. PSG scoring is close to structural &mdash; a fifth straight title, a settled model, Ferran Torres already scoring. Lille scoring is the open half: their leading striker is out for the season with a cruciate tear, twelve players have left, and their attacking pattern under Ancelotti has one match behind it.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-high">Dangerous</span></div><div class="mkt-why">The book has under 3.5 at 1.55, the firmest single lean on this card outside Bayern&rsquo;s totals, and the evidence for it is not visible. No referee is named in the odds file and no per-team card lines were captured, so there is no way to see where the line is loaded. Benjamin Andr&eacute; returns from suspension straight into the midfield &mdash; the unit that generates fouls &mdash; meaning the one match of Ancelotti-era discipline data was produced without the player who will anchor it.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Corners<span class="verdict tag t-mid">OK &mdash; race sounder than total</span></div><div class="mkt-why">Corner share follows from possession, and possession is the single PSG property that four attacking absences do not undo &mdash; the model belongs to Luis Enrique, not to Demb&eacute;l&eacute;. The 1.57 on the PSG race is therefore resting on something real. The 9.5 total is the weaker half at 1.80 against 1.88: whether territory converts into corners depends on Lille&rsquo;s defensive shape under a coach with one league match to his name, and a side that won 2&ndash;0 at Angers by defending well may invite exactly the pattern that inflates the count.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li>Lille&rsquo;s third place and the fifteen-point gap to PSG are Bruno Genesio&rsquo;s results, and Genesio is now at Marseille. Davide Ancelotti has been in post since 1 June 2026 and has one competitive league match. Any Lille number older than three weeks describes a different manager&rsquo;s team.</li>
+      <li>Seven arrivals against twelve departures is a net loss of five squad players layered on top of that coaching change. Ba&scedil;ar &Ouml;nal at &euro;12.5m is the largest investment; Ayyoub Bouaddi is among those gone. Compounding it, Tanguy Nianzou is simultaneously a 2026 arrival and reported unavailable for selection, and Hamza Igamane is out long-term with a severe cruciate tear &mdash; so the two clearest attacking and defensive changes are both currently unavailable to be assessed.</li>
+      <li>PSG&rsquo;s absence list and departure list overlap, and the overlap is now largely explained. Barcola is the subject of an agreement in principle with Liverpool at a reported &pound;120m; Mbaye is the other named outgoing file. Both are also listed as sidelined. Two of the four missing players are therefore being sold rather than rehabilitated, which means the depleted forward line is a permanent condition of this season rather than a temporary one &mdash; and both moves are still unsigned with the window open to 1 September. <strong>Contradiction, recorded not resolved:</strong> an earlier source placed Mbaye as the player favouring Liverpool over Bayer Leverkusen, while the French tabulations put Liverpool&rsquo;s agreement on Barcola. Both cannot be the primary Liverpool file; neither is treated as settled here.</li>
+      <li><strong>Contradictions, recorded not resolved.</strong> PSG&rsquo;s 2025&ndash;26 line is reported as 20 wins, 3 draws, 4 defeats, 63 points, 61 scored and 23 conceded &mdash; but that is 27 matches in a 34-round season, so it is a partial-season snapshot and is not used here as a final record. Separately, a &ldquo;Lens 1&ndash;0 PSG&rdquo; result dated 16 August 2026 appears in the sources and cannot be reconciled with PSG holding one point from one league match; it is logged as most likely a non-league fixture and excluded from the sample above.</li>
+      <li><strong>Most sensitive:</strong> cards and the outright &mdash; the first is priced with real conviction on no named referee and a midfield that changes this week, the second has to weigh a new manager against a depleted champion with one match of evidence on either side. <strong>Least sensitive:</strong> the handicap and the PSG side of the corner market, both of which rest on things that hold regardless of the sample &mdash; a possession model that predates the injury list, and a fifteen-point gap that even a rebuilt Lille does not close in a summer.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>The three-way handicap is more robust than the 1X2 here because losing Demb&eacute;l&eacute;, Barcola and Mbaye bears on how many PSG score rather than on whether they win &mdash; +1 at 2.15 against &minus;1 at 2.80 keeps those two questions apart, while a single 1.70 folds them together and answers neither.</li>
+      <li>Totals are more robust than BTTS because the 2.82 goals per match Ligue 1 produced across 306 matches last season is a division-level fact that a coaching change cannot move, whereas BTTS depends specifically on Lille scoring &mdash; the half of this fixture with a season-ending cruciate injury to Igamane and twelve summer departures behind it.</li>
+      <li>Corners are more robust than cards because corner share follows from possession and possession belongs to Luis Enrique&rsquo;s system rather than to the four players missing from it, while card volume needs a named referee the odds file does not have and a midfield that changes this week with Benjamin Andr&eacute;&rsquo;s return from suspension.</li>
+      <li>The head-to-head is the least usable input available and should not be doing work in any of these families. Ten competitive meetings unbeaten and no Lille win since August 2021 were compiled against Genesio&rsquo;s and Fonseca&rsquo;s Lille, not against a Davide Ancelotti side that has existed since 1 June and shares only part of its squad with the team that set the run.</li>
+      <li>The book prices cards under 3.5 at 1.55 while pricing the corner total at 1.80 against 1.88 &mdash; near-indifference on territory in a fixture where one team plainly has the ball, and conviction on discipline with no referee named. Where a book prices even money it is telling you it has no edge; where it prices conviction on the thinnest evidence trail in the fixture, that is worth noticing too.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f4">
+  <div class="fx-head">
+    <p class="fx-league">Italy &middot; Serie A &middot; Matchday 2</p>
+    <h2 class="fx-title">AC Milan &ndash; Venezia</h2>
+    <p class="fx-sub">20:45 &middot; San Siro, Milan &middot; Milan&rsquo;s first home league match; Venezia straight back up as Serie B champions on a record 82 points &mdash; squad detail thin on both sides</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.47 &middot; 4.35 &middot; 7.10</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>1.09 &middot; 1.20 &middot; 2.65</dd></div>
+      <div class="od"><dt>EH &minus;1 (1/X/2)</dt><dd>2.25 &middot; 3.65 &middot; 2.65</dd></div>
+      <div class="od"><dt>Win or +2</dt><dd>1.43 / 6.50</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.68 / 2.10</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.85 / 1.90</dd></div>
+      <div class="od"><dt>Cards 2.5 U / O</dt><dd>2.10 / 1.60</dd></div>
+      <div class="od"><dt>Milan cards 1.5 U / O</dt><dd>1.35 / 2.60</dd></div>
+      <div class="od"><dt>Venezia cards 1.5 U / O</dt><dd>1.90 / 1.65</dd></div>
+      <div class="od"><dt>Corners 9.5 U / O</dt><dd>1.70 / 1.98</dd></div>
+      <div class="od"><dt>Corner race 1/X/2</dt><dd>1.30 &middot; 9.50 &middot; 3.85</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>Venezia are promoted, and promoted at the first attempt: relegated from Serie A, then straight back up as champions of Serie B in 2025&ndash;26 with a club-record 82 points, sealed with a match to spare. It was the club&rsquo;s third second-division title, won under Giovanni Stroppa &mdash; the fourth promotion of his career &mdash; with Andrea Adorante finishing as the division&rsquo;s leading scorer on 17 goals. Milan finished fifth last season under Massimiliano Allegri, missing Champions League qualification and taking a Europa League place instead, in a campaign the club treated as a disappointment; Inter took the title, Napoli were second, Roma third on 73 points and Como fourth on 71. The structural headline is a bounce-back promoted side meeting a host whose only documented summer business runs outward, in a fixture where the head-to-head at this ground is as lopsided as any on the card.</p>
+    <ul>
+      <li><strong>Milan &mdash; turnover high and heavily funded; the stated plan was executed in full.</strong> Allegri continues into a second season &mdash; no manager change, and the club has spoken of involving him more in the wider project rather than losing him. The summer plan called for two things, a strong central defender and a striker capable of twenty goals, and Milan bought both: Gon&ccedil;alo Ramos from Paris Saint-Germain for around &euro;70m, and Mario Gila from Lazio in a &euro;30m operation including bonuses. Behind them, Sankhoun Diawara arrived permanently from Troyes and Andrej Kostic permanently from Partizan Belgrade, with Diego Moreira from Strasbourg in midfield and Aurelien Guernier from Birmingham City on a free; Luka Modri&cacute; extended. Outgoing: Niclas F&uuml;llkrug returned to West Ham at the end of his loan, Isma&euml;l Bennacer left by mutual termination, and defenders David Odogu and Zachary Athekame went on loan to Toulouse and Lyon respectively &mdash; alongside the roughly &euro;30m guaranteed earlier from the permanent transfers of Tommaso Pobega, &Aacute;lex Jim&eacute;nez and &Aacute;lvaro Morata. Reported outlay on the first wave of arrivals alone is over &euro;100m. No goalkeeper movement is reported in either direction.</li>
+      <li><strong>Venezia &mdash; manager continuity above an almost entirely rebuilt squad.</strong> Giovanni Stroppa took them up and stays, which removes the usual promoted-side complication of a coaching change on top of a division change &mdash; but the group beneath him has been described in Italy as almost completely new, and Venezia are reckoned the most active and most ambitious of the three promoted clubs. Funding came from selling: Mahamadou Doumbia to Sporting Lisbon for &euro;20m and centre-back Ale&scaron; Svoboda to Brighton for &euro;5m, with Nicolussi Caviglia, Oristanio, Bjarkason, Sidib&eacute; and Venturi also gone. In, weighted exactly where a promoted side is expected to spend: Akor Adams from Sevilla and Albion Rrahmani in attack; Armel Bella-Kotchap, Mat&iacute;as Moreno from Fiorentina and Redouane Halhal &mdash; &euro;5m from Mechelen on a deal to 30 June 2030 &mdash; in defence; and Simon Sohm from Fiorentina in midfield. The projected shape is a 3&ndash;5&ndash;2 with Stankovic in goal behind Bella-Kotchap, Schingtienne and Moreno, and Adams and Yeboah paired up front. Adorante&rsquo;s 17 goals were the attacking spine of the promotion &mdash; and he is not in that projected front two.</li>
+      <li><strong>Suspensions / absences.</strong> Christian Pulisic has returned to training after a lower-leg issue but is expected to be used from the bench, with the youth prospect Alphadjo Ciss&eacute; likely keeping the starting place he has taken. On the Venezia side the significant absence is Andrea Adorante: the striker whose 17 goals won the Serie B title is recovering from back surgery and is not expected to be available before October, with the club having publicly denied on 6 July 2026 that he would be sold. That is the single most consequential piece of team news in this fixture &mdash; the player the promotion attack was built around is unavailable for the first two months of the top-flight season, which is why Adams and Yeboah are the projected pair. No suspensions surfaced on either side. No referee is named in the odds file.</li>
+      <li><strong>Sample.</strong> One Serie A match each. Milan won 2&ndash;1 away at Torino on matchday one; this is their first home league fixture of the season. Venezia lost 2&ndash;1 at home to Lecce on the opening weekend &mdash; a result against a fellow lower-half side, which is the more relevant kind of Serie A opponent for them than this one. The head-to-head is long and one-directional: Milan have won the last four Serie A meetings without conceding, and Venezia have never beaten Milan at San Siro in Serie A, losing eight and drawing three of eleven visits.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Milan under Allegri are the more predictable half of this fixture in shape and the less predictable half in personnel. A second season under the same coach means the defensive organisation and the game-management instincts are established properties, and Allegri&rsquo;s sides are historically comfortable controlling a match without needing to overwhelm it &mdash; which matters for a fixture the market expects them to dominate territorially. The gap is the squad. The club identified a centre-back and a twenty-goal striker as its two needs, and the only confirmed movement is &euro;30m arriving from selling Pobega, Jim&eacute;nez and Morata &mdash; the last of whom is precisely the forward the stated plan was meant to upgrade on. Pulisic being fit but benched, with a youth player holding the shirt, is a small signal in the same direction: this is a front line still being settled in late August. A 2&ndash;1 at Torino is a competent start and nothing more than that.</p>
+    <p>Venezia are a promoted side of the more coherent kind. Winning Serie B with a record 82 points and a match to spare, under a coach with four promotions behind him and no summer change, is a much stronger platform than a playoff scramble under a new manager. But the profile that produces 82 points in Serie B &mdash; territorial control against second-division opposition, a league-leading scorer in Adorante &mdash; is the profile least likely to survive contact with Serie A, because the possession they enjoyed is exactly what a side like Milan takes away at San Siro. The 2&ndash;1 home defeat to Lecce is the informative match here, not because one result means much, but because it was the kind of fixture Venezia&rsquo;s season will actually be decided in and they lost it. What they do at San Siro is a different question entirely, and the honest answer is that their evidence for it is a set of results from a division below and a recent relegation from this one.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous</span></div><div class="mkt-why">Four consecutive Serie A wins without conceding, eleven visits to San Siro without a win, and a newly promoted opponent &mdash; all of it already inside 1.47. The one input that cuts the other way is unpriceable rather than underpriced: Milan&rsquo;s only confirmed summer business is &euro;30m of players leaving, with the centre-back and twenty-goal striker they wanted unverified. A market where the visible evidence is fully absorbed and the invisible evidence runs against it is not a readable one.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Handicap &amp; double chance<span class="verdict tag t-mid">OK &mdash; asymmetric</span></div><div class="mkt-why">Double chance is spent: 1X at 1.09 has priced the Milan-not-losing question out of existence. The three-way handicap is the live version &mdash; &minus;1 at 2.25 against +1 at 2.65 asks about margin, and margin is what the head-to-head actually informs, since four straight wins without conceding is a statement about control rather than about winning. It stays asymmetric because Milan&rsquo;s attacking personnel is the least settled part of the fixture.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-mid">OK</span></div><div class="mkt-why">The structural pushes cancel rather than combine. Promoted sides in Serie A typically compress matches, and Venezia&rsquo;s 82-point season was built on control plus one leading scorer rather than on volume; Milan&rsquo;s stated need for a twenty-goal striker is a club admitting its own scoring ceiling. Against that, both sides have already played a 2&ndash;1. The book&rsquo;s own signals are split &mdash; the corner line leans under while the cards line leans over &mdash; which is not the picture of a market confident about tempo.</div></div>
+      <div class="mkt-row good"><div class="mkt-name">BTTS<span class="verdict tag t-low">Well-suited</span></div><div class="mkt-why">The best-evidenced family here, because every input is named and specific rather than inferred: Milan have not conceded to Venezia in four Serie A meetings, Venezia have never won at this ground in eleven attempts, Venezia scored in their Serie A opener, and Adorante&rsquo;s 17 goals &mdash; the whole of their attacking record &mdash; came a division down. It is also the market where the evidence and the price most visibly disagree, at 1.85 against 1.90, which makes it a question with real content rather than a foregone one.</div></div>
+      <div class="mkt-row good"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-low">Well-suited &mdash; best on the card</span></div><div class="mkt-why">Uniquely on this slate, alongside Crystal Palace, the file carries per-team card lines, so the book&rsquo;s asymmetry is visible instead of buried in a 2.5 total: Milan under 1.5 at 1.35 against Venezia over 1.5 at 1.65. That split is structurally earned rather than assumed &mdash; Serie A runs the heaviest card culture of the major leagues, a side that holds the ball commits fewer fouls almost mechanically, and a promoted team defending a deep block at San Siro fouls in exactly the zones that produce bookings. Only the missing referee holds it back.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Corners<span class="verdict tag t-mid">Split &mdash; race sound, total contested</span></div><div class="mkt-why">The two halves point different ways and the book has noticed. Milan&rsquo;s corner race at 1.30 is close to the firmest such price on the card and follows directly from a promoted side conceding territory at San Siro. Yet the 9.5 total leans under at 1.70 &mdash; the book saying dominance here will not translate into a high count. Both can be true: a deep block that concedes possession without being stretched yields fewer corners than one that is pulled apart, and which of those Venezia becomes is exactly what one Serie A match cannot show.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li>Venezia&rsquo;s promotion cuts both ways and neither way is reassuring. They came straight back as Serie B champions on a record 82 points, which is the strongest promotion profile available &mdash; and they are also a club that was relegated out of this division the season before, with much of the same squad. Recent Serie A exposure and recent evidence of not surviving Serie A are the same fact.</li>
+      <li>The 82 points and Adorante&rsquo;s 17 goals are second-division output, and the second of those numbers is now moot for this match regardless: Adorante is out until roughly October after back surgery. Venezia therefore start their Serie A season without the player who scored the goals that got them here, using a front pair &mdash; Adams and Yeboah &mdash; that has no Serie A body of work together. The only top-flight evidence available is a 2&ndash;1 home defeat to Lecce, a loss in precisely the category of fixture their season depends on.</li>
+      <li>Milan&rsquo;s summer ran inward, not outward, and at scale: Gon&ccedil;alo Ramos at around &euro;70m and Mario Gila at &euro;30m with bonuses are the exact two profiles the club said it needed, inside a reported first-wave outlay above &euro;100m. That resolves the question but replaces it with a different one &mdash; a &euro;70m centre-forward and a new first-choice centre-back have three competitive matches between them in this side, so Milan&rsquo;s spine is newly assembled rather than merely unverified. The window stays open until 1 September, the day after this match.</li>
+      <li>The head-to-head is unusually strong and unusually stale at the same time. Four Serie A wins without conceding and eleven visits without a Venezia win span multiple Venezia squads, two relegations and a promotion. It describes a fixture, not these teams.</li>
+      <li><strong>Most sensitive:</strong> the goals total and the corner total &mdash; both need Venezia&rsquo;s Serie A shape settled, and a promoted side has played one match against an entirely different class of opponent. <strong>Least sensitive:</strong> discipline and BTTS &mdash; the first because the per-team lines make the book&rsquo;s reasoning inspectable and Serie A&rsquo;s card culture does not move, the second because its inputs are named events rather than projections.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>Discipline is more robust in this fixture than in any other on the card because the file carries per-team card lines here &mdash; Milan under 1.5 at 1.35 against Venezia over 1.5 at 1.65 &mdash; so the favourite-underdog asymmetry the book is charging for can be checked against a structural reason (ball-holding side fouls less, promoted deep block fouls more) instead of taken on trust inside a 2.5 total.</li>
+      <li>BTTS is more robust than the 1X2 because each side of it attaches to a specific named fact &mdash; four Serie A meetings without Milan conceding, eleven San Siro visits without a Venezia win, Venezia scoring against Lecce, Adorante&rsquo;s 17 goals coming in Serie B &mdash; while the outright rests on a 1.47 that has already consumed all four and left nothing to weigh.</li>
+      <li>The three-way handicap is more robust than double chance because 1X at 1.09 is not a question any more, whereas &minus;1 at 2.25 against +1 at 2.65 asks about margin &mdash; and margin is precisely what a run of clean-sheet wins over the same opponent bears on, in a way that &ldquo;does Milan avoid defeat&rdquo; does not.</li>
+      <li>The corner race is more robust than the corner total because a promoted side surrendering territory at San Siro is close to structural, while whether that territory becomes corners depends on whether Venezia&rsquo;s block is stretched or holds &mdash; and the book is openly split on it, taking 1.30 on Milan&rsquo;s race while leaning the 9.5 under at 1.70.</li>
+      <li>BTTS is priced at 1.85 against 1.90, effectively even money, by a book that is simultaneously looking at four Serie A meetings in which Milan did not concede to this opponent. Declining to lean on a run that strong is the book saying it does not trust the run to transfer to a newly promoted squad it has barely seen &mdash; and that stated lack of confidence is more informative than the run it is refusing to price.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f5">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; Premier League &middot; Matchday 2</p>
+    <h2 class="fx-title">Crystal Palace &ndash; Manchester City</h2>
+    <p class="fx-sub">21:00 &middot; Selhurst Park, London &middot; High uncertainty &mdash; both clubs changed manager this summer, and City sold Rodri, Bernardo Silva and Stones before breaking their transfer record on the midfield</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>4.80 &middot; 4.00 &middot; 1.68</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>2.15 &middot; 1.25 &middot; 1.17</dd></div>
+      <div class="od"><dt>EH +1 (1/X/2)</dt><dd>2.15 &middot; 3.75 &middot; 2.75</dd></div>
+      <div class="od"><dt>Win or +2</dt><dd>4.50 / 1.63</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.68 / 2.10</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.65 / 2.15</dd></div>
+      <div class="od"><dt>Cards 3.5 U / O</dt><dd>1.83 / 1.77</dd></div>
+      <div class="od"><dt>Palace cards 1.5 U / O</dt><dd>2.05 / 1.55</dd></div>
+      <div class="od"><dt>City cards 1.5 U / O</dt><dd>1.90 / 1.65</dd></div>
+      <div class="od"><dt>Corners 9.5 U / O</dt><dd>1.75 / 1.85</dd></div>
+      <div class="od"><dt>Corner race 1/X/2</dt><dd>3.55 &middot; 8.50 &middot; 1.37</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>Neither side is promoted, and last season&rsquo;s finishing positions &mdash; Palace 15th, City runners-up behind Arsenal &mdash; are unusually poor guides here, because both clubs replaced their manager fourteen days apart in June. Crystal Palace appointed Pierre Sage on 15 June 2026 on a three-year contract, after Oliver Glasner confirmed he would not renew, a decision Glasner said had been taken months earlier following a meeting with chairman Steve Parish during the October international break. Manchester City appointed Enzo Maresca on 29 June 2026, also on three years, with roughly &pound;17m in compensation paid to Chelsea, to succeed Pep Guardiola. The structural headline is that this is the most heavily rebuilt fixture on the card by a distance: two new head coaches, and a Manchester City squad that has sold the entire spine of the Guardiola era and spent a club record replacing it.</p>
+    <ul>
+      <li><strong>Manchester City &mdash; turnover very high, concentrated in midfield and central defence.</strong> Out: Rodri, Bernardo Silva, John Stones, Nathan Ak&eacute;, Tijjani Reijnders and Nico Gonz&aacute;lez &mdash; a clear-out of experience rather than of squad filler. In: Elliot Anderson from Nottingham Forest for a club-record &pound;116m and Ayyoub Bouaddi from Lille for an initial &pound;81.4m plus &pound;4.2m in add-ons &mdash; the same Bouaddi who appears on this card as a Lille departure &mdash; along with goalkeeper Ger&oacute;nimo Rulli, Mathys Detourbet from Troyes for &pound;21.5m, Jeremy Monga from Leicester City for &pound;12m and Pierce Charles. Rayan Cherki, Abdukodir Khusanov, Antoine Semenyo and Marc Gu&eacute;hi were recruited in the closing eighteen months of Guardiola&rsquo;s tenure. Maresca has said publicly that he wants &ldquo;one or two more captains&rdquo; before the window closes on 1 September &mdash; the manager himself describing the leadership spine as unfinished.</li>
+      <li><strong>Crystal Palace &mdash; turnover very high and concentrated in central defence, where the money went out and free transfers came in.</strong> Pierre Sage replaces Glasner and inherits a back line sold from under the position. Marc Gu&eacute;hi left in January 2026 to tonight&rsquo;s opponent; Maxence Lacroix followed him to Chelsea this summer for &pound;52m, the only outgoing fee these sources report; and Chadi Riad is injured &mdash; so all three senior centre-backs from last season are unavailable to the new manager. The replacements cost nothing in fees: Takehiro Tomiyasu and Oscar Mingueza both arrived free, Mingueza from Celta Vigo and Tomiyasu from a club these sources do not name, joined by Axel Disasi on a season-long loan from Chelsea. The Disasi terms are the telling detail &mdash; Palace pay a loan fee and his full salary, with no option and no obligation to buy, for a 28-year-old who has not appeared for his parent club since January 2025 and has spent two seasons on short-term loans at Aston Villa and West Ham. He was identified specifically as the priority replacement for Lacroix. Further forward: Anan Khalaili for &pound;21m from Royale Union Saint-Gilloise, Zavier Gozo for &pound;11.12m from Real Salt Lake, Evann Guessand on loan from Aston Villa, and Dwight McNeil from Everton in a straight swap for Brennan Johnson, both on four-year deals with no cash fee disclosed. Sage has said he expects one or two more arrivals before the window shuts. <em>Gap: no goalkeeper or defensive-midfield business is reported in either direction, and the Mateta and Sarr exit rumours are unresolved with the window open until 1 September &mdash; the day after this match.</em></li>
+      <li><strong>Suspensions / absences.</strong> Palace are without Ismaila Sarr, still in individual training with a groin injury, and centre-back Chadi Riad with a knee injury; goalkeeper Dean Henderson is carrying an ankle and foot problem, leaving that position unsettled too. City are without Jeremy Doku, working back from a calf issue. Expected shapes have Foden, Nico O&rsquo;Reilly and Semenyo behind Erling Haaland for City, and McNeil and Eddie Nketiah behind Jean-Philippe Mateta for Palace. No suspensions surfaced; no referee is named in the odds file.</li>
+      <li><strong>Sample.</strong> One league match each. Palace lost 2&ndash;0 at home to Everton and sit 16th on nothing; City beat Bournemouth 2&ndash;1 and sit seventh on three points, though Maresca&rsquo;s start has been characterised as mixed rather than clean. City are unbeaten on their last ten trips to Selhurst Park &mdash; a record built by Guardiola&rsquo;s City against Hodgson&rsquo;s and Glasner&rsquo;s Palace, none of whom is involved tonight.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Manchester City are the most changed team on this card and the change runs deeper than the dugout. Selling Rodri, Bernardo Silva, Stones, Ak&eacute; and Reijnders in one summer removes the players who made Guardiola&rsquo;s control model work &mdash; the single pivot, the tempo-setter, the ball-playing centre-backs &mdash; and the replacements are a &pound;116m 23-year-old and an &pound;81.4m teenager who has never played in this league. Maresca will bring a recognisable possession structure; he learned it here as Guardiola&rsquo;s assistant, and the family resemblance is precisely why the possession-dependent parts of this fixture remain readable. What is not readable is the execution. A rebuilt midfield takes months to develop the automatisms that make a high line safe, and Maresca saying he still wants &ldquo;one or two more captains&rdquo; three days before deadline is a manager telling you the squad is not the one he intends to finish the season with. Haaland is the continuity, and one 2&ndash;1 against Bournemouth is the whole of the league evidence.</p>
+    <p>Palace are rebuilt differently &mdash; less money, more damage. Glasner&rsquo;s three-at-the-back system took them to 15th and gave them an identity built on a settled back line, and that back line has been dismantled: Gu&eacute;hi sold in January to the opponent standing in front of them tonight, Riad injured, and Henderson &mdash; the goalkeeper &mdash; carrying an ankle and foot problem. Pierre Sage arrives from a very different footballing culture with a three-year mandate and one competitive league match, a 2&ndash;0 home defeat to Everton in which Palace did not score. The attacking group is being assembled in public: McNeil expected to start alongside Nketiah behind Mateta, with Sarr unavailable and a persistent story about Mateta&rsquo;s own future that the preview lineups contradict. Whether Sage keeps Glasner&rsquo;s back three or moves to a four is exactly the sort of question that decides corner and card volume, and there is no honest way to answer it from ninety minutes.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous</span></div><div class="mkt-why">The outright asks which of two eight-week-old regimes is further along, and offers 1.68 on the one that has just sold Rodri, Bernardo Silva, Stones, Ak&eacute; and Reijnders. The historical anchor &mdash; ten straight trips to Selhurst Park unbeaten &mdash; belongs to a manager who has left and a Palace side that has been taken apart. With one league match on each side, there is no current evidence to replace the stale evidence with.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Handicap &amp; double chance<span class="verdict tag t-mid">OK &mdash; asymmetric</span></div><div class="mkt-why">A rebuilt midfield bears far more on control and margin than on the bare result, so the family that separates those two questions is the sounder one: &minus;1 at 2.75 against +1 at 2.15 is a live question in a way that X2 at 1.17 is not. It stays asymmetric because the Palace side of it rests on a new manager, a dismantled defence and a goalkeeper with an ankle problem &mdash; three unknowns pointing the same way.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-mid">OK</span></div><div class="mkt-why">Haaland is the one genuinely stable scoring input in the fixture, and City conceded in their opener while Palace failed to score in theirs &mdash; two facts pulling in opposite directions. The structural risk sits underneath: goals volume in a match like this depends on how high and how securely City&rsquo;s new midfield lets them play, and Anderson and Bouaddi have between them a handful of matches in this system. The base rate is usable; the specific case is not yet.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; one-sided question</span></div><div class="mkt-why">City scoring is close to structural &mdash; Haaland, Foden, Semenyo, Cherki, and a possession model that survives a change of coach because the coach learned it here. So this reduces largely to whether Palace score, and that is the weakest evidence base in the fixture: no goal in the opener, Sarr unavailable, a front line being assembled in public, and an unresolved story about Mateta&rsquo;s future running against a team sheet that expects him to lead the line.</div></div>
+      <div class="mkt-row good"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-low">Well-suited</span></div><div class="mkt-why">One of only two fixtures on this card carrying per-team card lines, which makes the book&rsquo;s reasoning inspectable: Palace over 1.5 at 1.55 is the firmest per-team card lean on the slate, with City over 1.5 at 1.65 behind it. The structural support is real and specific &mdash; a pointless home side chasing the game, two managers installing new pressing schemes eight weeks in, and a Palace back line missing Gu&eacute;hi and Riad, which forces recovery fouls rather than positional defending. Only the unnamed referee holds it back.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Corners<span class="verdict tag t-mid">Split &mdash; race sound, total open</span></div><div class="mkt-why">The race at 1.37 on City rests on the one property that survived the rebuild: Maresca was Guardiola&rsquo;s assistant and brings the same possession structure, so territorial share is the least disturbed thing about this team. The 9.5 total at 1.75 against 1.85 is genuinely open, because it depends on whether Sage keeps Glasner&rsquo;s back three or restructures &mdash; a deep, compact five concedes fewer corners than a stretched four, and one match cannot say which Palace turns up.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li>Both clubs changed head coach within a fortnight in June &mdash; Sage to Palace on 15 June, Maresca to City on 29 June, both on three-year deals. Palace&rsquo;s 15th place and City&rsquo;s runners-up finish were produced by Oliver Glasner and Pep Guardiola respectively. Every last-season number on this fixture describes a team that no longer exists in either dugout or in personnel.</li>
+      <li>City&rsquo;s rebuild is the largest single structural change anywhere on this card. Rodri, Bernardo Silva, Stones, Ak&eacute;, Reijnders and Gonz&aacute;lez out; Anderson at a club-record &pound;116m and Bouaddi at an initial &pound;81.4m in, alongside Rulli, Detourbet, Monga and Charles. Maresca stating he wants &ldquo;one or two more captains&rdquo; before 1 September is the manager confirming the squad is still incomplete on the day of this match.</li>
+      <li>Palace&rsquo;s defensive and goalkeeping situation is unsettled in a way their price does not obviously reflect: Gu&eacute;hi sold in January to tonight&rsquo;s opponent, Lacroix sold to Chelsea for &pound;52m this summer, Riad out with a knee injury, Henderson carrying an ankle and foot problem, and Sarr still in individual training. The three centre-backs who arrived to cover it cost no fee between them &mdash; two frees and a loan with no purchase option &mdash; which is a different kind of rebuild from City&rsquo;s and a thinner one.</li>
+      <li><strong>Correction to an earlier reading of this fixture.</strong> The first version of this card named Dwight McNeil as an incoming addition on the strength of a projected starting eleven rather than a transfer report, and carried Fikayo Tomori and Christos Tzolis as reported targets. Checked against the completed window: McNeil did sign, but as the makeweight in a swap with Everton for Brennan Johnson rather than as the purchase the lineup implied &mdash; while Tomori and Tzolis did not sign at all, and neither appears anywhere in Palace&rsquo;s confirmed business. A projected XI is evidence about a team sheet, not about a transfer, and it should not have been used as the latter.</li>
+      <li><strong>Flags, recorded not resolved.</strong> Palace are described as being tasked with competing in the Europa League this season despite a 15th-place finish, and the qualification route is not established in these sources. A &ldquo;Mateta exit bombshell&rdquo; headline sits alongside a preview that expects him to start. And one City source places Maresca&rsquo;s spell as Guardiola&rsquo;s assistant in the 2018&ndash;19 treble season while the same passage says 2022&ndash;23; the two are inconsistent and neither is relied on above.</li>
+      <li><strong>Most sensitive:</strong> the outright and the goals total &mdash; both require knowing how far along City&rsquo;s reconstructed midfield is, and two competitive matches under a new manager cannot say. <strong>Least sensitive:</strong> discipline and the corner race &mdash; the first because per-team lines make the asymmetry checkable against named absences, the second because possession share is the one City property the rebuild did not touch.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>Discipline is more robust than the outright here because the per-team lines &mdash; Palace over 1.5 at 1.55, City over 1.5 at 1.65 &mdash; can be checked against specific named facts: a home side on zero points chasing a game, and a Palace back line without Gu&eacute;hi and Riad that has to defend by recovering rather than by holding shape. The 1.68 on City can be checked against nothing that is still current.</li>
+      <li>The three-way handicap is more robust than double chance because selling Rodri, Bernardo Silva and Stones bears on how comfortably City control a match rather than on whether they win it &mdash; &minus;1 at 2.75 against +1 at 2.15 keeps those apart, while X2 at 1.17 has already collapsed them into one.</li>
+      <li>The corner race is more robust than the corner total because Maresca learned his possession structure on this same coaching staff, so territorial share survives the rebuild &mdash; whereas the 9.5 line turns on whether Pierre Sage keeps Glasner&rsquo;s back three or moves to a four, a shape question with one competitive match behind it.</li>
+      <li>Totals are more robust than any Palace-specific goals read because the odds file captured no team-goals market. Constructing one would mean building on a side that did not score against Everton, is missing Sarr, and has an unresolved story hanging over the striker its own projected lineup names &mdash; three weak inputs where the file offers none at all.</li>
+      <li>The book prices the total cards line at 1.83 against 1.77, effectively even money, while leaning both individual team lines to the over. That combination says it expects around two bookings each and still declines to commit on four &mdash; a bookmaker confident about the pattern and unwilling to price the sum, which is roughly the right posture toward two squads that have been rebuilt for eight weeks. The same indifference shows in the corner total at 1.75 against 1.85, in a fixture where it has taken 1.37 on who wins the count.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f6">
+  <div class="fx-head">
+    <p class="fx-league">Spain &middot; LaLiga EA Sports &middot; Matchday 3</p>
+    <h2 class="fx-title">Alav&eacute;s &ndash; Villarreal</h2>
+    <p class="fx-sub">21:30 &middot; Estadio de Mendizorroza, Vitoria-Gasteiz &middot; Continuity against transition &mdash; S&aacute;nchez Flores&rsquo;s first full pre-season at Alav&eacute;s, I&ntilde;igo P&eacute;rez&rsquo;s third week at Villarreal</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>3.20 &middot; 3.50 &middot; 2.20</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>1.65 &middot; 1.30 &middot; 1.35</dd></div>
+      <div class="od"><dt>EH +1 (1/X/2)</dt><dd>1.65 &middot; 4.10 &middot; 4.10</dd></div>
+      <div class="od"><dt>Win or +2</dt><dd>3.05 / 2.10</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.75 / 2.00</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.63 / 2.20</dd></div>
+      <div class="od"><dt>Cards 4.5 U / O</dt><dd>1.90 / 1.70</dd></div>
+      <div class="od"><dt>Corners 9.5 U / O</dt><dd>1.75 / 1.92</dd></div>
+      <div class="od"><dt>Corner race 1/X/2</dt><dd>1.80 &middot; 8.50 &middot; 2.20</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>Neither side is promoted, and on a card dominated by reconstruction this fixture is the inversion of it: the lower-placed side is the settled one and the higher-placed side is the one in transition. Villarreal finished third in LaLiga last season under Marcelino, who announced in early May 2026 that he would leave at the end of the campaign; I&ntilde;igo P&eacute;rez arrived from Rayo Vallecano to replace him, and the summer has so far produced one confirmed signing. Alav&eacute;s finished in the lower half after changing manager mid-season &mdash; Eduardo Coudet until 3 March 2026, Quique S&aacute;nchez Flores from that date &mdash; and have spent this summer deliberately doing as little as possible. The structural headline is that Villarreal&rsquo;s league position describes a team that no longer exists in the dugout, while Alav&eacute;s&rsquo;s describes one that has been kept intact on purpose.</p>
+    <ul>
+      <li><strong>Alav&eacute;s &mdash; turnover deliberately low, and a manager who now gets a full pre-season.</strong> Quique S&aacute;nchez Flores continues after arriving mid-season, and for the first time can shape the side from the start rather than inherit it in March. The club has been openly cautious in the market, changing as few pieces as possible to keep last season&rsquo;s block together, with the coach having praised the squad since he arrived in Vitoria. Out: Jon Guridi to Sevilla, the one significant subtraction. In: Mikel Rodr&iacute;guez, a young Zubieta product signed permanently as Guridi&rsquo;s replacement; Miguel Rodr&iacute;guez, a Galician forward from Utrecht with recent LaLiga experience and the club&rsquo;s largest outlay of the window; and Nicol&aacute;s Valentini, an Argentine defender from Fiorentina, to shore up the back line. Mariano D&iacute;az, 33, signed as a free agent a year ago, has scored twice off the bench already this season and may start.</li>
+      <li><strong>Villarreal &mdash; manager change, and a window still unfinished.</strong> Marcelino left at the end of 2025&ndash;26 after taking the club to third; I&ntilde;igo P&eacute;rez came in from Rayo Vallecano. The window has been close to inert. The one senior arrival is goalkeeper P&eacute;ter Gul&aacute;csi, signed from RB Leipzig on 2 August 2026 for a reported &euro;1.5m &mdash; &euro;1m fixed plus variables &mdash; on a two-year deal, ending eleven seasons in Germany. He is 36, with 58 Hungary caps and 41 Champions League appearances, and he arrived because the position had emptied: Diego Conde left for Betis and Arnau Tenas for Mallorca, with Luiz J&uacute;nior now his competition. Beyond him the only other name is Andero Kaares, who appears to have been signed to continue developing in the lower categories. Out: Ram&oacute;n Terrats, the largest sale at &euro;2.5m, and Alfonso Pedraza. The consequential absence is in midfield &mdash; the sporting department has not replaced the departures of Dani Parejo and Thomas Partey. A Ligue 1 striker was reported as the intended final addition and remains unconfirmed, and an unnamed Villarreal centre-back had a verbal agreement to go on loan to Osasuna before an Italian club&rsquo;s interest stalled it. The Spanish window is open until 1 September, four days after this match. <em>Gap: no centre-back or defensive-midfield arrival is confirmed in either direction, and the centre-back involved in the stalled Osasuna loan is unnamed in these sources.</em></li>
+      <li><strong>Suspensions / absences.</strong> I&ntilde;igo P&eacute;rez has acknowledged fitness concerns over Gerard Moreno &mdash; the club&rsquo;s vice-captain and long-standing number 7 &mdash; and over Sergi, with both to be assessed before kickoff. No Alav&eacute;s absences were reported, which is an absence of report rather than a report of full availability. No suspensions surfaced, and no referee is named in the odds file.</li>
+      <li><strong>Sample.</strong> Two matches each. Alav&eacute;s beat Getafe 3&ndash;0 on 15 August and drew 1&ndash;1 with Rayo Vallecano, giving them four points, third place, four goals scored and one conceded. Villarreal have drawn both of theirs 2&ndash;2 &mdash; away at Racing Santander, the side that opens this card, and then against Atl&eacute;tico Madrid &mdash; for two points and ninth. The longer record at this ground is one-sided: Alav&eacute;s have won ten of seventeen meetings at Mendizorroza to Villarreal&rsquo;s four, and Villarreal have not won here since January 2020. Separately and more durably, Villarreal have failed to keep a clean sheet in sixteen consecutive matches.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Alav&eacute;s are the most legible side on this card, and it is a deliberate achievement rather than an accident. A mid-season managerial appointment usually means a compromised following summer; instead the club backed S&aacute;nchez Flores with continuity, keeping the block and adding narrowly where it had lost something &mdash; Mikel Rodr&iacute;guez for Guridi, Valentini into the back line, Miguel Rodr&iacute;guez as the one attacking investment. The early evidence matches the intent: four scored and one conceded across a 3&ndash;0 against Getafe and a 1&ndash;1 with Rayo, which is the profile of a compact side that defends its box and takes what the game offers. Mariano D&iacute;az scoring twice from the bench at 33 is the small detail that says the squad has depth in the one department it invested in. The caveat is honest and simple: two matches, both against opponents from the same part of the table, and a coach who has never before had this group from the first day of pre-season.</p>
+    <p>Villarreal are the harder read, and the reason is not quality. Third place is a genuinely strong platform, but it belongs to Marcelino, and I&ntilde;igo P&eacute;rez has been in the job for a matter of weeks with a squad that has lost Terrats and Pedraza and gained a goalkeeper. Two 2&ndash;2 draws &mdash; one at a newly promoted Racing side, one against Atl&eacute;tico Madrid &mdash; are not obviously bad results, but they share a shape: Villarreal scoring twice and conceding twice against wildly different opposition. That is consistent with the sixteen-match run without a clean sheet, and the significance of that run is precisely that it did not stop when the manager changed. A defensive record that survives a change of coach is telling you something about personnel and habit rather than about instructions. Signing Gul&aacute;csi suggests the club reached the same conclusion; whether one goalkeeper resolves it, with the striker they actually wanted still unsigned four days from deadline, is exactly what two matches cannot show.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row ok"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-mid">OK &mdash; the most readable outright here</span></div><div class="mkt-why">The only fixture on this card where one side&rsquo;s recent matches genuinely describe the team that will play: same manager, a deliberately unchanged squad, and a first full pre-season together. That is a real advantage over five fixtures where every outright rests on eight-week-old regimes. It stays at OK rather than better because the other half of the market &mdash; Villarreal under a new coach with an unfinished window &mdash; carries the same problem as the rest of the slate.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Handicap &amp; double chance<span class="verdict tag t-mid">OK &mdash; asymmetric</span></div><div class="mkt-why">Villarreal at &minus;1 for 4.10 is the longest favourite handicap price anywhere on this card, and the structural backing for that is unusually specific: no Villarreal win at Mendizorroza since January 2020, four wins in seventeen visits, and a new manager two league matches in. Alav&eacute;s at +1 for 1.65 and 1X at 1.65 price the same idea twice. The asymmetry is that the case against margin is far better evidenced than any case for a particular winner.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-mid">OK</span></div><div class="mkt-why">Both sides have produced goals, but from opposite mechanisms, and that limits what the total can be built on. Villarreal have played two 2&ndash;2 draws, so four goals in each of their matches; Alav&eacute;s have four scored and one conceded, so five across two. The Villarreal half is the better-supported input because it rests on a sixteen-match defensive record rather than on two results, while Alav&eacute;s&rsquo;s single goal conceded came against Getafe and Rayo &mdash; a soft pair to draw conclusions from.</div></div>
+      <div class="mkt-row good"><div class="mkt-name">BTTS<span class="verdict tag t-low">Well-suited &mdash; best-evidenced on the card</span></div><div class="mkt-why">Villarreal have not kept a clean sheet in sixteen consecutive matches, and the reason that number carries weight is that the run spans Marcelino&rsquo;s departure and I&ntilde;igo P&eacute;rez&rsquo;s arrival &mdash; it survived the event that normally resets a defensive record, which makes it a property rather than form. Alav&eacute;s have scored in both matches and both 2&ndash;2 draws had Villarreal scoring twice. The counterweight is named too: one goal conceded in two games, with Valentini newly installed at the back.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-mid">OK</span></div><div class="mkt-why">The 4.5 line is the joint-highest on this slate, which fits LaLiga&rsquo;s refereeing culture rather than anything specific to these teams &mdash; and that is the limitation. A compact home side and a visiting team still installing a system are both mild pushes upward, but no referee is named in the odds file and no per-team card lines were captured here, so there is no way to see whether the book has loaded the line toward the side in transition or the side defending deep.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Corners<span class="verdict tag t-mid">OK &mdash; asymmetric, and unusual</span></div><div class="mkt-why">This is the only fixture on the card where the book prices the home side ahead in the corner race, 1.80 against 2.20 &mdash; and unlike a quality judgement, that is a claim about territory, which seventeen meetings at this ground speak to directly. It sits against a 9.5 total leaning under at 1.75, so the book expects Alav&eacute;s to hold the larger share of a modest count. Coherent, and better grounded than the corner markets in most of the other fixtures here.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li>Alav&eacute;s are the one side on this slate that deliberately did not rebuild, which makes their two matches unusually informative by this card&rsquo;s standards &mdash; but they are still two matches, both against opponents from the same region of the table, and S&aacute;nchez Flores has never before had this squad from the first day of a pre-season. Continuity raises the value of a small sample; it does not make it a large one.</li>
+      <li>Villarreal&rsquo;s third place is Marcelino&rsquo;s result and Marcelino has gone. What replaced him is a new manager two league matches in and a window that has barely moved: one senior arrival, a 36-year-old goalkeeper at &euro;1.5m, brought in to fill a position vacated by two other departures rather than to improve the team. Dani Parejo and Thomas Partey have left midfield unreplaced, the Ligue 1 striker reported as the final addition has not been confirmed, and a centre-back&rsquo;s loan exit is stalled rather than settled. A side that finished third has changed its manager and thinned its squad in the same summer, which is a different proposition from a side that finished third.</li>
+      <li>The sixteen matches without a clean sheet is the most durable number in this fixture and should be treated differently from the rest of the evidence, because it did not reset when the coach changed. Records that survive a managerial change describe personnel and habit; records that do not survive one describe instructions.</li>
+      <li><strong>Contradiction, recorded not resolved.</strong> One source gives Alav&eacute;s&rsquo;s 2025&ndash;26 finish as 14th while citing table data showing 19th on 36 points. Nineteenth would mean relegation, which cannot be squared with their playing in LaLiga this season, so the 14th reading is the one consistent with everything else &mdash; but the discrepancy is logged rather than quietly resolved. Note also that Alav&eacute;s used two managers last season, so their 2025&ndash;26 numbers are themselves two different teams averaged together.</li>
+      <li><strong>Most sensitive:</strong> the goals total and cards &mdash; the first because Alav&eacute;s&rsquo;s defensive record rests on two soft fixtures, the second because a league-average line with no named referee and no per-team split is priced on culture rather than on this match. <strong>Least sensitive:</strong> BTTS and the handicap, both of which rest on records that span the managerial change or the venue history &mdash; sixteen matches without a clean sheet, and no Villarreal win here since January 2020.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>BTTS is more robust here than in any other fixture on this card because Villarreal&rsquo;s sixteen consecutive matches without a clean sheet spans Marcelino&rsquo;s exit and I&ntilde;igo P&eacute;rez&rsquo;s arrival. A defensive record that outlives the manager who produced it is structural, and structure is exactly what a two-match sample cannot otherwise supply.</li>
+      <li>The 1X2 is more usable in this fixture than in the other five because Alav&eacute;s are the only side on the slate whose recent matches describe the team that will actually play &mdash; same coach, a squad kept together on purpose, and one significant departure in Guridi to absorb. Everywhere else the outright is being asked to price a regime that is weeks old.</li>
+      <li>The three-way handicap is more robust than the outright on the Villarreal side because &minus;1 at 4.10, the longest favourite handicap price on this card, is the book saying plainly that it expects no margin from a team that has not won at Mendizorroza since January 2020 and has taken four wins from seventeen visits &mdash; a venue record, not a form read.</li>
+      <li>Corners are better grounded here than in most of these fixtures because the race is priced toward the home side at 1.80 against 2.20, which is a territorial claim rather than a quality one, and territory at this specific ground is the thing seventeen previous meetings actually inform.</li>
+      <li>The book takes only small steps off even money on cards (1.90 against 1.70 at 4.5) and on the corner total (1.75 against 1.92), in a fixture where it has no named referee and captured no per-team card split. Those mild leans are a league average being applied to a match rather than a view about these two teams &mdash; which is worth knowing before treating either as the fixture&rsquo;s informative market.</li>
+    </ul>
+  </div>
+</article>
+
+<section>
+  <h2 class="sec">Across the card</h2>
+  <ul>
+  <li><strong>Best structurally supported across the card: both teams to score, and discipline
+  wherever a per-team card line exists.</strong> BTTS carries named, durable inputs in four of the six
+  fixtures &mdash; Villarreal&rsquo;s sixteen matches without a clean sheet, a record that survived the
+  manager who produced it; Milan&rsquo;s four Serie A meetings with Venezia without conceding; Racing&rsquo;s
+  three-way promotion scoring split set against Elche&rsquo;s away record. Discipline is only genuinely
+  well-supported in the two fixtures where the file captured per-team lines, Milan&ndash;Venezia and
+  Crystal&nbsp;Palace&ndash;Manchester&nbsp;City, because there the favourite-underdog asymmetry the book is
+  charging for can be checked against a structural reason instead of taken on trust inside a total.</li>
+
+  <li><strong>Least supported: outright results, and corner totals.</strong> Every 1X2 on this slate is being
+  asked to price a regime that is weeks old, a change of division, or a matchday one &mdash; and in four of
+  the six the price has already absorbed every visible fact and left nothing to weigh. Corner totals are
+  worse still, because they turn on pressing height and block shape, which is precisely what a new coach or
+  a promotion alters first, and no fixture here has the matches to show it. Cards without a named referee
+  and without a per-team split sit in the same category.</li>
+
+  <li><strong>The one normal fixture: Alav&eacute;s &ndash; Villarreal.</strong> It is the only game on the
+  card with a side that can be described from its own recent football &mdash; S&aacute;nchez Flores kept and
+  given a first full pre-season, the squad deliberately left alone, four points and one goal conceded from
+  two matches. It is also the only fixture where the book prices the home side ahead in the corner race, at
+  1.80 against 2.20, which is a claim about territory at a specific ground rather than about quality, and
+  seventeen previous meetings at Mendizorroza speak to it directly.</li>
+
+  <li><strong>Where the book has priced indifference.</strong> Milan&ndash;Venezia BTTS at 1.85 against 1.90,
+  from a book simultaneously looking at four meetings in which Milan did not concede to this opponent. Crystal
+  Palace&rsquo;s total cards at 1.83 against 1.77 while both individual team lines lean to the over. Racing&rsquo;s
+  1X and 12 at the identical 1.30, and its corner race at 1.95 against 2.00. Lille&rsquo;s corner total at 1.80
+  against 1.88 in a match where one side plainly has the ball. In each case the book is declining to defend an
+  edge it could have taken, which is a statement about how thin three weeks of evidence is &mdash; and worth
+  more than the runs and records it is refusing to price.</li>
+</ul>
+</section>
+
+<footer>
+  <p><strong>Scope.</strong> This page rates market <em>families</em> only. It contains no selections, no sides, no recommended lines and no confidence labels &mdash; by design. Where evidence is thin it says so rather than filling the gap.</p>
+  <p><strong>Sources.</strong> Official and primary first, then reference, then press.
+<a href="https://www.laliga.com/en-GB/transfers/laliga-easports">LaLiga</a>,
+<a href="https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051">Bundesliga transfer centre</a>,
+<a href="https://ligue1.com/en/articles/l1_article_5212-who-is-davide-ancelotti-meet-losc-s-new-manager">Ligue 1</a>,
+<a href="https://www.cpfc.co.uk/news/announcement/pierre-sage-appointed-crystal-palace-manager/">Crystal Palace FC</a>,
+<a href="https://www.mancity.com/citytv/mens/enzo-maresca-community-shield-press-conference-63922294">Manchester City</a>,
+<a href="https://www.acmilan.com/en/transfer-window">AC Milan</a>,
+<a href="https://en.veneziafc.it/club/history">Venezia FC</a>.
+Reference:
+<a href="https://fbref.com/en/squads/dee3bbc8/2025-2026/matchlogs/c17/schedule/Racing-Santander-Scores-and-Fixtures-Segunda-Division">FBref</a>,
+<a href="https://www.sofascore.com/news/deportivo-alaves-vs-villarreal-laliga-preview-with-form-xg-and-key-players">Sofascore</a>,
+<a href="https://www.whoscored.com/matches/1980881/preview/italy-serie-a-2026-2027-ac-milan-venezia">WhoScored</a>,
+and Wikipedia season pages for
+<a href="https://en.wikipedia.org/wiki/2025%E2%80%9326_Segunda_Divisi%C3%B3n">Segunda Divisi&oacute;n</a>,
+<a href="https://en.wikipedia.org/wiki/2025%E2%80%9326_Serie_A">Serie A</a>,
+<a href="https://en.wikipedia.org/wiki/2025%E2%80%9326_Serie_B">Serie B</a>,
+<a href="https://en.wikipedia.org/wiki/2025%E2%80%9326_Ligue_1">Ligue 1</a>,
+<a href="https://en.wikipedia.org/wiki/2025%E2%80%9326_Elche_CF_season">Elche</a>,
+<a href="https://en.wikipedia.org/wiki/2025%E2%80%9326_Villarreal_CF_season">Villarreal</a> and
+<a href="https://en.wikipedia.org/wiki/2025%E2%80%9326_Deportivo_Alav%C3%A9s_season">Alav&eacute;s</a>.
+Match previews and mercato from
+<a href="https://sports.yahoo.com/articles/preview-crystal-palace-vs-manchester-190500387.html">Yahoo Sports</a>,
+<a href="https://www.sportsmole.co.uk/football/man-city/transfer-talk/feature/man-city-summer-transfers-all-confirmed-ins-and-outs-for-2026_599218.html">Sports Mole</a>,
+<a href="https://www.goal.com/en/news/bayern-munich-vfb-stuttgart-bundesliga-preview/blt77065a4a79dafae7">Goal</a>,
+<a href="https://www.aljazeera.com/sports/2026/6/29/enzo-maresca-appointed-man-city-manager-to-succeed-pep-guardiola">Al Jazeera</a>,
+<a href="https://www.skysports.com/football/news/11679/13548773/enzo-maresca-man-city-appoint-former-chelsea-head-coach-as-pep-guardiolas-successor-at-etihad-stadium">Sky Sports</a>,
+<a href="https://www.espn.com/soccer/story/_/id/48938104/davide-ancelotti-signs-deal-lille-champions-league-return">ESPN</a>,
+<a href="https://www.beinsports.com/en-us/soccer/la-liga/articles/marcelino-to-leave-villarreal-at-the-end-of-the-season-2026-05-04">beIN Sports</a>,
+<a href="https://www.football-espana.net/2026/05/17/racing-santander-la-liga-promotion">Football Espa&ntilde;a</a>,
+<a href="https://football-italia.net/official-venezia-promoted-to-serie-a-frosinone/">Football Italia</a>,
+<a href="https://www.getfootballnewsgermany.com/2026/bundesliga-stuttgart-prev-26/">Get German Football News</a>,
+<a href="https://sempremilan.com/preview-ac-milan-venezia-team-news-stats-2026-27">SempreMilan</a>,
+<a href="https://www.teamtalk.com/manchester-city/every-completed-man-city-transfer-summer-2026-signings-exits-loans">TeamTalk</a>,
+<a href="https://www.infobae.com/espana/agencias/2026/08/09/el-alaves-mas-continuista-al-estilo-sanchez-flores/">Infobae</a>,
+<a href="https://dicodusport.fr/blog/mercato-losc-2026-2027-le-tableau-complet-des-transferts-arrivees-et-departs/">Dico du Sport</a>,
+<a href="https://www.bavarianfootballworks.com/bayern-munich-transfer-news-rumors/201663/bayern-munichs-2026-summer-transfer-window-all-updates">Bavarian Football Works</a> and
+<a href="https://psgtalk.com/2026/08/absolutely-luis-enrique-transfer-business-this-summer/">PSG Talk</a>.
+The full per-fixture log &mdash; every source used, plus every gap, contradiction and unattributed claim
+recorded rather than resolved &mdash; is in <span class="mono">sources_8.md</span>.</p>
+</footer>
+
+</div>

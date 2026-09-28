@@ -248,3 +248,220 @@ other.
 - ESPN summaries `site.web.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event={id}` — 96 League C matches and 12 League D matches.
 - ESPN standings `site.api.espn.com/apis/v2/sports/soccer/uefa.nations/standings?season={2020,2022,2024,2026}` for group membership, finishing positions and movement between divisions.
 - Wikipedia https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Nations_League (format section) for the no-relegation rule; logged in sources_0926.md under f2.
+
+### Sides relegated from League B hosting sides that stayed in League C (context line, not a baseline — added on f5)
+Recomputed on the f5 rebuild with zero searches from ESPN's 96 League C group
+summaries (the same matches as the League C line above), Romania – Kosovo
+counted as played, 0–0, as there. The first f5 run wrote this line from the
+GitHub international-results record while ESPN was blocked, with no box score;
+every results-side figure it printed reproduces here, and the box-score figures
+are new. Reconciliation before use: the same summaries give League C 2024–25 48
+matches, 2.40 goals, over 2.5 47.9%, BTTS 37.5%, home win 41.7%, first-half
+goals 1.15, cards 4.85, 5.32 fouls per card, 0.38 penalty kicks; 2022–23 48,
+2.65, 45.8%, 41.7%, 43.8%, 1.10, cards 4.21, 5.30 fouls per card — the League C
+lines above. They also reproduce the f3 and f4 lines (the f3 line's visitor
+first-half rate is 13 in 17, 0.76 where the f3 line prints 0.77; total 1.24 in
+both).
+Every 2022–23 and 2024–25 League C match whose home side had just come down from
+League B and whose visitor was in League C the previous edition. 17 matches (10
+in 2022–23, 7 in 2024–25). Home side W6 D5 L6 (1.35 points per match), 1.71
+scored and 1.35 conceded (29–23); 3.06 goals per match; over 2.5 52.9%; BTTS
+58.8%; under 1.5 goals in 4 of 17; home side kept a clean sheet 17.6%, failed to
+score 29.4%; first-half goals 1.35 per match (home 0.65, visitor 0.71); at
+half-time the home side led in 4, was level in 6 (three 0–0) and trailed in 7;
+home side won by two or more in 4, lost by two or more in 2, and 11 of 17
+finished within one goal. **Box score: cards 4.76 per match (home 1.88, visitor
+2.88); fouls 10.76 committed by the home side and 12.12 by the visitor (5.72
+and 4.20 fouls per card); corners 6.29 won and 2.71 conceded by the home side,
+which won more in 12 of 17 (visitor 5, level 0); shots 17.88 and 8.35; home
+possession 60.9%; penalty kicks 0.53 per match (9 in 17).** Margins ran from −3
+(Bulgaria 2–5 Georgia, June 2022) to +6 (Sweden 6–0 Azerbaijan, November 2024).
+The 17: Northern Ireland 0–1 Greece, 2–2 Cyprus, 2–1 Kosovo; Bulgaria 1–1 North
+Macedonia, 2–5 Georgia; Slovakia 0–1 Kazakhstan, 1–2 Azerbaijan, 1–1 Belarus;
+Türkiye 2–0 Lithuania, 3–3 Luxembourg (2022–23); Romania 3–1 Lithuania, 0–0
+Kosovo, 4–1 Cyprus; Armenia 0–2 North Macedonia, 0–1 Faroe Islands; Sweden 2–1
+Slovakia, 6–0 Azerbaijan (2024–25).
+
+### Sides relegated from League B, at home in League C (context line, not a baseline — added on f5)
+The home half of the relegated-from-B line above, counted directly from the same
+ESPN rows (the first f5 run derived its corner and card figures by subtraction;
+the direct count gives the same). 21 matches, W10 D5 L6 (1.67 points per match),
+2.14 scored and 1.19 conceded (45–25); over 2.5 61.9%; BTTS 57.1%; under 1.5
+goals in 4; clean sheet 23.8%, failed to score 23.8%; first-half goals 1.57 per
+match (0.90 scored, 0.67 conceded); at half-time led 8, level 6, trailed 7; won
+by two or more in 8, lost by two or more in 2. Cards 4.24 per match (home 1.62,
+visitor 2.62); fouls 10.24 committed and 11.95 suffered; corners 6.71 won and
+2.52 conceded (141 and 53), won more in 16 of 21; shots 18.76 and 7.48; home
+possession 63.0%; penalty kicks 0.43 per match (9 in 21).
+
+## Sources for the f5 lines
+- ESPN scoreboard `site.web.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates={202206,202209,202409,202410,202411}` and summaries `…/uefa.nations/summary?event={id}` — the 96 League C group matches, read 26 September 2026 on the f5 rebuild; group membership and movement between divisions as in the League C lines above.
+- GitHub raw files https://raw.githubusercontent.com/martj42/international_results/master/results.csv and …/goalscorers.csv, fetched 26 September 2026 (dataset last row 26 August 2026) — the first f5 run's source for the results side, which the ESPN count reproduces.
+
+---
+
+## UEFA Nations League A — first carded on f6 (Czechia – Croatia)
+
+Recomputed for this slate from the same 96 ESPN summaries as the League A
+entries in baselines_0924.md and baselines_0925.md, with the same counting
+conventions as the League B and C entries above. **Zero baseline searches
+spent.** ESPN's API was blocked at this run's egress proxy when the f6 run
+began (as on f5) and was reachable again later in the run; the lines below are
+ESPN's. Key events de-duplicated on type, period, clock, team and participants
+(Scotland 2–3 Poland carries every event twice); the goal-timing parser then
+reconciles against the official score on 96 of 96. No match went to extra
+time; every match has a two-team box score. **Every figure matches the 0925
+entry** (2024–25 cards per game 4.125, printed 4.13; 2022–23 goals per game
+2.625, printed 2.63). As a cross-check, the public international-results record
+on GitHub (martj42/international_results, fetched this run) reproduces every
+results-side figure (goals, over 2.5, BTTS, outcome split, clean sheets, under
+1.5, 0–0s, first-half goals) on all 96 matches. No xG exists for this
+competition in ESPN's record: **no divisional xG line, none estimated.**
+
+### 2024–25 League A (48 matches — the primary line on every League A card)
+Group stage only, four groups of four, six matches per side: A1 Portugal,
+Croatia, Scotland, Poland; A2 France, Italy, Belgium, Israel; A3 Germany,
+Netherlands, Hungary, Bosnia-Herzegovina; A4 Spain, Denmark, Serbia,
+Switzerland. The March 2025 quarter-finals and A/B play-offs and the June 2025
+Finals are not in the line.
+Ten of the sixteen are in 2026–27 League A. Today's Group A3 (Spain, Croatia,
+England, Czechia) has two of them: Croatia (second in A1) and Spain (first in
+A4). England (B2 winners) and Czechia (B1 winners) come up from League B.
+- goals per game 2.94; over 2.5 56.3%; BTTS 58.3%; home win 43.8%; draw 29.2%; away win 27.1%
+- clean sheet / failed to score 26.0% per team-appearance; under 1.5 goals 22.9% of matches; five 0–0s
+- first-half goals 1.33 per match; level at half-time in 18 of 48; final margin within one goal in 30 of 48
+- cards per game 4.13 (2.06 per team; 188 yellows, 10 reds); fouls 11.39 per team (22.77 per match); 5.52 fouls per card; corners 4.75 per team
+- shots 12.93 per team; shots on target 4.48 per team
+- penalty kicks 0.42 per match (20 in 48)
+
+### 2022–23 League A (48 matches — cross-check, not the card line)
+A1 Croatia, Denmark, France, Austria; A2 Spain, Portugal, Switzerland,
+Czechia; A3 Italy, Hungary, Germany, England; A4 Netherlands, Belgium,
+Poland, Wales. Group stage only.
+- goals per game 2.63; over 2.5 45.8%; BTTS 52.1%; home win 39.6%; draw 22.9%; away win 37.5%
+- clean sheet / failed to score 25.0% per team-appearance; under 1.5 goals 25.0%; one 0–0
+- first-half goals 1.02 per match
+- cards per game 3.33 (1.67 per team; 159 yellows, 1 red); fouls 11.01 per team (22.02 per match); 6.61 fouls per card; corners 4.68 per team
+- shots 11.38 per team; shots on target 4.18 per team
+- penalty kicks 0.23 per match (11 in 48)
+
+### Both editions pooled (96 matches)
+- goals per game 2.78; over 2.5 51.0%; BTTS 55.2%; home win 41.7%; draw 26.0%
+- first-half goals 1.18; cards per game 3.73; fouls 11.20 per team; 6.01 fouls per card; corners 4.71 per team; penalty kicks 0.32 per match
+
+**League A moved between editions on goals and cards, not on fouls or
+corners** (as the 0925 entry says): goals rose by 0.31 per match, over 2.5 by
+10.4 points and first-half goals by 0.31, and cards by 0.79 per match on almost
+the same foul count. The 2024–25 line is printed because it is the most recent
+edition and shares ten of its sixteen sides with 2026–27.
+
+### Sides promoted from League B into League A (context line, not a baseline — added on f6)
+Recomputed from the same 96 ESPN summaries, zero searches. The eight sides
+promoted for 2022–23 (Austria, Czechia, Hungary, Wales — the 2020–21 League B
+group winners) and 2024–25 (Scotland, Israel, Bosnia-Herzegovina, Serbia — the
+2022–23 League B group winners), in their League A group matches. It
+reproduces every promoted-side figure the archive cards already print
+(fx_0924_f4.html, fx_0924_f5.html, fx_0925_f4.html: 0.79 points per match,
+0.92 scored and 1.73 conceded; home 0.88/1.42; away 0.62 points per match,
+0.96/2.04, over 2.5 62.5%, BTTS 50.0%, failed to score 37.5%; at home on
+matchday one W2 D1 L1), and the GitHub record reproduces its results side.
+- All venues: 48 matches, W9 D11 L28 (0.79 points per match), 0.92 scored and 1.73 conceded (44–83); over 2.5 52.1%; BTTS 52.1%; clean sheet 25.0%, failed to score 33.3%; first-half goals 0.35 scored and 0.83 conceded.
+- **At home: 24 matches, W5 D8 L11 (0.96 points per match), 0.88 scored and 1.42 conceded (21–34); 2.29 goals per match; over 2.5 41.7%; BTTS 54.2%; under 1.5 goals in 7 of 24, three 0–0s; clean sheet 29.2%, failed to score 29.2%; first-half goals 1.00 per match (0.29 scored, 0.71 conceded); at half-time led 2, level 13 (nine at 0–0), trailed 9; final margin within one goal in 18 of 24, home side won by two or more once and lost by two or more five times. Corners 3.79 won and 5.46 conceded per match (won more in 9 of 24); cards 1.92 per match against their visitors' 1.75 (3.67 per match); fouls 11.21 committed and 11.08 suffered; shots 9.92 for and 11.67 against.** Every one of the 24 was against a side that had stayed in League A (the promoted sides were drawn in different groups). Israel's three home matches were played in Budapest and are counted as home.
+- Away: 24 matches, W4 D3 L17 (0.62 points per match), 0.96 scored and 2.04 conceded; over 2.5 62.5%; BTTS 50.0%; failed to score 37.5%; corners 2.79 won and 6.38 conceded; cards 1.88 against their hosts' 1.50; shots 8.21 for and 18.29 against.
+- Matchday one: W3 D1 L4. At home on matchday one W2 D1 L1: Czechia 2–1 Switzerland (Prague, June 2022), Hungary 1–0 England, Serbia 0–0 Spain, Scotland 2–3 Poland.
+- Group finishes: second once (Hungary 2022–23), third twice (Scotland, Serbia), fourth five times (Austria, Czechia and Wales in 2022–23; Israel and Bosnia-Herzegovina in 2024–25).
+- Czechia's own previous promotion is inside this line: 2022–23 Group A2, W1 D1 L4, 5–13, fourth and relegated; at home in Prague 2–1 Switzerland, 2–2 Spain, 0–4 Portugal.
+
+## Sources for the League A lines
+- ESPN scoreboard `site.web.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates={202206,202209,202409,202410,202411}`.
+- ESPN summaries `site.web.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event={id}` — 96 League A group matches, read 26 September 2026.
+- GitHub raw files https://raw.githubusercontent.com/martj42/international_results/master/results.csv and …/goalscorers.csv, fetched 26 September 2026 (dataset last row 26 August 2026) — results-side cross-check.
+- Division membership and movement between divisions from triage_0926.md and baselines_0925.md (ESPN standings, seasons 2020, 2022, 2024, 2026).
+
+---
+
+### Sides promoted from League C, at home in League B (context line, not a baseline — added on f8)
+Recomputed on f8 with zero searches from the same ESPN League B group summaries
+as the League B lines above; the rerun reproduces those lines exactly (2024–25:
+48 matches, 2.67 goals, over 2.5 50.0%, BTTS 43.8%, home win 45.8%, first-half
+goals 1.12, cards 4.42, fouls 11.48 per team, corners 4.52, 13 penalty kicks;
+2022–23: 42, 2.67, 47.6%, 52.4%, 45.2%, 1.07, 4.57, 11.17, 4.77, 9) and the
+relegated-from-League-A away line (23 matches, 1.52 scored and 1.35 conceded,
+over 2.5 52.2%, BTTS 60.9%, failed to score 13.0%, corners 4.22/4.65, cards
+2.35 against 1.74). The six Russia fixtures of 2022–23 Group B2 are cancelled in
+ESPN's record and are not counted, as in the 2022–23 line.
+The eight sides promoted from League C for 2022–23 (Montenegro, Armenia,
+Slovenia, Albania — the 2020–21 League C group winners) and 2024–25 (Türkiye,
+Greece, Kazakhstan, Georgia — the 2022–23 League C group winners), in their home
+League B group matches: 23 matches (Albania – Russia, June 2022, cancelled).
+Home side W8 D6 L9 (1.30 points per match), 1.09 scored and 1.30 conceded
+(25–30); 2.39 goals per match; over 2.5 39.1%; BTTS 39.1%; under 1.5 goals in 6
+of 23; home side kept a clean sheet 30.4%, failed to score 39.1%; first-half
+goals 0.78 per match (home 0.30, visitor 0.48); at half-time the home side led
+in 4, was level in 12 (eleven at 0–0) and trailed in 7; 18 of the home sides'
+25 goals came after half-time; won by two or more in 5, lost by two or more in
+6, final margin within one goal in 12. Cards 4.61 per match (home 2.52, visitor
+2.09); fouls 11.52 committed by the home side and 11.43 by the visitor; corners
+4.61 won and 4.87 conceded by the home side, which won more in 10 of 23; shots
+13.17 and 10.91; home possession 47.0%; penalty kicks 3 for the home side and 1
+against; reds 4 and 2.
+- All venues: 46 matches, W14 D10 L22, 1.02 scored and 1.52 conceded; over 2.5
+  45.7%; BTTS 39.1%; failed to score 41.3%; at half-time level in 22 (nineteen at
+  0–0), trailing in 18; 35 of their 47 goals after half-time; corners 4.11 won and
+  5.43 conceded.
+- First match of each promoted side's edition: W4 D3 L1 (at home W4 D1 L1:
+  Slovenia 0–2 Sweden, Armenia 1–0 Republic of Ireland, Montenegro 2–0 Romania in
+  June 2022; Kazakhstan 0–0 Norway, Georgia 4–1 Czechia, Greece 3–0 Finland in
+  September 2024).
+- Group finishes: none won its League B group; second twice (Greece, Türkiye in
+  2024–25), third four times (Albania, Montenegro, Slovenia, Georgia), fourth
+  twice (Armenia, Kazakhstan).
+- **Hosting a side just relegated from League A: 8 matches** (Slovenia 0–2
+  Sweden, Montenegro 1–1 Bosnia-Herzegovina, Armenia 0–5 Ukraine, Albania 1–1
+  Iceland in 2022–23; Georgia 4–1 Czechia, Kazakhstan 0–2 Austria, Greece 0–3
+  England, Türkiye 0–0 Wales in 2024–25). Home side W1 D3 L4, 6–15; 2.62 goals per
+  match; over 2.5 37.5%; BTTS 37.5%; home side failed to score in 5 of 8; first-half
+  goals 0.88 per match (home 0.25, visitor 0.62); at half-time the home side led
+  in 2, was level in 2 (both 0–0) and trailed in 4; corners 4.38 won and 4.50
+  conceded by the home side, which won more in 3 of 8; cards 1.88 for the home
+  side against 2.12; penalty kicks 2 for and 1 against.
+
+## Sources for the f8 line
+- ESPN scoreboard `site.web.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates={202206,202209,202409,202410,202411}` and summaries `…/uefa.nations/summary?event={id}` — the 96 League B group events (90 played, 6 cancelled), read 26 September 2026 on f8; linescores for the 90-minute and half-time score (they carry the Wilson penalty in Wales 1–0 Montenegro that the key events miss).
+- ESPN standings `site.api.espn.com/apis/v2/sports/soccer/uefa.nations/standings?season={2020,2022,2024,2026}` for division membership and group finishes.
+
+### Sides that stayed in League C hosting sides promoted from League D (context line, not a baseline — added on f10)
+Recomputed on f10 with zero searches from the same 96 ESPN League C group
+summaries as the League C lines above. The rerun reproduces the 2022–23 line
+exactly (48 matches, 2.65 goals, over 2.5 45.8%, BTTS 41.7%, home win 43.8%,
+first-half goals 1.10, cards 4.21, fouls 11.16 per team, 5.30 fouls per card,
+0.29 penalty kicks) and the 2024–25 box-score figures (cards 4.85, fouls 12.91
+per team, 5.32 fouls per card, 0.38 penalty kicks, first-half goals 1.15); its
+2024–25 goal figures differ only because the parser reads Romania – Kosovo
+(698999) at the awarded 3–0 where the line above counts it 0–0, and that match
+is not in the eight below.
+Every 2022–23 and 2024–25 League C match whose home side was in League C the
+previous edition and whose visitor had just come up from League D. 8 matches (4
+in 2022–23, 4 in 2024–25). Home side W4 D4 L0 (2.00 points per match), 1.75
+scored and 0.50 conceded (14–4); 2.25 goals per match; over 2.5 37.5% (3 of 8);
+BTTS 37.5%; under 1.5 goals in 3 of 8; home side kept a clean sheet 62.5%,
+failed to score 12.5% (one match); first-half goals 1.25 per match (home 1.12,
+visitor 0.12 — one visitor goal before half-time in eight); at half-time the
+home side led in 4, was level in 4 (three at 0–0) and trailed in none; final
+margins 0, 0, 0, 0, +1, +1, +4, +4 — within one goal in 6 of 8, the two wins by
+two or more both 4–0 against Gibraltar in June 2022. **Split by edition:
+2022–23 3.50 goals per match (Georgia 4–0 Gibraltar, North Macedonia 4–0
+Gibraltar, Luxembourg 2–2 Faroe Islands, Lithuania 1–1 Faroe Islands);
+2024–25 1.00 (Faroe Islands 1–1 Latvia, North Macedonia 1–0 Latvia, Azerbaijan
+0–0 Estonia, Slovakia 1–0 Estonia), over 2.5 in none of the four and one
+first-half goal between them.** Box score: cards 3.88 per match (home 1.88,
+visitor 2.00); fouls 10.25 committed by the home side and 11.12 by the visitor
+(5.52 fouls per card); corners 5.62 won and 2.62 conceded by the home side,
+which won more in 6 of 8 (the visitor in 2, both 2022–23 Faroe Islands
+matches); shots 17.50 and 6.25; home possession 63.1%; penalty kicks 1 in 8
+(0.12 per match, to the home side); no red card. Slovakia 1–0 Estonia (Trnava,
+November 2024) is one of the eight.
+
+## Sources for the f10 line
+- ESPN scoreboard `site.web.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates={202206,202209,202409,202410,202411}` and summaries `…/uefa.nations/summary?event={id}` — the 96 League C group matches, read 26 September 2026 on f10 (linescores for the 90-minute and half-time score; box scores for cards, fouls, corners, shots, possession and penalty kicks).
+- Division membership and movement between divisions from ESPN standings `site.api.espn.com/apis/v2/sports/soccer/uefa.nations/standings?season={2020,2022,2024,2026}`, as in the League C lines above.

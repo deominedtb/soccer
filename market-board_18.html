@@ -1,0 +1,715 @@
+<title>Market Board Sunday 13 September 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<style>
+:root{
+  --bg:#EFF2F1; --surface:#FFFFFF; --surface-2:#F6F8F7; --band:#1D3F52;
+  --ink:#13201E; --ink-2:#485856; --muted:#6C7B78; --line:#D4DCDA;
+  --accent:#1D4E73; --accent-soft:#E3EDF3;
+  --good:#2C6E4B; --good-soft:#E2EFE8;
+  --warn:#8C6817; --warn-soft:#F4ECD9;
+  --bad:#A03528;  --bad-soft:#F6E2DF;
+  --brass:#856526;
+  --band-ink:#EAF1F4;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D1315; --surface:#141C1F; --surface-2:#1A2326; --band:#16303D;
+    --ink:#E3EAE8; --ink-2:#A6B4B1; --muted:#82938F; --line:#263236;
+    --accent:#79ACD0; --accent-soft:#152F3C;
+    --good:#66C093; --good-soft:#152C20;
+    --warn:#D2A950; --warn-soft:#2C2617;
+    --bad:#E27A6E;  --bad-soft:#321C19;
+    --brass:#C4A05A;
+    --band-ink:#DCE8EC;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D1315; --surface:#141C1F; --surface-2:#1A2326; --band:#16303D;
+  --ink:#E3EAE8; --ink-2:#A6B4B1; --muted:#82938F; --line:#263236;
+  --accent:#79ACD0; --accent-soft:#152F3C;
+  --good:#66C093; --good-soft:#152C20;
+  --warn:#D2A950; --warn-soft:#2C2617;
+  --bad:#E27A6E;  --bad-soft:#321C19;
+  --brass:#C4A05A;
+  --band-ink:#DCE8EC;
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:"Source Serif 4",Georgia,"Times New Roman",serif;
+  font-size:17px; line-height:1.6;
+  margin:0; padding:0 18px 96px;
+  -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:940px; margin:0 auto;}
+h1,h2,h3,h4,.ui{font-family:Archivo,"Helvetica Neue",Arial,sans-serif}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace; font-variant-numeric:tabular-nums}
+
+/* ---------- masthead ---------- */
+header.top{padding:52px 0 26px; border-bottom:2px solid var(--ink);}
+.eyebrow{
+  font-family:Archivo,sans-serif; font-size:12px; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase; color:var(--accent); margin:0 0 14px;
+}
+h1{
+  font-size:clamp(34px,7vw,54px); line-height:1.02; font-weight:800;
+  letter-spacing:-.02em; margin:0 0 14px; text-wrap:balance;
+}
+.standfirst{font-size:19px; color:var(--ink-2); margin:0; max-width:62ch;}
+.metaline{
+  display:flex; flex-wrap:wrap; gap:8px 20px; margin-top:22px;
+  font-family:Archivo,sans-serif; font-size:12.5px; font-weight:600;
+  letter-spacing:.06em; text-transform:uppercase; color:var(--muted);
+}
+
+/* ---------- generic blocks ---------- */
+section{margin-top:44px}
+h2.sec{
+  font-size:13px; font-weight:700; letter-spacing:.15em; text-transform:uppercase;
+  color:var(--muted); margin:0 0 16px; padding-bottom:8px; border-bottom:1px solid var(--line);
+}
+p{margin:0 0 14px; max-width:70ch}
+.note{
+  background:var(--accent-soft); border-left:3px solid var(--accent);
+  padding:14px 16px; font-size:15.5px; color:var(--ink-2); max-width:none;
+}
+.note strong{color:var(--ink)}
+
+/* ---------- odds table ---------- */
+.scroller{overflow-x:auto; border:1px solid var(--line); background:var(--surface)}
+table{border-collapse:collapse; width:100%; min-width:760px; font-size:14px}
+thead th{
+  background:var(--band); color:var(--band-ink);
+  font-family:Archivo,sans-serif; font-weight:700; font-size:11px;
+  letter-spacing:.09em; text-transform:uppercase;
+  padding:10px 11px; text-align:right; white-space:nowrap;
+}
+thead th:first-child{text-align:left}
+tbody td{
+  padding:10px 11px; border-top:1px solid var(--line); text-align:right;
+  font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums; white-space:nowrap;
+}
+tbody td:first-child{
+  text-align:left; font-family:Archivo,sans-serif; font-weight:600; font-size:14px;
+  white-space:normal; min-width:190px;
+}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td .ko{display:block; font-family:"IBM Plex Mono",monospace; font-weight:400; font-size:11.5px; color:var(--muted); letter-spacing:.02em}
+.unk{color:var(--brass); font-style:italic}
+
+/* ---------- fixture cards ---------- */
+.fixture{
+  background:var(--surface); border:1px solid var(--line);
+  margin-top:30px; scroll-margin-top:12px;
+}
+.fx-head{background:var(--band); color:var(--band-ink); padding:16px 20px 18px}
+.fx-league{
+  font-family:Archivo,sans-serif; font-size:11px; font-weight:700;
+  letter-spacing:.14em; text-transform:uppercase; opacity:.78; margin:0 0 6px;
+}
+.fx-title{font-family:Archivo,sans-serif; font-size:23px; font-weight:700; letter-spacing:-.01em; margin:0; line-height:1.15}
+.fx-sub{font-family:"IBM Plex Mono",monospace; font-size:12.5px; opacity:.8; margin:7px 0 0; letter-spacing:.02em}
+.fx-body{padding:20px}
+
+.fx-odds{
+  display:flex; flex-wrap:wrap; gap:0;
+  border:1px solid var(--line); background:var(--surface-2); margin:0 0 22px;
+}
+.od{flex:1 1 96px; padding:9px 12px; border-right:1px solid var(--line); border-bottom:1px solid var(--line)}
+.od:last-child{border-right:0}
+.od dt{
+  font-family:Archivo,sans-serif; font-size:10px; font-weight:700; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--muted); margin:0 0 3px;
+}
+.od dd{margin:0; font-family:"IBM Plex Mono",monospace; font-size:15px; font-weight:500; font-variant-numeric:tabular-nums}
+
+h3.blk{
+  font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--accent); margin:26px 0 10px;
+}
+h3.blk:first-of-type{margin-top:0}
+.fx-body ul{margin:0 0 14px; padding-left:20px; max-width:70ch}
+.fx-body li{margin-bottom:7px}
+.tag{
+  font-family:Archivo,sans-serif; font-size:11px; font-weight:700;
+  letter-spacing:.07em; text-transform:uppercase; padding:2px 7px; white-space:nowrap;
+}
+.t-low{background:var(--good-soft); color:var(--good)}
+.t-mid{background:var(--warn-soft); color:var(--warn)}
+.t-high{background:var(--bad-soft); color:var(--bad)}
+
+/* market suitability rows */
+.mkt{border-top:1px solid var(--line)}
+.mkt-row{
+  display:grid; grid-template-columns:150px 1fr; gap:0;
+  border-bottom:1px solid var(--line);
+}
+.mkt-name{
+  padding:13px 14px 13px 0; font-family:Archivo,sans-serif;
+  font-weight:700; font-size:14px; line-height:1.3;
+}
+.mkt-name .verdict{display:block; margin-top:6px}
+.mkt-why{padding:13px 0 13px 16px; border-left:3px solid var(--line); font-size:15.5px; color:var(--ink-2)}
+.mkt-row.good .mkt-why{border-left-color:var(--good)}
+.mkt-row.ok .mkt-why{border-left-color:var(--warn)}
+.mkt-row.bad .mkt-why{border-left-color:var(--bad)}
+@media (max-width:620px){
+  .mkt-row{grid-template-columns:1fr; gap:0}
+  .mkt-name{padding-bottom:6px}
+  .mkt-why{padding:0 0 14px 14px}
+}
+
+/* index list */
+.index{display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line)}
+.index a{
+  display:block; background:var(--surface); padding:12px 14px; text-decoration:none;
+  color:var(--ink); font-family:Archivo,sans-serif; font-weight:600; font-size:14.5px;
+}
+.index a:hover,.index a:focus-visible{background:var(--accent-soft); color:var(--accent)}
+.index a span{display:block; font-family:"IBM Plex Mono",monospace; font-weight:400; font-size:11.5px; color:var(--muted); margin-top:3px; letter-spacing:.03em}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+
+footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); font-size:14px; color:var(--muted); max-width:74ch}
+footer a{color:var(--accent)}
+
+/* ---------- not-yet-built fixture ---------- */
+.fixture.pending{opacity:.72}
+.pending-note{
+  font-family:Archivo,sans-serif; font-size:13px; font-weight:600;
+  letter-spacing:.04em; color:var(--muted);
+  background:var(--surface-2); border:1px dashed var(--line);
+  border-radius:8px; padding:14px 16px; margin-top:18px;
+}
+</style>
+
+<div class="wrap">
+
+<header class="top">
+  <p class="eyebrow">Context engine &middot; no picks, no sides, no lines</p>
+  <h1>Eight cards on the games still to kick off, and the week&rsquo;s Champions League nights sit behind four of the favourites &mdash; while the absence lists, not the league tables, carry most of the structure</h1>
+  <p class="standfirst">Fourteen fixtures parsed in typed-file mode from <span class="mono">odds_18.xlsx</span>. The six that had already kicked off when this run began are listed with odds only, and 8 of the eight still to start are built as reduced-depth cards &mdash; none at full depth.</p>
+  <div class="metaline">
+    <span>Sunday 13 September 2026</span>
+    <span>LaLiga jornada 5 &middot; Liga Portugal matchday 6 &middot; Eredivisie round 6 &middot; Ligue 1 matchday 4 &middot; Serie A matchday 4</span>
+    <span>Decimal odds, bet365 IT</span>
+  </div>
+</header>
+
+<section>
+  <h2 class="sec">The one thing shaping every game on this card</h2>
+  <p>The single structural fact running through the eight built cards is that this is the first league weekend after the opening week of European group football, and it shows in who is favoured. Four of the eight favourites played a European match on Wednesday or Thursday. <strong>PSV</strong> drew 1&ndash;1 with Shakhtar on Thursday before hosting Sparta. <strong>PSG</strong> beat Slovan Bratislava 6&ndash;1 on Wednesday before travelling to Brest. <strong>Sporting</strong> came from behind to beat Galatasaray 3&ndash;1 before going to Famalic&atilde;o. <strong>Atl&eacute;tico</strong> lost at Anfield before going to Anoeta. Juventus open their Europa League campaign next week. None of the eight cards could establish how much those coaches will rotate, and in every case that is the unknown most likely to move a row.</p><p>The second fact is where the evidence actually came from. On a four- or five-match sample, the most reliable material on this slate was not the league tables but the absence lists. Atl&eacute;tico travel with one fit striker after Juli&aacute;n &Aacute;lvarez was ruled out in the final training session, joining S&oslash;rloth and Barrios. Real Sociedad are without both first-choice centre-backs. Juventus are without Locatelli, Thuram and Yildiz. Brest are without their captain at centre-back and probably their right-back. Getafe are missing two centre-backs. Those are structural facts in exactly the sense the engine asks for, and most of the market verdicts on the board lean on them.</p><div class="note"><strong>Structural consequence.</strong> Where a card has a well-evidenced row, it is almost always a goals row and almost always driven by a named defensive absence or a named attacking drought. Examples are Brest&ndash;PSG, where six of six league matches involving these two sides reached three goals and Brest have lost their captain at centre-back; PSV&ndash;Sparta, where PSV have not kept a clean sheet in five and Sparta have scored in four straight; and Famalic&atilde;o, with four goals in five. The result family is the weakest on the board: three moneylines are dead (Benfica 1.11, PSV 1.13, PSG 1.23), and two more have favourites whose shape changed in the days before kickoff (Atl&eacute;tico&rsquo;s forwards, Juventus&rsquo;s midfield). No cards or corners market was captured for any fixture, so the seven confirmed officials &mdash; only three of them (Makkelie, Delajod, De Burgos Bengoetxea) with any published record reached &mdash; bear on game state rather than on any priced row.</div>
+</section>
+
+<section>
+  <h2 class="sec">Today&rsquo;s slate &mdash; odds as read from the screenshots</h2>
+  <div class="scroller">
+  <table>
+    <thead>
+      <tr>
+        <th>Fixture</th><th>1</th><th>X</th><th>2</th><th>O2.5</th><th>U2.5</th><th>BTTS&nbsp;Y</th><th>BTTS&nbsp;N</th><th>Cards</th><th>Corners</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Levante &ndash; Barcelona<span class="ko">16:15 CEST</span></td><td>13.00</td><td>8.00</td><td>1.17</td><td>1.20</td><td>4.00</td><td>1.63</td><td>2.15</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Zwolle &ndash; Feyenoord<span class="ko">16:45 CEST</span></td><td>6.00</td><td>4.85</td><td>1.43</td><td>1.35</td><td>2.95</td><td>1.50</td><td>2.40</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Le Mans FC &ndash; Lens<span class="ko">17:15 CEST</span></td><td>5.10</td><td>4.10</td><td>1.62</td><td>1.53</td><td>2.35</td><td>1.55</td><td>2.30</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Manchester United &ndash; Manchester City<span class="ko">17:30 CEST</span></td><td>3.00</td><td>3.75</td><td>2.20</td><td>1.50</td><td>2.40</td><td>1.42</td><td>2.65</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>SV 07 Elversberg &ndash; Bayern Monaco<span class="ko">17:30 CEST</span></td><td>14.00</td><td>8.50</td><td>1.15</td><td>1.11</td><td>5.50</td><td>1.47</td><td>2.50</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Napoli &ndash; Bologna<span class="ko">18:00 CEST</span></td><td>1.87</td><td>3.55</td><td>4.15</td><td>1.85</td><td>1.85</td><td>1.75</td><td>1.97</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Getafe &ndash; Deportivo La Coru&ntilde;a<span class="ko">18:30 CEST</span></td><td>2.70</td><td>2.80</td><td>3.05</td><td>2.80</td><td>1.38</td><td>2.20</td><td>1.60</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Arouca &ndash; Santa Clara<span class="ko">19:00 CEST</span></td><td>2.55</td><td>2.95</td><td>2.90</td><td>2.15</td><td>1.62</td><td>1.85</td><td>1.85</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Benfica &ndash; Gil Vicente<span class="ko">19:00 CEST</span></td><td>1.11</td><td>9.00</td><td>17.00</td><td>1.37</td><td>2.85</td><td>2.25</td><td>1.57</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>PSV Eindhoven &ndash; Sparta Rotterdam<span class="ko">20:00 CEST</span></td><td>1.13</td><td>9.00</td><td>13.00</td><td>1.13</td><td>5.25</td><td>1.52</td><td>2.35</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Brest &ndash; PSG<span class="ko">20:45 CEST</span></td><td>10.00</td><td>6.75</td><td>1.23</td><td>1.33</td><td>3.10</td><td>1.75</td><td>1.95</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Sassuolo &ndash; Juventus<span class="ko">20:45 CEST</span></td><td>5.50</td><td>3.85</td><td>1.63</td><td>1.72</td><td>2.00</td><td>1.72</td><td>2.00</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Real Sociedad &ndash; Atletico Madrid<span class="ko">21:00 CEST</span></td><td>3.30</td><td>3.55</td><td>2.10</td><td>1.57</td><td>2.25</td><td>1.47</td><td>2.50</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Famalicao &ndash; Sporting Lisbona<span class="ko">21:30 CEST</span></td><td>6.50</td><td>4.50</td><td>1.45</td><td>1.75</td><td>1.98</td><td>1.95</td><td>1.77</td><td>&mdash;</td><td>&mdash;</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="note"><strong>Provenance.</strong> Parsed in typed-file mode from <span class="mono">odds_18.xlsx</span>, active tab &ldquo;Today Odds&rdquo;. The workbook is saved in strict OOXML, which the usual reader opens as zero sheets, so the worksheet XML was read directly from the zip and cross-checked against the shared-strings table. Every price was read from a spreadsheet cell; none was derived and none carries an uncertainty marker. Cell A1 carries the typist&rsquo;s source note naming seven screenshots, <span class="mono">Screenshot 2026-09-13 153629.png</span> through <span class="mono">153743.png</span>; those images were not opened. Kickoff times were normalised from Excel&rsquo;s floating-point serialisation (<span class="mono">18:59:59.9999999999968050</span> &rarr; 19:00). The source has no <span class="mono">league</span>, <span class="mono">venue</span>, cards or corners columns, so every competition and stadium on this board was established by research and the Cards and Corners columns are empty for all 14 rows. Double chance is present for all fixtures except the 1X price on Benfica&ndash;Gil Vicente, whose cell is blank. Team names are kept as typed in the table and index (&ldquo;Bayern Monaco&rdquo;, &ldquo;Sporting Lisbona&rdquo;) and rendered conventionally inside built cards.</div>
+  <div class="note"><strong>Completion.</strong> 8 of the 14 cards on this board are built, all as reduced-depth T2 cards (sections A, C and D only, roughly two searches per club plus the referee). No card was built at full T1 depth: the run was racing the kickoff clock, and each card&rsquo;s section A names the research fields it did not pursue. No fixture is pending. The remaining 6 &mdash; f1, f2, f3, f4, f5, f6 &mdash; were listed without research because they had kicked off before the run began, and they were scoped out by instruction rather than by triage; Phase 1.5 was not run on this slate. That selection was made on timing alone, not on the merit of the games. A fixture listed with odds only is not a judgement on it, and every fixture on the sheet appears in the table and the index above. The Premier League and Bundesliga fixtures fall entirely within the unresearched group, which is why neither competition is named in the header.</div>
+</section>
+
+<section>
+  <h2 class="sec">Jump to a fixture</h2>
+  <nav class="jump">
+    <a href="#f1">Levante &ndash; Barcelona<span>16:15 &middot; Estadio Ciutat de Val&egrave;ncia</span></a>
+    <a href="#f2">Zwolle &ndash; Feyenoord<span>16:45 &middot; MAC&sup3;PARK Stadion, Zwolle</span></a>
+    <a href="#f3">Le Mans FC &ndash; Lens<span>17:15 &middot; MMArena, Le Mans</span></a>
+    <a href="#f4">Manchester United &ndash; Manchester City<span>17:30 &middot; Old Trafford, Manchester</span></a>
+    <a href="#f5">SV 07 Elversberg &ndash; Bayern Monaco<span>17:30 &middot; Ursapharm-Arena an der Kaiserlinde, Spiesen-Elversberg</span></a>
+    <a href="#f6">Napoli &ndash; Bologna<span>18:00 &middot; Stadio Diego Armando Maradona, Naples</span></a>
+    <a href="#f7">Getafe &ndash; Deportivo La Coru&ntilde;a<span>18:30 &middot; Coliseum, Getafe</span></a>
+    <a href="#f8">Arouca &ndash; Santa Clara<span>19:00 &middot; Est&aacute;dio Municipal de Arouca</span></a>
+    <a href="#f9">Benfica &ndash; Gil Vicente<span>19:00 &middot; Est&aacute;dio da Luz, Lisbon</span></a>
+    <a href="#f10">PSV Eindhoven &ndash; Sparta Rotterdam<span>20:00 &middot; Philips Stadion, Eindhoven</span></a>
+    <a href="#f11">Brest &ndash; PSG<span>20:45 &middot; Stade Francis-Le Bl&eacute;, Brest</span></a>
+    <a href="#f12">Sassuolo &ndash; Juventus<span>20:45 &middot; Mapei Stadium, Reggio Emilia</span></a>
+    <a href="#f13">Real Sociedad &ndash; Atletico Madrid<span>21:00 &middot; Reale Arena, San Sebasti&aacute;n</span></a>
+    <a href="#f14">Famalicao &ndash; Sporting Lisbona<span>21:30 &middot; Est&aacute;dio Municipal 22 de Junho, Famalic&atilde;o</span></a>
+  </nav>
+</section>
+
+<article class="fixture pending" id="f1">
+  <div class="fx-head">
+    <p class="fx-league">Spain &middot; LaLiga EA Sports &middot; Jornada 5</p>
+    <h2 class="fx-title">Levante &ndash; Barcelona</h2>
+    <p class="fx-sub">16:15 CEST &middot; Estadio Ciutat de Val&egrave;ncia</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>13.00 &middot; 8.00 &middot; 1.17</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.20 / 4.00</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.63 / 2.15</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>4.95 &middot; 1.07 &middot; 1.02</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; kicked off before this run began, and was scoped out by instruction (tier set by the user, not by triage). That is a statement about timing, not a judgement on the game.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f2">
+  <div class="fx-head">
+    <p class="fx-league">Netherlands &middot; Eredivisie &middot; Round 6</p>
+    <h2 class="fx-title">Zwolle &ndash; Feyenoord</h2>
+    <p class="fx-sub">16:45 CEST &middot; MAC&sup3;PARK Stadion, Zwolle</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>6.00 &middot; 4.85 &middot; 1.43</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.35 / 2.95</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.50 / 2.40</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>2.70 &middot; 1.16 &middot; 1.11</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; kicked off before this run began, and was scoped out by instruction (tier set by the user, not by triage). That is a statement about timing, not a judgement on the game.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f3">
+  <div class="fx-head">
+    <p class="fx-league">France &middot; Ligue 1 &middot; Matchday 4</p>
+    <h2 class="fx-title">Le Mans FC &ndash; Lens</h2>
+    <p class="fx-sub">17:15 CEST &middot; MMArena, Le Mans</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>5.10 &middot; 4.10 &middot; 1.62</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.53 / 2.35</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.55 / 2.30</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>2.25 &middot; 1.22 &middot; 1.16</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; kicked off before this run began, and was scoped out by instruction (tier set by the user, not by triage). That is a statement about timing, not a judgement on the game.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f4">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; Premier League</p>
+    <h2 class="fx-title">Manchester United &ndash; Manchester City</h2>
+    <p class="fx-sub">17:30 CEST &middot; Old Trafford, Manchester</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>3.00 &middot; 3.75 &middot; 2.20</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.50 / 2.40</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.42 / 2.65</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>1.65 &middot; 1.25 &middot; 1.38</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; kicked off before this run began, and was scoped out by instruction (tier set by the user, not by triage). That is a statement about timing, not a judgement on the game.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f5">
+  <div class="fx-head">
+    <p class="fx-league">Germany &middot; Bundesliga &middot; Matchday 3</p>
+    <h2 class="fx-title">SV 07 Elversberg &ndash; Bayern Monaco</h2>
+    <p class="fx-sub">17:30 CEST &middot; Ursapharm-Arena an der Kaiserlinde, Spiesen-Elversberg</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>14.00 &middot; 8.50 &middot; 1.15</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.11 / 5.50</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.47 / 2.50</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>5.25 &middot; 1.06 &middot; 1.01</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; kicked off before this run began, and was scoped out by instruction (tier set by the user, not by triage). That is a statement about timing, not a judgement on the game.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f6">
+  <div class="fx-head">
+    <p class="fx-league">Italy &middot; Serie A &middot; Matchday 4</p>
+    <h2 class="fx-title">Napoli &ndash; Bologna</h2>
+    <p class="fx-sub">18:00 CEST &middot; Stadio Diego Armando Maradona, Naples</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.87 &middot; 3.55 &middot; 4.15</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.85 / 1.85</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.75 / 1.97</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>1.22 &middot; 1.28 &middot; 1.90</dd></div>
+    </dl>
+    <div class="pending-note">Not researched on this slate &mdash; kicked off before this run began, and was scoped out by instruction (tier set by the user, not by triage). That is a statement about timing, not a judgement on the game.</div>
+  </div>
+</article>
+
+<article class="fixture" id="f7">
+  <div class="fx-head">
+    <p class="fx-league">Spain &middot; LaLiga EA Sports &middot; Jornada 5</p>
+    <h2 class="fx-title">Getafe &ndash; Deportivo La Coru&ntilde;a</h2>
+    <p class="fx-sub">18:30 CEST &middot; Coliseum, Getafe &middot; A Bordal&aacute;s side with two goals in four hosts a promoted side unbeaten in four with Aubameyang on four goals &mdash; and the shortest under on the sheet &middot; reduced-depth card</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.70 &middot; 2.80 &middot; 3.05</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>2.80 / 1.38</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>2.20 / 1.60</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>1.37 &middot; 1.42 &middot; 1.45</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p><em>Reduced-depth card. Not pursued at this tier: last-season xG, shot volume, home/away split and foul/card rate for either club; this-season xG, BTTS and card counts; Deportivo&rsquo;s full 2025&ndash;26 Segunda table row. Transfer ledgers are carried from the slate-10 and slate-11 cards on these two clubs (fx_10_f11, fx_11_f2), not re-researched.</em></p>
+    <p><strong>Deportivo are promoted</strong> &mdash; second in the 2025&ndash;26 Segunda Divisi&oacute;n, automatic, sealed 25 May 2026, back after an eight-year absence &mdash; and the division has so far not treated them as a promoted side: <strong>unbeaten, two wins and two draws, 8 scored and 5 conceded, sixth</strong>. <strong>Getafe are not promoted</strong>; they finished <strong>7th in 2025&ndash;26 on 51 points with 32 scored and 38 conceded</strong> and qualified for the Conference League, and they have started this season <strong>15th with one win in four &mdash; against Racing Santander &mdash; 2 scored and 8 conceded</strong>. The structural headline is an inversion of the usual promoted-side fixture: the established club has the thin attack and the leaky early numbers, the promoted one has the in-form centre-forward.</p>
+    <ul>
+      <li><strong>Getafe &mdash; turnover high in bodies, low in disruption; manager unchanged.</strong> Jos&eacute; Bordal&aacute;s continues. The summer (per fx_11_f2) was cheap depth for a European calendar: Enes &Uuml;nal back from Bournemouth (about &euro;1.5m in variables), Johan Mojica from Mallorca (about &euro;500,000), centre-back Saba Sazonov free from Torino, Nemanja Gudelj free from Sevilla, Francho Serrano free from Zaragoza, Kochorashvili and Obed Vargas on loan. &Uuml;nal is the one attacking outlet with output &mdash; three goals across his last five appearances. <strong>Gap:</strong> no goalkeeper movement either way.</li>
+      <li><strong>Deportivo &mdash; turnover high, a promoted club spending to stay up; manager unchanged.</strong> Antonio Hidalgo, who won promotion, continues. Leo Rom&aacute;n arrived from Mallorca for <strong>&euro;9m</strong> to take the goalkeeping job; <strong>Pierre-Emerick Aubameyang</strong> came from Marseille (fee unreported); Gijselhart, Ede, Amatucci and Asp Jensen completed the group, for a net balance of &minus;&euro;25.5m. Aubameyang has <strong>four goals and two assists in four matches</strong>.</li>
+      <li><strong>Suspensions / absences.</strong> Getafe: <strong>Zaid Romero suspended</strong> (accumulated yellows); <strong>Kiko Femen&iacute;a</strong> (hamstring, out until October), <strong>Abdel Abqar</strong> (thigh), <strong>Andr&eacute;s Garc&iacute;a</strong> (undetermined) and <strong>Christantus Uche</strong> (ACL and meniscus, out until May 2027) all unavailable &mdash; Romero and Abqar are both centre-backs. Deportivo: <strong>Jonathan Asp Jensen and No&eacute; Carrillo cleared to play</strong>; no absences reported.</li>
+      <li><strong>Sample.</strong> Four league matches each. Getafe: <strong>39 shots, 6 on target, 2 goals</strong>. Deportivo: <strong>33 shots, 14 on target, 8 goals</strong>. The same shot volume produced very different accuracy, which is the most useful single statistic on this card. Last meeting 2018, Getafe 3&ndash;0 at home; Getafe unbeaten in the last five meetings &mdash; a record almost entirely from before Deportivo&rsquo;s eight-year absence. <strong>Gap:</strong> no xG or card series for either side this season.</li>
+      <li><strong>Referee.</strong> <strong>Ricardo de Burgos Bengoetxea</strong> (Basque committee), <strong>confirmed</strong>, with Iv&aacute;n Caparr&oacute;s Hern&aacute;ndez on VAR. His published record: <strong>4.05 yellow and 0.18 red cards per game</strong> (single-sourced). <strong>Gap:</strong> no fouls-per-card or penalties-per-game figure and no history with either club. No cards market was captured; a Bordal&aacute;s side under a four-yellows-a-game official bears on game state and stoppages rather than on any row here.</li>
+    </ul>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-mid">OK &mdash; the under is priced as the settled side and the evidence mostly agrees</span></div><div class="mkt-why">1.38 under against 2.80 over, the shortest under on the sheet. The case for a low total is structural rather than form: Bordal&aacute;s&rsquo;s Getafe scored <strong>32 in 38</strong> last season and have <strong>2 in 4</strong> on six shots on target this one, and the whole Getafe method is to lengthen the game with fouls and stoppages. The counterweight is specific: Getafe have <strong>conceded 8 in 4</strong> and are without two centre-backs (Romero suspended, Abqar injured), against a visiting attack putting 14 of 33 shots on target. The total can break through one side only &mdash; a Deportivo two-or-three &mdash; which is why this is OK rather than well-suited.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; the No leans on one named failure mode</span></div><div class="mkt-why">1.60 No against 2.20 Yes. The No needs one of two things: Getafe not scoring, which they have failed to do in three of four and have &Uuml;nal as the sole outlet, or Deportivo not scoring, which they have not failed to do in any documented match this season. So the No is resting almost entirely on the home attack, which is a narrow but well-evidenced foundation.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous &mdash; three near-equal prices over a genuinely split evidence base</span></div><div class="mkt-why">2.70 / 2.80 / 3.05, with the draw almost the favourite. Venue, European-competition experience and a 32-goal defensive method on one side; a promoted side with the better attacking numbers, the in-form forward and an unchanged coach on the other. Four matches each is too short for either &ldquo;Getafe are poor&rdquo; or &ldquo;Deportivo are good&rdquo; to have become a fact.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Double chance<span class="verdict tag t-mid">OK &mdash; priced as indifference, which matches the 1X2</span></div><div class="mkt-why">1.37 / 1.42 / 1.45 &mdash; all three within eight hundredths. The book is not separating the sides, which is the correct reading of the evidence above; the structure is the moneyline&rsquo;s and dies with it.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li><strong>Getafe&rsquo;s 8 conceded includes the absence problem at centre-back that is still live today.</strong> Romero is suspended and Abqar injured, so the defence that conceded two a game is not the defence Bordal&aacute;s would choose.</li>
+      <li><strong>Deportivo&rsquo;s numbers are four matches old and made by a 37-year-old centre-forward.</strong> Four goals and two assists in four is a rate that depends on one player&rsquo;s fitness.</li>
+      <li><strong>Getafe carry a European calendar.</strong> Conference League qualification last season means midweek load that the promoted side does not have; no rotation information was established for today.</li>
+      <li><strong>Most sensitive:</strong> the result family, three prices within 0.35 on four-match samples. <strong>Least sensitive:</strong> the total, where Getafe&rsquo;s own method caps the event rate from one end regardless of form.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f8">
+  <div class="fx-head">
+    <p class="fx-league">Portugal &middot; Liga Portugal Betclic &middot; Matchday 6</p>
+    <h2 class="fx-title">Arouca &ndash; Santa Clara</h2>
+    <p class="fx-sub">19:00 CEST (18:00 local) &middot; Est&aacute;dio Municipal de Arouca &middot; Fifth against fourth or sixth, one point apart, and the book barely separates them &mdash; high uncertainty &middot; reduced-depth card</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.55 &middot; 2.95 &middot; 2.90</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>2.15 / 1.62</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.85 / 1.85</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>1.38 &middot; 1.35 &middot; 1.47</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p><em>Reduced-depth card. Not pursued at this tier: last-season goals, xG, shot volume, home/away split and foul/card rate for either club; this-season xG and card counts; fees on any movement. Neither club has been carded on a prior slate, so there is no archive to draw on.</em></p>
+    <p><strong>Neither club is promoted.</strong> Arouca finished <strong>8th in 2025&ndash;26</strong>. Santa Clara&rsquo;s last-season finish was not established. Both have started well: <strong>Arouca 10 points from five (W&ndash;W&ndash;L&ndash;W&ndash;D)</strong>, their defeat coming against Porto, their last match a 0&ndash;0 at Estoril saved by goalkeeper Ignacio de Arruabarrena; <strong>Santa Clara 11 points from five, unbeaten (D&ndash;W&ndash;W&ndash;D&ndash;W), 9 scored and 3 conceded</strong>, their last match a 4&ndash;0 home win over Rio Ave. The structural headline is that almost nothing separates them on paper, and the sources disagree on several of the few things that would.</p>
+    <ul>
+      <li><strong>Arouca &mdash; low turnover, manager unchanged.</strong> Vasco Seabra continues; the club&rsquo;s own framing was &ldquo;fewer changes&rdquo;. Out: <strong>Omar Fayed to Fenerbah&ccedil;e</strong> and <strong>Yellu Santiago to Hellas Verona</strong>. In: Hyun-Ju Lee, Javi S&aacute;nchez and Si-hoo Park named as additions to a 30-player pre-season group. Ivan Barbero leads the scoring with <strong>three in five</strong>. <strong>Gap:</strong> no fee on any movement; no goalkeeper, centre-back or defensive-midfield arrival established.</li>
+      <li><strong>Santa Clara &mdash; high turnover, and the head coach is in dispute between sources.</strong> One source names <strong>Vasco Matos</strong> as continuing, another names <strong>Petit</strong> as head coach; this card does not choose. Eleven signings including goalkeeper <strong>Lucas Fran&ccedil;a (ex-Nacional)</strong>, defender Emanuel Moreira (ex-Feirense), Brazilian midfielder Vitinho (ex-Cruzeiro) and forward Sorriso (ex-Athletico Paranaense), with Rildo and Alysson back from loan. Out: <strong>Gabriel Silva, Gabriel Batista, Serginho and Ven&acirc;ncio</strong> &mdash; described as some of the club&rsquo;s defining players of recent seasons. Gon&ccedil;alo Paci&ecirc;ncia has <strong>four goals</strong>. <strong>Conflict logged:</strong> a player named Sorriso also appears in a probable Famalic&atilde;o eleven on this slate (f14); unresolved. <strong>Gap:</strong> no fees published.</li>
+      <li><strong>Suspensions / absences.</strong> Arouca: <strong>Miguel Puche</strong> an injury concern. Santa Clara: <strong>Matheus Ara&uacute;jo</strong> out long-term with a cruciate ligament injury. No suspensions reported.</li>
+      <li><strong>Sample.</strong> Five league matches each. Santa Clara average <strong>1.8 scored and 0.6 conceded</strong>; Arouca are unbeaten in their last six home league matches going back to April. Against that, Santa Clara are reported to have only <strong>three wins from nineteen recent top-flight away trips</strong>. <strong>Conflict logged:</strong> head-to-head is reported three incompatible ways &mdash; Arouca winning three of the last six, Arouca failing to beat Santa Clara in the last three (both drawn last season), and Santa Clara winning three of the last four. None is used. League positions are also reported as 5th v 4th in one source and 5th v 6th in another.</li>
+      <li><strong>Referee.</strong> <strong>V&iacute;tor Ferreira</strong>, named by a match preview; treated as <strong>provisional</strong> because no federation designation list was reached. <strong>Gap:</strong> no cards-per-game, fouls-per-card or penalty figure, and no club history, was established. No cards market was captured.</li>
+    </ul>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-mid">OK &mdash; the most evidenced row on a thin card</span></div><div class="mkt-why">1.62 under against 2.15 over. Santa Clara have conceded three in five and Arouca&rsquo;s last match was a goalkeeper-driven 0&ndash;0; a visiting side with three away wins in nineteen recent trips does not usually attack a road fixture. The counter is Santa Clara&rsquo;s 4&ndash;0 last week and 1.8 scored per game. Both defensive samples point the same way, which is the only place on this card where the two clubs&rsquo; evidence agrees.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">BTTS<span class="verdict tag t-high">Dangerous &mdash; priced at exact indifference</span></div><div class="mkt-why">1.85 both ways. The book has no view, and neither does the evidence: a visiting defence conceding 0.6 a game against a home side unbeaten at this ground since April, with each attack led by a three- or four-goal forward. When the price is even and the head-to-head is reported three contradictory ways, there is no structural fact left to lean on.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous &mdash; three prices inside 0.40 and a disputed head coach</span></div><div class="mkt-why">2.55 / 2.95 / 2.90. A home record unbeaten since April against a visitor with the better goal difference and a poor away history. When one side&rsquo;s head coach cannot be established from the sources, the result family carries an unknown at its centre.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Double chance<span class="verdict tag t-mid">OK &mdash; indifference, correctly priced</span></div><div class="mkt-why">1.38 / 1.35 / 1.47. The 12 is shortest &mdash; the book rates a draw less likely than either single side &mdash; but the spread is 0.12 and it restates the moneyline.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li><strong>Santa Clara lost four defining players and signed eleven.</strong> A 9&ndash;3 goal record after five matches with that much turnover is a strong start, but the sample is short.</li>
+      <li><strong>The visiting head coach is not established.</strong> Two sources give two names; every stylistic inference about the visitors is weaker for it.</li>
+      <li><strong>Arouca&rsquo;s home run dates to April</strong> and spans two squads and a summer; it is a venue fact more than a team fact.</li>
+      <li><strong>Most sensitive:</strong> BTTS and the result, both at or near indifference with contradictory head-to-head data. <strong>Least sensitive:</strong> the total, where both defensive samples point the same way.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f9">
+  <div class="fx-head">
+    <p class="fx-league">Portugal &middot; Liga Portugal Betclic &middot; Matchday 6</p>
+    <h2 class="fx-title">Benfica &ndash; Gil Vicente</h2>
+    <p class="fx-sub">19:00 CEST (18:00 local) &middot; Est&aacute;dio da Luz, Lisbon &middot; A new head coach six wins into his tenure, 54 league matches unbeaten, against a side coming off its first defeat &mdash; to a promoted club &middot; reduced-depth card</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.11 &middot; 9.00 &middot; 17.00</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.37 / 2.85</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>2.25 / 1.57</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>&mdash; &middot; 1.04 &middot; 6.00</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p><em>Reduced-depth card. Not pursued at this tier: last-season position, goals, xG, shot volume and card rate for both clubs; this-season goal columns for Gil Vicente; Gil Vicente&rsquo;s head coach and window. Benfica&rsquo;s summer is documented from planning reports rather than a completed ledger, and is labelled as such.</em></p>
+    <p><strong>Neither club is promoted.</strong> The structural headline is on the home bench. <strong>Jos&eacute; Mourinho left for Real Madrid</strong> with a year still on his contract, and <strong>Marco Silva</strong> was presented as his successor. That is a manager change this summer, and the early evidence says it has not disrupted results: <strong>six straight wins in all competitions</strong>, including a <strong>6&ndash;2 aggregate win over AGF in the Europa League qualifying play-off</strong> and a <strong>4&ndash;0 at Moreirense</strong> last time out, and a Benfica league run that now stands at <strong>54 matches unbeaten</strong>, two short of the club record set in 1976&ndash;79. Gil Vicente are <strong>7th</strong> and arrive from their <strong>first defeat of the season, 1&ndash;0 to newly promoted Acad&eacute;mico de Viseu</strong>.</p>
+    <ul>
+      <li><strong>Benfica &mdash; manager changed this summer; the completed window was not established.</strong> Marco Silva replaced Mourinho. The planning reports name two centre-backs, a left winger and a striker as targets, with <strong>Nicol&aacute;s Otamendi</strong>, Sidney Cabral and Bruma expected to leave and academy players An&iacute;sio Cabral, Daniel Banjaqui and Jos&eacute; Neto promoted into the plans. <strong>Conflict logged:</strong> Jo&atilde;o Palhinha is named as a Benfica target in one report, while the slate-15 card on Bayern (fx_15_f3) records him joining Bayern from Tottenham. <strong>Gap:</strong> no confirmed arrival, departure or fee for Benfica&rsquo;s 2026 summer was established, so there is no goalkeeper, centre-back or defensive-midfield ledger here.</li>
+      <li><strong>Gil Vicente &mdash; not researched beyond form at this tier.</strong> <strong>Gap:</strong> head coach, window, fees and last-season finish all unestablished.</li>
+      <li><strong>Suspensions / absences.</strong> Benfica: <strong>Alexander Bah</strong> out (shoulder), with 18-year-old academy right-back <strong>Daniel Banjaqui</strong> expected to continue. Gil Vicente: none established, which is a gap rather than a clean bill.</li>
+      <li><strong>Sample.</strong> Benfica are second; their points total is reported as <strong>16</strong> in one source and as <strong>13, level with Sporting</strong> in another. Sixteen from five matches is not possible, so either Benfica have played a rearranged sixth match (the Moreirense game is described as &ldquo;midweek&rdquo;) or one figure is wrong; unresolved. Head-to-head: <strong>Benfica unbeaten in the last eight</strong>, winning the <strong>last four at the Luz</strong>.</li>
+      <li><strong>Referee.</strong> <strong>Jo&atilde;o Gon&ccedil;alves</strong>, <strong>confirmed</strong> with a full team: Pedro Ribeiro and Miguel Martins assistants, Lu&iacute;s Filipe fourth official, Paulo Barradas on VAR, Jonathan Babo AVAR. <strong>Gap:</strong> no cards, fouls-per-card or penalty figures were established. No cards market was captured.</li>
+    </ul>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous &mdash; result dead at 1.11</span></div><div class="mkt-why">1.11 / 9.00 / 17.00. Every structural fact on this card &mdash; 54 unbeaten, eight unbeaten in the head-to-head, four straight home wins against this opponent, six straight wins under the new coach &mdash; is already inside a 1.11 price. Nothing is left for evidence to discover, and the one unknown is the away side, which this card did not research.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-mid">OK &mdash; the over is carried by one side, on documented scorelines</span></div><div class="mkt-why">1.37 over against 2.85 under. The mechanism is the home attack alone: 6&ndash;2 on aggregate against AGF and 4&ndash;0 at Moreirense are Marco Silva&rsquo;s documented margins. The weakness is that Gil Vicente&rsquo;s goal columns were not established, so the away half of the total is unevidenced, and a 1&ndash;0 defeat to a promoted side is a low-scoring result, not a collapse.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; the No is priced shorter, for a structural reason</span></div><div class="mkt-why">1.57 No against 2.25 Yes. A favourite this short tends to produce scorelines where the underdog does not score. Against that, the Benfica defence has had a rebuild planned at centre-back (two targets named, Otamendi expected out) that this card could not confirm, and an 18-year-old at right-back. The No is well structured; the specific defensive evidence under it is missing.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Double chance<span class="verdict tag t-high">Dangerous &mdash; dead, and 1X not captured</span></div><div class="mkt-why">12 at 1.04 and X2 at 6.00; the 1X cell was blank in the source. This is the moneyline restated and is dead with it.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li><strong>The 54-match unbeaten run mostly belongs to earlier regimes.</strong> Marco Silva has six of those matches; the run was built largely under his predecessors.</li>
+      <li><strong>Benfica&rsquo;s midweek load is real.</strong> A Europa League play-off in August and a possible rearranged league fixture mean more minutes than a five-match table suggests.</li>
+      <li><strong>The away side is essentially unresearched.</strong> Gil Vicente&rsquo;s coach, window and goal columns are all gaps, so any row that depends on them is a guess the card declines to make.</li>
+      <li><strong>Most sensitive:</strong> BTTS, which turns on an unresearched away attack and an unconfirmed home defence. <strong>Least sensitive:</strong> the result, dead at 1.11 for both sides at once.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f10">
+  <div class="fx-head">
+    <p class="fx-league">Netherlands &middot; Eredivisie &middot; Round 6</p>
+    <h2 class="fx-title">PSV Eindhoven &ndash; Sparta Rotterdam</h2>
+    <p class="fx-sub">20:00 CEST &middot; Philips Stadion, Eindhoven &middot; Eighteen goals in five for the champions, no clean sheet yet, against a new coach whose squad lost ten players, goalkeeper and centre-forward among them &middot; reduced-depth card</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.13 &middot; 9.00 &middot; 13.00</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.13 / 5.25</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.52 / 2.35</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>1.01 &middot; 1.04 &middot; 5.50</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p><em>Reduced-depth card. Not pursued at this tier: last-season position, goals, xG and card rate for Sparta; this-season xG and cards for both; fees on Sparta&rsquo;s movements. PSV&rsquo;s window is carried from the slate-15 card (fx_15_f2).</em></p>
+    <p><strong>Neither club is promoted.</strong> PSV are three-time defending champions, won the 2025&ndash;26 title (their 27th) and are <strong>second on 13 points from five</strong>. After a 2&ndash;2 at Fortuna Sittard they have won four straight: <strong>2&ndash;1 Excelsior, 5&ndash;1 Groningen, 6&ndash;1 Utrecht and 3&ndash;1 at Ajax</strong>. That is <strong>18 scored and 6 conceded, with no clean sheet in five</strong>. Midweek they drew <strong>1&ndash;1 at home to Shakhtar</strong> in the Champions League, ending the winning run. Sparta are <strong>11th on five points (one win, two draws, two defeats)</strong>, last playing a 2&ndash;2 at home to Zwolle. The structural headline is that Sparta&rsquo;s head coach and a large share of its senior core are new.</p>
+    <ul>
+      <li><strong>PSV &mdash; medium turnover in midfield; manager unchanged.</strong> Peter Bosz continues. In: Kodai Sano from NEC (<strong>&euro;14.5m</strong>), Sven Mijnans from AZ (<strong>&euro;13m</strong>), Filip Kosti&cacute; free. Out: Joey Veerman, Ismael Saibari, reserve goalkeeper Jo&euml;l Drommel. Ricardo Pepi leads with <strong>three goals</strong>; Van Bommel, Dest and Bouhamdi have two assists each. <strong>Gap:</strong> no centre-back or first-choice goalkeeper movement.</li>
+      <li><strong>Sparta &mdash; high turnover, new head coach.</strong> <strong>Rogier Meijer</strong>, 44, ex-NEC and most recently assistant at Bayer Leverkusen, replaced Maurice Steijn. Out: goalkeeper Jo&euml;l Drommel back to PSV and on to Twente; Shurandy Sambo back to Burnley; Vito van Crooij back to NEC; Joshua Kitolano to Bod&oslash;/Glimt, Pelle Clement to Groningen and Tobias Lauritsen to Sampdoria at the end of their contracts; Sa&iuml;d Bakari and Patrick van Aanholt unattached; Jonathan de Guzm&aacute;n retired; Lance Duivestijn sold to Darmstadt. Weighted as the spec asks: the <strong>first-choice goalkeeper</strong> and a <strong>centre-forward (Lauritsen)</strong> both left. <strong>Gap:</strong> arrivals and fees not established.</li>
+      <li><strong>Suspensions / absences.</strong> Sparta: <strong>Max de Ligt</strong> the only confirmed absentee. PSV: none established at this tier.</li>
+      <li><strong>Sample.</strong> Five league matches each. Sparta have <strong>scored in four straight</strong>. PSV average <strong>over four goals per game across their last five home league matches</strong>. Sparta have lost the <strong>last eight meetings</strong> in this fixture.</li>
+      <li><strong>Referee.</strong> <strong>Danny Makkelie</strong>, <strong>confirmed</strong> by the Eredivisie round-six list. 2025&ndash;26: <strong>2.80 yellow cards and 24.00 fouls per game</strong>, which works out at roughly <strong>8.6 fouls per yellow</strong> &mdash; an official who lets play run. <strong>Gap:</strong> no penalty rate or club history. No cards market was captured.</li>
+    </ul>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous &mdash; result dead at 1.13</span></div><div class="mkt-why">1.13 / 9.00 / 13.00. Eight straight head-to-head wins, champions at home and a new coach with a stripped squad opposite are all already in a 1.13 price. The one tempering fact &mdash; a Thursday Champions League night against Shakhtar &mdash; is too small to reopen it.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-high">Dangerous &mdash; the over is dead at 1.13</span></div><div class="mkt-why">1.13 over against 5.25 under: the goals total is as settled as the result. PSV&rsquo;s 18 in five, 5&ndash;1 and 6&ndash;1 at home, and four-plus a game at home are fully absorbed. The structural wrinkle is Makkelie&rsquo;s 8.6 fouls per yellow, which favours continuous play; it points the same way as the price and so adds nothing the book has not taken.</div></div>
+      <div class="mkt-row good"><div class="mkt-name">BTTS<span class="verdict tag t-low">Well-suited &mdash; the one live row, with two documented mechanisms</span></div><div class="mkt-why">1.52 Yes against 2.35 No. Both halves of the Yes have named evidence behind them: <strong>PSV have not kept a clean sheet in five league matches</strong> and conceded against Shakhtar on Thursday, and <strong>Sparta have scored in four straight</strong>, including two against Zwolle. The No needs Sparta, without their centre-forward Lauritsen and against a side that has conceded in every match, to draw a blank. It is the only market on this card still two-sided, and it is where the specific facts sit.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Double chance<span class="verdict tag t-high">Dangerous &mdash; dead</span></div><div class="mkt-why">1.01 / 1.04 / 5.50 &mdash; the moneyline restated at its most compressed.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li><strong>PSV played a Champions League match on Thursday.</strong> Bosz&rsquo;s rotation for a Sunday home game against an 11th-placed side was not established; a rotated eleven affects the BTTS mechanism more than the result.</li>
+      <li><strong>Sparta&rsquo;s &ldquo;scored in four straight&rdquo; was made against a mid-table schedule</strong>, and the goals came under a coach three months into the job.</li>
+      <li><strong>Eight straight head-to-head defeats span several Sparta squads</strong> and are a club fact, not a team one.</li>
+      <li><strong>Most sensitive:</strong> BTTS, the only live row, which depends on PSV&rsquo;s selection after Thursday. <strong>Least sensitive:</strong> result and total, both closed.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f11">
+  <div class="fx-head">
+    <p class="fx-league">France &middot; Ligue 1 &middot; Matchday 4</p>
+    <h2 class="fx-title">Brest &ndash; PSG</h2>
+    <p class="fx-sub">20:45 CEST &middot; Stade Francis-Le Bl&eacute;, Brest &middot; The European champions, winless in three league matches, visit an unbeaten Brest missing their captain at centre-back &middot; reduced-depth card</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>10.00 &middot; 6.75 &middot; 1.23</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.33 / 3.10</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.75 / 1.95</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>4.05 &middot; 1.09 &middot; 1.04</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p><em>Reduced-depth card. Not pursued at this tier: last-season position, goals, xG, shots and card rates for both clubs (PSG&rsquo;s 2025&ndash;26 Ligue 1 finish was already a logged gap on fx_14_f5); Brest&rsquo;s summer ledger, which fx_13_f19 could not establish either. The PSG window and the Brest managerial context are carried from those two cards.</em></p>
+    <p><strong>Neither club is promoted.</strong> PSG are the holders of the Champions League and the Super Cup, and have made their <strong>worst domestic start in fourteen years: 2&ndash;2 at Rennes, 2&ndash;2 at Lille, 1&ndash;2 at home to Monaco &mdash; two points, 5 scored, 6 conceded, 13th or 14th</strong>. In midweek they beat <strong>Slovan Bratislava 6&ndash;1</strong> in the Champions League, with <strong>Ousmane Demb&eacute;l&eacute;</strong> scoring twice. Brest are <strong>7th and unbeaten on five points</strong>: <strong>2&ndash;2 with Le Mans, 2&ndash;2 with Toulouse, then 2&ndash;1 at Le Havre</strong>, with midfielder <strong>Kamory Doumbia</strong> scoring twice there and now Ligue 1&rsquo;s top scorer on <strong>four</strong>. The structural headline: <strong>all six of the league matches between these two sides this season &mdash; three each &mdash; produced at least three goals</strong>.</p>
+    <ul>
+      <li><strong>PSG &mdash; enormous turnover in the forward line; manager unchanged.</strong> Luis Enrique continues. Out (per fx_14_f5): Bradley Barcola to Liverpool (reported &euro;125m plus &euro;20m), Gon&ccedil;alo Ramos to Milan (&euro;74m), Randal Kolo Muani to Juventus (&euro;38m plus &euro;12m). In: Ferran Torres (&euro;48.5m), Maghnes Akliouche (&euro;50m), Mika Godts (&euro;45m), Lucas Digne (&euro;7m). The goalkeeper (Chevalier), the back line and the midfield were untouched.</li>
+      <li><strong>Brest &mdash; an internal succession after a bereavement.</strong> <strong>Julien Lachuer</strong> was appointed on 27 June 2026 after &Eacute;ric Roy&rsquo;s death, having been on Roy&rsquo;s staff since 2023, and the sporting director Gr&eacute;gory Lorenzi left for Marseille. <strong>Gap:</strong> Brest&rsquo;s 2026 ins, outs and fees remain unestablished across two slates.</li>
+      <li><strong>Suspensions / absences.</strong> Brest are without <strong>captain and centre-back Brendan Chardonnet</strong> (calf), <strong>Mamady Diambou</strong> (knock), <strong>Romain Cagnon</strong> and <strong>Noah Edjouma</strong>; right-back <strong>Kenny Lala</strong> is highly doubtful (ankle). So both first-choice defenders on the right and centre are in question. PSG: <strong>Nuno Mendes is eligible again</strong> after a red-card suspension. <strong>Conflict logged:</strong> one wire report lists Mendes, Pacho and Za&iuml;re-Emery as injured for a game against Brest; its date could not be tied to this season and it contradicts the suspension-return report, so it is not used.</li>
+      <li><strong>Sample.</strong> Three league matches each. Brest&rsquo;s three produced 4, 4 and 3 goals; PSG&rsquo;s produced 4, 4 and 3. PSG&rsquo;s coach has pointed to expected goals in his side&rsquo;s favour during the winless run. <strong>Gap:</strong> the xG figures themselves were not obtained.</li>
+      <li><strong>Referee.</strong> <strong>Willy Delajod</strong>, <strong>confirmed</strong> by the LFP matchday-4 list, with Valentin Evrard and Nicolas Durand as assistants, Thomas Vincent as fourth official, and Hamid Guenaoui and Ludovic Remy on video. <strong>144 Ligue 1 matches</strong>. 2025&ndash;26: <strong>17 matches, 3.12 yellows, 0.12 reds and 24.82 fouls per game</strong>, which works out at roughly <strong>8 fouls per yellow</strong>. <strong>Gap:</strong> no penalty rate or club history. No cards market was captured.</li>
+    </ul>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-mid">OK &mdash; short, but the evidence is unusually consistent</span></div><div class="mkt-why">1.33 over. Six of six league matches involving these two sides this season have reached three goals, PSG scored six on Wednesday, and Brest are without their captain at centre-back and probably their right-back. The reason this is OK rather than well-suited is the price: 1.33 has absorbed all of that, and three-match samples are the thinnest kind.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; the Yes has two named mechanisms</span></div><div class="mkt-why">1.75 Yes against 1.95 No, near indifference. For the Yes: Brest have scored two in every league match, and PSG have conceded in every league match (six in three). For the No: PSG&rsquo;s back line is the unchanged Champions League-winning one, Nuno Mendes returns, and Brest are missing Diambou from midfield. The book&rsquo;s near-even price says it sees the same split; the structural lean is towards the Yes, because both of its halves are documented in every match this season.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous &mdash; short favourite with a winless league record</span></div><div class="mkt-why">10.00 / 6.75 / 1.23. The price rests on squad quality, the 6&ndash;1 midweek and an untouched defence; the league record says three matches without a win and two goals conceded in each of them. A 1.23 favourite that has not won in the division this season is exactly where the result family misleads.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Double chance<span class="verdict tag t-high">Dangerous &mdash; dead on the visitors&rsquo; side</span></div><div class="mkt-why">X2 at 1.04, 12 at 1.09, 1X at 4.05. The moneyline restated; nothing beyond it.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li><strong>PSG&rsquo;s winless start came with a forward line three players removed from last season.</strong> Barcola, Ramos and Kolo Muani out, Torres, Akliouche and Godts in: the attacking combinations are new, and the 6&ndash;1 came against Slovan, not a Ligue 1 side.</li>
+      <li><strong>Brest&rsquo;s back line is not the one that took five unbeaten points.</strong> Chardonnet is out and Lala doubtful, so the defence that conceded five in three is further weakened.</li>
+      <li><strong>Three matches each, with PSG on a Wednesday-to-Sunday turnaround.</strong> Rotation after a Champions League night was not established.</li>
+      <li><strong>Most sensitive:</strong> the result, a 1.23 price on a winless league side. <strong>Least sensitive:</strong> the total, where six of six relevant league matches and both defensive absence lists point the same way.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f12">
+  <div class="fx-head">
+    <p class="fx-league">Italy &middot; Serie A &middot; Matchday 4</p>
+    <h2 class="fx-title">Sassuolo &ndash; Juventus</h2>
+    <p class="fx-sub">20:45 CEST &middot; Mapei Stadium &ndash; Citt&agrave; del Tricolore, Reggio Emilia &middot; One goal conceded in three against five, and thirteen confirmed absentees and three late doubts between the two squads &middot; reduced-depth card</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>5.50 &middot; 3.85 &middot; 1.63</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.72 / 2.00</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.72 / 2.00</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>2.25 &middot; 1.25 &middot; 1.14</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p><em>Reduced-depth card. Not pursued at this tier: xG, shot volume, home/away split and foul and card rates for either club in either season; the referee&rsquo;s record. Both summer windows are carried from the slate-9 cards (fx_9_f13, fx_9_f17).</em></p>
+    <p><strong>Neither club is promoted.</strong> Juventus finished <strong>6th in 2025&ndash;26 on 69 points, 61 scored and 34 conceded</strong>; Sassuolo <strong>11th on 49 points, 46 scored and 50 conceded</strong>. This season: <strong>Juventus 7 points from three &mdash; 1&ndash;0 at Frosinone, 2&ndash;0 against Parma, 1&ndash;1 against Milan (a late Federico Gatti equaliser) &mdash; 4 scored, 1 conceded, 6th</strong>. <strong>Sassuolo 4 points &mdash; 1&ndash;2 against Atalanta, 2&ndash;1 against Torino, 2&ndash;2 at Bologna &mdash; 5 scored, 5 conceded, 11th</strong>. The structural headline is the gap in defensive samples: one goal conceded in three for the visitors, five for the hosts, with both sides&rsquo; last-season defensive records pointing the same way.</p>
+    <ul>
+      <li><strong>Juventus &mdash; medium turnover; manager extended.</strong> Luciano Spalletti continues on a deal to 2028. In (per fx_9_f17): Kerim Alajbegovi&cacute; from Leverkusen (reported &euro;32m), Randal Kolo Muani from PSG, Jhon Lucum&iacute; from Bologna, Ekhator. Juventus open their <strong>Europa League campaign against NEC Nijmegen</strong> next week, so this is the last league match before a two-competition calendar begins.</li>
+      <li><strong>Sassuolo &mdash; very high turnover, mostly loans; head coach new last summer.</strong> Alberto Aquilani replaced Fabio Grosso. Five of eight named arrivals were loans (Adzic from Juventus, Bowie, Dominguez, Leysen, Obrador); Muric was bought in goal and Walukiewicz from Torino. <strong>Gap:</strong> no fees published.</li>
+      <li><strong>Suspensions / absences &mdash; long on both sides.</strong> <strong>Juventus:</strong> <strong>Kenan Yildiz, Khephren Thuram, Manuel Locatelli</strong> (torn meniscus, four to six months), <strong>Juan Cabal, Jeremie Boga and Ekhator</strong> out; <strong>Weston McKennie and Andrea Cambiaso</strong> face late fitness tests; Sarr doubtful. That is the captain, both first-choice central midfielders and the best forward. <strong>Sassuolo:</strong> <strong>Fali Cand&egrave;, Edoardo Pieragnolo, Ismael Kon&eacute;, Cristian Volpato, Daniel Boloca, Sebastian Walukiewicz and Bakola</strong> out; <strong>Domenico Berardi</strong> has regained full fitness and is expected to start.</li>
+      <li><strong>Sample.</strong> Three league matches each. Probable elevens: Sassuolo (4&ndash;2&ndash;3&ndash;1) Muric; Cinquegrano, Idzes, Leysen, Doig; Lipani, Mati&cacute;; Adzic; Berardi, Bowie, Lauriente. Juventus (4&ndash;2&ndash;3&ndash;1) Vicario; Kalulu, Bremer, Lucum&iacute;, &Ccedil;elik; Douglas Luiz, Koopmeiners; Concei&ccedil;&atilde;o, Nico Gonz&aacute;lez, Alajbegovi&cacute;; Kolo Muani. <strong>Gap:</strong> no xG, shots or cards for either side.</li>
+      <li><strong>Referee.</strong> <strong>Juan Luca Sacchi</strong> (Macerata), <strong>confirmed</strong> by the AIA designation, with Imperiale and Miniutti as assistants, Zufferli as fourth official, Ghersini on VAR and Piccinini as AVAR. <strong>Gap:</strong> no cards, fouls-per-card or penalty figures and no Juventus history were established. No cards market was captured.</li>
+    </ul>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-mid">OK &mdash; the two defensive samples disagree, and the absences blur both</span></div><div class="mkt-why">1.72 over against 2.00 under. Juventus matches this season have produced 1, 2 and 2 goals &mdash; none over 2.5 &mdash; while Sassuolo&rsquo;s produced 3, 3 and 4 &mdash; all over. The book has split the difference. What moves it is the absence list: Juventus without Locatelli and Thuram lose the midfield screen that underwrote one goal conceded in three, and Sassuolo without Cand&egrave; and Walukiewicz lose two defenders. The evidence genuinely runs both ways.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; the Yes needs a goal against a one-conceded defence</span></div><div class="mkt-why">1.72 Yes against 2.00 No, identical to the total&rsquo;s prices. The Yes requires Sassuolo to score against a back line that conceded once in three; Sassuolo have scored in all three, including twice at Bologna, and Berardi returns. The Juventus half is the easier one against a defence conceding five in three. The Juventus clean-sheet record was made with Locatelli and Thuram in front of it.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous &mdash; the favourite&rsquo;s depth is the unknown</span></div><div class="mkt-why">5.50 / 3.85 / 1.63. A 1.63 away price on a Juventus side without its captain, both central midfielders and its best forward, a week before a European calendar starts. The price reflects squad quality and a one-conceded defence; the structural risk is that Spalletti&rsquo;s available midfield is not the one that produced those numbers.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Double chance<span class="verdict tag t-mid">OK &mdash; X2 at 1.14 is the moneyline with the draw added</span></div><div class="mkt-why">1X 2.25, 12 1.25, X2 1.14. Structurally it rests on the same defensive sample as the moneyline, with a draw cushion that the Juventus record &mdash; one draw in three &mdash; makes relevant.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li><strong>Juventus&rsquo;s one-conceded sample predates Locatelli&rsquo;s surgery</strong> and was made against Frosinone (promoted), Parma and Milan. The midfield in front of that back line has since lost its two anchors.</li>
+      <li><strong>Sassuolo&rsquo;s five-conceded sample includes Atalanta and a road trip to Bologna</strong>, and two of the defenders involved are now out.</li>
+      <li><strong>Berardi&rsquo;s return is the single biggest change in the home attack.</strong> Three matches of evidence were made largely without him.</li>
+      <li><strong>Most sensitive:</strong> the total, where the samples disagree and both absence lists cut into the evidence. <strong>Least sensitive:</strong> double chance X2, which the Juventus depth problem hits least.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f13">
+  <div class="fx-head">
+    <p class="fx-league">Spain &middot; LaLiga EA Sports &middot; Jornada 5</p>
+    <h2 class="fx-title">Real Sociedad &ndash; Atl&eacute;tico Madrid</h2>
+    <p class="fx-sub">21:00 CEST &middot; Reale Arena (Anoeta), San Sebasti&aacute;n &middot; Atl&eacute;tico travel after two away defeats with Juli&aacute;n &Aacute;lvarez, S&oslash;rloth and Barrios all out &mdash; one fit striker &mdash; against a home side missing its suspended centre-back &middot; reduced-depth card</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>3.30 &middot; 3.55 &middot; 2.10</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.57 / 2.25</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.47 / 2.50</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>1.70 &middot; 1.28 &middot; 1.32</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p><em>Reduced-depth card. Not pursued at this tier: this-season goal columns, xG and cards for both clubs; last-season xG, shots and foul rates; Martínez Munuera&rsquo;s numbers. Both summer windows are carried from earlier cards (fx_9_f16 for Real Sociedad, fx_14_f3 for Atl&eacute;tico).</em></p>
+    <p><strong>Neither club is promoted.</strong> Real Sociedad finished <strong>10th in 2025&ndash;26, 59 scored and 61 conceded</strong> &mdash; a high-event, low-control profile. One preview adds that they <strong>beat Atl&eacute;tico in last season&rsquo;s Copa del Rey final</strong> (single-sourced). This season they lost their first two league matches and have been <strong>unbeaten in three since, 9th on 7 points</strong>, the last a <strong>3&ndash;2 over Elche</strong> in which they led 2&ndash;0, had <strong>Jon Mart&iacute;n sent off</strong>, conceded twice and won through Luka Su&#269;i&cacute; in the 90th minute. Atl&eacute;tico finished <strong>4th</strong> last season; this season they <strong>beat M&aacute;laga, drew with Villarreal and beat Sevilla</strong>, then lost <strong>0&ndash;3 at Athletic Club on 5 September</strong> and lost again away at <strong>Liverpool in the Champions League</strong> on Wednesday. The structural headline is the visiting forward line: <strong>Atl&eacute;tico travel with one fit specialist striker</strong>.</p>
+    <ul>
+      <li><strong>Real Sociedad &mdash; high turnover in bodies, negligible investment, manager retained.</strong> Pellegrino Matarazzo continues. The window (per fx_9_f16) was almost entirely players back from loan, plus Mikel Rodr&iacute;guez promoted from the B team and Miguel Rodr&iacute;guez from Utrecht; Guridi left for Sevilla. <strong>Gap:</strong> no fees published.</li>
+      <li><strong>Atl&eacute;tico &mdash; high turnover aimed at the spine, manager in his fifteenth season.</strong> Diego Simeone is unchanged. In (per fx_14_f3): <strong>Morten Hjulmand</strong> from Sporting (reported &euro;45m, holding midfielder), <strong>Lee Kang-in</strong> from PSG (&euro;35m), <strong>Cristian Romero</strong> from Tottenham (centre-back), <strong>&Aacute;lex Grimaldo</strong> from Leverkusen, <strong>Jonathan David</strong> on loan from Juventus. Out: Griezmann (free to Orlando City), Ruggeri (&euro;25m), Almada (&euro;20m), Molina (&euro;18m). Jan Oblak continues in goal.</li>
+      <li><strong>Suspensions / absences.</strong> Real Sociedad: <strong>Jon Mart&iacute;n suspended</strong> (red card against Elche); <strong>&Aacute;lvaro Odriozola and Pablo Mar&iacute;n</strong> out; <strong>Igor Zubeldia</strong> left out of the squad. Mart&iacute;n and Zubeldia are the centre-back pair named in the slate-9 probable eleven, so <strong>both first-choice centre-backs are missing</strong>. Atl&eacute;tico: <strong>Juli&aacute;n &Aacute;lvarez</strong> ruled out on the eve of the match with a muscle contracture picked up in training, joining <strong>Alexander S&oslash;rloth</strong> (ongoing physical issues) and <strong>Pablo Barrios</strong> (low-grade myofascial injury). A club-side outlet describes <strong>only one striker available</strong>, which on the squad above is Jonathan David.</li>
+      <li><strong>Sample.</strong> Four or five league matches each. <strong>Conflict logged:</strong> one preview credits Real Sociedad with &ldquo;seven points in five outings&rdquo;, but this is jornada 5 and other clubs have played four; unresolved. Atl&eacute;tico are <strong>unbeaten in their last 11 meetings</strong> with Real Sociedad in all competitions &mdash; a record that sits awkwardly with the reported cup-final defeat and is carried as reported. <strong>Gap:</strong> neither side&rsquo;s this-season goals scored or conceded was obtained.</li>
+      <li><strong>Referee.</strong> <strong>Juan Mart&iacute;nez Munuera</strong> (Valencian committee), <strong>confirmed</strong>, with Alejandro Mu&ntilde;iz Ruiz on VAR &mdash; an international-list official. <strong>Gap:</strong> no cards-per-game, fouls-per-card or penalty figure was established at this tier. No cards market was captured.</li>
+    </ul>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; the Yes rests on two defensive absence lists</span></div><div class="mkt-why">1.47 Yes against 2.50 No. The Yes gets real support from absences: Real Sociedad are without both first-choice centre-backs (Mart&iacute;n suspended, Zubeldia omitted), and Atl&eacute;tico have conceded three at Athletic and lost at Anfield in their last two away matches. The complication is that Atl&eacute;tico&rsquo;s own scoring half is now weaker, with &Aacute;lvarez, S&oslash;rloth and Barrios all out and David the only striker. Real Sociedad&rsquo;s 59&ndash;61 profile and a 3&ndash;2 last time out point the same way as the price.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-mid">OK &mdash; matchday &Aacute;lvarez news cuts against the over</span></div><div class="mkt-why">1.57 over against 2.25 under. For goals: a home defence without either first-choice centre-back, a home side whose fixtures averaged over three goals last season, and an away defence that conceded three last week. Against: a Simeone side after two defeats is the profile most likely to be set up not to concede, and it has just lost its leading forward in the final training session. Whether the typed prices already carried that news was not established.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous &mdash; the favourite has lost its forward line</span></div><div class="mkt-why">3.30 / 3.55 / 2.10. Atl&eacute;tico are favourites on squad quality and an 11-match unbeaten head-to-head, yet arrive after two straight away defeats with three forwards and a midfielder out, one of them announced on the eve of the match. The home side is without its centre-back pair. Both sides have lost a key unit, and the result family has no stable structural fact left in it.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Double chance<span class="verdict tag t-mid">OK &mdash; 12 at 1.28 is the one leg with a structural reason</span></div><div class="mkt-why">1X 1.70, 12 1.28, X2 1.32. The 12 is shortest: the book, like the evidence, sees two depleted defences and rates the draw least likely. X2 restates the Atl&eacute;tico price, which the forward absences have weakened.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li><strong>The &Aacute;lvarez injury was announced on matchday.</strong> He was ruled out after the final training session; the sheet was typed from screenshots taken at 15:36&ndash;15:37 the same day, and whether those prices already reflected it was not established.</li>
+      <li><strong>Real Sociedad&rsquo;s centre-back absences are total.</strong> The 3&ndash;2 win was made with Mart&iacute;n on the pitch until his red card, so the defensive sample is of a different pair.</li>
+      <li><strong>The head-to-head and the cup final contradict each other</strong>, and neither is used as a structural fact.</li>
+      <li><strong>Most sensitive:</strong> the moneyline, whose favourite changed shape on the eve of the match. <strong>Least sensitive:</strong> BTTS Yes, supported by both defensive absence lists independently of the Atl&eacute;tico forward problem.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f14">
+  <div class="fx-head">
+    <p class="fx-league">Portugal &middot; Liga Portugal Betclic &middot; Matchday 6</p>
+    <h2 class="fx-title">Famalic&atilde;o &ndash; Sporting</h2>
+    <p class="fx-sub">21:30 CEST (20:30 local) &middot; Est&aacute;dio Municipal 22 de Junho, Vila Nova de Famalic&atilde;o &middot; A home side winless in five under a new coach, four goals scored, against a visitor on five straight wins that has won the last ten meetings &middot; reduced-depth card</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>6.50 &middot; 4.50 &middot; 1.45</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.75 / 1.98</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.95 / 1.77</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>2.65 &middot; 1.18 &middot; 1.09</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p><em>Reduced-depth card. Not pursued at this tier: last-season goals, xG, shots and card rates for both; this-season xG and cards; Famalic&atilde;o&rsquo;s incoming ledger; the referee&rsquo;s numbers. Sporting&rsquo;s window is carried from the slate-14 card (fx_14_f6).</em></p>
+    <p><strong>Neither club is promoted.</strong> Famalic&atilde;o changed head coach: <strong>Carlos Carvalhal</strong>, back after a year out of coaching, replaced <strong>Hugo Oliveira</strong>. They are <strong>winless in five &mdash; three draws, two defeats, 4 scored and 6 conceded</strong>, the last a <strong>2&ndash;2 with Estrela da Amadora</strong> on 5 September. Sporting are <strong>third on 13 points from five (four wins, one draw)</strong>: 2&ndash;2 at Estrela, 3&ndash;2 against Vit&oacute;ria de Guimar&atilde;es, 3&ndash;1 against Alverca, 4&ndash;0 at Rio Ave and 2&ndash;0 against Nacional, so <strong>14 scored and 5 conceded</strong>. They have <strong>won five straight in all competitions</strong>, including a <strong>3&ndash;1 comeback over Galatasaray</strong> in the Champions League on Wednesday. The structural headline: <strong>Sporting have won the last ten meetings</strong>, including 3&ndash;1 and 3&ndash;0 on this ground.</p>
+    <ul>
+      <li><strong>Famalic&atilde;o &mdash; a new coach and a large sale income.</strong> Carvalhal replaced Hugo Oliveira before the season. Sales of <strong>Gustavo S&aacute; and Ibrahima B&aacute;</strong> brought in a reported combined <strong>&euro;42.75m</strong>. <strong>Conflict logged:</strong> an Ibrahima Ba is listed among Sporting&rsquo;s injured; whether that is the same player and the destination of the sale was not established. <strong>Gap:</strong> no arrivals or individual fees established.</li>
+      <li><strong>Sporting &mdash; high turnover through the spine; manager unchanged.</strong> Rui Borges continues. Out (per fx_14_f6): <strong>Morten Hjulmand</strong> to Atl&eacute;tico (reported &euro;40&ndash;45m), <strong>Ousmane Diomande</strong> to Nottingham Forest (&euro;40m), Geovany Quenda to Chelsea, Kochorashvili, Morita. In: <strong>Rodrigo Zalazar</strong> from Braga (&euro;30m), Nestory Irankunda (&euro;15m), goalkeeper Ka&iacute;que (&euro;4m). <strong>Luis Javier Su&aacute;rez</strong> has <strong>four goals and one assist in his last four</strong> and scored against Galatasaray.</li>
+      <li><strong>Suspensions / absences.</strong> Sporting: <strong>Ibrahima Ba, Jo&atilde;o Sim&otilde;es, Nuno Santos and Zekri</strong> injured, with Rui Borges confirming two absences at his press conference. Famalic&atilde;o: none established. Probable elevens: Famalic&atilde;o &mdash; Lazar Carevi&cacute;; Rodrigo Pinheiro, L&eacute;o Realpe, Finn van Breemen, Pedro Bondo; Mathias de Amorim, Marcos Pe&ntilde;a, Paulo Moreira, Rom&eacute;o Beney, Sorriso; Georgios Koutsias. Sporting &mdash; Rui Silva; Iv&aacute;n Fresneda, Gon&ccedil;alo In&aacute;cio, Zeno Debast, Maxi Ara&uacute;jo; Sergi Altimira, Issa Doumbia; Geny Catamo, Rodrigo Zalazar, Fl&aacute;vio Gon&ccedil;alves; Luis Su&aacute;rez.</li>
+      <li><strong>Sample.</strong> Five league matches each. Famalic&atilde;o: 0.8 scored and 1.2 conceded per game. Sporting: 2.8 scored and 1.0 conceded per game, with clean sheets in two of the last three league matches. Sporting play a Wednesday Champions League night and a Sunday 20:30 away match.</li>
+      <li><strong>Referee.</strong> <strong>Lu&iacute;s Godinho</strong> (AF &Eacute;vora), <strong>confirmed</strong>, with Pedro Martins and Gon&ccedil;alo Freire as assistants, Ricardo Baixinho as fourth official, Bruno Esteves on VAR and Andr&eacute; Campos as AVAR. <strong>Gap:</strong> no cards, fouls-per-card or penalty figures were established. No cards market was captured.</li>
+    </ul>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; the No is anchored by the home attack&rsquo;s numbers</span></div><div class="mkt-why">1.77 No against 1.95 Yes. The No&rsquo;s case is the most evidenced single fact on the card: Famalic&atilde;o have <strong>four goals in five matches</strong> under a coach still looking for a first win, and Sporting have kept clean sheets at Rio Ave and against Nacional. The Yes needs a home goal; Famalic&atilde;o did score twice last time out and Sporting conceded two at Estrela and two to Vit&oacute;ria. Close to even, and the book is right to price it near there.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-mid">OK &mdash; one side supplies nearly all the goals</span></div><div class="mkt-why">1.75 over against 1.98 under. The over depends on Sporting&rsquo;s 2.8 a game with Su&aacute;rez in form. The under depends on Famalic&atilde;o&rsquo;s 0.8 and on the Wednesday-to-Sunday turnaround. Sporting&rsquo;s own away matches this season went 2&ndash;2 at Estrela and 4&ndash;0 at Rio Ave, one over from each route.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-mid">OK &mdash; the favourite has more documented support than the price usually carries</span></div><div class="mkt-why">6.50 / 4.50 / 1.45. Ten straight head-to-head wins, a winless home side under a new coach, five straight Sporting wins and an unchanged Sporting manager are all structural rather than anecdotal. The live risk is the midweek Champions League load, which is why this is OK rather than well-suited.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Double chance<span class="verdict tag t-high">Dangerous &mdash; X2 at 1.09 is near dead</span></div><div class="mkt-why">1X 2.65, 12 1.18, X2 1.09. The Sporting-side leg has absorbed the head-to-head and the form; nothing is left beyond the moneyline.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li><strong>Sporting&rsquo;s ten-match head-to-head run predates the sale of Hjulmand and Diomande</strong>, the two players the spec weights first.</li>
+      <li><strong>Carvalhal&rsquo;s winless five are his first five</strong> at the club; a new coach&rsquo;s results are the least stable number on any card.</li>
+      <li><strong>The Galatasaray comeback was Wednesday night.</strong> Rotation for a Sunday 20:30 away match was not established.</li>
+      <li><strong>Most sensitive:</strong> the total, which leans on one side and on how much Borges rotates. <strong>Least sensitive:</strong> the moneyline, where several independent structural facts point the same way.</li>
+    </ul>
+  </div>
+</article>
+
+<section>
+  <h2 class="sec">Across the card</h2>
+  <ul><li><strong>Best structurally supported families today &mdash; goals rows with a named mechanism on both sides.</strong> PSV&ndash;Sparta both-teams-to-score, where PSV have no clean sheet in five and Sparta have scored in four straight; it is also the only row still two-sided on that card. Brest&ndash;PSG goals, where every league match either side has played this season reached three and the home defence is missing its captain. Real Sociedad&ndash;Atl&eacute;tico both-teams-to-score, which rests on two independent defensive absence lists. And the Famalic&atilde;o&ndash;Sporting result, the one moneyline on the board where several independent structural facts point the same way.</li><li><strong>Least supported &mdash; result rows whose favourites changed shape, and anything on Arouca&ndash;Santa Clara.</strong> Atl&eacute;tico at 2.10 lost their leading striker in the final training session, and Juventus at 1.63 are without their captain and both first-choice central midfielders. On Arouca&ndash;Santa Clara, the visiting head coach is reported under two different names, the head-to-head three incompatible ways and the table positions two ways; that card is flagged high-uncertainty.</li><li><strong>The one normal fixture.</strong> Sassuolo&ndash;Juventus is the closest thing to one: both managers are in place, neither side is promoted and both windows are documented. Even there, the two defensive samples point in opposite directions (Juventus matches 1, 2, 2 goals; Sassuolo matches 3, 3, 4), and the book has priced the total and both-teams-to-score identically at 1.72 against 2.00.</li><li><strong>Where the book has priced indifference.</strong> Arouca&ndash;Santa Clara both-teams-to-score at exactly 1.85 each way, which matches evidence that genuinely points nowhere. Getafe&ndash;Deportivo double chance at 1.37 / 1.42 / 1.45, with the draw nearly the favourite in the moneyline: a Bordal&aacute;s side with two goals in four against a promoted side unbeaten in four. And Brest&ndash;PSG both-teams-to-score at 1.75 / 1.95, near even beneath a 1.23 favourite &mdash; confident about the winner, undecided about whether the favourite keeps its first league clean sheet.</li></ul>
+</section>
+
+<footer>
+  <p><strong>Scope.</strong> This page rates market <em>families</em> only. It contains no selections, no sides, no recommended lines and no confidence labels &mdash; by design. Where evidence is thin it says so rather than filling the gap.</p>
+  <p><strong>Sources.</strong> Logged per fixture in <span class="mono">sources_18.md</span>. For the cards on this board: riazor.org and futbolfantasy.com for Getafe&ndash;Deportivo; Sports Mole, WhoScored, flashscore, A&ccedil;oriano Oriental, Di&aacute;rio de Aveiro and A Bola for Arouca&ndash;Santa Clara; zerozero, DAZN, Bola na Rede and Sports Mole for Benfica and Famalic&atilde;o&ndash;Sporting; vi.nl, TOTO Extra, voetbalnieuws.nl, FootballTransfers and Voetbalzone for PSV&ndash;Sparta; ligue1.com, parisfans.fr and Yahoo Sports for Brest&ndash;PSG; Tuttosport, Quotidiano Sport, Sofascore and Juvefc.com for Sassuolo&ndash;Juventus; VAVEL, SI and estoesatleti.es for Real Sociedad&ndash;Atl&eacute;tico; statz.ai and valuestats.com for referee records. Transfer ledgers carried from ten earlier cards are named in each card&rsquo;s section A. Scoping searches are logged separately.</p>
+</footer>
+
+</div>

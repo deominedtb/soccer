@@ -1,0 +1,594 @@
+<title>Market Board 11 September 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<style>
+:root{
+  --bg:#EFF2F1; --surface:#FFFFFF; --surface-2:#F6F8F7; --band:#1D3F52;
+  --ink:#13201E; --ink-2:#485856; --muted:#6C7B78; --line:#D4DCDA;
+  --accent:#1D4E73; --accent-soft:#E3EDF3;
+  --good:#2C6E4B; --good-soft:#E2EFE8;
+  --warn:#8C6817; --warn-soft:#F4ECD9;
+  --bad:#A03528;  --bad-soft:#F6E2DF;
+  --brass:#856526;
+  --band-ink:#EAF1F4;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D1315; --surface:#141C1F; --surface-2:#1A2326; --band:#16303D;
+    --ink:#E3EAE8; --ink-2:#A6B4B1; --muted:#82938F; --line:#263236;
+    --accent:#79ACD0; --accent-soft:#152F3C;
+    --good:#66C093; --good-soft:#152C20;
+    --warn:#D2A950; --warn-soft:#2C2617;
+    --bad:#E27A6E;  --bad-soft:#321C19;
+    --brass:#C4A05A;
+    --band-ink:#DCE8EC;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D1315; --surface:#141C1F; --surface-2:#1A2326; --band:#16303D;
+  --ink:#E3EAE8; --ink-2:#A6B4B1; --muted:#82938F; --line:#263236;
+  --accent:#79ACD0; --accent-soft:#152F3C;
+  --good:#66C093; --good-soft:#152C20;
+  --warn:#D2A950; --warn-soft:#2C2617;
+  --bad:#E27A6E;  --bad-soft:#321C19;
+  --brass:#C4A05A;
+  --band-ink:#DCE8EC;
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:"Source Serif 4",Georgia,"Times New Roman",serif;
+  font-size:17px; line-height:1.6;
+  margin:0; padding:0 18px 96px;
+  -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:940px; margin:0 auto;}
+h1,h2,h3,h4,.ui{font-family:Archivo,"Helvetica Neue",Arial,sans-serif}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace; font-variant-numeric:tabular-nums}
+
+/* ---------- masthead ---------- */
+header.top{padding:52px 0 26px; border-bottom:2px solid var(--ink);}
+.eyebrow{
+  font-family:Archivo,sans-serif; font-size:12px; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase; color:var(--accent); margin:0 0 14px;
+}
+h1{
+  font-size:clamp(34px,7vw,54px); line-height:1.02; font-weight:800;
+  letter-spacing:-.02em; margin:0 0 14px; text-wrap:balance;
+}
+.standfirst{font-size:19px; color:var(--ink-2); margin:0; max-width:62ch;}
+.metaline{
+  display:flex; flex-wrap:wrap; gap:8px 20px; margin-top:22px;
+  font-family:Archivo,sans-serif; font-size:12.5px; font-weight:600;
+  letter-spacing:.06em; text-transform:uppercase; color:var(--muted);
+}
+
+/* ---------- generic blocks ---------- */
+section{margin-top:44px}
+h2.sec{
+  font-size:13px; font-weight:700; letter-spacing:.15em; text-transform:uppercase;
+  color:var(--muted); margin:0 0 16px; padding-bottom:8px; border-bottom:1px solid var(--line);
+}
+p{margin:0 0 14px; max-width:70ch}
+.note{
+  background:var(--accent-soft); border-left:3px solid var(--accent);
+  padding:14px 16px; font-size:15.5px; color:var(--ink-2); max-width:none;
+}
+.note strong{color:var(--ink)}
+
+/* ---------- odds table ---------- */
+.scroller{overflow-x:auto; border:1px solid var(--line); background:var(--surface)}
+table{border-collapse:collapse; width:100%; min-width:760px; font-size:14px}
+thead th{
+  background:var(--band); color:var(--band-ink);
+  font-family:Archivo,sans-serif; font-weight:700; font-size:11px;
+  letter-spacing:.09em; text-transform:uppercase;
+  padding:10px 11px; text-align:right; white-space:nowrap;
+}
+thead th:first-child{text-align:left}
+tbody td{
+  padding:10px 11px; border-top:1px solid var(--line); text-align:right;
+  font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums; white-space:nowrap;
+}
+tbody td:first-child{
+  text-align:left; font-family:Archivo,sans-serif; font-weight:600; font-size:14px;
+  white-space:normal; min-width:190px;
+}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td .ko{display:block; font-family:"IBM Plex Mono",monospace; font-weight:400; font-size:11.5px; color:var(--muted); letter-spacing:.02em}
+.unk{color:var(--brass); font-style:italic}
+
+/* ---------- fixture cards ---------- */
+.fixture{
+  background:var(--surface); border:1px solid var(--line);
+  margin-top:30px; scroll-margin-top:12px;
+}
+.fx-head{background:var(--band); color:var(--band-ink); padding:16px 20px 18px}
+.fx-league{
+  font-family:Archivo,sans-serif; font-size:11px; font-weight:700;
+  letter-spacing:.14em; text-transform:uppercase; opacity:.78; margin:0 0 6px;
+}
+.fx-title{font-family:Archivo,sans-serif; font-size:23px; font-weight:700; letter-spacing:-.01em; margin:0; line-height:1.15}
+.fx-sub{font-family:"IBM Plex Mono",monospace; font-size:12.5px; opacity:.8; margin:7px 0 0; letter-spacing:.02em}
+.fx-body{padding:20px}
+
+.fx-odds{
+  display:flex; flex-wrap:wrap; gap:0;
+  border:1px solid var(--line); background:var(--surface-2); margin:0 0 22px;
+}
+.od{flex:1 1 96px; padding:9px 12px; border-right:1px solid var(--line); border-bottom:1px solid var(--line)}
+.od:last-child{border-right:0}
+.od dt{
+  font-family:Archivo,sans-serif; font-size:10px; font-weight:700; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--muted); margin:0 0 3px;
+}
+.od dd{margin:0; font-family:"IBM Plex Mono",monospace; font-size:15px; font-weight:500; font-variant-numeric:tabular-nums}
+
+h3.blk{
+  font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--accent); margin:26px 0 10px;
+}
+h3.blk:first-of-type{margin-top:0}
+.fx-body ul{margin:0 0 14px; padding-left:20px; max-width:70ch}
+.fx-body li{margin-bottom:7px}
+.tag{
+  font-family:Archivo,sans-serif; font-size:11px; font-weight:700;
+  letter-spacing:.07em; text-transform:uppercase; padding:2px 7px; white-space:nowrap;
+}
+.t-low{background:var(--good-soft); color:var(--good)}
+.t-mid{background:var(--warn-soft); color:var(--warn)}
+.t-high{background:var(--bad-soft); color:var(--bad)}
+
+/* market suitability rows */
+.mkt{border-top:1px solid var(--line)}
+.mkt-row{
+  display:grid; grid-template-columns:150px 1fr; gap:0;
+  border-bottom:1px solid var(--line);
+}
+.mkt-name{
+  padding:13px 14px 13px 0; font-family:Archivo,sans-serif;
+  font-weight:700; font-size:14px; line-height:1.3;
+}
+.mkt-name .verdict{display:block; margin-top:6px}
+.mkt-why{padding:13px 0 13px 16px; border-left:3px solid var(--line); font-size:15.5px; color:var(--ink-2)}
+.mkt-row.good .mkt-why{border-left-color:var(--good)}
+.mkt-row.ok .mkt-why{border-left-color:var(--warn)}
+.mkt-row.bad .mkt-why{border-left-color:var(--bad)}
+@media (max-width:620px){
+  .mkt-row{grid-template-columns:1fr; gap:0}
+  .mkt-name{padding-bottom:6px}
+  .mkt-why{padding:0 0 14px 14px}
+}
+
+/* index list */
+.index{display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line)}
+.index a{
+  display:block; background:var(--surface); padding:12px 14px; text-decoration:none;
+  color:var(--ink); font-family:Archivo,sans-serif; font-weight:600; font-size:14.5px;
+}
+.index a:hover,.index a:focus-visible{background:var(--accent-soft); color:var(--accent)}
+.index a span{display:block; font-family:"IBM Plex Mono",monospace; font-weight:400; font-size:11.5px; color:var(--muted); margin-top:3px; letter-spacing:.03em}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+
+footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); font-size:14px; color:var(--muted); max-width:74ch}
+footer a{color:var(--accent)}
+
+/* ---------- not-yet-built fixture ---------- */
+.fixture.pending{opacity:.72}
+.pending-note{
+  font-family:Archivo,sans-serif; font-size:13px; font-weight:600;
+  letter-spacing:.04em; color:var(--muted);
+  background:var(--surface-2); border:1px dashed var(--line);
+  border-radius:8px; padding:14px 16px; margin-top:18px;
+}
+</style>
+
+<div class="wrap">
+
+<header class="top">
+  <p class="eyebrow">Context engine &middot; no picks, no sides, no lines</p>
+  <h1>Four fixtures, four clubs that changed their manager &mdash; and in every one of them the opponent kept theirs</h1>
+  <p class="standfirst">Four fixtures parsed from odds_16.xlsx, all four researched and built at full depth &mdash; a slate this size skips triage entirely, so nothing here was listed without research and nothing was set aside.</p>
+  <div class="metaline">
+    <span>11 September 2026</span>
+    <span>Bundesliga matchday 3 &middot; Serie A matchday 4 &middot; Ligue 1 matchday 4 &middot; LaLiga matchday 5</span>
+    <span>Decimal odds, bet365 IT</span>
+  </div>
+</header>
+
+<section>
+  <h2 class="sec">The one thing shaping every game on this card</h2>
+    <p>Eight clubs have been researched for this board, and the split between them is
+  exact. <strong>Four have changed head coach since March; the four they are playing have
+  not.</strong> Union Berlin appointed Mauro Lustrinelli on 21 May 2026; Schalke kept Miron
+  Musli&#263;, who won them the 2. Bundesliga. Fiorentina sacked Fabio Grosso and re-appointed
+  Paolo Vanoli on 7 September; Venezia kept Giovanni Stroppa, who won them Serie B. Marseille
+  are on their third coach since February; Rennes kept Franck Haise. Sevilla appointed Luis
+  Garc&iacute;a Plaza on 25 March in a relegation fight; Valencia kept Carlos Corber&aacute;n.
+  Four for four, with no fixture on the sheet breaking the pattern.</p>
+
+  <p>The disruption is not uniform in kind, which is what makes it usable rather than merely
+  tidy. Union have abandoned the back five they played in every Bundesliga season since
+  promotion in 2019 &mdash; then lost two of the three centre-backs bought for the new shape
+  to injury. Fiorentina spent &euro;150.30m, the third-largest outlay in Serie A, lost their
+  first three matches 9&ndash;1 on aggregate and changed manager <strong>four days ago</strong>,
+  with Vanoli's first match in charge coming against the club he himself took up to Serie A.
+  Marseille made <strong>no signings at all</strong> this summer while selling their goalkeeper
+  and centre-forward and loaning out their captain at centre-back, their manager stating
+  publicly that arrivals require further departures to be registered first. Sevilla's change is
+  the oldest and the quietest: a coach hired in March with the club three points off the drop,
+  on a contract that runs only to June 2027.</p>
+
+  <p>Against that sit the four that kept faith, and in three cases what they kept is a manager
+  whose figures were produced somewhere else. Schalke's 70 points, 50 scored and 31 conceded
+  came in the second tier, on a &euro;2.65m summer and the third-lowest squad value in the
+  Bundesliga. Venezia's 82 points and 77 goals came in a Serie B averaging 2.56 goals a match.
+  Rennes are unchanged at the top but sold a 20-year-old centre-back to Liverpool for
+  &pound;60m and replaced him from the free and undisclosed market. Only Valencia are both
+  unchanged and top-flight throughout &mdash; and they are bottom of LaLiga with one point from
+  twelve, nine players unavailable or doubtful, and a squad that finished the window two bodies
+  smaller than it started it.</p>
+
+  <div class="note"><strong>Structural consequence.</strong> On every fixture on this board,
+  last season's columns describe a team that no longer exists on one side of the tie, and
+  usually a different division or a different squad on the other. That pushes weight away from
+  the result markets, which need a view on which of those two fictions is less wrong, and
+  towards the families carrying their own independent evidence. Discipline is where that
+  evidence actually lives tonight: <strong>three of the four fixtures have a confirmed referee
+  with several seasons of published card, dismissal and penalty rates behind him</strong>, and on
+  each of those three the official is better documented than either playing squad. The fourth
+  has no appointment that could be reached at all.</div>
+</section>
+
+<section>
+  <h2 class="sec">Today&rsquo;s slate &mdash; odds as read from the screenshots</h2>
+  <div class="scroller">
+  <table>
+    <thead>
+      <tr>
+        <th>Fixture</th><th>1</th><th>X</th><th>2</th><th>O2.5</th><th>U2.5</th><th>BTTS&nbsp;Y</th><th>BTTS&nbsp;N</th><th>Cards</th><th>Corners</th>
+      </tr>
+    </thead>
+    <tbody>
+            <tr><td>Union Berlino &ndash; Schalke 04<span class="ko">20:30 CEST</span></td><td>2.40</td><td>3.50</td><td>2.80</td><td>1.57</td><td>2.25</td><td>1.45</td><td>2.60</td><td>4.5 &nbsp;1.65/1.95</td><td>9.5 &nbsp;1.85/1.80</td></tr>
+      <tr><td>Venezia &ndash; Fiorentina<span class="ko">20:45 CEST</span></td><td>2.75</td><td>3.35</td><td>2.50</td><td>1.60</td><td>2.25</td><td>1.47</td><td>2.55</td><td>4.5 &nbsp;1.80/1.80</td><td>8.5 &nbsp;1.78/1.90</td></tr>
+      <tr><td>Stade Rennes FC &ndash; Marsiglia<span class="ko">20:45 CEST</span></td><td>2.05</td><td>3.80</td><td>3.25</td><td>1.45</td><td>2.60</td><td>1.40</td><td>2.75</td><td>4.5 &nbsp;1.57/2.10</td><td>9.5 &nbsp;1.97/1.72</td></tr>
+      <tr><td>Siviglia &ndash; Valencia<span class="ko">21:00 CEST</span></td><td>1.92</td><td>3.25</td><td>4.35</td><td>2.15</td><td>1.62</td><td>2.00</td><td>1.75</td><td>5.5 &nbsp;1.80/1.78</td><td>8.5 &nbsp;1.80/1.80</td></tr>
+    </tbody>
+  </table>
+  </div>
+    <div class="note"><strong>Provenance.</strong> This slate was typed, not read from
+  screenshots: every price above comes from the <code>odds_16</code> sheet of
+  <strong>odds_16.xlsx</strong> and is the record &mdash; no value was re-verified against the web,
+  and nothing was derived from anything else. Two qualifications carried from
+  fixtures_16.md. First, the workbook is saved in strict-OOXML conformance, which the normal
+  reader could not open (it returned zero sheets); the values were read directly from the
+  sheet XML, the same symptom as odds_14.xlsx and odds_15.xlsx and with no effect on the
+  figures. Second, <strong>two of the four kickoff cells carried a floating-point artefact</strong>
+  &mdash; <code>20:44:59.99999712000295650</code> for Venezia &ndash; Fiorentina and for Stade
+  Rennes &ndash; Marsiglia &mdash; normalised to 20:45; the other two cells are clean. The source
+  header carries no <code>league</code> or <code>venue</code> column, so both fields on every
+  fixture come from Phase 2 research rather than from the sheet. Home and away card lines were
+  captured for Venezia &ndash; Fiorentina only; the other three fixtures carry the match cards
+  line alone, and their per-team card rows are omitted rather than inferred.</div>
+  
+</section>
+
+<section>
+  <h2 class="sec">Jump to a fixture</h2>
+  <nav class="jump">
+        <a href="#f1">Union Berlino &ndash; Schalke 04<span>20:30 CEST &middot; Stadion An der Alten F&ouml;rsterei, Berlin</span></a>
+    <a href="#f2">Venezia &ndash; Fiorentina<span>20:45 CEST &middot; Stadio Pier Luigi Penzo, Venice</span></a>
+    <a href="#f3">Stade Rennes FC &ndash; Marsiglia<span>20:45 CEST &middot; Roazhon Park, Rennes</span></a>
+    <a href="#f4">Siviglia &ndash; Valencia<span>21:00 CEST &middot; Ram&oacute;n S&aacute;nchez-Pizju&aacute;n, Seville</span></a>
+  </nav>
+</section>
+
+<article class="fixture" id="f1">
+  <div class="fx-head">
+    <p class="fx-league">Germany &middot; Bundesliga &middot; Matchday 3</p>
+    <h2 class="fx-title">Union Berlino &ndash; Schalke 04</h2>
+    <p class="fx-sub">20:30 CEST &middot; Stadion An der Alten F&ouml;rsterei, Berlin &middot; One point each from two: the hosts have conceded more than anyone in the division and have just abandoned the back five that defined their entire Bundesliga existence, the visitors are promoted on a &euro;2.65m summer and have not scored yet</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.40 &middot; 3.50 &middot; 2.80</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>1.42 &middot; 1.30 &middot; 1.55</dd></div>
+      <div class="od"><dt>EH &minus;1 (1/X/2)</dt><dd>4.50 &middot; 4.50 &middot; 1.55</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.57 / 2.25</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.45 / 2.60</dd></div>
+      <div class="od"><dt>Cards 4.5 U / O</dt><dd>1.65 / 1.95</dd></div>
+      <div class="od"><dt>Corners 9.5 U / O</dt><dd>1.85 / 1.80</dd></div>
+      <div class="od"><dt>Corner race 1/X/2</dt><dd>1.63 &middot; 8.50 &middot; 2.50</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>One promoted side, and the promoted side is not the one whose identity has changed. <strong>Schalke 04 won the 2025&ndash;26 2. Bundesliga</strong> &mdash; first on 70 points, 21W&ndash;7D&ndash;6L, 50 scored and 31 conceded for +19, eight points clear of SV 07 Elversberg, with a home record of 13W&ndash;3D&ndash;1L (29&ndash;14) and an away one of 8W&ndash;4D&ndash;5L (21&ndash;17). They were relegated in 2022&ndash;23, five years after finishing second to Bayern, and return for a 55th top-flight season in the club's 123rd. The Bundesliga's treatment of promoted sides is the usual question, but Schalke arrive with an unusual version of it: the manager who won promotion, <strong>Miron Musli&#263;</strong>, is unchanged, and the squad that won it is very largely unchanged too, because the club spent <strong>&euro;2.65m in total this summer</strong> and carries a squad market value of &euro;67.33m &mdash; the third-lowest in the division and &euro;49.82m behind fifteenth-placed Hamburger SV on &euro;117.15m. Union Berlin are not promoted; this is their eighth consecutive Bundesliga season and they finished <strong>11th in 2025&ndash;26 on 39 points, 10W&ndash;9D&ndash;15L, 44 scored and 58 conceded for &minus;14</strong>, split sharply by venue &mdash; 5W&ndash;7D&ndash;5L and 26&ndash;26 at home, 5W&ndash;2D&ndash;10L and 18&ndash;32 away. What is new at Union is everything above the players. They have had <strong>three head coaches in five months</strong>: Steffen Baumgart until 11 April 2026, Marie-Louise Eta as interim to the end of the campaign &mdash; the first woman to head-coach a Bundesliga club &mdash; and <strong>Mauro Lustrinelli appointed on 21 May 2026</strong>. And with him has come the single largest structural fact on this card: Union are playing <strong>a back four for the first time since their promotion in 2019</strong>, abandoning the back five that has defined every Bundesliga season the club has ever played.</p>
+    <ul>
+      <li><strong>Union Berlino &mdash; high turnover, concentrated almost entirely at centre-back, and a new manager on 21 May.</strong> Lustrinelli, 50, is Swiss and arrives from FC Thun, where he took a promoted side to <em>the first Swiss Super League title in that club's history</em> while scoring 80 goals; his stated aim at Union is "intensity, dynamism and energy going forward", which in system terms means a high press and possession from a back four. The squad work follows that. Out went both long-serving centre-backs: <strong>Diogo Leite released on 14 May</strong> after 136 competitive appearances and <strong>Danilho Doekhi to Lazio on 14 July</strong> after 137. In came three replacements &mdash; <strong>Marvin Friedrich free from Borussia M&ouml;nchengladbach on 10 June</strong>, <strong>Zeno Van Den Bosch free from Royal Antwerp on 15 June</strong>, and <strong>Stanley Nsoki permanently from Hoffenheim for &euro;1.5m on 1 July</strong>, the only fee Union paid. Up front, <strong>Emmanuel Latte Lath arrived on loan from Atlanta United on 2 August</strong>, a 27-year-old Ivorian with 27 goals in 59 Championship appearances for Middlesbrough. Kastriot Imeri followed Lustrinelli from Thun. Also out: Alex Kr&aacute;l released to FC Copenhagen on 16 July, Ilyas Ansah to Hull City, and goalkeeper Yannic Stein to Hansa Rostock on 27 May for an undisclosed fee. Weighted as the spec asks: <em>three centre-backs in and two out</em>, a centre-forward on loan, <strong>no defensive midfielder signed</strong> &mdash; Rani Khedira, 32, is the man asked to anchor the new press &mdash; and <strong>no senior goalkeeper brought in</strong> to replace Stein, with Frederik R&oslash;nnow the expected starter. That GK line is a gap in the ledger rather than a finding.</li>
+      <li><strong>Schalke 04 &mdash; low turnover by design, the largest fee spent on a defensive midfielder, and no managerial change at all.</strong> Musli&#263;, 43 and Austrian-Bosnian, stays, and works from a flat 4&ndash;3&ndash;3 or a 3&ndash;4&ndash;2&ndash;1 whose wing-backs drop into the back line &mdash; described in the season preview as "a tight, centralised form of defending" against stronger opposition. The window was a survival budget, not a promotion budget. In, with fees: <strong>Satoshi Tanaka from Fortuna D&uuml;sseldorf for &euro;1m</strong>, a 23-year-old defensive midfielder and the club's biggest outlay of the summer; <strong>Junior Dina Ebimbe from Eintracht Frankfurt for &euro;800k</strong>; <strong>Junior Adamu from SC Freiburg for &euro;800k</strong>, a 25-year-old centre-forward; <strong>Kevin M&uuml;ller from 1. FC Heidenheim for &euro;50k</strong>, a 35-year-old goalkeeper; <strong>Maximilian W&ouml;ber free from Leeds United</strong>, a 28-year-old centre-back; and <strong>Robin Gosens on loan from Fiorentina</strong> at left-back. Edin D&#382;eko had arrived from Fiorentina in January 2026. One source additionally reports Hwang Hee-chan on loan from Wolverhampton; it is recorded here as reported by a single source and not corroborated elsewhere. Out: Ilyes Hamache to SC Cambuur for &euro;200k, Mauro Zalazar free to Kusto&#353;ija, goalkeeper Luca Podlech on loan to Aalesund, plus a set of loans and demotions. The GK/CB/DM ledger is therefore genuinely addressed on this side &mdash; &euro;1m at defensive midfield, a free centre-back, a &euro;50k goalkeeper behind <strong>Loris Karius, 33</strong>, who is the established starter &mdash; but the totality is &euro;2.65m, into a division whose fifteenth-placed club is valued at nearly &euro;50m more. Squad of 30, average age 27.0, the second-oldest in the league.</li>
+      <li><strong>Suspensions / absences.</strong> Unusually for this board, both lists are named and dated, and they fall on exactly the places that matter. <strong>Union are missing two of the three centre-backs they bought to play the new system</strong>: Marvin Friedrich (unspecified, expected back mid-to-late September) and Stanley Nsoki (calf, mid-to-late September). Also out: Kastriot Imeri (thigh, mid-to-late September), Oliver Burke (Achilles tendon, mid-to-late September), Andrej Ili&#263; (illness, around a week) and Andrik Markgraf (cruciate ligament, <strong>out until March 2027</strong>). <strong>Schalke are without Ron Schallenberg, serving a two-match ban</strong> for his red card against Augsburg on matchday one &mdash; this is the second of the two &mdash; plus Adrian Gantenbein (ankle, mid-to-late September), Bryan Lasme (calf, mid-to-late September) and Ayman G&uuml;lasi (unspecified, out to the end of the year). Tomas Kalas was reported facing a late fitness test in one preview and is not listed in another; that one is unresolved.</li>
+      <li><strong>Sample.</strong> Two Bundesliga matches each, plus a cup tie each, and both records read 0W&ndash;1D&ndash;1L for a single point. Union: <strong>3&ndash;3 at home to Eintracht Frankfurt on 29 August</strong>, rescued by late goals from Leopold Querfeld and Tim Starke, then <strong>0&ndash;4 away at Bayer Leverkusen on 5 September</strong>; they also won 4&ndash;2 at Eintracht Braunschweig in the DFB-Pokal first round on 23 August. <strong>They have conceded more goals than any other side in the division after two rounds</strong>, and have conceded in three consecutive matches. Their shooting reads 10 on target from 24 attempts (41.7%). Schalke: <strong>0&ndash;3 to Augsburg on 30 August</strong>, then <strong>0&ndash;0 against Bayern Munich on 5 September</strong> in front of 62,094, their first Bundesliga match back at the Veltins-Arena in over three years; they won their DFB-Pokal first round 5&ndash;2. <strong>They are one of only three Bundesliga clubs yet to score this season</strong> &mdash; 6 shots on target from 15 attempts, with Karius making 7.5 saves a match at an 83.3% save rate. <strong>Gap:</strong> no historical xG series was obtainable for either club in either season. A pre-match xG projection for this fixture does exist on one statistics site; it is a forecast for a match not yet played, and this board does not carry those. <strong>Contradiction logged:</strong> three sources give three different league positions &mdash; Union 13th or 15th, Schalke 14th, 15th or 16th. All three agree on one point from two, and the position is left unasserted.</li>
+      <li><strong>Referee.</strong> <strong>Not established.</strong> Two dedicated searches and a direct attempt at the German appointment listings returned no name for this fixture; the DFB and worldfootball referee pages were unreachable. With kickoff a matter of hours away the appointment almost certainly exists &mdash; this is a failure to reach it, not a fixture too far out to have one, and it is recorded that way rather than softened into "not yet published". Nothing is therefore known here about cards per game, fouls per card, penalty rate or history with either club, and by the research spec the Discipline row below is evidence-thin for that reason alone. What can be said is club-level and comes from elsewhere: Union carried <strong>60 yellows and 3 red cards through 27 matches of 2025&ndash;26</strong>, third in the division's card rankings at that point &mdash; a 27-match snapshot, not a season total &mdash; including 28 yellows on the road, while <strong>Schalke have committed the fewest fouls of any club in the Bundesliga this season, 11 in two matches against Union's 23</strong>.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Union Berlin are, for the first time in their Bundesliga history, trying to be a different kind of team &mdash; and the evidence that they can be is two matches old and already compromised. The back five was not a preference at Union, it was the institution: it carried them from the 2019 promotion through eight seasons, and Lustrinelli has replaced it with a back four and a high press in his first summer. Everything in the window served that idea &mdash; two long-serving centre-backs moved on, three new ones brought in, a forward with Championship goals added on loan, Khedira at 32 asked to hold the base of a pressing shape. The problem is arithmetic: <strong>two of those three centre-backs are injured</strong>, so the defensive line executing an unfamiliar structure is not the line that was assembled to execute it. What the two matches have produced is consistent with a side mid-transition and nothing more precise than that &mdash; a 3&ndash;3 salvaged by late goals, then a 0&ndash;4 at Leverkusen, seven conceded in 180 minutes and more than anyone else in the division. Against that, last season's home column is the one number on this page suggesting the venue matters: 26 scored and 26 conceded at the Alte F&ouml;rsterei across 17 matches, against 18 and 32 away. <strong>Gap:</strong> no xG, possession, foul-per-game or corner series was obtainable for Union in either season, so the press is described here from its manager's stated intent and his record at Thun, not from measurement.</p>
+    <p>Schalke are the opposite proposition in every respect, and the more legible of the two. There has been no managerial change, no stylistic reinvention and almost no spending: Musli&#263; won the second division by eight points with a flat 4&ndash;3&ndash;3 or a 3&ndash;4&ndash;2&ndash;1 that drops wing-backs into the line, and he is running the same thing in the Bundesliga with a squad reinforced by &euro;2.65m. The early returns split exactly the way that profile predicts. Beaten 3&ndash;0 by Augsburg, they then held the champions to 0&ndash;0 at home &mdash; a result that says the centralised defensive block transfers to this level, and says nothing at all about whether the attack does. <strong>They have not scored a Bundesliga goal</strong>, from 15 attempts and 6 on target, with a &euro;800k centre-forward and a 32-year-old loanee left-back among the summer's answers. Karius at 33 has been busy and effective, 7.5 saves a match at 83.3%. The discipline signature is already distinctive and it is the cleanest in the league: <strong>11 fouls in two matches, fewest of any club</strong>, which is what a side defending in a narrow block without chasing possession tends to produce. The caution is that both of these two-match samples contain an extreme &mdash; a 0&ndash;3 and a 0&ndash;0 with Bayern &mdash; and a promoted side's third fixture against a mid-table club is a different test from either. <strong>Gap:</strong> no xG series for Schalke either, and no corner data for either club.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row good"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-low">Well-suited &mdash; three live prices and two well-documented, opposite structural problems</span></div><div class="mkt-why">2.40 / 3.50 / 2.80 is about as live as a result row gets, and the material behind it is unusually specific on both sides. The home case rests on a venue record that was genuinely different last season (26&ndash;26 at home, 18&ndash;32 away) and on a squad rebuilt to press; the case against it is that the system is three matches old and two of the three centre-backs signed for it are injured. The visiting case rests on a promotion-winning manager retained, a defensive block that held Bayern to 0&ndash;0, and the fewest fouls in the league; the case against is &euro;2.65m of summer spending, the third-lowest squad value in the division and no goal scored yet. Neither side's price has absorbed its own contradiction.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Asian handicap / EH &minus;1<span class="verdict tag t-mid">OK &mdash; asymmetric, and the double chance has already eaten part of the row</span></div><div class="mkt-why">4.50 for Union to win by two or more, 4.50 for exactly one, 1.55 for Schalke to avoid defeat or lose by one: the line is asking about margin, and margin is where the structural evidence is thinnest in one direction and thickest in the other. Union won by two or more rarely enough last season to finish 11th with a &minus;14 difference and a level home goal column; Schalke conceded 31 in 34 second-division matches and have conceded three in two here, all in one match. Alongside it, <strong>12 at 1.30 is effectively dead</strong> &mdash; it is the moneyline restated and dies with it &mdash; while 1X at 1.42 and X2 at 1.55 still carry something the handicap does not. The handicap is the better-formed question of the two; it is simply a question nobody has much data for.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-mid">OK &mdash; the over lean is carried entirely by one team's defence, not by anyone's attack</span></div><div class="mkt-why">1.57 over against 2.25 under leans clearly to goals, and it is worth naming precisely what is holding that lean up: Union have conceded more than any club in the division after two rounds, conceded in three straight matches, and shipped 58 in 34 last season. That is the whole case. The other half of a goals market &mdash; someone scoring them &mdash; is supported by Union's 44 last season and a new loan forward with Championship pedigree, and contradicted outright by a visiting side that <em>has not scored a Bundesliga goal</em> from 15 attempts. Union's two matches produced seven goals and four; Schalke's produced three and none. Last season's combined rates pull apart the same way: Union's matches averaged exactly 3.0 goals, Schalke's second-division matches 2.38.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">BTTS<span class="verdict tag t-high">Dangerous &mdash; the short leg needs an event with no instance in this season's sample</span></div><div class="mkt-why">1.45 Yes against 2.60 No, and the Yes requires Schalke to score, which they have not done in 180 minutes of Bundesliga football &mdash; 6 shots on target from 15 attempts, one of only three clubs in the division still on zero. The structural reasons for that blank are named and none of them has been fixed since Saturday: a &euro;800k centre-forward as the summer's answer at the position, &euro;2.65m spent in total, the third-lowest squad value in the league, and a manager whose system is explicitly built to defend narrowly. Against that, the other leg is nearly the safest assumption on the card, since Union have conceded in three consecutive matches. The row is dangerous not because it leans wrong but because <strong>both legs rest on two-match samples that each contain one extreme result</strong> &mdash; a 0&ndash;4 and a 0&ndash;0 against Bayern &mdash; and a market priced at 1.45 has left very little room for that to be the wrong read.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-high">Dangerous &mdash; no referee established, and the two clubs point in opposite directions</span></div><div class="mkt-why"><strong>The appointment could not be established.</strong> Two dedicated searches and a direct attempt at the German appointment listings produced no name, and the referee pages that carry cards-per-game and fouls-per-card were unreachable &mdash; so nothing is known here about whether this official books early or lets play run, nor about penalties or history with either club. By the research spec that alone makes this row evidence-thin, and it is the decisive gap on a 4.5 line priced at 1.65 under / 1.95 over. What club-level material exists cuts both ways rather than resolving: Union carried 60 yellows and 3 reds through 27 matches last season, third in the division at that point, and have already committed 23 fouls in two games; Schalke have committed <strong>11 fouls, fewest of any club in the Bundesliga</strong>, which is what a narrow, non-pressing block produces. A high-foul home side pressing in a new system against the league's cleanest visitors is a genuine two-sided question &mdash; and without the official it cannot be answered from this page.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Corners<span class="verdict tag t-mid">OK &mdash; asymmetric by style, and the book has priced the total at indifference</span></div><div class="mkt-why">9.5 at 1.85 under / 1.80 over is about as close to even money as this sheet gets, which is the book saying it does not know. The race at 1.63 / 8.50 / 2.50 is the more structurally supported half, and the reasoning is available without any corner data at all: a home side under a manager who has asked for possession and a high press, against a visiting side described as defending in a tight central block and currently committing the fewest fouls in the division, is a territorial mismatch in shape even if it is not one in quality. What makes this only OK rather than well-suited is that the shape is three matches old on one side and the new back four is missing two of its intended personnel. <strong>Gap:</strong> no corner series was obtainable for either club in either season, so the 9.5 line and its near-even pricing are the most informative facts on the row.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li>Union's back four is three matches old and understaffed. The club has played a back five in every Bundesliga season since promotion in 2019; Lustrinelli changed it in his first summer, bought three centre-backs to do it, and <strong>two of them &mdash; Friedrich and Nsoki &mdash; are injured until mid-to-late September</strong>. Every defensive number on this page was produced either by a different system or by an incomplete version of the new one.</li>
+      <li>Union have had three head coaches in five months. Baumgart to 11 April, Eta as interim to the end of the season, Lustrinelli from 21 May. Last season's 44 scored and 58 conceded were produced under two of them and neither is here, which makes the 2025&ndash;26 columns a description of a club rather than of this team.</li>
+      <li>Schalke's promotion numbers were made in a division they beat by eight points. 70 points, 50 scored and 31 conceded came against 2. Bundesliga opposition, and the summer that followed was &euro;2.65m &mdash; so the side now facing Bundesliga fixtures is very nearly the side that won the second tier, at the third-lowest squad value in the division and the second-oldest average age.</li>
+      <li>Both two-match samples contain one extreme and one uninformative result. Union's 0&ndash;4 at Leverkusen and Schalke's 0&ndash;0 with Bayern are the two matches doing most of the work in the goals, BTTS and totals reasoning above, and neither resembles the fixture being played tonight.</li>
+      <li><strong>Most sensitive:</strong> the cards family, where the appointed official is unknown and the two clubs' foul rates are at opposite ends of the division &mdash; the one row on this card with a named structural question and no evidence at all to answer it. <strong>Least sensitive:</strong> the 1X2, where three live prices sit against two well-documented and genuinely opposite problems, neither of which the market has resolved.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>The goals total is more robust than both-teams-to-score here, even though the two lean the same way, because the total needs only <em>one</em> of these sides to keep leaking &mdash; and Union have conceded in three consecutive matches and more than anyone in the division &mdash; whereas BTTS at 1.45 additionally requires a first Bundesliga goal from a side with 6 shots on target in 180 minutes and a &euro;800k centre-forward as its summer answer.</li>
+      <li>The moneyline is more robust than the double chance because 2.40 / 3.50 / 2.80 still prices three outcomes against two documented and opposite structural problems, while <strong>12 at 1.30</strong> has already absorbed both and left nothing to reason about; only X2 at 1.55 does work the &minus;1 handicap does not already do.</li>
+      <li>The corner race is more robust than the corner total because the race can be argued from named style facts &mdash; a stated high press and possession under Lustrinelli against Musli&#263;'s tight central block, the league's lowest foul count &mdash; while the 9.5 total has no corner series behind it for either club and has been priced at 1.85 / 1.80, which is the book declaring it has no view either.</li>
+      <li>Almost anything on this card is more robust than the cards line, because every other row has at least one named, dated fact attached to it and this one has none: the appointment could not be established, so the single largest determinant of a 4.5-card line is missing while the two clubs sit at opposite extremes of the division's foul table.</li>
+      <li>Where the book has priced near indifference &mdash; the corner total at 1.85 / 1.80, and the cards at 1.65 / 1.95 &mdash; it is not signalling balance so much as the same uncertainty this page has: a home side three matches into a new system without two of the defenders bought for it, and a promoted side whose only two data points are a 3&ndash;0 defeat and a goalless draw with the champions.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f2">
+  <div class="fx-head">
+    <p class="fx-league">Italy &middot; Serie A &middot; Matchday 4</p>
+    <h2 class="fx-title">Venezia &ndash; Fiorentina</h2>
+    <p class="fx-sub">20:45 CEST &middot; Stadio Pier Luigi Penzo, Venice &middot; The round-four opener between the only two clubs in Serie A still on zero points, and the first match in charge for a Fiorentina manager appointed four days ago &mdash; against the club he himself took up to Serie A</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.75 &middot; 3.35 &middot; 2.50</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>1.50 &middot; 1.30 &middot; 1.43</dd></div>
+      <div class="od"><dt>EH +1 (1/X/2)</dt><dd>1.50 &middot; 4.55 &middot; 4.75</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.60 / 2.25</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.47 / 2.55</dd></div>
+      <div class="od"><dt>Cards 4.5 U / O</dt><dd>1.80 / 1.80</dd></div>
+      <div class="od"><dt>Venezia cards 2.5 U / O</dt><dd>1.53 / 2.10</dd></div>
+      <div class="od"><dt>Fiorentina cards 2.5 U / O</dt><dd>1.50 / 2.15</dd></div>
+      <div class="od"><dt>Corners 8.5 U / O</dt><dd>1.78 / 1.90</dd></div>
+      <div class="od"><dt>Corner race 1/X/2</dt><dd>2.00 &middot; 8.00 &middot; 2.00</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>One promoted side and one club in freefall, and they are level on nothing. <strong>Venezia won the 2025&ndash;26 Serie B</strong> at the first attempt after relegation &mdash; first on <strong>82 points from 38 matches, 24W&ndash;10D&ndash;4L, 77 scored and 31 conceded for +46</strong>, a point clear of Frosinone and six clear of play-off winners Monza, with the division's longest winning run at eight matches and the third Serie B title in the club's history; promotion was sealed with a 2&ndash;2 draw away at Spezia. <strong>Giovanni Stroppa is unchanged</strong> in his second season, and it was the fourth promotion of his career. Serie B averaged 2.56 goals a match last season, a number worth carrying because it is the division those 77 goals were scored in. Fiorentina are not promoted &mdash; this is their <strong>23rd consecutive season in the top flight and the 100th in the club's history</strong> &mdash; and they are the more disrupted side by a distance. After what the season previews describe as a shock flirtation with the relegation battle in 2025&ndash;26, the club spent <strong>&euro;150.30m this summer, the third-largest outlay in Serie A</strong>, appointed Fabio Grosso from Sassuolo, lost all three opening matches 0&ndash;4, 0&ndash;3 and 1&ndash;2, sacked him, and on <strong>7 September 2026 appointed Paolo Vanoli</strong> &mdash; the man who had steered them clear of relegation in the second half of last season and left three months ago. Tonight is Vanoli's first match back, four days into the job. It is also against <strong>Venezia, the club he previously managed and took up to Serie A</strong>. Both sides therefore arrive on zero points from three, Venezia with 2 scored and 7 conceded, Fiorentina with 1 and 9.</p>
+    <ul>
+      <li><strong>Venezia &mdash; high turnover funded by one big sale, weighted to the centre-forward, and no managerial change at all.</strong> Stroppa stays, so the churn is entirely in the squad and it was financed from the top: <strong>Issa Doumbia to Sporting CP for a reported &euro;20.53m plus &euro;6m in add-ons</strong>, with Hans Nicolussi Caviglia to Parma for &euro;6m and Michael Svoboda to Brighton for &euro;5m on a four-year contract. In, with fees: <strong>Akor Adams from Sevilla for &euro;16m plus &euro;6m</strong>, a centre-forward and much the largest outlay; <strong>Albion Rrahmani from Sparta Prague for &euro;7.5m plus &euro;2m</strong>; <strong>Armel Bella-Kotchap from Verona for &euro;7m plus &euro;3m</strong>, a centre-back; Redouane Halhal from Mechelen for &euro;5m; Kornel Lisman from Lech Pozna&#324; for &euro;2.5m; and in goal <strong>Lorenzo Montip&ograve; from Verona for &euro;250k</strong> plus Alessio Pozzi from Vis Pesaro for an undisclosed fee. Free and loan business: Toma Ba&#353;i&#263; from Lazio on a free on 27 May, Juan Jesus permanently on a free, Thierry Rendall Correia, Thorir Johann Helgason, Pasquale Mazzocchi on loan from Napoli, and &mdash; directly relevant tonight &mdash; <strong>Mat&iacute;as Moreno and Simon Sohm on loan from Fiorentina</strong>. The GK/CB/DM ledger is addressed at two of the three: a goalkeeper and a centre-back bought, a centre-forward as the headline fee, and <strong>no dedicated defensive midfielder signed</strong>. <strong>Gap:</strong> the terms of the two Fiorentina loans, including whether any clause governs them facing the parent club, are not published in anything reached &mdash; and Sohm is named in the probable eleven.</li>
+      <li><strong>Fiorentina &mdash; very high turnover, &euro;150.30m spent, and two managers in four days.</strong> Grosso arrived from Sassuolo in the summer and was dismissed after three defeats; <strong>Vanoli was appointed on 7 September 2026</strong>, which makes every tactical claim about the visitors four days old. The spending was heavy and spread across the spine. In, with fees: <strong>Arthur Atta from Udinese for &euro;25m plus &euro;5m</strong> in midfield; <strong>Mateo Pellegrino from Parma for &euro;25m plus &euro;5m</strong>, a centre-forward; <strong>Beto from Everton for &euro;18m</strong>, a second centre-forward; <strong>Marin Pongra&#269;i&#263; from Lecce for &euro;15m</strong>, a centre-back; <strong>Marco Brescianini from Atalanta for &euro;10m</strong>; <strong>Radu Dr&#259;gu&#537;in on a &euro;1.5m loan from Tottenham carrying an obligation to buy</strong>, a second centre-back; <strong>David de Gea on a free</strong> in goal; and Franco Mastantuono from Real Madrid. Out: <strong>Moise Kean loaned to Como with a &euro;35m obligation</strong> &mdash; the centre-forward the two new ones replace &mdash; Albert Gu&eth;mundsson free to Lazio with an obligation, Rolando Mandragora to Torino for &euro;5m, and the two loans to tonight's opponents. So the ledger is busy everywhere the spec asks: a free-transfer goalkeeper, &euro;15m and a loan-with-obligation at centre-back, &euro;25m in midfield, and &euro;43m across two centre-forwards to replace one. What it has produced so far is one goal in three matches.</li>
+      <li><strong>Suspensions / absences.</strong> Venezia's list is named and falls on the defence: <strong>Marin &#352;verko, Bartol Franji&#263; and Andrea Adorante are sidelined, and Armel Bella-Kotchap &mdash; the &euro;7m centre-back signed this summer &mdash; is a doubt.</strong> No suspension is reported on either side. For Fiorentina the notable absence is a selection rather than an injury: <strong>Dr&#259;gu&#537;in, signed on a loan carrying an obligation to buy, is reported to be left on the bench</strong> by the new manager, with Pongra&#269;i&#263; and Luca Ranieri the expected pairing. Beto is expected to make his first start for the club. <strong>Gap:</strong> no injury list at all was obtainable for Fiorentina, which on a card where the manager changed four days ago is a real limitation.</li>
+      <li><strong>Sample.</strong> Three Serie A matches each and no points between them. Venezia: 2&ndash;0 down at Lecce on 23 August, 2&ndash;0 down at Milan on 28 August, and a third defeat &mdash; <strong>the opponent and scoreline of which were not obtainable</strong>, though the aggregate of 2 scored and 7 conceded across three places it at 2&ndash;3. They also beat Modena 3&ndash;2 in the Coppa Italia on 15 August and went out 2&ndash;1 at Udinese on 2 September, and beat Galatasaray 3&ndash;0 in pre-season. Fiorentina: <strong>0&ndash;4 away at Roma on 24 August, 0&ndash;3 to Frosinone, 1&ndash;2 to Torino</strong>, one scored and nine conceded, plus a 4&ndash;1 Coppa Italia win over Benevento on 14 August. Between them these two clubs have scored <strong>three goals in six league matches and conceded sixteen</strong>. <strong>Gaps:</strong> no xG, shot, possession or corner series was obtainable for either club in either season; Fiorentina's final 2025&ndash;26 position, goals for and goals against were not obtainable in anything reached, only the characterisation that they were drawn into the relegation fight. <strong>Contradictions logged:</strong> Venezia's current position is given as 18th by one source and 19th by another; and one aggregator gives their Serie B season as 79 points and +44, which fails its own arithmetic &mdash; the 82/77/31/+46 row above is the one that reconciles, and is what this card carries.</li>
+      <li><strong>Referee. <span>Francesco Fourneau of Rome, confirmed</span></strong>, with Alassio and Barone on the lines, Ayroldi as fourth official, Dionisi on VAR and Maggioni as AVAR. He is 42 and experienced, and the record has an unusual shape. <strong>In 2025&ndash;26 he averaged 4.5 cards a match. In 2024&ndash;25 he averaged 2.8 &mdash; 30 yellows across 11 Serie A matches &mdash; and awarded 4 penalties in the season.</strong> His single 2026&ndash;27 match to date produced <strong>35 fouls, 5 yellows, no reds and no penalty, a fouls-per-card ratio of 7.0</strong>. The Italian match reporting describes his style consistently: precise, and inclined to <em>let play run</em> rather than whistle so-called half-fouls. Those two things together are the useful part &mdash; an official who blows for comparatively few fouls but has been booking at a rising rate is punishing a larger share of what he does stop. <strong>History with either club:</strong> Fiorentina have had him five times for 2 wins, 2 draws and 1 defeat, and are still unbeaten away under him, the two most recent being a 1&ndash;1 at Frosinone two years ago and a 0&ndash;6 win at Lecce last season. No Venezia record under him was found.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Venezia are the continuous side here and the one whose profile can actually be described, because nothing above the players has changed. Stroppa is in his second season, he won the division by taking 82 points from 38 matches with only four defeats, and the probable eleven is a <strong>3&ndash;5&ndash;2</strong> &mdash; Stankovic in goal; Schingtienne, Halhal and Haps across the back three; Hainaut and Correia as wing-backs around Kike Perez, Busio and Sohm; Yeboah and Adams in front. The summer served that shape rather than altering it: a &euro;16m centre-forward as the headline, a centre-back, a goalkeeper, a midfielder, and the Doumbia sale funding it. What three Serie A matches have shown is the familiar promoted-side compression &mdash; <strong>two goals scored and seven conceded</strong>, against a Serie B campaign in which they scored 77 in a division averaging 2.56 goals a game. The defensive absences bite in exactly the wrong place for a back three: &#352;verko and Franji&#263; out, and the &euro;7m centre-back Bella-Kotchap a doubt. <strong>Gap:</strong> no xG, possession, foul or corner data was obtainable for Venezia in either season, so the style description above rests on the formation, the transfer weighting and the results, not on measurement.</p>
+    <p>Fiorentina cannot be described at all yet, and that is the honest position. A club that spent &euro;150.30m &mdash; third-most in the division &mdash; lost its first three matches by a combined 9&ndash;1, dismissed the manager who bought into that squad and reinstalled the one who had kept the club up four months earlier. <strong>Vanoli has had four days.</strong> The probable shape is a <strong>4&ndash;3&ndash;3</strong> &mdash; de Gea; Dodo, Pongra&#269;i&#263;, Ranieri, Valdepe&ntilde;as; Ndour, Fagioli, Atta; Mastantuono, Beto, Njie &mdash; which is a reasonable guess at what he prefers and nothing more, and it already contains a visible judgement: Dr&#259;gu&#537;in, arriving on a loan the club is obliged to convert, starts on the bench, while Beto makes his first start as the lone centre-forward in place of the departed Kean. There is a second-order fact worth stating plainly: the man now picking Fiorentina's team <em>built the Venezia side</em> that won promotion to Serie A, and two of his own club's players are on loan in tonight's opposition dressing room, with Sohm named to start. <strong>Gaps:</strong> no xG, foul or corner series for Fiorentina either; no injury list; and their 2025&ndash;26 final columns were not obtainable, so the only evidence for what this team is amounts to a four-day-old appointment, a transfer ledger and 270 minutes played under someone else.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row good"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-low">Well-suited &mdash; three live prices on the only all-zero fixture in the division</span></div><div class="mkt-why">2.75 / 3.35 / 2.50 is fully live and the structural asymmetry is documented rather than assumed. The home case: an unchanged manager in his second season, 82 points and only four defeats in the division below, a summer weighted to a &euro;16m centre-forward, and a venue the visitors have lost at before &mdash; the last meeting finished 2&ndash;1 to Venezia. The away case: &euro;150.30m of squad, the third-largest outlay in Serie A, and a manager who kept this same club up five months ago. Against both: Venezia have conceded seven in three with two centre-backs out and a third a doubt, and Fiorentina have conceded nine in three and changed manager four days ago. Nothing here has been settled by price.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Asian handicap / EH +1<span class="verdict tag t-mid">OK &mdash; a real margin question, but the double chance has taken most of it</span></div><div class="mkt-why">1.50 for Venezia with a goal start, 4.55 for a one-goal Fiorentina win, 4.75 for two or more. The margin question is genuine because the visitors' three defeats were by four, three and one &mdash; a club losing by wide margins under a manager who is no longer there &mdash; while the home side's three were by two, two and, on the aggregate, one. What thins the row is what sits beside it: <strong>12 at 1.30 is effectively dead</strong>, the moneyline restated, and 1X at 1.50 duplicates the handicap's own favourite almost exactly. Only X2 at 1.43 and the 4.75 do work the rest of the family does not.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-mid">OK &mdash; both defences support the over, and neither attack does</span></div><div class="mkt-why">1.60 over against 2.25 under leans to goals, and the evidence for it is entirely defensive: these two clubs have conceded <strong>sixteen goals in six league matches between them</strong>, Fiorentina nine and Venezia seven, with Venezia missing two centre-backs and doubtful over a third. The evidence against it is the other half of the same statistic &mdash; they have <strong>scored three between them in those six matches</strong>, one of which was Fiorentina's only goal of the season. Behind that sit two numbers pulling in opposite directions: Venezia scored 77 in Serie B, but in a division averaging 2.56 goals a game, and Fiorentina have a &euro;43m pair of new centre-forwards who have produced almost nothing. The row is properly two-sided and poorly measured, since no xG or shot series exists for either club.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">BTTS<span class="verdict tag t-high">Dangerous &mdash; 1.47 on two sides with three goals between them in six matches</span></div><div class="mkt-why">1.47 Yes against 2.55 No asks both of these teams to score, and the combined scoring sample is <strong>three goals in six league matches</strong> &mdash; Venezia two, Fiorentina one. Each has been kept out in at least two of three. The structural reasons are named on both sides and none of them resolved this week: Venezia are a promoted side whose 77 Serie B goals came in a 2.56-goal division and whose &euro;16m centre-forward has a three-match top-flight sample; Fiorentina replaced Kean with two forwards costing &euro;43m combined and one of them, Beto, is making his first start tonight under a manager appointed on Monday. The danger is not that the lean is wrong but that <strong>the price has almost no room for a two-sided reading</strong> of samples this small, on a fixture where both defences are the better-evidenced half of each team.</div></div>
+      <div class="mkt-row good"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-low">Well-suited &mdash; a confirmed official, three seasons of card data, and a published fouls-per-card</span></div><div class="mkt-why">This is the best-evidenced row on the card. <strong>Fourneau is confirmed</strong>, with the full quaterna named, and his record is published across three seasons: <strong>4.5 cards a match in 2025&ndash;26, 2.8 in 2024&ndash;25</strong> (30 yellows in 11 matches), and in his single 2026&ndash;27 appearance <strong>35 fouls, 5 yellows, no reds, no penalty &mdash; 7.0 fouls per card</strong>. The Italian reporting characterises him as precise and inclined to let play run rather than whistle half-fouls, which fits a high fouls-per-card ratio with a rising card count: fewer stoppages, a larger share of them punished. The book has set 4.5 at <strong>1.80 / 1.80</strong> &mdash; exactly his 2025&ndash;26 mean, priced at indifference &mdash; with both team lines at 2.5 and virtually identical prices, 1.53/2.10 and 1.50/2.15. That is a coherent set and it is the one family here where the reasoning does not depend on a three-match sample. <strong>Gap:</strong> no club-level foul or card rate was obtainable for either side, and Fourneau has no recorded history with Venezia.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Corners<span class="verdict tag t-mid">OK &mdash; the lowest total on the slate, and the race is priced at dead level</span></div><div class="mkt-why">8.5 at 1.78 under / 1.90 over is the shortest corner line on this sheet, and the race at <strong>2.00 / 8.00 / 2.00 is perfectly symmetric</strong> &mdash; the book declaring it has no view whatever on which side will win the territorial battle. The structural material is real but does not point cleanly: a 3&ndash;5&ndash;2 with wing-backs against a 4&ndash;3&ndash;3 is a shape mismatch that usually produces volume, and both teams have spent the season chasing matches, which raises it further; against that, a promoted side missing two centre-backs and a visiting side four days into a new manager is not a reliable siege in either direction. <strong>Gap:</strong> no corner series was obtainable for either club, so the 8.5 and its near-even pricing are the most informative facts on this row.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li>Fiorentina's manager has been in post four days. Vanoli was appointed on 7 September 2026 after Grosso was dismissed following three defeats; the squad he picks tonight was assembled over a &euro;150.30m summer by a regime that has already been removed, and the 0&ndash;4, 0&ndash;3 and 1&ndash;2 that got Grosso sacked are the only Serie A evidence this team has produced.</li>
+      <li>Venezia's numbers were made in a different division. 82 points, 77 scored and 31 conceded came from Serie B, where the average match produced 2.56 goals; three Serie A matches have produced two goals and seven conceded, which is the whole of the top-flight sample and is not enough to correct the second-tier figures against.</li>
+      <li>The defensive absences land on a back three. &#352;verko and Franji&#263; are out and Bella-Kotchap &mdash; the &euro;7m centre-back bought this summer &mdash; is a doubt, in a 3&ndash;5&ndash;2 that needs three of them. Every goals, handicap and BTTS reading above is partly a reading of who fills that line.</li>
+      <li>Two Fiorentina players are in the opposition squad and one is named to start. Mat&iacute;as Moreno and Simon Sohm are on loan at Venezia from tonight's visitors, Sohm is in the probable eleven, and the terms of those loans are not published in anything reached &mdash; a fact that is unusual enough to state and not specific enough to weigh.</li>
+      <li><strong>Most sensitive:</strong> both-teams-to-score, priced at 1.47 on two sides that have managed three goals between them in six matches, with one making a &euro;18m striker's first start under a manager appointed on Monday. <strong>Least sensitive:</strong> the cards family &mdash; a confirmed official with three seasons of published card rates, a measured fouls-per-card figure and a named assistant and VAR team, which is more evidence than either playing squad on this page has produced all season.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>The cards total is more robust than anything involving goals here, because Fourneau's 4.5 per match in 2025&ndash;26, 2.8 in 2024&ndash;25 and 35 fouls to 5 cards this season are three independent measurements of the same official, while every goals market on this page rests on two three-match samples containing three goals between them.</li>
+      <li>The goals total is more robust than both-teams-to-score even though they lean the same way, because the over needs only <em>one</em> of these leaking defences to behave as it has &mdash; sixteen conceded in six between them &mdash; whereas BTTS at 1.47 additionally requires the scoring half, which is the half neither club has produced.</li>
+      <li>The moneyline is more robust than the double chance because 2.75 / 3.35 / 2.50 still prices three outcomes against a documented split &mdash; an unchanged promotion-winning manager against one appointed four days ago &mdash; while <strong>12 at 1.30</strong> has absorbed that split entirely and 1X at 1.50 merely restates the handicap's favourite.</li>
+      <li>The corner total is more robust than the corner race because 8.5 at 1.78 / 1.90 asks a question the shape mismatch bears on &mdash; a back-three side with wing-backs against a 4&ndash;3&ndash;3, both chasing points &mdash; while the race has been priced at <strong>2.00 / 8.00 / 2.00</strong>, which is the book stating outright that it cannot separate them.</li>
+      <li>Where the book has priced at or near even money it has done so three times on this card &mdash; the cards total at 1.80 / 1.80, the corner race at 2.00 / 2.00, and the two team card lines within 0.03 and 0.05 of each other. On the cards that reflects an official whose own mean sits exactly on the line; on the corners it reflects having nothing to go on, which is also this page's position.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f3">
+  <div class="fx-head">
+    <p class="fx-league">France &middot; Ligue 1 &middot; Matchday 4</p>
+    <h2 class="fx-title">Stade Rennes FC &ndash; Marsiglia</h2>
+    <p class="fx-sub">20:45 CEST &middot; Roazhon Park, Rennes &middot; Two clubs that finished level on 59 points last season arrive in opposite conditions: the hosts unbeaten under an unchanged manager, the visitors on their third head coach in five months having sold a goalkeeper, a centre-back and a centre-forward and signed nobody at all</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>2.05 &middot; 3.80 &middot; 3.25</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>1.33 &middot; 1.25 &middot; 1.75</dd></div>
+      <div class="od"><dt>EH +1 (1/X/2)</dt><dd>1.33 &middot; 5.50 &middot; 6.50</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>1.45 / 2.60</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>1.40 / 2.75</dd></div>
+      <div class="od"><dt>Cards 4.5 U / O</dt><dd>1.57 / 2.10</dd></div>
+      <div class="od"><dt>Corners 9.5 U / O</dt><dd>1.97 / 1.72</dd></div>
+      <div class="od"><dt>Corner race 1/X/2</dt><dd>1.70 &middot; 8.50 &middot; 2.35</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>Neither club is promoted, and the structural story here is not division but continuity &mdash; of which one side has all and the other none. They finished <strong>level on 59 points in 2025&ndash;26</strong>, separated only by goal difference: <strong>Marseille fifth, 34 played, 18W&ndash;5D&ndash;11L, 63 scored and 45 conceded for +18</strong>; <strong>Rennes sixth, 17W&ndash;8D&ndash;9L, 59 scored and 50 conceded for +9</strong>, in a division that averaged 2.82 goals a match. This is Rennes' <strong>126th season and their 33rd consecutive in the top flight</strong>, and <strong>Franck Haise is unchanged</strong>. Marseille have had <strong>three head coaches in five months</strong>. Roberto De Zerbi left by mutual consent in February 2026 after a 5&ndash;0 defeat to Paris Saint-Germain, twelve points adrift of the top and eliminated from the Champions League; Habib Beye replaced him; Beye was dismissed; and <strong>Bruno G&eacute;n&eacute;sio was appointed, reported on 1 July 2026</strong>. G&eacute;n&eacute;sio was French coach of the year in 2022, took Lille to third last season on 61 points, and has previously managed Lyon, Lille and &mdash; tonight's opponents &mdash; <strong>Rennes</strong>. What followed his appointment is the fact that shapes this card: <strong>Marseille made no signings whatsoever this summer</strong>, while selling across the spine. Rennes, meanwhile, sold a twenty-year-old centre-back to Liverpool for &pound;60m and replaced him from the free and undisclosed market. Four rounds in, Rennes have 7 points from 3 and sit fifth, unbeaten; Marseille have 3 from 3.</p>
+    <ul>
+      <li><strong>Stade Rennes &mdash; medium turnover concentrated at centre-back, one enormous sale, and no managerial change.</strong> Haise is unchanged, so the churn is all in the squad and it is heavily defensive. Out: <strong>J&eacute;r&eacute;my Jacquet, a 20-year-old centre-back, to Liverpool for a reported &pound;60m on 1 July</strong> &mdash; by a distance the largest single transaction on this slate &mdash; plus <strong>Leo &Oslash;stig&aring;rd, a second centre-back, to Genoa</strong> as a loan made permanent on the same date, and Albert Gr&oslash;nb&aelig;k to Hamburger SV, also a loan made permanent. In, and the contrast with the outgoing figure is the point: <strong>Gon&ccedil;alo Oliveira from Benfica B for an undisclosed fee</strong>, a centre-back; <strong>Nicolas Lema&icirc;tre free from Troyes</strong>, a goalkeeper; <strong>Issa Soumar&eacute; free from Le Havre</strong>, a centre-forward; and <strong>Adrien Thomasson free from Lens</strong>, a midfielder &mdash; all four on 1 July. Beyond that the reinforcement is internal: loan returns for Rayan Bamba, Mikayil Faye, Seko Fofana, Jordan James, Ayanda Sishuba and Hans Hateboer. Against the spec's priority list: <strong>two centre-backs out and one in</strong>, a goalkeeper and a centre-forward added on frees, and <strong>no defensive midfielder signed</strong>. The recent eleven &mdash; Samba; Frankowski, Rouault, Cresswell, Merlin; Rongier, Blas, Szymanski, Camara; Al-Tamari, Lepaul &mdash; is the side that has taken seven points from three.</li>
+      <li><strong>Marsiglia &mdash; turnover in one direction only: out. Nothing in, and a manager appointed in July.</strong> This is the most unusual squad ledger on the board. Marseille have <strong>sold Mason Greenwood, Facundo Medina, goalkeeper Ger&oacute;nimo Rulli and centre-forward Pierre-Emerick Aubameyang, and sent former captain Leonardo Balerdi, a centre-back, on loan to Roma &mdash; and have not made a single signing.</strong> The published transfer tables record &euro;0m incoming, which the reporting corroborates rather than contradicts, and G&eacute;n&eacute;sio has said so himself in plain terms: "three or four more players have to leave us for us to be able to register one or two arrivals." That is a registration constraint, not a recruitment preference. Read against the spec's priority positions it is close to a worst case: <strong>the goalkeeper sold, a centre-back gone on loan, the centre-forward sold, and no replacement at any of the three</strong>. Jeffrey de Lange has taken the gloves, Nayef Aguerd and CJ Egan-Riley the centre of defence, and Amine Gouiri the centre-forward role, with Pierre-Emile H&oslash;jbjerg, Amine Harit, Angel Gomes and Himad Abdelli in midfield and Igor Paix&atilde;o wide. Timothy Weah is captain.</li>
+      <li><strong>Suspensions / absences.</strong> <strong>Gap &mdash; and a wide one.</strong> No injury list and no suspension was obtainable for either club in anything reached. That is the weakest evidence on this card, and it matters more than usual for Marseille, whose squad has shrunk by five contributors with no arrivals to absorb an absence. The only availability facts established are positive ones: the elevens that played on 6 September are on record for both sides, and no player in either is reported unavailable.</li>
+      <li><strong>Sample.</strong> Three Ligue 1 matches each, and a clear split. <strong>Rennes: 2&ndash;2 at home to Paris Saint-Germain on 23 August, 3&ndash;2 against Le Mans on 30 August, 2&ndash;1 away at Angers on 6 September</strong> &mdash; unbeaten, seven points, fifth, seven scored and five conceded, with <strong>both teams scoring in all three and all three finishing above 2.5 goals</strong> (four, five and three). Esteban Lepaul has <strong>three goals in three appearances</strong> and has taken more shots than any player in either squad. <strong>Marseille: 4&ndash;0 against Strasbourg on 21 August, 0&ndash;2 away at Monaco on 30 August, 2&ndash;3 at home to Paris FC on 6 September</strong> &mdash; six scored, five conceded, three points, with Amine Gouiri on four goals in four outings. Their Europa League campaign begins six days after this match, away at Be&#351;ikta&#351; on 17 September; Rennes are also in that competition. The measurable stylistic contrast is real: <strong>Marseille average 659.7 passes a match at 91% pass accuracy</strong>, against <strong>Rennes at 83% accuracy with 15.7 aerial duels won, 13.7 interceptions and 10.3 successful tackles a match, and 29% cross accuracy</strong>. <strong>Gaps:</strong> no xG series, no per-match foul or card rate and no corner series was obtainable for either club in either season. <strong>Contradictions logged:</strong> Marseille's current position is given as 10th by one source and 11th by another; and the head-to-head of 65 meetings, 27 Rennes wins to 16 for Marseille, is attached by its source to Roazhon Park although the sample size suggests it is the overall record &mdash; it is reported here as given. The most recent meeting was Marseille 3&ndash;1 Rennes on 17 May 2026.</li>
+      <li><strong>Referee. <span>J&eacute;r&eacute;my Stinat, confirmed</span></strong>, with Christophe Mouysset and Thomas Luczynski on the lines, R&eacute;mi Landry as fourth official and Cyril Gringore and Marc Bollengier on VAR. The profile is distinctive in a way that bears directly on the discipline row. His <strong>career Ligue 1 average is 3.74 yellow cards a match</strong>; a recent 17-match sample runs at <strong>4.41 yellows a match (75 in 17)</strong>, and a 16-match sample at <strong>0.43 red cards a match (7 in 16)</strong>, with the previous season quoted at <strong>0.53 dismissals a match</strong>. On penalties he sits at <strong>0.37 a match against a Ligue 1 average of 0.34</strong>. <strong>Label caveat, stated rather than smoothed over:</strong> the source tags those 17- and 16-match samples as 2026&ndash;27, which is arithmetically impossible in a season four rounds old &mdash; they are recent-season figures of uncertain year and are carried here as such, not as this season's. What survives the caveat is the shape: an official booking above his own career mean, <strong>dismissing a player roughly every second match</strong>, and awarding penalties above the divisional rate. <strong>History with either club:</strong> he has not refereed Marseille since <strong>22 February 2025</strong>, a match away at Auxerre described in the French press as very tense, and Marseille-facing outlets have greeted the appointment unfavourably &mdash; that framing is press opinion and is recorded as opinion. <strong>Gap:</strong> no fouls-per-card figure is published for him, so whether the high card count reflects early intervention or busy fixtures cannot be established.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Rennes are the more coherent side on this card and the numbers describing them are the more physical. Haise is unchanged, the eleven has been stable across three matches, and the measurable profile is a duel-and-transition team rather than a possession one: <strong>15.7 aerial duels won, 13.7 interceptions and 10.3 successful tackles a match, at 83% pass accuracy and 29% cross accuracy</strong>. The summer did not alter that intent so much as strip out its most valuable piece &mdash; Jacquet sold to Liverpool at 20 for &pound;60m, &Oslash;stig&aring;rd made permanent at Genoa, and one centre-back brought in from Benfica B for an undisclosed fee against those two departures. What three matches have produced is a side that scores and concedes freely in equal measure: seven and five, a point taken off Paris Saint-Germain, then two wins by a single goal, with Lepaul scoring in a way that has carried the attack almost on its own. That is a profile of a team that wins its matches but does not close them, and the goals column says so &mdash; every one of the three has gone past 2.5 and every one has seen both sides score. <strong>Gap:</strong> no xG, foul or corner series was obtainable for Rennes, so the pressing and set-piece volume behind those duel numbers is undescribed.</p>
+    <p>Marseille are the harder read, and the reason is not form but arithmetic. A club that finished fifth on 59 points has, in a single window, <strong>sold its goalkeeper, its centre-forward and its most valuable attacker, loaned out its former captain at centre-back, and signed nobody</strong> &mdash; with the manager stating publicly that arrivals depend on further departures being registered first. So the eleven that will take the field is last season's minus five contributors, assembled by a coach appointed in July, who is himself the third man in the job since February. The passing numbers say G&eacute;n&eacute;sio's intent is the opposite of Rennes': <strong>659.7 passes a match at 91% accuracy</strong> is a possession side, and the three results show what that has produced so far &mdash; a 4&ndash;0, a 0&ndash;2 and a 2&ndash;3, which is control converting to a rout once, evaporating once, and outscored at home once. Gouiri's four goals in four are the one consistent thread and also the concentration risk, since he is playing a centre-forward role in a squad where the previous holder of it was sold and not replaced. <strong>Gaps:</strong> no xG, foul, card or corner series for Marseille either, and no injury list at all &mdash; on a squad this thin, the absence of an absence list is the single largest hole on this page.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row good"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-low">Well-suited &mdash; three live prices against the clearest continuity gap on the slate</span></div><div class="mkt-why">2.05 / 3.80 / 3.25 is fully live, and the structural asymmetry behind it is documented on both sides rather than inferred from form. The home case: an unchanged manager, a settled eleven, seven points from three including a draw with the champions, and a venue where the overall head-to-head favours them 27&ndash;16 across 65 meetings. The away case: a fifth-placed finish on the same 59 points last season, a 91%-accuracy possession game and a forward on four goals in four. Against the visitors, and heavily: three head coaches since February, <strong>zero signings</strong>, and the goalkeeper, a centre-back and the centre-forward all gone. The draw at 3.80 is the least supported of the three, and nothing on this row has been settled by price.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Asian handicap / EH +1<span class="verdict tag t-high">Dangerous &mdash; barely alive, and the double chance has already consumed it</span></div><div class="mkt-why">1.33 for Rennes with a goal start, 5.50 for a one-goal Marseille win, 6.50 for two or more. At 1.33 the favourite side of this row sits on the edge of the live threshold, and it is duplicated almost exactly by <strong>1X at 1.33</strong>, while <strong>12 at 1.25 is dead outright</strong> &mdash; the moneyline restated, which dies with it. So of the five prices across the handicap and double-chance families, three say the same thing and two are long shots on a margin nobody has data for: Marseille have won by two or more once in three and lost by two once. Only X2 at 1.75 adds anything the 1X2 row does not already offer more cleanly.</div></div>
+      <div class="mkt-row good"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-low">Well-suited &mdash; the best-evidenced goals row on the board, from both directions</span></div><div class="mkt-why">1.45 over against 2.60 under leans clearly, and unusually the lean is supported by season-length numbers <em>and</em> by the current sample from both clubs. Last season these two produced almost identical goal volumes in their own matches: <strong>Rennes 59 scored and 50 conceded, 109 goals across 34 matches; Marseille 63 and 45, 108 across 34</strong> &mdash; roughly 3.2 goals a match each, against a divisional average of 2.82. This season <strong>all three Rennes matches have gone above 2.5</strong> (four, five and three goals) and two of Marseille's three have (four and five). That is <strong>five of six</strong>. The structural reasons are named rather than statistical: Rennes sold a &pound;60m centre-back and replaced him from the free market, Marseille loaned out a centre-back and sold their goalkeeper with no replacement at either.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; fully evidenced on the home half, only partly on the away half</span></div><div class="mkt-why">1.40 Yes against 2.75 No. The Rennes half of the question is as well supported as anything on this board: <strong>both teams have scored in all three of their matches</strong>, they have conceded in every one, and they have scored in every one. The Marseille half is looser &mdash; they have scored in two of three and been kept out once, at Monaco, and their goals are concentrated in one player with four in four. Against the Yes stands the one genuinely contrary data point on the card, Marseille's 4&ndash;0 clean sheet against Strasbourg on the opening weekend. The reason this rates below the goals total, which leans the same way, is that BTTS needs the visitors' <em>attack</em> specifically, and that attack lost Aubameyang without replacement, whereas the total can be satisfied by either defence continuing to leak.</div></div>
+      <div class="mkt-row good"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-low">Well-suited &mdash; a confirmed official with an extreme profile, and a genuine stylistic clash to apply it to</span></div><div class="mkt-why"><strong>Stinat is confirmed</strong>, with the full team of officials named, and his record is the most distinctive on this slate: <strong>3.74 yellows a match across his Ligue 1 career, 4.41 on a recent 17-match sample, and roughly one dismissal every second match</strong> &mdash; 0.43 reds per match on a 16-match sample, 0.53 quoted for the previous season &mdash; with penalties at 0.37 against a divisional 0.34. There is a real clash for that to act on: a home side winning <strong>15.7 aerial duels and making 13.7 interceptions and 10.3 tackles a match</strong> against visitors who pass 659.7 times at 91% accuracy. A duel-heavy team defending against a possession team is where fouls accumulate. The book has set 4.5 with the <strong>under at 1.57</strong>, below his recent 4.41 average and above his career 3.74 &mdash; a genuine tension worth naming. <strong>Gaps:</strong> no fouls-per-card figure for Stinat, and no club-level card or foul rate for either side; the year-label on his 17-match sample is unreliable and is flagged above.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Corners<span class="verdict tag t-mid">OK &mdash; asymmetric by style, and the race is the better-supported half</span></div><div class="mkt-why">9.5 at 1.97 under / 1.72 over, with the race at 1.70 / 8.50 / 2.35. The style contrast gives the race something to work with that the total does not: a possession side at 91% pass accuracy against a side that crosses at 29% accuracy and wins its ball back through interceptions and tackles produces very different routes to a corner, and the pricing leans to the hosts in a way the moneyline broadly echoes. What holds this to OK is the same hole as everywhere on this page &mdash; <strong>no corner series was obtainable for either club in either season</strong>, so the 9.5 line itself, and the fact that it sits a goal-line above the other Friday fixtures on this sheet, is the most informative evidence available on the row.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li>Marseille signed nobody. Not one player arrived this summer, while Rulli, Aubameyang, Greenwood and Medina were sold and Balerdi loaned to Roma &mdash; a goalkeeper, a centre-forward and a centre-back among them. The manager has stated that further departures are required before any arrival can be registered, which means the squad available tonight is smaller than the one that finished fifth and cannot be repaired.</li>
+      <li>Marseille have had three head coaches since February. De Zerbi left by mutual consent after a 5&ndash;0 defeat to PSG, Beye came and went, and G&eacute;n&eacute;sio was appointed in July. Last season's 63 scored and 45 conceded were produced under a manager two removes ago, and the 91% pass accuracy describes ten weeks of work.</li>
+      <li>Rennes' defence has been rebuilt from the discount end. A 20-year-old centre-back was sold to Liverpool for &pound;60m and a second made permanent at Genoa; the replacements were one undisclosed-fee signing from Benfica B, a free-transfer goalkeeper, and loan returns. Five goals conceded in three matches is the only measurement of the result so far.</li>
+      <li>No absence list exists for either club. This is the widest gap on the card: nothing reached publishes an injury or suspension for either side, and on a Marseille squad reduced by five contributors with no incoming cover, a single unavailability would carry more weight here than on any other fixture on this board.</li>
+      <li><strong>Most sensitive:</strong> the handicap and double-chance family, where 1.33, 1.33 and 1.25 say the same thing three times over a margin question nobody has evidence for. <strong>Least sensitive:</strong> the goals total, which is supported by both clubs' full-season volumes, by five of six matches this season, and by named defensive departures on both sides.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>The goals total is more robust than both-teams-to-score here, even though they lean the same way, because the over can be satisfied by either of two defences that were each weakened by a named departure &mdash; Jacquet to Liverpool, Balerdi to Roma, Rulli sold &mdash; whereas BTTS additionally requires the Marseille attack specifically, which lost Aubameyang and has not replaced him.</li>
+      <li>The cards line is more robust than the corners line because Stinat's record supplies three independent measurements &mdash; a 3.74 career mean, a 4.41 recent sample and roughly one red every second match &mdash; and there is a documented duel-versus-possession clash for them to act on, while the corner total has no series behind it for either club at all.</li>
+      <li>The moneyline is more robust than the handicap because 2.05 / 3.80 / 3.25 still prices three outcomes against the continuity gap &mdash; one manager unchanged, three at the other club since February &mdash; whereas the EH +1 favourite at 1.33 is duplicated exactly by 1X at 1.33 and preceded into deadness by 12 at 1.25.</li>
+      <li>The corner race is more robust than the corner total because the race can be argued from measured style &mdash; 659.7 passes at 91% accuracy against 29% cross accuracy and 13.7 interceptions &mdash; while the 9.5 total rests on nothing but the line itself and its distance from the rest of this sheet.</li>
+      <li>Where the book has priced near even money it has done so on the corner total, 1.97 / 1.72, and that is not balance but absence: it is the one family on this fixture where neither this page nor, on the evidence of the price, the market has a club-level series to reason from.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f4">
+  <div class="fx-head">
+    <p class="fx-league">Spain &middot; LaLiga &middot; Matchday 5</p>
+    <h2 class="fx-title">Siviglia &ndash; Valencia</h2>
+    <p class="fx-sub">21:00 CEST &middot; Ram&oacute;n S&aacute;nchez-Pizju&aacute;n, Seville &middot; The division&rsquo;s bottom club, nine players unavailable or doubtful and beaten 5&ndash;0 last time out, at a ground where it has not lost to this opponent in six meetings &mdash; refereed by the strictest official on the board</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>1 / X / 2</dt><dd>1.92 &middot; 3.25 &middot; 4.35</dd></div>
+      <div class="od"><dt>1X / 12 / X2</dt><dd>1.20 &middot; 1.33 &middot; 1.85</dd></div>
+      <div class="od"><dt>EH &minus;1 (1/X/2)</dt><dd>3.60 &middot; 3.65 &middot; 1.85</dd></div>
+      <div class="od"><dt>O2.5 / U2.5</dt><dd>2.15 / 1.62</dd></div>
+      <div class="od"><dt>BTTS Y / N</dt><dd>2.00 / 1.75</dd></div>
+      <div class="od"><dt>Cards 5.5 U / O</dt><dd>1.80 / 1.78</dd></div>
+      <div class="od"><dt>Corners 8.5 U / O</dt><dd>1.80 / 1.80</dd></div>
+      <div class="od"><dt>Corner race 1/X/2</dt><dd>1.53 &middot; 9.00 &middot; 2.70</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>Neither club is promoted, and on this card the structural question is not division but depletion. <strong>Sevilla finished 13th in 2025&ndash;26 &mdash; 38 played, 12W&ndash;7D&ndash;19L, 46 scored and 60 conceded for &minus;14, 43 points</strong>, in a division averaging 2.69 goals a match; this is their <strong>120th season and their 26th consecutive in LaLiga</strong>. That 60 conceded is the relevant half of the row: only the three relegated clubs and one other shipped more. <strong>Valencia finished 9th on 49 points &mdash; 13W&ndash;10D&ndash;15L, 46 scored and 55 conceded for &minus;9</strong>, scoring precisely as many as Sevilla and conceding five fewer. Four rounds into this season the two are at opposite ends of the table: <strong>Sevilla have 7 points from 4 and sit sixth</strong>, level with Atl&eacute;tico Madrid, while <strong>Valencia are bottom of LaLiga with one point from a possible twelve</strong>, having just been beaten <strong>5&ndash;0 at home by Barcelona</strong>. Sevilla changed manager in the last campaign rather than this one: <strong>Luis Garc&iacute;a Plaza was appointed on 25 March 2026</strong>, the day after Mat&iacute;as Almeyda was dismissed following one league win in eight, on a contract to 30 June 2027, inheriting a side 15th on 31 points after 29 rounds and three clear of the drop. <strong>Carlos Corber&aacute;n is unchanged at Valencia</strong> &mdash; but pre-season friendlies were marked by supporters booing the ownership and calling for his removal, and this is the club's <strong>final season at the Mestalla after 103 years</strong>.</p>
+    <ul>
+      <li><strong>Siviglia &mdash; high turnover in both directions, the centre-forward sold and replaced twice over at a fraction of the fee.</strong> Garc&iacute;a Plaza, 53, arrived from a spell at Alav&eacute;s that ended with his dismissal in December 2024; across 229 Spanish top-flight matches he has 66 wins, 58 draws and 105 defeats, averaging 1.12 points a game. The window under him was busy and cheap. In, with fees: <strong>Giorgi Kochorashvili from Sporting CP for &euro;4.5m</strong> in midfield; <strong>Robbie Ure from IK Sirius for &euro;5.5m</strong>, a forward; <strong>Julio D&iacute;az from Atl&eacute;tico Madrid for &euro;1m</strong>, a centre-back; <strong>Lucas Stassin on a &euro;2.5m loan from Saint-&Eacute;tienne</strong>, a forward; <strong>Juan Iglesias free from Getafe</strong>; plus loans for <strong>Odysseas Vlachodimos in goal from Newcastle</strong>, F&eacute;lix Correia from Lille, and &mdash; on deadline day &mdash; <strong>Youssouf Fofana from AC Milan</strong>. Jon Guridi and Arouna Sangante also arrived. Out, and this is where the money went: <strong>Akor Adams to Venezia for a reported &euro;17m</strong>, <strong>Juanlu S&aacute;nchez to Bournemouth for &euro;11.2m</strong>, Djibril Sow to Genoa for &euro;4m, plus Nemanja Gudelj and Alexis S&aacute;nchez. Against the spec's priority list: <strong>a goalkeeper in on loan, a &euro;1m centre-back, a deadline-day loan in defensive midfield, and the centre-forward sold for &euro;17m and replaced by a &euro;5.5m signing and a &euro;2.5m loan.</strong> <strong>Contradiction logged:</strong> the Adams fee is given here as &euro;17m and as &euro;16m plus &euro;6m in add-ons by the Venezia-side reporting used elsewhere on this board &mdash; the same transfer, reported two ways, and neither is resolved into the other.</li>
+      <li><strong>Valencia &mdash; a net-negative window, the biggest signing at &euro;5m, and no managerial change.</strong> Corber&aacute;n stays and the squad around him got smaller: <strong>eight arrivals against ten departures</strong>, with the window closing on 1 September 2026. The most expensive signing of the entire summer was <strong>Arnau Mart&iacute;nez at &euro;5.00m</strong>. The rest: Dieng, Justin de Haas, <strong>Ryunosuke Sato from FC Tokyo</strong>, Elliott, Van Oevelen and Pablo Maffeo, with <strong>a Dutch goalkeeper taken on loan from Ipswich Town</strong> and Guido Rodr&iacute;guez's renewal tied up in July. The largest sale was <strong>Cenk &Ouml;zkacar for &euro;1.75m</strong>; Danjuma and Hugo Duro were linked with exits in June and stayed. For a club that finished ninth on 49 points, that is a window that neither reinvested nor cashed in &mdash; it simply reduced the squad by two bodies. The stated institutional objective reported alongside it is to open the Nou Mestalla in European competition, which sits awkwardly against a &euro;5m ceiling on incoming fees. <strong>Gap:</strong> no position was established for most of the incoming players, and no goalkeeper, centre-back or defensive-midfield fee was published in anything reached beyond the Mart&iacute;nez figure.</li>
+      <li><strong>Suspensions / absences.</strong> This is the most lopsided availability picture on the board, and it is named in full on one side. <strong>Valencia have five players out injured &mdash; Umar Sadiq, Sergi Can&oacute;s, Copete, Diego L&oacute;pez and Dimitri Foulquier &mdash; and four more doubtful: Guido Rodr&iacute;guez, Luis Rioja, Mouctar Diakhaby and Justin de Haas.</strong> That is nine of a squad that shrank by two over the summer. Sevilla by contrast report <strong>no new injuries</strong>, with Rub&eacute;n Vargas questionable on physical discomfort and <strong>Arouna Sangante suspended after being sent off at Espanyol last weekend</strong> &mdash; one of their own summer arrivals, and a reminder that this fixture's cards market has a live precedent from six days ago.</li>
+      <li><strong>Sample.</strong> Four LaLiga matches each and a 6-point gap. <strong>Sevilla: 2&ndash;1 at home to Rayo Vallecano on 15 August, 3&ndash;1 away at Athletic Club on 22 August, 1&ndash;3 at home to Atl&eacute;tico Madrid on 29 August, 1&ndash;1 away at Espanyol on 6 September</strong> &mdash; 2W&ndash;1D&ndash;1L, 7 scored and 6 conceded, sixth. Their four matches have produced <strong>three, four, four and two goals &mdash; thirteen across four, or 3.25 a match</strong>, against a divisional 2.69 last season. <strong>Valencia: one point from four matches, bottom, most recently beaten 5&ndash;0 at home by Barcelona.</strong> <strong>Gap &mdash; and it is a serious one for the goals rows below:</strong> Valencia's goals for and against this season were not obtainable in anything reached, only their points total, their position and the Barcelona scoreline. No xG, shot, possession, foul, card or corner series was obtainable for either club in either season. <strong>Head-to-head:</strong> Valencia are reported <strong>unbeaten in the last six meetings</strong> with Sevilla and to have won two of their last three visits to this stadium &mdash; a record that runs directly against the current table. <strong>Contradiction logged:</strong> one report states Sevilla "finished 17th in La Liga last season"; the published final table gives 13th on 43 points, and that row reconciles with its own wins, draws and goal difference, so it is the one carried here.</li>
+      <li><strong>Referee. <span>Mateo Busquets Ferrer, confirmed.</span></strong> Born in Palma de Mallorca on 31 October 1993, and the strictest official appointed anywhere on this board. Across <strong>58 Spanish top-flight matches he has shown 321 yellow cards &mdash; 5.53 a match &mdash; with 17 straight reds and 8 second yellows, and awarded 24 penalties at roughly 0.41 a match</strong>. His most recent published full season runs higher still: <strong>18 matches across LaLiga and the Copa del Rey, 104 yellows, 4 red cards and 7 penalties</strong>, or 5.78 cards and 0.39 penalties a match. The Spanish press characterises him plainly as strict and above the divisional card average, and the figures support the characterisation rather than merely repeating it. <strong>The detail that matters most here:</strong> the cards line on this fixture is <strong>5.5, the highest on the entire sheet</strong> &mdash; every other fixture tonight sits at 4.5 &mdash; and his career mean is 5.53. <strong>Gaps:</strong> no fouls-per-card figure is published for him, so whether the volume comes from early intervention or from busy matches cannot be established, and no history with either club was found.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Sevilla are a side whose recent identity was formed in a relegation fight and has not obviously been abandoned since. Garc&iacute;a Plaza took the job in late March with the club 15th and three points clear of the drop, kept them up, and returned for a full season on a contract that runs only to June 2027. The summer was transactional rather than directional: <strong>&euro;17m and &euro;11.2m out for Adams and Juanlu S&aacute;nchez, and every incoming fee below &euro;6m</strong>, with the goalkeeper, the defensive midfielder and one forward all arriving on loan. What four matches show is a team that neither controls games nor collapses in them &mdash; a home win over Rayo, a 3&ndash;1 at Athletic Club that is comfortably the best result any club on this board has produced this season, a 1&ndash;3 home defeat to Atl&eacute;tico and a 1&ndash;1 at Espanyol. They have scored in all four and conceded in all four. The one measurable pattern is volume: <strong>thirteen goals across their four matches</strong>, well above the divisional rate, and it is a pattern the market has priced against rather than with. <strong>Gap:</strong> no xG, possession, foul or corner series was obtainable for Sevilla, so nothing here establishes whether that volume is a style or a run.</p>
+    <p>Valencia arrive in the worst condition of any club on this board and the evidence for it is availability rather than tactics. Corber&aacute;n is unchanged, which ordinarily is the continuity side of the ledger &mdash; but he is unchanged while being booed by his own supporters in pre-season, with an ownership under sustained protest, in the club's last season at a stadium it has occupied for 103 years, and with a squad that lost ten players and gained eight, the most expensive of them at &euro;5m. Then the injuries: <strong>five out and four doubtful</strong>, including the centre-forward Sadiq, the centre-back Diakhaby and the midfielder Guido Rodr&iacute;guez whose renewal was the summer's proudest announcement. One point from twelve and a 5&ndash;0 home defeat by Barcelona is the record that follows. The single fact pulling the other way is neither form nor squad but history: <strong>this fixture has not been won by Sevilla in six meetings</strong>, and Valencia have taken two of their last three visits to the S&aacute;nchez-Pizju&aacute;n. That is a genuine structural counterweight and it is also the oldest evidence on this page. <strong>Gaps:</strong> Valencia's goals scored and conceded this season could not be obtained at all, and no xG, foul or corner series exists for them either &mdash; which means the goals markets below are being reasoned from one club's numbers and the other club's league position.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row good"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-low">Well-suited &mdash; three live prices, and the head-to-head contradicts the table outright</span></div><div class="mkt-why">1.92 / 3.25 / 4.35 is fully live and the two sides of it are unusually well separated. For the hosts: sixth on 7 points from 4, a 3&ndash;1 at Athletic Club, a full squad bar one suspension and one doubt, and a manager who has been in post since March. For the visitors: bottom of the division on one point, beaten 5&ndash;0 last time out, <strong>nine players unavailable or doubtful</strong>, and a summer that reduced the squad. Against all of that sits a single fact that is not form and does not decay the way form does &mdash; <strong>Valencia are unbeaten in the last six meetings between these clubs and have won two of their last three visits here</strong>. Two bodies of evidence pointing opposite ways, neither of them settled by the price.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Asian handicap / EH &minus;1<span class="verdict tag t-mid">OK &mdash; asymmetric, and the double chance beside it is dead on both sides</span></div><div class="mkt-why">3.60 for Sevilla to win by two or more, 3.65 by exactly one, 1.85 for Valencia to avoid defeat or lose by one. The margin question has something behind it on the home side: Sevilla's two wins came by one goal and by two, and they beat Athletic Club 3&ndash;1 away. It has almost nothing behind it on the away side, because <strong>Valencia's goals conceded this season could not be established</strong> &mdash; only that they lost 5&ndash;0 to Barcelona and have one point. What thins the row further is its neighbours: <strong>1X at 1.20 is dead and 12 at 1.33 is dead</strong>, both simply the moneyline restated, leaving X2 at 1.85 as the only double-chance price doing work the handicap does not.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U 2.5)<span class="verdict tag t-mid">OK &mdash; the only under-favoured total on the slate, and the home side's own figures argue against it</span></div><div class="mkt-why">2.15 over against <strong>1.62 under</strong>, and this is the one fixture on the sheet where the book leans to fewer goals rather than more. The tension is worth stating precisely: <strong>Sevilla's four matches have produced three, four, four and two goals &mdash; 3.25 a match against a divisional 2.69 &mdash; and they have scored and conceded in every one.</strong> On the only club-level evidence available, the over has the better of it. The under lean must therefore be carrying a view about the Valencia attack, and that is exactly where this page cannot follow, because <strong>Valencia's goals for and against this season were not obtainable</strong>. What is known about that attack is circumstantial and adverse: bottom of the table, one point from twelve, the centre-forward Sadiq injured, and a summer whose largest signing cost &euro;5m. A row where the priced direction and the measurable evidence disagree, and the measurement is missing on one side.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; the No lean rests entirely on the half of the fixture nobody could measure</span></div><div class="mkt-why">2.00 Yes against <strong>1.75 No</strong> &mdash; again the only fixture on this board where No is the shorter price. One leg is well evidenced and it is the wrong leg for the lean: <strong>Sevilla have conceded in all four matches</strong>, six goals in total, and shipped 60 across 38 last season, among the worst in the division. So the No effectively needs Valencia to be shut out, and the case for that is their position, their point total, five players injured including their centre-forward and four more doubtful. The case against it is the same six-match unbeaten head-to-head that unsettles the moneyline. <strong>Gap:</strong> with no goals-scored figure obtainable for Valencia this season, the leg carrying the entire lean is the one with no number attached to it.</div></div>
+      <div class="mkt-row good"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-low">Well-suited &mdash; the best-matched referee and line on the whole board</span></div><div class="mkt-why">This is the strongest row on this card and arguably on the sheet. <strong>Busquets Ferrer is confirmed</strong>, and he is a documented outlier: <strong>5.53 yellow cards a match across 58 top-flight matches</strong> &mdash; 321 in total, plus 17 straight reds and 8 second yellows &mdash; rising to <strong>5.78 a match across 18 matches in his most recent published season</strong>, with penalties at 0.41 a match career and 0.39 recently. The line on this fixture is <strong>5.5, the only card line above 4.5 anywhere on this slate</strong>, priced at 1.80 under / 1.78 over. In other words the market has set the line within 0.03 of the official's own career mean and then declared itself indifferent about which side of it lands. There is a live club-level precedent too: <strong>Sevilla had Sangante sent off at Espanyol six days ago</strong>. <strong>Gaps:</strong> no fouls-per-card figure for Busquets Ferrer, and no club-level card or foul rate for either side.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Corners<span class="verdict tag t-mid">OK &mdash; priced at exact indifference, with nothing behind it either way</span></div><div class="mkt-why">8.5 at <strong>1.80 / 1.80</strong> &mdash; identical prices, the book stating outright that it has no view &mdash; with the race at 1.53 / 9.00 / 2.70 leaning to the hosts in rough proportion to the moneyline. The structural material is thin but not absent: a home side that has scored and conceded in all four matches against a visiting side missing nine players and likely to spend long periods without the ball is a plausible territorial mismatch, which is what the 1.53 reflects. What holds the row to OK is the familiar hole &mdash; <strong>no corner series was obtainable for either club in either season</strong>, the same gap that applies to every corner market on this board. The 8.5 line itself, matching Venice as the lowest on the sheet, is the most informative fact available here.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li>Valencia have nine players unavailable or doubtful. Five are out &mdash; Sadiq, Can&oacute;s, Copete, Diego L&oacute;pez and Foulquier &mdash; and four are doubts, including Diakhaby at centre-back and Guido Rodr&iacute;guez in midfield. This is a squad that finished the window <em>two players smaller</em> than it started it, so there is no depth behind those absences, and every goals market on this page is partly a question about who fills them.</li>
+      <li>Valencia's own numbers for this season could not be obtained at all. Their goals scored and conceded across four matches were not published in anything reached &mdash; only one point, bottom place and a 5&ndash;0 defeat to Barcelona. Both goals markets below the moneyline are therefore reasoned from Sevilla's figures and Valencia's league position, which is a weaker footing than it looks.</li>
+      <li>The head-to-head runs directly against the table. Valencia are unbeaten in six meetings with Sevilla and have won two of their last three trips to this ground &mdash; a record built by squads and managers who are largely no longer involved on either side, and the single piece of evidence here that is old enough to be independent of everything else on the page.</li>
+      <li>Sevilla's centre-forward position was sold and rebuilt at a discount. Akor Adams left for a reported &euro;17m &mdash; a fee reported as &euro;16m plus add-ons by the buying club's press &mdash; and was replaced by a &euro;5.5m signing from IK Sirius and a &euro;2.5m loan from Saint-&Eacute;tienne. Seven goals in four matches says the attack is functioning; nothing establishes that it is the same attack that produced 46 last season.</li>
+      <li><strong>Most sensitive:</strong> the goals total and both-teams-to-score, where the book leans to under and to No on both &mdash; against the only measured evidence available, which is Sevilla's 3.25 goals a match and their conceding in all four &mdash; while the half of the fixture that would justify those leans has no published figures at all. <strong>Least sensitive:</strong> the cards line, where a confirmed official with 58 matches of record averages 5.53 and the line is set at 5.5.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>The cards line is more robust than every other family on this fixture, because Busquets Ferrer's 321 yellows in 58 matches is a larger and cleaner sample than anything either club has produced this season &mdash; and unlike the goals rows, it does not depend on figures for Valencia that could not be obtained.</li>
+      <li>The moneyline is more robust than the double chance because 1.92 / 3.25 / 4.35 still prices three outcomes against two genuinely opposed bodies of evidence &mdash; a six-match unbeaten head-to-head against nine absentees and one point from twelve &mdash; whereas <strong>1X at 1.20 and 12 at 1.33 are both dead</strong>, having absorbed the table and left nothing to weigh.</li>
+      <li>Both-teams-to-score is more robust than the goals total here, which is the reverse of every other fixture on this board: BTTS has one leg that is fully measured &mdash; Sevilla have conceded in all four matches and shipped 60 last season &mdash; while the total needs a combined rate, and half of that combination has no published figure at all.</li>
+      <li>The corner race is more robust than the corner total because the race can at least be argued from the availability gap &mdash; nine absentees against a full squad usually decides who has the ball &mdash; while the 8.5 total has been priced at <strong>1.80 / 1.80</strong>, which is the market saying exactly what this page has to say about corners: nothing.</li>
+      <li>Where the book has priced at even money it has done so twice here, and the two mean opposite things. The cards at 1.80 / 1.78 sit within three cents of the referee's career average, which is a market that has done the same work this page has. The corners at 1.80 / 1.80 sit on no club-level series whatsoever, which is a market declining to guess &mdash; and where the book leans hardest, to the under and to No on the two goals rows, it is leaning on the one club whose figures nobody published.</li>
+    </ul>
+  </div>
+</article>
+
+<section>
+  <h2 class="sec">Across the card</h2>
+    <ul>
+    <li><strong>Best structurally supported family today: discipline, on the three fixtures with
+    a confirmed referee.</strong> Mateo Busquets Ferrer takes Siviglia &ndash; Valencia averaging
+    <strong>5.53 cards a match across 58 matches</strong> &mdash; and the line there is 5.5, the
+    only card line above 4.5 on the sheet. Francesco Fourneau takes Venezia &ndash; Fiorentina at
+    4.5 a match in 2025&ndash;26 with a measured 7.0 fouls per card this season, against a line of
+    4.5 priced 1.80/1.80. J&eacute;r&eacute;my Stinat takes Stade Rennes &ndash; Marsiglia with a
+    3.74 career average, 4.41 on a recent sample, and roughly one dismissal every second match.
+    On all three the official has a longer and cleaner record than either squad he is
+    refereeing.</li>
+
+    <li><strong>Least supported: every corner market on the board.</strong> No corner series was
+    obtainable for any of the eight clubs researched, in either season &mdash; FBref and
+    weltfussball.de were unreachable throughout &mdash; and the book has said much the same in its
+    own prices: 1.85/1.80 at Berlin, <strong>1.80/1.80 at Seville</strong>, and a corner race at
+    Venice quoted <strong>2.00 / 8.00 / 2.00</strong>, which is indifference stated outright.</li>
+
+    <li><strong>The one fixture where the evidence is thin rather than merely mixed: Union
+    Berlino &ndash; Schalke 04.</strong> Two dedicated searches and a direct attempt at the German
+    appointment listings returned no referee, on a fixture hours from kickoff &mdash; a failure to
+    reach the appointment rather than a fixture too distant to have one. That leaves a 4.5-card
+    line with no officiating evidence behind it, between clubs at opposite ends of the division's
+    foul table: <strong>Schalke on 11 fouls in two matches, fewest in the Bundesliga, against
+    Union's 23</strong>.</li>
+
+    <li><strong>Where the goals families are best and worst evidenced.</strong> Stade Rennes
+    &ndash; Marsiglia is the strongest on the board: both clubs produced roughly 3.2 goals a match
+    across 2025&ndash;26 against a divisional 2.82, and five of their six matches this season have
+    finished above 2.5. Venezia &ndash; Fiorentina is the strangest &mdash; sixteen conceded between
+    them in six matches but only <em>three scored</em>, which supports a goals total and undercuts
+    the both-teams-to-score price sitting at 1.47. And Siviglia &ndash; Valencia is the weakest,
+    because Valencia's goals for and against this season could not be obtained anywhere, leaving
+    both goals rows there resting on one club's figures and the other club's league position.</li>
+
+    <li><strong>Where the book has priced indifference, and where it has leaned hardest.</strong>
+    Four prices on this sheet sit at or within a cent of even money: the cards at Venice
+    (1.80/1.80, exactly Fourneau's own 2025&ndash;26 mean), the corner race at Venice (2.00/2.00),
+    the corners at Seville (1.80/1.80), and the cards at Seville (1.80/1.78, within three cents of
+    Busquets Ferrer's career average). The first and last are markets that have done the same work
+    this board has; the middle two are markets with nothing to go on. Against that, the clearest
+    lean anywhere tonight is at Seville in the opposite direction &mdash; <strong>the only
+    under-favoured goals total and the only No-favoured both-teams-to-score on the slate</strong>
+    &mdash; both resting on the one club whose numbers nobody published.</li>
+  </ul>
+</section>
+
+<footer>
+  <p><strong>Scope.</strong> This page rates market <em>families</em> only. It contains no selections, no sides, no recommended lines and no confidence labels &mdash; by design. Where evidence is thin it says so rather than filling the gap.</p>
+  <p><strong>Sources.</strong> Official league sites and league-operated editorial (bundesliga.com, ligue1.com, sevillafc.es), Wikipedia season and competition pages for final league tables and transfer ledgers (2025&ndash;26 La Liga, Ligue 1 and Serie B, and the 2025&ndash;26 and 2026&ndash;27 club season pages for Union Berlin, Schalke 04, Venezia, Fiorentina, Stade Rennais, Marseille and Sevilla), bulinews and Yahoo Sports match previews for named injury and suspension lists, football-italia for Serie A probable line-ups, and the Italian, French and Spanish refereeing press &mdash; Firenze Post, Triveneto Goal, Viola News, footballclubdemarseille, foot-actu, elsevillista and Grada Amarilla &mdash; for the three confirmed appointments and their card, dismissal and penalty records. FBref and weltfussball.de were unreachable (HTTP 403) throughout and there is no Wikipedia season page for Valencia CF 2026&ndash;27 (HTTP 404), which is why no xG or corner series appears anywhere on this board and why Valencia's own goal figures are absent from their card. Full per-fixture logs, including every failed search, every discarded projection and every contradiction left unresolved, are in sources_16.md.</p>
+</footer>
+
+</div>

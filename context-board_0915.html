@@ -1,0 +1,810 @@
+<title>Market Board Tuesday 15 September 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<style>
+:root{
+  --bg:#EFF2F1; --surface:#FFFFFF; --surface-2:#F6F8F7; --band:#1D3F52;
+  --ink:#13201E; --ink-2:#485856; --muted:#6C7B78; --line:#D4DCDA;
+  --accent:#1D4E73; --accent-soft:#E3EDF3;
+  --good:#2C6E4B; --good-soft:#E2EFE8;
+  --warn:#8C6817; --warn-soft:#F4ECD9;
+  --bad:#A03528;  --bad-soft:#F6E2DF;
+  --brass:#856526;
+  --band-ink:#EAF1F4;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D1315; --surface:#141C1F; --surface-2:#1A2326; --band:#16303D;
+    --ink:#E3EAE8; --ink-2:#A6B4B1; --muted:#82938F; --line:#263236;
+    --accent:#79ACD0; --accent-soft:#152F3C;
+    --good:#66C093; --good-soft:#152C20;
+    --warn:#D2A950; --warn-soft:#2C2617;
+    --bad:#E27A6E;  --bad-soft:#321C19;
+    --brass:#C4A05A;
+    --band-ink:#DCE8EC;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D1315; --surface:#141C1F; --surface-2:#1A2326; --band:#16303D;
+  --ink:#E3EAE8; --ink-2:#A6B4B1; --muted:#82938F; --line:#263236;
+  --accent:#79ACD0; --accent-soft:#152F3C;
+  --good:#66C093; --good-soft:#152C20;
+  --warn:#D2A950; --warn-soft:#2C2617;
+  --bad:#E27A6E;  --bad-soft:#321C19;
+  --brass:#C4A05A;
+  --band-ink:#DCE8EC;
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:"Source Serif 4",Georgia,"Times New Roman",serif;
+  font-size:17px; line-height:1.6;
+  margin:0; padding:0 18px 96px;
+  -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:940px; margin:0 auto;}
+h1,h2,h3,h4,.ui{font-family:Archivo,"Helvetica Neue",Arial,sans-serif}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace; font-variant-numeric:tabular-nums}
+
+/* ---------- masthead ---------- */
+header.top{padding:52px 0 26px; border-bottom:2px solid var(--ink);}
+.eyebrow{
+  font-family:Archivo,sans-serif; font-size:12px; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase; color:var(--accent); margin:0 0 14px;
+}
+h1{
+  font-size:clamp(34px,7vw,54px); line-height:1.02; font-weight:800;
+  letter-spacing:-.02em; margin:0 0 14px; text-wrap:balance;
+}
+.standfirst{font-size:19px; color:var(--ink-2); margin:0; max-width:62ch;}
+.metaline{
+  display:flex; flex-wrap:wrap; gap:8px 20px; margin-top:22px;
+  font-family:Archivo,sans-serif; font-size:12.5px; font-weight:600;
+  letter-spacing:.06em; text-transform:uppercase; color:var(--muted);
+}
+
+/* ---------- generic blocks ---------- */
+section{margin-top:44px}
+h2.sec{
+  font-size:13px; font-weight:700; letter-spacing:.15em; text-transform:uppercase;
+  color:var(--muted); margin:0 0 16px; padding-bottom:8px; border-bottom:1px solid var(--line);
+}
+p{margin:0 0 14px; max-width:70ch}
+.note{
+  background:var(--accent-soft); border-left:3px solid var(--accent);
+  padding:14px 16px; font-size:15.5px; color:var(--ink-2); max-width:none;
+}
+.note strong{color:var(--ink)}
+
+/* ---------- odds table ---------- */
+.scroller{overflow-x:auto; border:1px solid var(--line); background:var(--surface)}
+table{border-collapse:collapse; width:100%; min-width:760px; font-size:14px}
+thead th{
+  background:var(--band); color:var(--band-ink);
+  font-family:Archivo,sans-serif; font-weight:700; font-size:11px;
+  letter-spacing:.09em; text-transform:uppercase;
+  padding:10px 11px; text-align:right; white-space:nowrap;
+}
+thead th:first-child{text-align:left}
+tbody td{
+  padding:10px 11px; border-top:1px solid var(--line); text-align:right;
+  font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums; white-space:nowrap;
+}
+tbody td:first-child{
+  text-align:left; font-family:Archivo,sans-serif; font-weight:600; font-size:14px;
+  white-space:normal; min-width:190px;
+}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td .ko{display:block; font-family:"IBM Plex Mono",monospace; font-weight:400; font-size:11.5px; color:var(--muted); letter-spacing:.02em}
+.unk{color:var(--brass); font-style:italic}
+
+/* ---------- fixture cards ---------- */
+.fixture{
+  background:var(--surface); border:1px solid var(--line);
+  margin-top:30px; scroll-margin-top:12px;
+}
+.fx-head{background:var(--band); color:var(--band-ink); padding:16px 20px 18px}
+.fx-league{
+  font-family:Archivo,sans-serif; font-size:11px; font-weight:700;
+  letter-spacing:.14em; text-transform:uppercase; opacity:.78; margin:0 0 6px;
+}
+.fx-title{font-family:Archivo,sans-serif; font-size:23px; font-weight:700; letter-spacing:-.01em; margin:0; line-height:1.15}
+.fx-sub{font-family:"IBM Plex Mono",monospace; font-size:12.5px; opacity:.8; margin:7px 0 0; letter-spacing:.02em}
+.fx-body{padding:20px}
+
+.fx-odds{
+  display:flex; flex-wrap:wrap; gap:0;
+  border:1px solid var(--line); background:var(--surface-2); margin:0 0 22px;
+}
+.od{flex:1 1 96px; padding:9px 12px; border-right:1px solid var(--line); border-bottom:1px solid var(--line)}
+.od:last-child{border-right:0}
+.od dt{
+  font-family:Archivo,sans-serif; font-size:10px; font-weight:700; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--muted); margin:0 0 3px;
+}
+.od dd{margin:0; font-family:"IBM Plex Mono",monospace; font-size:15px; font-weight:500; font-variant-numeric:tabular-nums}
+
+h3.blk{
+  font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--accent); margin:26px 0 10px;
+}
+h3.blk:first-of-type{margin-top:0}
+.fx-body ul{margin:0 0 14px; padding-left:20px; max-width:70ch}
+.fx-body li{margin-bottom:7px}
+.tag{
+  font-family:Archivo,sans-serif; font-size:11px; font-weight:700;
+  letter-spacing:.07em; text-transform:uppercase; padding:2px 7px; white-space:nowrap;
+}
+.t-low{background:var(--good-soft); color:var(--good)}
+.t-mid{background:var(--warn-soft); color:var(--warn)}
+.t-high{background:var(--bad-soft); color:var(--bad)}
+
+/* market suitability rows */
+.mkt{border-top:1px solid var(--line)}
+.mkt-row{
+  display:grid; grid-template-columns:150px 1fr; gap:0;
+  border-bottom:1px solid var(--line);
+}
+.mkt-name{
+  padding:13px 14px 13px 0; font-family:Archivo,sans-serif;
+  font-weight:700; font-size:14px; line-height:1.3;
+}
+.mkt-name .verdict{display:block; margin-top:6px}
+.mkt-why{padding:13px 0 13px 16px; border-left:3px solid var(--line); font-size:15.5px; color:var(--ink-2)}
+.mkt-row.good .mkt-why{border-left-color:var(--good)}
+.mkt-row.ok .mkt-why{border-left-color:var(--warn)}
+.mkt-row.bad .mkt-why{border-left-color:var(--bad)}
+@media (max-width:620px){
+  .mkt-row{grid-template-columns:1fr; gap:0}
+  .mkt-name{padding-bottom:6px}
+  .mkt-why{padding:0 0 14px 14px}
+}
+
+/* index list */
+.index{display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line)}
+.index a{
+  display:block; background:var(--surface); padding:12px 14px; text-decoration:none;
+  color:var(--ink); font-family:Archivo,sans-serif; font-weight:600; font-size:14.5px;
+}
+.index a:hover,.index a:focus-visible{background:var(--accent-soft); color:var(--accent)}
+.index a span{display:block; font-family:"IBM Plex Mono",monospace; font-weight:400; font-size:11.5px; color:var(--muted); margin-top:3px; letter-spacing:.03em}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+
+footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); font-size:14px; color:var(--muted); max-width:74ch}
+footer a{color:var(--accent)}
+
+/* ---------- not-yet-built fixture ---------- */
+.fixture.pending{opacity:.72}
+.pending-note{
+  font-family:Archivo,sans-serif; font-size:13px; font-weight:600;
+  letter-spacing:.04em; color:var(--muted);
+  background:var(--surface-2); border:1px dashed var(--line);
+  border-radius:8px; padding:14px 16px; margin-top:18px;
+}
+</style>
+
+<div class="wrap">
+
+<header class="top">
+  <p class="eyebrow">Context engine &middot; no picks, no sides, no lines</p>
+  <h1>Half of the twelve clubs carded so far are under a coach who was not in charge last season</h1>
+  <p class="standfirst">Ten fixtures on 15 September 2026, read from the typed sheet slate.2.xlsx after five rows already played the previous day were removed; six of ten cards are built so far, five at full T1 depth and one at reduced T2 depth.</p>
+  <div class="metaline">
+    <span>Tuesday 15 September 2026</span>
+    <span>Coppa Italia second round &middot; LaLiga jornada 6 &middot; EFL Cup third round</span>
+    <span>Decimal odds, bet365 IT</span>
+  </div>
+</header>
+
+<!--GRID:start-->
+<style>
+/* verdict grid - board_grid.py */
+.vgrid-wrap{border:1px solid var(--line); background:var(--surface); overflow-x:auto}
+table.vgrid{min-width:820px; font-size:13px; table-layout:fixed}
+table.vgrid thead th{text-align:center; padding:9px 6px; font-size:10.5px; letter-spacing:.07em}
+table.vgrid thead th:first-child{text-align:left; width:210px; position:sticky; left:0; z-index:1}
+table.vgrid tbody td{padding:0; text-align:center; font-family:Archivo,sans-serif; white-space:nowrap}
+table.vgrid tbody td:first-child{
+  padding:8px 11px; text-align:left; position:sticky; left:0; z-index:1;
+  background:var(--surface); border-right:1px solid var(--line);
+  white-space:normal; overflow-wrap:anywhere; line-height:1.3;
+}
+table.vgrid tbody tr:nth-child(even) td:first-child{background:var(--surface-2)}
+table.vgrid td:first-child a{color:var(--ink); text-decoration:none; font-weight:600; font-size:13.5px}
+table.vgrid td:first-child a:hover{color:var(--accent)}
+table.vgrid td:first-child .ko{font-size:11px}
+table.vgrid td.v a{
+  display:block; padding:9px 4px; text-decoration:none; font-weight:700;
+  font-size:11px; letter-spacing:.05em; text-transform:uppercase;
+  border-left:1px solid var(--surface);
+}
+table.vgrid td.good a{background:var(--good-soft); color:var(--good)}
+table.vgrid td.ok a{background:var(--warn-soft); color:var(--warn)}
+table.vgrid td.bad a{background:var(--bad-soft); color:var(--bad)}
+table.vgrid td.v a:hover,table.vgrid td.v a:focus-visible{outline:2px solid currentColor; outline-offset:-2px}
+table.vgrid td.none{
+  padding:9px 12px; text-align:left; font-size:12px; font-weight:600;
+  color:var(--muted); font-style:italic; letter-spacing:.02em;
+}
+table.vgrid tfoot th, table.vgrid tfoot td{
+  padding:8px 6px; border-top:2px solid var(--ink); font-family:"IBM Plex Mono",monospace;
+  font-size:12px; text-align:center; color:var(--ink-2); background:var(--surface-2);
+}
+table.vgrid tfoot th{
+  text-align:left; font-family:Archivo,sans-serif; font-weight:700; font-size:10.5px;
+  letter-spacing:.09em; text-transform:uppercase; position:sticky; left:0; padding-left:11px;
+}
+.vgrid-key{display:flex; flex-wrap:wrap; gap:6px 16px; margin:10px 0 0; font-size:13px; color:var(--muted)}
+.vgrid-key span{display:inline-flex; align-items:center; gap:6px}
+.vgrid-key i{display:inline-block; width:12px; height:12px}
+.vgrid-key .k-good{background:var(--good-soft); border:1px solid var(--good)}
+.vgrid-key .k-ok{background:var(--warn-soft); border:1px solid var(--warn)}
+.vgrid-key .k-bad{background:var(--bad-soft); border:1px solid var(--bad)}
+.mkt-row.vflash{animation:vflash 1.6s ease-out 1}
+@keyframes vflash{0%,35%{background:var(--accent-soft); box-shadow:inset 3px 0 0 var(--accent)}100%{background:transparent}}
+@media (prefers-reduced-motion:reduce){.mkt-row.vflash{animation:none; background:var(--accent-soft)}}
+</style>
+<section class="vgrid-sec">
+  <h2 class="sec">At a glance &mdash; every verdict on this board</h2>
+  <div class="vgrid-wrap">
+  <table class="vgrid">
+    <thead><tr><th scope="col">Fixture</th><th scope="col">1X2</th><th scope="col">AH / DNB</th><th scope="col">Totals</th><th scope="col">BTTS</th><th scope="col">Team goals</th><th scope="col">Halves</th><th scope="col">Discipline</th><th scope="col">Corners</th></tr></thead>
+    <tbody>
+      <tr><td><a href="#f1">Genoa &#8211; S&#252;dtirol</a><span class="ko">18:00 &middot; Coppa Italia</span></td><td class="v bad"><a href="#f1" data-row="1X2" title="1X2 / Moneyline: Dangerous &#8212; division gap and current samples point opposite ways" aria-label="Genoa &#8211; S&#252;dtirol, 1X2 / Moneyline: Dangerous &#8212; division gap and current samples point opposite ways">Dangerous</a></td><td class="v ok"><a href="#f1" data-row="Asian handicap" title="Asian handicap / DNB: OK &#8212; the margin question is at least measurable" aria-label="Genoa &#8211; S&#252;dtirol, Asian handicap / DNB: OK &#8212; the margin question is at least measurable">OK</a></td><td class="v ok"><a href="#f1" data-row="Totals" title="Totals (O/U goals): OK &#8212; both clubs&#8217; current samples agree on direction" aria-label="Genoa &#8211; S&#252;dtirol, Totals (O/U goals): OK &#8212; both clubs&#8217; current samples agree on direction">OK</a></td><td class="v ok"><a href="#f1" data-row="BTTS" title="BTTS: OK &#8212; consistent rates, not discriminating ones" aria-label="Genoa &#8211; S&#252;dtirol, BTTS: OK &#8212; consistent rates, not discriminating ones">OK</a></td><td class="v ok"><a href="#f1" data-row="Team goals" title="Team goals: OK &#8212; asymmetric: Genoa&#8217;s line has agreeing evidence, S&#252;dtirol&#8217;s a gap" aria-label="Genoa &#8211; S&#252;dtirol, Team goals: OK &#8212; asymmetric: Genoa&#8217;s line has agreeing evidence, S&#252;dtirol&#8217;s a gap">OK</a></td><td class="v bad"><a href="#f1" data-row="Halves" title="Halves (1H result, 1H goals): Dangerous &#8212; one side has no half-time series at all" aria-label="Genoa &#8211; S&#252;dtirol, Halves (1H result, 1H goals): Dangerous &#8212; one side has no half-time series at all">Dangerous</a></td><td class="v ok"><a href="#f1" data-row="Discipline" title="Discipline (cards, fouls): OK &#8212; official and one club&#8217;s contact rate are both sourced" aria-label="Genoa &#8211; S&#252;dtirol, Discipline (cards, fouls): OK &#8212; official and one club&#8217;s contact rate are both sourced">OK</a></td><td class="v ok"><a href="#f1" data-row="Corners" title="Corners: OK &#8212; the match total can be built, the split cannot" aria-label="Genoa &#8211; S&#252;dtirol, Corners: OK &#8212; the match total can be built, the split cannot">OK</a></td></tr>
+      <tr><td><a href="#f2">Rayo Vallecano &#8211; Espanyol</a><span class="ko">19:00 &middot; LaLiga EA Sports</span></td><td class="v bad"><a href="#f2" data-row="1X2" title="1X2 / Moneyline: Dangerous &#8212; the home advantage has been relocated" aria-label="Rayo Vallecano &#8211; Espanyol, 1X2 / Moneyline: Dangerous &#8212; the home advantage has been relocated">Dangerous</a></td><td class="v bad"><a href="#f2" data-row="Asian handicap" title="Asian handicap / DNB: Dangerous &#8212; margin data dominated by two fixtures" aria-label="Rayo Vallecano &#8211; Espanyol, Asian handicap / DNB: Dangerous &#8212; margin data dominated by two fixtures">Dangerous</a></td><td class="v ok"><a href="#f2" data-row="Totals" title="Totals (O/U goals): OK &#8212; current samples agree, Rayo&#8217;s last season disagrees" aria-label="Rayo Vallecano &#8211; Espanyol, Totals (O/U goals): OK &#8212; current samples agree, Rayo&#8217;s last season disagrees">OK</a></td><td class="v ok"><a href="#f2" data-row="BTTS" title="BTTS: OK &#8212; one leg stable, one leg changed with the personnel" aria-label="Rayo Vallecano &#8211; Espanyol, BTTS: OK &#8212; one leg stable, one leg changed with the personnel">OK</a></td><td class="v ok"><a href="#f2" data-row="Team goals" title="Team goals: OK &#8212; asymmetric: both attacks agree, Rayo&#8217;s defence is skewed" aria-label="Rayo Vallecano &#8211; Espanyol, Team goals: OK &#8212; asymmetric: both attacks agree, Rayo&#8217;s defence is skewed">OK</a></td><td class="v ok"><a href="#f2" data-row="Halves" title="Halves (1H result, 1H goals): OK &#8212; both clubs have a half-time series, the seasons disagree" aria-label="Rayo Vallecano &#8211; Espanyol, Halves (1H result, 1H goals): OK &#8212; both clubs have a half-time series, the seasons disagree">OK</a></td><td class="v ok"><a href="#f2" data-row="Discipline" title="Discipline (cards, fouls): OK &#8212; strongest club inputs on the card, appointment unconfirmed" aria-label="Rayo Vallecano &#8211; Espanyol, Discipline (cards, fouls): OK &#8212; strongest club inputs on the card, appointment unconfirmed">OK</a></td><td class="v ok"><a href="#f2" data-row="Corners" title="Corners: OK &#8212; Rayo&#8217;s series is robust, Espanyol&#8217;s has collapsed" aria-label="Rayo Vallecano &#8211; Espanyol, Corners: OK &#8212; Rayo&#8217;s series is robust, Espanyol&#8217;s has collapsed">OK</a></td></tr>
+      <tr><td><a href="#f3">Deportivo Alav&#233;s &#8211; Valencia</a><span class="ko">20:00 &middot; LaLiga EA Sports</span></td><td class="v ok"><a href="#f3" data-row="1X2" title="1X2 / Moneyline: OK &#8212; every current measure agrees, but the coach who produced them has gone" aria-label="Deportivo Alav&#233;s &#8211; Valencia, 1X2 / Moneyline: OK &#8212; every current measure agrees, but the coach who produced them has gone">OK</a></td><td class="v ok"><a href="#f3" data-row="Asian handicap" title="Asian handicap / DNB: OK &#8212; results and chance data share a sign on both sides" aria-label="Deportivo Alav&#233;s &#8211; Valencia, Asian handicap / DNB: OK &#8212; results and chance data share a sign on both sides">OK</a></td><td class="v ok"><a href="#f3" data-row="Totals" title="Totals (O/U goals): OK &#8212; one high-event side, one goal-starved one" aria-label="Deportivo Alav&#233;s &#8211; Valencia, Totals (O/U goals): OK &#8212; one high-event side, one goal-starved one">OK</a></td><td class="v ok"><a href="#f3" data-row="BTTS" title="BTTS: OK &#8212; the whole family sits on one leg" aria-label="Deportivo Alav&#233;s &#8211; Valencia, BTTS: OK &#8212; the whole family sits on one leg">OK</a></td><td class="v good"><a href="#f3" data-row="Team goals" title="Team goals: Well-suited &#8212; on Valencia&#8217;s side, where five measures agree" aria-label="Deportivo Alav&#233;s &#8211; Valencia, Team goals: Well-suited &#8212; on Valencia&#8217;s side, where five measures agree">Well-suited</a></td><td class="v ok"><a href="#f3" data-row="Halves" title="Halves (1H result, 1H goals): OK &#8212; Valencia&#8217;s first-half series is stable, Alav&#233;s&#8217;s has moved" aria-label="Deportivo Alav&#233;s &#8211; Valencia, Halves (1H result, 1H goals): OK &#8212; Valencia&#8217;s first-half series is stable, Alav&#233;s&#8217;s has moved">OK</a></td><td class="v ok"><a href="#f3" data-row="Discipline" title="Discipline (cards, fouls): OK &#8212; stable club rates, a referee with a thin top-flight record" aria-label="Deportivo Alav&#233;s &#8211; Valencia, Discipline (cards, fouls): OK &#8212; stable club rates, a referee with a thin top-flight record">OK</a></td><td class="v ok"><a href="#f3" data-row="Corners" title="Corners: OK &#8212; Alav&#233;s&#8217;s series stable, Valencia&#8217;s fell with the back five" aria-label="Deportivo Alav&#233;s &#8211; Valencia, Corners: OK &#8212; Alav&#233;s&#8217;s series stable, Valencia&#8217;s fell with the back five">OK</a></td></tr>
+      <tr><td><a href="#f4">Peterborough United &#8211; Barnsley</a><span class="ko">20:30 &middot; EFL Cup</span></td><td class="v bad"><a href="#f4" data-row="1X2" title="1X2 / Moneyline: Dangerous &#8212; competition splits and a penalties format" aria-label="Peterborough United &#8211; Barnsley, 1X2 / Moneyline: Dangerous &#8212; competition splits and a penalties format">Dangerous</a></td><td class="v ok"><a href="#f4" data-row="Asian handicap" title="Asian handicap / DNB: OK &#8212; chance data says the sides are level" aria-label="Peterborough United &#8211; Barnsley, Asian handicap / DNB: OK &#8212; chance data says the sides are level">OK</a></td><td class="v ok"><a href="#f4" data-row="Totals" title="Totals (O/U goals): OK &#8212; Barnsley&#8217;s rate is stable across two seasons" aria-label="Peterborough United &#8211; Barnsley, Totals (O/U goals): OK &#8212; Barnsley&#8217;s rate is stable across two seasons">OK</a></td><td class="v ok"><a href="#f4" data-row="BTTS" title="BTTS: OK &#8212; both clubs sit at or near the baseline" aria-label="Peterborough United &#8211; Barnsley, BTTS: OK &#8212; both clubs sit at or near the baseline">OK</a></td><td class="v bad"><a href="#f4" data-row="Team goals" title="Team goals: Dangerous &#8212; both attacks score below their chances, one far above in the cup" aria-label="Peterborough United &#8211; Barnsley, Team goals: Dangerous &#8212; both attacks score below their chances, one far above in the cup">Dangerous</a></td><td class="v bad"><a href="#f4" data-row="Halves" title="Halves (1H result, 1H goals): Dangerous &#8212; no half-time series exists" aria-label="Peterborough United &#8211; Barnsley, Halves (1H result, 1H goals): Dangerous &#8212; no half-time series exists">Dangerous</a></td><td class="v ok"><a href="#f4" data-row="Discipline" title="Discipline (cards, fouls): OK &#8212; low-contact clubs, an average official, appointment unconfirmed" aria-label="Peterborough United &#8211; Barnsley, Discipline (cards, fouls): OK &#8212; low-contact clubs, an average official, appointment unconfirmed">OK</a></td><td class="v ok"><a href="#f4" data-row="Corners" title="Corners: OK &#8212; Barnsley&#8217;s series moved sharply with the coach" aria-label="Peterborough United &#8211; Barnsley, Corners: OK &#8212; Barnsley&#8217;s series moved sharply with the coach">OK</a></td></tr>
+      <tr><td><a href="#f5">West Ham United &#8211; Fulham</a><span class="ko">20:45 &middot; EFL Cup</span></td><td class="v bad"><a href="#f5" data-row="1X2" title="1X2 / Moneyline: Dangerous &#8212; cross-division rates and unpublished selection intent" aria-label="West Ham United &#8211; Fulham, 1X2 / Moneyline: Dangerous &#8212; cross-division rates and unpublished selection intent">Dangerous</a></td><td class="v bad"><a href="#f5" data-row="Asian handicap" title="Asian handicap / DNB: Dangerous &#8212; the margin inputs are in different currencies" aria-label="West Ham United &#8211; Fulham, Asian handicap / DNB: Dangerous &#8212; the margin inputs are in different currencies">Dangerous</a></td><td class="v ok"><a href="#f5" data-row="Totals" title="Totals (O/U goals): OK &#8212; both clubs at or above the baseline in both seasons" aria-label="West Ham United &#8211; Fulham, Totals (O/U goals): OK &#8212; both clubs at or above the baseline in both seasons">OK</a></td><td class="v ok"><a href="#f5" data-row="BTTS" title="BTTS: OK &#8212; stable around the baseline, one scoring streak" aria-label="West Ham United &#8211; Fulham, BTTS: OK &#8212; stable around the baseline, one scoring streak">OK</a></td><td class="v bad"><a href="#f5" data-row="Team goals" title="Team goals: Dangerous &#8212; the attacking rates belong to different divisions and players" aria-label="West Ham United &#8211; Fulham, Team goals: Dangerous &#8212; the attacking rates belong to different divisions and players">Dangerous</a></td><td class="v bad"><a href="#f5" data-row="Halves" title="Halves (1H result, 1H goals): Dangerous &#8212; no current first-half series for West Ham" aria-label="West Ham United &#8211; Fulham, Halves (1H result, 1H goals): Dangerous &#8212; no current first-half series for West Ham">Dangerous</a></td><td class="v ok"><a href="#f5" data-row="Discipline" title="Discipline (cards, fouls): OK &#8212; a confirmed below-average booker and low-contact clubs" aria-label="West Ham United &#8211; Fulham, Discipline (cards, fouls): OK &#8212; a confirmed below-average booker and low-contact clubs">OK</a></td><td class="v ok"><a href="#f5" data-row="Corners" title="Corners: OK &#8212; both corners-for series agree" aria-label="West Ham United &#8211; Fulham, Corners: OK &#8212; both corners-for series agree">OK</a></td></tr>
+      <tr><td><a href="#f6">Ipswich Town &#8211; Arsenal</a><span class="ko">21:00 &middot; EFL Cup</span></td><td class="v bad"><a href="#f6" data-row="1X2" title="1X2 / Moneyline: Dangerous &#8212; the favoured side&#8217;s rates belong to an eleven that may not play" aria-label="Ipswich Town &#8211; Arsenal, 1X2 / Moneyline: Dangerous &#8212; the favoured side&#8217;s rates belong to an eleven that may not play">Dangerous</a></td><td class="v bad"><a href="#f6" data-row="Asian handicap" title="Asian handicap / DNB: Dangerous &#8212; margins depend on selection" aria-label="Ipswich Town &#8211; Arsenal, Asian handicap / DNB: Dangerous &#8212; margins depend on selection">Dangerous</a></td><td class="v ok"><a href="#f6" data-row="Totals" title="Totals (O/U goals): OK &#8212; last season both sat on the baseline, this season they split" aria-label="Ipswich Town &#8211; Arsenal, Totals (O/U goals): OK &#8212; last season both sat on the baseline, this season they split">OK</a></td><td class="v bad"><a href="#f6" data-row="BTTS" title="BTTS: Dangerous &#8212; the two clubs&#8217; rates point opposite ways" aria-label="Ipswich Town &#8211; Arsenal, BTTS: Dangerous &#8212; the two clubs&#8217; rates point opposite ways">Dangerous</a></td><td class="v ok"><a href="#f6" data-row="Team goals" title="Team goals: OK &#8212; asymmetric: Ipswich&#8217;s attack has agreeing numbers, Arsenal&#8217;s depends on selection" aria-label="Ipswich Town &#8211; Arsenal, Team goals: OK &#8212; asymmetric: Ipswich&#8217;s attack has agreeing numbers, Arsenal&#8217;s depends on selection">OK</a></td><td class="v ok"><a href="#f6" data-row="Halves" title="Halves (1H result, 1H goals): OK &#8212; Arsenal&#8217;s first-half series is stable, Ipswich&#8217;s is four matches" aria-label="Ipswich Town &#8211; Arsenal, Halves (1H result, 1H goals): OK &#8212; Arsenal&#8217;s first-half series is stable, Ipswich&#8217;s is four matches">OK</a></td><td class="v ok"><a href="#f6" data-row="Discipline" title="Discipline (cards, fouls): OK &#8212; an average official and two low-card clubs" aria-label="Ipswich Town &#8211; Arsenal, Discipline (cards, fouls): OK &#8212; an average official and two low-card clubs">OK</a></td><td class="v ok"><a href="#f6" data-row="Corners" title="Corners: OK &#8212; both series published, Ipswich&#8217;s fell with the step up" aria-label="Ipswich Town &#8211; Arsenal, Corners: OK &#8212; both series published, Ipswich&#8217;s fell with the step up">OK</a></td></tr>
+      <tr><td><a href="#f7">Liverpool &#8211; Tottenham</a><span class="ko">21:00 &middot; EFL Cup</span></td><td class="none" colspan="8">Context not yet built.</td></tr>
+      <tr><td><a href="#f8">Reading &#8211; Brentford</a><span class="ko">21:00 &middot; EFL Cup</span></td><td class="none" colspan="8">Context not yet built.</td></tr>
+      <tr><td><a href="#f9">Fiorentina &#8211; Pisa</a><span class="ko">21:00 &middot; Coppa Italia</span></td><td class="none" colspan="8">Context not yet built.</td></tr>
+      <tr><td><a href="#f10">Elche &#8211; Real Madrid</a><span class="ko">21:30 &middot; LaLiga EA Sports</span></td><td class="none" colspan="8">Context not yet built.</td></tr>
+    </tbody>
+    <tfoot><tr><th scope="row">Well-suited</th><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td></tr><tr><th scope="row">Dangerous</th><td>5</td><td>3</td><td>0</td><td>1</td><td>2</td><td>3</td><td>0</td><td>0</td></tr></tfoot>
+  </table>
+  </div>
+  <div class="vgrid-key">
+    <span><i class="k-good"></i>Well-suited</span><span><i class="k-ok"></i>OK / Split</span>
+    <span><i class="k-bad"></i>Dangerous</span>
+    <span>Kickoff order. Click a cell for the reasoning on that card; hover for the full verdict.</span>
+  </div>
+</section>
+<script>
+/* verdict grid - jump to the family's row on the card */
+document.addEventListener("click", function (e) {
+  var a = e.target.closest && e.target.closest("a[data-row]");
+  if (!a) return;
+  var card = document.getElementById(a.getAttribute("href").slice(1));
+  if (!card) return;
+  var want = a.getAttribute("data-row").toLowerCase(), hit = null;
+  card.querySelectorAll(".mkt-row").forEach(function (r) {
+    var n = r.querySelector(".mkt-name");
+    if (!hit && n && n.textContent.trim().toLowerCase().indexOf(want) === 0) hit = r;
+  });
+  if (!hit) return;
+  e.preventDefault();
+  history.replaceState(null, "", "#" + card.id);
+  hit.scrollIntoView({block: "center"});
+  hit.classList.remove("vflash"); void hit.offsetWidth; hit.classList.add("vflash");
+});
+</script>
+<!--GRID:end-->
+
+
+<section>
+  <h2 class="sec">The one thing shaping every game on this card</h2>
+  <p>Every one of the twelve clubs on the six built cards played its last match on 11 or 12 September, so tonight is a three- or four-day turnaround for all of them. More important for how the numbers read, six of those twelve are working under a head coach who was not in charge last season: S&uuml;dtirol (Possanzini, 24 June), Rayo Vallecano (San Jos&eacute;, 18 June), Barnsley (Stendel, 12 May), Ipswich (O&rsquo;Neil, 23 June), Fulham (Arbeloa, 7 July) and Valencia, who dismissed Corber&aacute;n on Sunday and play under the reserve-team coach. Two more clubs changed division &mdash; West Ham down, Ipswich up &mdash; and Rayo have lost the use of their stadium and play at Legan&eacute;s.</p><p>The effect shows in the strips. On card after card the sharpest contrasts are between a club&rsquo;s 2025&ndash;26 rates and its four-to-seven-match 2026&ndash;27 rates &mdash; Ipswich&rsquo;s possession from 56% to 44%, Barnsley&rsquo;s corners from 4.91 to 8.83, Rayo&rsquo;s over-2.5 rate from 37% to 80% &mdash; and each change coincides with a new coach, a new division or a new ground rather than with anything the sample can isolate. Four of the six built fixtures are cup ties, and in both the Coppa Italia first stage and the EFL Cup a level score after 90 minutes goes straight to penalties; in the EFL Cup ties selection is its own unknown, with team sheets published for two and a preview expecting Arsenal to rotate in the third.</p><div class="note"><strong>Structural consequence.</strong> 1X2 is rated Dangerous on five of the six built cards, because it is the family most exposed to a break in coach, division, ground or selection. Totals, discipline and corners are the only families rated OK or better on all six &mdash; they lean on rates that held across those breaks, such as corners-for counts and foul rates, and on referee records that are published for every fixture.</div>
+</section>
+
+<section>
+  <h2 class="sec">Today&rsquo;s slate &mdash; odds as read from the screenshots</h2>
+  <div class="scroller">
+  <table>
+    <thead>
+      <tr>
+        <th>Kickoff</th><th>Competition</th><th>Fixture</th><th>Venue</th><th>Referee</th><th>Played</th><th>Flag</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>18:00 CEST</td><td>Coppa Italia</td><td><a href="#f1">Genoa &ndash; S&uuml;dtirol</a></td><td>Stadio Luigi Ferraris, Genoa</td><td>Gianluca Manganiello</td><td>Genoa 5 &middot; S&uuml;dtirol 5</td><td>cross-division, new manager</td></tr>
+      <tr><td>19:00 CEST</td><td>LaLiga</td><td><a href="#f2">Rayo Vallecano &ndash; Espanyol</a></td><td>Estadio Ontime Butarque, Legan&eacute;s</td><td>D&iacute;az de Mera (provisional)</td><td>Rayo 5 &middot; Espanyol 5</td><td>relocated home, new manager</td></tr>
+      <tr><td>20:00 CEST</td><td>LaLiga</td><td><a href="#f3">Deportivo Alav&eacute;s &ndash; Valencia</a></td><td>Estadio de Mendizorroza, Vitoria-Gasteiz</td><td>Miguel Sesma Espinosa</td><td>Alav&eacute;s 5 &middot; Valencia 5</td><td>interim manager</td></tr>
+      <tr><td>20:30 CEST</td><td>EFL Cup</td><td><a href="#f4">Peterborough &ndash; Barnsley</a></td><td>Weston Homes Stadium, Peterborough</td><td>Thomas Parsons (provisional)</td><td>Peterborough 8 &middot; Barnsley 8</td><td>new manager</td></tr>
+      <tr><td>20:45 CEST</td><td>EFL Cup</td><td><a href="#f5">West Ham &ndash; Fulham</a></td><td>London Stadium, London</td><td>Gavin Ward</td><td>West Ham 9 &middot; Fulham 5</td><td>relegated side, new manager</td></tr>
+      <tr><td>21:00 CEST</td><td>EFL Cup</td><td><a href="#f6">Ipswich &ndash; Arsenal</a></td><td>Portman Road, Ipswich</td><td>Peter Bankes</td><td>Ipswich 5 &middot; Arsenal 6</td><td>promoted side, new manager</td></tr>
+      <tr><td>21:00 CEST</td><td>EFL Cup</td><td><a href="#f7">Liverpool &ndash; Tottenham</a></td><td>Anfield, Liverpool</td><td class="unk">not published</td><td class="unk">not yet sourced</td><td class="unk">not yet assessed</td></tr>
+      <tr><td>21:00 CEST</td><td>EFL Cup</td><td><a href="#f8">Reading &ndash; Brentford</a></td><td class="unk">not yet sourced</td><td class="unk">not published</td><td class="unk">not yet sourced</td><td class="unk">not yet assessed</td></tr>
+      <tr><td>21:00 CEST</td><td>Coppa Italia</td><td><a href="#f9">Fiorentina &ndash; Pisa</a></td><td>Stadio Artemio Franchi, Florence</td><td class="unk">not published</td><td class="unk">not yet sourced</td><td>new manager, relegated side</td></tr>
+      <tr><td>21:30 CEST</td><td>LaLiga</td><td><a href="#f10">Elche &ndash; Real Madrid</a></td><td class="unk">not yet sourced</td><td class="unk">not published</td><td class="unk">not yet sourced</td><td>both new managers</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="note"><strong>Provenance.</strong> Typed-file mode: fixtures were read from <span class="mono">slate.2.xlsx</span> (tab &ldquo;slate 2.xlsx&rdquo;), with five stale rows from 14 September removed on instruction; venue and matchday were recovered in Phase 2. League and competition baselines are counted from Wikipedia results grids and match boxes (goals, over 2.5, BTTS, home wins, penalty shoot-outs) and computed from FotMob team totals (cards, corners, fouls); no per-match card baseline could be derived for the EFL Cup or the 2025&ndash;26 Coppa Italia because FotMob omits teams with no card. xG in every strip is FotMob&rsquo;s; Understat supplies shots, first-half goals and formations for Serie A, LaLiga and Premier League clubs only, so the Championship, League One and Serie B sides on this slate have no first-half series. Every transfer fee on the EFL Cup cards is FotMob&rsquo;s and single-sourced. Unpublished across all built cards: corners against for every club, and league baselines for xG, clean sheets, failed-to-score and first-half goals. Last season&rsquo;s figures lead the strip where a club has fewer than five league matches this season (f1, f6, and Fulham on f5).</div>
+  <div class="note"><strong>Completion.</strong> Six of ten cards are built: f1 Genoa &ndash; S&uuml;dtirol, f2 Rayo Vallecano &ndash; Espanyol, f3 Deportivo Alav&eacute;s &ndash; Valencia, f5 West Ham &ndash; Fulham and f6 Ipswich &ndash; Arsenal at full T1 depth, and f4 Peterborough &ndash; Barnsley at reduced T2 depth. Pending: f7, f9 and f10 at T1 and f8 at T2. By instruction, any fixture that kicks off before its research begins is not built and is shown as listed only. Tiers were set on the evidence each competition publishes, not on merit, and a pending or listed fixture is not a judgement on the game.</div>
+</section>
+
+<section>
+  <h2 class="sec">Jump to a fixture</h2>
+  <nav class="jump">
+    <a href="#f1">Genoa &ndash; S&uuml;dtirol<span>18:00 CEST &middot; Stadio Luigi Ferraris, Genoa</span></a>
+    <a href="#f2">Rayo Vallecano &ndash; Espanyol<span>19:00 CEST &middot; Estadio Ontime Butarque, Legan&eacute;s</span></a>
+    <a href="#f3">Deportivo Alav&eacute;s &ndash; Valencia<span>20:00 CEST &middot; Estadio de Mendizorroza, Vitoria-Gasteiz</span></a>
+    <a href="#f4">Peterborough &ndash; Barnsley<span>20:30 CEST &middot; Weston Homes Stadium, Peterborough</span></a>
+    <a href="#f5">West Ham &ndash; Fulham<span>20:45 CEST &middot; London Stadium, London</span></a>
+    <a href="#f6">Ipswich &ndash; Arsenal<span>21:00 CEST &middot; Portman Road, Ipswich</span></a>
+    <a href="#f7">Liverpool &ndash; Tottenham<span>21:00 CEST &middot; Anfield, Liverpool</span></a>
+    <a href="#f8">Reading &ndash; Brentford<span>21:00 CEST &middot; venue not yet sourced</span></a>
+    <a href="#f9">Fiorentina &ndash; Pisa<span>21:00 CEST &middot; Stadio Artemio Franchi, Florence</span></a>
+    <a href="#f10">Elche &ndash; Real Madrid<span>21:30 CEST &middot; venue not yet sourced</span></a>
+  </nav>
+</section>
+
+<article class="fixture" id="f1">
+  <div class="fx-head">
+    <p class="fx-league">Italy &middot; Coppa Italia &middot; Second round (round of 32)</p>
+    <h2 class="fx-title">Genoa &ndash; S&uuml;dtirol</h2>
+    <p class="fx-sub">18:00 CEST &middot; Stadio Luigi Ferraris, Genoa &middot; A Serie A side with one league point, a sold centre-forward and a dozen summer arrivals hosts an unbeaten Serie B side under a coach appointed in June &mdash; and a tie level after 90 minutes goes straight to penalties</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>Played this season</dt><dd>Genoa 5 (4 Serie A, 1 Coppa) &middot; S&uuml;dtirol 5 (4 Serie B, 1 Coppa)</dd></div>
+      <div class="od"><dt>Goals for / against pg</dt><dd>25/26 league: 1.08/1.34 (Serie A) &middot; 1.00/1.26 (Serie B) &middot; Lg 2.47 total (Coppa 25/26) &middot; 26/27 league (4): 0.50/2.00 &middot; 1.25/0.50</dd></div>
+      <div class="od"><dt>xG for / against pg</dt><dd>25/26: 1.19/1.28 &middot; 1.09/1.16 &middot; 26/27 (4): 0.95/1.52 &middot; 0.68/1.10 (FotMob) &middot; Lg not published</dd></div>
+      <div class="od"><dt>Over 2.5</dt><dd>25/26: 53% &middot; 39% &middot; Lg 43% &middot; 26/27 (4): 25% &middot; 0%</dd></div>
+      <div class="od"><dt>BTTS</dt><dd>25/26: 53% &middot; 55% &middot; Lg 45% &middot; 26/27 (4): 50% &middot; 50%</dd></div>
+      <div class="od"><dt>Clean sheet / failed to score</dt><dd>25/26: 24%/39% &middot; 21%/37% &middot; Lg not published &middot; 26/27 (4): 0%/50% &middot; 50%/0%</dd></div>
+      <div class="od"><dt>First-half goals pg</dt><dd>25/26 for/against: 0.42/0.61 &middot; not published &middot; Lg not published &middot; 26/27 (4): 0.25/1.25 &middot; not published</dd></div>
+      <div class="od"><dt>Cards / fouls pg</dt><dd>25/26: 1.68/12.4 &middot; 2.37/16.6 &middot; Lg 3.13 cards per match (Coppa 26/27 first stage), 12.0 fouls per team &middot; 26/27 (4): 2.00/9.0 &middot; 2.25/12.8</dd></div>
+      <div class="od"><dt>Corners for / against pg</dt><dd>25/26 for: 3.68 &middot; 4.34 &middot; Lg 4.3 per team &middot; 26/27 (4) for: 5.00 &middot; 2.50 &middot; against not published for either</dd></div>
+      <div class="od"><dt>Referee</dt><dd>Gianluca Manganiello (Pinerolo) &middot; 3.00 cards pg, 8.1 fouls per card (24/25 Serie A, 17) &middot; confirmed</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>Neither club is promoted, and the tie crosses a division. <strong>Genoa finished 16th in 2025&ndash;26 Serie A &mdash; 10 wins, 11 draws, 17 defeats, 41 scored, 51 conceded, 41 points</strong> &mdash; with De Rossi taking over in November. <strong>S&uuml;dtirol finished 16th in 2025&ndash;26 Serie B &mdash; 8 wins, 17 draws, 13 defeats, 38 scored, 48 conceded, 41 points</strong> &mdash; and kept their place through the relegation play-out, which ended 0&ndash;0 on aggregate against Bari and was decided on league position; their 13-match winless run was the longest in the division. The structural headline is that the two clubs&rsquo; league samples this season run the other way from the divisional gap: Genoa are 19th in Serie A on one point, S&uuml;dtirol are unbeaten in Serie B on eight, and this competition&rsquo;s first stage has no extra time, so a level score at 90 minutes goes directly to penalties.</p>
+    <ul>
+      <li><strong>Genoa &mdash; turnover high, concentrated in the forward line and on both flanks; manager unchanged.</strong> Daniele De Rossi has been in post since 6 November 2025. <em>Centre-forward:</em> Jeff Ekhator sold to Juventus for <strong>&euro;16.4m + &euro;2m add-ons</strong>; Caleb Ekuban left free to Hellas Verona; Lorenzo Colombo&rsquo;s loan from Milan made permanent for <strong>&euro;7m</strong>; Milutin Osmaji&cacute; from Preston North End, <strong>&euro;2.5m + &euro;1m</strong>; Elias Havel from Hartberg, <strong>&euro;2m</strong>; Stephan El Shaarawy free on 2 September. <em>Midfield / defensive midfield:</em> Djibril Sow from Sevilla, <strong>&euro;4m</strong>; Ethan Meichtry from Thun, <strong>&euro;4m</strong>; Samuel Wiafe from Modena, <strong>&euro;3m</strong>; Hamed Traor&egrave; on loan from Marseille (&euro;2m fee, &euro;10m option); Ruslan Malinovskyi left free to Trabzonspor; Patrizio Masini loaned to Frosinone; Jean Onana&rsquo;s loan ended. <em>Centre-back and wing-backs:</em> Brooke Norton-Cuffy sold to Hull City, <strong>&euro;14m</strong>; Cody Drameh in from Hull, <strong>&euro;4.5m</strong>; David Puczka from Juventus Next Gen, <strong>&euro;6m</strong>; Mario Mitaj on loan from Al-Ittihad (&euro;2m fee, &euro;4.5m option); Kingsley Ehizibue free; Aar&oacute;n Mart&iacute;n sold to Racing Santander, &euro;2m; Alessandro Vogliacco to Cremonese, &euro;500,000; Alan Matturro, back from a loan at Levante, sold to Shakhtar, &euro;5m + &euro;1m. <em>Goalkeeper:</em> Nicola Leali left free to Hellas Verona and Benjamin Siegrist&rsquo;s loan ended; Franz Stolz, back from a loan at Grazer AK, is named in goal in both probable elevens reached.</li>
+      <li><strong>S&uuml;dtirol &mdash; turnover high, including the goalkeeper and the centre-back pairing; manager changed.</strong> Fabrizio Castori&rsquo;s departure was announced on 23 June 2026 and <strong>Davide Possanzini appointed on 24 June 2026</strong>. <em>Goalkeeper:</em> Alessandro Plizzari on loan from Venezia. <em>Centre-back:</em> Riccardo Stivanello on loan from Bologna; Andrea Giorgini and Marco Varnier from Juve Stabia; Davide Veroli on loan from Cagliari; Giacomo Stabile on loan from Inter. <em>Defensive midfield:</em> Niklas Pyyhti&auml; on loan from Bologna; Aljo&scaron;a Vasi&cacute; on loan from Palermo; Alessandro Mallamo out to Union Brescia. <em>Attack:</em> Vasco Lopes permanently from Radomiak Radom; Kenny Mixtur from Villefranche; Lorenzo Anghel&egrave; on loan from Juventus; Bjarki Bjarkason from Venezia; Fabio Rispoli (listed on loan from Como in the club squad list, from Empoli on Virgilio&rsquo;s tracker). Also out: Raphael Kofler on loan to Cagliari, Pietrangeli to Juve Stabia, Karim Zedadka on loan to Empoli. <strong>Gap:</strong> no fee published for any S&uuml;dtirol arrival or departure.</li>
+      <li><strong>Suspensions / absences.</strong> Genoa&rsquo;s 25-man squad for the tie leaves out <strong>Elias Havel, Joi Nuredini, Mamedi Doucour&eacute; and Lorenzo Venturino</strong>, with no reason published. No suspension reported for either side and no S&uuml;dtirol absence published in the previews reached. Probable elevens disagree: Genoa&rsquo;s front two is El Shaarawy with Vitinha in one preview and Vitinha with Meichtry in another; S&uuml;dtirol are set out as a 4&ndash;2&ndash;3&ndash;1 in one and a 3&ndash;4&ndash;2&ndash;1 in the other.</li>
+      <li><strong>Sample.</strong> <strong>Genoa: five competitive matches</strong> &mdash; 4&ndash;1 at home to Ascoli in the Coppa first round (16 August), then Serie A 0&ndash;2 v Napoli (H), 0&ndash;1 at Lazio, 1&ndash;4 v Como (H) and 1&ndash;1 v Frosinone (H) on 12 September: 19th, one point, 2 scored, 8 conceded, three of the four league matches at home. Understat has them facing <strong>18.5 shots per league match this season against 12.8 last season</strong>, and five of the eight goals conceded came before half-time. <strong>S&uuml;dtirol: five competitive matches</strong> &mdash; 2&ndash;2 at Catanzaro in the Coppa first round (15 August), won 4&ndash;3 on penalties; then Serie B 1&ndash;0 v Entella (H), 1&ndash;1 at Benevento, 2&ndash;0 v Catanzaro (H) and 1&ndash;1 v Modena (H) on 12 September &mdash; eight points, unbeaten, equalling the club&rsquo;s best four-match Serie B start. FotMob&rsquo;s chance data sits apart from those results: <strong>5 scored from 2.7 xG and 2 conceded from 4.4 xG against</strong>. Both clubs last played on Saturday 12 September; Genoa are at Parma on Sunday 20 September.</li>
+      <li><strong>Referee.</strong> <strong>Gianluca Manganiello</strong> (Pinerolo section), <strong>confirmed</strong>, with Politi and Regattieri assisting, Galip&ograve; fourth official, Giua on VAR and Del Giovane AVAR. His 2024&ndash;25 Serie A record: <strong>17 matches, 48 yellow and 3 red cards (3.00 per match), 412 fouls (8.1 fouls per card), 3 penalties (0.18 per match)</strong> &mdash; single-sourced from a search snippet of PianetaFanta/Virgilio data. This season: one Serie A match, Milan 2&ndash;0 Venezia, with 4 yellows, no red, 19 fouls (4.75 per card) and no penalty; he also refereed Fiorentina 4&ndash;1 Benevento in this competition&rsquo;s first round and Cremonese&ndash;Padova in Serie B. A career figure of 3.78 yellow and 0.09 red cards per match is published without a competition split. History: a PianetaGenoa1893 headline reports Genoa have won every Coppa Italia match he has refereed, without giving the number. <strong>Gap:</strong> no 2025&ndash;26 record found.</li>
+      <li><strong>Not sourced.</strong> S&uuml;dtirol&rsquo;s first-half goals in either season; corners against for both clubs; S&uuml;dtirol&rsquo;s shot volume and home/away xG split; every S&uuml;dtirol transfer fee; Manganiello&rsquo;s 2025&ndash;26 record; Coppa Italia baselines for xG, clean sheets, failed-to-score and first-half goals; a 2025&ndash;26 Coppa Italia cards-per-match figure (the strip uses 2026&ndash;27&rsquo;s first stage). Team rates in the strip are league rates from two different divisions: Serie A 2025&ndash;26 ran at 2.43 goals, 45.8% over 2.5 and 3.77 cards per match; Serie B at 2.56, 48.4% and 4.50 (baselines_0915.md).</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Genoa under De Rossi are a back-three side: last season Understat logged 1,537 minutes in a 3&ndash;5&ndash;2 against 783 in a 3&ndash;4&ndash;2&ndash;1 and 740 in a 4&ndash;2&ndash;3&ndash;1, with 48.7% possession, 12.4 fouls per match (league 12.7 per team) and 3.68 corners per match, below the Serie A team average of 4.41. Set pieces cut both ways: 10 goals from set plays and corners, and 12 conceded from corner situations alone. This season the back three has persisted across three shapes (3&ndash;4&ndash;2&ndash;1, 3&ndash;5&ndash;2, 3&ndash;4&ndash;1&ndash;2) while possession has dropped to 45.3% and the shot count faced has risen by more than five a match. What the summer changed is the personnel of that system at its ends: four of the flank defenders are new (Ehizibue, Mitaj, Puczka, Drameh) after Norton-Cuffy and Mart&iacute;n were sold, and the front two is a pairing one preview calls <em>inedito</em> &mdash; evidence for it is a CV, not a match, and Havel, one of the summer&rsquo;s forwards, is not in the squad.</p>
+    <p>S&uuml;dtirol under Castori were a low-possession, high-contact Serie B side &mdash; 40.6% possession, 16.6 fouls per match against a division average of 15.0 per team, 2.37 cards per match and 4.34 corners per match. The four matches under Possanzini show different numbers on almost every one of those axes: <strong>48.1% possession, 12.8 fouls, 2.50 corners per match</strong>, with a new goalkeeper and a new centre-back pairing behind a defence that has conceded twice. Whether that is a changed style or four matches is not something the sample can separate; S&uuml;dtirol&rsquo;s chance data (0.68 xG for, 1.10 against per match) describes a side whose results so far have exceeded what it created and allowed. <strong>Gap:</strong> no published tactical profile of Possanzini&rsquo;s S&uuml;dtirol beyond probable elevens that disagree on a back three or a back four.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous &mdash; division gap and current samples point opposite ways</span></div><div class="mkt-why">The division gap is a fact, but both clubs finished 16th on 41 points in their own leagues last season, and this season&rsquo;s four-match league samples invert the gap (one point against eight). The format adds a structural complication: with no extra time, a level score after 90 minutes is a common end state here &mdash; 5 of 24 first-stage ties this season and 12 of 44 counted last season went to penalties. Neither club has a Coppa sample beyond one match.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Asian handicap / DNB<span class="verdict tag t-mid">OK &mdash; the margin question is at least measurable</span></div><div class="mkt-why">Genoa&rsquo;s 26/27 xG difference of &minus;0.57 per match and 18.5 shots faced, and S&uuml;dtirol&rsquo;s &minus;0.42 xG difference behind a +0.75 goal difference, are both published, so the size of the gap between results and chances can be read for each side. What limits it is that the two sets of numbers come from different divisions with no common opponent, and Genoa&rsquo;s were made with three home matches out of four.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U goals)<span class="verdict tag t-mid">OK &mdash; both clubs&rsquo; current samples agree on direction</span></div><div class="mkt-why">Genoa&rsquo;s league matches this season have gone over 2.5 once in four and S&uuml;dtirol&rsquo;s none in four, against a Coppa baseline of 43%; S&uuml;dtirol&rsquo;s 39% last season sits the same side. Genoa&rsquo;s 53% last season and 2.00 goals conceded per match this season are the counterweight. No extra time caps the event window at 90 minutes, which removes one source of variance other cup ties carry.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; consistent rates, not discriminating ones</span></div><div class="mkt-why">Every BTTS figure on the card sits between 50% and 55%: Genoa 53% and 50%, S&uuml;dtirol 55% and 50%, against a Coppa baseline of 45%. The rates are stable across two seasons for both clubs, which makes the family readable; what it cannot resolve is the cross-division question &mdash; S&uuml;dtirol&rsquo;s 50% clean-sheet rate was made against Serie B attacks, Genoa&rsquo;s 50% failed-to-score rate against Serie A defences.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Team goals<span class="verdict tag t-mid">OK &mdash; asymmetric: Genoa&rsquo;s line has agreeing evidence, S&uuml;dtirol&rsquo;s a gap</span></div><div class="mkt-why">Genoa&rsquo;s attacking numbers agree with each other &mdash; 0.50 goals, 0.95 xG and 2.5 shots on target per match, the last of them 20th in Serie A &mdash; but the front two tonight is new and Ekhator has been sold. S&uuml;dtirol&rsquo;s own total is the harder read: 1.25 goals per match from 0.68 xG, a gap four matches long.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Halves (1H result, 1H goals)<span class="verdict tag t-high">Dangerous &mdash; one side has no half-time series at all</span></div><div class="mkt-why">Genoa&rsquo;s split is published (0.42 for and 0.61 against per match before half-time last season; 1 scored and 5 conceded before the break in four league matches this season). Nothing equivalent exists for S&uuml;dtirol in either season, and the Coppa baseline has no first-half figure.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-mid">OK &mdash; official and one club&rsquo;s contact rate are both sourced</span></div><div class="mkt-why">Manganiello is confirmed, and his 2024&ndash;25 Serie A record &mdash; 3.00 cards and 8.1 fouls per card &mdash; describes an official who lets contact run before booking, set against a Coppa first stage running at 3.13 cards per match. The club inputs diverge: S&uuml;dtirol committed 16.6 fouls per match last season in a division that shows 4.50 cards per match, Genoa 12.4 in one that shows 3.77. Two things stop it being well-suited: his 2025&ndash;26 record is missing, and S&uuml;dtirol&rsquo;s foul rate under Possanzini has dropped to 12.8 on four matches.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Corners<span class="verdict tag t-mid">OK &mdash; the match total can be built, the split cannot</span></div><div class="mkt-why">Both corners-for series are published &mdash; Genoa 3.68 last season and 5.00 this season, S&uuml;dtirol 4.34 and 2.50 &mdash; so a match-total reading has two inputs against a Coppa baseline of 4.3 per team. Corners against are unpublished for both, so neither side&rsquo;s tendency to concede them can be checked, and S&uuml;dtirol&rsquo;s current figure comes with a possession shift from 40.6% to 48.1%.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li><strong>Every club rate on this card comes from a different division from its opponent&rsquo;s.</strong> Serie A and Serie B differ by 0.13 goals, 0.73 cards and 0.73 corners per match on last season&rsquo;s baselines, and the two clubs have no common opponent this season.</li>
+      <li><strong>Genoa&rsquo;s 2025&ndash;26 attack was built around a centre-forward now at Juventus.</strong> Ekhator&rsquo;s sale and a front two that has not started together make both last season&rsquo;s 1.08 goals per match and this season&rsquo;s 0.50 weak descriptions of the players tonight.</li>
+      <li><strong>S&uuml;dtirol&rsquo;s defensive record is four matches old and ahead of its chance data.</strong> Two goals conceded from 4.4 xG against, behind a goalkeeper and centre-back pairing that arrived this summer, under a coach appointed on 24 June.</li>
+      <li><strong>Cup selection is unpublished.</strong> Genoa play at Parma five days later; no preview states rotation, and the two probable Genoa elevens reached share only eight names.</li>
+      <li><strong>Most sensitive:</strong> 1X2 and halves &mdash; the first depends on a four-match inversion of a division gap and a penalties format, the second has no S&uuml;dtirol series at all. <strong>Least sensitive:</strong> BTTS, where both clubs&rsquo; rates sit in a 50&ndash;55% band across two seasons.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>BTTS is more robust than 1X2 here because both clubs&rsquo; BTTS rates hold between 50% and 55% across two seasons, while the 1X2 has to weigh a division gap against four-match samples that point the other way and a format that sends level ties to penalties.</li>
+      <li>Totals are more robust than halves because both clubs&rsquo; current over-2.5 rates (25% and 0%) and S&uuml;dtirol&rsquo;s 39% last season point the same direction, whereas S&uuml;dtirol have no first-half series in either season.</li>
+      <li>A corners match total is more robust than either team&rsquo;s corners because both corners-for series are published (3.68/5.00 and 4.34/2.50) and no corners-against figure exists for either club.</li>
+      <li>Discipline is more robust than team goals for S&uuml;dtirol because Manganiello&rsquo;s 8.1 fouls per card and S&uuml;dtirol&rsquo;s foul rates in both seasons are sourced, whereas S&uuml;dtirol&rsquo;s scoring rests on a 1.25-goals-from-0.68-xG gap four matches long.</li>
+      <li><strong>The fact that would most change the family choice:</strong> Genoa&rsquo;s confirmed eleven. If De Rossi rotates before Parma, Genoa&rsquo;s 26/27 attacking and defensive rates describe a different set of players; the official team sheet, published before kickoff, settles it.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f2">
+  <div class="fx-head">
+    <p class="fx-league">Spain &middot; LaLiga EA Sports &middot; Jornada 6</p>
+    <h2 class="fx-title">Rayo Vallecano &ndash; Espanyol</h2>
+    <p class="fx-sub">19:00 CEST &middot; Estadio Ontime Butarque, Legan&eacute;s &middot; Rayo, locked out of Vallecas and playing home matches at Legan&eacute;s&rsquo; ground under a coach appointed in June, after selling their first-choice left-back and a centre-back, host the side with the most yellow cards in LaLiga &mdash; referee listed but not officially confirmed</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>Played this season</dt><dd>Rayo 5 (LaLiga) &middot; Espanyol 5 (LaLiga)</dd></div>
+      <div class="od"><dt>Goals for / against pg</dt><dd>26/27 (5): 1.60/2.80 &middot; 1.60/1.00 &middot; Lg 2.69 total (25/26) &middot; 25/26: 1.08/1.16 &middot; 1.13/1.45</dd></div>
+      <div class="od"><dt>xG for / against pg</dt><dd>26/27 (5): 1.26/2.06 &middot; 1.20/1.28 &middot; 25/26: 1.40/1.30 &middot; 1.29/1.46 (FotMob) &middot; Lg not published</dd></div>
+      <div class="od"><dt>Over 2.5</dt><dd>26/27 (5): 80% &middot; 60% &middot; Lg 50% &middot; 25/26: 37% &middot; 50%</dd></div>
+      <div class="od"><dt>BTTS</dt><dd>26/27 (5): 100% &middot; 60% &middot; Lg 56% &middot; 25/26: 45% &middot; 58%</dd></div>
+      <div class="od"><dt>Clean sheet / failed to score</dt><dd>26/27 (5): 0%/0% &middot; 40%/0% &middot; Lg not published &middot; 25/26: 32%/32% &middot; 26%/24%</dd></div>
+      <div class="od"><dt>First-half goals pg</dt><dd>26/27 (5) for/against: 0.80/1.40 &middot; 1.20/0.40 &middot; 25/26: 0.50/0.50 &middot; 0.34/0.50 (Understat) &middot; Lg not published</dd></div>
+      <div class="od"><dt>Cards / fouls pg</dt><dd>26/27 (5): 2.40/14.2 &middot; 3.40/18.2 &middot; Lg 4.52 cards per match, 12.6 fouls per team (25/26) &middot; 25/26: 2.79/13.5 &middot; 2.37/13.8</dd></div>
+      <div class="od"><dt>Corners for / against pg</dt><dd>26/27 (5) for: 6.00 &middot; 1.40 &middot; Lg 4.83 per team (25/26) &middot; 25/26 for: 5.68 &middot; 4.68 &middot; against not published for either</dd></div>
+      <div class="od"><dt>Referee</dt><dd>Isidro D&iacute;az de Mera Escuderos &middot; 5.00 yellows pg, 0 reds, 3.8 fouls per card (26/27, 3) &middot; provisional</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>Neither club is promoted. <strong>Rayo finished 8th in 2025&ndash;26 &mdash; 12 wins, 14 draws, 12 defeats, 41 scored, 44 conceded, 50 points</strong> &mdash; and reached the Conference League final on 27 May 2026, finishing runners-up. <strong>Espanyol finished 11th &mdash; 12 wins, 10 draws, 16 defeats, 43 scored, 55 conceded, 46 points.</strong> The structural headline is Rayo&rsquo;s: they have lost their stadium. The Comunidad de Madrid, which owns Vallecas, ended the club&rsquo;s concession and suspended use of the ground after an audit found serious security, maintenance and hygiene deficiencies, with works of several months and no completion date; Rayo have played home matches at Legan&eacute;s&rsquo; Estadio Ontime Butarque (capacity 14,436) since 20 August, and their 1&ndash;1 with Alav&eacute;s there drew the lowest LaLiga attendance of the season, 4,280. They did it with a new head coach and without two first-choice defenders sold in August.</p>
+    <ul>
+      <li><strong>Rayo Vallecano &mdash; turnover high, concentrated in defence and goal; manager changed.</strong> I&ntilde;igo P&eacute;rez left at the end of his contract on 29 May 2026 and <strong>Be&ntilde;at San Jos&eacute; was appointed on 18 June 2026</strong>. <em>Centre-back:</em> Nobel Mendy sold to Hull City for <strong>&euro;25m</strong> (FotMob, single-sourced; FotMob also records a &euro;2.4m move from Betis in June); Abdul Mumin left free to Girona; Marash Kumbulla on loan from Roma; Mujaid Sadick on loan from Genk. <em>Left-back:</em> Pep Chavarr&iacute;a sold to Chelsea for <strong>&euro;19m</strong> (FotMob, single-sourced); Pacha Espino left free; Adri&agrave; Pedrosa on loan from Sevilla. <em>Goalkeeper:</em> Augusto Batalla injured until early January 2027; Emil Audero on loan from Como to cover; Miguel Morro&rsquo;s contract rescinded. <em>Defensive midfield:</em> Gnangoro Bouar&eacute; from Betis, &euro;600,000 for 50% of his rights. <em>Attack:</em> &Oacute;scar Trejo left free; Giorgi Tsitaishvili free from Dynamo Kyiv; Rayane Belaid from Atl&eacute;tico Madrid (loan with an option reported at about &euro;4m); Etienne Eto&rsquo;o loaned to Racing de Ferrol. Unai L&oacute;pez and Luiz Felipe extended. One summary names Jozhua Vertrouwd as the costliest arrival at &euro;1.5m; FotMob&rsquo;s summer list does not include him. <strong>Gap:</strong> no second source for the Chavarr&iacute;a or Mendy fees.</li>
+      <li><strong>Espanyol &mdash; turnover high by loan returns, low in cash; manager unchanged.</strong> Manolo Gonz&aacute;lez continues. <em>Centre-forward:</em> &Aacute;lex Calatrava from Castell&oacute;n, <strong>&euro;5m</strong>, the only fee paid; Kike Garc&iacute;a injured with no return date. <em>Centre-back:</em> Fernando Calero (free, to M&aacute;laga), Miguel Rubio (Valladolid), Pablo Ram&oacute;n (Racing, &euro;0.5m) and Hugo P&eacute;rez out; Unai N&uacute;&ntilde;ez on loan from Celta; Vanja Drku&scaron;i&cacute; on loan from Zenit (&euro;300,000 loan fee); Leandro Cabrera extended. <em>Defensive midfield:</em> Gabriel Moscardo on loan from PSG; Jos&eacute; Gragera loaned to Burgos; Justin Smith to Eldense; Charles Pickel&rsquo;s loan ended. <em>Flanks:</em> Carlos Romero&rsquo;s loan from Villarreal and Cyril Ngonge&rsquo;s from Napoli ended; Quilindschy Hartman on loan from Burnley; Bryan Zaragoza on loan from Bayern; Andoni Gorosabel on loan from Athletic; Rub&eacute;n S&aacute;nchez to Elche (&euro;0.5m). Ram&oacute;n Terrats is recorded as a &euro;2.5m sale to Getafe by FotMob and as a loan return to Villarreal by F&uacute;tbolFantasy &mdash; <strong>contradictory, unresolved</strong>. <em>Goalkeeper:</em> Marko Dmitrovi&cacute; continues. F&uacute;tbolFantasy puts the net balance at &minus;&euro;2m.</li>
+      <li><strong>Suspensions / absences.</strong> Rayo: <strong>Jorge de Frutos suspended</strong> &mdash; last season&rsquo;s top league scorer with 10; <strong>Augusto Batalla</strong> (until January), <strong>Luiz Felipe</strong>, <strong>Jozhua Vertrouwd</strong> and <strong>Randy Nteka</strong> injured; Isi Palaz&oacute;n back in training but listed out. Espanyol: <strong>Kike Garc&iacute;a</strong> (no return date), <strong>Javi Puado</strong> (late September) and <strong>Jofre Carreras</strong> (early October) injured, <strong>Gorosabel</strong> doubtful. Previews disagree on Rayo&rsquo;s goalkeeper (Audero in FotMob&rsquo;s predicted eleven, C&aacute;rdenas in another) and shape (4&ndash;3&ndash;3 against 4&ndash;2&ndash;3&ndash;1).</li>
+      <li><strong>Sample.</strong> Five league matches each, no cup football yet. <strong>Rayo: 1W&ndash;1D&ndash;3L, 8 scored, 14 conceded, four points</strong> &mdash; 1&ndash;2 at Sevilla, 1&ndash;1 v Alav&eacute;s, 2&ndash;5 at Barcelona, 3&ndash;2 v Racing Santander, 1&ndash;4 at Real Madrid on 12 September. Nine of the 14 conceded came at Barcelona and Real Madrid; three of the five were away. Sergio Camello has six goals, joint top of the division; Rayo have conceded three penalties, the most in LaLiga, and have two red cards, joint most. Understat has them facing 17.6 shots a match, against 12.3 last season. <strong>Espanyol: 2W&ndash;1D&ndash;2L, 8 scored, 5 conceded, seven points</strong> &mdash; 3&ndash;0 v Levante, 1&ndash;2 v Real Madrid, 1&ndash;2 at Real Sociedad, 1&ndash;1 v Sevilla, 2&ndash;0 at Osasuna on 12 September. Six of their eight goals came before half-time. The last four league meetings: Rayo 1&ndash;0 (April 2026), Espanyol 1&ndash;0 (December 2025), Espanyol 4&ndash;0 at Vallecas (April 2025), Espanyol 2&ndash;1 (August 2024). Rayo are at Osasuna on Saturday; Espanyol host Elche on Friday.</li>
+      <li><strong>Referee.</strong> <strong>Isidro D&iacute;az de Mera Escuderos</strong> is listed for the match by FotMob; the official CTA designation was not reached, so the appointment is treated as <strong>provisional</strong>. His 2026&ndash;27 LaLiga record: <strong>3 matches, 15 yellow cards (5.00 per match), no red, 57 fouls (19.0 per match, 3.8 fouls per card), no penalty</strong> (EstadisticasLaLiga). FotMob&rsquo;s 39-match record, window unstated: 4.79 yellows per match against a LaLiga average of 4.47, 6 reds, 12 penalties (0.31 per match), 24.66 fouls per match against 24.95. A career figure across LaLiga, LaLiga 2 and cups is 6.02 yellows and 0.18 reds per match with 76 penalties (StatsHub snippet). A low fouls-per-card count this season means he has booked early. <strong>Gap:</strong> no history with either club found.</li>
+      <li><strong>Not sourced.</strong> Corners against for both clubs; any league baseline for xG, clean sheets, failed-to-score or first-half goals; a Butarque-specific split beyond Rayo&rsquo;s two home matches there; a second source for the Chavarr&iacute;a and Mendy fees; the resolution of Terrats&rsquo;s destination; official confirmation of the referee.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Rayo under I&ntilde;igo P&eacute;rez were a front-foot 4&ndash;2&ndash;3&ndash;1 side &mdash; 2,249 Understat minutes in that shape, 53.4% possession, 13.9 shots and 5.68 corners per match (league 4.83 per team), and a heavy contact profile: 13.5 fouls, 97 yellows and 9 reds across the league season, on top of a 15-match Conference League run to the final. The shape has survived the change of coach &mdash; 4&ndash;2&ndash;3&ndash;1 is still the most-used under San Jos&eacute;, with 4&ndash;1&ndash;4&ndash;1 and 4&ndash;3&ndash;3 alongside &mdash; and so has the corner count (6.00 per match). Possession has not (44.7%), and shots faced have risen by five a match, although two of those five matches were away at the top two. The left side of the defence is new in both positions after Chavarr&iacute;a and Mendy were sold, and the goalkeeper is a loan signing covering an injury; evidence for how San Jos&eacute;&rsquo;s back line functions is five matches, two of them against Barcelona and Real Madrid.</p>
+    <p>Espanyol under Manolo Gonz&aacute;lez are a lower-possession side that alternates between a 4&ndash;2&ndash;3&ndash;1 and a 4&ndash;4&ndash;2 &mdash; 42.3% possession and 4.68 corners per match last season, 13.8 fouls and 2.37 cards. This season two of those numbers have moved sharply on five matches: <strong>fouls up to 18.2 per match and 17 yellow cards, the most in the division</strong>, while corners have fallen to seven in five matches. The attack has shifted its timing too &mdash; 0.34 first-half goals per match last season, six of eight before the break this season. The summer replaced two loaned-in wide players, Carlos Romero and Ngonge, with two more loans, Hartman and Zaragoza, so the flank personnel is again temporary; the centre-back group lost four and added two loans.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous &mdash; the home advantage has been relocated</span></div><div class="mkt-why">Rayo&rsquo;s 2025&ndash;26 home record (24 scored, 15 conceded in 19) was made at a stadium they can no longer use; at Butarque they have two matches and a 4,280 crowd on record. Their five-match sample includes both of last season&rsquo;s top two away, a new coach and a rebuilt left side, and Espanyol&rsquo;s includes three home matches out of five. Last season&rsquo;s four-point gap and the last four meetings (three decided by one goal) are the only settled inputs.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Asian handicap / DNB<span class="verdict tag t-high">Dangerous &mdash; margin data dominated by two fixtures</span></div><div class="mkt-why">Rayo&rsquo;s &minus;1.20 goal difference per match this season is mostly two results: 9 of their 14 conceded came at Barcelona and Real Madrid. Their xG difference swung from +0.10 per match last season to &minus;0.80 this season on the same skewed schedule. Espanyol&rsquo;s margins are narrower and more stable (&minus;0.08 xG difference, against &minus;0.17 last season), but a margin reading needs both sides.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U goals)<span class="verdict tag t-mid">OK &mdash; current samples agree, Rayo&rsquo;s last season disagrees</span></div><div class="mkt-why">Both clubs&rsquo; matches this season run above the league&rsquo;s 50% over-2.5 rate (Rayo 80%, Espanyol 60%), and LaLiga as a whole is at 54.9% this season. Against that, Rayo were a 37% club last season, the lowest-event profile on this fixture, and their current figure includes 7-goal and 5-goal matches at Barcelona and Real Madrid.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; one leg stable, one leg changed with the personnel</span></div><div class="mkt-why">Espanyol&rsquo;s BTTS rate has barely moved (58% last season, 60% this) and they have scored in all five matches. Rayo&rsquo;s has jumped from 45% to 100%, a change that coincides with a new goalkeeper, a new left-back and centre-back, and two top-two away fixtures; Rayo have also scored in every match, with Camello on six.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Team goals<span class="verdict tag t-mid">OK &mdash; asymmetric: both attacks agree, Rayo&rsquo;s defence is skewed</span></div><div class="mkt-why">Both attacks have scored 1.60 per match from similar chance volumes (1.26 and 1.20 xG), which is a consistent input. The defensive sides differ in quality of evidence: Espanyol&rsquo;s 1.00 conceded sits under 1.28 xG against with Dmitrovi&cacute; unchanged in goal, whereas Rayo&rsquo;s 2.80 conceded is a figure two opponents built and a loan goalkeeper now defends.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Halves (1H result, 1H goals)<span class="verdict tag t-mid">OK &mdash; both clubs have a half-time series, the seasons disagree</span></div><div class="mkt-why">Understat publishes first-half goals for both clubs in both seasons, which most cards on this slate lack. This season the two series fit together &mdash; Espanyol 1.20 first-half goals for, Rayo 1.40 first-half goals against &mdash; but last season both were at or below 0.50, and neither the coach change at Rayo nor Espanyol&rsquo;s altered timing has more than five matches behind it. No league first-half baseline exists.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-mid">OK &mdash; strongest club inputs on the card, appointment unconfirmed</span></div><div class="mkt-why">Espanyol lead LaLiga with 17 yellows in five matches and commit 18.2 fouls per match; Rayo committed 13.5 fouls with 9 reds last season and have two reds this season. The listed official has shown 5.00 yellows per match this season at 3.8 fouls per card &mdash; an early booker &mdash; and a 39-match record above the league average. It is not rated well-suited because the designation is a FotMob listing, not the CTA&rsquo;s, and every referee figure on the row depends on it.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Corners<span class="verdict tag t-mid">OK &mdash; Rayo&rsquo;s series is robust, Espanyol&rsquo;s has collapsed</span></div><div class="mkt-why">Rayo&rsquo;s corners-for rate held at 5.68 and 6.00 per match across a coach change and a venue change, well above the league&rsquo;s 4.83 per team. Espanyol&rsquo;s fell from 4.68 to 1.40 &mdash; seven corners in five matches &mdash; a shift large enough that neither figure can be treated as their rate. Corners against are unpublished for both.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li><strong>Rayo&rsquo;s home numbers belong to a stadium they cannot use.</strong> Last season&rsquo;s home split was built at Vallecas; Butarque is a borrowed ground in another municipality with two Rayo matches and a 4,280 attendance on record.</li>
+      <li><strong>Rayo&rsquo;s five-match sample is schedule-skewed.</strong> Away at Barcelona and Real Madrid account for 9 of 14 goals conceded and much of the rise in shots faced.</li>
+      <li><strong>Espanyol&rsquo;s discipline and corner shifts are large for five matches.</strong> Fouls up from 13.8 to 18.2 and corners down from 4.68 to 1.40 per match, with the same coach and a loan-rebuilt flank.</li>
+      <li><strong>Fixture congestion and absences.</strong> Espanyol play again on Friday, Rayo on Saturday; Rayo are without their top scorer of last season (De Frutos, suspended) and four injured players, Espanyol without three forwards.</li>
+      <li><strong>Most sensitive:</strong> 1X2 and the handicap &mdash; the home advantage has moved to Legan&eacute;s and the margin data is two fixtures deep. <strong>Least sensitive:</strong> Rayo&rsquo;s corners-for rate, stable at 5.68 and 6.00 through a change of coach and ground.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>Corners are more robust than 1X2 here because Rayo&rsquo;s corners-for rate held at 5.68 and 6.00 across a coach change and a relocation, while the 1X2 rests on a home record made at Vallecas.</li>
+      <li>Discipline is more robust than the handicap because Espanyol&rsquo;s 17 yellows and 18.2 fouls per match and the listed official&rsquo;s 5.00 yellows at 3.8 fouls per card are all current-season figures, whereas Rayo&rsquo;s margins are mostly the 9 goals conceded at Barcelona and Real Madrid.</li>
+      <li>BTTS is more robust than Rayo&rsquo;s team total because Espanyol&rsquo;s BTTS rate held at 58% and 60% across two seasons and both clubs have scored in every match, while Rayo&rsquo;s goals against are dominated by two opponents.</li>
+      <li>Halves are more robust on this card than on most of the slate because both clubs have first-half series in both seasons, but less robust than corners because those series changed between seasons for both clubs.</li>
+      <li><strong>The fact that would most change the family choice:</strong> the official CTA designation. If D&iacute;az de Mera is confirmed, the discipline row carries a current early-booking official against the division&rsquo;s most-booked side; if another official is named, every referee figure on the card is replaced.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f3">
+  <div class="fx-head">
+    <p class="fx-league">Spain &middot; LaLiga EA Sports &middot; Jornada 6</p>
+    <h2 class="fx-title">Deportivo Alav&eacute;s &ndash; Valencia</h2>
+    <p class="fx-sub">20:00 CEST &middot; Estadio de Mendizorroza, Vitoria-Gasteiz &middot; Valencia, bottom with one goal in five and three centre-backs injured, dismissed Corber&aacute;n on Sunday and arrive under an interim coach, against an Alav&eacute;s side on ten points in Quique S&aacute;nchez Flores&rsquo;s first full season &mdash; with a referee in his first year in the top flight</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>Played this season</dt><dd>Alav&eacute;s 5 (LaLiga) &middot; Valencia 5 (LaLiga)</dd></div>
+      <div class="od"><dt>Goals for / against pg</dt><dd>26/27 (5): 2.20/1.00 &middot; 0.20/2.00 &middot; Lg 2.69 total (25/26) &middot; 25/26: 1.16/1.47 &middot; 1.21/1.45</dd></div>
+      <div class="od"><dt>xG for / against pg</dt><dd>26/27 (5): 1.56/1.22 &middot; 0.80/1.56 &middot; 25/26: 1.23/1.25 &middot; 1.29/1.25 (FotMob) &middot; Lg not published</dd></div>
+      <div class="od"><dt>Over 2.5</dt><dd>26/27 (5): 60% &middot; 40% &middot; Lg 50% &middot; 25/26: 50% &middot; 42%</dd></div>
+      <div class="od"><dt>BTTS</dt><dd>26/27 (5): 60% &middot; 20% &middot; Lg 56% &middot; 25/26: 63% &middot; 55%</dd></div>
+      <div class="od"><dt>Clean sheet / failed to score</dt><dd>26/27 (5): 40%/0% &middot; 20%/80% &middot; Lg not published &middot; 25/26: 13%/26% &middot; 24%/24%</dd></div>
+      <div class="od"><dt>First-half goals pg</dt><dd>26/27 (5) for/against: 0.80/0.40 &middot; 0.20/0.80 &middot; 25/26: 0.47/0.53 &middot; 0.29/0.45 (Understat) &middot; Lg not published</dd></div>
+      <div class="od"><dt>Cards / fouls pg</dt><dd>26/27 (5): 2.60/15.0 &middot; 1.60/10.2 &middot; Lg 4.52 cards per match, 12.6 fouls per team (25/26) &middot; 25/26: 2.39/14.9 &middot; 1.95/12.1</dd></div>
+      <div class="od"><dt>Corners for / against pg</dt><dd>26/27 (5) for: 5.40 &middot; 3.80 &middot; Lg 4.83 per team (25/26) &middot; 25/26 for: 5.05 &middot; 5.08 &middot; against not published for either</dd></div>
+      <div class="od"><dt>Referee</dt><dd>Miguel Sesma Espinosa &middot; 4.00 yellows + 2 reds in 3, 5.8 fouls per card (26/27) &middot; confirmed</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p>Neither club is promoted. <strong>Alav&eacute;s finished 14th in 2025&ndash;26 &mdash; 11 wins, 10 draws, 17 defeats, 44 scored, 56 conceded, 43 points</strong> &mdash; and reached the Copa del Rey quarter-finals, with Toni Mart&iacute;nez scoring 14 league goals; Eduardo Coudet left by mutual consent on 3 March 2026, in 16th, and Quique S&aacute;nchez Flores took over the same day. <strong>Valencia finished 9th &mdash; 13 wins, 10 draws, 15 defeats, 46 scored, 55 conceded, 49 points</strong> &mdash; also reaching the Copa quarter-finals, with Hugo Duro on 10. The structural headline is Valencia&rsquo;s collapse and the club&rsquo;s response to it: one point and one goal from five matches, and on Sunday 13 September the club dismissed Carlos Corber&aacute;n &mdash; the first head coach removed in LaLiga this season &mdash; together with its football CEO Ron Gourlay and his working group. &Oacute;scar S&aacute;nchez, coach of the reserve side VCF Mestalla, takes the team as interim; tonight is his first senior match.</p>
+    <ul>
+      <li><strong>Deportivo Alav&eacute;s &mdash; turnover medium, concentrated at centre-back; manager unchanged.</strong> S&aacute;nchez Flores has been in post since 3 March 2026 and this is his first pre-season with the club. <em>Centre-back:</em> V&iacute;ctor Parada sold to Spartak Moscow, <strong>&euro;5m</strong>; Moussa Diarra to Al-Wahda, <strong>&euro;1.2m</strong>; Nikola Mara&scaron; released; Nicol&aacute;s Valentini in from Fiorentina (fee not published); Ville Koski from NK Istra (undisclosed, now owned outright); Facundo Garc&eacute;s out long-term with a torn ACL and also banned by FIFA until 26 September; Nahuel Tenaglia extended. <em>Attack:</em> Miguel Rodr&iacute;guez from Utrecht, <strong>&euro;5m</strong>, the largest outlay; Asier Villalibre departed. <em>Midfield:</em> Mikel Rodr&iacute;guez from Real Sociedad B, <strong>&euro;2m</strong>, already out for the season with a torn ACL; Jon Guridi released. <em>Goalkeeper:</em> Antonio Sivera extended; Jes&uacute;s Owono to Andorra and Ra&uacute;l Fern&aacute;ndez released. A F&uacute;tbolFantasy summary puts the net spend at &euro;7m.</li>
+      <li><strong>Valencia &mdash; turnover high on both flanks and in the centre of midfield; manager changed on Sunday.</strong> Corber&aacute;n dismissed 13 September 2026 in 20th; <strong>&Oacute;scar S&aacute;nchez interim from 13 September</strong>. <em>Right-back:</em> Arnau Mart&iacute;nez from Girona, <strong>&euro;5m</strong>, the largest outlay; Pablo Maffeo on loan from Olympiacos; Thierry Correia (free, to Venezia) and Renzo Saravia released. <em>Centre-back:</em> Cenk &Ouml;zka&ccedil;ar sold to Trabzonspor, <strong>&euro;1.75m</strong>; Eray C&ouml;mert released; Justin de Haas free from Famalic&atilde;o. <em>Defensive midfield:</em> Aliou Dieng from Al Ahly, &euro;0.5m; Baptiste Santamaria free to PAOK; Guido Rodr&iacute;guez renewed on 3 July. <em>Attack:</em> Ryunosuke Sato from FC Tokyo, <strong>&euro;4m</strong>; Harvey Elliott on loan from Liverpool (deadline day); Andr&eacute; Almeida loaned to Racing Santander; David Otorbi to Real Zaragoza; Alberto Mar&iacute; released. Arnaut Danjuma and Hugo Duro stayed. <em>Goalkeeper:</em> Stole Dimitrievski extended; Kayne van Oevelen on loan from Ipswich.</li>
+      <li><strong>Suspensions / absences.</strong> Alav&eacute;s: <strong>Garc&eacute;s</strong> and <strong>Mikel Rodr&iacute;guez</strong> (both out for the season), <strong>Aitor Ma&ntilde;as</strong> (late September). Valencia: <strong>C&eacute;sar T&aacute;rrega</strong> (early October), <strong>Mouctar Diakhaby</strong> (late September) and <strong>Jos&eacute; Copete</strong> &mdash; three centre-backs &mdash; plus <strong>Umar Sadiq</strong>, <strong>Diego L&oacute;pez</strong> (January), <strong>Sergi Can&oacute;s</strong> (December); <strong>Dimitri Foulquier</strong> and <strong>Guido Rodr&iacute;guez</strong> doubtful. No suspension reported. FotMob&rsquo;s predicted Valencia eleven includes Otorbi, whom FotMob&rsquo;s own transfer list shows leaving on 3 September &mdash; predicted elevens for Valencia are unreliable tonight.</li>
+      <li><strong>Sample.</strong> <strong>Alav&eacute;s: 3W&ndash;1D&ndash;1L, 11 scored, 5 conceded, ten points</strong> &mdash; 3&ndash;0 v Getafe, 1&ndash;1 at Rayo, 1&ndash;0 v Villarreal, 5&ndash;2 v Osasuna (Lucas Boy&eacute; hat-trick), 1&ndash;2 at Racing Santander on 12 September; 9 scored and 2 conceded in three home matches. S&aacute;nchez Flores was LaLiga&rsquo;s manager of the month for August. <strong>Valencia: 0W&ndash;1D&ndash;4L, 1 scored, 10 conceded, 20th</strong> &mdash; 0&ndash;0 v Celta, 0&ndash;1 v Betis, 1&ndash;3 at Deportivo, 0&ndash;5 v Barcelona, 0&ndash;1 at Sevilla on Friday 11 September; goalless in the last two. Understat has Valencia at 8.4 shots for and 14.6 against per match this season. Last four league meetings: Valencia 3&ndash;2 (March 2026), 0&ndash;0 (October 2025), Alav&eacute;s 1&ndash;0 (May 2025), 2&ndash;2 (December 2024). Alav&eacute;s are at Athletic on Saturday; Valencia host Real Sociedad on Sunday.</li>
+      <li><strong>Referee.</strong> <strong>Miguel Sesma Espinosa</strong>, <strong>confirmed</strong> in the jornada-6 designations, with Valent&iacute;n Pizarro on VAR. He is in his first year in Primera &mdash; a March 2026 report on his Oviedo&ndash;Valencia appointment described him as a debutant. This season: <strong>3 LaLiga matches, 12 yellow and 2 red cards, 81 fouls (27.0 per match, 5.8 fouls per card), 2 penalties</strong> (EstadisticasLaLiga). FotMob&rsquo;s 23-match record, window and competitions unstated: 3.65 yellows per match against a LaLiga average of 4.47, 2 reds, 8 penalties (0.35 per match), 27.09 fouls per match against 24.95 &mdash; about 7.3 fouls per card, an official who lets contact run. History: he refereed five Alav&eacute;s matches last season, all Alav&eacute;s wins (three league, two Copa), and Valencia&rsquo;s visit to Oviedo in March 2026. <strong>Gap:</strong> no full 2025&ndash;26 season line for him.</li>
+      <li><strong>Not sourced.</strong> Corners against for both clubs; league baselines for xG, clean sheets, failed-to-score and first-half goals; Valentini&rsquo;s fee and loan status; a full 2025&ndash;26 referee line; any senior coaching record for &Oacute;scar S&aacute;nchez.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Alav&eacute;s&rsquo;s shape has changed with the coach. Last season&rsquo;s most-used system on Understat was a 4&ndash;4&ndash;2 (1,535 minutes), most of it Coudet&rsquo;s; this season S&aacute;nchez Flores has played a back three or five in almost every minute &mdash; 3&ndash;5&ndash;2 for 278 minutes, 5&ndash;3&ndash;2 for 138 &mdash; with 44% possession, 14.0 shots for and 10.2 against per match, and the same heavy contact profile as last season (15.0 fouls and 2.60 cards per match, against 14.9 and 2.39). Corners have held at 5.40 per match, above the league&rsquo;s 4.83 per team. The two new centre-backs, Valentini and Koski, both appear in probable elevens behind that system after Parada and Diarra were sold; 11 goals from 7.8 FotMob xG shows the attack finishing ahead of its chances, five of those goals in one match.</p>
+    <p>Valencia under Corber&aacute;n were a 4&ndash;4&ndash;2 side last season (2,212 minutes), low-contact (12.1 fouls, 1.95 cards per match) and slow-starting (0.29 first-half goals per match). This season Corber&aacute;n moved to a back five &mdash; 5&ndash;4&ndash;1 for 306 minutes &mdash; and every attacking number fell: 0.80 xG, 8.4 shots, 2.2 shots on target and 3.80 corners per match. The man who designed that shift has gone. What &Oacute;scar S&aacute;nchez will pick is unpublished beyond predicted elevens that include a player sold on 3 September, and his centre-back group is depleted by injuries to T&aacute;rrega, Diakhaby and Copete; the summer additions who could change the attacking numbers &mdash; Elliott, Sato, Arnau Mart&iacute;nez &mdash; are evidence by CV and a handful of matches.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row ok"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-mid">OK &mdash; every current measure agrees, but the coach who produced them has gone</span></div><div class="mkt-why">The five-match evidence points one way on every axis &mdash; 10 points against 1, xG difference +0.34 against &minus;0.76 per match, 9&ndash;2 in Alav&eacute;s&rsquo;s three home matches, one Valencia goal &mdash; and last season&rsquo;s five-place gap in Valencia&rsquo;s favour is the only input that runs the other way. It is not rated well-suited because Valencia&rsquo;s numbers were made under a dismissed coach, and an interim appointment with no senior sample is an unmeasured structural break.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Asian handicap / DNB<span class="verdict tag t-mid">OK &mdash; results and chance data share a sign on both sides</span></div><div class="mkt-why">Alav&eacute;s&rsquo;s +1.20 goal difference per match sits over a +0.34 xG difference; Valencia&rsquo;s &minus;1.80 sits over &minus;0.76. Both results run further than the chances, so the margin evidence is directionally consistent but inflated &mdash; Alav&eacute;s&rsquo;s by a 5&ndash;2, Valencia&rsquo;s by a 0&ndash;5 against Barcelona.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U goals)<span class="verdict tag t-mid">OK &mdash; one high-event side, one goal-starved one</span></div><div class="mkt-why">Alav&eacute;s&rsquo;s matches have gone over 2.5 in three of five (60%), Valencia&rsquo;s in two of five (40%), against a 50% league baseline, and both clubs sat close to their current figures last season (50% and 42%). The totals question combines an Alav&eacute;s attack finishing ahead of its chances with a Valencia attack producing almost none, which is readable but has two moving parts.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; the whole family sits on one leg</span></div><div class="mkt-why">Alav&eacute;s have scored in all five matches. The family therefore turns on Valencia scoring, and that leg has current evidence from several directions &mdash; failed to score in four of five, 20% BTTS, 2.2 shots on target per match &mdash; against last season&rsquo;s 55% BTTS and 24% failed-to-score under a different shape. The interim coach is the one unmeasured input.</div></div>
+      <div class="mkt-row good"><div class="mkt-name">Team goals<span class="verdict tag t-low">Well-suited &mdash; on Valencia&rsquo;s side, where five measures agree</span></div><div class="mkt-why">Valencia&rsquo;s attacking rate is described consistently by every published figure: 0.20 goals, 0.80 FotMob xG, 0.67 Understat xG, 8.4 shots and 2.2 shots on target per match, with Sadiq, Diego L&oacute;pez and Can&oacute;s injured. Alav&eacute;s&rsquo;s own total is the less readable half &mdash; 2.20 goals from 1.56 xG, inflated by one five-goal match.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Halves (1H result, 1H goals)<span class="verdict tag t-mid">OK &mdash; Valencia&rsquo;s first-half series is stable, Alav&eacute;s&rsquo;s has moved</span></div><div class="mkt-why">Valencia scored 0.29 first-half goals per match last season and 0.20 this season, a consistently slow start under either shape. Alav&eacute;s&rsquo;s first-half scoring rose from 0.47 to 0.80 with the change of coach and system, on five matches. No league first-half baseline exists.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-mid">OK &mdash; stable club rates, a referee with a thin top-flight record</span></div><div class="mkt-why">Alav&eacute;s&rsquo;s contact profile has barely moved between seasons and coaches (14.9 to 15.0 fouls, 2.39 to 2.60 cards), and Valencia&rsquo;s has stayed low (12.1 to 10.2 fouls, 1.95 to 1.60 cards) against a league 4.52 cards per match. Sesma is confirmed, but he is in his first year in Primera: his three matches this season show 5.8 fouls per card and two reds, FotMob&rsquo;s wider 23-match record shows 3.65 yellows at about 7.3 fouls per card &mdash; two samples that describe different officials.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Corners<span class="verdict tag t-mid">OK &mdash; Alav&eacute;s&rsquo;s series stable, Valencia&rsquo;s fell with the back five</span></div><div class="mkt-why">Alav&eacute;s&rsquo;s corners-for rate held at 5.05 and 5.40 per match through a change of coach and system. Valencia&rsquo;s fell from 5.08 to 3.80 when Corber&aacute;n moved to a back five &mdash; a shape the interim coach may not keep. Corners against are unpublished for both.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li><strong>Valencia&rsquo;s current numbers describe a coach and a system that may not be on the pitch.</strong> The 5&ndash;4&ndash;1 that produced 0.80 xG per match was Corber&aacute;n&rsquo;s; &Oacute;scar S&aacute;nchez has had two days and no senior match.</li>
+      <li><strong>Valencia&rsquo;s last-season rates describe a different defence.</strong> &Ouml;zka&ccedil;ar and C&ouml;mert have gone and T&aacute;rrega, Diakhaby and Copete are injured, so last season&rsquo;s 1.45 goals conceded per match was made by centre-backs mostly unavailable tonight.</li>
+      <li><strong>Alav&eacute;s&rsquo;s attack is running ahead of its chances.</strong> 11 goals from 7.8 FotMob xG, five of them against Osasuna; last season&rsquo;s 1.16 goals per match is a 4&ndash;4&ndash;2 figure.</li>
+      <li><strong>Referee sample conflict.</strong> Sesma&rsquo;s LaLiga numbers this season (three matches, two reds, 5.8 fouls per card) and FotMob&rsquo;s 23-match line (7.3 fouls per card) do not agree, and he has no full top-flight season.</li>
+      <li><strong>Most sensitive:</strong> 1X2 &mdash; the interim appointment is the single input with no measurement. <strong>Least sensitive:</strong> Alav&eacute;s&rsquo;s foul and card rates, unchanged across two seasons and two coaches.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>Valencia&rsquo;s team total is more robust than 1X2 here because five current measures agree on it (0.20 goals, 0.80 and 0.67 xG, 8.4 shots, 2.2 on target per match), while 1X2 also has to absorb a coaching change made on 13 September with no sample behind it.</li>
+      <li>BTTS is more robust than totals because it rests on the Valencia scoring evidence alone (failed to score in four of five), whereas totals also require Alav&eacute;s&rsquo;s 2.20 goals per match, which runs ahead of their 1.56 xG.</li>
+      <li>Discipline is more robust than corners because Alav&eacute;s&rsquo;s foul and card rates barely moved across two seasons (14.9 to 15.0; 2.39 to 2.60), whereas Valencia&rsquo;s corners fell from 5.08 to 3.80 with a system the new coach may abandon.</li>
+      <li>Halves are more robust on Valencia&rsquo;s side than Alav&eacute;s&rsquo;s because Valencia&rsquo;s first-half scoring was low in both seasons (0.29 and 0.20), while Alav&eacute;s&rsquo;s rose from 0.47 to 0.80 with the change of system.</li>
+      <li><strong>The fact that would most change the family choice:</strong> &Oacute;scar S&aacute;nchez&rsquo;s first team sheet &mdash; whether he keeps Corber&aacute;n&rsquo;s back five and who partners de Haas at centre-back. The official lineup settles whether Valencia&rsquo;s current rates describe tonight&rsquo;s team.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f4">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL Cup &middot; Third round</p>
+    <h2 class="fx-title">Peterborough United &ndash; Barnsley</h2>
+    <p class="fx-sub">20:30 CEST (19:30 BST) &middot; Weston Homes Stadium, Peterborough &middot; An all-League One tie between a home side scoring freely in the cup and barely in the league, and a Barnsley side four months into Daniel Stendel&rsquo;s tenure &mdash; level at 90 goes to penalties &middot; reduced-depth card</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>Played this season</dt><dd>Peterborough 8 (6 League One, 2 EFL Cup) &middot; Barnsley 8 (6 League One, 2 EFL Cup)</dd></div>
+      <div class="od"><dt>Goals for / against pg</dt><dd>26/27 league (6): 0.67/1.67 &middot; 1.00/1.83 &middot; Lg 2.73 total (EFL Cup 25/26) &middot; 25/26: 1.39/1.48 &middot; 1.48/1.59</dd></div>
+      <div class="od"><dt>xG for / against pg</dt><dd>26/27 (6): 1.35/1.52 &middot; 1.48/1.48 &middot; 25/26: 1.43/1.65 &middot; 1.23/1.55 (FotMob) &middot; Lg not published</dd></div>
+      <div class="od"><dt>Over 2.5</dt><dd>26/27 (6): 50% &middot; 67% &middot; Lg 51% &middot; 25/26: 57% &middot; 63%</dd></div>
+      <div class="od"><dt>BTTS</dt><dd>26/27 (6): 50% &middot; 50% &middot; Lg 54% &middot; 25/26: 59% &middot; 67%</dd></div>
+      <div class="od"><dt>Clean sheet / failed to score</dt><dd>26/27 (6): 17%/50% &middot; 17%/50% &middot; Lg not published &middot; 25/26: 22%/22% &middot; 9%/26%</dd></div>
+      <div class="od"><dt>First-half goals pg</dt><dd>not published &middot; not published &middot; Lg not published</dd></div>
+      <div class="od"><dt>Cards / fouls pg</dt><dd>26/27 (6): 1.33/9.2 &middot; 2.33/12.7 &middot; Lg cards not derivable, 10.9 fouls per team (EFL Cup 25/26) &middot; 25/26: 1.96/9.6 &middot; 2.07/11.3</dd></div>
+      <div class="od"><dt>Corners for / against pg</dt><dd>26/27 (6) for: 5.00 &middot; 8.83 &middot; Lg 4.9 per team (EFL Cup 25/26) &middot; 25/26 for: 4.41 &middot; 4.91 &middot; against not published for either</dd></div>
+      <div class="od"><dt>Referee</dt><dd>Thomas Parsons &middot; 3.65 yellows pg, about 6.2 fouls per card (FotMob, 34) &middot; provisional</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p><em>Reduced-depth card. Not pursued at this tier: transfer fees and a full summer ledger for either club (named moves below are FotMob&rsquo;s list only; Peterborough&rsquo;s summer was carded in fx_17_f31); xG, shot and first-half series beyond FotMob&rsquo;s season totals; home/away splits; any official EFL referee appointment list or second referee record. League One is not covered by Understat, so no first-half goal series exists for either club.</em></p>
+    <p>Neither club is promoted; both are in League One. <strong>Peterborough finished 2025&ndash;26 with 15 wins, 8 draws and 23 defeats, 64 scored and 68 conceded, 53 points</strong>, after Darren Ferguson left on 25 October 2025 with the club 24th and Luke Williams took over on 29 October. <strong>Barnsley finished with 15 wins, 14 draws, 17 defeats, 68 scored, 73 conceded, 59 points</strong>; Conor Hourihane left by mutual consent on 2 May 2026 and <strong>Daniel Stendel was appointed on 12 May 2026</strong>. The structural headline is a split inside each club&rsquo;s season: Peterborough have scored six goals in two cup ties &mdash; 1&ndash;0 at Bristol Rovers and 5&ndash;1 at Championship Watford &mdash; and four in six league matches, while Barnsley under Stendel take 8.83 corners per league match and have conceded eight in their last two league games.</p>
+    <ul>
+      <li><strong>Peterborough &mdash; manager unchanged since October 2025; summer moves named, fees not pursued.</strong> In: Thomas O&rsquo;Connor (centre-back, free from Wrexham), Harrison Jones (attacking midfield, Sunderland), Josh Feeney (centre-back, on loan from Aston Villa, 1 September), Harry Ashfield (midfield, Wrexham, 2 September), Vernon Masara (striker, Burnley, 3 September). Out: goalkeeper Nicholas Bilokapic to Derby (free, 4 September). Feeney and Ashfield both start tonight.</li>
+      <li><strong>Barnsley &mdash; manager changed in May; loan-heavy rebuild at the back.</strong> In: Cieran Slicker (goalkeeper, loan from Ipswich), Tyrese Noslin (right wing-back, Telstar), Makenzie Kirk (striker, loan from Portsmouth), Connor O&rsquo;Riordan (centre-back, loan from Blackburn), Ziyad Larkeche (left-back, loan from QPR). Out: centre-back Ma&euml;l de Gevigney to Silkeborg. Slicker does not start; Kieren Flavell is in goal.</li>
+      <li><strong>Suspensions / absences.</strong> Peterborough: <strong>Matthew Garbett</strong> out; a preview also lists Adebisi, Hughes and Frith as absent. Barnsley: none listed. <strong>Published team sheets:</strong> Peterborough (4&ndash;2&ndash;3&ndash;1) Bass; Mendon&ccedil;a, Feeney, Okagbue, Mills; Ashfield, Khela; Edwards, Ormerod, E. Williams; Leonard. Barnsley (4&ndash;2&ndash;3&ndash;1) Flavell; Noslin, O&rsquo;Riordan, Gale, Kay; McGeehan, Connell; Richards, Kelly, Cleary; Tour&eacute;.</li>
+      <li><strong>Sample.</strong> <strong>Peterborough: League One 1W&ndash;2D&ndash;3L, 4 scored, 10 conceded, five points</strong> &mdash; 0&ndash;2 at Bradford, 2&ndash;1 v Mansfield, 0&ndash;4 at Blackpool, 0&ndash;0 v Stevenage, 1&ndash;2 v Sheffield Wednesday, 1&ndash;1 at MK Dons on 12 September; EFL Cup 1&ndash;0 at Bristol Rovers and 5&ndash;1 at Watford. <strong>Barnsley: League One 2W&ndash;1D&ndash;3L, 6 scored, 11 conceded, seven points</strong> &mdash; 0&ndash;1 v Bromley, 0&ndash;0 at Doncaster, 3&ndash;1 at Leyton Orient, 2&ndash;1 v Blackpool, 1&ndash;5 v Stevenage, 0&ndash;3 at Plymouth on 12 September; EFL Cup 1&ndash;1 v Wigan (won on penalties) and 3&ndash;2 v Crewe. Last four meetings all went Barnsley&rsquo;s way or level: 2&ndash;1 (February 2026), 1&ndash;0 in the FA Cup and 1&ndash;0 in the league at London Road (2025), 1&ndash;1 (April 2025). Both play again on Saturday &mdash; Peterborough v Doncaster, Barnsley v Leicester &mdash; and in the EFL Trophy next Tuesday.</li>
+      <li><strong>Referee.</strong> <strong>Thomas Parsons</strong> is listed by FotMob on the match page carrying the published team sheets; the EFL&rsquo;s own appointment list was not reached, so the appointment is treated as <strong>provisional</strong>. FotMob&rsquo;s 34-match record, window unstated: 3.65 yellows per match against a League One average of 3.83, 2 reds, 11 penalties (0.32 per match), 23.06 fouls per match against 23.11 &mdash; about 6.2 fouls per card. <strong>Gap:</strong> no season split and no history with either club.</li>
+    </ul>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous &mdash; competition splits and a penalties format</span></div><div class="mkt-why">Peterborough&rsquo;s cup and league records describe different attacks (six goals in two cup ties, four in six league matches), Barnsley&rsquo;s season is under a coach appointed in May, and the league gap between the clubs &mdash; six points last season, two now, both in Barnsley&rsquo;s favour &mdash; is small. A level score at 90 minutes goes straight to penalties &mdash; 20 of 92 ties counted last season, and one of Barnsley&rsquo;s two ties this season.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Asian handicap / DNB<span class="verdict tag t-mid">OK &mdash; chance data says the sides are level</span></div><div class="mkt-why">FotMob&rsquo;s xG differences are close to zero for both clubs this season (&minus;0.17 and 0.00 per match) and were negative for both last season, so the published chance data describes two evenly matched League One sides. What the results add &mdash; both conceding more than their xG against &mdash; is six matches long.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U goals)<span class="verdict tag t-mid">OK &mdash; Barnsley&rsquo;s rate is stable across two seasons</span></div><div class="mkt-why">Barnsley&rsquo;s matches went over 2.5 in 63% of league matches last season and 67% this season, above an EFL Cup baseline of 51%; Peterborough&rsquo;s sit at 57% and 50%, close to it. League One as a whole is running at 60.6% this season. The rates are consistent; the cup-league split in Peterborough&rsquo;s scoring is the variable.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; both clubs sit at or near the baseline</span></div><div class="mkt-why">Both clubs are at 50% this season against an EFL Cup baseline of 54%; last season Peterborough were at 59% and Barnsley at 67% with a 9% clean-sheet rate. Both have failed to score in half their league matches, which is the input that moved.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Team goals<span class="verdict tag t-high">Dangerous &mdash; both attacks score below their chances, one far above in the cup</span></div><div class="mkt-why">Peterborough have 0.67 league goals from 1.35 xG per match and 3.00 per match in the cup; Barnsley 1.00 from 1.48. Neither figure agrees with its own chance data, and Peterborough&rsquo;s agrees with neither competition.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Halves (1H result, 1H goals)<span class="verdict tag t-high">Dangerous &mdash; no half-time series exists</span></div><div class="mkt-why">League One is not covered by Understat and no first-half goals figure was found for either club or for the competition.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-mid">OK &mdash; low-contact clubs, an average official, appointment unconfirmed</span></div><div class="mkt-why">Peterborough are an unusually low-foul side in both seasons (9.6 and 9.2 per match, against League One&rsquo;s 11.5 and 12.2 per team) and Barnsley close to average (11.3, 12.7). The listed official sits almost exactly on the League One average for yellows and fouls. The appointment is a FotMob listing and no competition card baseline can be derived.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Corners<span class="verdict tag t-mid">OK &mdash; Barnsley&rsquo;s series moved sharply with the coach</span></div><div class="mkt-why">Barnsley&rsquo;s corners-for rate jumped from 4.91 to 8.83 per match under Stendel, with 29 corners in their two cup ties, against League One&rsquo;s 5.30 per team; Peterborough&rsquo;s is 5.00 this season and 4.41 last. Both sides hold close to 60% of the ball. Corners against are unpublished for both.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li><strong>Barnsley&rsquo;s numbers are Stendel&rsquo;s; last season&rsquo;s were Hourihane&rsquo;s.</strong> The corner count and possession have both changed with the coach, and the defence is built around loan signings.</li>
+      <li><strong>Peterborough&rsquo;s attack depends on the competition.</strong> Six goals in two away cup ties, one of them at a Championship side, against four in six league matches.</li>
+      <li><strong>Congestion.</strong> Both clubs play on Saturday and again in the EFL Trophy on Tuesday; the published team sheets start deadline-day signings for Peterborough (Feeney, Ashfield) and leave Barnsley&rsquo;s loan goalkeeper on the bench.</li>
+      <li><strong>Most sensitive:</strong> team goals and 1X2, where both clubs&rsquo; results disagree with their chance data. <strong>Least sensitive:</strong> Barnsley&rsquo;s over-2.5 rate, 63% and 67% across two seasons and two coaches.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f5">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL Cup &middot; Third round</p>
+    <h2 class="fx-title">West Ham United &ndash; Fulham</h2>
+    <p class="fx-sub">20:45 CEST (19:45 BST) &middot; London Stadium, London &middot; A relegated West Ham top of the Championship after selling more than &euro;215m of players host a Fulham side winless in four Premier League matches under a coach appointed in July &mdash; level at 90 goes to penalties</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>Played this season</dt><dd>West Ham 9 (7 Championship, 2 EFL Cup) &middot; Fulham 5 (4 Premier League, 1 EFL Cup)</dd></div>
+      <div class="od"><dt>Goals for / against pg</dt><dd>West Ham 26/27 Champ (7): 2.86/1.29 &middot; Fulham 25/26 PL: 1.24/1.34 &middot; Lg 2.73 total (EFL Cup 25/26) &middot; West Ham 25/26 PL: 1.21/1.71 &middot; Fulham 26/27 (4): 1.00/1.75</dd></div>
+      <div class="od"><dt>xG for / against pg</dt><dd>26/27: 2.30/1.06 (7) &middot; 1.52/1.88 (4) &middot; 25/26 PL: 1.21/1.57 &middot; 1.27/1.41 (FotMob) &middot; Lg not published</dd></div>
+      <div class="od"><dt>Over 2.5</dt><dd>26/27: 86% (7) &middot; 50% (4) &middot; Lg 51% &middot; 25/26 PL: 61% &middot; 50%</dd></div>
+      <div class="od"><dt>BTTS</dt><dd>26/27: 71% (7) &middot; 50% (4) &middot; Lg 54% &middot; 25/26 PL: 53% &middot; 53%</dd></div>
+      <div class="od"><dt>Clean sheet / failed to score</dt><dd>26/27: 29%/0% (7) &middot; 25%/50% (4) &middot; Lg not published &middot; 25/26 PL: 18%/34% &middot; 24%/29%</dd></div>
+      <div class="od"><dt>First-half goals pg</dt><dd>25/26 PL for/against: 0.50/0.68 &middot; 0.39/0.50 &middot; 26/27: not published (Championship) &middot; 0.75/0.75 (4) (Understat) &middot; Lg not published</dd></div>
+      <div class="od"><dt>Cards / fouls pg</dt><dd>26/27: 1.86/8.9 (7) &middot; 1.25/10.3 (4) &middot; Lg cards not derivable, 10.9 fouls per team (EFL Cup 25/26) &middot; 25/26 PL: 1.87/11.1 &middot; 2.00/10.9</dd></div>
+      <div class="od"><dt>Corners for / against pg</dt><dd>26/27 for: 6.00 (7) &middot; 6.25 (4) &middot; Lg 4.9 per team &middot; 25/26 PL for: 4.92 &middot; 4.92 &middot; against not published for either</dd></div>
+      <div class="od"><dt>Referee</dt><dd>Gavin Ward &middot; 2.91 yellows pg, 3 reds in 22 (25/26, Championship + EFL Cup) &middot; confirmed</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p><strong>West Ham were relegated from the Premier League in 2025&ndash;26</strong> &mdash; 18th, 10 wins, 9 draws, 19 defeats, 46 scored, 65 conceded, 39 points &mdash; under Nuno Esp&iacute;rito Santo, appointed on 27 September 2025 when Graham Potter left with the club 19th. They are now <strong>top of the Championship after seven matches</strong>, a division newly theirs. <strong>Fulham finished 11th in the Premier League</strong> &mdash; 15 wins, 7 draws, 16 defeats, 47 scored, 51 conceded, 52 points. The structural headline is two clubs whose squads and dugouts were remade over the summer in opposite financial directions: West Ham sold three first-team starters for a combined &euro;205m and a fourth for &euro;10m, while Fulham, under a coach appointed on 7 July, spent over &euro;100m and have not won a league match.</p>
+    <ul>
+      <li><strong>West Ham &mdash; turnover very high, concentrated in midfield and on the flanks; manager unchanged.</strong> <em>Midfield:</em> Mateus Fernandes sold to Tottenham, <strong>&euro;100m</strong>; Freddie Potts to Club Brugge, <strong>&euro;10m</strong>; James Ward-Prowse to Southampton, &euro;1m; Arne Engels in from Celtic, <strong>&euro;25.75m</strong>; Divine Mukasa on loan from Manchester City. <em>Wide / attack:</em> Crysencio Summerville sold to Al Hilal, <strong>&euro;65m</strong>; Callum Wilson free to Brentford; Niclas F&uuml;llkrug loaned to Werder Bremen; Adama Traor&eacute; released; Edvin Austb&oslash; from Viking, <strong>&euro;12.9m</strong>; Manor Solomon from Tottenham, &euro;5.85m; Jo&euml;l Piroe on loan from Leeds. <em>Defence:</em> Malick Diouf sold to Brentford, <strong>&euro;40m</strong>; Aaron Wan-Bissaka loaned to Aston Villa; Jean-Clair Todibo loaned to Lens; Morato on loan from Nottingham Forest; Adama Boiro on loan from Athletic; Jo&euml;l Veltman re-signed free. <em>Goalkeeper:</em> &#321;ukasz Fabia&nacute;ski released and Kriszti&aacute;n Hegyi left for Sparta Prague. All fees FotMob&rsquo;s, single-sourced.</li>
+      <li><strong>Fulham &mdash; turnover high, heavy spending; manager changed.</strong> Marco Silva left at the end of his contract on 2 June 2026; <strong>&Aacute;lvaro Arbeloa appointed 7 July 2026</strong>. <em>Centre-forward:</em> Gonzalo Garc&iacute;a from Real Madrid, <strong>&euro;40m</strong>; Jonah Kusi-Asare from Bayern, &euro;6m; Ra&uacute;l Jim&eacute;nez free to Wolves. <em>Defensive midfield:</em> Shea Charles from Southampton, <strong>&euro;35m</strong>; Hugo Larsson on loan from Eintracht Frankfurt; Sa&scaron;a Luki&cacute; sold to Ipswich, &euro;10.5m. <em>Centre-back:</em> David Affengruber from Elche, <strong>&euro;12m</strong>; Issa Diop sold to Ipswich, <strong>&euro;10m</strong>. <em>Wide:</em> C&eacute;sar Palacios from Real Madrid, &euro;10m; Manuel &Aacute;ngel from Real Madrid, &euro;4.6m; Harry Wilson released. <em>Goalkeeper:</em> Steven Benda released. Fees FotMob&rsquo;s, single-sourced.</li>
+      <li><strong>Suspensions / absences.</strong> West Ham: <strong>Jo&euml;l Veltman</strong> (muscle, late September) and <strong>Tom&aacute;&scaron; Sou&ccaron;ek</strong> (has not played this season). Fulham: <strong>Tom Cairney</strong> (knee, mid-October). <strong>Published team sheets:</strong> West Ham (4&ndash;4&ndash;2) Herrick; Walker-Peters, Mavropanos, Kilman, Morato; Engels, Orford, Kant&eacute;, Mukasa; Pablo, Ajala. Fulham (4&ndash;2&ndash;3&ndash;1) Lecomte; Castagne, Andersen, Cuenca, Robinson; Reed, Larsson; Kevin, Smith Rowe, Palacios; Muniz. Whether either is a first-choice eleven is not published.</li>
+      <li><strong>Sample.</strong> <strong>West Ham: nine competitive matches</strong> &mdash; EFL Cup 3&ndash;1 v Portsmouth and 4&ndash;1 at Southampton; Championship 2&ndash;2 at Burnley, 1&ndash;2 v Charlton, 1&ndash;1 at Watford, then four straight wins: 4&ndash;2 v Wolves, 3&ndash;0 v Derby, 3&ndash;2 at Bolton, 6&ndash;0 v Wrexham on Friday 11 September. 20 scored and 9 conceded in seven league matches, 14 points, top. <strong>Fulham: five</strong> &mdash; Premier League 2&ndash;3 v Chelsea, 0&ndash;1 at Sunderland, 2&ndash;3 v Crystal Palace, 0&ndash;0 at Liverpool on 12 September (18th, one point); EFL Cup second round 3&ndash;0 v Wimbledon. Last four meetings, all Premier League: Fulham 0&ndash;1 West Ham (March 2026), West Ham 0&ndash;1 Fulham (December 2025), 3&ndash;2 (January 2025), 1&ndash;1 (September 2024). West Ham are at Millwall on Saturday; Fulham host Manchester United on Sunday.</li>
+      <li><strong>Referee.</strong> <strong>Gavin Ward</strong>, <strong>confirmed</strong> by West Ham&rsquo;s match-officials announcement. 2025&ndash;26 across the Championship and EFL Cup: <strong>22 matches, 64 yellow and 3 red cards (3.05 per match), 2 penalties (0.09 per match)</strong> (search snippet of KickoffScore/PlayerStats data). FotMob&rsquo;s 50-match record, window unstated: 3.44 yellows per match against a Championship average of 3.81, 6 reds, 8 penalties (0.16 per match), 21.04 fouls per match against 22.04 &mdash; about 5.9 fouls per card. Both records place him below his division&rsquo;s booking average. <strong>Gap:</strong> no history with either club.</li>
+      <li><strong>Not sourced.</strong> Corners against for both clubs; West Ham&rsquo;s first-half series and shot volume this season (the Championship is outside Understat); a second source for every transfer fee on the card; an EFL Cup card baseline; whether the published elevens are rotated.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>West Ham under Nuno in the Premier League were a low-possession side &mdash; 42.5%, 10.7 shots for and 14.9 against per match on Understat, most minutes in a 4&ndash;2&ndash;3&ndash;1 or 4&ndash;4&ndash;1&ndash;1 &mdash; with a specific set-piece weakness: 15 league goals conceded from corner situations. In the Championship the same coach has a different profile: 55.9% possession, 2.30 xG and 5.9 shots on target per match, only 8.9 fouls per match, and 6.00 corners, against a division averaging 5.20 per team. The squad producing it has lost the Premier League side&rsquo;s most valuable midfielder and winger and its left-back; Engels, Austb&oslash; and the loan players are the replacements, and evidence for them against Premier League opposition is a CV.</p>
+    <p>Fulham under Silva were a 4&ndash;2&ndash;3&ndash;1 side in almost every minute of 2025&ndash;26 (3,330 Understat minutes) with 51.7% possession and 4.92 corners per match. Arbeloa has kept the shape and pushed the ball share to 57.3% and corners to 6.25 per match, with 15.0 shots per match on Understat &mdash; but the four league matches have produced 1.88 xG against per match and seven goals conceded against Chelsea, Sunderland, Crystal Palace and Liverpool. The summer&rsquo;s biggest additions, Gonzalo Garc&iacute;a and Shea Charles, are not in tonight&rsquo;s eleven.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous &mdash; cross-division rates and unpublished selection intent</span></div><div class="mkt-why">West Ham&rsquo;s strong current numbers were made against Championship opposition, Fulham&rsquo;s weak ones against four Premier League sides, three of them in last season&rsquo;s top half, and the last two meetings were both 1&ndash;0 away wins. Fulham&rsquo;s eleven includes neither of their two most expensive signings, and whether either sheet is rotated is not published. A level score after 90 minutes goes to penalties, as 20 of 92 ties did last season.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Asian handicap / DNB<span class="verdict tag t-high">Dangerous &mdash; the margin inputs are in different currencies</span></div><div class="mkt-why">West Ham&rsquo;s +1.24 xG difference per match is a Championship figure; Fulham&rsquo;s &minus;0.36 is a Premier League figure from four matches. Last season, in the same division, both clubs had negative xG differences (&minus;0.36 and &minus;0.14). There is no common baseline to measure a margin against.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U goals)<span class="verdict tag t-mid">OK &mdash; both clubs at or above the baseline in both seasons</span></div><div class="mkt-why">West Ham&rsquo;s league matches went over 2.5 in 86% of seven this season and 61% last season; Fulham&rsquo;s in 50% in both, against an EFL Cup baseline of 51%. Every figure is at or above the baseline, which makes the family readable; West Ham&rsquo;s 86% is inflated by the Championship and a 6&ndash;0.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">BTTS<span class="verdict tag t-mid">OK &mdash; stable around the baseline, one scoring streak</span></div><div class="mkt-why">Both clubs sat at 53% last season and at 71% and 50% now, against a baseline of 54%. West Ham have scored in all seven league matches; Fulham have failed to score in two of four. The rates are consistent across seasons for Fulham and for West Ham in the division where they faced the stronger defences.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Team goals<span class="verdict tag t-high">Dangerous &mdash; the attacking rates belong to different divisions and players</span></div><div class="mkt-why">West Ham&rsquo;s 2.86 goals per match is against Championship defences; last season in the Premier League they scored 1.21. Fulham&rsquo;s 1.52 xG per match came with Garc&iacute;a and Charles available; neither starts. Neither team total has a rate that describes tonight&rsquo;s attack against tonight&rsquo;s opponent.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Halves (1H result, 1H goals)<span class="verdict tag t-high">Dangerous &mdash; no current first-half series for West Ham</span></div><div class="mkt-why">Understat covers Fulham in both seasons (0.39 first-half goals for last season, 0.75 this) and West Ham only for last season in the Premier League (0.50 for, 0.68 against). West Ham&rsquo;s Championship half-time record is unpublished, and the competition has no first-half baseline.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-mid">OK &mdash; a confirmed below-average booker and low-contact clubs</span></div><div class="mkt-why">Ward is confirmed and both published records put him below his division&rsquo;s booking rate (2.91 yellows per match last season; 3.44 against an average of 3.81 on FotMob). West Ham commit 8.9 fouls per match this season and Fulham 10.3, both below the EFL Cup&rsquo;s 10.9 per team. The family is not better than OK because no competition card baseline can be derived and cup selection changes who commits the fouls.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Corners<span class="verdict tag t-mid">OK &mdash; both corners-for series agree</span></div><div class="mkt-why">Both clubs took 4.92 corners per league match last season, and both have risen this season (6.00 and 6.25) as their possession rose, against an EFL Cup baseline of 4.9 per team. Corners against are unpublished for both, and West Ham&rsquo;s current figure is a Championship one.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li><strong>West Ham&rsquo;s current numbers are Championship numbers.</strong> 2.30 xG and 20 goals in seven were made against second-tier defences by a squad that sold &euro;215m of players.</li>
+      <li><strong>Fulham&rsquo;s four matches are all Premier League and three are against top-half sides from last season.</strong> Arbeloa has had those four and one cup tie.</li>
+      <li><strong>Selection.</strong> Fulham&rsquo;s published eleven leaves out Gonzalo Garc&iacute;a and Shea Charles; West Ham&rsquo;s starts Engels but also Herrick in goal; how far either is rotated is not stated anywhere reached.</li>
+      <li><strong>Set pieces.</strong> West Ham conceded 15 league goals from corner situations last season; that weakness has no current measurement in the Championship.</li>
+      <li><strong>Most sensitive:</strong> 1X2, the handicap and team goals, all of which need the two divisions&rsquo; rates to be comparable. <strong>Least sensitive:</strong> the corners-for rates, equal last season and rising together this season.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>Corners are more robust than 1X2 here because both clubs took 4.92 corners per match last season and both rose this season (6.00, 6.25), whereas 1X2 needs a Championship record and a Premier League record to be put on one scale.</li>
+      <li>BTTS is more robust than team goals because both clubs sat at 53% last season in the same division and near the 54% baseline now, while each team total is built on a division or a set of players not on the pitch tonight.</li>
+      <li>Discipline is more robust than halves because Ward is confirmed with two published records below his division&rsquo;s booking average, whereas West Ham have no half-time series this season.</li>
+      <li>Totals are more robust than the handicap because every over-2.5 rate on the card is at or above the 51% baseline, while the handicap&rsquo;s xG inputs come from two divisions.</li>
+      <li><strong>The fact that would most change the family choice:</strong> how far tonight&rsquo;s elevens differ from each club&rsquo;s last league eleven. A published comparison with West Ham&rsquo;s side against Wrexham and Fulham&rsquo;s at Anfield would settle whether any of the current team rates apply.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture" id="f6">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL Cup &middot; Third round</p>
+    <h2 class="fx-title">Ipswich Town &ndash; Arsenal</h2>
+    <p class="fx-sub">21:00 CEST (20:00 BST) &middot; Portman Road, Ipswich &middot; A promoted Ipswich, rebuilt with eleven senior signings under a coach appointed in June, host the champions, who have won all six competitive matches and are expected to rotate &mdash; level at 90 goes to penalties</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>Played this season</dt><dd>Ipswich 5 (4 Premier League, 1 EFL Cup) &middot; Arsenal 6 (4 Premier League, 1 Champions League, 1 Community Shield)</dd></div>
+      <div class="od"><dt>Goals for / against pg</dt><dd>25/26: 1.74/1.02 (Championship) &middot; 1.87/0.71 (PL) &middot; Lg 2.73 total (EFL Cup 25/26) &middot; 26/27 PL (4): 1.75/2.50 &middot; 2.00/0.25</dd></div>
+      <div class="od"><dt>xG for / against pg</dt><dd>25/26: 1.72/1.01 &middot; 1.73/0.74 &middot; 26/27 (4): 1.57/1.68 &middot; 1.70/0.68 (FotMob) &middot; Lg not published</dd></div>
+      <div class="od"><dt>Over 2.5</dt><dd>25/26: 52% &middot; 53% &middot; Lg 51% &middot; 26/27 (4): 75% &middot; 50%</dd></div>
+      <div class="od"><dt>BTTS</dt><dd>25/26: 57% &middot; 47% &middot; Lg 54% &middot; 26/27 (4): 75% &middot; 25%</dd></div>
+      <div class="od"><dt>Clean sheet / failed to score</dt><dd>25/26: 37%/13% &middot; 50%/8% &middot; Lg not published &middot; 26/27 (4): 0%/25% &middot; 75%/0%</dd></div>
+      <div class="od"><dt>First-half goals pg</dt><dd>25/26 for/against: not published (Championship) &middot; 0.82/0.24 &middot; 26/27 (4): 1.00/1.25 &middot; 0.75/0.25 (Understat) &middot; Lg not published</dd></div>
+      <div class="od"><dt>Cards / fouls pg</dt><dd>25/26: 2.04/11.2 &middot; 1.34/10.3 &middot; Lg cards not derivable, 10.9 fouls per team (EFL Cup 25/26) &middot; 26/27 (4): 1.75/11.5 &middot; 1.50/10.0</dd></div>
+      <div class="od"><dt>Corners for / against pg</dt><dd>25/26 for: 5.70 &middot; 5.68 &middot; Lg 4.9 per team &middot; 26/27 (4) for: 3.50 &middot; 4.75 &middot; against not published for either</dd></div>
+      <div class="od"><dt>Referee</dt><dd>Peter Bankes &middot; 3.96 yellows pg, about 5.3 fouls per card (FotMob, 47) &middot; confirmed</dd></div>
+    </dl>
+
+    <h3 class="blk">A &middot; Squad, promotion &amp; transfer context</h3>
+    <p><strong>Ipswich are promoted.</strong> They finished <strong>2nd in the 2025&ndash;26 Championship &mdash; 23 wins, 15 draws, 8 defeats, 80 scored, 47 conceded, 84 points</strong> &mdash; and are back in the Premier League one season after being relegated from it in 2024&ndash;25. <strong>Arsenal are the reigning champions: 1st in 2025&ndash;26, 26 wins, 7 draws, 5 defeats, 71 scored, 27 conceded, 85 points.</strong> The structural headline is on both sides of the ball: Ipswich have changed coach and bought a new spine &mdash; Kieran McKenna resigned on 10 June 2026 and Gary O&rsquo;Neil was appointed on 23 June &mdash; while Arsenal arrive with six wins from six, a Champions League match six days earlier and a league match four days later, with a preview expecting their first-choice goalkeeper to be rested.</p>
+    <ul>
+      <li><strong>Ipswich &mdash; turnover very high across the whole spine; manager changed.</strong> <em>Goalkeeper:</em> Arijanet Muri&cacute; sold to Sassuolo, <strong>&euro;7m</strong>; Kjell Scherpen from Union Saint-Gilloise, <strong>&euro;10m</strong>. <em>Centre-back:</em> Issa Diop from Fulham, <strong>&euro;10m</strong>; Elkan Baggott to Millwall. <em>Defensive midfield:</em> Exequiel Palacios from Leverkusen, <strong>&euro;22.5m</strong>; Florentino from Burnley, <strong>&euro;18.7m</strong>; Sa&scaron;a Luki&cacute; from Fulham, <strong>&euro;10.5m</strong>; Cameron Humphreys loaned to Huddersfield. <em>Centre-forward:</em> Emersonn from Toulouse, <strong>&euro;28m</strong>; Zian Flemming from Burnley, <strong>&euro;19.8m</strong>; Daizen Maeda from Celtic, <strong>&euro;11.7m</strong>; George Hirst sold to Stoke, &euro;7m; Ali Al Hamadi loaned to Sheffield Wednesday. <em>Wide and full-back:</em> Abdul Fatawu from Leicester, <strong>&euro;23.5m</strong>; Abdoul Ouattara from Strasbourg, <strong>&euro;20m</strong>; Julio Enciso from Strasbourg (fee not published); Harry Clarke to Preston, &euro;4.1m; Wes Burns to Leicester; Sammie Szmodics and Chiedozie Ogbene loaned out. Fees FotMob&rsquo;s, single-sourced; declared outlay above &euro;174m.</li>
+      <li><strong>Arsenal &mdash; turnover medium in number, high in value; manager unchanged.</strong> Mikel Arteta continues. <em>Midfield:</em> Bruno Guimar&atilde;es from Newcastle, <strong>&euro;87.5m</strong>; Christian N&oslash;rgaard to Everton, &euro;8m; F&aacute;bio Vieira to Hamburg, &euro;9m; Ethan Nwaneri loaned to Dortmund. <em>Centre-back:</em> Ezri Konsa from Aston Villa, <strong>&euro;60m</strong>. <em>Left-back:</em> Piero Hincapi&eacute; from Leverkusen, <strong>&euro;40m</strong>. <em>Wide / attack:</em> Christos Tzolis from Club Brugge, <strong>&euro;40m</strong>; Gabriel Martinelli sold to Al Hilal, <strong>&euro;70m</strong>; Leandro Trossard to Be&scedil;ikta&scedil;, &euro;20m; Gabriel Jesus to Barcelona, &euro;10m; Reiss Nelson released. <em>Goalkeeper:</em> Illan Meslier signed free; Tommy Setford loaned to Stevenage. Fees FotMob&rsquo;s, single-sourced.</li>
+      <li><strong>Suspensions / absences.</strong> Ipswich: <strong>Emersonn</strong> (quad) and <strong>Azor Matusiwa</strong> (thigh) doubtful, <strong>Jack Taylor</strong> (knee) out until late September. Arsenal: <strong>William Saliba</strong> out until mid-October, <strong>Ben White</strong> until late September, <strong>Cristhian Mosquera</strong> doubtful. One preview expects Kepa to replace David Raya in goal and Flemming to lead Ipswich&rsquo;s line. No team sheet was published when this card was built.</li>
+      <li><strong>Sample.</strong> <strong>Ipswich: five competitive matches</strong> &mdash; Premier League 2&ndash;1 v Sunderland, 2&ndash;5 at Manchester United, 0&ndash;2 v Liverpool, 3&ndash;2 at Crystal Palace on 12 September; EFL Cup second round 3&ndash;1 v Leicester. Understat has them facing 16.5 shots per league match. <strong>Arsenal: six wins from six</strong> &mdash; Community Shield 3&ndash;0 v Manchester City; Premier League 3&ndash;0 v Coventry, 1&ndash;0 at Aston Villa, 2&ndash;1 v Chelsea, 2&ndash;0 at Sunderland on 12 September; Champions League 1&ndash;0 at Napoli on 9 September. One league goal conceded. The clubs&rsquo; last two meetings, in 2024&ndash;25, were Arsenal wins by 1&ndash;0 and 4&ndash;0, the second at Portman Road. Ipswich are at Everton on Saturday; Arsenal at Brighton.</li>
+      <li><strong>Referee.</strong> <strong>Peter Bankes</strong>, <strong>confirmed</strong> &mdash; named in match previews and listed by FotMob. FotMob&rsquo;s 47-match record, window unstated: 3.96 yellows per match against a Premier League average of 3.97, 4 reds, 12 penalties (0.26 per match), 21.34 fouls per match against 21.85 &mdash; about 5.3 fouls per card. His career record across 302 matches: 1,191 yellows (3.94 per match), 30 straight reds and 17 second yellows, 69 penalties (StatsHub snippet), with 115 Premier League matches. <strong>Gap:</strong> no 2025&ndash;26 season line and no history with either club.</li>
+      <li><strong>Not sourced.</strong> Corners against for both clubs; Ipswich&rsquo;s first-half series for 2025&ndash;26 (the Championship is outside Understat); a second source for every transfer fee; an EFL Cup card baseline; either published eleven.</li>
+    </ul>
+
+    <h3 class="blk">B &middot; Style &amp; early-season reality</h3>
+    <p>Ipswich won promotion as a possession side &mdash; 56.1% of the ball, 5.70 corners and 5.1 shots on target per match, 37% clean sheets in the Championship. The first four Premier League matches under O&rsquo;Neil show the step up in every territorial number: <strong>44% possession, 3.50 corners, 16.5 shots faced per match</strong>, with a 4&ndash;2&ndash;3&ndash;1 used in almost every minute. The side playing that shape is new at goalkeeper, centre-back, both central midfield slots and centre-forward, which means last season&rsquo;s numbers describe a different team as well as a different division, and the evidence for the new spine is four matches, two of them against Manchester United and Liverpool.</p>
+    <p>Arsenal under Arteta are the most stable profile on the slate: a 4&ndash;3&ndash;3 and 4&ndash;2&ndash;3&ndash;1 side with 56&ndash;59% possession, 0.74 and 0.68 xG against per match in the two seasons, first-half goals conceded at 0.24 and 0.25 per match, low card rates (1.34 and 1.50) and 23 set-piece goals last season. The summer replaced Martinelli, Trossard and Jesus with Tzolis and added Guimar&atilde;es and Konsa. The catch is that all of that describes the first-choice side; a cup tie between a Champions League match and a league match is exactly where the published rates stop applying, and Saliba and White are out regardless.</p>
+
+    <h3 class="blk">C &middot; Market-type suitability</h3>
+    <div class="mkt">
+      <div class="mkt-row bad"><div class="mkt-name">1X2 / Moneyline<span class="verdict tag t-high">Dangerous &mdash; the favoured side&rsquo;s rates belong to an eleven that may not play</span></div><div class="mkt-why">The published gap is large &mdash; champions against a promoted side, 0.68 against 1.68 xG conceded per match &mdash; but it was built by Arsenal&rsquo;s first-choice players, and a preview already expects rotation starting in goal. Ipswich&rsquo;s own numbers are four Premier League matches old with a new coach and spine. A level score after 90 minutes goes to penalties.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">Asian handicap / DNB<span class="verdict tag t-high">Dangerous &mdash; margins depend on selection</span></div><div class="mkt-why">Arsenal&rsquo;s +1.02 xG difference per match and Ipswich&rsquo;s &minus;0.11 are both league figures from first-choice elevens. The two meetings in 2024&ndash;25 ended 1&ndash;0 and 4&ndash;0, which is no help in reading a margin between rotated sides.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Totals (O/U goals)<span class="verdict tag t-mid">OK &mdash; last season both sat on the baseline, this season they split</span></div><div class="mkt-why">Both clubs&rsquo; league matches went over 2.5 in 52&ndash;53% last season, close to the EFL Cup&rsquo;s 51%. This season Ipswich&rsquo;s have gone over in three of four (16.5 shots faced per match) and Arsenal&rsquo;s in two of four with one goal conceded. The family is readable because the long-run rates agree; the short-run ones pull apart.</div></div>
+      <div class="mkt-row bad"><div class="mkt-name">BTTS<span class="verdict tag t-high">Dangerous &mdash; the two clubs&rsquo; rates point opposite ways</span></div><div class="mkt-why">Ipswich&rsquo;s matches have had both teams score in three of four; Arsenal&rsquo;s in one of four, with a 75% clean-sheet rate. Arsenal&rsquo;s defensive record belongs to a back line now missing Saliba and White and possibly its goalkeeper, so the stronger of the two rates is the one least likely to describe tonight.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Team goals<span class="verdict tag t-mid">OK &mdash; asymmetric: Ipswich&rsquo;s attack has agreeing numbers, Arsenal&rsquo;s depends on selection</span></div><div class="mkt-why">Ipswich have scored 1.75 per match from 1.57 xG, close together, though Emersonn is doubtful. Arsenal&rsquo;s 2.00 goals from 1.70 xG is consistent with last season&rsquo;s 1.87 from 1.73, but both describe the first-choice forward line.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Halves (1H result, 1H goals)<span class="verdict tag t-mid">OK &mdash; Arsenal&rsquo;s first-half series is stable, Ipswich&rsquo;s is four matches</span></div><div class="mkt-why">Arsenal conceded 0.24 first-half goals per match last season and 0.25 this season, and scored 0.82 and 0.75. Ipswich have only the four Premier League matches (1.00 for, 1.25 against before half-time); their Championship half-time record is unpublished. No competition first-half baseline exists.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Discipline (cards, fouls)<span class="verdict tag t-mid">OK &mdash; an average official and two low-card clubs</span></div><div class="mkt-why">Bankes is confirmed and sits almost exactly on the Premier League average in two separate records (3.96 yellows per match on FotMob, 3.94 across his career), with about 5.3 fouls per card. Arsenal&rsquo;s card rate is low in both seasons (1.34 and 1.50), Ipswich&rsquo;s at 2.04 in the Championship and 1.75 now. No EFL Cup card baseline can be derived, and rotation changes who commits the fouls.</div></div>
+      <div class="mkt-row ok"><div class="mkt-name">Corners<span class="verdict tag t-mid">OK &mdash; both series published, Ipswich&rsquo;s fell with the step up</span></div><div class="mkt-why">Both clubs took about 5.7 corners per match last season; Ipswich&rsquo;s fell to 3.50 in the Premier League as their possession dropped from 56% to 44%, and Arsenal&rsquo;s is 4.75. Corners against are unpublished for both, which is the half a match-total reading needs least but a split reading needs most.</div></div>
+    </div>
+
+    <h3 class="blk">D &middot; Early-season risk notes</h3>
+    <ul>
+      <li><strong>Ipswich&rsquo;s 2025&ndash;26 rates are Championship rates from a different spine.</strong> 80 goals and 56% possession came against second-tier sides with a goalkeeper, centre-forward and central midfield since replaced.</li>
+      <li><strong>Arsenal&rsquo;s rates describe the first-choice side.</strong> Six straight wins, one league goal conceded &mdash; and a cup tie wedged between Napoli away and Brighton away, with a preview expecting rotation.</li>
+      <li><strong>Defensive absences.</strong> Saliba and White are both out, so even Arsenal&rsquo;s first-choice defensive numbers are partly made by players unavailable tonight.</li>
+      <li><strong>Ipswich&rsquo;s four-match sample includes Manchester United away and Liverpool at home</strong>, which account for seven of the ten goals conceded.</li>
+      <li><strong>Most sensitive:</strong> 1X2, the handicap and BTTS &mdash; all depend on Arsenal&rsquo;s selection. <strong>Least sensitive:</strong> Arsenal&rsquo;s card rate, low in both seasons and across personnel changes.</li>
+    </ul>
+
+    <h3 class="blk">E &middot; Short market-type guide</h3>
+    <ul>
+      <li>Discipline is more robust than 1X2 here because Bankes sits on the league average in two independent records and Arsenal&rsquo;s card rate was low in both seasons, while 1X2 depends on an Arsenal eleven not published when this card was built.</li>
+      <li>Totals are more robust than BTTS because both clubs&rsquo; long-run over-2.5 rates (52% and 53%) sit on the 51% baseline, whereas BTTS depends on Arsenal&rsquo;s 75% clean-sheet rate, made by a back line missing Saliba and White.</li>
+      <li>Halves are more robust on Arsenal&rsquo;s side than Ipswich&rsquo;s because Arsenal&rsquo;s first-half concession rate held at 0.24 and 0.25 across two seasons, while Ipswich have four matches of half-time data.</li>
+      <li>Ipswich&rsquo;s team goals are more robust than Arsenal&rsquo;s because Ipswich&rsquo;s 1.75 goals and 1.57 xG per match agree, whereas Arsenal&rsquo;s attacking rates describe a forward line a preview expects to change.</li>
+      <li><strong>The fact that would most change the family choice:</strong> Arsenal&rsquo;s team sheet. How many of the six-match first eleven start &mdash; beginning with the goalkeeper &mdash; decides whether any Arsenal rate on this card applies; the official line-up, published an hour before kickoff, settles it.</li>
+    </ul>
+  </div>
+</article>
+
+<article class="fixture pending" id="f7">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL Cup &middot; Third round</p>
+    <h2 class="fx-title">Liverpool &ndash; Tottenham</h2>
+    <p class="fx-sub">21:00 CEST &middot; Anfield, Liverpool</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>Kickoff</dt><dd>21:00 CEST</dd></div>
+      <div class="od"><dt>Venue</dt><dd>Anfield, Liverpool</dd></div>
+      <div class="od"><dt>Matchday</dt><dd>Third round</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f8">
+  <div class="fx-head">
+    <p class="fx-league">England &middot; EFL Cup &middot; Third round</p>
+    <h2 class="fx-title">Reading &ndash; Brentford</h2>
+    <p class="fx-sub">21:00 CEST &middot; venue not yet sourced</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>Kickoff</dt><dd>21:00 CEST</dd></div>
+      <div class="od"><dt>Venue</dt><dd>venue not yet sourced</dd></div>
+      <div class="od"><dt>Matchday</dt><dd>Third round</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f9">
+  <div class="fx-head">
+    <p class="fx-league">Italy &middot; Coppa Italia &middot; Second round (round of 32)</p>
+    <h2 class="fx-title">Fiorentina &ndash; Pisa</h2>
+    <p class="fx-sub">21:00 CEST &middot; Stadio Artemio Franchi, Florence</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>Kickoff</dt><dd>21:00 CEST</dd></div>
+      <div class="od"><dt>Venue</dt><dd>Stadio Artemio Franchi, Florence</dd></div>
+      <div class="od"><dt>Matchday</dt><dd>Second round (round of 32)</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+<article class="fixture pending" id="f10">
+  <div class="fx-head">
+    <p class="fx-league">Spain &middot; LaLiga EA Sports &middot; Jornada 6</p>
+    <h2 class="fx-title">Elche &ndash; Real Madrid</h2>
+    <p class="fx-sub">21:30 CEST &middot; venue not yet sourced</p>
+  </div>
+  <div class="fx-body">
+    <dl class="fx-odds">
+      <div class="od"><dt>Kickoff</dt><dd>21:30 CEST</dd></div>
+      <div class="od"><dt>Venue</dt><dd>venue not yet sourced</dd></div>
+      <div class="od"><dt>Matchday</dt><dd>Jornada 6</dd></div>
+    </dl>
+    <div class="pending-note">Context not yet built.</div>
+  </div>
+</article>
+
+
+<section>
+  <h2 class="sec">Across the card</h2>
+  <ul><li><strong>Best structurally supported so far:</strong> totals, discipline and corners &mdash; rated OK on all six built cards and Dangerous on none; and team goals on f3 (Deportivo Alav&eacute;s &ndash; Valencia), the only Well-suited row, where five measures of Valencia&rsquo;s attack agree.</li><li><strong>Least supported so far:</strong> 1X2, Dangerous on f1 (Genoa &ndash; S&uuml;dtirol), f2 (Rayo Vallecano &ndash; Espanyol), f4 (Peterborough &ndash; Barnsley), f5 (West Ham &ndash; Fulham) and f6 (Ipswich &ndash; Arsenal); halves, Dangerous on f1, f4 and f5 where one or both clubs have no first-half series; and the handicap, Dangerous on f2, f5 and f6.</li><li><strong>No normal fixture yet.</strong> Every built card carries at least one of a cross-division tie, a new or interim coach, a relocated home ground, or unpublished cup selection.</li><li><strong>Where to trust the board least:</strong> the referee rows on f2 and f4, which rest on FotMob listings rather than official appointments; every Arsenal rate on f6, built before a team sheet was published and with rotation expected; West Ham&rsquo;s Championship rates on f5, which have no common scale with Fulham&rsquo;s; and every corners row on the slate, where no corners-against figure is published.</li></ul>
+</section>
+
+<footer>
+  <p><strong>Scope.</strong> This page rates market <em>families</em> only. It contains no selections, no sides, no recommended lines and no confidence labels &mdash; by design. Where evidence is thin it says so rather than filling the gap.</p>
+  <p><strong>Sources.</strong> Per-fixture sources are logged in <span class="mono">sources_0915.md</span> and competition baselines in <span class="mono">baselines_0915.md</span>. For this build: Wikipedia season pages, results grids and match boxes for Serie A, Serie B, LaLiga, the Premier League, the Championship, League One, the Coppa Italia and the EFL Cup; FotMob team, match and league statistics (xG, corners, cards, fouls, possession, fixtures, transfers, team sheets, referee listings); Understat team data for Serie A, LaLiga and Premier League clubs; ESPN&rsquo;s Serie A discipline table; referee statistics from EstadisticasLaLiga, Virgilio, PianetaFanta, StatsHub, KickoffScore and PlayerStats snippets; designations, team news and previews from PianetaGenoa1893, Tuttosport, Fantamaster, GenoaOggi, F&uacute;tbolFantasy, Nortexpres, El Espa&ntilde;ol, Infobae, Virgilio, Sports Mole, Peterborough Today, West Ham United, Yahoo Sports and club-focused Arsenal sites. No prices were requested or read from any source.</p>
+</footer>
+
+</div>

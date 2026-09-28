@@ -1,0 +1,738 @@
+{
+ "slate": "0917",
+ "date": "2026-09-17",
+ "settled_at": "2026-09-24T11:57+00:00",
+ "fixtures": [
+  {
+   "card": {
+    "fid": "f1",
+    "title": "Levski Sofia \u2013 Red Bull Salzburg",
+    "home": "Levski Sofia",
+    "away": "Red Bull Salzburg",
+    "competition": "UEFA Europa League",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 no common scale, and Salzburg\u2019s record is a different team\u2019s",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 margins made in unlike leagues",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 long series, but Levski\u2019s are made in a low-scoring league",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 Salzburg always score, Levski rarely concede at home",
+      "short": "OK"
+     },
+     "team": {
+      "level": "bad",
+      "tag": "Split \u2014 Salzburg OK, Levski dangerous",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 complete first-half series on both sides, domestic-heavy",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 the official\u2019s two seasons disagree",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "good",
+      "tag": "Well-suited \u2014 both directions, both seasons, plus a European series for each",
+      "short": "Well-suited"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401915584",
+    "slug": "uefa.europa",
+    "utc": "2026-09-17T16:45Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "490",
+    "away_id": "2790",
+    "home": "Levski Sofia",
+    "away": "RB Salzburg",
+    "hg": 0,
+    "ag": 1,
+    "h1h": 0,
+    "h1a": 1,
+    "ch": 1,
+    "ca": 5,
+    "kh": 5.0,
+    "ka": 4.0,
+    "fh": 9.0,
+    "fa": 21.0
+   },
+   "match_score": 0.79,
+   "tests": [],
+   "info": {
+    "note": "cup or European tie: results only, no lean audit"
+   }
+  },
+  {
+   "card": {
+    "fid": "f2",
+    "title": "OFI Crete \u2013 Hoffenheim",
+    "home": "OFI Crete",
+    "away": "Hoffenheim",
+    "competition": "UEFA Europa League",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 thin current samples on both sides, different leagues",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 no common scale for a margin",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 long series, split by this season\u2019s small samples",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 Hoffenheim score and concede, OFI\u2019s scoring is the variable",
+      "short": "OK"
+     },
+     "team": {
+      "level": "bad",
+      "tag": "Split \u2014 Hoffenheim OK, OFI dangerous",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 complete series, with a current Hoffenheim pattern on three matches",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 two high-fouling sides, one reconciled record short",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "good",
+      "tag": "Well-suited \u2014 OFI\u2019s concession pattern is stable across coaches and seasons",
+      "short": "Well-suited"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401915585",
+    "slug": "uefa.europa",
+    "utc": "2026-09-17T16:45Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "1010",
+    "away_id": "7911",
+    "home": "OFI CRETE",
+    "away": "TSG Hoffenheim",
+    "hg": 2,
+    "ag": 0,
+    "h1h": 1,
+    "h1a": 0,
+    "ch": 2,
+    "ca": 3,
+    "kh": 4.0,
+    "ka": 8.0,
+    "fh": 8.0,
+    "fa": 23.0
+   },
+   "match_score": 1.0,
+   "tests": [],
+   "info": {
+    "note": "cup or European tie: results only, no lean audit"
+   }
+  },
+  {
+   "card": {
+    "fid": "f3",
+    "title": "Be\u015fikta\u015f \u2013 Marseille",
+    "home": "Be\u015fikta\u015f",
+    "away": "Marseille",
+    "competition": "UEFA Europa League",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 two new coaches and an announced rotation",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 no stable margin series on either side",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 long above-baseline series, short current ones",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 hinges on Marseille\u2019s eleven",
+      "short": "OK"
+     },
+     "team": {
+      "level": "bad",
+      "tag": "Split \u2014 Be\u015fikta\u015f OK, Marseille dangerous",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 asymmetric: Be\u015fikta\u015f stable, Marseille changed with each coach",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "good",
+      "tag": "Well-suited \u2014 a consistently strict official and two published foul series",
+      "short": "Well-suited"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 both directions published, Be\u015fikta\u015f\u2019s rise is five matches old",
+      "short": "OK"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401915591",
+    "slug": "uefa.europa",
+    "utc": "2026-09-17T19:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "1895",
+    "away_id": "176",
+    "home": "Besiktas",
+    "away": "Marseille",
+    "hg": 4,
+    "ag": 1,
+    "h1h": 1,
+    "h1a": 1,
+    "ch": 2,
+    "ca": 1,
+    "kh": 3.0,
+    "ka": 3.0,
+    "fh": 10.0,
+    "fa": 12.0
+   },
+   "match_score": 1.0,
+   "tests": [],
+   "info": {
+    "note": "cup or European tie: results only, no lean audit"
+   }
+  },
+  {
+   "card": {
+    "fid": "f4",
+    "title": "Celtic \u2013 Ferencv\u00e1ros",
+    "home": "Celtic",
+    "away": "Ferencv\u00e1ros",
+    "competition": "UEFA Europa League",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 domestic dominance on both sides, recent heavy defeats for one",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 no common scale for a margin",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 high over-2.5 rates on both sides, in two seasons and in Europe",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 long series, both near the baseline",
+      "short": "OK"
+     },
+     "team": {
+      "level": "ok",
+      "tag": "OK \u2014 long goal series, short European xG series on both sides",
+      "short": "OK"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 complete first-half series on both sides, both seasons",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 an official new to this level, and one side\u2019s fouls unpublished",
+      "short": "Dangerous"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 both directions published, and each club\u2019s European series differs from its domestic one",
+      "short": "OK"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401915581",
+    "slug": "uefa.europa",
+    "utc": "2026-09-17T19:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "256",
+    "away_id": "622",
+    "home": "Celtic",
+    "away": "Ferencvaros",
+    "hg": 1,
+    "ag": 3,
+    "h1h": 1,
+    "h1a": 2,
+    "ch": 0,
+    "ca": 2,
+    "kh": 11.0,
+    "ka": 3.0,
+    "fh": 18.0,
+    "fa": 14.0
+   },
+   "match_score": 1.0,
+   "tests": [],
+   "info": {
+    "note": "cup or European tie: results only, no lean audit"
+   }
+  },
+  {
+   "card": {
+    "fid": "f5",
+    "title": "Crystal Palace \u2013 Lech Pozna\u0144",
+    "home": "Crystal Palace",
+    "away": "Lech Pozna\u0144",
+    "competition": "UEFA Europa League",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 a new coach and a sold defence on one side, uneven European evidence on the other",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 no stable margin on either side",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 Lech\u2019s high series is long, Palace\u2019s has risen with the new defence",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 Lech score reliably, Palace\u2019s scoring is the variable",
+      "short": "OK"
+     },
+     "team": {
+      "level": "bad",
+      "tag": "Split \u2014 Lech OK, Palace dangerous",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 complete series, Palace\u2019s first halves changed under Sage",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "good",
+      "tag": "Well-suited \u2014 a strict official with two published seasons, two low-card sides",
+      "short": "Well-suited"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 both directions published, Palace\u2019s count collapsed under Sage",
+      "short": "OK"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401915569",
+    "slug": "uefa.europa",
+    "utc": "2026-09-17T19:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "384",
+    "away_id": "2990",
+    "home": "Crystal Palace",
+    "away": "Lech Poznan",
+    "hg": 4,
+    "ag": 0,
+    "h1h": 3,
+    "h1a": 0,
+    "ch": 0,
+    "ca": 1,
+    "kh": 6.0,
+    "ka": 5.0,
+    "fh": 11.0,
+    "fa": 7.0
+   },
+   "match_score": 1.0,
+   "tests": [],
+   "info": {
+    "note": "cup or European tie: results only, no lean audit"
+   }
+  },
+  {
+   "card": {
+    "fid": "f6",
+    "title": "Juventus \u2013 NEC Nijmegen",
+    "home": "Juventus",
+    "away": "NEC Nijmegen",
+    "competition": "UEFA Europa League",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 two depleted squads and no common level",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 margins made in leagues scoring 0.7 goals a game apart",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 two long series pointing opposite ways",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 NEC always involved at both ends, Juventus rarely concede",
+      "short": "OK"
+     },
+     "team": {
+      "level": "bad",
+      "tag": "Split \u2014 Juventus OK, NEC dangerous",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "good",
+      "tag": "Well-suited \u2014 complete, stable first-half series on both sides",
+      "short": "Well-suited"
+     },
+     "disc": {
+      "level": "ok",
+      "tag": "OK \u2014 published official, two low-card sides, no penalty rate",
+      "short": "OK"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 both directions published, Juventus\u2019s current level four matches old",
+      "short": "OK"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401915582",
+    "slug": "uefa.europa",
+    "utc": "2026-09-17T19:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "111",
+    "away_id": "147",
+    "home": "Juventus",
+    "away": "NEC Nijmegen",
+    "hg": 5,
+    "ag": 0,
+    "h1h": 3,
+    "h1a": 0,
+    "ch": 1,
+    "ca": 1,
+    "kh": 0.0,
+    "ka": 1.0,
+    "fh": 9.0,
+    "fa": 19.0
+   },
+   "match_score": 1.0,
+   "tests": [],
+   "info": {
+    "note": "cup or European tie: results only, no lean audit"
+   }
+  },
+  {
+   "card": {
+    "fid": "f7",
+    "title": "Lillestr\u00f8m \u2013 Torreense",
+    "home": "Lillestr\u00f8m",
+    "away": "Torreense",
+    "competition": "UEFA Europa League",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 two second-tier cup winners, one with no current statistics",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 no margin series on one side at all",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 asymmetric: Lillestr\u00f8m measured, Torreense goals-only",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 both sides fail to score often",
+      "short": "OK"
+     },
+     "team": {
+      "level": "bad",
+      "tag": "Split \u2014 Lillestr\u00f8m OK, Torreense dangerous",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 half-time scores complete on both sides, nothing else for Torreense",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 one side\u2019s current discipline and the official\u2019s fouls unpublished",
+      "short": "Dangerous"
+     },
+     "corners": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 no current corner series for Torreense",
+      "short": "Dangerous"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401915570",
+    "slug": "uefa.europa",
+    "utc": "2026-09-17T19:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "987",
+    "away_id": "21615",
+    "home": "Lillestrom",
+    "away": "Torreense",
+    "hg": 1,
+    "ag": 2,
+    "h1h": 0,
+    "h1a": 1,
+    "ch": 1,
+    "ca": 4,
+    "kh": 11.0,
+    "ka": 2.0,
+    "fh": 14.0,
+    "fa": 14.0
+   },
+   "match_score": 0.95,
+   "tests": [],
+   "info": {
+    "note": "cup or European tie: results only, no lean audit"
+   }
+  },
+  {
+   "card": {
+    "fid": "f8",
+    "title": "Real Sociedad \u2013 Bournemouth",
+    "home": "Real Sociedad",
+    "away": "Bournemouth",
+    "competition": "UEFA Europa League",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 two changed coaches and one side\u2019s chance data turned negative",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 small, unstable margins on both sides",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 both long series near or above baseline, both current samples higher",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 two long both-score records, one current scoring slump",
+      "short": "OK"
+     },
+     "team": {
+      "level": "bad",
+      "tag": "Split \u2014 Bournemouth OK, Real Sociedad dangerous",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 complete series, both near 1.3 first-half goals last season",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "good",
+      "tag": "Well-suited \u2014 a strict official with published splits, two card-prone sides",
+      "short": "Well-suited"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 both directions published, current levels diverge from last season",
+      "short": "OK"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401915583",
+    "slug": "uefa.europa",
+    "utc": "2026-09-17T19:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "89",
+    "away_id": "349",
+    "home": "Real Sociedad",
+    "away": "AFC Bournemouth",
+    "hg": 1,
+    "ag": 2,
+    "h1h": 0,
+    "h1a": 2,
+    "ch": 3,
+    "ca": 3,
+    "kh": 10.0,
+    "ka": 3.0,
+    "fh": 14.0,
+    "fa": 13.0
+   },
+   "match_score": 1.0,
+   "tests": [],
+   "info": {
+    "note": "cup or European tie: results only, no lean audit"
+   }
+  },
+  {
+   "card": {
+    "fid": "f9",
+    "title": "Viktoria Plze\u0148 \u2013 Union Saint-Gilloise",
+    "home": "Viktoria Plze\u0148",
+    "away": "Union Saint-Gilloise",
+    "competition": "UEFA Europa League",
+    "rows": {
+     "1x2": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 a three-week-old coach against a side missing six",
+      "short": "Dangerous"
+     },
+     "ah": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 no xG margin on the home side",
+      "short": "Dangerous"
+     },
+     "totals": {
+      "level": "ok",
+      "tag": "OK \u2014 both current samples high, both long series lower",
+      "short": "OK"
+     },
+     "btts": {
+      "level": "ok",
+      "tag": "OK \u2014 Plze\u0148 conceding, Union keeping clean sheets",
+      "short": "OK"
+     },
+     "team": {
+      "level": "bad",
+      "tag": "Split \u2014 Union OK, Plze\u0148 dangerous",
+      "short": "Split"
+     },
+     "halves": {
+      "level": "ok",
+      "tag": "OK \u2014 complete series, both higher this season",
+      "short": "OK"
+     },
+     "disc": {
+      "level": "bad",
+      "tag": "Dangerous \u2014 no record for the official",
+      "short": "Dangerous"
+     },
+     "corners": {
+      "level": "ok",
+      "tag": "OK \u2014 both directions published, Union stable across coaches",
+      "short": "OK"
+     }
+    },
+    "tier": "T1"
+   },
+   "match": {
+    "id": "401915580",
+    "slug": "uefa.europa",
+    "utc": "2026-09-17T19:00Z",
+    "season": 2026,
+    "done": true,
+    "status": "STATUS_FULL_TIME",
+    "extra_time": false,
+    "reconciled": true,
+    "home_id": "11706",
+    "away_id": "5807",
+    "home": "Viktoria Plzen",
+    "away": "Union St.-Gilloise",
+    "hg": 0,
+    "ag": 3,
+    "h1h": 0,
+    "h1a": 2,
+    "ch": 2,
+    "ca": 2,
+    "kh": 5.0,
+    "ka": 1.0,
+    "fh": 13.0,
+    "fa": 11.0
+   },
+   "match_score": 0.92,
+   "tests": [],
+   "info": {
+    "note": "cup or European tie: results only, no lean audit"
+   }
+  }
+ ],
+ "picks": [],
+ "unsettled": []
+}

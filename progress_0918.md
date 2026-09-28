@@ -1,0 +1,5 @@
+f1 | 20:30 | Bayern München – Union Berlin | T1 | DONE (revised: confirmed lineups)
+f2 | 20:45 | Monza – Sassuolo | T1 | DONE (revised: confirmed lineups)
+f3 | 20:45 | Monaco – Lens | T1 | DONE (revised: confirmed lineups)
+f4 | 21:00 | Brentford – Chelsea | T1 | DONE (revised: confirmed lineups)
+f5 | 21:00 | Espanyol – Elche | T1 | DONE (revised: confirmed lineups)
