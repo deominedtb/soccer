@@ -1,9 +1,18 @@
-CONTEXT ENGINE v4 — soccer context board. No odds. No picks.
+CONTEXT ENGINE v4 — soccer context board. No odds. No picks —
+except in Phase 5, and only when I ask for it.
 
 The board carries the facts a market choice is made from; I make the
 choice. No price enters the pipeline, and none leaves it. Depth is the
 point: keep the research and the prose. The cost control is in the
 phasing below, never in shortening the analysis.
+
+v4.2 (2026-09-28)
+- Phase 5 — REVIEW — added. I paste my own analysis for some or all
+  of a slate's fixtures; you check it against the cards and the
+  published elevens and answer in chat with picks, rough fair prices
+  and corrections. It runs only when I ask, writes no file, and
+  nothing from it enters a card, a board or another phase. The hard
+  bans below hold everywhere else.
 
 v4.1 (2026-09-24)
 - Phase 3 adds a verdict grid under the masthead: every fixture against
@@ -58,13 +67,16 @@ STANDING RULES
   Phase 1 and Phase 2 and never later. Phase 2 then reads each
   fixture's tier from progress_N.md and researches to that depth.
   Never research a T3 fixture, and never silently promote one.
+- Phase 5 is judgement on finished cards. Run it on the strongest
+  model.
 - Phase 1, Phase 1.5, Phase 3 and Phase 4 are mechanical — parsing,
   allocation, assembly and settlement. Run them on a cheaper model. Reserve the strongest
   model for Phase 2 research.
 - Between Phase 2 runs I send no other messages. Reply to each run
   with a single confirmation line, nothing more.
 
-HARD BANS (apply to every phase)
+HARD BANS (apply to every phase except Phase 5, which has its own
+rules at the end of this file)
 - No prices. Not in fixtures_N.md, not in a card, not in a footnote,
   not as "the market expects". Price columns present in my input are
   ignored on read and never survive into any file you write. One
@@ -674,3 +686,113 @@ ESPN season files cache in settle_data/espn/ (not committed).
 
 Print nothing but the one-line summary per slate and any fixture
 not settled.
+
+────────────────────────────────────────────────
+PHASE 5 — REVIEW MY ANALYSIS  (only when I ask; answer in chat)
+
+Trigger: I write "Phase 5" (or ask you to review my analysis) and
+paste an analysis for slate N — the whole slate or a subset, for
+example one kickoff time. Only DONE fixtures can be reviewed; for a
+TODO or T3 fixture say "no card yet" and skip it.
+
+This phase is the one place picks and prices are allowed. It never
+writes a file. Nothing from it — no pick, fair price or correction —
+goes into a card, a board, progress_N.md, baselines_N.md,
+sources_N.md or any later phase. If I want a pick graded, I copy it
+into picks_N.md myself (Phase 4 format).
+
+INPUTS
+- Each reviewed fixture's card fx_N_fX.html, read in full: facts
+  strip, sections A–E, the referee line and section C's verdicts.
+- baselines_N.md for the division lines and context lines.
+- The starting elevens from ESPN's public match summary, one fetch
+  per fixture (site.web.api.espn.com/.../summary?event={id}; the
+  event id comes from the scoreboard for the slate date). Read the
+  formation and the eleven flagged as starters. If the elevens are
+  not published, or the feed shows placeholders, say so for that
+  fixture and give the pre-lineup read.
+- No web searches. A claim in my analysis that is on neither the card
+  nor the lineup is reported as unverified, never looked up, never
+  accepted.
+
+HOW PICKS ARE MADE
+- Picks come only from families the card rated Well-suited or OK, or
+  the readable side of a Split. Never pick a family the card rated
+  Dangerous. If my analysis backs one, say that the card rates it
+  Dangerous and why.
+- Each pick rests on figures printed on the card, cited with their
+  match counts. No new statistic is computed from anything but the
+  card's own numbers.
+- Rough fair price = 1 ÷ the hit rate of the card sample that bears
+  most directly on the pick, blended with the division or structural
+  prior when they differ, rounded to the nearest 0.05. Say it is a
+  base-rate figure, not a model. When the elevens move it, say by how
+  much and why. The threshold ("take it at X or more") sits 0.05–0.10
+  above the fair price. When no clean hit rate exists (a card market
+  with no line, for example), give the pick without a price and say
+  why.
+- Prefer the line the evidence actually supports: a margin read is a
+  +1 or +1.5 handicap, not +0.5 (that is a result bet); a readable
+  team-goals side stays at the line its record clears in every
+  window.
+- The elevens are checked against the card's "single fact that would
+  most change which family reads best" (section E). Say whether it
+  was answered and which way it moves the read.
+- Three tiers per fixture at most: Pick 1, Pick 2, and one of "Side
+  bet", "Lean" or "Bolder". Nothing else is labelled.
+
+HOW MY ANALYSIS IS CHECKED
+- Every number in it that also appears on the card is compared.
+  Where they differ, give the card's figure. Where my analysis turns
+  a "within one goal" into "exactly one goal", a match total into a
+  team figure, or a split into a sure thing, say so.
+- Every personnel claim is checked against the elevens: a player
+  named as starting who does not, a shape that is not the one
+  published.
+- Every pick in my analysis is set against the card's verdict for its
+  family. Agree plainly when it holds.
+
+OUTPUT (chat, markdown, this shape)
+
+  # <Competition>, <date>: the <n> <kickoff> fixtures
+
+  **Note:** one short paragraph — base rates from the cards, updated
+  with the elevens ESPN published at <time>; no odds feed, so each
+  pick carries a rough fair price from those base rates; take a pick
+  only above it; where I disagree with your analysis I say so.
+
+  ---
+
+  ## Home vs Away (League, Group), Venue
+
+  **Context.** bullets: division change, coach change, the absences
+  that matter, as starts and goals out of the window's totals.
+
+  | Metric | Home (<split>) | Away (<split>) |
+  a small table of the card figures the picks rest on, match counts
+  in brackets.
+
+  **The elevens.** bullets: what the published lineup changes, set
+  against the card's section E question.
+
+  **Priors.** (optional) the structural line and the referee in one
+  or two sentences.
+
+  **Verdict.**
+  - **Pick 1: <selection>.** why, worth about <price>; take it at <X>
+    or more.
+  - **Pick 2: <selection>.** why.
+  - **Side bet / Lean / Bolder: <selection>.** why, and what argues
+    against it.
+  - **Where I differ from your analysis:** the corrections, or
+    "nothing — it matches the card" when it does.
+
+  ---
+  (repeat per fixture, in kickoff order)
+
+  **Ranked, if you only take a few:** a numbered list of at most five
+  picks from across the fixtures, most consistent evidence first.
+
+  One closing line on stakes and why the samples are thin today.
+
+No preamble before the heading and nothing after the closing line.
