@@ -12,7 +12,8 @@ then any thoughts of your own. Phase 5 treats them as two separate sources:
 where they disagree on a fact it says so and goes with the better-sourced
 one; two tools agreeing on a pick adds nothing the card does not already
 say. When copying picks into picks_N.md, tag each line "# gemini",
-"# perplexity" or "# both" so the two can be compared over time.
+"# perplexity" or "# both" so the two can be compared over time, and add
+"# against-card" to any Against the card pick.
 
 ```
 You are doing pre-match research to check a statistical context card that
@@ -60,6 +61,15 @@ FOR EACH FIXTURE, use this exact shape, headed with the card's ID
    of a "Split"). Name the exact line (e.g. "Bromley corners over 4.5",
    "BTTS yes", "Under 2.5 goals", "Home +1"). For each one, one sentence
    on which news item and which card figure it rests on. No prices.
+
+7. Against the card (optional, at most one): a market in a family the
+   card rates "Dangerous". Allowed only if the card states WHY it is
+   Dangerous (its section C row or section E) and you found a
+   CONFIRMED fact from the last 7 days that answers that exact reason
+   (e.g. the card is Dangerous on goals because the striker's fitness
+   is unknown, and the club has confirmed he is out). Quote the card's
+   reason, give the fact with source and date, and name the exact line.
+   If no such fact exists, write "none". No prices.
 
 End with one short list: the single most important piece of news on the
 slate and which fixture it affects.

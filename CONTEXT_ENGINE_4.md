@@ -23,6 +23,12 @@ v4.3 (2026-10-09)
   Flashscore, Soccerway, AiScore and local press as well.
 - MODEL SPLIT replaces the one-model rule: Haiku gathers, Sonnet
   verifies, Opus judges. Phase 2 auto runs as a three-stage pipeline.
+- Phase 5 adds AGAINST THE CARD: at most one pick per fixture in a
+  Dangerous family, only when a sourced, dated fact answers the card's
+  reason for Dangerous. Unpriced, never in a combo, tagged
+  "# against-card" so it is graded apart. Your scorecard ran
+  Dangerous at 49% against a 50% prior (n=53): without such a fact the
+  card has no read there.
 
 v4.2 (2026-09-28)
 - Phase 5 — REVIEW — added. I paste my own analysis for some or all
@@ -846,9 +852,23 @@ INPUTS
 
 HOW PICKS ARE MADE
 - Picks come only from families the card rated Well-suited or OK, or
-  the readable side of a Split. Never pick a family the card rated
-  Dangerous. If my analysis backs one, say that the card rates it
-  Dangerous and why.
+  the readable side of a Split. A Dangerous family is never Pick 1,
+  Pick 2, a Side bet, Lean or Bolder. If my analysis backs one, say
+  that the card rates it Dangerous and why — and then test it as an
+  Against the card candidate below.
+- AGAINST THE CARD (at most one per fixture). A pick in a family the
+  card rated Dangerous is allowed only when all three hold:
+  1. The card names why the family is Dangerous (section C's row, or
+     section E's single unknown).
+  2. My analysis brings a specific fact, sourced and dated, that
+     answers that reason — a confirmed absence, a published eleven, a
+     referee appointment. A REPORTED fact counts only when the elevens
+     confirm it; a RUMOUR never counts.
+  3. The published elevens do not contradict it.
+  Say which reason the fact resolves and how. No fair price: the card
+  sample cannot support one, so say "no price — the card has no read
+  here" and leave the threshold to me. Never in a combo, never in the
+  ranked list. If any condition fails, say which and drop it.
 - Each pick rests on figures printed on the card, cited with their
   match counts. No new statistic is computed from anything but the
   card's own numbers.
@@ -868,7 +888,8 @@ HOW PICKS ARE MADE
   most change which family reads best" (section E). Say whether it
   was answered and which way it moves the read.
 - Three tiers per fixture at most: Pick 1, Pick 2, and one of "Side
-  bet", "Lean" or "Bolder". Nothing else is labelled. Keep a Bolder
+  bet", "Lean" or "Bolder" — plus, outside those, at most one "Against
+  the card". Nothing else is labelled. Keep a Bolder
   when the card supports one: I may play it later.
 
 RULES FROM SETTLED PICKS (27 September: 13–7–1 on picks, both leans
@@ -918,8 +939,8 @@ COMBOS
   depend on each other, and say which way they are linked. No fair
   price — the cards cannot measure the link, and the bookmaker prices
   it in.
-- Never a leg from a Dangerous family, and never a Side bet, Lean or
-  Bolder as a leg.
+- Never a leg from a Dangerous family, and never a Side bet, Lean,
+  Bolder or Against the card as a leg.
 
 HOW MY ANALYSIS IS CHECKED
 - Every number in it that also appears on the card is compared.
@@ -964,6 +985,9 @@ OUTPUT (chat, markdown, this shape)
   - **Pick 2: <selection>.** why.
   - **Side bet / Lean / Bolder: <selection>.** why, and what argues
     against it.
+  - **Against the card: <selection>.** (only when it qualifies) the
+    card's reason for Dangerous, the fact that answers it with its
+    source and date, what the elevens show; no price. Stake small.
   - **Where I differ from your analysis:** the corrections, or
     "nothing — it matches the card" when it does.
 
@@ -978,7 +1002,8 @@ OUTPUT (chat, markdown, this shape)
 
   **To grade these later:** a code block in picks_N.md format, one
   line per pick with its line written out, Leans and Bolders marked
-  in a trailing comment, so I can paste it into picks_N.md for
+  in a trailing comment and Against the card picks marked
+  "# against-card", so I can paste it into picks_N.md for
   Phase 4.
 
   One closing line on stakes and why the samples are thin today.
