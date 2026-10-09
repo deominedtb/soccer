@@ -6,7 +6,13 @@ context-board_N.html (or paste its text), and fill in the brackets.
 Timing: run it 2–3 hours before kickoff. Send the output back with
 "Phase 5" about an hour before kickoff, once lineups are out.
 
-Send back: "Phase 5", the tool's full output, and any thoughts of your own.
+Run it in both Gemini and Perplexity. Send back "Phase 5", then both
+outputs in full, each under its own heading ("## Gemini", "## Perplexity"),
+then any thoughts of your own. Phase 5 treats them as two separate sources:
+where they disagree on a fact it says so and goes with the better-sourced
+one; two tools agreeing on a pick adds nothing the card does not already
+say. When copying picks into picks_N.md, tag each line "# gemini",
+"# perplexity" or "# both" so the two can be compared over time.
 
 ```
 You are doing pre-match research to check a statistical context card that
