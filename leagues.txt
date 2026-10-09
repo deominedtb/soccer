@@ -1,0 +1,35 @@
+# leagues.txt — competitions fetch_slate.py pulls (Phase 1A). One ESPN slug per line.
+# Each slug checked 2026-10-09 against ESPN's scoreboard, which returned this season's
+# matches for it. The bracket says what rates.py can compute for the strip there.
+
+# Top flights
+eng.1   # English Premier League [full + xG]
+esp.1   # Spanish LALIGA [full + xG]
+ita.1   # Italian Serie A [full + xG]
+ger.1   # German Bundesliga [full + xG]
+fra.1   # French Ligue 1 [full + xG]
+ned.1   # Dutch Eredivisie [full + xG]
+por.1   # Portuguese Primeira Liga [full + xG]
+bel.1   # Belgian Pro League [full + xG]
+aut.1   # Austrian Bundesliga [full + xG]
+sui.1   # Swiss Super League [full + xG]
+sco.1   # Scottish Premiership [full + xG]
+
+# Lower divisions — the lane books pay least attention to
+eng.2   # English League Championship [full + xG]
+eng.3   # English League One [full + xG]
+eng.4   # English League Two [full + xG]
+eng.5   # English National League [goals and cards; no corners, fouls or xG]
+sco.2   # Scottish Championship [corners in about half its matches; no xG]
+esp.2   # Spanish LALIGA 2 [full + xG]
+ita.2   # Italian Serie B [full + xG]
+fra.2   # French Ligue 2 [full + xG]
+ger.2   # German 2. Bundesliga [full + xG]
+ned.2   # Dutch Keuken Kampioen Divisie [full; no xG]
+usa.usl.1   # USL Championship [full; no xG]
+usa.usl.l1  # USL League One [full; no xG]
+
+# Europe
+uefa.champions
+uefa.europa
+uefa.europa.conf

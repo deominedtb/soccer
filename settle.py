@@ -65,10 +65,31 @@ COMPETITIONS = {
     "uefa champions league": "uefa.champions", "uefa europa league": "uefa.europa",
     "uefa conference league": "uefa.europa.conf",
     "nations league": "uefa.nations",
+    # lower divisions: ESPN carries corners, fouls and cards for every match in these
+    "league one": "eng.3", "english league one": "eng.3", "league two": "eng.4",
+    "english league two": "eng.4", "national league": "eng.5",
+    "scottish premiership": "sco.1", "scottish championship": "sco.2",
+    "keuken kampioen divisie": "ned.2", "eerste divisie": "ned.2",
+    "usl championship": "usa.usl.1", "usl league one": "usa.usl.l1",
+    "brazilian serie b": "bra.2", "brasileirao serie b": "bra.2",
+    "primera nacional": "arg.2", "nacional b": "arg.2",
 }
 LEAGUES = {"eng.1", "esp.1", "ita.1", "ger.1", "fra.1", "eng.2", "esp.2", "ita.2", "ger.2", "fra.2",
-           "uefa.nations"}
+           "uefa.nations",
+           "eng.3", "eng.4", "eng.5", "sco.1", "sco.2", "ned.2",
+           "usa.usl.1", "usa.usl.l1", "bra.2", "arg.2"}
 SECOND_TIER = {"eng.1": "eng.2", "esp.1": "esp.2", "ita.1": "ita.2", "ger.1": "ger.2", "fra.1": "fra.2"}
+# Where a promoted or relegated side's last season was played, tried in order after the
+# league itself. The five top flights keep their single fallback above.
+NEIGHBOURS = {**{k: [v] for k, v in SECOND_TIER.items()},
+              "eng.2": ["eng.1", "eng.3"], "esp.2": ["esp.1"], "ita.2": ["ita.1"],
+              "ger.2": ["ger.1"], "fra.2": ["fra.1"],
+              "eng.3": ["eng.2", "eng.4"], "eng.4": ["eng.3", "eng.5"], "eng.5": ["eng.4"],
+              "sco.1": ["sco.2"], "sco.2": ["sco.1"], "ned.2": ["ned.1"],
+              "usa.usl.l1": ["usa.usl.1"], "usa.usl.1": ["usa.usl.l1"]}
+# Leagues whose season is a calendar year (season 2026 = the 2026 edition).
+CALENDAR = {"usa.usl.1", "usa.usl.l1", "bra.2", "arg.2", "usa.1", "bra.1", "arg.1",
+            "swe.1", "nor.1"}
 MIN_THIS = 5      # the strip's rule: this season's figure from five matches
 MIN_LAST = 10
 MIN_PRIOR = 30
@@ -239,6 +260,12 @@ def parse_event(ev, slug):
             booked.add(player)
         elif d.get("redCard") and player not in booked:
             cards[side] += 1
+    # Some feeds (the National League, for one) carry the stat fields with every value
+    # zero: not recorded, not a match without a corner or a foul.
+    h, a = sides["home"], sides["away"]
+    if (h["corners"], a["corners"], h["fouls"], a["fouls"]) == (0, 0, 0, 0):
+        for x in (h, a):
+            x["corners"] = x["fouls"] = None
     hs, as_ = sides["home"]["score"], sides["away"]["score"]
     status = st.get("name", "")
     extra = status in ("STATUS_FINAL_AET", "STATUS_FINAL_PEN") or "AET" in status or "PEN" in status
@@ -337,6 +364,13 @@ def find_match(card, slug, day, refresh=False):
     return best if best[1] >= 0.55 else (None, best[1], False)
 
 
+def season_for(slug, day):
+    """The season a match on this day belongs to: calendar leagues by year, the rest Aug–May."""
+    if slug in CALENDAR:
+        return day.year
+    return day.year if day.month >= 7 else day.year - 1
+
+
 def slug_for(competition):
     c = competition.lower().strip()
     if c in COMPETITIONS:
@@ -414,7 +448,7 @@ def team_window(tid, slug, season, before):
     this = [m for m in this_league if tid in (m["home_id"], m["away_id"])]
     if len(this) >= MIN_THIS:
         return this, this_league, f"{season % 100}/{(season + 1) % 100} {slug} ({len(this)})"
-    for s in (slug, SECOND_TIER.get(slug)):
+    for s in (slug, *NEIGHBOURS.get(slug, [])):
         if not s:
             continue
         lg = season_matches(s, season - 1)
@@ -813,7 +847,6 @@ def slate_date(slate):
 
 def settle(slate, refresh=False):
     day = slate_date(slate)
-    season = day.year if day.month >= 7 else day.year - 1
     cards = read_slate(slate)
     fixtures, unsettled = [], []
     for card in cards:
@@ -831,6 +864,7 @@ def settle(slate, refresh=False):
         if swapped:
             unsettled.append((card, "ESPN has home and away the other way round; check the card"))
             continue
+        season = season_for(slug, day)
         m["referee"] = referee_for(slug, m["id"])
         tests, info = ([], {"note": "cup or European tie: results only, no lean audit"})
         if slug in LEAGUES:

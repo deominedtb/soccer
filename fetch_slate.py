@@ -34,7 +34,7 @@ UA = {"User-Agent": "Mozilla/5.0 (context-engine)"}
 DEFAULT_LEAGUES = [
     "ita.1", "esp.1", "eng.1", "ger.1", "fra.1",
     "ned.1", "por.1", "bel.1", "aut.1", "sui.1",
-    "uefa.champions", "uefa.europa", "uefa.europa_conf",
+    "uefa.champions", "uefa.europa", "uefa.europa.conf",
 ]
 
 

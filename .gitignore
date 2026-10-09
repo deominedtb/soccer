@@ -2,3 +2,5 @@
 *.tmp
 settle_data/espn/
 __pycache__/
+settle_data/fotmob/
+notes_*_f*.md

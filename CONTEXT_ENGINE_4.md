@@ -6,6 +6,24 @@ choice. No price enters the pipeline, and none leaves it. Depth is the
 point: keep the research and the prose. The cost control is in the
 phasing below, never in shortening the analysis.
 
+v4.3 (2026-10-09)
+- Lower divisions are a standing lane, not an afterthought. leagues.txt
+  now carries League One, League Two, the National League, the
+  Scottish Championship, the second tiers of Spain, Italy, France,
+  Germany and the Netherlands, and the USL. Books template their lines
+  there; the public record, read properly, is as full as a top flight's.
+- Phase 1.6 — RATES — added. rates.py computes every rate on the facts
+  strip from match records, for both sides and the division, before any
+  research runs: ESPN for goals, halves, cards, fouls and corners (the
+  record settle.py audits against), FotMob for xG, and with --refs a
+  record for every referee in the division. Zero searches. Phase 2
+  reads it and spends its budget on people, not numbers.
+- Sources widened. ESPN stays the scripted backbone because it is the
+  record settlement grades against; per-fixture research reads FotMob,
+  Flashscore, Soccerway, AiScore and local press as well.
+- MODEL SPLIT replaces the one-model rule: Haiku gathers, Sonnet
+  verifies, Opus judges. Phase 2 auto runs as a three-stage pipeline.
+
 v4.2 (2026-09-28)
 - Phase 5 — REVIEW — added. I paste my own analysis for some or all
   of a slate's fixtures; you check it against the cards and the
@@ -55,11 +73,12 @@ STANDING RULES
   ceiling of 5 searches per team — 9 if the team is newly promoted or
   has changed manager — plus 1 shared preview search per fixture and
   the referee searches. Stop as soon as the spec is covered; do not
-  spend the budget for its own sake. Start with one combined query per
-  team covering transfers, manager and system change together, then
-  one on the team's season match log and rates, then spend what is
-  left on whatever the spec still lacks — the GK/CB/DM ledger, fees,
-  and the discipline and corner rates before anything else.
+  spend the budget for its own sake. Read rates_N.md first: every rate
+  it carries is sourced, and is never searched again. Start with one
+  combined query per team covering transfers, manager and system
+  change together, then spend what is left on whatever the spec still
+  lacks — the GK/CB/DM ledger, fees, injuries and suspensions, the
+  referee appointment, and any rate rates_N.md marks "not published".
 - If a field is still missing at the ceiling, state the gap and move
   on. Never estimate a fee, a date or a statistic. A rate nobody has
   published is reported as unpublished, not modelled, not inferred
@@ -70,11 +89,19 @@ STANDING RULES
   Phase 1 and Phase 2 and never later. Phase 2 then reads each
   fixture's tier from progress_N.md and researches to that depth.
   Never research a T3 fixture, and never silently promote one.
-- Phase 5 is judgement on finished cards. Run it on the strongest
-  model.
-- Phase 1, Phase 1.5, Phase 3 and Phase 4 are mechanical — parsing,
-  allocation, assembly and settlement. Run them on a cheaper model. Reserve the strongest
-  model for Phase 2 research.
+- MODEL SPLIT. Every subagent call names its model explicitly.
+    Haiku  — mechanical and bulk: Phase 1, 1.5, 1.6, 3 and 4, and the
+             GATHER stage of Phase 2 (searches and page reads, written
+             to notes, no judgement).
+    Sonnet — the VERIFY stage of Phase 2: every figure and claim in
+             the notes checked against its source and against
+             rates_N.md; contradictions resolved or reported; any price,
+             pick or forecast stripped.
+    Opus   — judgement: the WRITE stage of Phase 2 (sections B–E and
+             every section C verdict) and all of Phase 5.
+  If the main session is not Opus, the WRITE stage and Phase 5 still go
+  to an Opus subagent. Each phase's confirmation line names the model
+  that did it.
 - Between Phase 2 runs I send no other messages. Reply to each run
   with a single confirmation line, nothing more.
 
@@ -123,7 +150,9 @@ Per team, establish:
 
 Per competition, establish once per slate and cache in
 baselines_N.md: league goals per game, over 2.5 %, BTTS %, cards per
-game, corners per game, home win %. One search, the first time that
+game, corners per game, home win %. Where rates_N.md carries the
+division line, copy it into baselines_N.md with its match count and
+spend no search. Otherwise one search, the first time that
 competition comes up in Phase 2. Every later fixture in the same
 competition reads the file and never searches it again. A team rate
 with no baseline beside it is half a fact.
@@ -142,6 +171,15 @@ on that official's record. Establish:
   strict or lenient reading of contact in the box.
 - Any history with either club worth noting.
 
+For a division rates.py covers, the record is already in the
+referee table at the foot of that division in rates_N.md (run with
+--refs): cards and fouls per game against the division, fouls per
+card, over this season and last. Spend the referee searches on the
+appointment only, then read the name off the table. A name not in
+the table has no record in this division, which is itself the
+finding. The table gives no penalty rate; say so rather than search
+for one.
+
 Appointments in most leagues appear one to three days before
 kickoff. If the fixture is further out than that, say the
 appointment is not yet published rather than guessing, and mark
@@ -155,9 +193,25 @@ facts strip as a value, and must be carried into the Discipline row
 of section C. A cards or fouls rating that does not reference the
 official is incomplete.
 
-Sources, in preference order: official league site, FBref, Sofascore,
-Transfermarkt, Wikipedia season pages, then local press for mercato
-and match reports. Log every source used to sources_N.md as you go.
+Sources, in preference order: rates_N.md (ESPN match records and
+FotMob xG, computed by script), official league site, FotMob, FBref,
+Sofascore, Flashscore, Soccerway, AiScore, Transfermarkt, Wikipedia
+season pages, then local press for mercato and match reports. No one
+site is required: when one is blocked or thin, read the next. Lower
+divisions live in the local press and the clubs' own sites — team
+news, loan arrivals, the manager's pre-match conference — so spend
+the people searches there. A rate read off a site must agree with
+rates_N.md or the disagreement is reported, never averaged. Log every
+source used to sources_N.md as you go.
+
+Lower divisions. League One and Two publish everything on the strip
+including xG; the National League and Argentina's Primera Nacional
+publish goals and cards but no corners or fouls; the Scottish
+Championship records corners in roughly half its matches. rates_N.md
+says which. Fees are mostly undisclosed below the second tier: name
+the player, say "fee undisclosed", and weight loans — a lower-league
+side's spine is often on loan from above, and a recall or a loan
+expiring is the turnover that matters.
 
 Missing or contradictory evidence is reported, never filled in.
 Flag the fixture high-uncertainty in fx-sub when the gaps are wide
@@ -320,6 +374,13 @@ the total.
    A competition scoring 2 or less is capped at T2 however high its
    total, and its card opens by naming what the division does not
    publish.
+   Score what the pipeline can read, not what the division's own site
+   tabulates. A division rates.py covers with corners, fouls and cards
+   on every match and a referee table scores at least 3; with FotMob
+   xG as well it scores 4, undisclosed fees notwithstanding. So
+   League One, League Two and the European second tiers score 4, the
+   National League 3. A division is never scored down for being low
+   in the pyramid.
 
 2. Discipline window (0–2). Kickoff within 72 hours of the run → 2,
    the appointment is likely published and the Discipline row can be
@@ -437,6 +498,33 @@ triage_N.md names a side, a projected outcome or which fixture is the
 more interesting. A reason that cannot be written without one of
 those is the wrong reason, and the signal behind it is the wrong
 signal.
+
+────────────────────────────────────────────────
+PHASE 1.6 — RATES  (one run, then STOP; Haiku)
+
+Mechanical. No searches. Run once after triage, or after Phase 1
+when triage was skipped:
+
+  python rates.py N --refs
+
+It reads fixtures_N.md (the espn: source column when Phase 1A wrote
+it, the competition name otherwise) and writes rates_N.md: per
+division, the line on every strip field from this season to date, or
+last season under 30 matches; per fixture, both sides' rates in the
+strip's window — this season from five matches, else last season in
+the division the side actually played in, labelled — with a venue
+split (the host at home, the visitor away), FotMob xG for and against,
+and the referee if ESPN already lists one; per division, the referee
+table. Cup and international ties are listed as not computed.
+
+Then read the file and check it before Phase 2 runs: a division with
+no line, a side "not found on ESPN", a window drawn from another
+division (a promoted or relegated side — say so on the card), a field
+reading "not published". Print the one-line summary and those
+exceptions. STOP.
+
+rates_N.md is a source, not a card: it carries no verdict, no price
+and no forecast, and Phase 3 never publishes it.
 
 ────────────────────────────────────────────────
 PHASE 2 — ONE FIXTURE PER RUN  (repeat until none left)
@@ -559,22 +647,55 @@ visible.
 
 --- PHASE 2 AUTO ---
 When I say "Phase 2 auto", run every remaining T1/T2 fixture without
-waiting for me between them. The main session researches nothing
-itself. For each TODO fixture, earliest kickoff first, it starts one
-fresh subagent on the strongest model with only this instruction:
-read CONTEXT_ENGINE_4.md, run Phase 2 for slate N fixture fX exactly
-as written, and return the one-line confirmation. One subagent at a
-time, never in parallel — the first card of a competition writes
-baselines_N.md, and progress_N.md and sources_N.md must not be
-written by two runs at once.
+waiting for me between them, as a three-stage pipeline. The main
+session researches nothing itself, and it alone writes progress_N.md,
+sources_N.md and baselines_N.md, so no two subagents ever write the
+same file.
 
-After each subagent returns, check that fx_N_fX.html exists and the
-row in progress_N.md reads DONE, then print its confirmation line and
-start the next. If either check fails, run that fixture once more in
-a new subagent; if it fails again, leave it TODO, print "fX failed
-twice, left TODO", and move on. When no T1/T2 TODO rows are left, run
-Phase 3 once and present the board. If the session is cut off, "Phase
-2 auto" again resumes from progress_N.md; nothing done is redone.
+Before the first fixture: rates_N.md must exist (run Phase 1.6 if
+not), and the main session copies each division's line from it into
+baselines_N.md. A division rates.py does not cover gets its one
+baseline search in the first GATHER of that competition, and the main
+session writes the result.
+
+Per TODO fixture, earliest kickoff first:
+
+1. GATHER — Haiku, model passed explicitly. Instruction: read
+   CONTEXT_ENGINE_4.md (RESEARCH SPEC and HARD BANS) and the fixture's
+   section of rates_N.md; run the searches the tier allows for what
+   rates_N.md does not carry; write notes_N_fX.md — every fact as one
+   line with its source URL, every unfilled field named as a gap, the
+   referee appointment and its status. No prose, no verdicts. GATHERs
+   for different fixtures run in parallel, up to four at once, since
+   each writes only its own notes file.
+2. VERIFY — Sonnet, model passed explicitly. Reads notes_N_fX.md and
+   rates_N.md; opens each cited source for every fee, date, absence
+   and the referee; marks each line verified, corrected (with the
+   right figure and source) or unverifiable; flags any figure that
+   disagrees with rates_N.md; strips any price, pick or forecast.
+   Rewrites the notes file in place with a status on every line.
+3. WRITE — Opus, model passed explicitly. Reads CONTEXT_ENGINE_4.md,
+   rates_N.md, baselines_N.md and the verified notes only — no new
+   searches — and writes fx_N_fX.html exactly as Phase 2 specifies.
+   An unverifiable line is either left off or named in "Not sourced";
+   it is never stated as fact. Returns the one-line confirmation and
+   the list of sources it used.
+
+A fixture's three stages run in order. Different fixtures overlap:
+while one is in WRITE, the next may be in VERIFY and later ones in
+GATHER.
+
+After each WRITE returns, the main session checks fx_N_fX.html exists,
+marks the row DONE in progress_N.md, appends the sources to
+sources_N.md, and prints the confirmation with the models named —
+"f4 at T1 · gather Haiku · verify Sonnet · write Opus". If a stage
+fails, rerun that stage once in a new subagent; if it fails again,
+leave the fixture TODO, print "fX failed twice at <stage>, left TODO",
+and move on. notes_N_fX.md are working files: kept until the board is
+built, never published, never committed. When no T1/T2 TODO rows are
+left, run Phase 3 once (Haiku) and present the board. If the session
+is cut off, "Phase 2 auto" again resumes from progress_N.md and any
+notes already verified; nothing done is redone.
 
 ────────────────────────────────────────────────
 PHASE 3 — ASSEMBLE  (run whenever I ask, finished or not)
@@ -711,9 +832,14 @@ INPUTS
 - The starting elevens from ESPN's public match summary, one fetch
   per fixture (site.web.api.espn.com/.../summary?event={id}; the
   event id comes from the scoreboard for the slate date). Read the
-  formation and the eleven flagged as starters. If the elevens are
-  not published, or the feed shows placeholders, say so for that
-  fixture and give the pre-lineup read.
+  formation and the eleven flagged as starters. ESPN is often late or
+  empty below the second tier: then read the same fixture's page on
+  FotMob or Flashscore (a page read, not a search), and say which
+  source the eleven came from. If none has published them, or the
+  feeds show placeholders, say so for that fixture and give the
+  pre-lineup read.
+- rates_N.md for the venue splits and the referee's line in the
+  division table, when the slate has one.
 - No web searches. A claim in my analysis that is on neither the card
   nor the lineup is reported as unverified, never looked up, never
   accepted.
